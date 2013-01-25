@@ -1,0 +1,54 @@
+===================
+Version Target: 2.5
+===================
+
+All
+---
+
+- [ ] Afegir als plugins la possibilitat de poder configurar parametres addicionals al "flvstreamer/rtmpdump". Pensar si aquests parametres son del tipus Array o un string separat per tokens, ara mateix m decanto per un array del tipus "param=value"
+
+
+Mac OS X
+--------
+
+
+
+Windows
+-------
+
+- [x] Afegir suport per HTTPS
+- [ ] Compilar la nova versió del RTMPDump 2.4
+
+
+
+Linux
+-----
+
+
+
+Plugins
+-------
+
+
+
+Tools
+-----
+
+
+
+Web
+---
+
+
+
+============================================================
+============================================================
+ LLegenda:
+ - [ ] -> Pendent de començar a fer
+ - [x] -> Finalitzat
+ - [·] -> In-progress o que esta a mitges (inacabat)
+ - [-] -> Temporalment cancel·lat per aquest target
+ - [=] -> Cancel·lat per aquest target
+ - [!] -> No és possible de fer o no és factible ara mateix
+ ===========================================================
+============================================================

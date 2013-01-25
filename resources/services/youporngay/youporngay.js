@@ -25,12 +25,12 @@
 
 function RegistVideoService()
 {
-	this.version = "2.0.6";
+	this.version = "1.0.0";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2012 (thanks to Matze Ba)";
-	this.website = "http://www.youporn.com/";
-	this.ID = "youporn.com";
-	this.caption = "YouPorn";
+	this.author = "Xesc & Technology 2012";
+	this.website = "http://www.youporngay.com/";
+	this.ID = "youporngay.com";
+	this.caption = "YouPorn Gay";
 	this.adultContent = true;
 	this.musicSite = false;
 }
@@ -58,9 +58,10 @@ function getVideoInformation(url)
 	return result;
 }
 
+/*
 function searchVideos(keyWord, pageIndex)
 {
-	const URL_SEARCH = "http://www.youporn.com/search/?query=%1&type=straight&page=%2";
+	const URL_SEARCH = "http://www.youporngay.com/search/?query=%1&type=straight&page=%2";
 	const HTML_SEARCH_START = '<div class="videoList"';
 	const HTML_SEARCH_FINISH = 'id="related-searches"';
 	const HTML_SEARCH_SEPARATOR = '</li>';
@@ -85,10 +86,11 @@ function searchVideos(keyWord, pageIndex)
 	// return search results
 	return searchResults;
 }
+*/
 
 function parseResultItem(searchResults, html)
 {
-	const VIDEO_URL = "http://youporn.com";
+	const VIDEO_URL = "http://youporngay.com";
 	// vars
 	var tmp, videoUrl, imageUrl, title, description, duration, rating;
 	// get video url
