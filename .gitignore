@@ -11,3 +11,6 @@
 *.lai
 *.la
 *.a
+
+# Mac OS X files
+.DS_Store
