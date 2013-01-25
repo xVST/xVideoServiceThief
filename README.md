@@ -27,3 +27,35 @@ Where I can find more information?
 ==================================
 
 https://sourceforge.net/apps/mediawiki/xviservicethief/index.php?title=Main_Page
+
+How to compile xVST?
+==================================
+
+A compiler directrive (STATIC_BUILD) must be defined if you want to get a "valid" xVST compilation.
+
+- **Static mode**:
+
+  If you want compile the xVST in STATIC version, you should do:
+		> qmake -set build_mode static_build
+		> qmake
+		> make
+
+
+- **Dynamic mode**:
+
+	If you want compile the xVST in DYNAMIC version, you should do:
+		> qmake -set build_mode dynamic_build
+		> qmake
+		> make
+
+- **Frameworks mode (only MacOSX)**:
+
+	If you want compile the xVST in FRAMEWORKS version, you should do:
+		> qmake -set build_mode frameworks_build
+		> qmake
+		> make
+
+If you are using Windows, you can use the automated scripts for compile the xVST.
+
+	> compile-tools/compile-vc++.bat	(static + VC++2008)
+	> compile-tools/compile-mingw.bat	(dynamic + mingw)
