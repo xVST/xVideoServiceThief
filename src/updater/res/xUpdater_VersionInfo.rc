@@ -1,0 +1,29 @@
+1 VERSIONINFO
+FILEVERSION 1,0,0,6
+PRODUCTVERSION 1,0,0,6
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",      "Xesc & Technology\000"
+            VALUE "FileDescription",  "xUpdater is an Update tool for xVideoServiceThief\000"
+            VALUE "FileVersion",      "1.0.0.6\000"
+            VALUE "InternalName",     "xUpdater\000"
+            VALUE "LegalCopyright",   "Xesc & Technology\000"
+            VALUE "LegalTrademarks",  "Xesc & Technology 2007-09\000"
+            VALUE "OriginalFilename", "xUpdater.exe\000"
+            VALUE "ProductName",      "xUpdater\000"
+            VALUE "ProductVersion",   "1.0.0.6\000"
+            VALUE "Comments",         "xUpdater is an Update tool for xVideoServiceThief\000"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409 0x04E4
+    END
+END
+

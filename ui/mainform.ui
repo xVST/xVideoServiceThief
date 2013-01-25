@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QMainWindow" name="MainForm">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>548</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>710</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">xVideoServiceThief %1 by Xesc &amp; Technology © 2012</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/resources.qrc">
+    <normaloff>:/icons/images/film_go.png</normaloff>:/icons/images/film_go.png</iconset>
+  </property>
+  <property name="accessibleDescription">
+   <string notr="true"/>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QFrame" name="frameHeader">
+      <property name="styleSheet">
+       <string notr="true">QFrame{background: white;}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout1">
+       <property name="margin">
+        <number>5</number>
+       </property>
+       <item row="0" column="0" rowspan="3">
+        <widget class="QLabel" name="imgHeader">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../resources/resources.qrc">:/header/images/header.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" rowspan="2">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>53</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2" rowspan="2">
+        <widget class="QLabel" name="lblHeader">
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleDescription">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string notr="true">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;xVideoServiceThief&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;a {font-family: Arial, Helvetica, sans-serif;font-size: 13px; text-decoration:none; color:#999999}a: hover{text-decoration:underline; color:#0000FF}
+&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div align=&quot;center&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #666666;&quot;&gt;xVideoServiceThief&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif;font-size: 13px;&quot;&gt;Powered by Xesc &amp;amp; Technology &amp;copy; 2012&lt;br /&gt;&lt;a href=&quot;http://xviservicethief.sourceforge.net/&quot;&gt;http://xviservicethief.sourceforge.net/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3" rowspan="2">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>52</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="imgPaypal">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="toolTip">
+          <string>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt;!</string>
+         </property>
+         <property name="whatsThis">
+          <string>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt; via Paypal! It's easy and fast! :)</string>
+         </property>
+         <property name="accessibleName">
+          <string>Support button</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt; via Paypal! It's easy and fast! :)</string>
+         </property>
+         <property name="text">
+          <string notr="true"/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../resources/resources.qrc">:/buttons/images/support_button_main.png</pixmap>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1" colspan="4">
+        <layout class="QHBoxLayout" name="boxLayout_4">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblCheckForUpdatesLabel">
+           <property name="text">
+            <string>Connecting...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Minimum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>4</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QProgressBar" name="pbrCheckingForUpdates">
+           <property name="minimumSize">
+            <size>
+             <width>158</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>158</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximum">
+            <number>0</number>
+           </property>
+           <property name="value">
+            <number>-1</number>
+           </property>
+           <property name="textVisible">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>4</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="spbCancelCheckForUpdates">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string notr="true"/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources/resources.qrc">
+             <normaloff>:/buttons/images/cross.png</normaloff>:/buttons/images/cross.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>45</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="spbSearchVideos">
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Search videos</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="accessibleName">
+            <string>Search videos</string>
+           </property>
+           <property name="accessibleDescription">
+            <string>Search videos</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources/resources.qrc">
+             <normaloff>:/buttons/images/search.png</normaloff>:/buttons/images/search.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="spbDragDrop">
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Open the Drag &amp; Drop window</string>
+           </property>
+           <property name="whatsThis">
+            <string/>
+           </property>
+           <property name="accessibleName">
+            <string>Open Drag &amp; Drop window</string>
+           </property>
+           <property name="accessibleDescription">
+            <string>Open Drag &amp; Drop window</string>
+           </property>
+           <property name="text">
+            <string notr="true"/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources/resources.qrc">
+             <normaloff>:/buttons/images/application_link.png</normaloff>:/buttons/images/application_link.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="spbUpdates">
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Check for updates</string>
+           </property>
+           <property name="accessibleName">
+            <string>Check for updates</string>
+           </property>
+           <property name="accessibleDescription">
+            <string>Check for updates</string>
+           </property>
+           <property name="text">
+            <string notr="true"/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources/resources.qrc">
+             <normaloff>:/buttons/images/transmit_blue.png</normaloff>:/buttons/images/transmit_blue.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="spbHelp">
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Online help</string>
+           </property>
+           <property name="accessibleName">
+            <string>Online help</string>
+           </property>
+           <property name="accessibleDescription">
+            <string>Online help</string>
+           </property>
+           <property name="text">
+            <string notr="true"/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources/resources.qrc">
+             <normaloff>:/buttons/images/book_open.png</normaloff>:/buttons/images/book_open.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="spbInformation">
+           <property name="minimumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>25</width>
+             <height>25</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Program information</string>
+           </property>
+           <property name="accessibleName">
+            <string>Program information</string>
+           </property>
+           <property name="accessibleDescription">
+            <string>Program information</string>
+           </property>
+           <property name="text">
+            <string notr="true"/>
+           </property>
+           <property name="icon">
+            <iconset resource="../resources/resources.qrc">
+             <normaloff>:/buttons/images/information.png</normaloff>:/buttons/images/information.png</iconset>
+           </property>
+           <property name="autoRaise">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="lblDownloadList">
+      <property name="text">
+       <string>Download list:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QTreeWidget" name="lsvDownloadList">
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>243</green>
+            <blue>197</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>243</green>
+            <blue>197</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="AlternateBase">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>243</green>
+            <blue>197</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::CustomContextMenu</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DropOnly</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+      <property name="rootIsDecorated">
+       <bool>false</bool>
+      </property>
+      <property name="uniformRowHeights">
+       <bool>true</bool>
+      </property>
+      <property name="itemsExpandable">
+       <bool>false</bool>
+      </property>
+      <property name="allColumnsShowFocus">
+       <bool>true</bool>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" rowspan="4">
+     <layout class="QVBoxLayout" name="menuLayout">
+      <item>
+       <widget class="QPushButton" name="btnAddVideo">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>140</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Add video button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Add a new URL video</string>
+        </property>
+        <property name="text">
+         <string>Add video</string>
+        </property>
+        <property name="default">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDeleteVideo">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Delete video button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Delete the selected video</string>
+        </property>
+        <property name="text">
+         <string>Delete video</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="spacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>100</width>
+          <height>21</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnStartDownload">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Start download button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Start to download the current selected video</string>
+        </property>
+        <property name="text">
+         <string>Start download</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnPauseResumeDownload">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Pause Download</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCancelDownload">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Cancel download button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Cancel the current selected video</string>
+        </property>
+        <property name="text">
+         <string>Cancel download</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="spacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>31</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClearList">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Clear list button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Clear downloads list</string>
+        </property>
+        <property name="text">
+         <string>Clear list</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnClearCompleted">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Clear completed button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Clear completed videos from list</string>
+        </property>
+        <property name="text">
+         <string>Clear completed</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="spacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>27</width>
+          <height>22</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMoreOptions">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>More options button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Display the Options dialog</string>
+        </property>
+        <property name="text">
+         <string>More options...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <widget class="QFrame" name="frmInformation">
+      <property name="minimumSize">
+       <size>
+        <width>16</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"> QFrame{background: white;}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <layout class="QGridLayout">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <property name="topMargin">
+        <number>2</number>
+       </property>
+       <property name="rightMargin">
+        <number>4</number>
+       </property>
+       <property name="bottomMargin">
+        <number>2</number>
+       </property>
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblVideosCount">
+         <property name="text">
+          <string>&lt;b&gt;Videos count:&lt;/b&gt; 0 &lt;span style=&quot;color:#666666;&quot;&gt;(0 completed)&lt;/span&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="lblDownloadingCount">
+         <property name="text">
+          <string>&lt;b&gt;Downloading:&lt;/b&gt; 0 of 0</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="lblDownloadSpeed">
+         <property name="text">
+          <string>&lt;b&gt;Download speed:&lt;/b&gt; 0,00 bytes/sec</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="boxLayout_3">
+      <item>
+       <widget class="QCheckBox" name="chbDownloadVideosAuto">
+        <property name="accessibleName">
+         <string>Download videos automatically checkbox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Download videos automatically</string>
+        </property>
+        <property name="text">
+         <string>Download videos automatically</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="imgSchedule">
+        <property name="toolTip">
+         <string>Schedule option is &lt;b&gt;enabled&lt;/b&gt;</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resources/resources.qrc">:/buttons/images/clock.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="spacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>81</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chbConvertVideos">
+        <property name="accessibleName">
+         <string>Convert videos checkbox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Convert videos</string>
+        </property>
+        <property name="text">
+         <string>Convert videos to Mpeg/DivX/etc...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0">
+     <layout class="QHBoxLayout" name="boxLayout_2">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblDownloadDir">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Downloads directory:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="spacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>8</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="edtDownloadDir">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="accessibleName">
+         <string>Downloads directory</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Downloads directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="spbSelectDownloadDir">
+        <property name="minimumSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Select the downloads directory</string>
+        </property>
+        <property name="accessibleName">
+         <string>Select downloads directory</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Open the Select directory dialog for select the downloads directory</string>
+        </property>
+        <property name="text">
+         <string notr="true">...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="spbOpenDownloadDir">
+        <property name="minimumSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>23</width>
+          <height>23</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>Open downloads directory</string>
+        </property>
+        <property name="accessibleName">
+         <string>Open downloads directory</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Open the downloads directory</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources/resources.qrc">
+          <normaloff>:/buttons/images/folder_go.png</normaloff>:/buttons/images/folder_go.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <action name="actDragDrop">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/application_link.png</normaloff>:/buttons/images/application_link.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open the Drag &amp; Drop window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actUpdates">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/transmit_blue.png</normaloff>:/buttons/images/transmit_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>Check for updates</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actOnlineHelp">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/book_open.png</normaloff>:/buttons/images/book_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Online help</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actInformation">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/information.png</normaloff>:/buttons/images/information.png</iconset>
+   </property>
+   <property name="text">
+    <string>Information</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actAddVideo">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/film_add.png</normaloff>:/buttons/images/film_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add video</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actDeleteVideo">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/film_delete.png</normaloff>:/buttons/images/film_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete video</string>
+   </property>
+  </action>
+  <action name="actStartDownload">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/control_play.png</normaloff>:/buttons/images/control_play.png</iconset>
+   </property>
+   <property name="text">
+    <string>Start download</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actCancelDownload">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/control_stop.png</normaloff>:/buttons/images/control_stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cancel download</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actClearList">
+   <property name="text">
+    <string>Clear list</string>
+   </property>
+  </action>
+  <action name="actMoreOptions">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/options.png</normaloff>:/buttons/images/options.png</iconset>
+   </property>
+   <property name="text">
+    <string>More options...</string>
+   </property>
+  </action>
+  <action name="actDownloadVideosAutomatically">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Download videos automatically</string>
+   </property>
+  </action>
+  <action name="actConvertVideos">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Convert videos to Mpeg\DivX\etc...</string>
+   </property>
+  </action>
+  <action name="actOpenDownloadDir">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/folder_go.png</normaloff>:/buttons/images/folder_go.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open downloads directory</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actSelectDownloadDir">
+   <property name="text">
+    <string>Select downloads directory</string>
+   </property>
+  </action>
+  <action name="actRestoreApp">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/restore.png</normaloff>:/buttons/images/restore.png</iconset>
+   </property>
+   <property name="text">
+    <string>Restore xVideoServiceThief</string>
+   </property>
+  </action>
+  <action name="actCloseApp">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/exit.png</normaloff>:/buttons/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actDisplayPopup">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Display a popup window on finish a download/conversion video</string>
+   </property>
+  </action>
+  <action name="actClearCompleted">
+   <property name="text">
+    <string>Clear completed</string>
+   </property>
+  </action>
+  <action name="actMoveUP">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/arrow_up.png</normaloff>:/buttons/images/arrow_up.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move UP</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Up</string>
+   </property>
+  </action>
+  <action name="actMoveDOWN">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/arrow_down.png</normaloff>:/buttons/images/arrow_down.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move DOWN</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Down</string>
+   </property>
+  </action>
+  <action name="actPlayVideo">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/resultset_next.png</normaloff>:/buttons/images/resultset_next.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play video</string>
+   </property>
+  </action>
+  <action name="actResetState">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/arrow_refresh.png</normaloff>:/buttons/images/arrow_refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset state</string>
+   </property>
+  </action>
+  <action name="actStayOnTop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Stay always on top</string>
+   </property>
+  </action>
+  <action name="actMinimizeToSystemTray">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Minimize to system tray</string>
+   </property>
+  </action>
+  <action name="actPauseResumeDownload">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/control_pause.png</normaloff>:/buttons/images/control_pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause download</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actViewErrorMessage">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icons/images/film_error.png</normaloff>:/icons/images/film_error.png</iconset>
+   </property>
+   <property name="text">
+    <string>View error message</string>
+   </property>
+  </action>
+  <action name="actOptions">
+   <property name="text">
+    <string notr="true">Options</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actAbout">
+   <property name="text">
+    <string notr="true">About</string>
+   </property>
+  </action>
+  <action name="actSearchVideos">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/search.png</normaloff>:/buttons/images/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>Search videos</string>
+   </property>
+   <property name="toolTip">
+    <string>Search videos</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actRenameVideo">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/film_edit.png</normaloff>:/buttons/images/film_edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rename video</string>
+   </property>
+   <property name="toolTip">
+    <string>Rename video</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>btnAddVideo</tabstop>
+  <tabstop>btnDeleteVideo</tabstop>
+  <tabstop>btnStartDownload</tabstop>
+  <tabstop>btnPauseResumeDownload</tabstop>
+  <tabstop>btnCancelDownload</tabstop>
+  <tabstop>btnClearList</tabstop>
+  <tabstop>btnClearCompleted</tabstop>
+  <tabstop>chbDownloadVideosAuto</tabstop>
+  <tabstop>chbConvertVideos</tabstop>
+  <tabstop>edtDownloadDir</tabstop>
+  <tabstop>spbSelectDownloadDir</tabstop>
+  <tabstop>spbOpenDownloadDir</tabstop>
+  <tabstop>btnMoreOptions</tabstop>
+  <tabstop>spbSearchVideos</tabstop>
+  <tabstop>spbDragDrop</tabstop>
+  <tabstop>spbUpdates</tabstop>
+  <tabstop>spbHelp</tabstop>
+  <tabstop>spbInformation</tabstop>
+  <tabstop>lsvDownloadList</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,107 @@
+<ui version="4.0" >
+ <class>InfoView</class>
+ <widget class="QDialog" name="InfoView" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>435</width>
+    <height>214</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Information View</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../resources/resources.qrc" >:/error/images/view.png</iconset>
+  </property>
+  <property name="sizeGripEnabled" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="lblInformation" >
+     <property name="text" >
+      <string>This is the information which will be send:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QTextEdit" name="rchInformation" >
+     <property name="whatsThis" >
+      <string>Information which will be send to SourceForge.net tracker</string>
+     </property>
+     <property name="accessibleName" >
+      <string>Information which will be sent</string>
+     </property>
+     <property name="accessibleDescription" >
+      <string>Information which will be send to SourceForge.net tracker</string>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <layout class="QHBoxLayout" >
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>321</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose" >
+       <property name="minimumSize" >
+        <size>
+         <width>110</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="whatsThis" >
+        <string>Close the Information view</string>
+       </property>
+       <property name="accessibleName" >
+        <string>Close button</string>
+       </property>
+       <property name="accessibleDescription" >
+        <string>Close the Information view</string>
+       </property>
+       <property name="text" >
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/resources.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>InfoView</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>377</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>431</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

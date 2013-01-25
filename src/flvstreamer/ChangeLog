@@ -1,0 +1,62 @@
+FLVStreamer
+Copyright 2008-2009 Andrej Stepanchuk, The Flvstreamer Team; Distributed under the GPL v2
+
+12 Jul 2009, v1.8e
+
+- Changed the audioCodecs list to match flash player 10
+
+- Merge some upstream changes from libRTMP XBMC linuxport
+
+- Fixed small bug in handshake response
+
+10 Jul 2009, v1.8d
+
+- Display flv stream metadata in non-verbose modes
+
+- Ported flvstreamer fixes and features to streams.cpp
+
+7 Jul 2009, v1.8c
+
+- Added --stop <secs> and --start <secs> options to specify absolute start and stop offset timestamps for a stream
+
+- The --stop option can be used to specify the duration of live streaming
+
+- Progress additionally displays timestamp in seconds
+
+6 Jul 2009, v1.8b
+
+- Exit codes now reflect success of download. 
+
+- non-zero exit code for incomplete downloads even if stream duration is unknown.
+
+- Slight changes in reporting messages.
+
+20 Jun 2009, v1.8a
+
+- Added changes adapted from patch from daftcat75 for mlbviewer
+
+- Added --subscribe <subscribe path> option. Default is to use playpath if --live is specified
+
+- Increased memory allocation fo CreateStream and Play packets to 1024 bytes
+
+- Added --debug, --verbose and --quiet options
+
+- Made default output level LOGINFO
+
+19 Jun 2009, v1.8
+
+- Added FCSubscribe support for live streams to fix hanging live streams
+
+- Bumped default flashVer to LNX 10,0,22,87
+
+- Supress 'no-name' from verbose output
+
+22 May 2009, v1.7
+
+- forked from rtmp dump 1.6
+
+- removed all rtmpe and swf verification support
+
+- default is now to stream all flv data to stdout
+
+- First release

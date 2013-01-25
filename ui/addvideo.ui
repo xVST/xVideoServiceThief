@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddVideo</class>
+ <widget class="QDialog" name="AddVideo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>587</width>
+    <height>281</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add Video URL</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/resources.qrc">
+    <normaloff>:/buttons/images/film_add.png</normaloff>:/buttons/images/film_add.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QLabel" name="lblTitle">
+     <property name="text">
+      <string>Enter the video URL to download:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="edtURL">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="whatsThis">
+        <string>URL of the video to downloaded</string>
+       </property>
+       <property name="accessibleName">
+        <string>Video URL</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>URL of the video to downloaded</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="spbSelectFile">
+       <property name="toolTip">
+        <string>Select url's file</string>
+       </property>
+       <property name="whatsThis">
+        <string>Select file with URLs</string>
+       </property>
+       <property name="accessibleName">
+        <string>Select url's file</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Select file with URLs</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources/resources.qrc">
+         <normaloff>:/buttons/images/select_file.png</normaloff>:/buttons/images/select_file.png</iconset>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="spbPasteURL">
+       <property name="toolTip">
+        <string>Paste URL from clipboard</string>
+       </property>
+       <property name="whatsThis">
+        <string>Paste the current clipboard content (only text)</string>
+       </property>
+       <property name="accessibleName">
+        <string>Paste URL from clipboard</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Paste the current clipboard content (only text)</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="../resources/resources.qrc">
+         <normaloff>:/buttons/images/paste_plain.png</normaloff>:/buttons/images/paste_plain.png</iconset>
+       </property>
+       <property name="autoRaise">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="imgService">
+       <property name="minimumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblVideoService">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblCustomLink">
+       <property name="text">
+        <string notr="true">&lt;html&gt;&lt;head&gt;&lt;style type=&quot;text/css&quot;&gt;a {text-decoration:none}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;(&lt;a href=&quot;%1&quot;&gt;%2&lt;/a&gt;)&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>181</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnOk">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="whatsThis">
+        <string>Add the current URL and close this dialog</string>
+       </property>
+       <property name="accessibleName">
+        <string>Ok button</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Add the current URL and close this dialog</string>
+       </property>
+       <property name="text">
+        <string>Ok</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="whatsThis">
+        <string>Close without adding the URL</string>
+       </property>
+       <property name="accessibleName">
+        <string>Cancel button</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Close without adding the URL</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <widget class="QCheckBox" name="chbOverrideConversion">
+     <property name="text">
+      <string>Override original conversion options for this video</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QGroupBox" name="gpbVideoConversion">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="whatsThis">
+      <string>Enable/disable the video conversions</string>
+     </property>
+     <property name="accessibleName">
+      <string>Convert videos</string>
+     </property>
+     <property name="accessibleDescription">
+      <string>Enable/disable the video conversions</string>
+     </property>
+     <property name="title">
+      <string>Convert video to Mpeg/DivX/etc...</string>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="lblOutputFormat">
+        <property name="text">
+         <string>Output format:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="cmbOutputFormat">
+        <property name="whatsThis">
+         <string>Video output format</string>
+        </property>
+        <property name="accessibleName">
+         <string>Video output format combobox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Video output format</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="lblVideoResolution">
+        <property name="text">
+         <string>Video resolution:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QComboBox" name="cmbVideoResolution">
+        <property name="whatsThis">
+         <string>Video resolution</string>
+        </property>
+        <property name="accessibleName">
+         <string>Video resolution combobox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Video resolution</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lblAudioSampling">
+        <property name="text">
+         <string>Audio sampling rate (Hz):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="cmbAudioSampling">
+        <property name="whatsThis">
+         <string>Video audio sampling rate (Hz)</string>
+        </property>
+        <property name="accessibleName">
+         <string>Video audio sampling rate combobox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Video audio sampling rate (Hz)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="lblVideoFrameRate">
+        <property name="text">
+         <string>Video frame rate (Hz)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QComboBox" name="cmbVideoFrameRate">
+        <property name="whatsThis">
+         <string>Video frame rate (Hz)</string>
+        </property>
+        <property name="accessibleName">
+         <string>Video frame rate combobox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Video frame rate (Hz)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="lblOutputQuality">
+        <property name="text">
+         <string>Output quality:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="3">
+       <widget class="QComboBox" name="cmbOutputQuality">
+        <property name="whatsThis">
+         <string>General video output quality</string>
+        </property>
+        <property name="accessibleName">
+         <string>General video output quality combobox</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>General video output quality</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>edtURL</tabstop>
+  <tabstop>spbPasteURL</tabstop>
+  <tabstop>btnOk</tabstop>
+  <tabstop>btnCancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>AddVideo</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>491</x>
+     <y>86</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

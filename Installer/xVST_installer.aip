@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="5.2.2" version="7.7" Modules="freeware" RootPath="." Language="en">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPCONTACT" Value="xeskuu.xvst@gmail.com"/>
+    <ROW Property="ARPHELPLINK" Value="http://xviservicethief.sourceforge.net/index.php?action=onlinehelp"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://xviservicethief.sourceforge.net/"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="http://xviservicethief.sourceforge.net/"/>
+    <ROW Property="BannerBitmap" MultiBuildValue="DefaultBuild:default_banner.bmp" Type="1"/>
+    <ROW Property="DialogBitmap" MultiBuildValue="DefaultBuild:default_dialog.bmp" Type="1"/>
+    <ROW Property="Manufacturer" Value="Xesc &amp; Technology" ValueLocId="*"/>
+    <ROW Property="ProductCode" Value="1033:{129FC9F8-206B-4C29-9B45-8D53B10EC6C7} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="xVideoServiceThief" ValueLocId="*"/>
+    <ROW Property="ProductVersion" Value="2.4.1"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{FA98D6CA-0AA3-4897-9928-194EC4DEEA4D}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="Deskto~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Microsoft.VC90.CRT_DIR" Directory_Parent="APPDIR" DefaultDir="Micros~1.CRT|Microsoft.VC90.CRT"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="bin_DIR" Directory_Parent="APPDIR" DefaultDir="bin"/>
+    <ROW Directory="downloads_DIR" Directory_Parent="APPDIR" DefaultDir="downlo~1|downloads"/>
+    <ROW Directory="ffmpeg_presets_DIR" Directory_Parent="bin_DIR" DefaultDir="ffmpeg~1|ffmpeg-presets"/>
+    <ROW Directory="languages_DIR" Directory_Parent="APPDIR" DefaultDir="langua~1|languages"/>
+    <ROW Directory="plugins_DIR" Directory_Parent="APPDIR" DefaultDir="plugins"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="GPL.txt" ComponentId="{F18E021C-46DB-403D-ACC9-BF71EBF311AF}" Directory_="APPDIR" Attributes="0" KeyPath="GPL.txt" Type="0"/>
+    <ROW Component="Microsoft.VC90.CRT.manifest" ComponentId="{A34BD7D9-F85D-48C6-AC47-7BD05F82A890}" Directory_="Microsoft.VC90.CRT_DIR" Attributes="0" KeyPath="Microsoft.VC90.CRT.manifest" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{A2849C9F-F1BB-46BE-9E59-BC17B2E0528E}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="catala.language" ComponentId="{524A02C4-6989-4B0F-9CC8-95767D5E855F}" Directory_="languages_DIR" Attributes="0" KeyPath="catala.language" Type="0"/>
+    <ROW Component="downloads" ComponentId="{6788E29F-0CCC-491B-964D-619EA1AE9F1D}" Directory_="downloads_DIR" Attributes="0"/>
+    <ROW Component="ffmpeg.exe" ComponentId="{93B7CCD2-FE5B-4AC6-9D2C-34B5E8241DE3}" Directory_="bin_DIR" Attributes="0" KeyPath="ffmpeg.exe"/>
+    <ROW Component="flvstreamer.exe" ComponentId="{3527F2F8-2214-4068-B346-CCE53C3FD870}" Directory_="bin_DIR" Attributes="0" KeyPath="flvstreamer.exe"/>
+    <ROW Component="libx264_baseline.ffpreset" ComponentId="{4312D5D7-3676-429E-A609-28A83DD03205}" Directory_="ffmpeg_presets_DIR" Attributes="0" KeyPath="libx264_baseline.ffpreset" Type="0"/>
+    <ROW Component="min.js" ComponentId="{4682F943-9514-4FEB-B249-2E06A8A32161}" Directory_="plugins_DIR" Attributes="0" KeyPath="min.js" Type="0"/>
+    <ROW Component="msvcm90.dll" ComponentId="{48743BAB-137D-4F2F-B04D-D5E1C8352C07}" Directory_="Microsoft.VC90.CRT_DIR" Attributes="0" KeyPath="msvcm90.dll"/>
+    <ROW Component="msvcp90.dll" ComponentId="{495169F9-2797-4674-9990-508761248897}" Directory_="Microsoft.VC90.CRT_DIR" Attributes="0" KeyPath="msvcp90.dll"/>
+    <ROW Component="msvcr90.dll" ComponentId="{18807880-A16F-42D0-A95A-B80E9A7C8EF5}" Directory_="Microsoft.VC90.CRT_DIR" Attributes="0" KeyPath="msvcr90.dll"/>
+    <ROW Component="pthreadGC2.dll" ComponentId="{577E0C74-1183-46BD-8791-2E0A68D77B51}" Directory_="bin_DIR" Attributes="0" KeyPath="pthreadGC2.dll"/>
+    <ROW Component="xUpdater.exe" ComponentId="{9CBAEDE3-808B-4D73-94F5-276005C7ABFC}" Directory_="bin_DIR" Attributes="0" KeyPath="xUpdater.exe"/>
+    <ROW Component="xVideoServiceThief.exe" ComponentId="{C34A3B7C-1629-466D-BE28-C63FBFAD7C36}" Directory_="APPDIR" Attributes="0" KeyPath="xVideoServiceThief.exe" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Attributes="0" Components="SHORTCUTDIR xVideoServiceThief.exe downloads GPL.txt Microsoft.VC90.CRT.manifest msvcm90.dll msvcp90.dll msvcr90.dll ffmpeg.exe flvstreamer.exe pthreadGC2.dll xUpdater.exe libx264_baseline.ffpreset catala.language min.js"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="GPL.txt" Component_="GPL.txt" FileName="GPL.txt" Attributes="0" SourcePath="..\bin\GPL.txt" SelfReg="false" Sequence="2"/>
+    <ROW File="Microsoft.VC90.CRT.manifest" Component_="Microsoft.VC90.CRT.manifest" FileName="Micros~1.man|Microsoft.VC90.CRT.manifest" Attributes="0" SourcePath="..\bin\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" SelfReg="false" Sequence="3"/>
+    <ROW File="aniboom.js" Component_="min.js" FileName="aniboom.js" Attributes="0" SourcePath="..\bin\plugins\aniboom.js" SelfReg="false" Sequence="85"/>
+    <ROW File="atom.js" Component_="min.js" FileName="atom.js" Attributes="0" SourcePath="..\bin\plugins\atom.js" SelfReg="false" Sequence="86"/>
+    <ROW File="atv.js" Component_="min.js" FileName="atv.js" Attributes="0" SourcePath="..\bin\plugins\atv.js" SelfReg="false" Sequence="87"/>
+    <ROW File="badjojo.js" Component_="min.js" FileName="badjojo.js" Attributes="0" SourcePath="..\bin\plugins\badjojo.js" SelfReg="false" Sequence="88"/>
+    <ROW File="bebo.js" Component_="min.js" FileName="bebo.js" Attributes="0" SourcePath="..\bin\plugins\bebo.js" SelfReg="false" Sequence="89"/>
+    <ROW File="blip.js" Component_="min.js" FileName="blip.js" Attributes="0" SourcePath="..\bin\plugins\blip.js" SelfReg="false" Sequence="90"/>
+    <ROW File="boingboing.js" Component_="min.js" FileName="boingb~1.js|boingboing.js" Attributes="0" SourcePath="..\bin\plugins\boingboing.js" SelfReg="false" Sequence="91"/>
+    <ROW File="break.js" Component_="min.js" FileName="break.js" Attributes="0" SourcePath="..\bin\plugins\break.js" SelfReg="false" Sequence="92"/>
+    <ROW File="catala.language" Component_="catala.language" FileName="catala~1.lan|catala.language" Attributes="0" SourcePath="..\bin\languages\catala.language" SelfReg="false" Sequence="47"/>
+    <ROW File="caught_on_video.js" Component_="min.js" FileName="caught~1.js|caught-on-video.js" Attributes="0" SourcePath="..\bin\plugins\caught-on-video.js" SelfReg="false" Sequence="93"/>
+    <ROW File="ceknito.js" Component_="min.js" FileName="ceknito.js" Attributes="0" SourcePath="..\bin\plugins\ceknito.js" SelfReg="false" Sequence="94"/>
+    <ROW File="cinemavip.js" Component_="min.js" FileName="cinema~1.js|cinemavip.js" Attributes="0" SourcePath="..\bin\plugins\cinemavip.js" SelfReg="false" Sequence="95"/>
+    <ROW File="clip4e.js" Component_="min.js" FileName="clip4e.js" Attributes="0" SourcePath="..\bin\plugins\clip4e.js" SelfReg="false" Sequence="96"/>
+    <ROW File="clipfish.js" Component_="min.js" FileName="clipfish.js" Attributes="0" SourcePath="..\bin\plugins\clipfish.js" SelfReg="false" Sequence="97"/>
+    <ROW File="clipjunkie.js" Component_="min.js" FileName="clipju~1.js|clipjunkie.js" Attributes="0" SourcePath="..\bin\plugins\clipjunkie.js" SelfReg="false" Sequence="98"/>
+    <ROW File="collagehumor.js" Component_="min.js" FileName="collag~1.js|collagehumor.js" Attributes="0" SourcePath="..\bin\plugins\collagehumor.js" SelfReg="false" Sequence="99"/>
+    <ROW File="czech.language" Component_="catala.language" FileName="czech~1.lan|czech.language" Attributes="0" SourcePath="..\bin\languages\czech.language" SelfReg="false" Sequence="48"/>
+    <ROW File="dailymotion.js" Component_="min.js" FileName="dailym~1.js|dailymotion.js" Attributes="0" SourcePath="..\bin\plugins\dailymotion.js" SelfReg="false" Sequence="100"/>
+    <ROW File="dalealplay.js" Component_="min.js" FileName="daleal~1.js|dalealplay.js" Attributes="0" SourcePath="..\bin\plugins\dalealplay.js" SelfReg="false" Sequence="101"/>
+    <ROW File="danish.language" Component_="catala.language" FileName="danish~1.lan|danish.language" Attributes="0" SourcePath="..\bin\languages\danish.language" SelfReg="false" Sequence="49"/>
+    <ROW File="demoscene.js" Component_="min.js" FileName="demosc~1.js|demoscene.js" Attributes="0" SourcePath="..\bin\plugins\demoscene.js" SelfReg="false" Sequence="102"/>
+    <ROW File="desisextube.js" Component_="min.js" FileName="desise~1.js|desisextube.js" Attributes="0" SourcePath="..\bin\plugins\desisextube.js" SelfReg="false" Sequence="103"/>
+    <ROW File="disclose.js" Component_="min.js" FileName="disclose.js" Attributes="0" SourcePath="..\bin\plugins\disclose.js" SelfReg="false" Sequence="104"/>
+    <ROW File="dumpalink.js" Component_="min.js" FileName="dumpal~1.js|dumpalink.js" Attributes="0" SourcePath="..\bin\plugins\dumpalink.js" SelfReg="false" Sequence="105"/>
+    <ROW File="dutch.language" Component_="catala.language" FileName="dutch~1.lan|dutch.language" Attributes="0" SourcePath="..\bin\languages\dutch.language" SelfReg="false" Sequence="50"/>
+    <ROW File="ejb.js" Component_="min.js" FileName="ejb.js" Attributes="0" SourcePath="..\bin\plugins\ejb.js" SelfReg="false" Sequence="106"/>
+    <ROW File="elrellano.js" Component_="min.js" FileName="elrell~1.js|elrellano.js" Attributes="0" SourcePath="..\bin\plugins\elrellano.js" SelfReg="false" Sequence="107"/>
+    <ROW File="english_uk.language" Component_="catala.language" FileName="englis~1.lan|english_uk.language" Attributes="0" SourcePath="..\bin\languages\english_uk.language" SelfReg="false" Sequence="51"/>
+    <ROW File="espanol.language" Component_="catala.language" FileName="espano~1.lan|espanol.language" Attributes="0" SourcePath="..\bin\languages\espanol.language" SelfReg="false" Sequence="52"/>
+    <ROW File="ffmpeg.exe" Component_="ffmpeg.exe" FileName="ffmpeg.exe" Attributes="0" SourcePath="..\bin\bin\ffmpeg.exe" SelfReg="false" Sequence="7"/>
+    <ROW File="flvstreamer.exe" Component_="flvstreamer.exe" FileName="flvstr~1.exe|flvstreamer.exe" Attributes="0" SourcePath="..\bin\bin\flvstreamer.exe" SelfReg="false" Sequence="8"/>
+    <ROW File="freecaster.js" Component_="min.js" FileName="freeca~1.js|freecaster.js" Attributes="0" SourcePath="..\bin\plugins\freecaster.js" SelfReg="false" Sequence="108"/>
+    <ROW File="french.language" Component_="catala.language" FileName="french~1.lan|french.language" Attributes="0" SourcePath="..\bin\languages\french.language" SelfReg="false" Sequence="53"/>
+    <ROW File="galician.language" Component_="catala.language" FileName="galici~1.lan|galician.language" Attributes="0" SourcePath="..\bin\languages\galician.language" SelfReg="false" Sequence="54"/>
+    <ROW File="gameanyone.js" Component_="min.js" FileName="gamean~1.js|gameanyone.js" Attributes="0" SourcePath="..\bin\plugins\gameanyone.js" SelfReg="false" Sequence="109"/>
+    <ROW File="gamespot.js" Component_="min.js" FileName="gamespot.js" Attributes="0" SourcePath="..\bin\plugins\gamespot.js" SelfReg="false" Sequence="110"/>
+    <ROW File="gametrailers.js" Component_="min.js" FileName="gametr~1.js|gametrailers.js" Attributes="0" SourcePath="..\bin\plugins\gametrailers.js" SelfReg="false" Sequence="111"/>
+    <ROW File="german.language" Component_="catala.language" FileName="german~1.lan|german.language" Attributes="0" SourcePath="..\bin\languages\german.language" SelfReg="false" Sequence="55"/>
+    <ROW File="glumbert.js" Component_="min.js" FileName="glumbert.js" Attributes="0" SourcePath="..\bin\plugins\glumbert.js" SelfReg="false" Sequence="112"/>
+    <ROW File="godofhumor.js" Component_="min.js" FileName="godofh~1.js|godofhumor.js" Attributes="0" SourcePath="..\bin\plugins\godofhumor.js" SelfReg="false" Sequence="113"/>
+    <ROW File="goear.js" Component_="min.js" FileName="goear.js" Attributes="0" SourcePath="..\bin\plugins\goear.js" SelfReg="false" Sequence="114"/>
+    <ROW File="googlevideo.js" Component_="min.js" FileName="google~1.js|googlevideo.js" Attributes="0" SourcePath="..\bin\plugins\googlevideo.js" SelfReg="false" Sequence="115"/>
+    <ROW File="hungarian.language" Component_="catala.language" FileName="hungar~1.lan|hungarian.language" Attributes="0" SourcePath="..\bin\languages\hungarian.language" SelfReg="false" Sequence="56"/>
+    <ROW File="italiano.language" Component_="catala.language" FileName="italia~1.lan|italiano.language" Attributes="0" SourcePath="..\bin\languages\italiano.language" SelfReg="false" Sequence="57"/>
+    <ROW File="japanese.language" Component_="catala.language" FileName="japane~1.lan|japanese.language" Attributes="0" SourcePath="..\bin\languages\japanese.language" SelfReg="false" Sequence="58"/>
+    <ROW File="jizzhut.js" Component_="min.js" FileName="jizzhut.js" Attributes="0" SourcePath="..\bin\plugins\jizzhut.js" SelfReg="false" Sequence="116"/>
+    <ROW File="keezmovies.js" Component_="min.js" FileName="keezmo~1.js|keezmovies.js" Attributes="0" SourcePath="..\bin\plugins\keezmovies.js" SelfReg="false" Sequence="117"/>
+    <ROW File="kontraband.js" Component_="min.js" FileName="kontra~1.js|kontraband.js" Attributes="0" SourcePath="..\bin\plugins\kontraband.js" SelfReg="false" Sequence="118"/>
+    <ROW File="korean.language" Component_="catala.language" FileName="korean~1.lan|korean.language" Attributes="0" SourcePath="..\bin\languages\korean.language" SelfReg="false" Sequence="59"/>
+    <ROW File="libx264_baseline.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~1.ffp|libx264-baseline.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-baseline.ffpreset" SelfReg="false" Sequence="11"/>
+    <ROW File="libx264_default.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~2.ffp|libx264-default.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-default.ffpreset" SelfReg="false" Sequence="12"/>
+    <ROW File="libx264_fast.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~3.ffp|libx264-fast.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-fast.ffpreset" SelfReg="false" Sequence="13"/>
+    <ROW File="libx264_fast_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~4.ffp|libx264-fast_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-fast_firstpass.ffpreset" SelfReg="false" Sequence="14"/>
+    <ROW File="libx264_faster.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~5.ffp|libx264-faster.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-faster.ffpreset" SelfReg="false" Sequence="15"/>
+    <ROW File="libx264_faster_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~6.ffp|libx264-faster_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-faster_firstpass.ffpreset" SelfReg="false" Sequence="16"/>
+    <ROW File="libx264_fastfirstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~7.ffp|libx264-fastfirstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-fastfirstpass.ffpreset" SelfReg="false" Sequence="17"/>
+    <ROW File="libx264_hq.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~8.ffp|libx264-hq.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-hq.ffpreset" SelfReg="false" Sequence="18"/>
+    <ROW File="libx264_ipod320.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx26~9.ffp|libx264-ipod320.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-ipod320.ffpreset" SelfReg="false" Sequence="19"/>
+    <ROW File="libx264_ipod640.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~10.ffp|libx264-ipod640.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-ipod640.ffpreset" SelfReg="false" Sequence="20"/>
+    <ROW File="libx264_lossless_fast.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~11.ffp|libx264-lossless_fast.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-lossless_fast.ffpreset" SelfReg="false" Sequence="21"/>
+    <ROW File="libx264_lossless_max.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~12.ffp|libx264-lossless_max.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-lossless_max.ffpreset" SelfReg="false" Sequence="22"/>
+    <ROW File="libx264_lossless_medium.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~13.ffp|libx264-lossless_medium.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-lossless_medium.ffpreset" SelfReg="false" Sequence="23"/>
+    <ROW File="libx264_lossless_slow.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~14.ffp|libx264-lossless_slow.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-lossless_slow.ffpreset" SelfReg="false" Sequence="24"/>
+    <ROW File="libx264_lossless_slower.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~15.ffp|libx264-lossless_slower.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-lossless_slower.ffpreset" SelfReg="false" Sequence="25"/>
+    <ROW File="libx264_lossless_ultrafast.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~16.ffp|libx264-lossless_ultrafast.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-lossless_ultrafast.ffpreset" SelfReg="false" Sequence="26"/>
+    <ROW File="libx264_main.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~17.ffp|libx264-main.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-main.ffpreset" SelfReg="false" Sequence="27"/>
+    <ROW File="libx264_max.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~18.ffp|libx264-max.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-max.ffpreset" SelfReg="false" Sequence="28"/>
+    <ROW File="libx264_medium.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~19.ffp|libx264-medium.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-medium.ffpreset" SelfReg="false" Sequence="29"/>
+    <ROW File="libx264_medium_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~20.ffp|libx264-medium_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-medium_firstpass.ffpreset" SelfReg="false" Sequence="30"/>
+    <ROW File="libx264_normal.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~21.ffp|libx264-normal.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-normal.ffpreset" SelfReg="false" Sequence="31"/>
+    <ROW File="libx264_placebo.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~22.ffp|libx264-placebo.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-placebo.ffpreset" SelfReg="false" Sequence="32"/>
+    <ROW File="libx264_placebo_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~23.ffp|libx264-placebo_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-placebo_firstpass.ffpreset" SelfReg="false" Sequence="33"/>
+    <ROW File="libx264_slow.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~24.ffp|libx264-slow.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-slow.ffpreset" SelfReg="false" Sequence="34"/>
+    <ROW File="libx264_slow_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~25.ffp|libx264-slow_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-slow_firstpass.ffpreset" SelfReg="false" Sequence="35"/>
+    <ROW File="libx264_slower.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~26.ffp|libx264-slower.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-slower.ffpreset" SelfReg="false" Sequence="36"/>
+    <ROW File="libx264_slower_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~27.ffp|libx264-slower_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-slower_firstpass.ffpreset" SelfReg="false" Sequence="37"/>
+    <ROW File="libx264_slowfirstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~28.ffp|libx264-slowfirstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-slowfirstpass.ffpreset" SelfReg="false" Sequence="38"/>
+    <ROW File="libx264_superfast.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~29.ffp|libx264-superfast.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-superfast.ffpreset" SelfReg="false" Sequence="39"/>
+    <ROW File="libx264_superfast_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~30.ffp|libx264-superfast_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-superfast_firstpass.ffpreset" SelfReg="false" Sequence="40"/>
+    <ROW File="libx264_ultrafast.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~31.ffp|libx264-ultrafast.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-ultrafast.ffpreset" SelfReg="false" Sequence="41"/>
+    <ROW File="libx264_ultrafast_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~32.ffp|libx264-ultrafast_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-ultrafast_firstpass.ffpreset" SelfReg="false" Sequence="42"/>
+    <ROW File="libx264_veryfast.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~33.ffp|libx264-veryfast.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryfast.ffpreset" SelfReg="false" Sequence="43"/>
+    <ROW File="libx264_veryfast_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~34.ffp|libx264-veryfast_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryfast_firstpass.ffpreset" SelfReg="false" Sequence="44"/>
+    <ROW File="libx264_veryslow.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~35.ffp|libx264-veryslow.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryslow.ffpreset" SelfReg="false" Sequence="45"/>
+    <ROW File="libx264_veryslow_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~36.ffp|libx264-veryslow_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryslow_firstpass.ffpreset" SelfReg="false" Sequence="46"/>
+    <ROW File="liveleak.js" Component_="min.js" FileName="liveleak.js" Attributes="0" SourcePath="..\bin\plugins\liveleak.js" SelfReg="false" Sequence="119"/>
+    <ROW File="livevideo.js" Component_="min.js" FileName="livevi~1.js|livevideo.js" Attributes="0" SourcePath="..\bin\plugins\livevideo.js" SelfReg="false" Sequence="120"/>
+    <ROW File="metacafe.js" Component_="min.js" FileName="metacafe.js" Attributes="0" SourcePath="..\bin\plugins\metacafe.js" SelfReg="false" Sequence="121"/>
+    <ROW File="min.js" Component_="min.js" FileName="5min.js" Attributes="0" SourcePath="..\bin\plugins\5min.js" SelfReg="false" Sequence="83"/>
+    <ROW File="mp3tube.js" Component_="min.js" FileName="mp3tube.js" Attributes="0" SourcePath="..\bin\plugins\mp3tube.js" SelfReg="false" Sequence="122"/>
+    <ROW File="msvcm90.dll" Component_="msvcm90.dll" FileName="msvcm90.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC90.CRT\msvcm90.dll" SelfReg="false" Sequence="4"/>
+    <ROW File="msvcp90.dll" Component_="msvcp90.dll" FileName="msvcp90.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC90.CRT\msvcp90.dll" SelfReg="false" Sequence="5"/>
+    <ROW File="msvcr90.dll" Component_="msvcr90.dll" FileName="msvcr90.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC90.CRT\msvcr90.dll" SelfReg="false" Sequence="6"/>
+    <ROW File="myspacetv.js" Component_="min.js" FileName="myspac~1.js|myspacetv.js" Attributes="0" SourcePath="..\bin\plugins\myspacetv.js" SelfReg="false" Sequence="123"/>
+    <ROW File="myspass.js" Component_="min.js" FileName="myspass.js" Attributes="0" SourcePath="..\bin\plugins\myspass.js" SelfReg="false" Sequence="124"/>
+    <ROW File="myvideo.js" Component_="min.js" FileName="myvideo.js" Attributes="0" SourcePath="..\bin\plugins\myvideo.js" SelfReg="false" Sequence="125"/>
+    <ROW File="onehumor.js" Component_="min.js" FileName="onehumor.js" Attributes="0" SourcePath="..\bin\plugins\onehumor.js" SelfReg="false" Sequence="126"/>
+    <ROW File="polish.language" Component_="catala.language" FileName="polish~1.lan|polish.language" Attributes="0" SourcePath="..\bin\languages\polish.language" SelfReg="false" Sequence="60"/>
+    <ROW File="pornfuze.js" Component_="min.js" FileName="pornfuze.js" Attributes="0" SourcePath="..\bin\plugins\pornfuze.js" SelfReg="false" Sequence="127"/>
+    <ROW File="pornhub.js" Component_="min.js" FileName="pornhub.js" Attributes="0" SourcePath="..\bin\plugins\pornhub.js" SelfReg="false" Sequence="128"/>
+    <ROW File="pornotube.js" Component_="min.js" FileName="pornot~1.js|pornotube.js" Attributes="0" SourcePath="..\bin\plugins\pornotube.js" SelfReg="false" Sequence="129"/>
+    <ROW File="portuguese_br.language" Component_="catala.language" FileName="portug~1.lan|portuguese_br.language" Attributes="0" SourcePath="..\bin\languages\portuguese_br.language" SelfReg="false" Sequence="61"/>
+    <ROW File="pp2g.js" Component_="min.js" FileName="pp2g.js" Attributes="0" SourcePath="..\bin\plugins\pp2g.js" SelfReg="false" Sequence="130"/>
+    <ROW File="pthreadGC2.dll" Component_="pthreadGC2.dll" FileName="pthrea~1.dll|pthreadGC2.dll" Attributes="0" SourcePath="..\bin\bin\pthreadGC2.dll" SelfReg="false" Sequence="9"/>
+    <ROW File="pugorama.js" Component_="min.js" FileName="pugorama.js" Attributes="0" SourcePath="..\bin\plugins\pugorama.js" SelfReg="false" Sequence="131"/>
+    <ROW File="redtube.js" Component_="min.js" FileName="redtube.js" Attributes="0" SourcePath="..\bin\plugins\redtube.js" SelfReg="false" Sequence="132"/>
+    <ROW File="romanian.language" Component_="catala.language" FileName="romani~1.lan|romanian.language" Attributes="0" SourcePath="..\bin\languages\romanian.language" SelfReg="false" Sequence="62"/>
+    <ROW File="russian.language" Component_="catala.language" FileName="russia~1.lan|russian.language" Attributes="0" SourcePath="..\bin\languages\russian.language" SelfReg="false" Sequence="63"/>
+    <ROW File="scientificblogging.js" Component_="min.js" FileName="scient~1.js|scientificblogging.js" Attributes="0" SourcePath="..\bin\plugins\scientificblogging.js" SelfReg="false" Sequence="133"/>
+    <ROW File="shredordie.js" Component_="min.js" FileName="shredo~1.js|shredordie.js" Attributes="0" SourcePath="..\bin\plugins\shredordie.js" SelfReg="false" Sequence="134"/>
+    <ROW File="spankwire.js" Component_="min.js" FileName="spankw~1.js|spankwire.js" Attributes="0" SourcePath="..\bin\plugins\spankwire.js" SelfReg="false" Sequence="135"/>
+    <ROW File="spike.js" Component_="min.js" FileName="spike.js" Attributes="0" SourcePath="..\bin\plugins\spike.js" SelfReg="false" Sequence="136"/>
+    <ROW File="streetfire.js" Component_="min.js" FileName="street~1.js|streetfire.js" Attributes="0" SourcePath="..\bin\plugins\streetfire.js" SelfReg="false" Sequence="137"/>
+    <ROW File="swedish.language" Component_="catala.language" FileName="swedis~1.lan|swedish.language" Attributes="0" SourcePath="..\bin\languages\swedish.language" SelfReg="false" Sequence="64"/>
+    <ROW File="szinhaz.js" Component_="min.js" FileName="szinhaz.js" Attributes="0" SourcePath="..\bin\plugins\szinhaz.js" SelfReg="false" Sequence="138"/>
+    <ROW File="tangle.js" Component_="min.js" FileName="tangle.js" Attributes="0" SourcePath="..\bin\plugins\tangle.js" SelfReg="false" Sequence="139"/>
+    <ROW File="tnaflix.js" Component_="min.js" FileName="tnaflix.js" Attributes="0" SourcePath="..\bin\plugins\tnaflix.js" SelfReg="false" Sequence="140"/>
+    <ROW File="tsn.js" Component_="min.js" FileName="tsn.js" Attributes="0" SourcePath="..\bin\plugins\tsn.js" SelfReg="false" Sequence="141"/>
+    <ROW File="tv2.js" Component_="min.js" FileName="tv2.js" Attributes="0" SourcePath="..\bin\plugins\tv2.js" SelfReg="false" Sequence="142"/>
+    <ROW File="tv3.js" Component_="min.js" FileName="tv3.js" Attributes="0" SourcePath="..\bin\plugins\tv3.js" SelfReg="false" Sequence="143"/>
+    <ROW File="ustream.js" Component_="min.js" FileName="ustream.js" Attributes="0" SourcePath="..\bin\plugins\ustream.js" SelfReg="false" Sequence="144"/>
+    <ROW File="video.js" Component_="min.js" FileName="123video.js" Attributes="0" SourcePath="..\bin\plugins\123video.js" SelfReg="false" Sequence="84"/>
+    <ROW File="videoca.js" Component_="min.js" FileName="videoca.js" Attributes="0" SourcePath="..\bin\plugins\videoca.js" SelfReg="false" Sequence="145"/>
+    <ROW File="videologuol.js" Component_="min.js" FileName="videol~1.js|videologuol.js" Attributes="0" SourcePath="..\bin\plugins\videologuol.js" SelfReg="false" Sequence="146"/>
+    <ROW File="vimeo.js" Component_="min.js" FileName="vimeo.js" Attributes="0" SourcePath="..\bin\plugins\vimeo.js" SelfReg="false" Sequence="147"/>
+    <ROW File="wat.js" Component_="min.js" FileName="wat.js" Attributes="0" SourcePath="..\bin\plugins\wat.js" SelfReg="false" Sequence="148"/>
+    <ROW File="xUpdater.exe" Component_="xUpdater.exe" FileName="xUpdater.exe" Attributes="0" SourcePath="..\bin\bin\xUpdater.exe" SelfReg="false" Sequence="10"/>
+    <ROW File="xVST_br.qm" Component_="catala.language" FileName="xVST_br.qm" Attributes="0" SourcePath="..\bin\languages\xVST_br.qm" SelfReg="false" Sequence="65"/>
+    <ROW File="xVST_ca.qm" Component_="catala.language" FileName="xVST_ca.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ca.qm" SelfReg="false" Sequence="66"/>
+    <ROW File="xVST_cz.qm" Component_="catala.language" FileName="xVST_cz.qm" Attributes="0" SourcePath="..\bin\languages\xVST_cz.qm" SelfReg="false" Sequence="67"/>
+    <ROW File="xVST_da.qm" Component_="catala.language" FileName="xVST_da.qm" Attributes="0" SourcePath="..\bin\languages\xVST_da.qm" SelfReg="false" Sequence="68"/>
+    <ROW File="xVST_de.qm" Component_="catala.language" FileName="xVST_de.qm" Attributes="0" SourcePath="..\bin\languages\xVST_de.qm" SelfReg="false" Sequence="69"/>
+    <ROW File="xVST_du.qm" Component_="catala.language" FileName="xVST_du.qm" Attributes="0" SourcePath="..\bin\languages\xVST_du.qm" SelfReg="false" Sequence="70"/>
+    <ROW File="xVST_en.qm" Component_="catala.language" FileName="xVST_en.qm" Attributes="0" SourcePath="..\bin\languages\xVST_en.qm" SelfReg="false" Sequence="71"/>
+    <ROW File="xVST_es.qm" Component_="catala.language" FileName="xVST_es.qm" Attributes="0" SourcePath="..\bin\languages\xVST_es.qm" SelfReg="false" Sequence="72"/>
+    <ROW File="xVST_fr.qm" Component_="catala.language" FileName="xVST_fr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_fr.qm" SelfReg="false" Sequence="73"/>
+    <ROW File="xVST_gl.qm" Component_="catala.language" FileName="xVST_gl.qm" Attributes="0" SourcePath="..\bin\languages\xVST_gl.qm" SelfReg="false" Sequence="74"/>
+    <ROW File="xVST_hu.qm" Component_="catala.language" FileName="xVST_hu.qm" Attributes="0" SourcePath="..\bin\languages\xVST_hu.qm" SelfReg="false" Sequence="75"/>
+    <ROW File="xVST_it.qm" Component_="catala.language" FileName="xVST_it.qm" Attributes="0" SourcePath="..\bin\languages\xVST_it.qm" SelfReg="false" Sequence="76"/>
+    <ROW File="xVST_jp.qm" Component_="catala.language" FileName="xVST_jp.qm" Attributes="0" SourcePath="..\bin\languages\xVST_jp.qm" SelfReg="false" Sequence="77"/>
+    <ROW File="xVST_kr.qm" Component_="catala.language" FileName="xVST_kr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_kr.qm" SelfReg="false" Sequence="78"/>
+    <ROW File="xVST_pl.qm" Component_="catala.language" FileName="xVST_pl.qm" Attributes="0" SourcePath="..\bin\languages\xVST_pl.qm" SelfReg="false" Sequence="79"/>
+    <ROW File="xVST_ro.qm" Component_="catala.language" FileName="xVST_ro.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ro.qm" SelfReg="false" Sequence="80"/>
+    <ROW File="xVST_ru.qm" Component_="catala.language" FileName="xVST_ru.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ru.qm" SelfReg="false" Sequence="81"/>
+    <ROW File="xVST_sv.qm" Component_="catala.language" FileName="xVST_sv.qm" Attributes="0" SourcePath="..\bin\languages\xVST_sv.qm" SelfReg="false" Sequence="82"/>
+    <ROW File="xVideoServiceThief.exe" Component_="xVideoServiceThief.exe" FileName="xVideo~1.exe|xVideoServiceThief.exe" Attributes="0" SourcePath="..\bin\xVideoServiceThief.exe" SelfReg="false" Sequence="1"/>
+    <ROW File="xhamster.js" Component_="min.js" FileName="xhamster.js" Attributes="0" SourcePath="..\bin\plugins\xhamster.js" SelfReg="false" Sequence="149"/>
+    <ROW File="xtube.js" Component_="min.js" FileName="xtube.js" Attributes="0" SourcePath="..\bin\plugins\xtube.js" SelfReg="false" Sequence="150"/>
+    <ROW File="xvideos.js" Component_="min.js" FileName="xvideos.js" Attributes="0" SourcePath="..\bin\plugins\xvideos.js" SelfReg="false" Sequence="151"/>
+    <ROW File="yahoovideo.js" Component_="min.js" FileName="yahoov~1.js|yahoovideo.js" Attributes="0" SourcePath="..\bin\plugins\yahoovideo.js" SelfReg="false" Sequence="152"/>
+    <ROW File="yikers.js" Component_="min.js" FileName="yikers.js" Attributes="0" SourcePath="..\bin\plugins\yikers.js" SelfReg="false" Sequence="153"/>
+    <ROW File="youporn.js" Component_="min.js" FileName="youporn.js" Attributes="0" SourcePath="..\bin\plugins\youporn.js" SelfReg="false" Sequence="154"/>
+    <ROW File="yourfilehost.js" Component_="min.js" FileName="yourfi~1.js|yourfilehost.js" Attributes="0" SourcePath="..\bin\plugins\yourfilehost.js" SelfReg="false" Sequence="155"/>
+    <ROW File="youtube.js" Component_="min.js" FileName="youtube.js" Attributes="0" SourcePath="..\bin\plugins\youtube.js" SelfReg="false" Sequence="156"/>
+    <ROW File="youtubeislam.js" Component_="min.js" FileName="youtub~1.js|youtubeislam.js" Attributes="0" SourcePath="..\bin\plugins\youtubeislam.js" SelfReg="false" Sequence="157"/>
+    <ROW File="yuvutu.js" Component_="min.js" FileName="yuvutu.js" Attributes="0" SourcePath="..\bin\plugins\yuvutu.js" SelfReg="false" Sequence="158"/>
+    <ROW File="zappinternet.js" Component_="min.js" FileName="zappin~1.js|zappinternet.js" Attributes="0" SourcePath="..\bin\plugins\zappinternet.js" SelfReg="false" Sequence="159"/>
+    <ROW File="zedge.js" Component_="min.js" FileName="zedge.js" Attributes="0" SourcePath="..\bin\plugins\zedge.js" SelfReg="false" Sequence="160"/>
+    <ROW File="zuuble.js" Component_="min.js" FileName="zuuble.js" Attributes="0" SourcePath="..\bin\plugins\zuuble.js" SelfReg="false" Sequence="161"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." Languages="en" InstallationType="4"/>
+    <ATTRIBUTE name="CurrentBuild" value="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="default_banner.bmp" SourcePath="&lt;AI_THEMES&gt;classic\resources\default-banner.bmp"/>
+    <ROW Name="default_dialog.bmp" SourcePath="&lt;AI_THEMES&gt;classic\resources\default-dialog.bmp"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ATTRIBUTE name="FixedSizeBitmaps" value="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="3"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="2"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+    <ROW Directory_="downloads_DIR" Component_="downloads"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Uninstall" Directory_="SHORTCUTDIR" Name="Uninst~1|Uninstall" Component_="SHORTCUTDIR" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="xVideoServiceThief" Directory_="DesktopFolder" Name="xVST" Component_="xVideoServiceThief.exe" Target="[#xVideoServiceThief.exe]" Description="Run the xVideoServiceThief and download videos" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="xVideoServiceThief_1" Directory_="SHORTCUTDIR" Name="xVideo~2|xVideoServiceThief" Component_="xVideoServiceThief.exe" Target="[#xVideoServiceThief.exe]" Description="Run the xVideoServiceThief and download videos" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

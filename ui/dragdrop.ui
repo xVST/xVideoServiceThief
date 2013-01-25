@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DragDrop</class>
+ <widget class="QWidget" name="DragDrop">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>90</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>90</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>90</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>241</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>241</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>241</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>241</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Drag&amp;Drop</string>
+  </property>
+  <widget class="QLabel" name="imgVideoService">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>5</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <action name="actDisplayMainWindo">
+   <property name="text">
+    <string>Display main window</string>
+   </property>
+  </action>
+  <action name="actAlphaBlendValue">
+   <property name="text">
+    <string>Alpha blend value</string>
+   </property>
+  </action>
+  <action name="actPasteURLfromClipboard">
+   <property name="text">
+    <string>Paste URL from clipboard</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actAlphaOFF">
+   <property name="text">
+    <string>OFF</string>
+   </property>
+  </action>
+  <action name="actAlpha10">
+   <property name="text">
+    <string>10%</string>
+   </property>
+  </action>
+  <action name="actAlpha20">
+   <property name="text">
+    <string>20%</string>
+   </property>
+  </action>
+  <action name="actAlpha30">
+   <property name="text">
+    <string>30%</string>
+   </property>
+  </action>
+  <action name="actAlpha40">
+   <property name="text">
+    <string>40%</string>
+   </property>
+  </action>
+  <action name="actAlpha50">
+   <property name="text">
+    <string>50%</string>
+   </property>
+  </action>
+  <action name="actAlpha60">
+   <property name="text">
+    <string>60%</string>
+   </property>
+  </action>
+  <action name="actAlpha70">
+   <property name="text">
+    <string>70%</string>
+   </property>
+  </action>
+  <action name="actAlpha80">
+   <property name="text">
+    <string>80%</string>
+   </property>
+  </action>
+  <action name="actAlpha90">
+   <property name="text">
+    <string>90%</string>
+   </property>
+  </action>
+  <action name="actAlphaCustom">
+   <property name="text">
+    <string>Custom</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

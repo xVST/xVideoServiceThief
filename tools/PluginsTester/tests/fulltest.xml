@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tests title="Full Plugins Tests">
+	<test>
+		<plugin file="5min.js" title="5min" />
+		<video url="http://www.5min.com/Video/How-to-Prepare-Steak-For-Grilling-112342234" caption="How to Prepare Steak For Grilling" size="24990188" />
+	</test>
+	<test>
+		<plugin file="123video.js" title="123video" />
+		<video url="http://www.123video.nl/playvideos.asp?MovieID=517065" caption="Etta James - All I Could do was Cry" size="0" />
+	</test>
+	<test>
+		<plugin file="aniboom.js" title="Aniboom" />
+		<video url="http://www.aniboom.com/animation-video/5082/Sucking-Loop/" caption="Sucking Loop" size="4152607" />
+	</test>
+	<test>
+		<plugin file="atom.js" title="Atom" />
+		<video url="http://www.atom.com/funny_videos/bunnykill_2/" caption="Bunnykill #2" size="0" />
+	</test>
+	<test>
+		<plugin file="atv.js" title="ATV" />
+		<video url="http://atv.hu/videotar/090731_megvan_balla_irma_gyilkosa__megsem_a_fia_tette.html" caption="Megvan Balla Irma gyilkosa! M√©gsem a fia tette" size="0" />
+	</test>
+	<test>
+		<plugin file="badjojo.js" title="BadJojo" />
+		<video url="http://www.badjojo.com/482711/super-sexy-kristi-klenot-fucks-hard/" caption="Super Sexy Kristi Klenot Fucks Hard" size="86330556" />
+	</test>
+	<test>
+		<plugin file="bebo.js" title="Bebo (MotionBox)" />
+		<video url="http://www.bebo.com/c/video?FlashBoxId=3702606489&amp;" caption="Thierry Henry P.I.M.P." size="8397814" />
+	</test>
+	<test>
+		<plugin file="blip.js" title="Blip" />
+		<video url="http://blip.tv/file/1854766?utm_source=featured_ep&amp;utm_medium=featured_ep" caption="Ep. 3 - A Boy Named Lewis" size="41995433" />
+	</test>
+<!--
+	<test>
+		<plugin file="boingboing.js" title="BoingBoing (out-of-date)" />
+		<video url="http://tv.boingboing.net/2008/12/30/boing-boing-tv-best-1.html" caption="Boing Boing tv Best of 2008: TCHOcolate Magical Mystery Tour Trilogy" size="60413671" />
+	</test>
+-->
+	<test>
+		<plugin file="break.js" title="Break" />
+		<video url="http://www.break.com/index/cute-girl-has-amazing-beat-box-skills.html" caption="Cute Girl Has Amazing Beat Box Skill" size="5907762" />
+	</test>
+	<test>
+		<plugin file="caught-on-video.js" title="Caught On Tape - HAS REMOTE VIDEOS" />
+		<video url="http://videos.caught-on-video.com/video/cc9e79c8-da6f-4c70-9f92-9b220119fa29.htm" caption="Funny animals!" size="6952025" />
+	</test>
+	<test>
+		<plugin file="ceknito.js" title="Ceknito" />
+		<video url="http://www.ceknito.sk/video/344064" caption="Police Blooper" size="9848781" />
+	</test>
+	<test>
+		<plugin file="cinemavip.js" title="CinemaVip" />
+		<video url="http://www.cinemavip.com/videos/bobina-demo-reel-3" caption="Bobina - Demo Reel" size="9994620" />
+	</test>
+	<test>
+		<plugin file="clip4e.js" title="Clip4e" />
+		<video url="http://www.clip4e.com/play_monkityyy.htm" caption="MONKITYYY" size="14597939" />
+	</test>
+	<test>
+		<plugin file="clipjunkie.js" title="ClipJunkie" />
+		<video url="http://www.clipjunkie.com/Hedgehog-has-a-Snack-vid5258.html" caption="Hedgehog has a Snack" size="1670359" />
+	</test>
+	<test>
+		<plugin file="clipfish.js" title="ClipFish" />
+		<video url="http://www.clipfish.de/video/3113575/schwein-gehabt/" caption="Pfurtz" size="776556" />
+	</test>
+	<test>
+		<plugin file="collagehumor.js" title="CollageHumor" />
+		<video url="http://www.collegehumor.com/moogaloop/video:1911107" caption="Jake and Amir: Snack Attack" size="13377116" />
+	</test>
+	<test>
+		<plugin file="dailymotion.js" title="DailyMotion" />
+		<video url="http://www.dailymotion.com/es/featured/channel/fun/video/x98z7e_el-picadito_fun" caption="El Picadito" size="700974" />
+	</test>
+	<test>
+		<plugin file="demoscene.js" title="Demoscene" />
+		<video url="http://www.demoscene.tv/page.php?id=172&amp;lang=uk&amp;vsmaction=view_prod&amp;id_prod=12700" caption="Liquid Lust" size="28275843" />
+	</test>
+	<test>
+		<plugin file="dalealplay.js" title="DaleAlPlay - RTMP FAILS" />
+		<video url="http://www.dalealplay.com/informaciondecontenido.php?con=175464" caption="LO QUE HACE LAS MUJERES POR DINERO" size="15009025" />
+	</test>
+<!--
+	<test>
+		<plugin file="desisextube.js" title="DesiSexTube" />
+		<video url="http://desisextube.com/vshare/view/1158/just-turned-19/" caption="Just Turned 19" size="12870423" />
+	</test>
+-->
+	<test>
+		<plugin file="disclose.js" title="Disclose" />
+		<video url="http://www.disclose.tv/action/viewvideo/16754/" caption="Human Origin Conspiracy in Trek Terms Video" size="7231933" />
+	</test>
+	<test>
+		<plugin file="dumpalink.js" title="Dumpalink" />
+		<video url="http://dumpalink.com/videos/Bar-cleaning-lady-hits-burglar-with-his-own-crowba.html" caption="Bar Cleaning Lady Hits Burglar With His Own Crowba" size="6609372" />
+	</test>
+	<test>
+		<plugin file="ejb.js" title="EJB" />
+		<video url="http://www.ejb.com/video/20825/Blonde_dancer.html" caption="Blonde Dancer" size="7694286" />
+	</test>
+	<test>
+		<plugin file="elrellano.js" title="elRellano (Video)" />
+		<video url="http://www.elrellano.com/videos_online/3120/tubarros.html" caption="tubarros" size="2132695" />
+	</test>
+	<test>
+		<plugin file="elrellano.js" title="elRellano (Audio)" />
+		<video url="http://www.elrellano.com/audios_online/2971/llanto-efecto-cher.html" caption="Llanto efecto Cher" size="967559" />
+	</test>
+	<test>
+		<plugin file="freecaster.js" title="Freecaster"/>
+		<video url="http://freecaster.tv/1000006/1007689/danny-macaskill-april-2009" caption="MTB - Danny MacAskill April 2009" size="45938165" />
+	</test>
+	<test>
+		<plugin file="gameanyone.js" title="Game Anyone?"/>
+		<video url="http://www.gameanyone.com/video/168110" caption="Part 1" size="91456083" />
+	</test>
+	<test>
+		<plugin file="gamespot.js" title="GameSpot" />
+		<video url="http://www.gamespot.com/xbox360/driving/mxvsatvreflex/video/6209703?hd=1&amp;tag=topslot;watchlink;1" caption="MX vs. ATV Reflex Interview" size="29434335" />
+	</test>	
+	<test>
+		<plugin file="gametrailers.js" title="GameTrailers" />
+		<video url="http://www.gametrailers.com/player/49146.html" caption="Modern Warfare 2" size="9133376" />
+	</test>	
+	<test>
+		<plugin file="glumbert.js" title="Glumbert" />
+		<video url="http://glumbert.com/media/gungranny" caption="Granny Loves Her Gun" size="1943796" />
+	</test>	
+	<test>
+		<plugin file="godofhumor.js" title="GodOfHumor" />
+		<video url="http://www.godofhumor.com/Hot-Hot-Teen-Go-To-The-ATM-video3317.html" caption="Hot Hot Teen Go To The ATM" size="2674667" />
+	</test>	
+	<test>
+		<plugin file="googlevideo.js" title="Google Video" />
+		<video url="http://video.google.es/videoplay?docid=-1926945802003454003" caption="Jonas Brothers y Demi Lovato" size="3299896" />
+	</test>	
+	<test>
+		<plugin file="jizzhut.js" title="Jizz-hut" />
+		<video url="http://www.jizzhut.com/videos/hot-booty---brooke-128693.html" caption="Hot Booty - Brooke" size="83410549" />
+	</test>	
+	<test>
+		<plugin file="keezmovies.js" title="KeezMovies" />
+		<video url="http://www.keezmovies.com/444529" caption="Tight brunette in lime panties" size="109551954" />
+	</test>	
+	<test>
+		<plugin file="kontraband.js" title="Kontraband" />
+		<video url="http://www.kontraband.com/videos/17568/Make-The-Girl-Dance-Baby-Baby-Baby/#show" caption="Make The Girl Dance &amp;#34;Baby Baby Baby&amp;#34;" size="58967063" />
+	</test>	
+	<test>
+		<plugin file="liveleak.js" title="LiveLeak" />
+		<video url="http://www.liveleak.com/view?i=e0d_1242348556" caption="The Coolest Prank Ever!" size="6924694" />
+	</test>	
+	<test>
+		<plugin file="livevideo.js" title="LiveVideo" />
+		<video url="http://www.livevideo.com/video/379588FB0FF14406AC69C76CF2E67397/botox-training-before-and-afte.aspx" caption="Botox training before and after video [Mr Bean]" size="3532149" />
+	</test>	
+	<test>
+		<plugin file="metacafe.js" title="MetaCafe" />
+		<video url="http://www.metacafe.com/watch/2821998/owls_head_park_millennium_skatepark_contest_2006/" caption="Owls Head Park Millennium Skatepark Contest 2006" size="6905408" />
+	</test>	
+	<test>
+		<plugin file="mp3tube.js" title="YehPlay -- MAINTENANCE - CHECK SOON" />
+		<video url="http://www.yehplay.com/musics/Propaganda-da-Loja-Arte-Perfeita/297357/" caption="Propaganda da loja - Arte perfeita" size="2042883" />
+	</test>
+	<test>
+		<plugin file="myspacetv.js" title="MySpaceTv" />
+		<video url="http://vids.myspace.com/index.cfm?fuseaction=vids.individual&amp;videoid=57236060" caption="BEFORE THE LOBOTOMY (LIVE)" size="17388764" />
+	</test>
+	<test>
+		<plugin file="myspass.js" title="MySpass" />
+		<video url="http://www.myspass.de/myspass/shows/tvshows/stromberg/Exklusive-Preview-der-1-Folge--/1015/" caption="Exklusive Preview der 1. Folge" size="15008161" />
+	</test>
+	<test>
+		<plugin file="myvideo.js" title="MyVideo" />
+		<video url="http://www.myvideo.de/watch/4027656/Webcam_Julia_Privat_Akt_mein_erster_Song" caption="Webcam Julia Privat Akt mein erster Song" size="8322363" />
+	</test>
+	<test>
+		<plugin file="onehumor.js" title="OneHumor" />
+		<video url="http://www.onehumor.com/Amazing-Indoor-Soccer-Trick-Shot-video604.html" caption="Amazing Indoor Soccer Trick Shot" size="1695728" />
+	</test>
+	<test>
+		<plugin file="pp2g.js" title="PP2G TV" />
+		<video url="http://www.pp2g.tv/vZno_.aspx" caption="Citton en Stiko Junior - Mag ik je MSN" size="14498454" />
+	</test>
+	<test>
+		<plugin file="pornfuze.js" title="Porn Fuze" />
+		<video url="http://pornfuze.com/pornvideos/busty-red-head-playing-with-her-cunt" caption="Busty red Head Playing With Her Cunt" size="42891751" />
+	</test>
+	<test>
+		<plugin file="pornhub.js" title="PornHub" />
+		<video url="http://www.pornhub.com/view_video.php?viewkey=1273393497" caption="Hot anal threesome" size="131269661" />
+	</test>
+	<test>
+		<plugin file="pornotube.js" title="PornoTube" />
+		<video url="http://www.pornotube.com/channels.php?channelId=83&amp;m=1706692" caption="Private Show" size="12989426" />
+	</test>
+	<test>
+		<plugin file="pugorama.js" title="Pugorama" />
+		<video url="http://pugorama.com/Awesome-Emo-Evelyn-video1228.html" caption="Awesome Emo Evelyn" size="14684550" />
+	</test>
+	<test>
+		<plugin file="shredordie.js" title="Shred or Die" />
+		<video url="http://www.shredordie.com/video/how-i-came-up-with-dennis" caption="How I Came Up with Dennis Durrant" size="35658175" />
+	</test>
+	<test>
+		<plugin file="redtube.js" title="RedTube -- SWF REVERSE ENGINERING NEEDED" />
+		<video url="http://www.redtube.com/21793" caption="Eva and her daughters boyfriend" size="10424777" />
+	</test>
+	<test>
+		<plugin file="scientificblogging.js" title="Scientific Blogging" />
+		<video url="http://video.scientificblogging.com/video/Tommaso-Dorigo-leo2d1" caption="Tommaso Dorigo leo2d1" size="1129291" />
+	</test>	
+	<test>
+		<plugin file="spankwire.js" title="Spankwire" />
+		<video url="http://www.spankwire.com/SUPER-HEAD-Karrine-Stephans/video118962/" caption="SUPER HEAD! Karrine Stephans" size="52129989" />
+	</test>
+	<test>
+		<plugin file="spike.js" title="Spike" />
+		<video url="http://www.spike.com/video/rey-misterio-vs-kurt/2717964" caption="rey misterio vs. kurt angle vs. randy orton" size="45800481" />
+	</test>
+	<test>
+		<plugin file="streetfire.js" title="StreetFire" />
+		<video url="http://videos.streetfire.net/video/2008-Malibu-exhaust_705560.htm" caption="2008 Malibu exhaust" size="4206605" />
+	</test>
+	<test>
+		<plugin file="szinhaz.js" title="Szinhaz.tv" />
+		<video url="http://szinhaz.tv/page/danse_macabre" caption="Danse Macabre" size="39702493" />
+	</test>
+	<test>
+		<plugin file="tangle.js" title="Tangle" />
+		<video url="http://www.tangle.com/view_video.php?viewkey=c5f88145973ff00d3752" caption="The Annoying Groundhog" size="1486508" />
+	</test>
+	<test>
+		<plugin file="tsn.js" title="TSN" />
+		<video url="http://watch.tsn.ca/#clip199252" caption="MLB : Moving Pieces" size="341110" />
+	</test>
+	<test>
+		<plugin file="tv2.js" title="TV2 (tv2.hu)" />
+		<video url="http://tv2.hu/Nyitooldal/Musoraink/Aktiv/Videok/2009-08-27-Vaczi_Gergo_Sandor_Orsival_par" caption="Váczi Gergő Sándor Orsival párbajozott" size="1555598" />
+	</test>
+	<test>
+		<plugin file="tv2.js" title="TV2 (webcast.tv2.hu)" />
+		<video url="http://webcast.tv2.hu/dynamic/index.php?m=embed2&amp;video_id=401445&amp;p=1&amp;nocache=1&amp;ap=0" caption="Váczi Gergő Sándor Orsival párbajozott" size="1555598" />
+	</test>
+	<test>
+		<plugin file="tv3.js" title="TV3 a la Carta" />
+		<video url="http://www.tv3.cat/videos/2627259/Mickeal-el-pescador" caption="Mickeal, el pescador" size="0" />
+	</test>
+	<test>
+		<plugin file="tnaflix.js" title="T'n A flix" />
+		<video url="http://www.tnaflix.com/view_video.php?viewkey=93dc84bef4f6b1d4799f" caption="brooke h-brooke squirts" size="74635990" />
+	</test>
+	<test>
+		<plugin file="videoca.js" title="Video.ca" />
+		<video url="http://www.video.ca/video.php?id=1841568228&amp;mode=views" caption="Toronto Maple Leafs vs New York Islanders #10" size="2037198" />
+	</test>
+	<test>
+		<plugin file="videologuol.js" title="Videolog (UOL)" />
+		<video url="http://videolog.uol.com.br/video.php?id=476528" caption="#01 SAFC" size="34998983" />
+	</test>
+	<test>
+		<plugin file="vimeo.js" title="Vimeo (Standard)" />
+		<video url="http://vimeo.com/3165861" caption="Hacked Rear Projection TV into Multitouch" size="1748659" />
+	</test>	
+	<test>
+		<plugin file="vimeo.js" title="Vimeo (HD)" />
+		<video url="http://vimeo.com/hd#3534334" caption="Sebastian's Voodoo" size="23275108" />
+	</test>	
+	<test>
+		<plugin file="wat.js" title="Wat.tv -- SWF REVERSE ENGINERING NEEDED" />
+		<video url="http://www.wat.tv/video/breakdunkers-1h2zb_1h1iq_.html" caption="BreakDunkers" size="4704298" />
+	</test>
+	<test>
+		<plugin file="xhamster.js" title="XHamster" />
+		<video url="http://xhamster.com/movies/370014/dorm_girls_crazy_party_2_of_4_.html" caption="Dorm girls crazy party (2 of 4)" size="55112394" />
+	</test>
+	<test>
+		<plugin file="xtube.js" title="Xtube" />
+		<video url="http://xtube.com/play_re.php?v=rc0ev-S444-" caption="Katy Kerry Kills Another Dick" size="85269459" />
+	</test>
+	<test>
+		<plugin file="xvideos.js" title="XVideos" />
+		<video url="http://www.xvideos.com/video547981/mad_sex_party_hardcore" caption="Mad sex party hardcore" size="18209834" />
+	</test>
+	<test>
+		<plugin file="yahoovideo.js" title="YahooVideo" />
+		<video url="http://video.yahoo.com/network/101034088?v=5034425" caption="Guy Eats Bricks" size="2971145" />
+	</test>
+	<test>
+		<plugin file="yikers.js" title="Yikers" />
+		<video url="http://www.yikers.com/video_chaos_breaks_out_at_the_mall.html" caption="Chaos breaks out at the mall" size="10770875" />
+	</test>
+	<test>
+		<plugin file="youporn.js" title="YouPorn" />
+		<video url="http://youporn.com/watch/324841/hot-babes-suck-lick-pussy/" caption="Hot Babes Suck &amp;amp; Lick Pussy" size="55017916" />
+	</test>
+	<test>
+		<plugin file="yourfilehost.js" title="YourFileHost" />
+		<video url="http://www.yourfilehost.com/media.php?cat=video&amp;file=6504guts.flv" caption="The female office worker's candid shot" size="2676744" />
+	</test>	
+	<test>
+		<plugin file="youtube.js" title="Youtube"/>
+		<video url="http://www.youtube.com/watch?v=EoqJzjlwIPc" caption="BFN: las lenguas y su aprendizaje" size="14664140" />
+	</test>
+	<test>
+		<plugin file="youtubeislam.js" title="YouTubeIslam - DEPRECATED"/>
+		<video url="http://www.youtubeislam.com/video/6183/EP7--Embryology--ARGreen" caption="EP7 - Embryology - A.R.Green" size="158207248" />
+	</test>
+	<test>
+		<plugin file="yuvutu.js" title="Yuvutu"/>
+		<video url="http://www.yuvutu.com/modules.php?name=Video&amp;op=view&amp;video_id=324519" caption="Watch Us Fuck" size="7997317" />
+	</test>
+	<test>
+		<plugin file="zappinternet.js" title="ZappInternet"/>
+		<video url="http://www.zappinternet.com/video/yuzJkiBveD/Amigos-que-matan" caption="Amigos que matan" size="2563997" />
+	</test>
+	<test>
+		<plugin file="zedge.js" title="Zedge"/>
+		<video url="http://www.zedge.net/videos/155002/hot-girl-funny-video/" caption="Hot Girl Funny" size="1582174" />
+	</test>
+<!--
+	<test>
+		<plugin file="zuuble.js" title="Zuuble - DEPRECATED"/>
+		<video url="http://www.zuuble.com/media/8345/amazing-girl-helicopter-action.html" caption="Amazing Girl Helicopter Action" size="5292972" />
+	</test>
+-->
+</tests>

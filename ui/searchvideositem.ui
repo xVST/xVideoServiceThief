@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchVideosItemImpl</class>
+ <widget class="QWidget" name="SearchVideosItemImpl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>347</width>
+    <height>104</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frmVideoInformation">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="verticalSpacing">
+       <number>2</number>
+      </property>
+      <property name="margin">
+       <number>5</number>
+      </property>
+      <item row="0" column="0" rowspan="4">
+       <widget class="QLabel" name="imgVideo">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="whatsThis">
+         <string>Play video into your webbrowser</string>
+        </property>
+        <property name="accessibleName">
+         <string>Video preview image</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Play video into your webbrowser</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="openExternalLinks">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="6">
+       <widget class="QLabel" name="lblTitle">
+        <property name="text">
+         <string notr="true">&lt;html&gt;&lt;style&gt;em { color: red; }&lt;/style&gt;&lt;body&gt;%1&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" rowspan="2" colspan="6">
+       <widget class="QLabel" name="lblDescription">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string notr="true">&lt;html&gt;&lt;style&gt;em { color: red; }&lt;/style&gt;&lt;body&gt;%1&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="lblPlayVideo">
+        <property name="toolTip">
+         <string>Play video</string>
+        </property>
+        <property name="whatsThis">
+         <string>Play video into your webbrowser</string>
+        </property>
+        <property name="accessibleName">
+         <string>Play video button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Play video into your webbrowser</string>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resources/resources.qrc">:/buttons/images/control_play.png</pixmap>
+        </property>
+        <property name="openExternalLinks">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="lblDuration">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string notr="true">(3:13)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="lblRating">
+        <property name="text">
+         <string>&lt;b&gt;Rating:&lt;/b&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="6">
+       <widget class="QLabel" name="lblDownloadVideo">
+        <property name="toolTip">
+         <string>Download video</string>
+        </property>
+        <property name="whatsThis">
+         <string>Download video</string>
+        </property>
+        <property name="accessibleName">
+         <string>Download video button</string>
+        </property>
+        <property name="accessibleDescription">
+         <string>Download video</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../resources/resources.qrc">:/buttons/images/film_add.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLabel" name="imgRating">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

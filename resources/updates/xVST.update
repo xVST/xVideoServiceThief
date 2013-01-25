@@ -1,0 +1,111 @@
+#MSWINDOWS_STATIC{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="1.8.2 Alpha"
+		size="2307072"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xVideoServiceThief_1_8_1_alpha_static.exe?use_mirror=osdn"
+		packed="false"
+	#END:0
+}
+
+#MSWINDOWS_DYNAMIC{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="1.8.2 Alpha"
+		size="560128"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xVideoServiceThief_1_8_1_alpha_dynamic.exe?use_mirror=osdn"
+		packed="false"
+	#END:0
+}
+
+#LINUX_DYNAMIC{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="1.8.2 Alpha"
+		size="548960"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xVideoServiceThief_1_8_1_alpha_dynamic_linux?use_mirror=osdn"
+		packed="false"
+	#END:0
+}
+
+#MACOSX_DYNAMIC{
+	#FILE:0
+		caption=""
+		version=""
+		size=""
+		installTo=""
+		url=""
+		packed=""
+	#END:0
+}
+
+#COMMON{
+	#FILE:0
+		caption="Language: English (UK)"
+		version="1.3.0"
+		size="236"
+		installTo="/languages/catala.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/english_uk_lang.update"
+		packed="true"
+	#END:0
+	#FILE:1
+		caption="Language: Català (CAT)"
+		version="1.3.0"
+		size="61529"
+		installTo="/languages/catala.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/catala_cat_lang.update"
+		packed="true"
+	#END:1
+	#FILE:2
+		caption="Language: Español (ES)"
+		version="1.3.1"
+		size="63099"
+		installTo="/languages/espanol.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/espanol_es_lang.update"
+		packed="true"
+	#END:2
+	#FILE:3
+		caption="Language: Polish (PL)"
+		version="1.3.0"
+		size="49585"
+		installTo="/languages/polish.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/polish_pl_lang.update"
+		packed="true"
+	#END:3
+	#FILE:4
+		caption="Language: French (FR)"
+		version="1.3.1"
+		size="63242"
+		installTo="/languages/french.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/french_fr_lang.update"
+		packed="true"
+	#END:4
+	#FILE:5
+		caption="Language: Português - Brasil (BR)"
+		version="1.3.1"
+		size="61281"
+		installTo="/languages/portugese_br.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/portugese_br_lang.update"
+		packed="true"
+	#END:5
+	#FILE:6
+		caption="Language: Korean (KR)"
+		version="1.3.0"
+		size="48620"
+		installTo="/languages/korean.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/korean_kr_lang.update"
+		packed="true"
+	#END:6
+	#FILE:7
+		caption="Plugin: Youtube"
+		version="1.0"
+		size="48620"
+		installTo="/plugins/youtube.js"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/korean_kr_lang.update"
+		packed="false"
+		obligatory="true"
+	#END:7
+}

@@ -1,0 +1,829 @@
+2.5:
+------
+
+- Improved the RTMP support (new core based on RTMPDump 2.4 http://rtmpdump.mplayerhq.hu/).
+	- Improved download stability! Yes! You did read it right!
+	- Supported protocols: rtmp, rtmpe, rtmpt, rtmps, rtmpte, rtmpte, rtmfp
+	- SSL support using the PolarSSL library (http://polarssl.org/)
+	- Added live streaming support!
+
+- Added finnish translation (thanks to Tuomas LŠhteenmŠki)
+- Added bulgarian translation (thanks to Vasil Stoev)
+- Added the HTTPS protocol as valid
+- Added 15 new plugins:
+	- MySpace
+	- ExtremeTube (thanks to crapmaster)
+	- Real GF Porn (thanks to crapmaster)
+	- Macho Video (thanks to crapmaster)
+	- Totally nsfw (thanks to crapmaster)
+	- Totally Crap (thanks to crapmaster)
+	- Totally Up Yours (thanks to crapmaster)
+	- My girlfriend vids (thanks to crapmaster)
+	- Home made voyeur (thanks to crapmaster)
+	- WTF People (thanks to crapmaster)
+	- Stolen XXX Videos (thanks to crapmaster)
+	- Newsfilter (thanks to crapmaster)
+	- m90 (thanks to crapmaster)
+	- GirlfriendVids (thanks to crapmaster)
+	- PornTube (thanks to crapmaster)
+
+- Changed plug-ins:
+	- YouTube
+	- Google Videos
+	- TV3 a la Carta
+	- Yuvutu (thanks to crapmaster)
+	- Xhamster
+	- Jizzhut
+	- XTube
+	- Youporn
+	- Clipfish
+
+- Improved the program version comparation algorithm
+
+Windows:
+--------
+
+- Compiled with Qt4.8.1 (dropped static compilation due to Webkit's incompatibilities.)
+
+- Added HTTPS support
+
+Mac OS X:
+---------
+
+- Compiled with Qt 4.7.3
+
+2.4.1.1:
+--------
+
+Mac OS X:
+---------
+
+- Fixed bug (Error: ffmpeg memory fail on Mac OS X on 32 bits)
+
+2.4.1:
+------
+
+- Added support for "RTMPE" Flash protocol
+- Added a confirmation dialog before cleaning the downloads list
+- Added a confirmation dialog before deleting a download
+- Added possibility to add urls from files (separated in lines)
+- Added possibility to paste from clipboard more than one url at same time (separated in lines)
+- Added possibility to drop more than one url at same time (separated in lines)
+- Added new conversion format (mp4 HD)
+
+- Updated catalan translation
+- Updated spanish translation
+- Updated japanese translation
+- Updated german translation
+- Updated italian translation
+
+- Added two new plugins:
+	- XHamster (thanks to Supelex Technologies)
+	- UStream
+
+- Changed plug-in:
+	- Aniboom
+	- Atom
+	- Break
+	- Caught on Tape (before known as Caught on Video)
+	- Cinemavip
+	- DailyMotion
+	- Disclose
+	- Shred or Die
+	- Streetfire
+	- Keezmovies
+	- XHamster
+	- XTube
+	- JizzHut
+
+- Improved all plug-in's icons (reduced icon file size)
+- Improved the internal management of downloads
+- Improved conversion to mp4 (now uses x264 v-codec + presets)
+
+- Fixed bug (Error: Custom video conversion was ignored if the options "Convert downloaded videos" was disabled)
+
+Plug-ins SDK:
+-------------
+
+- Fixed bug (Error: The empty selections were not detected by "copyBetween" function)
+
+Windows:
+--------
+
+- Updated ffmpeg library to version 0.6 (SVN-r25039)
+
+Mac OS X:
+---------
+
+- Compiled with Qt 4.6.3
+
+- Updated ffmpeg library to version 0.6 (SVN-r25039) for 64bits users
+
+- Fixed bug (Error: Modal sheets were not responding to mouse events correctly)
+
+2.4:
+----
+
+- The Http core has been fully rewritten from scratch, the result is a better performance and stability:
+	- The latest Qt4 tecnologies are used
+	- Added gzip support
+	- Added more explicative errors
+	- Imporved the time-out control
+	- Improved the proxy support
+	- Improved the cookies support
+	- Reduced the CPU usage
+
+- Added the "What's new" functionality
+- Added the winPenPack in credits window
+- Added video items multiselection manipulation
+- Added possibility to queue downloads
+- Added the "Error code" in bug-report sent information
+- Added Network configuration options
+- Added Russian translation (thanks to h31)
+
+- Improved the automatic updates
+- Improved the image previewer (search videos)
+
+- Revised English translation
+- Revised Spanish translation
+- Revised Catalan translation
+
+- Changed "Move UP" and "Move DOWN" shortcut to "Alt + up" and "Alt + down"
+- Changed plug-in:
+	- YouTube (new site supported)
+	- YouTubeIslam (renamed to TubeIslam)
+
+- Fixed bug (Error: The session was not restored correctly)
+- Fixed bug (Error: The converted file names where truncated if a "." was present)
+- Fixed bug (Error: The main window was freezed when an active search was interrupted)
+- Fixed bug (Error: The resuming downloads were never started in some rare situations)
+- Fixed bug (Error: The "Invalid URL" error was not assigned with invalid URLs)
+- Fixed bug (Error: The bug-report was not displayed in some rare situations)
+
+Plugins SDK:
+------------
+
+- Added 2 new methods to Http class:
+	- void setCookiesEnabled(bool value)
+	- void setTimeOutOption(bool value)
+
+- Fixed bug (Error: The default separator value of http::getCookies was not assigned)
+- Fixed bug (Error: The default separator value of http::addCookies was not assigned)
+
+2.3.5:
+------
+
+- Compiled with Qt 4.6.2
+
+- Added the possibility to rename the video titles (NOTE: only possible when it is not being downloaded or converted)
+
+- Added one new plug-in:
+	- Szinhaz.tv
+
+- Revised English translation
+- Revised Spanish translation
+- Revised Catalan translation
+
+- Changed plug-in:
+	- Youtube (updated search functions)
+
+- Improved (reduced and trimmed) all internal images for a better performance and reduction of application size
+
+Windows Vista/7:
+----------------
+
+- Added detection and migration of old and read-only downloads directory to a new downloads directory
+
+- Changed the default downloads directory to: "C:/Users/{user}/Videos/xVST"
+
+2.3.4:
+------
+
+- Improved error detections with RTMP protocol
+
+- Fixed bug (Error: If an URL was not valid the program ended with an error)
+
+- Changed plug-ins:
+	- YouPorn
+
+2.3.3:
+------
+
+- Added "No results found" message for searchs with no results
+- Added the time remaining for videos with "no-size" (RTMP protocol)
+
+- Improved time remaining calculation (RTMP and HTTP protocols)
+- Improved video previews in search functions
+- Improved session, when a new video is added the session is saved
+
+- Added one new plug-in:
+	- TV3 a la Carta
+
+- Changed plug-ins:
+	- Google Videos (updated search functions)
+	- Break
+	- Yikers
+	- XTube
+	- Wat.tv
+	- T'n A flix
+	- Yuvutu
+	- StreetFire
+
+Mac OS X:
+---------
+
+- Added GROWL support (if GROWL is not supported the old information popup is displayed)
+
+2.3.2:
+------
+
+- Compiled with Qt 4.6
+
+- Updated program copyright to 2010
+
+- Changed plug-ins:
+	- ClipFish
+
+Windows:
+--------
+
+- Solved problem with downloads on Windows Vista and Windows 7 (fixed upgrading to Qt 4.6)
+
+Mac OS X:
+---------
+
+- Added official Intel 64-bits support
+
+- Improved support on Mac OS X Snow Leopard (32 and 64 bits)
+
+2.3.1:
+------
+
+- Added one new plug-in:
+	- Game Anyone? (thanks to Max Zorloff)
+
+- Changed plug-ins:
+	- YouPorn (added search functions, thanks to Matze Ba)
+	- MyVideo (added search functions, thanks to Matze Ba)
+	- ClipFish (added search functions, thanks to Matze Ba)
+	- YouTube
+	- 5min
+	- Break
+	- Caught-on-video
+	- KeezMovies
+	- MySpass
+	- PornHub
+	- Spike
+	- Tangle
+	- T'n A flix
+	- Vimeo
+
+- Revised Hungarian translation
+
+- Fixed bug (Error: Failed downloads were reported as "Completed" instead of as "Error")
+
+Plugins SDK:
+------------
+
+- Added 5 new helper functions:
+	- String trimString(String str)
+	- String simplifyString(String str)
+	- String programVersion()
+	- String programVersionShort()
+	- String programVersionNumber()
+
+- Fixed bug (Error: The default value of strLastIndexOf was incorrect)
+
+2.3:
+----
+
+- Added possibility to execute the xVST without the loading splash screen (execute with -nosplash)
+- Added possibility to add videos on execution time (if another instance of xVST is running those URLs will be added into the current xVST instance)
+- Added "Plugin Version" information in "Bug Report"
+- Added Italiano translation (thanks to Vecna)
+- Added possibility to pause an item when it is as "Ready" state
+- Added four new plug-in:
+	- Scientific Blogging
+	- TV2.hu
+	- Videolog (UOL)
+	- StreetFire
+
+- Revised English translation
+- Revised Spanish translation
+- Revised Catalan translation
+- Revised Japanese translation
+- Revised Italian translation
+
+- Updated the "Thanks to" list with:
+	- Tilt: Japanese language author
+	- Christian Kieschnick: German language author
+	- Reintjedevos: Dutch language author
+	- Vecna: Italian language author
+	- Daniel Nylander: Swedish language author
+
+- Changed: Only one instance of xVST can run at same time (this can be changed, executing the new xVST instance with parameter -forcenewinstance)
+- Changed plug-ins:
+	- Youtube (updated search functions)
+	- Google Videos (updated search functions)
+	- Youtube
+	- Dailymotion
+	- 5min
+	- Caught-on-video
+	- ClipFish
+	- Metacafe
+	- T'n A flix
+
+- Improved pasting URLs from clipboard (now they are trimmed)
+
+- Fixed bug (Error: Dropped URLs directly to main window were not checked)
+- Fixed bug (Error: The html tags where not removed from file name)
+
+2.2:
+----
+
+- Added RTMP (Adobe Flash streaming) support (thanks to flvstreamer)
+- Added automatic network configuration (automatic proxy detection and configuration)
+- Added two new searching scopes ("All standard services" and "All adult services")
+- Added save/restore last search settings
+- Added dutch translation (thanks to Reintjedevos)
+- Added Japanese translation (thanks to Tilt)
+- Added Changelog in "Information" window
+- Added 11 new plug-ins:
+	- Spankwire
+	- elRellano
+	- Pornfuze
+	- EJB
+	- T'n A flix
+	- Jizz-hut
+	- PP2G TV
+	- Shred or Die
+	- Atom
+	- ATV
+	- TSN
+
+- Changed plug-ins:
+	- Badjojo (added search functions)
+
+- Fixed bug (Error: User-Agent was not send on HTTP requests)
+
+- Changed default searching scope from "All services" to "All standard services"
+
+- Revised the Catalˆ language file
+
+Plug-ins SDK:
+-------------
+
+- Added 1 new property to VideoDefinition class:
+	- String userAgent
+
+- Added 1 new method to Http class:
+	- void setUserAgent(String value)
+Linux:
+------
+
+- Fixed bug (Error: Updates were not installed correctly)
+- Fixed bug (Error: The program updates were not installed correctly)
+
+
+2.1:
+----
+
+- First non ALPHA version!
+
+- Compiled with Qt 4.5.2
+
+- Added search videos feature
+- Added new schedule option
+- Added possibility to add custom downloads (if you have the video URL just enter it and the xVST will download/convert it for you)
+- Added password for UPS! adult content blocking
+- Added ability to Drop video directly to Downloads list
+- Added loading window
+- Added shortcuts to some common actions:
+	- Add video (control + A)
+	- Start download (control + S)
+	- Cancel download (alt + S)
+	- Pause/Resume download (control + P)
+	- Drag & Drop window (control + D)
+	- Check for updates (control + U)
+	- Program options (control + O)
+	- Search videos (control + F)
+	- Program information (control + I or "cmd + ," in Mac OS X)
+	- Move video up (control + up)
+	- Move video down (control + down)
+	- Open downloads directory (control + T)
+	- Online help (F1)
+- Added 16 new plug-ins:
+	- GodOfHumor
+	- Kontraband
+	- Pugorama
+	- OneHumor
+	- Clipjunkie
+	- Wat.tv
+	- CollageHumor
+	- Vimeo (Standard + HD)
+	- Disclose.tv
+	- Yuvutu
+	- Youporn
+	- Pornhub
+	- KeezMovies
+	- Freecaster
+	- GoEar
+	- XVideos
+
+- Removed adult links from Information window when "Block adults content" is enabled
+- Removed adult plugins from blocking list when "Block adults content" is enabled
+
+- Updated completed download pop-up window
+- Updated PayPal icon in main window
+
+- Fixed bug (Error: re-directions were not correctly processed on HEAD requests)
+- Fixed bug (Error: infinite re-directions were not controlled)
+- Fixed bug (Error: ICO and GIF formats weren't supported on static compilations)
+- Fixed bug (Error: The "short" subversions were not compared correctly (i.e: 2.0.0a was equal to 2.0.0))
+- Fixed bug (Error: After cancel the updates the program was finishing throwing an exception)
+- Fixed bug (Error: Expired URL's were not refreshed before start download or resume an existend download)
+
+- Improved visualization of video information
+- Improved visualization of options menu
+
+- Changed plug-ins:
+	- Mp3Tube is now YehPlay
+	- Google videos (added search feature)
+	- YouTube (added search feature)
+
+Plug-ins SDK:
+------------
+
+- Added search plugins core:
+	- function searchVideos(keyWord, pageIndex)
+	- new SearchResults()
+	- void SearchResults::addSearchResult(videoUrl, imageUrl, title, description, duration)
+
+- Added 1 new property to VideoDefinition class:
+	- String headers
+
+- Added 2 new methods to Http class:
+	- void setMaxAutoJumps(int value)
+	- String downloadWebpageHeaders(String URL, String separator = "\n")
+
+- Added 1 new helper function:
+	- Array splitString(String str, String separator, [bool splitBehavior], [bool caseSensitive])
+
+Mac OS X:
+-------
+
+- Added "File", "Controllers", "Tools" and "Help" menu items
+- Added "About xVideoServiceThief" in Application menu
+- Added "Preferences..." in Application menu
+
+- Changed Add Video dialog to Mac OS X Sheet style for better Mac OS X look&feel
+- Changed Languages Manager dialog to Mac OS X Sheet style for better Mac OS X look&feel
+- Changed Credits dialog to Mac OS X Sheet style for better Mac OS X look&feel
+- Changed alternating row color to grey for better Mac OS X look&feel
+- Changed historic.plist and session.plist location to "/{user}/Library/Application Support/xVideoServiceThief/"
+- Changed image plug-ins cache dir to "/{user}/Library/Caches/xVideoServiceThief/plugins-cache"
+
+- Fixed bug (Error: the completed pop-up text were always the same)
+- Fixed bug (Error: window size wasn't correctly saved and restored)
+- Fixed bug (Error: Drag&Drop window wasn't useful)
+- Fixed bug (Error: on empty lists the alternating height row was incorrect)
+
+Windows:
+--------
+
+- Fixed bug (Error: the "checking for updates" dialog was displayed as separated window on task-bar)
+
+- Changed image plug-ins cache dir to "C:\Documents and Settings\{user}\Program files\xVideoServiceThief\plugins-cache"
+
+Linux:
+------
+
+- Changed image plug-ins cache dir to "~/.xVideoServiceThief/plugins-cache"
+- Changed Information dialog size
+
+
+2.0.1a:
+-------
+
+- Added RedTube plugin
+
+- Updated German translation
+- Updated Portuguese translation
+- Updated Hungarian translation
+
+- Fixed bug (Error: After send a bug report an empty message was displayed due to SF.net changes)
+- Fixed bug (Error: Updates files were not parsed in UTF8)
+- Fixed bug (Error: Paths with spaces where not correctly processed)
+
+Windows:
+--------
+
+- Changed config.conf location (moved to "C:\Documents and Settings\{user}\Program files\xVideoServiceThief\"
+
+Windows (Static versions only):
+-------------------------------
+
+- Compiled with VC++ 9.0.2x version instead of VC++ 9.0.3x (wich caused alot of "This application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem." messages.
+
+2.0.0a:
+-------
+
+- Upgraded to Qt 4.5.x
+
+- Changed the internal xVST monolithic core to a dynamic core (based on Plugins)
+- Changed: After a new update, on restart the program will check again for updates
+
+- Added Danish (DA) translation (thanks to Jens Chr. True)
+- Added Portugese - Brasil (BR) translation (thanks to Mateus Tuler)
+- Added Korean (KR) translation (thanks to Lee Evan)
+- Added Hungarian (HU) translation (thanks to Zolt‡n Magyar (ZityiSoft))
+- Added Galician (GL) translation (thanks to Marcos D’az)
+- Added Romanian (RO) translation (thanks to Iulian Temelie)
+- Added German (DE) translation (thanks to Christian Kieschnick)
+- Added Swedish (SV) translation (thanks to Daniel Nylander)
+- Added automatic user language O.S detection
+- Added URL for each video service in "Information" form
+- Added embeded checking for updates at startup
+- Added the possibility to set a custom conversion configuration on add a new video
+- Added sorting for "Downloads log" list (now is sorted from old to new downloads)
+- Added possibility to open urls (double click) in "Downloads log" list
+- Added Paypal donate button in main window
+- Added conditional updates (for future possible complicated updates)
+- Added double click detection on Drag&Drop window (displaying the main window)
+- Added two new formats to convert:
+	- MP4 (*.mp4) format
+	- Sony PSP (*.mp4) format
+
+- Fixed bug (Error: when two or more videos failed an exception was generated)
+- Fixed bug (Error: iPod mp4 format was not converted, thanks to "Jens Chr. True" for your help)
+- Fixed bug (Error: 3gp format was not converted)
+- Fixed bug (Error: editing the "Downloads Dir" manually in Main form, on enter a new char the cursor where placed at end of edit)
+- Fixed bug (Error: Invlaid file names when the video title contains '/' or '\')
+- Fixed bug (Error: Paypal link was corrupt, now the Paypal button links to xVST website donation page)
+- Fixed bug (Error: Open downloads directory in tray icon were not opened)
+- Fixed bug (Error: unneeded "content-length" header was added causing "400 bad request" error in some servers)
+- Fixed bug (Error: speed buttons of Options window where bad linked to mouse actions)
+
+- Updated English language
+- Updated Spanish language
+- Updated Catalan language
+- Updated french language
+- Updated ffmpeg lib to last version (0.5)
+
+- Improved internal HTTP class (added connection timeout)
+- Improved update center (added download error detection)
+
+- Revised all services:
+	- Added HD videos for Youtube
+	- Added HD videos for GameSpot
+	- Added Tangle.com (before GodTube)
+	- Removed Sclipo: Videos are not publics
+	- Removed Stage6: Website closed
+	- Removed Lulu.tv: Website closed (now is lulu.com and its a shopping site)
+	- Removed ZanyVideos: Videos are not publics
+	- Removed Zaable: Now is a strange website (videos seems to be privates)
+	- Removed Broadcaster: Website closed
+	- Removed GodTube: Website changed to Tangle
+	- Removed ZippyVideos: Website seems to be down
+
+xUpdater:
+---------
+
+- Added new function: echo "msg"
+- Added possibility to use " inside the ".."  (i.e: "bla bla \"quoted\" bla bla")
+- Added new optional parameter to "exec" function "wait"  (i.e: exec "app" wait)
+
+Linux:
+------
+
+- Configuration file for linux os is now : ~/.xVideoServiceThief (thanks to AzalSup)
+- Default download directory for linux os is now ~/xVideoServiceThief_downloads (thanks to AzalSup)
+
+Windows:
+--------
+
+- Compiled with last VC++ version (VC++ 2008 express edition)
+
+Windows Vista:
+--------------
+
+- Added detection of Windows Vista for advertise about "administrator permission"
+- Added administrator permission before execute xUpdater
+
+Mac OS X:
+--------
+
+- Added ffmpeg internal detection
+- Resized all windows for better user experience
+- Configuration file for Mac OS X is now: /Users/{User}/Preferences
+- All configuration files are now PLIST's
+
+
+1.8.2a:
+-------
+
+- Added French language file
+
+- Added 3 new services:
+    - GodTube
+    - MyVideo
+    - ClipFish
+
+- Revised 1 service:
+    - MySpaceTV (added service icon)
+
+1.8.1a:
+-------
+
+- Added 2 new services:
+    - MySpass
+    - Mp3Tube
+
+- Revised 2 services:
+    - Dailymotion (added "need login" detection)
+    - 123Video
+
+- The last window size and state is now saved
+
+- Fixed bug (Error: Wrong HTTP request were send (wrong host and path))
+- Fixed bug (Error: The session was not saved correctly)
+
+- Improved internal "VideoItem" class
+
+Windows:
+--------
+
+- Upgraded ffmpeg application to revision 11870
+
+
+1.8a:
+-----
+
+- Added Multiple simultaneous downloads
+- Added possibility to Pause and Resume downloads
+- Added "Stay always on top" option (accessible from trayIcon->Options->Stay always on top)
+- Added "Minimize to System tray" option (accessible from trayIcon->Options->Minimize to System tray)
+- Added "Paste URL from Clipboard" button in "Add Video" form
+- Added "Time Remaining" for video conversions
+- Added After a new installation, the program check for new updates
+- Added "Support this project" button in "Information" form
+- Added "Information" panel in main form (Display items count, downloading count and total download speed)
+- Added "Help messages" (accessible from "?" button)
+- Added "Accessible information" usable for people with disabilities
+- Added possibility to delete videos pressing the "delete" key
+- Added detection of "Need login" videos
+- Added more explicit error messages
+- Added "View error message" option on found errors
+- Added link to "GNU GPL" licence website (in credits form)
+
+- Added 3 new services:
+    - Boingboing TV
+    - GameTrailers
+    - Tudou
+
+- Revised 6 services:
+    - YouTube (added support for embedded videos and added "need login" detection)
+    - Tu.tv (added "need login" detection)
+    - Metacafe
+    - PornoTube
+    - TuPorno
+    - LiveLeak
+
+- Changed licence to GNU GPL v3 (http://www.gnu.org/licenses/gpl.html)
+- Changed main window size
+- Changed Information window size
+- Changed Credits window size
+
+- Fixed bug (Error: Disabling the automatic updates, the downloads were not started) 
+- Fixed bug (Error: On restore session, the missing videos where not deleted from list)
+
+- Revised and sorted the "Tab orders" into the application for a better accessibility
+- Revised all shortcuts and replaced for Standard and cross-platform shortcuts
+
+- Improved error detection (the "Bug report" is only displayed if is a "Connection error" or "Invalid url")
+- Improved the "ProgressBar class" (now is more configurable)
+- Improved internal "HTTP implementation" (full class rewritten)
+
+- Updated English (UK) language file
+- Updated Spanish (ES) language file
+- Updated Catalan (CAT) language file
+
+
+1.7.1a:
+-------
+
+- Fixed bug (Error: downloads were not finished!! ** IMPORTANT **)
+- Fixed bug (Error: "Display popup" option was not saved)
+- Fixed bug (Error: prevent access violation on invalid videos)
+
+1.7a:
+-----
+
+- Added 10 new services:
+    - XTube
+    - Zuuble
+    - ZippyVideos (FLV & WMV videos)
+    - Zedge
+    - Blip
+    - Ceknito
+    - ZanyVideos
+    - Zaable
+    - YouTubeIslam
+    - YourFileHost
+
+- Revised 2 services:
+    - Tu.tv (yes, again... :P)
+    - MySpaceTv
+
+- Fixed bug (Error: external links were not opened... such as "sf.net tracker", "homepage in information form", etc...)
+- Fixed bug (Error: "Content-Length" was now correctly parsed in http class when a ";" was found)
+- Fixed bug (Error: multiple "Bug Reports" were displayed at same time and always the same video)
+
+- Improved download speed average 
+- Improved time remaining calculation
+- Improved TrayIcon (extended display information: current download/conversion video is displayed)
+- Improved internal HTTP class
+- Improved video errors management
+
+
+1.6.1a:
+--------
+
+- Revised 1 service:
+    - Tu.tv
+
+- Fixed bug (Error: the app was closed if the drag&drop window was active and "Bug Report" was closed)
+- Fixed bug (Error: dropped videos were corrupted)
+
+- Improved TrayIcon (on double click over the tray icon, now the main form is restored)
+- Improved internal parser functions
+
+- Revised Spanish (ES) language file
+- Revised Catalan (CAT) language file
+
+1.6a:
+-----
+
+- Added 2 new services:
+    - GameSpot
+    - Stage6
+
+- Revised 2 services:
+    - Dailymotion (also updated Dailymotion icon)
+    - Yuvutu
+
+- Fixed bug (Error: fixed POST and GET methods in http class)
+- Fixed bug (Error: invalid version comparation)
+
+- Revised Polish (PL) language file
+
+1.5a
+----
+
+- Added "Credits" form
+- Added "Error Report" module
+- Added 5 new services:
+    - Tu.tv
+    - Shufuni
+    - Spike
+    - MySpaceTv
+    - CinemaVIP
+
+- Revised 1 service:
+    - Yahoo! Videos
+
+- Changed "Proxy Port" max. value from "4999" to "9999"
+- Changed "Proxy password" "Echo mode -> normal" to "Echo mode -> Password"
+- Changed "xUpdater is missing" warning message, now is only displayed the first time (and not on each executation)
+
+- Fixed bug (Error: when the xUpdater was missing, the videos were not downloaded)
+- Fixed bug (Error: downloads directory modified in main form was not saved)
+- Fixed bug (Error: some downloaded videos were corrupted by stupid http class bug)
+- Fixed bug (Error: the button "check for updates" in Options is now deactivated if xUpdater is missing)
+- Fixed bug (Error: Application updates didn't work!!! ***SHAME***)
+- Fixed bug (Error: xUpdater was not launched as "detached process"!!! ***SHAME***)
+- Fixed bug (Error: the "Checking updates" closed by "X" didn't cancel the update process)
+- Fixed bug (Error: the "Update center" closed by "X" didn't cancel the update process)
+
+- Improved "URL" validation functions
+- Improved "Updates", Dynamic version will download the correspondent "Dynamic xVST" (and not the static version)
+
+Windows:
+--------
+
+- Added Program Version information (.RC)
+
+Linux:
+------
+
+- Fixed bug (Error: "Play video" did not work, file not found error was raised)
+- Fixed bug (Error: "Open downloads directory" did not work, some dist. did not open the directory)
+
+- Changed executable name to "xvst"
+
+Mac OS X:
+---------
+
+- Improved all dialogs
+
+- Changed "Downloads Directory" default dir (to usr/{name}/downloads)

@@ -1,0 +1,1 @@
+call compile.bat vc++ clean

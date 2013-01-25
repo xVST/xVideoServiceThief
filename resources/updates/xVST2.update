@@ -1,0 +1,373 @@
+#MSWINDOWS_STATIC{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="2.0.1 Alpha"
+		size="2977792"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xVST_2_0_1a_windows_static.exe"
+		packed="false"
+		minVersion="2.0.1 Alpha"
+		minVersionUrl="http://xviservicethief.sourceforge.net/index.php?action=downloads#Windows"
+	#END:0
+}
+
+#MSWINDOWS_DYNAMIC{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="2.0.1 Alpha"
+		size="620544"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xVST_2_0_1a_windows_dynamic.exe"
+		packed="false"
+		minVersion="2.0.0 Alpha"
+		minVersionUrl="http://xviservicethief.sourceforge.net/index.php?action=downloads#Windows"
+	#END:0
+}
+
+#LINUX_DYNAMIC{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="2.0.1 Alpha"
+		size="1371595"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xvst_2_0_1a_linux_dynamic"
+		packed="false"
+		minVersion="2.0.0 Alpha"
+		minVersionUrl="http://xviservicethief.sourceforge.net/index.php?action=downloads#Linux"
+	#END:0
+}
+
+#MACOSX_FRAMEWORKS{
+	#FILE:0
+		caption="xVideoServiceThief"
+		version="2.0.1 Alpha"
+		size="11257680"
+		installTo="this"
+		url="http://downloads.sourceforge.net/xviservicethief/xVST_2_0_1a-intel.dmg"
+		packed="true"
+		minVersion="2.0.0 Alpha"
+		minVersionUrl="http://xviservicethief.sourceforge.net/index.php?action=downloads#MacOSX"
+	#END:0
+}
+
+#COMMON{
+	#FILE:0
+		caption="Language: English (UK)"
+		version="2.0.1"
+		size="236"
+		installTo="/languages/english_uk.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/english_uk_lang.update"
+		packed="true"
+	#END:0
+	#FILE:1
+		caption="Language: Català (CAT)"
+		version="2.0.1"
+		size="69390"
+		installTo="/languages/catala.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/catala_cat_lang.update"
+		packed="true"
+	#END:1
+	#FILE:2
+		caption="Language: Español (ES)"
+		version="2.0.2"
+		size="71308"
+		installTo="/languages/espanol.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/espanol_es_lang.update"
+		packed="true"
+	#END:2
+	#FILE:3
+		caption="Language: Czech (CZ)"
+		version="1.2.0"
+		size="29672"
+		installTo="/languages/czech.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/czech_cz_lang.update"
+		packed="true"
+	#END:3
+	#FILE:4
+		caption="Language: Danish (DA)"
+		version="1.2.0"
+		size="54857"
+		installTo="/languages/danish.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/danish_da_lang.update"
+		packed="true"
+	#END:4
+	#FILE:5
+		caption="Language: Français (FR)"
+		version="1.3.1"
+		size="60160"
+		installTo="/languages/french.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/french_fr_lang.update"
+		packed="true"
+	#END:5
+	#FILE:6
+		caption="Language: Galician (GL)"
+		version="1.3.0"
+		size="56900"
+		installTo="/languages/galician.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/galician_gl_lang.update"
+		packed="true"
+	#END:6
+	#FILE:7
+		caption="Language: Hungarian (HU)"
+		version="2.0.1"
+		size="70597"
+		installTo="/languages/hungarian.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/hungarian_hu_lang.update"
+		packed="true"
+	#END:7
+	#FILE:8
+		caption="Language: Korean (KR)"
+		version="1.3.0"
+		size="45235"
+		installTo="/languages/korean.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/korean_kr_lang.update"
+		packed="true"
+	#END:8
+	#FILE:9
+		caption="Language: Polish (PL)"
+		version="1.3.0"
+		size="35293"
+		installTo="/languages/polish.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/polish_pl_lang.update"
+		packed="true"
+	#END:9
+	#FILE:10
+		caption="Language: Português - Brasil (BR)"
+		version="2.0.1"
+		size="58191"
+		installTo="/languages/portuguese_br.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/portuguese_br_lang.update"
+		packed="true"
+	#END:10
+	#FILE:11
+		caption="Language: Swedish (SV)"
+		version="1.3.0"
+		size="37137"
+		installTo="/languages/swedish.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/swedish_sv_lang.update"
+		packed="true"
+	#END:11
+	#FILE:12
+		caption="Language: Romanian (RO)"
+		version="1.3.0"
+		size="32105"
+		installTo="/languages/romanian.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/romanian_ro_lang.update"
+		packed="true"
+	#END:12
+	#FILE:13
+		caption="Language: German (DE)"
+		version="2.0.0"
+		size="67791"
+		installTo="/languages/german.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/german_de_lang.update"
+		packed="true"
+	#END:13
+	#FILE:14
+		caption="Plugin: Youtube"
+		version="1.0.0"
+		size="5590"
+		installTo="/plugins/youtube.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/youtube.js"
+		packed="false"
+		obligatory="true"
+	#END:14
+	#FILE:15
+		caption="Plugin: RedTube"
+		version="1.0.0"
+		size="6772"
+		installTo="/plugins/redtube.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/redtube.js"
+		packed="false"
+		obligatory="true"
+	#END:15
+	#FILE:16
+		caption="Plugin: YehPlay"
+		version="1.0.1"
+		size="6051"
+		installTo="/plugins/mp3tube.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/mp3tube.js"
+		packed="false"
+		obligatory="true"
+	#END:16
+	#FILE:17
+		caption="Plugin: GodOfHumor"
+		version="1.0.0"
+		size="5690"
+		installTo="/plugins/godofhumor.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/godofhumor.js"
+		packed="false"
+		obligatory="true"
+	#END:17
+	#FILE:18
+		caption="Plugin: Kontraband"
+		version="1.0.1"
+		size="6245"
+		installTo="/plugins/kontraband.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/kontraband.js"
+		packed="false"
+		obligatory="true"
+	#END:18
+	#FILE:19
+		caption="Plugin: Pugorama"
+		version="1.0.0"
+		size="1699"
+		installTo="/plugins/pugorama.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/pugorama.js"
+		packed="false"
+		obligatory="true"
+	#END:19
+	#FILE:20
+		caption="Plugin: OneHumor"
+		version="1.0.0"
+		size="1727"
+		installTo="/plugins/onehumor.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/onehumor.js"
+		packed="false"
+		obligatory="true"
+	#END:20
+	#FILE:21
+		caption="Plugin: Wat.tv"
+		version="1.0.1"
+		size="5682"
+		installTo="/plugins/wat.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/wat.js"
+		packed="false"
+		obligatory="true"
+	#END:21
+	#FILE:22
+		caption="Plugin: CollageHumor"
+		version="1.0.0"
+		size="1946"
+		installTo="/plugins/collagehumor.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/collagehumor.js"
+		packed="false"
+		obligatory="true"
+	#END:22
+	#FILE:23
+		caption="Plugin: Vimeo"
+		version="1.0.1"
+		size="6639"
+		installTo="/plugins/vimeo.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/vimeo.js"
+		packed="false"
+		obligatory="true"
+	#END:23
+	#FILE:24
+		caption="Plugin: Disclose.tv"
+		version="1.0.0"
+		size="6602"
+		installTo="/plugins/disclose.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/disclose.js"
+		packed="false"
+		obligatory="true"
+	#END:24
+	#FILE:25
+		caption="Plugin: Yuvutu"
+		version="1.0.0"
+		size="4935"
+		installTo="/plugins/yuvutu.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/yuvutu.js"
+		packed="false"
+		obligatory="true"
+	#END:25
+	#FILE:26
+		caption="Plugin: Youporn"
+		version="1.0.1"
+		size="4225"
+		installTo="/plugins/youporn.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/youporn.js"
+		packed="false"
+		obligatory="true"
+	#END:26
+	#FILE:27
+		caption="Plugin: Pornhub"
+		version="1.0.0"
+		size="1721"
+		installTo="/plugins/pornhub.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/pornhub.js"
+		packed="false"
+		obligatory="true"
+	#END:27
+	#FILE:28
+		caption="Plugin: KeezMovies"
+		version="1.0.0"
+		size="6579"
+		installTo="/plugins/keezmovies.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/keezmovies.js"
+		packed="false"
+		obligatory="true"
+	#END:28
+	#FILE:29
+		caption="Plugin: Glumbert"
+		version="1.0.1"
+		size="4241"
+		installTo="/plugins/glumbert.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/glumbert.js"
+		packed="false"
+		obligatory="true"
+	#END:29
+	#FILE:30
+		caption="Plugin: XTube"
+		version="1.0.1"
+		size="4241"
+		installTo="/plugins/xtube.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/xtube.js"
+		packed="false"
+		obligatory="true"
+	#END:30
+	#FILE:31
+		caption="Plugin: Spike"
+		version="1.0.1"
+		size="2823"
+		installTo="/plugins/spike.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/spike.js"
+		packed="false"
+		obligatory="true"
+	#END:31
+	#FILE:32
+		caption="Plugin: MyVideo"
+		version="1.0.1"
+		size="4804"
+		installTo="/plugins/myvideo.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/myvideo.js"
+		packed="false"
+		obligatory="true"
+	#END:32
+	#FILE:33
+		caption="Plugin: YourFileHost"
+		version="1.0.1"
+		size="5604"
+		installTo="/plugins/yourfilehost.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/yourfilehost.js"
+		packed="false"
+		obligatory="true"
+	#END:33
+	#FILE:34
+		caption="Plugin: Aniboom"
+		version="1.0.1"
+		size="5191"
+		installTo="/plugins/aniboom.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/aniboom.js"
+		packed="false"
+		obligatory="true"
+	#END:34
+	#FILE:35
+		caption="Plugin: BoingBoing"
+		version="1.0.1"
+		size="2729"
+		installTo="/plugins/boingboing.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/boingboing.js"
+		packed="false"
+		obligatory="true"
+	#END:35
+	#FILE:36
+		caption="Plugin: Freecaster"
+		version="1.0.0"
+		size="6250"
+		installTo="/plugins/freecaster.js"
+		url="http://xviservicethief.sourceforge.net/updates/plugins/freecaster.js"
+		packed="false"
+		obligatory="true"
+	#END:36
+}

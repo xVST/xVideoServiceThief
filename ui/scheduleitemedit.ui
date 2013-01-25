@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScheduleItemEditImpl</class>
+ <widget class="QDialog" name="ScheduleItemEditImpl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>354</width>
+    <height>161</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Schedule edition</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0" colspan="3">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Start time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>End time:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QTimeEdit" name="timerStart">
+       <property name="whatsThis">
+        <string>Set the start time</string>
+       </property>
+       <property name="accessibleName">
+        <string>Start time edit</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Set the start time</string>
+       </property>
+       <property name="displayFormat">
+        <string notr="true">hh:mm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTimeEdit" name="timerEnd">
+       <property name="whatsThis">
+        <string>Set the end time</string>
+       </property>
+       <property name="accessibleName">
+        <string>End time edit</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Set the end time</string>
+       </property>
+       <property name="displayFormat">
+        <string notr="true">hh:mm</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Comment:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QLineEdit" name="edtComment">
+       <property name="whatsThis">
+        <string>Set a information comment (this field is optional)</string>
+       </property>
+       <property name="accessibleName">
+        <string>Comment edit</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Set a information comment (this field is optional)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QCheckBox" name="chbActive">
+       <property name="whatsThis">
+        <string>Enable or disable this schedule configuration</string>
+       </property>
+       <property name="accessibleName">
+        <string>Active checkbox</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Enable or disable this schedule configuration</string>
+       </property>
+       <property name="text">
+        <string>Active</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>125</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="btnOk">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="whatsThis">
+      <string>Accept and close this window</string>
+     </property>
+     <property name="accessibleName">
+      <string>Ok button</string>
+     </property>
+     <property name="accessibleDescription">
+      <string>Accept and close this window</string>
+     </property>
+     <property name="text">
+      <string>Ok</string>
+     </property>
+     <property name="autoDefault">
+      <bool>true</bool>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btnCancel">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="whatsThis">
+      <string>Cancel and close this window</string>
+     </property>
+     <property name="accessibleName">
+      <string>Cancel button</string>
+     </property>
+     <property name="accessibleDescription">
+      <string>Cancel and close this window</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>ScheduleItemEditImpl</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>81</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

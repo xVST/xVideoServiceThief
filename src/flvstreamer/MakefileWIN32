@@ -1,0 +1,27 @@
+CC=mingw32-gcc
+CXX=mingw32-g++
+LD=mingw32-ld
+
+CFLAGS=-Wall
+
+CXXFLAGS=
+LDFLAGS=
+
+all: flvstreamer
+
+clean:
+	rm -f *.o
+
+flvstreamer: bytes.o log.o rtmp.o AMFObject.o rtmppacket.o flvstreamer.o parseurl.o handshake.o
+	$(CXX) $(LDFLAGS) $^ -o $@_win32.exe -lws2_32 -lwinmm -lgdi32
+
+bytes.o: bytes.cpp bytes.h Makefile
+log.o: log.cpp log.h Makefile
+rtmp.o: rtmp.cpp rtmp.h log.h AMFObject.h Makefile
+AMFObject.o: AMFObject.cpp AMFObject.h log.h rtmp.h Makefile
+rtmppacket.o: rtmppacket.cpp rtmppacket.h log.h Makefile
+flvstreamer.o: flvstreamer.cpp rtmp.h log.h AMFObject.h Makefile
+parseurl.o: parseurl.cpp parseurl.h log.h Makefile
+streams.o: streams.cpp log.h Makefile
+handshake.o: handshake.cpp log.h Makefile
+

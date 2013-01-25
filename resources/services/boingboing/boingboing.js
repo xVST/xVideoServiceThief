@@ -1,0 +1,69 @@
+/*
+*
+* This file is part of xVideoServiceThief,
+* an open-source cross-platform Video service download
+*
+* Copyright (C) 2007 - 2009 Xesc & Technology
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
+*
+* Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
+* Program URL   : http://xviservicethief.sourceforge.net/
+*
+*/
+
+function RegistVideoService()
+{
+	this.version = "1.0.1";
+	this.minVersion = "2.0.0a";
+	this.author = "Xesc & Technology 2009";
+	this.website = "http://tv.boingboing.net/";
+	this.ID = "tv.boingboing.net";
+	this.caption = "Boing Boing";
+	this.adultContent = false;
+	this.musicSite = false;
+}
+
+function getVideoInformation(url)
+{
+	// video information
+	var result = new VideoDefinition();
+	// download webpage
+	var http = new Http();
+	var html = http.downloadWebpage(url);
+	// get video title
+	result.title = copyBetween(html, "<title>", "</title>");
+	result.title = strReplace(result.title, "- Boing Boing TV", "");
+	// get mp4 url
+	result.URL = copyBetween(html, "<li class=\"entry-videoplayer-meta-download\">", "</li>");
+	result.URL = copyBetween(result.URL, "href=\"", "\"");
+	// set extension
+	result.extension = ".mp4";
+	// return the video information
+	return result;
+}
+
+function getVideoServiceIcon()
+{
+	return new Array(
+		0x89,0x50,0x4e,0x47,0x0d,0x0a,0x1a,0x0a,0x00,0x00,0x00,0x0d,0x49,0x48,0x44,0x52,
+		0x00,0x00,0x00,0x10,0x00,0x00,0x00,0x10,0x02,0x03,0x00,0x00,0x00,0x62,0x9d,0x17,
+		0xf2,0x00,0x00,0x00,0x09,0x50,0x4c,0x54,0x45,0x00,0x00,0x00,0xff,0x00,0x00,0xff,
+		0xff,0xff,0x67,0x19,0x64,0x1e,0x00,0x00,0x00,0x33,0x49,0x44,0x41,0x54,0x08,0x5b,
+		0x63,0x58,0x15,0xb5,0x6a,0x15,0x03,0x82,0x88,0x0a,0xcd,0x82,0x11,0x91,0x40,0x22,
+		0x14,0x4c,0x44,0x68,0x28,0x30,0x44,0x82,0x89,0x10,0x30,0xc1,0x01,0x24,0x32,0x80,
+		0xac,0x50,0x38,0xb1,0x6a,0x05,0x07,0x03,0x90,0xe0,0xe2,0x02,0x00,0x4c,0x44,0x17,
+		0xa3,0x79,0x98,0xfe,0x51,0x00,0x00,0x00,0x00,0x49,0x45,0x4e,0x44,0xae,0x42,0x60,
+		0x82);
+}

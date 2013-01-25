@@ -1,0 +1,94 @@
+<RCC>
+    <qresource prefix="/buttons">
+        <file>images/application_link.png</file>
+        <file>images/arrow_down.png</file>
+        <file>images/arrow_refresh.png</file>
+        <file>images/arrow_up.png</file>
+        <file>images/book_open.png</file>
+        <file>images/control_pause.png</file>
+        <file>images/control_play.png</file>
+        <file>images/control_stop.png</file>
+        <file>images/cross.png</file>
+        <file>images/exit.png</file>
+        <file>images/film_add.png</file>
+        <file>images/film_delete.png</file>
+        <file>images/film_edit.png</file>
+        <file>images/folder_go.png</file>
+        <file>images/information.png</file>
+        <file>images/lock.png</file>
+        <file>images/new.png</file>
+        <file>images/options.png</file>
+        <file>images/paste_plain.png</file>
+        <file>images/play_video.png</file>
+        <file>images/restore.png</file>
+        <file>images/resultset_next.png</file>
+        <file>images/script.png</file>
+        <file>images/script_go.png</file>
+        <file>images/support_button.png</file>
+        <file>images/support_button_main.png</file>
+        <file>images/transmit_blue.png</file>
+        <file>images/add.png</file>
+        <file>images/pencil.png</file>
+        <file>images/clock.png</file>
+        <file>images/search.png</file>
+        <file>images/select_file.png</file>
+        <file>images/urls_file.png</file>
+    </qresource>
+    <qresource prefix="/error">
+        <file>images/errorVideo.png</file>
+        <file>images/view.png</file>
+    </qresource>
+    <qresource prefix="/header">
+        <file>images/DragDropWindow.png</file>
+        <file>images/InformationLogo.png</file>
+        <file>images/header.png</file>
+        <file>images/tick.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>images/film_error.png</file>
+        <file>images/film_go.png</file>
+        <file>images/film_save.png</file>
+    </qresource>
+    <qresource prefix="/options">
+        <file>images/errorReport.png</file>
+        <file>images/language.png</file>
+        <file>images/proxy.png</file>
+        <file>images/session.png</file>
+        <file>images/tools.png</file>
+        <file>images/updates.png</file>
+        <file>images/ups.png</file>
+        <file>images/schedule.png</file>
+    </qresource>
+    <qresource prefix="/services">
+        <file>images/services/no_icon.png</file>
+        <file>images/services/invalid.png</file>
+        <file>images/services/link_error.png</file>
+        <file>images/services/custom_video.png</file>
+        <file>images/service_login.png</file>
+    </qresource>
+    <qresource prefix="/winvistamsg">
+        <file>images/howto_vistaadmin.png</file>
+        <file>images/windows_security.png</file>
+        <file>images/windows_downloads_migratorion.png</file>
+    </qresource>
+    <qresource prefix="/popup">
+        <file>images/finished_background.png</file>
+        <file>images/loading.png</file>
+    </qresource>
+    <qresource prefix="/ups_lock_unlock">
+        <file>images/ups_lock_unlock.png</file>
+    </qresource>
+    <qresource prefix="/search">
+        <file>images/no-preview.png</file>
+        <file>images/loader.gif</file>
+        <file>images/star_empty.png</file>
+        <file>images/star_full.png</file>
+        <file>images/star_half.png</file>
+    </qresource>
+    <qresource prefix="/custom_download">
+        <file>images/custom_download_title.png</file>
+    </qresource>
+    <qresource prefix="/changelog">
+        <file>changelog.txt</file>
+    </qresource>
+</RCC>

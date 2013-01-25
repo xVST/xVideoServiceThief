@@ -1,0 +1,18 @@
+#COMMON{
+	#FILE:0
+		caption="English (UK)"
+		version="1.3.0"
+		size="236"
+		installTo="/languages/english_uk.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/english_uk_lang.update"
+		packed="true"
+	#END:0
+	#FILE:1
+		caption="Catalˆ (UK)"
+		version="1.3.0"
+		size="61529"
+		installTo="/languages/catala.language"
+		url="http://xviservicethief.sourceforge.net/updates/special-files/catala_cat_lang.update"
+		packed="true"
+	#END:1
+}

@@ -1,0 +1,2200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Options</class>
+ <widget class="QDialog" name="Options">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Options</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/resources.qrc">
+    <normaloff>:/buttons/images/options.png</normaloff>:/buttons/images/options.png</iconset>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout">
+   <item row="0" column="0">
+    <widget class="QTreeWidget" name="trvMenu">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>160</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="whatsThis">
+      <string>Options menu</string>
+     </property>
+     <property name="accessibleName">
+      <string>Options menu</string>
+     </property>
+     <property name="accessibleDescription">
+      <string>Options menu</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="uniformRowHeights">
+      <bool>true</bool>
+     </property>
+     <property name="itemsExpandable">
+      <bool>false</bool>
+     </property>
+     <property name="allColumnsShowFocus">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QStackedWidget" name="pgOptions">
+     <property name="currentIndex">
+      <number>6</number>
+     </property>
+     <widget class="QWidget" name="pgBasic">
+      <layout class="QGridLayout">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="gpbDownloads">
+         <property name="title">
+          <string>Downloads</string>
+         </property>
+         <layout class="QGridLayout">
+          <item row="0" column="0" colspan="2">
+           <widget class="QLineEdit" name="edtDownloadsDir">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>21</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string>Path which the downloaded video will be saved</string>
+            </property>
+            <property name="accessibleName">
+             <string>Downloads directory</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Path which the downloaded video will be saved</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QToolButton" name="spbSelectDownloadDir">
+            <property name="minimumSize">
+             <size>
+              <width>23</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>23</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Select the downloads directory</string>
+            </property>
+            <property name="whatsThis">
+             <string>Open the Select directory dialog for select the downloads directory</string>
+            </property>
+            <property name="accessibleName">
+             <string>Select downloads directory</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Open the Select directory dialog for select the downloads directory</string>
+            </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QCheckBox" name="chbDisplayPopup">
+            <property name="whatsThis">
+             <string>If this option is checked, on finish a download/conversion video an information popup window will be displayed</string>
+            </property>
+            <property name="accessibleName">
+             <string>Display popup checkbox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>If this option is checked, on finish a download/conversion video an information popup window will be displayed</string>
+            </property>
+            <property name="text">
+             <string>Display a popup window on finish a download/conversion video</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="lblMaxDownloads">
+            <property name="text">
+             <string>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QSpinBox" name="spinBoxMaxDownloads">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string>Maximum simultaneous downloads value (the recommended value is between 4 and 6)</string>
+            </property>
+            <property name="accessibleName">
+             <string>Maximum simultaneous downloads value</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Maximum simultaneous downloads value (the recommended value is between 4 and 6)</string>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="gpbFFmpegLib">
+         <property name="title">
+          <string>FFmpeg Lib</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="margin">
+           <number>12</number>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="chbInternalFFmpeg">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Internal FFmpeg</string>
+            </property>
+            <property name="tristate">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="edtFFmpegLib">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>21</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string>Path of the ffmpeg library (video conversions program)</string>
+            </property>
+            <property name="accessibleName">
+             <string>Ffmpeg directory</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Path of the ffmpeg library (video conversions program)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="spbSelectFFmpegLib">
+            <property name="minimumSize">
+             <size>
+              <width>23</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>23</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string>Select the ffmpeg directory</string>
+            </property>
+            <property name="whatsThis">
+             <string>Open the Select directory dialog for select the ffmpeg directory</string>
+            </property>
+            <property name="accessibleName">
+             <string>Select ffmpeg directory</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Open the Select directory dialog for select the ffmpeg directory</string>
+            </property>
+            <property name="text">
+             <string>...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QGroupBox" name="gpbVideoConversion">
+         <property name="whatsThis">
+          <string>Enable/disable the video conversions</string>
+         </property>
+         <property name="accessibleName">
+          <string>Convert videos</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>Enable/disable the video conversions</string>
+         </property>
+         <property name="title">
+          <string>Convert videos to Mpeg/DivX/etc...</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout">
+          <property name="margin">
+           <number>12</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="lblOutputFormat">
+            <property name="text">
+             <string>Output format:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="cmbOutputFormat">
+            <property name="whatsThis">
+             <string>Video output format</string>
+            </property>
+            <property name="accessibleName">
+             <string>Video output format combobox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Video output format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="lblVideoResolution">
+            <property name="text">
+             <string>Video resolution:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QComboBox" name="cmbVideoResolution">
+            <property name="whatsThis">
+             <string>Video resolution</string>
+            </property>
+            <property name="accessibleName">
+             <string>Video resolution combobox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Video resolution</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="lblAudioSampling">
+            <property name="text">
+             <string>Audio sampling rate (Hz):</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="cmbAudioSampling">
+            <property name="whatsThis">
+             <string>Video audio sampling rate (Hz)</string>
+            </property>
+            <property name="accessibleName">
+             <string>Video audio sampling rate combobox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Video audio sampling rate (Hz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="lblVideoFrameRate">
+            <property name="text">
+             <string>Video frame rate (Hz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QComboBox" name="cmbVideoFrameRate">
+            <property name="whatsThis">
+             <string>Video frame rate (Hz)</string>
+            </property>
+            <property name="accessibleName">
+             <string>Video frame rate combobox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Video frame rate (Hz)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="lblOutputQuality">
+            <property name="text">
+             <string>Output quality:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="3">
+           <widget class="QComboBox" name="cmbOutputQuality">
+            <property name="whatsThis">
+             <string>General video output quality</string>
+            </property>
+            <property name="accessibleName">
+             <string>General video output quality combobox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>General video output quality</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="4">
+           <widget class="QCheckBox" name="chbDeleteOriginalVideo">
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string>If this option is checked, after convert a downloaded video, the original video (FLV) is deleted from your hard disk</string>
+            </property>
+            <property name="accessibleName">
+             <string>Delete original video after conversion checkbox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>If this option is checked, after convert a downloaded video, the original video (FLV) is deleted from your hard disk</string>
+            </property>
+            <property name="text">
+             <string>Delete the original downloaded file after the conversion</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pgLanguage">
+      <layout class="QGridLayout">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="gpbLanguage">
+         <property name="title">
+          <string>Language Configuration </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_1">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lblSelectLanguage">
+            <property name="text">
+             <string>Select a language file from the list:</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTreeWidget" name="lsvLanguages">
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string>List with all installed languages</string>
+            </property>
+            <property name="accessibleName">
+             <string>Languages list</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>List with all installed languages</string>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="uniformRowHeights">
+             <bool>true</bool>
+            </property>
+            <property name="itemsExpandable">
+             <bool>false</bool>
+            </property>
+            <property name="allColumnsShowFocus">
+             <bool>true</bool>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="btnAddNewLanguages">
+            <property name="text">
+             <string>Languages manager</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" rowspan="3">
+           <widget class="QGroupBox" name="gpbLanguageInfo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Language information</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblLanguageTitle">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Language</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="lblLanguage">
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="lblVersionTitle">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Version:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLabel" name="lblVersion">
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="lblAuthorTitle">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Author:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLabel" name="lblAuthor">
+               <property name="text">
+                <string>-</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="lblContactTitle">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Contact:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLabel" name="lblContact">
+               <property name="text">
+                <string>-</string>
+               </property>
+               <property name="openExternalLinks">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="2">
+              <widget class="QLabel" name="lblDescription">
+               <property name="text">
+                <string>Description:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0" colspan="2">
+              <widget class="QTextBrowser" name="rchDescription"/>
+             </item>
+             <item row="6" column="0" colspan="2">
+              <widget class="QPushButton" name="btnUseThis">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Use this language</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pgSession">
+      <layout class="QGridLayout">
+       <item row="0" column="1">
+        <spacer name="spacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="spacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QGroupBox" name="gpbSession">
+         <property name="title">
+          <string>Session Configuration </string>
+         </property>
+         <layout class="QGridLayout">
+          <property name="margin">
+           <number>12</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="boxLayout_5">
+            <item>
+             <widget class="QCheckBox" name="chbSaveRestore">
+              <property name="whatsThis">
+               <string>If this option is checked, on close the xVideoServiceThief, the downloads list will be saved (and restored on open again the xVST)</string>
+              </property>
+              <property name="accessibleName">
+               <string>Save and restore current session checkbox</string>
+              </property>
+              <property name="accessibleDescription">
+               <string>If this option is checked, on close the xVideoServiceThief, the downloads list will be saved (and restored on open again the xVST)</string>
+              </property>
+              <property name="text">
+               <string>Save and restore the current session</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="boxLayout_6">
+              <item>
+               <spacer name="spacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>16</width>
+                  <height>16</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="chbDontrestoreDownloads">
+                <property name="whatsThis">
+                 <string>If this option is checked, the completed videos will not be restored in next session</string>
+                </property>
+                <property name="accessibleName">
+                 <string>Don't restore downloaded videos</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>If this option is checked, the completed videos will not be restored in next session</string>
+                </property>
+                <property name="text">
+                 <string>Don't restore downloaded videos</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="spacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>6</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="chbSaveLog">
+              <property name="whatsThis">
+               <string>If this option is checked, the xVST will save a log with all downloaded videos (Date + Title + URL)</string>
+              </property>
+              <property name="accessibleName">
+               <string>Save log checkbox</string>
+              </property>
+              <property name="accessibleDescription">
+               <string>If this option is checked, the xVST will save a log with all downloaded videos (Date + Title + URL)</string>
+              </property>
+              <property name="text">
+               <string>Save a Log with all downloaded videos (Date + Title + URL)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="boxLayout_7">
+              <item>
+               <spacer name="spacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>150</width>
+                  <height>27</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnViewLog">
+                <property name="minimumSize">
+                 <size>
+                  <width>111</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="whatsThis">
+                 <string>Open the Log viewer</string>
+                </property>
+                <property name="accessibleName">
+                 <string>Log viewer button</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>Open the Log viewer</string>
+                </property>
+                <property name="text">
+                 <string>View Log</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnClearLog">
+                <property name="minimumSize">
+                 <size>
+                  <width>111</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="whatsThis">
+                 <string>Clear the current downloads log</string>
+                </property>
+                <property name="accessibleName">
+                 <string>Clear log button</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>Clear the current downloads log</string>
+                </property>
+                <property name="text">
+                 <string>Clear Log</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="spacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="2">
+        <spacer name="spacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pgUpdates">
+      <layout class="QGridLayout">
+       <item row="0" column="1">
+        <spacer name="spacer_12">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="spacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" rowspan="2">
+        <widget class="QGroupBox" name="gpbUpdates">
+         <property name="title">
+          <string>Updates Configuration</string>
+         </property>
+         <layout class="QGridLayout">
+          <property name="margin">
+           <number>12</number>
+          </property>
+          <item row="0" column="0" colspan="2">
+           <widget class="QCheckBox" name="chbCheckOnStartup">
+            <property name="whatsThis">
+             <string>If this option is checked, on program startup the xVST will check for new versions</string>
+            </property>
+            <property name="accessibleName">
+             <string>Check for updates checkbox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>If this option is checked, on program startup the xVST will check for new versions</string>
+            </property>
+            <property name="text">
+             <string>Check for new versions on program startup</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <layout class="QHBoxLayout" name="boxLayout_8">
+            <item>
+             <widget class="QLabel" name="lblUpdateEvery">
+              <property name="text">
+               <string>Check for new versions every:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cmbUpdateEvery">
+              <property name="whatsThis">
+               <string>Period of time which automatic updates will check for new versions</string>
+              </property>
+              <property name="accessibleName">
+               <string>Period of time combobox</string>
+              </property>
+              <property name="accessibleDescription">
+               <string>Period of time which automatic updates will check for new versions</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <spacer name="spacer_14">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>16</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <widget class="QCheckBox" name="chbInstallAutomatically">
+            <property name="whatsThis">
+             <string>If this option is checked, the xVST will download and install automatically the new updates</string>
+            </property>
+            <property name="accessibleName">
+             <string>Install automatically new versions checkbox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>If this option is checked, the xVST will download and install automatically the new updates</string>
+            </property>
+            <property name="text">
+             <string>Install automatically the new versions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="btnCheckNow">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="whatsThis">
+             <string>Check now for new updates</string>
+            </property>
+            <property name="accessibleName">
+             <string>Check updates button</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Check now for new updates</string>
+            </property>
+            <property name="text">
+             <string>Check for new versions</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <spacer name="spacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>201</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <spacer name="spacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="1">
+        <spacer name="spacer_10">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pgUps">
+      <layout class="QGridLayout">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="gpbUps">
+         <property name="title">
+          <string>Ups! Configuration</string>
+         </property>
+         <layout class="QGridLayout">
+          <property name="margin">
+           <number>12</number>
+          </property>
+          <item row="0" column="0" colspan="3">
+           <widget class="QCheckBox" name="chbDisableAdultSupport">
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string>If this option is checked, the support of adult websites will be disabled</string>
+            </property>
+            <property name="accessibleName">
+             <string>Disable adult websites support checkbox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>If this option is checked, the support of adult websites will be disabled</string>
+            </property>
+            <property name="text">
+             <string>Disable adult websites support</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QLabel" name="lblUpsInfo">
+            <property name="text">
+             <string>Select which websites are allowed and which websites must be blocked:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="lblAllowed">
+            <property name="text">
+             <string>Allowed websites:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="lblBlocked">
+            <property name="text">
+             <string>Blocked websites:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <layout class="QVBoxLayout" name="boxLayout_9">
+            <item>
+             <spacer name="spacer_16">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QToolButton" name="spbRemove">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>66</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>&lt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="spbRemoveAll">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>66</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>&lt;&lt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="spbAddAll">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>66</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>&gt;&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="spbAdd">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>66</width>
+                <height>22</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="spacer_15">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <widget class="QTreeWidget" name="lsvServices1">
+            <property name="palette">
+             <palette>
+              <active>
+               <colorrole role="AlternateBase">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>255</red>
+                  <green>243</green>
+                  <blue>197</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </active>
+              <inactive>
+               <colorrole role="AlternateBase">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>255</red>
+                  <green>243</green>
+                  <blue>197</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </inactive>
+              <disabled>
+               <colorrole role="AlternateBase">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>255</red>
+                  <green>243</green>
+                  <blue>197</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </disabled>
+             </palette>
+            </property>
+            <property name="whatsThis">
+             <string>Allowed websites list</string>
+            </property>
+            <property name="accessibleName">
+             <string>Allowed websites list</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Allowed websites list</string>
+            </property>
+            <property name="dragEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="uniformRowHeights">
+             <bool>true</bool>
+            </property>
+            <property name="itemsExpandable">
+             <bool>false</bool>
+            </property>
+            <property name="allColumnsShowFocus">
+             <bool>true</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QTreeWidget" name="lsvServices2">
+            <property name="palette">
+             <palette>
+              <active>
+               <colorrole role="AlternateBase">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>255</red>
+                  <green>243</green>
+                  <blue>197</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </active>
+              <inactive>
+               <colorrole role="AlternateBase">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>255</red>
+                  <green>243</green>
+                  <blue>197</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </inactive>
+              <disabled>
+               <colorrole role="AlternateBase">
+                <brush brushstyle="SolidPattern">
+                 <color alpha="255">
+                  <red>255</red>
+                  <green>243</green>
+                  <blue>197</blue>
+                 </color>
+                </brush>
+               </colorrole>
+              </disabled>
+             </palette>
+            </property>
+            <property name="whatsThis">
+             <string>Blocked websites list</string>
+            </property>
+            <property name="accessibleName">
+             <string>Blocked websites list</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Blocked websites list</string>
+            </property>
+            <property name="dragEnabled">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>true</bool>
+            </property>
+            <property name="dragDropMode">
+             <enum>QAbstractItemView::NoDragDrop</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::ExtendedSelection</enum>
+            </property>
+            <property name="rootIsDecorated">
+             <bool>false</bool>
+            </property>
+            <property name="uniformRowHeights">
+             <bool>true</bool>
+            </property>
+            <property name="itemsExpandable">
+             <bool>false</bool>
+            </property>
+            <property name="allColumnsShowFocus">
+             <bool>true</bool>
+            </property>
+            <column>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pgSchedule">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Schedule Configuration</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="chbDownloadVideosAuto">
+            <property name="whatsThis">
+             <string>Enable or disable automatic downloads</string>
+            </property>
+            <property name="accessibleName">
+             <string>Download videos automatically checkbox</string>
+            </property>
+            <property name="accessibleDescription">
+             <string>Download videos automatically</string>
+            </property>
+            <property name="text">
+             <string>Download videos automatically</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="leftMargin">
+             <number>25</number>
+            </property>
+            <item>
+             <widget class="QCheckBox" name="chbScheduleEnabled">
+              <property name="whatsThis">
+               <string>Enable or disable user shcedules</string>
+              </property>
+              <property name="accessibleName">
+               <string>Schedules checkbox</string>
+              </property>
+              <property name="accessibleDescription">
+               <string>Enable or disable user shcedules</string>
+              </property>
+              <property name="text">
+               <string>Customize my schedule download</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>15</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QTreeWidget" name="lsvSchedules">
+                <property name="palette">
+                 <palette>
+                  <active>
+                   <colorrole role="AlternateBase">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>243</green>
+                      <blue>197</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </active>
+                  <inactive>
+                   <colorrole role="AlternateBase">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>243</green>
+                      <blue>197</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </inactive>
+                  <disabled>
+                   <colorrole role="AlternateBase">
+                    <brush brushstyle="SolidPattern">
+                     <color alpha="255">
+                      <red>255</red>
+                      <green>243</green>
+                      <blue>197</blue>
+                     </color>
+                    </brush>
+                   </colorrole>
+                  </disabled>
+                 </palette>
+                </property>
+                <property name="whatsThis">
+                 <string>List of user schedules</string>
+                </property>
+                <property name="accessibleName">
+                 <string>Shcedules list</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>List of user schedules</string>
+                </property>
+                <property name="alternatingRowColors">
+                 <bool>true</bool>
+                </property>
+                <property name="rootIsDecorated">
+                 <bool>false</bool>
+                </property>
+                <property name="uniformRowHeights">
+                 <bool>true</bool>
+                </property>
+                <property name="itemsExpandable">
+                 <bool>false</bool>
+                </property>
+                <property name="allColumnsShowFocus">
+                 <bool>true</bool>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="spacing">
+               <number>1</number>
+              </property>
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QToolButton" name="spbAddSchedule">
+                <property name="minimumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Add new schedule</string>
+                </property>
+                <property name="whatsThis">
+                 <string>Adds a new schedule configuration</string>
+                </property>
+                <property name="accessibleName">
+                 <string>New schedule button</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>Adds a new schedule configuration</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../resources/resources.qrc">
+                  <normaloff>:/buttons/images/add.png</normaloff>:/buttons/images/add.png</iconset>
+                </property>
+                <property name="autoRaise">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="spbEditSchedule">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Edit selected schedule</string>
+                </property>
+                <property name="statusTip">
+                 <string/>
+                </property>
+                <property name="accessibleName">
+                 <string>Edit selected shedule</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>Edit the selected schedule configuration</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../resources/resources.qrc">
+                  <normaloff>:/buttons/images/pencil.png</normaloff>:/buttons/images/pencil.png</iconset>
+                </property>
+                <property name="autoRaise">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QToolButton" name="spbRemoveSchedule">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Remove selected schedule</string>
+                </property>
+                <property name="accessibleName">
+                 <string>Remove selected schedule</string>
+                </property>
+                <property name="accessibleDescription">
+                 <string>Remove the selected schedule configuration</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="../resources/resources.qrc">
+                  <normaloff>:/buttons/images/cross.png</normaloff>:/buttons/images/cross.png</iconset>
+                </property>
+                <property name="autoRaise">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pgProxy">
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="1" rowspan="2">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>Http configuration</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="1" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QCheckBox" name="chbTimeOut">
+                <property name="text">
+                 <string>Time-out:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBoxTimeOut">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>100</number>
+                </property>
+                <property name="value">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>sec.</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Expanding</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Max. retries:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBoxMaxRetries">
+                <property name="minimum">
+                 <number>1</number>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="2" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Time remaining calculation:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cmbTimeRemaining"/>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="chbDeleteFileOnError">
+              <property name="text">
+               <string>Delete the downloaded file on download error</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string>Proxy configuration</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="chbProxySystemConfig">
+              <property name="text">
+               <string>Use the system configuration</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QGroupBox" name="gpbProxy">
+              <property name="minimumSize">
+               <size>
+                <width>340</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="whatsThis">
+               <string>Enable/disable proxy support</string>
+              </property>
+              <property name="accessibleName">
+               <string>Enable/disable proxy support</string>
+              </property>
+              <property name="accessibleDescription">
+               <string>Enable/disable proxy support</string>
+              </property>
+              <property name="title">
+               <string>Use proxy server</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <layout class="QGridLayout" name="_2">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="lblUserName">
+                 <property name="text">
+                  <string>User name:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="lblPassword">
+                 <property name="text">
+                  <string>Password:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QLineEdit" name="edtUserName">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>21</height>
+                  </size>
+                 </property>
+                 <property name="whatsThis">
+                  <string>User name of your proxy configuration</string>
+                 </property>
+                 <property name="accessibleName">
+                  <string>Proxy user name</string>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string>User name of your proxy configuration</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2" colspan="2">
+                <widget class="QLineEdit" name="edtPassword">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>21</height>
+                  </size>
+                 </property>
+                 <property name="whatsThis">
+                  <string>Password of your proxy configuration</string>
+                 </property>
+                 <property name="accessibleName">
+                  <string>Proxy password</string>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string>Password of your proxy configuration</string>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="2">
+                <widget class="QLabel" name="lblAdress">
+                 <property name="text">
+                  <string>Adress:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3" rowspan="2">
+                <layout class="QVBoxLayout" name="boxLayout_3">
+                 <item>
+                  <widget class="QLabel" name="lblPort">
+                   <property name="text">
+                    <string>Port:</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QSpinBox" name="spinBoxPort">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>21</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="whatsThis">
+                    <string>Port of your proxy configuration</string>
+                   </property>
+                   <property name="accessibleName">
+                    <string>Proxy port</string>
+                   </property>
+                   <property name="accessibleDescription">
+                    <string>Port of your proxy configuration</string>
+                   </property>
+                   <property name="minimum">
+                    <number>1</number>
+                   </property>
+                   <property name="maximum">
+                    <number>9999</number>
+                   </property>
+                   <property name="value">
+                    <number>1</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item row="3" column="0" colspan="3">
+                <widget class="QLineEdit" name="edtAdress">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>21</height>
+                  </size>
+                 </property>
+                 <property name="whatsThis">
+                  <string>Adress of your proxy configuration</string>
+                 </property>
+                 <property name="accessibleName">
+                  <string>Proxy adress</string>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string>Adress of your proxy configuration</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="lblProxyType">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Proxy type:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QComboBox" name="cmbProxyType">
+                 <property name="whatsThis">
+                  <string>Type of your proxy configuration</string>
+                 </property>
+                 <property name="accessibleName">
+                  <string>Proxy type</string>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string>Type of your proxy configuration</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>5</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="2" rowspan="2">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>59</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>60</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout">
+       <item row="0" column="1">
+        <spacer name="spacer_20">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="0">
+        <spacer name="spacer_18">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>41</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="gpbDisplayErrorReport">
+         <property name="minimumSize">
+          <size>
+           <width>400</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="whatsThis">
+          <string>Enable/disable the &quot;Bug report&quot; window on video Error</string>
+         </property>
+         <property name="accessibleName">
+          <string>Bug report</string>
+         </property>
+         <property name="accessibleDescription">
+          <string>Enable/disable the &quot;Bug report&quot; window on video Error</string>
+         </property>
+         <property name="title">
+          <string>Display &quot;Bug Report&quot; window on Video error</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lblErrorReportInfo">
+            <property name="text">
+             <string>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</string>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="openExternalLinks">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <spacer name="spacer_17">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>21</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <spacer name="spacer_19">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="boxLayout_4">
+     <item>
+      <widget class="QCheckBox" name="chbRememberView">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string>If this option is checked, on open again the &quot;Options&quot; dialog, the last page viewed (Basic, Language, etc...) is displayed again (only for this session)</string>
+       </property>
+       <property name="accessibleName">
+        <string>Remember last viewed options page checkbox</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>If this option is checked, on open again the &quot;Options&quot; dialog, the last page viewed (Basic, Language, etc...) is displayed again (only for this session)</string>
+       </property>
+       <property name="text">
+        <string>Remember last viewed options page (only for this session)</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnOk">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="whatsThis">
+        <string>Save and close the current configuration</string>
+       </property>
+       <property name="accessibleName">
+        <string>Save and close button</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Save and close the current configuration</string>
+       </property>
+       <property name="text">
+        <string>Ok</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="whatsThis">
+        <string>Close without saving changes</string>
+       </property>
+       <property name="accessibleName">
+        <string>Cancel and close button</string>
+       </property>
+       <property name="accessibleDescription">
+        <string>Close without saving changes</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>trvMenu</tabstop>
+  <tabstop>edtDownloadsDir</tabstop>
+  <tabstop>spbSelectDownloadDir</tabstop>
+  <tabstop>chbDisplayPopup</tabstop>
+  <tabstop>spinBoxMaxDownloads</tabstop>
+  <tabstop>edtFFmpegLib</tabstop>
+  <tabstop>spbSelectFFmpegLib</tabstop>
+  <tabstop>gpbVideoConversion</tabstop>
+  <tabstop>cmbOutputFormat</tabstop>
+  <tabstop>cmbVideoResolution</tabstop>
+  <tabstop>cmbAudioSampling</tabstop>
+  <tabstop>cmbVideoFrameRate</tabstop>
+  <tabstop>cmbOutputQuality</tabstop>
+  <tabstop>chbDeleteOriginalVideo</tabstop>
+  <tabstop>lsvLanguages</tabstop>
+  <tabstop>rchDescription</tabstop>
+  <tabstop>chbSaveRestore</tabstop>
+  <tabstop>chbDontrestoreDownloads</tabstop>
+  <tabstop>chbSaveLog</tabstop>
+  <tabstop>btnViewLog</tabstop>
+  <tabstop>btnClearLog</tabstop>
+  <tabstop>chbCheckOnStartup</tabstop>
+  <tabstop>cmbUpdateEvery</tabstop>
+  <tabstop>chbInstallAutomatically</tabstop>
+  <tabstop>btnCheckNow</tabstop>
+  <tabstop>chbDisableAdultSupport</tabstop>
+  <tabstop>lsvServices1</tabstop>
+  <tabstop>lsvServices2</tabstop>
+  <tabstop>spbRemove</tabstop>
+  <tabstop>spbRemoveAll</tabstop>
+  <tabstop>spbAddAll</tabstop>
+  <tabstop>spbAdd</tabstop>
+  <tabstop>gpbDisplayErrorReport</tabstop>
+  <tabstop>chbRememberView</tabstop>
+  <tabstop>btnOk</tabstop>
+  <tabstop>btnCancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Options</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>647</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>679</x>
+     <y>243</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>443</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PluginsTester</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Test schema:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="edtTestFile">
+        <property name="text">
+         <string>/Users/xEsk/Documents/programacio/Qt4/xVST/tools/PluginsTester/tests/fulltest.xml</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="toolBtnSelectTest">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Plugins dir:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="edtPluginsDir">
+        <property name="text">
+         <string>/Users/xEsk/Documents/programacio/Qt4/xVST/bin/plugins/</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="toolBtnSelectPluginsDir">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QTreeWidget" name="trvTests">
+      <attribute name="headerDefaultSectionSize">
+       <number>160</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Plugin</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Result</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lblInformation">
+      <property name="text">
+       <string>Stopped</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>614</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Test</string>
+    </property>
+    <addaction name="actionRun"/>
+    <addaction name="actionRun_again_Failed_tests"/>
+    <addaction name="actionRun_selected_test"/>
+    <addaction name="separator"/>
+    <addaction name="actionStop"/>
+   </widget>
+   <addaction name="menuRun"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRun">
+   <property name="text">
+    <string>Run all</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionRun_again_Failed_tests">
+   <property name="text">
+    <string>Run &quot;Failed&quot; tests</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionRun_selected_test">
+   <property name="text">
+    <string>Run selected test</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

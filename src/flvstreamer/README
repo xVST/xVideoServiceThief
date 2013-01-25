@@ -1,0 +1,50 @@
+flvstreamer
+(C) 2009 Andrej Stepanchuk and The Flvstreamer Team
+Credit goes to team boxee for the XBMC RTMP code used in flvstreamer.
+License: GPLv2
+
+Build
+-----
+
+For Unix/Linux to compile just type
+
+  $ make flvstreamer
+  $ make streams
+
+To cross compile flvstreamer for WIN32 you can use MinGW ( http://www.mingw.org ):
+
+ $ C:\MinGW\bin\mingw32-make.exe -f MakefileWIN32
+
+For ARM:
+
+ $ make -f MakefileARM flvstreamer
+
+
+Usage
+-----
+
+Full usage:
+
+  $ ./flvstreamer_x86 -h
+  $ ./streams_x86 -h
+
+To download an rtmp stream use get_iplayer ( http://linuxcentre.net/getiplayer ):
+
+  $ ./get_iplayer --get 1 --modes flashhigh --flvstreamer "./flvstreamer_x86"
+
+To get an rtmp stream such as rtmp://cyzy7r959.rtmphost.com/flowplayer/metacafe use:
+
+  $ ./flvstreamer_x86 -r rtmp://cyzy7r959.rtmphost.com/flowplayer/metacafe
+  Or,
+  $ ./flvstreamer_x86 -n cyzy7r959.rtmphost.com -a flowplayer -y metacafe
+
+To stream an rtmp stream via http on port 8080:
+
+   $ ./streams_x86 -g 8080
+
+Then point a player at it, e.g.
+
+   $ mplayer "http://127.0.0.1:8080/?n=cyzy7r959.rtmphost.com&a=flowplayer&y=metacafe"
+
+Where the URL GET parameters are the same as the flvstreamer options. Options
+can optionally be specified on the command line like in flvstreamer.
