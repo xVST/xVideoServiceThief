@@ -17,3 +17,11 @@
 
 # SVN
 .svn
+tools/DebugPlugins/build
+tools/DebugPlugins/bin
+bin
+build
+Makefile.Debug
+Makefile.Release
+*.pro.user
+Makefile
