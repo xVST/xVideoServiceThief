@@ -63,14 +63,15 @@ enum VideoPreState
 
 struct VideoDefinition
 {
-	QString URL;		//!< real video URL
-	QString title;		//!< video title
-	QString extension;	//!< video extension (default = flv)
-	bool needLogin;		//!< flag for know if this video need a login
-	bool isAudioFile;	//!< flag for know if is a audio file
-	QString cookies;	//!< special cookies for this video (only if is needed)
-	QString headers;	//!< special headers for this video (only if is needed)
-	QString userAgent;	//!< special userAgent for this video (only if is needed)
+    QString URL;            //!< real video URL
+    QString title;          //!< video title
+    QString extension;      //!< video extension (default = flv)
+    bool needLogin;         //!< flag for know if this video need a login
+    bool isAudioFile;       //!< flag for know if is a audio file
+    QString cookies;        //!< special cookies for this video (only if is needed)
+    QString headers;        //!< special headers for this video (only if is needed)
+    QString userAgent;      //!< special userAgent for this video (only if is needed)
+    QStringList rtmpParams; //!< RTMP parameters (only if is needed)
 	/*! Struct initializer */
 	VideoDefinition()
 	{
@@ -82,6 +83,7 @@ struct VideoDefinition
 		cookies = "";
 		headers = "";
 		userAgent = "";
+        rtmpParams = QStringList();
 	}
 };
 

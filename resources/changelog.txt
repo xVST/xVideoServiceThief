@@ -40,6 +40,11 @@
 
 - Improved the program version comparation algorithm
 
+Plug-ins SDK:
+-------------
+
+- Improved the RTMP support adding the "rtmpParams" functionality (used for extra RTMP parameters). More info at Plugins SDK Wiki.
+
 Windows:
 --------
 
@@ -50,7 +55,7 @@ Windows:
 Mac OS X:
 ---------
 
-- Compiled with Qt 4.7.3
+- Compiled with Qt 4.8.1
 
 2.4.1.1:
 --------

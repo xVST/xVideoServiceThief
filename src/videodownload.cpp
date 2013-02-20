@@ -228,8 +228,8 @@ void DownloadItem_RTMP::startDownload()
 	videoItem->setAsDownloading(this);
 	videoItem->setProgress(0, this);
 	// start download
-	int er = rtmp->download(videoItem->getVideoInformation().URL,
-		parent->getDownloadDir(), videoItem->getVideoFile());
+	int er = rtmp->download(videoItem->getVideoInformation().URL, parent->getDownloadDir(),
+							videoItem->getVideoFile(), videoItem->getVideoInformation().rtmpParams);
 	if (er != EnumRTMP::NO_RTMP_ERROR) downloadError(er);
 }
 

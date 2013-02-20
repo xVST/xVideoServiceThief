@@ -82,7 +82,7 @@ bool RTMP::isFlvstreamerInstalled()
 	return QFile::exists(flvstreamerPath);
 }
 
-int RTMP::download(const QString URL, QString destination, QString fileName, bool autoName)
+int RTMP::download(const QString URL, QString destination, QString fileName, QStringList params, bool autoName)
 {
 	if (!isFlvstreamerInstalled())
 		return EnumRTMP::FLVSTREAMER_MISSING;
@@ -126,8 +126,20 @@ int RTMP::download(const QString URL, QString destination, QString fileName, boo
 	// set as downloading
 	resuming = false;
 
+
+	params = QStringList() << "param1=value2" << "param2=value2=subsub";
+	qDebug() << params;
+
+	QStringList commandLine = QStringList() << "-r" << URL << "-o" << fileName;
+	foreach (QString value, params)
+	{
+		commandLine << value.split("=", QString::SkipEmptyParts);
+	}
+
+	qDebug() << commandLine;
+
 	// start download
-	flvstreamerProcess->start(flvstreamerPath, QStringList() << "-r" << URL << "-o" << fileName);
+	flvstreamerProcess->start(flvstreamerPath, commandLine);
 
 	// ok
 	return EnumRTMP::NO_RTMP_ERROR;

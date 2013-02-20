@@ -670,6 +670,7 @@ QScriptValue VideoInformationPlugin::toScriptValue_VideoDefinition(QScriptEngine
 	obj.setProperty("cookies", QScriptValue(engine, vd.cookies));
 	obj.setProperty("headers", QScriptValue(engine, vd.headers));
 	obj.setProperty("userAgent", QScriptValue(engine, vd.userAgent));
+	obj.setProperty("rtmpParams", engine->newArray());
 	return obj;
 }
 
@@ -683,6 +684,7 @@ void VideoInformationPlugin::fromScriptValue_VideoDefinition(const QScriptValue 
 	vd.cookies = obj.property("cookies").toString();
 	vd.headers = obj.property("headers").toString();
 	vd.userAgent = obj.property("userAgent").toString();
+	vd.rtmpParams = obj.property("rtmpParams").toVariant().toStringList();
 }
 
 QScriptValue VideoInformationPlugin::create_ServiceLoginInformation(QScriptContext *, QScriptEngine *engine)

@@ -97,7 +97,7 @@ Q_OBJECT
 		/*! Return if flvstreamer is installed (detected) */
 		bool isFlvstreamerInstalled();
 		/*! Start a new asynchronously download */
-		int download(const QString URL, QString destination, QString fileName = "", bool autoName = true);
+		int download(const QString URL, QString destination, QString fileName = "", QStringList params = QStringList(), bool autoName = true);
 		/*! Resume a previous asynchronously download */
 		int resume(const QString URL, QString fileName);
 		/*! Pause the current asynchronously download */
