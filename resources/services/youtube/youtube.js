@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2013 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -25,9 +25,9 @@
 
 function RegistVideoService()
 {
-	this.version = "3.0.10";
+	this.version = "3.0.11";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2012";
+	this.author = "Xesc & Technology 2013";
 	this.website = "http://www.youtube.com/";
 	this.ID = "youtube.com";
 	this.caption = "YouTube";
@@ -62,101 +62,67 @@ function getVideoInformation(url)
 	var html = http.downloadWebpage(youTubeURL);
 	// get cookies
 	result.cookies = http.getCookies("|");
+	// get video information
+	var videoInformationJSON = getVideoInformationJSON(html);
 	// get the video title
-	debugger;
-	result.title = copyBetween(html, "<title>", "</title>");
-	result.title = simplifyString(result.title);
-	result.title = strReplace(result.title, "\n", "");
-	result.title = strReplace(result.title, " - YouTube", "");
+	result.title = videoInformationJSON.args.title;
 	// check if this video need a login
 	result.needLogin = strIndexOf(html, 'id="verify-details"') != -1;
 	// if we can continue (no loggin needed)
 	if (result.needLogin) return result;
 	// get the video URL and extension
-	var videoInfo = getVideoUrlAndExtension(html);
+	var videoInfo = getVideoUrlAndExtension(videoInformationJSON);
 	result.URL = videoInfo.url;
 	result.extension = videoInfo.extension;
 	// return the video information
 	return result;
 }
 
-function getVideoUrlAndExtension(html)
+function getVideoInformationJSON(html)
 {
+	var playerConfig = /yt.playerConfig\s*=\s*\{(.*?)\};/g;
+	return eval('({' + playerConfig.exec(html)[1] + '})');
+}
+
+function getVideoUrlAndExtension(videoInformationJSON)
+{
+	var url_encoded_fmt_stream_map = videoInformationJSON.args.url_encoded_fmt_stream_map;
+	// split into small chunks
+	var url_encoded_fmt_stream_map_arr = url_encoded_fmt_stream_map.split(",");
+	var videos_arr = new Array();
+	// get video formats
+	for (var n in url_encoded_fmt_stream_map_arr)
+	{
+		videos_arr.push(getVideoObjectFromEncodedParam(url_encoded_fmt_stream_map_arr[n]));
+	}
+	// get the first video
+	var video = videos_arr[0];
 	// init result
-	var result = { url:null, extension:null };
-	// get the flashVars value
-	var flashVars = "?" + copyBetween(html, 'flashvars=\\"', '\\"');
-	// convert each "&amp;" into "&"
-	flashVars = strReplace(flashVars, "\\u0026amp;", "&");
-	// get an array with all fmt_stream_map values
-	var fmt_stream_map_arr = splitString(getUrlParam(flashVars, "url_encoded_fmt_stream_map"), "url%3D", false);
-	// default selected video quality
-	var selectedFormat = -1;
-	// detect the better quality
-	for (var n = 0; n < fmt_stream_map_arr.length && selectedFormat == -1; n++)
+	return { 
+		url: video.url + "&signature=" + video.sig, 
+		extension: extensionFromVideoType(getToken(video.type, ";", 0))
+	};
+}
+
+function getVideoObjectFromEncodedParam(encodedParam)
+{
+	var json = "";
+	var params_arr = encodedParam.split("&");
+	// convert each "line" into json objects
+	for (var i in params_arr)
 	{
-		fmt_stream_map_arr[n] = "?url=" + cleanUrl(fmt_stream_map_arr[n]).toString();
-		// remove the last "," (if exists)
-		if (strLastIndexOf(fmt_stream_map_arr[n], ",") == fmt_stream_map_arr[n].toString().length - 1)
-			fmt_stream_map_arr[n] = strRemove(fmt_stream_map_arr[n], fmt_stream_map_arr[n].toString().length - 1, 1);
-		// check video type
-		var vtype = getToken(getUrlParam(fmt_stream_map_arr[n], "type"), ";", 0);
-		// is known format?
-		if (vtype == "video/x-flv" || vtype == "video/mp4")
-		{
-			selectedFormat = n;
-			// configure video extension
-			result.extension = extensionFromVideoType(vtype);
-		}
+		json += '"' + strReplace(params_arr[i], '=', '":"') + '"';
+		if (i < params_arr.length - 1) json += ",";
 	}
-	// no format selected?
-	if (selectedFormat == -1) selectedFormat = 0;
-	// get the host url
-	var urlHost = getToken(fmt_stream_map_arr[selectedFormat], "?", 1);
-	urlHost = strReplace(urlHost, "url=", "");
-	// leave only the parameters
-	fmt_stream_map_arr[selectedFormat] = getToken(fmt_stream_map_arr[selectedFormat], "?", 2);
-	// get url parts
-	var urlParts = splitString(fmt_stream_map_arr[selectedFormat], "&", false);
-	// set the url host
-	result.url = urlHost + "?";
-	// list of used params
-	var usedParams = new Array();
-	// build the initial url
-	for (var n = 0; n < urlParts.length; n++)
+	// parse json and convert it
+	var video = eval('({' + json + '})');
+	// clean up object variables
+	for (var member in video)
 	{
-		var pname = getToken(urlParts[n], "=", 0).toString();
-		var pvalue = getToken(urlParts[n], "=", 1).toString();
-		//var duplicatedPname = strIndexOf(result.url, pname + "=") != -1;
-		var duplicatedPname = usedParams.indexOf(pname) != -1;
-		// is an excluded param?		
-		if (!duplicatedPname && /*pname != "fexp" &&*/ pname != "quality" && pname != "fallback_host" && pname != "type")
-		{
-			// translate the "sig" parameter to "signature"
-			if (pname == "sig") pname = "signature";
-			// append this new param
-			result.url += pname + "=" + pvalue + "&";
-			// add this param into our used params
-			usedParams.push(pname);
-		}
+		video[member] = cleanUrl(video[member]);
 	}
-	// remove the last &
-	if (strLastIndexOf(result.url, "&") == result.url.length - 1)
-		urlInitial = strRemove(result.url, result.url.length - 1, 1);
-	// get extra (optional) params
-	var ptchn = getUrlParam(flashVars, "ptchn");
-	if (ptchn != "") result.url += "ptchn=" + ptchn + "&";
-	var ptk = getUrlParam(flashVars, "ptk");
-	if (ptk != "") result.url += "ptk=" + ptk;
-	// configure the video extension (if is not yet configured)
-	if (!result.extension)
-	{
-		var vtype = getToken(getUrlParam(fmt_stream_map_arr[selectedFormat], "type"), ";", 0);
-		// configure video extension
-		result.extension = extensionFromVideoType(vtype);
-	}
-	// return 
-	return result;
+	// add this new one
+	return video;
 }
 
 function extensionFromVideoType(vtype)
