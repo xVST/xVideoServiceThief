@@ -126,17 +126,12 @@ int RTMP::download(const QString URL, QString destination, QString fileName, QSt
 	// set as downloading
 	resuming = false;
 
-
-	params = QStringList() << "param1=value2" << "param2=value2=subsub";
-	qDebug() << params;
-
+	// build the command line
 	QStringList commandLine = QStringList() << "-r" << URL << "-o" << fileName;
 	foreach (QString value, params)
 	{
 		commandLine << value.split("=", QString::SkipEmptyParts);
 	}
-
-	qDebug() << commandLine;
 
 	// start download
 	flvstreamerProcess->start(flvstreamerPath, commandLine);
