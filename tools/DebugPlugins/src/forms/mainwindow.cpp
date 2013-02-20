@@ -74,7 +74,6 @@ void MainWindow::testPluginVideoInformation(bool debug)
 	ui->outputVideoInformation->appendHtml("<p>");
 
 	// video information: main information
-
 	if (vd.title.isEmpty())
 		ui->outputVideoInformation->appendHtml("<b>Title:</b> <font color='red'>Missing...</font>");
 	else // ok
@@ -85,16 +84,26 @@ void MainWindow::testPluginVideoInformation(bool debug)
 	else // ok
 		ui->outputVideoInformation->appendHtml(QString("<b>URL:</b> %1").arg(vd.URL));
 
+	ui->outputVideoInformation->appendHtml("</p>");
+
+	// RTMP infomration
+	ui->outputVideoInformation->appendHtml(QString("<b>RTMP Params:</b>"));
+	ui->outputVideoInformation->appendHtml("<ul>");
+	foreach (const QString &str, vd.rtmpParams)
+	{
+		ui->outputVideoInformation->appendHtml(QString("<li>- %1</li>").arg(str));
+	}
+	ui->outputVideoInformation->appendHtml("</ul>");
+
 	// video information: optional information
 	ui->outputVideoInformation->appendHtml("<p>");
 	ui->outputVideoInformation->appendHtml(QString("<b>Extension:</b> %1").arg(vd.extension));
 	ui->outputVideoInformation->appendHtml(QString("<b>Is Audio File:</b> %1").arg(vd.isAudioFile ? "Yes" : "No"));
 	ui->outputVideoInformation->appendHtml(QString("<b>Need Login:</b> %1").arg(vd.needLogin ? "Yes" : "No"));
-	ui->outputVideoInformation->appendHtml("<p>");
+	ui->outputVideoInformation->appendHtml("</p><p>");
 	ui->outputVideoInformation->appendHtml(QString("<b>Overrided HTTP User-Agent:</b> %1").arg(vd.userAgent));
 	ui->outputVideoInformation->appendHtml(QString("<b>Extra HTTP headers:</b> %1").arg(vd.headers));
 	ui->outputVideoInformation->appendHtml(QString("<b>Extra HTTP cookies:</b> %1").arg(vd.cookies));
-
 	ui->outputVideoInformation->appendHtml("</p>");
 }
 
