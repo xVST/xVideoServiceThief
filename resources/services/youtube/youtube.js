@@ -25,7 +25,7 @@
 
 function RegistVideoService()
 {
-	this.version = "3.0.11";
+	this.version = "3.1.0";
 	this.minVersion = "2.0.0a";
 	this.author = "Xesc & Technology 2013";
 	this.website = "http://www.youtube.com/";
@@ -151,88 +151,28 @@ function normalizeSpaces(str)
 
 function searchVideos(keyWord, pageIndex)
 {
-	const URL_SEARCH = "http://www.youtube.com/results?search_query=%1&page=%2&hl=%3";
-	const HTML_SEARCH_START = '<ol id="search-results">';
-	const HTML_SEARCH_FINISH = '<div id="search-pva-content">';
-	const HTML_SEARCH_SEPARATOR = '<li class="yt-grid-box result-item-video';  //'<div class="thumb-container">';
-	const HTML_SEARCH_SUMMARY_START = '<p class="num-results">';
-	const HTML_SEARCH_SUMMARY_END = '</p>';
-	// replace all spaces for "+"
-	keyWord = strReplace(keyWord, " ", "+");
+	const URL_SEARCH = "https://gdata.youtube.com/feeds/api/videos?q=%1&orderby=published&start-index=%2&max-results=%3&v=2&alt=jsonc&hl=%4";
+	const RESULTS_COUNT = 10
 	// init search results object
 	var searchResults = new SearchResults();
+	// replace all spaces for "+"
+	keyWord = strReplace(keyWord, " ", "+");
+	// update the page index
+	var firstResult = (pageIndex - 1)*RESULTS_COUNT + 1;
 	// init http object
 	var http = new Http();
-	var html = http.downloadWebpage(strFormat(URL_SEARCH, keyWord, pageIndex, searchResults.getUserLanguage()));
-	// get the search summary
-	var summary = copyBetween(html, HTML_SEARCH_SUMMARY_START, HTML_SEARCH_SUMMARY_END);
-	searchResults.setSummary(cleanSummary(summary));
-	// get results html block
-	var htmlResults = copyBetween(html, HTML_SEARCH_START, HTML_SEARCH_FINISH);
-	// if we found some results then...
-	if (htmlResults != "")
+	var json = http.downloadWebpage(strFormat(URL_SEARCH, keyWord, firstResult, RESULTS_COUNT, searchResults.getUserLanguage()));
+	var results = eval('(' + json + ')');
+	// set summary
+	searchResults.setSummary(results.data.totalItems + " results");
+	// fill with search results
+	for (var index in results.data.items)
 	{
-		var block = "";
-		// iterate over results
-		while ((block = copyBetween(htmlResults, HTML_SEARCH_SEPARATOR, HTML_SEARCH_SEPARATOR)) != "")
-		{
-			parseResultItem(searchResults, block);
-			htmlResults = strRemove(htmlResults, 0, block.toString().length);
-		}
-		// get last result
-		parseResultItem(searchResults, htmlResults);
+		var result = results.data.items[index];
+		searchResults.addSearchResult(result.player['default'], result.thumbnail.sqDefault, result.title, result.description, result.duration, 0);
 	}
 	// return search results
 	return searchResults;
-}
-
-function cleanSummary(summary)
-{
-	// remove all "\n"
-	summary = strReplace(summary, "\n", "");
-	// remove unused </span>
-	summary = strReplace(summary, "</span>", '');
-	// return cleanned summary
-	return summary;
-}
-
-function parseResultItem(searchResults, html)
-{
-	const VIDEO_URL = "http://www.youtube.com";
-	// vars
-	var tmp, videoUrl, imageUrl, title, description, duration, rating;
-	// get video url
-	videoUrl = VIDEO_URL + copyBetween(html, 'href="', '"');
-	// get image url
-	tmp = copyBetween(html, '<img', '>') ;
-	imageUrl = copyBetween(tmp, 'src="', '"');
-	if (strIndexOf(imageUrl, "default.jpg") == -1) // if is not a "default.jpg"...
-		imageUrl = copyBetween(tmp, 'thumb="', '"');
-	imageUrl = "http:" + imageUrl;
-	// get video title
-	title = copyBetween(html, 'dir="ltr"title="', '"');
-	// get video description
-	description = copyBetween(html, 'description" dir="ltr">', '</p>');  //'<p id="video-description-', '</p>');
-	description = copyBetween(description + '|', '>', '|');
-	// get video duration
-	duration = convertToSeconds(copyBetween(html, '<span class="video-time">', '</span>'));
-	// get rating
-	tmp = copyBetween(html, '<button class="master-sprite ratingVS', '>');
-	rating = copyBetween(tmp, 'title="', '"');
-	// add to results list
-	searchResults.addSearchResult(videoUrl, imageUrl, title, description, duration, rating);
-}
-
-function convertToSeconds(text)
-{
-	// how many ":" exists?
-	var count = getTokenCount(text, ":");
-	// get mins and seconds
-	var h = new Number(h = count == 3 ? getToken(text, ":", 0) * 3600 : 0);
-	var m = new Number(getToken(text, ":", count - 2) * 60);
-	var s = new Number(getToken(text, ":", count - 1));
-	// convert h:m:s to seconds
-	return h + m + s;
 }
 
 function getVideoServiceIcon()
