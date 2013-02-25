@@ -2873,7 +2873,7 @@ font-size:12px;
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1796"/>
-        <source>Adress:</source>
+        <source>Address:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2895,12 +2895,12 @@ font-size:12px;
     <message>
         <location filename="../../ui/options.ui" line="1854"/>
         <location filename="../../ui/options.ui" line="1860"/>
-        <source>Adress of your proxy configuration</source>
+        <source>Address of your proxy configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1857"/>
-        <source>Proxy adress</source>
+        <source>Proxy address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3539,7 +3539,7 @@ font-size:12px;
     </message>
     <message>
         <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
-        <source>Download not avaiable...</source>
+        <source>Download not available...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

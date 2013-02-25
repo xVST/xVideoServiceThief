@@ -130,7 +130,7 @@ void MainWindow::testPluginSearchVideos(bool debug)
 	ui->outputSearchVideos->appendHtml(QString("<b>Loaded:</b> %1").arg(plugin.isLoaded() ? "Yes" : "No"));
 	ui->outputSearchVideos->appendHtml("</p>");
 
-	// searchs information
+	// searches information
 
 	ui->outputSearchVideos->appendHtml("<u><font size='+1'>Search information:</font></u>");
 	ui->outputSearchVideos->appendHtml("<p>");
@@ -138,7 +138,7 @@ void MainWindow::testPluginSearchVideos(bool debug)
 	ui->outputSearchVideos->appendHtml(QString("<b>Results count:</b> %1").arg(sr.getSearchResultCount()));
 	ui->outputSearchVideos->appendHtml("</p>");
 
-	// searchs results
+	// searches results
 
 	ui->outputSearchVideos->appendHtml("<u><font size='+1'>Search results:</font></u>");
 	ui->outputSearchVideos->appendHtml("<p>");

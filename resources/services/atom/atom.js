@@ -55,7 +55,7 @@ function getVideoInformation(url)
 	// download flv xml
 	var xml = http.downloadWebpage(xmlUrl);
 	var item = "";
-	// get flv url (get the max bitrate avaiable)
+	// get flv url (get the max bitrate available)
 	if (xml.toString().indexOf('bitrate="1000"') != -1)
 		item = copyBetween(xml, 'bitrate="1000"', '</src>');
 	else if (xml.toString().indexOf('bitrate="700"') != -1)
