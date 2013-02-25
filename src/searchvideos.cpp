@@ -268,6 +268,7 @@ SearchResultsPreviewCatcher::~SearchResultsPreviewCatcher()
 	// stop and destroy
 	stop();
 	delete previews;
+    delete http;
 }
 
 void SearchResultsPreviewCatcher::addPreview(SearchResultItem *searchItem)
