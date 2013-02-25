@@ -461,7 +461,8 @@ void Updates::cancel()
 {
 	updateState = usWaiting;
 	cancelled = true;
-	http->cancel();
+	// maybe the http object is already destroyed.
+	if(http) http->cancel();
 }
 
 Update* Updates::getUpdateItem(const int index)
