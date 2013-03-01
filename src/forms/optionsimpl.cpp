@@ -346,7 +346,7 @@ void OptionsImpl::setInitialOptionsValues()
 	gpbProxy->setChecked(programOptions->getUseProxy());
 	edtUserName->setText(programOptions->getProxyUserName());
 	edtPassword->setText(programOptions->getProxyPassword());
-	edtAdress->setText(programOptions->getProxyAdress());
+	edtAddress->setText(programOptions->getProxyAddress());
 	spinBoxPort->setValue(programOptions->getProxyPort());
 
 	if (programOptions->getProxyType() != QNetworkProxy::HttpProxy &&
@@ -408,7 +408,7 @@ void OptionsImpl::setOptionsValues()
 	programOptions->setUseProxy(gpbProxy->isChecked());
 	programOptions->setProxyUserName(edtUserName->text());
 	programOptions->setProxyPassword(edtPassword->text());
-	programOptions->setProxyAdress(edtAdress->text());
+	programOptions->setProxyAddress(edtAddress->text());
 	programOptions->setProxyPort(spinBoxPort->value());
 	programOptions->setProxyType(cmbProxyType->currentIndex());
 

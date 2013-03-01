@@ -688,7 +688,7 @@ void VideoListController::setupProxy()
 			QNetworkProxy networkProxy;
 			networkProxy.setUser(programOptions->getProxyUserName());
 			networkProxy.setPassword(programOptions->getProxyPassword());
-			networkProxy.setHostName(programOptions->getProxyAdress());
+			networkProxy.setHostName(programOptions->getProxyAddress());
 			networkProxy.setPort(programOptions->getProxyPort());
 			networkProxy.setType(static_cast<QNetworkProxy::ProxyType>(programOptions->getProxyType()));
 			// set application proxy
