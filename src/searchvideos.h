@@ -113,7 +113,7 @@ Q_OBJECT
 		void removeAllSearchResults();
 };
 
-/*! Download the video previews from searchs */
+/*! Download the video previews from searches */
 class SearchResultsPreviewCatcher : public QObject
 {
 Q_OBJECT
@@ -206,7 +206,7 @@ Q_OBJECT
 	signals:
 		/*! New search started */
 		void searchStarted();
-		/*! Added new search (used on multiple searchs) */
+		/*! Added new search (used on multiple searches) */
 		void addNewSearchBlock(VideoInformationPlugin *plugin);
 		/*! The current search finished */
 		void searchFinished();

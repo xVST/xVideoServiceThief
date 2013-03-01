@@ -216,7 +216,7 @@ Windows Vista/7:
 2.3.3:
 ------
 
-- Added "No results found" message for searchs with no results
+- Added "No results found" message for searches with no results
 - Added the time remaining for videos with "no-size" (RTMP protocol)
 
 - Improved time remaining calculation (RTMP and HTTP protocols)
@@ -530,7 +530,7 @@ Windows:
 Windows (Static versions only):
 -------------------------------
 
-- Compiled with VC++ 9.0.2x version instead of VC++ 9.0.3x (wich caused alot of "This application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem." messages.
+- Compiled with VC++ 9.0.2x version instead of VC++ 9.0.3x (wich caused a lot of "This application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem." messages.
 
 2.0.0a:
 -------
