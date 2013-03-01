@@ -25,3 +25,4 @@ Makefile.Debug
 Makefile.Release
 *.pro.user
 Makefile
+TODO.*
