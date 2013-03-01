@@ -7,6 +7,8 @@
 	- SSL support using the PolarSSL library (http://polarssl.org/)
 	- Added live streaming support!
 
+- Fixed bug (Error: Sometimes crashes trying to cancel an update)
+
 - Added finnish translation (thanks to Tuomas Lähteenmäki)
 - Added bulgarian translation (thanks to Vasil Stoev)
 - Added the HTTPS protocol as valid
