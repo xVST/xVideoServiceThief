@@ -151,7 +151,7 @@ function normalizeSpaces(str)
 
 function searchVideos(keyWord, pageIndex)
 {
-	const URL_SEARCH = "https://gdata.youtube.com/feeds/api/videos?q=%1&orderby=published&start-index=%2&max-results=%3&v=2&alt=jsonc&hl=%4";
+	const URL_SEARCH = "http://gdata.youtube.com/feeds/api/videos?q=%1&orderby=published&start-index=%2&max-results=%3&v=2&alt=jsonc&hl=%4";
 	const RESULTS_COUNT = 10
 	// init search results object
 	var searchResults = new SearchResults();
