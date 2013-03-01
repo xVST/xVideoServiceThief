@@ -2265,7 +2265,7 @@ object frmMain: TfrmMain
     Height = 39
     AutoSize = False
     Caption = 
-      'The new version of xVST comes with alot of new features, all web' +
+      'The new version of xVST comes with a lot of new features, all web' +
       'services has been updated, an updated video converter (ffmpeg 0.' +
       '5), etc... You can read the full changelog clicking the "xVST 2.' +
       '0 changelog" button.'

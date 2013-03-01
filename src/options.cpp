@@ -148,7 +148,7 @@ void ProgramOptions::load()
 
 	systemProxyConfiguration = settings.value("configuration/systemProxyConfiguration", systemProxyConfiguration).toBool();
 	useProxy = settings.value("configuration/useProxy", useProxy).toBool();
-	proxyAdress = settings.value("configuration/proxyAdress", proxyAdress).toString();
+	proxyAddress = settings.value("configuration/proxyAddress", proxyAddress).toString();
 	proxyPassword = settings.value("configuration/proxyPassword", proxyPassword).toString();
 	proxyUserName = settings.value("configuration/proxyUserName", proxyUserName).toString();
 	proxyPort = settings.value("configuration/proxyPort", proxyPort).toInt();
@@ -232,7 +232,7 @@ void ProgramOptions::save()
 
 	settings.setValue("systemProxyConfiguration", systemProxyConfiguration);
 	settings.setValue("useProxy", useProxy);
-	settings.setValue("proxyAdress", proxyAdress);
+	settings.setValue("proxyAddress", proxyAddress);
 	settings.setValue("proxyPassword", proxyPassword);
 	settings.setValue("proxyUserName", proxyUserName);
 	settings.setValue("proxyPort", proxyPort);
@@ -336,7 +336,7 @@ void ProgramOptions::setDefault()
 
 	systemProxyConfiguration = true;
 	useProxy = false;
-	proxyAdress = "";
+	proxyAddress = "";
 	proxyPassword = "";
 	proxyUserName = "";
 	proxyPort = 0;
@@ -637,14 +637,14 @@ void ProgramOptions::setProxyPassword(QString value)
 	proxyPassword = value;
 }
 
-QString ProgramOptions::getProxyAdress()
+QString ProgramOptions::getProxyAddress()
 {
-	return proxyAdress;
+	return proxyAddress;
 }
 
-void ProgramOptions::setProxyAdress(QString value)
+void ProgramOptions::setProxyAddress(QString value)
 {
-	proxyAdress = value;
+	proxyAddress = value;
 }
 
 int ProgramOptions::getProxyPort()

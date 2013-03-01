@@ -64,7 +64,7 @@ Q_OBJECT
 		int maxActiveDownloads;			//!< Maximum active downloads
 		bool systemProxyConfiguration;	//!< flag for know if Proxy is automatic (using system-configuration)
 		bool useProxy;					//!< flag for know if Proxy is enabled or not
-		QString proxyAdress;			//!< Proxy Adress
+		QString proxyAddress;			//!< Proxy Address
 		QString proxyPassword;			//!< Proxy Password
 		QString proxyUserName;			//!< Proxy UserName
 		int proxyPort;					//!< Proxy Port
@@ -168,8 +168,8 @@ Q_OBJECT
 		int getMaxActiveDownloads();
 		void setProxyPort(int value);
 		int getProxyPort();
-		void setProxyAdress(QString value);
-		QString getProxyAdress();
+		void setProxyAddress(QString value);
+		QString getProxyAddress();
 		void setProxyPassword(QString value);
 		QString getProxyPassword();
 		void setProxyUserName(QString value);
