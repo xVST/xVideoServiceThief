@@ -28,10 +28,8 @@
 #include "http.h"
 #include "tools.h"
 
-TrackerReport::TrackerReport(QString groupID, QString atid)
+TrackerReport::TrackerReport()
 {
-	this->groupID = groupID;
-	this->atid = atid;
 	// http class
 	http = new Http();
 }
@@ -59,26 +57,13 @@ QString TrackerReport::getUniqueID()
 	return uniqueKey;
 }
 
-void TrackerReport::addCategory(QString caption, QString id)
+void TrackerReport::sendTrackerReport(QString infoToSend)
 {
-	category[caption] = id;
+	QString html = http->downloadWebpagePost(SF_TRACKER_URL, infoToSend);
+
+	qDebug() << html;
+
+	emit trackerReportSent(html);
 }
 
-void TrackerReport::addGroup(QString caption, QString id)
-{
-	groups[caption] = id;
-}
-
-void TrackerReport::sendTrackerReport(QString categoryCaption, QString groupCaption, 
-	QString summary, QString description)
-{
-	QString parameters = "group_id=%1&atid=%2&func=postadd&category_id=%3&artifact_group_id=%4&summary=%5 (%6)&details=%7&submit=SUBMIT";
-	
-	QString html = http->downloadWebpagePost(SF_TRACKER_URL, 
-						QString(parameters).arg(groupID).arg(atid)
-											.arg(category[categoryCaption]).arg(groups[groupCaption])
-											.arg(summary).arg(getUniqueID()).arg(description));
-
-	emit trackerReportSent(copyBetween(html, "<h4 class=\"message\" id=\"top_feedback\">", "</h4>"));
-}
 //

@@ -29,31 +29,15 @@
 #include "../videoitem.h"
 #include "../videoinformation.h"
 
-InfoViewImpl::InfoViewImpl(VideoItem *videoItem, QString pluginInfo,
-						   QString userName, QString email, QString comments,
-						   QWidget *parent, Qt::WFlags f)
-	: QDialog(parent, f)
+InfoViewImpl::InfoViewImpl(QString info, QWidget *parent, Qt::WFlags f) : QDialog(parent, f)
 {
 	setupUi(this);
 #ifdef Q_WS_MAC
 	resize(500, 300);
 #endif
 	// fill text
-	QStringList info;
-	info 	<< "<p><b>Video Information:</b>\n"
-			<< "Error Code: " + QString("%1").arg(videoItem->getErrorCode()) + "\n"
-			<< "Video URL: " + videoItem->getURL() + "\n"
-			<< "xVST Version: " + PROGRAM_VERSION + " (" + CURRENT_OS + ")" + "\n"
-			<< "Plugin Version: " + pluginInfo + "\n"
-			<< "FLV URL: " + videoItem->getVideoInformation().URL + "\n"
-			<< "FLV Title: " + videoItem->getVideoInformation().title + "</p>"
-			<< "<p><b>Sender Information:</b>\n"
-			<< "User name: " + userName + "\n"
-			<< "User eMail: " + email + "\n"
-			<< "User Comments: " + comments + "</p>";
-			
-	foreach (QString line, info)
-		rchInformation->setHtml(rchInformation->toHtml() + line);
+	rchInformation->setHtml(info);
 }
+
 //
 

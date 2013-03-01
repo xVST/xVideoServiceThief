@@ -36,8 +36,6 @@ class InfoViewImpl : public QDialog, public Ui::InfoView
 {
 Q_OBJECT
 	public:
-		InfoViewImpl(VideoItem *videoItem, QString pluginInfo,
-					 QString userName, QString email, QString comments,
-					 QWidget *parent = 0, Qt::WFlags f = 0);
+		InfoViewImpl(QString info, QWidget *parent = 0, Qt::WFlags f = 0);
 };
 #endif

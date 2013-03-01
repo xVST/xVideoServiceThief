@@ -28,7 +28,7 @@
 
 #include <QtGui>
 
-const QString SF_TRACKER_URL = "http://sourceforge.net/tracker/index.php";
+const QString SF_TRACKER_URL = "http://xviservicethief.sourceforge.net/tracker/bug.php";
 
 class Http;
 
@@ -37,27 +37,18 @@ class TrackerReport : public QObject
 {
 Q_OBJECT
 	protected:
-		Http *http;							//!< Http class
-		QString groupID;					//!< Tracker group id
-		QString atid;						//!< Tracker at id
-		QMap<QString, QString> groups;		//!< Groups list
-		QMap<QString, QString> category;	//!< Ategories list
+		Http *http;				//!< Http class
 		//! Get an unique id
 		QString getUniqueID();
 		/*! Send the tracker report */
 		void sendTrackerReport();
 	public:
 		/*! Class constructor */
-		TrackerReport(QString groupID, QString atid);
+		TrackerReport();
 		/*! Class destructor */
 		~TrackerReport();
-		/*! Add a new category */
-		void addCategory(QString caption, QString id);
-		/*! Add a new group */
-		void addGroup(QString caption, QString id);
 		/*! Send the tracker report */
-		void sendTrackerReport(QString categoryCaption, QString groupCaption, 
-			QString summary, QString description);
+		void sendTrackerReport(QString infoToSend);
 	signals:
 		/*! Abstract tracker report sent, this function is implemented in sub-classes */
 		void trackerReportSent(QString result);

@@ -50,35 +50,7 @@ BugReportImpl::BugReportImpl(ProgramOptions *programOptions, QWidget * parent, Q
 	// set program version
 	lblxVSTVersion->setText(QString(lblxVSTVersion->text()).arg(PROGRAM_VERSION));
 	// configure tracker
-	trackerReport = new TrackerReport("205061", "1037803");
-	// add category
-	trackerReport->addCategory("None", "100");
-	// add groups
-	trackerReport->addGroup("1.0a",   "804496");
-	trackerReport->addGroup("1.1a",   "804497");
-	trackerReport->addGroup("1.2a",   "804498");
-	trackerReport->addGroup("1.3a",   "804499");
-	trackerReport->addGroup("1.4a",   "804500");
-	trackerReport->addGroup("1.5a",   "804501");
-	trackerReport->addGroup("1.6a",   "807976");
-	trackerReport->addGroup("1.6.1a", "809584");
-	trackerReport->addGroup("1.7a",   "813251");
-	trackerReport->addGroup("1.7.1a", "814954");
-	trackerReport->addGroup("1.8a",   "820796");
-	trackerReport->addGroup("1.8.1a", "822016");
-	trackerReport->addGroup("1.8.2a", "825062");
-	trackerReport->addGroup("2.0.0a", "898961");
-	trackerReport->addGroup("2.0.1a", "899073");
-	trackerReport->addGroup("2.1",    "910835");
-	trackerReport->addGroup("2.2",    "930083");
-	trackerReport->addGroup("2.3",    "971205");
-	trackerReport->addGroup("2.3.1",  "1009922");
-	trackerReport->addGroup("2.3.2",  "1025880");
-	trackerReport->addGroup("2.3.3",  "1047982");
-	trackerReport->addGroup("2.3.4",  "1057713");
-	trackerReport->addGroup("2.3.5",  "1073045");
-	trackerReport->addGroup("2.4",    "1099410");
-	trackerReport->addGroup("2.4.1",  "1238437");
+	trackerReport = new TrackerReport();
 	// signals
 	connect(spbViewInfo, SIGNAL(clicked()), this, SLOT(viewInfoClicked()));
 	connect(btnSend, SIGNAL(clicked()), this, SLOT(sendReportClicked()));
@@ -113,8 +85,25 @@ QString BugReportImpl::getPluginInformation(QString URL)
 
 void BugReportImpl::viewInfoClicked()
 {
-	InfoViewImpl infoView(videoItem, getPluginInformation(videoItem->getURL()), edtName->text(),
-						  edtEmail->text(), rchComments->toPlainText(), this);
+	// fill text
+	QStringList info;
+	info	<< "<pre>"
+			<< "{<br />"
+			<< "   <b>'code'</b>: '" + QString("%1").arg(videoItem->getErrorCode()) + "',<br />"
+			<< "   <b>'url'</b>: '" + videoItem->getURL() + "',<br />"
+			<< "   <b>'app_version'</b>: '" + PROGRAM_VERSION + "',<br />"
+			<< "   <b>'os_version'</b>: '" + CURRENT_OS + "',<br />"
+			<< "   <b>'plugin'</b>: '" + getPluginInformation(videoItem->getURL()) + "',<br />"
+			<< "   <b>'user_name'</b>: '" + edtName->text().replace("'", "\\'") + "',<br />"
+			<< "   <b>'user_email'</b>: '" + edtEmail->text().replace("'", "\\'") + "',<br />"
+			<< "   <b>'user_comments'</b>: '" + rchComments->toPlainText().replace("'", "\\'") + "'<br />"
+			<< "}<br />"
+			<< "</pre>";
+
+	QString infoStr;
+	foreach (QString line, info) infoStr += line;
+
+	InfoViewImpl infoView(infoStr, this);
 	infoView.exec();
 }
 
@@ -126,30 +115,23 @@ void BugReportImpl::sendReportClicked()
 	line_2->show();
 	lblSending->show();
 	prbSending->show();
-	// resize form
 	// fill text
 	QStringList info;
-	info 	<< "Video Information:\n"
-			<< "Error Code: " + QString("%1").arg(videoItem->getErrorCode()) + "\n"
-			<< "Video URL: " + videoItem->getURL() + "\n"
-			<< "xVST Version: " + PROGRAM_VERSION + " (" + CURRENT_OS + ")" + "\n"
-			<< "Plugin Version: " + getPluginInformation(videoItem->getURL()) + "\n"
-			<< "FLV URL: " + videoItem->getVideoInformation().URL + "\n"
-			<< "FLV Title: " + videoItem->getVideoInformation().title + "\n\n"
-			<< "Sender Information:\n"
-			<< "User name: " + edtName->text() + "\n"
-			<< "User eMail: " + edtEmail->text() + "\n"
-			<< "User Comments: " + rchComments->toPlainText();
+	info	<< "{"
+			<< "	'code': '" + QString("%1").arg(videoItem->getErrorCode()) + "',\n"
+			<< "	'url': '" + videoItem->getURL() + "',\n"
+			<< "	'app_version': '" + PROGRAM_VERSION + "',\n"
+			<< "	'os_version': '" + CURRENT_OS + "',\n"
+			<< "	'plugin': '" + getPluginInformation(videoItem->getURL()) + "',\n"
+			<< "	'user_name': '" + edtName->text().replace("'", "\\'") + "',\n"
+			<< "	'user_email': '" + edtEmail->text().replace("'", "\\'") + "',\n"
+			<< "	'user_comments': '" + rchComments->toPlainText().replace("'", "\\'") + "'\n"
+			<< "}";
 
 	QString infoStr;
-	foreach (QString line, info)
-		infoStr += line;
+	foreach (QString line, info) infoStr += line;
 
-	QString videoServiceName = videoInformation->getHostCaption(videoItem->getURL());
-
-	trackerReport->sendTrackerReport("None", PROGRAM_VERSION_SHORT, 
-									 QString("xVST: %1").arg(videoServiceName), 
-									 QString(infoStr).replace("&", "%26"));
+	trackerReport->sendTrackerReport(infoStr);
 }
 
 void BugReportImpl::cancelClicked()
@@ -163,19 +145,15 @@ void BugReportImpl::trackerReportSent(QString result)
 	lblSending->hide();
 	prbSending->hide();
 	
-	if (result.isEmpty())
+	if (result == "OK")
 	{
-		native_alert(this, QMessageBox::Information, "SourceForge.net Tracker", tr("Thank you for your report."), tr("Ok"));
+		native_alert(this, QMessageBox::Information, "xVideoServiceThief Tracker", tr("Thank you for your report."), tr("Ok"));
 	}
-	else // display the web message
+	else // error
 	{
-		QString msg1 = copy(result, 0, result.indexOf("<p>")).trimmed();
-		QString msg2 = copyBetween(result, "<p>", "<br>").trimmed();
-		QString msg3 = copyBetween(result, "<a href='", "'>").trimmed();
-		//
-		native_alert(this, QMessageBox::Information, QString("SourceForge.net Tracker: %1").arg(msg1),
-					 QString("%1 <a href=\"%2\">%2</a>").arg(msg2).arg(msg3), tr("Ok"));
+		native_alert(this, QMessageBox::Warning, "xVideoServiceThief Tracker", result, tr("Ok"));
 	}
+
 	done(QDialog::Accepted);
 }
 //
