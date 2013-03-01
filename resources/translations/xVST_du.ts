@@ -268,11 +268,16 @@
 &lt;p&gt;Uw hulp is daarbij van harte welkom!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/bugreport.ui" line="79"/>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Het &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot; zal worden gezonden naar &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;Het &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot; zal worden gezonden naar &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Uw naam en email zullen worden meegezonden in het &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot;, maar is volledig optioneel en niet verplicht.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../ui/bugreport.ui" line="79"/>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="93"/>
@@ -399,13 +404,13 @@
 <context>
     <name>BugReportImpl</name>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="168"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
         <source>Thank you for your report.</source>
         <translation>Bedankt voor uw rapportage.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="168"/>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="177"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="154"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
@@ -2816,6 +2821,11 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="2010"/>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="1615"/>
         <source>Time-out:</source>
         <translation type="unfinished"></translation>
@@ -2885,9 +2895,8 @@ font-size:12px;
         <translation>Proxy wachtwoord</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1796"/>
         <source>Adress:</source>
-        <translation>Adres:</translation>
+        <translation type="obsolete">Adres:</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1805"/>
@@ -2906,15 +2915,12 @@ font-size:12px;
         <translation>Proxy poort</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1854"/>
-        <location filename="../../ui/options.ui" line="1860"/>
         <source>Adress of your proxy configuration</source>
-        <translation>Adres van uw proxy instellingen</translation>
+        <translation type="obsolete">Adres van uw proxy instellingen</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1857"/>
         <source>Proxy adress</source>
-        <translation>Proxy adres</translation>
+        <translation type="obsolete">Proxy adres</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1873"/>
@@ -2938,6 +2944,22 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="1796"/>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1854"/>
+        <location filename="../../ui/options.ui" line="1860"/>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1857"/>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="1992"/>
         <location filename="../../ui/options.ui" line="1998"/>
         <source>Enable/disable the &quot;Bug report&quot; window on video Error</source>
@@ -2954,9 +2976,8 @@ font-size:12px;
         <translation>Toon &quot;Foutenrapport&quot;venster bij een Video fout</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="2010"/>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>Als de video een fout meldt kunt u helpen de fout te herstellen door een &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot; te zenden aan ons via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Het &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot;wordt alleen maar opgeslagen in de &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; , is voor iedereen zichtbaar en er worden geen extra gegevens opgeslagen in een externe DataBase.</translation>
+        <translation type="obsolete">Als de video een fout meldt kunt u helpen de fout te herstellen door een &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot; te zenden aan ons via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Het &quot;&lt;b&gt;Foutenrapport&lt;/b&gt;&quot;wordt alleen maar opgeslagen in de &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; , is voor iedereen zichtbaar en er worden geen extra gegevens opgeslagen in een externe DataBase.</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="2061"/>
@@ -3551,9 +3572,13 @@ font-size:12px;
         <translation>&lt;b&gt;Positie:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
         <source>Download not avaiable...</source>
-        <translation>Download niet beschikbaar...</translation>
+        <translation type="obsolete">Download niet beschikbaar...</translation>
+    </message>
+    <message>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
+        <source>Download not available...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/forms/searchvideositemimpl.cpp" line="128"/>
@@ -3928,17 +3953,17 @@ font-size:12px;
 <context>
     <name>VideoInformation</name>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="426"/>
+        <location filename="../../src/videoinformation.cpp" line="435"/>
         <source>Unsupported video service</source>
         <translation>Niet ondersteunde video dienst</translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="429"/>
+        <location filename="../../src/videoinformation.cpp" line="438"/>
         <source>Adobe Flash streaming</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="431"/>
+        <location filename="../../src/videoinformation.cpp" line="440"/>
         <source>Invalid URL</source>
         <translation>Ongeldige URL</translation>
     </message>

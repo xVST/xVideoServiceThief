@@ -200,11 +200,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Error information</source>
         <translation>Felinformation</translation>
     </message>
@@ -294,6 +289,11 @@
     </message>
     <message>
         <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2085,7 +2085,7 @@ font-size:12px;
     </message>
     <message>
         <source>Adress:</source>
-        <translation>Adress:</translation>
+        <translation type="obsolete">Adress:</translation>
     </message>
     <message>
         <source>Port:</source>
@@ -2101,11 +2101,11 @@ font-size:12px;
     </message>
     <message>
         <source>Adress of your proxy configuration</source>
-        <translation>Adress för din proxykonfiguration</translation>
+        <translation type="obsolete">Adress för din proxykonfiguration</translation>
     </message>
     <message>
         <source>Proxy adress</source>
-        <translation>Adress för proxy</translation>
+        <translation type="obsolete">Adress för proxy</translation>
     </message>
     <message>
         <source>Proxy type:</source>
@@ -2129,10 +2129,6 @@ font-size:12px;
     </message>
     <message>
         <source>Display &quot;Bug Report&quot; window on Video error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2281,6 +2277,22 @@ font-size:12px;
     </message>
     <message>
         <source>Proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2703,10 +2715,6 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Download not avaiable...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Missing plugin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2752,6 +2760,10 @@ font-size:12px;
     </message>
     <message>
         <source>Download video button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download not available...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

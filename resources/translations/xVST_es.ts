@@ -249,6 +249,13 @@
         <translation>QFrame{background: white;} </translation>
     </message>
     <message>
+        <location filename="../../ui/bugreport.ui" line="79"/>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;El &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; será enviado al &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Su nombre y email estarán incluidos en el &quot;&lt;b&gt;Comentario del error&lt;/b&gt;&quot;, de todas formas es totalmente opcional e innecesario.&lt;/p&gt;</translation>
+    </message>
+    <message>
         <location filename="../../ui/bugreport.ui" line="93"/>
         <source>Error information</source>
         <translation>Información del error</translation>
@@ -312,10 +319,9 @@
 &lt;p&gt;¡Su ayuda es siemprebienvenida!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/bugreport.ui" line="79"/>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;El &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; será enviado al &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;El &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; será enviado al &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Su nombre y email estarán incluidos en el &quot;&lt;b&gt;Comentario del error&lt;/b&gt;&quot;, de todas formas es totalmente opcional e innecesario.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -393,13 +399,13 @@
 <context>
     <name>BugReportImpl</name>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="168"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
         <source>Thank you for your report.</source>
         <translation>Gracias por su report.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="168"/>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="177"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="154"/>
         <source>Ok</source>
         <translation>Aceptar</translation>
     </message>
@@ -2358,9 +2364,8 @@ font-size:12px;
         <translation>Contraseña:</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1796"/>
         <source>Adress:</source>
-        <translation>Dirección:</translation>
+        <translation type="obsolete">Dirección:</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1805"/>
@@ -2438,6 +2443,27 @@ font-size:12px;
         <translation>Nombre de usuario:</translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="1796"/>
+        <source>Address:</source>
+        <translation>Dirección:</translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1854"/>
+        <location filename="../../ui/options.ui" line="1860"/>
+        <source>Address of your proxy configuration</source>
+        <translation>Dirección de su configuración proxy</translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1857"/>
+        <source>Proxy address</source>
+        <translation>Dirección del proxy</translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="2010"/>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation>Cuando un vídeo provoca un error, puede ayudar a solucionar el problema enviandonos un &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; vía &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;El &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; se guardará sólo en el &lt;b&gt;xVST tracker&lt;/b&gt; y será visible para todo el mundo, y ninguna información extra será guardada en una Base de Datos externa.</translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="2070"/>
         <source>Remember last viewed options page (only for this session)</source>
         <translation>Recordar la última página visitada de las opciones (valido sólo para esta sesión)</translation>
@@ -2458,9 +2484,8 @@ font-size:12px;
         <translation>Mostrar la ventana de &quot;Informe de errores&quot; al fallar un Vídeo</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="2010"/>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>Cuando un vídeo provoca un error, puede ayudar a solucionar el problema enviandonos un &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; vía &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.nettracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;El &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; se guardará sólo en el &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; y será visible para todo el mundo, y ninguna información extra será guardada en una Base de Datos externa.</translation>
+        <translation type="obsolete">Cuando un vídeo provoca un error, puede ayudar a solucionar el problema enviandonos un &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; vía &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.nettracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;El &quot;&lt;b&gt;Informe de errores&lt;/b&gt;&quot; se guardará sólo en el &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; y será visible para todo el mundo, y ninguna información extra será guardada en una Base de Datos externa.</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="163"/>
@@ -2927,15 +2952,12 @@ font-size:12px;
         <translation>Puerto del proxy</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1854"/>
-        <location filename="../../ui/options.ui" line="1860"/>
         <source>Adress of your proxy configuration</source>
-        <translation>Dirección de su configuración proxy</translation>
+        <translation type="obsolete">Dirección de su configuración proxy</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1857"/>
         <source>Proxy adress</source>
-        <translation>Dirección del proxy</translation>
+        <translation type="obsolete">Dirección del proxy</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1880"/>
@@ -3542,8 +3564,12 @@ font-size:12px;
         <translation>&lt;b&gt;Nota:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
         <source>Download not avaiable...</source>
+        <translation type="obsolete">Descarga no disponible...</translation>
+    </message>
+    <message>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
+        <source>Download not available...</source>
         <translation>Descarga no disponible...</translation>
     </message>
     <message>
@@ -3919,17 +3945,17 @@ font-size:12px;
 <context>
     <name>VideoInformation</name>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="426"/>
+        <location filename="../../src/videoinformation.cpp" line="435"/>
         <source>Unsupported video service</source>
         <translation>Servicio no soportado</translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="429"/>
+        <location filename="../../src/videoinformation.cpp" line="438"/>
         <source>Adobe Flash streaming</source>
         <translation>Adobe Flash streaming</translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="431"/>
+        <location filename="../../src/videoinformation.cpp" line="440"/>
         <source>Invalid URL</source>
         <translation>URL Errónea</translation>
     </message>

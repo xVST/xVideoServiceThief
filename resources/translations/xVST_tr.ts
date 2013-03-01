@@ -181,12 +181,12 @@
 <context>
     <name>AddVideoImpl</name>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="238"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="236"/>
         <source>mark as custom download</source>
         <translation>özel download olarak işaretleyiniz</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="191"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="190"/>
         <source>Already added</source>
         <translation>Zaten eklendi</translation>
     </message>
@@ -211,32 +211,32 @@
         <translation> (%1 seçilmiş)</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="192"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="191"/>
         <source>You already added this video. Check your downloads list.</source>
         <translation>Zaten bu video ekledi. Indirme listesini kontrol edin.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="193"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="191"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="230"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="228"/>
         <source> - Blocked site</source>
         <translation> - Site engellendi</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="232"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="230"/>
         <source> - Adult content is not allowed</source>
         <translation> - Yetişkin içerik izin verilmiyor</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="272"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="270"/>
         <source>Select URL&apos;s file</source>
         <translation>URL dosyası seçin</translation>
     </message>
     <message>
-        <location filename="../../src/forms/addvideoimpl.cpp" line="306"/>
+        <location filename="../../src/forms/addvideoimpl.cpp" line="304"/>
         <source>User custom video download</source>
         <translation>Kullanıcı özel video indirme</translation>
     </message>
@@ -263,11 +263,16 @@
 &lt;p&gt;Yardımlarınıza daima açıkğız!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/bugreport.ui" line="79"/>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Bu &quot;&lt;b&gt;Hata Raporu&lt;/b&gt;&quot; Şu adrese gönderilecek &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge Kontrolüra&lt;/a&gt;.&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;Bu &quot;&lt;b&gt;Hata Raporu&lt;/b&gt;&quot; Şu adrese gönderilecek &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge Kontrolüra&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Adınızı ve e-posta eklenecek &quot;&lt;b&gt;Hata yorumu&lt;/b&gt;&quot; için , Ancak tamamen isteğe bağlı ve gereksizdir.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <location filename="../../ui/bugreport.ui" line="79"/>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="93"/>
@@ -394,13 +399,13 @@
 <context>
     <name>BugReportImpl</name>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="169"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
         <source>Thank you for your report.</source>
         <translation>Raporunuz için teşekkür ederiz.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="170"/>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="181"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="154"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
@@ -492,38 +497,38 @@
 <context>
     <name>CheckUpdatesWorker</name>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="124"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
         <source>Updates</source>
         <translation>Güncellemeler</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="125"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
         <source>You are using the most recent version of this program.</source>
         <translation>Bu programın en son sürümünü kullanıyorsanız.</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="126"/>
-        <location filename="../../src/checkupdatesworker.cpp" line="143"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="137"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="140"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
         <source>Update Center</source>
         <translation>Güncelleştirme Merkezi</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="141"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="137"/>
         <source>Please, download the new version of &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; from &lt;a href=&apos;%2&apos;&gt;here.&lt;/a&gt;</source>
         <translation>Lütfen yeni sürümü indirin &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; Şu adresten &lt;a href=&apos;%2&apos;&gt;.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="159"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="152"/>
         <source>Cancelling... please wait...</source>
         <translation>iptal ediliyor ... lütfen bekleyin ...</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="170"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="163"/>
         <source>Checking for updates...</source>
         <translation>Güncellemeler kontrol ediliyor ...</translation>
     </message>
@@ -897,27 +902,27 @@
         <translation>Saydamlaştırma seviyesi</translation>
     </message>
     <message>
-        <location filename="../../src/forms/dragdropimpl.cpp" line="181"/>
+        <location filename="../../src/forms/dragdropimpl.cpp" line="180"/>
         <source>Already added</source>
         <translation>Zaten eklendi</translation>
     </message>
     <message>
-        <location filename="../../src/forms/dragdropimpl.cpp" line="182"/>
+        <location filename="../../src/forms/dragdropimpl.cpp" line="181"/>
         <source>You already added this video. Check your downloads list.</source>
         <translation>Zaten bu video ekledi. Indirme listesini kontrol edin.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/dragdropimpl.cpp" line="183"/>
+        <location filename="../../src/forms/dragdropimpl.cpp" line="181"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/dragdropimpl.cpp" line="195"/>
+        <location filename="../../src/forms/dragdropimpl.cpp" line="193"/>
         <source> - Blocked site</source>
         <translation> - Site engellendi</translation>
     </message>
     <message>
-        <location filename="../../src/forms/dragdropimpl.cpp" line="197"/>
+        <location filename="../../src/forms/dragdropimpl.cpp" line="195"/>
         <source> - Adult content is not allowed</source>
         <translation> - Yetişkin içerik izin verilmiyor</translation>
     </message>
@@ -1139,6 +1144,79 @@ font-size:12px;
         <location filename="../../src/main.cpp" line="100"/>
         <source>Plugins loaded</source>
         <translation>Eklentiler yüklendi</translation>
+    </message>
+</context>
+<context>
+    <name>LoginPrompt</name>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="54"/>
+        <source>User name:</source>
+        <translation type="unfinished">Kullanıcı Adı:</translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="64"/>
+        <source>Password:</source>
+        <translation type="unfinished">Şifre:</translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="78"/>
+        <source>Stay signed in (only during this session)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="99"/>
+        <source>Remember my password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="128"/>
+        <location filename="../../ui/loginprompt.ui" line="134"/>
+        <source>Confirm and close the window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="131"/>
+        <source>Ok button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="137"/>
+        <source>Login</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="153"/>
+        <location filename="../../ui/loginprompt.ui" line="159"/>
+        <source>Discard and close window</source>
+        <translation type="unfinished">Değiştirme ve pencereyi kapat</translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="156"/>
+        <source>Cancel button</source>
+        <translation type="unfinished">İptal düğmesi</translation>
+    </message>
+    <message>
+        <location filename="../../ui/loginprompt.ui" line="162"/>
+        <source>Cancel</source>
+        <translation type="unfinished">İptal</translation>
+    </message>
+</context>
+<context>
+    <name>LoginPromptImpl</name>
+    <message>
+        <location filename="../../src/forms/loginpromptimpl.cpp" line="42"/>
+        <source>Login failed, please enter your valid %1 user account information:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/forms/loginpromptimpl.cpp" line="47"/>
+        <source>Please, enter your %1 user account information:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1601,234 +1679,273 @@ font-size:12px;
         <translation> Hız </translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="370"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="369"/>
         <source>Closing...</source>
         <translation>Kapanıyor...</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="371"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="369"/>
         <source>xVideoServiceThief is working, do you wish Pause the current work?</source>
         <translation>xVideoServiceThief şuan çalışıyor, mevcut indirmeleri duraklatmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="372"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="370"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="548"/>
         <location filename="../../src/forms/mainformimpl.cpp" line="553"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="559"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="630"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="636"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="675"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="623"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="628"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="664"/>
         <source>Yes</source>
         <translation>Evet</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="372"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="370"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="548"/>
         <location filename="../../src/forms/mainformimpl.cpp" line="553"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="559"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="630"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="636"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="675"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="623"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="628"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="664"/>
         <source>No</source>
         <translation>Hayır</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="400"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="398"/>
         <source>Options</source>
         <translation>Seçenekler</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="440"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="992"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="437"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="979"/>
         <source>Updates</source>
         <translation>Güncellemeler</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="441"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="438"/>
         <source>Another process is currently working, please stop it or wait until the end of process.</source>
         <translation>Şu anda başka bir işlem çalışıyor, Lütfen durdurun yada işlemin bitmesini beklein.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="442"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="744"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="994"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1451"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="438"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="732"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="981"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1435"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="487"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="483"/>
         <source>Select the download directory:</source>
         <translation>İndirme klasörü seç:</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="551"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="547"/>
         <source>Delete download</source>
         <translation>İndirmeyi sil</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="552"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="547"/>
         <source>Wish you delete the download of &lt;b&gt;%1&lt;/b&gt;?</source>
         <translation>İndirmeyi silmek istiyormusunuz &lt;b&gt;%1&lt;/b&gt;?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="557"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="552"/>
         <source>Delete downloads</source>
         <translation>İndirmeleri sil</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="558"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="552"/>
         <source>Wish you delete the &lt;b&gt;%1&lt;/b&gt; selected downloads?</source>
         <translation>Seçili indirmeleri&lt;b&gt;%1&lt;/b&gt; silmek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="628"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1221"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1243"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="622"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1208"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1230"/>
         <source>Cancel download</source>
         <translation>İndirmeyi iptal et</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="629"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="622"/>
         <source>Wish you cancel the download of &lt;b&gt;%1&lt;/b&gt;?</source>
         <translation>İndirmeyi iptal istiyormusunuz &lt;b&gt;%1&lt;/b&gt;?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="634"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1284"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="627"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1271"/>
         <source>Cancel downloads</source>
         <translation>İndirmeleri iptal et</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="635"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="627"/>
         <source>Wish you cancel the &lt;b&gt;%1&lt;/b&gt; selected downloads?</source>
         <translation>Seçili indirmeleri&lt;b&gt;%1&lt;/b&gt; iptal istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="673"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="664"/>
         <source>Clear list</source>
         <translation>Listeyi temizle</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="674"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="664"/>
         <source>Are you sure to clear the downloads list?</source>
         <translation>İndirme listesini temizlemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="742"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="730"/>
         <source>Error message</source>
         <translation>Hata mesajı</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="743"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="731"/>
         <source>This video has the following error:&lt;br&gt;&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
         <translation>Bu ​​video şu hata var:&lt;br&gt;&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="993"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="980"/>
         <source>xUpdater application is missing.&lt;br&gt;&lt;br&gt;Reinstall xVideoServiceThief if you want update automatically the program.</source>
         <translation>xUpdater uygulaması eksik.&lt;br&gt;&lt;br&gt;Otomatik program güncelleme istiyorsanız xVideoServiceThief yeniden yükleyin.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1194"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1181"/>
         <source>&lt;b&gt;Videos count:&lt;/b&gt; %1 &lt;span style=&quot;color:#666666;&quot;&gt;(%2 completed)&lt;/span&gt;</source>
         <translation>&lt;b&gt;Video sayısı:&lt;/b&gt; %1 &lt;span style=&quot;color:#666666;&quot;&gt;(%2 tamamlanan)&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1198"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1185"/>
         <source>&lt;b&gt;Downloading:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;İndiriliyor:&lt;/b&gt; %1 tane %2</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1202"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1189"/>
         <source>&lt;b&gt;Download speed:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;İndirme hızı:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1203"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1190"/>
         <source>/sec</source>
         <translation>/saniye</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1218"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1240"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1205"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1227"/>
         <source>Delete video</source>
         <translation>Videoyu sil</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1219"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1241"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1206"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1228"/>
         <source>Start download</source>
         <translation>İndirmeye başla</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1220"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1242"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1207"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1229"/>
         <source>Pause download</source>
         <translation>İndirmeyi duraklat</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1242"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1229"/>
         <source>Resume download</source>
         <translation>İndirmeye devam et</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1244"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1231"/>
         <source>Rename video</source>
         <translation>Videoyu yeniden adlandır</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1245"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1232"/>
         <source>Reset state</source>
         <translation>Durumu sıfırla</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1280"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1267"/>
         <source>Delete videos</source>
         <translation>Videoları sil</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1281"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1268"/>
         <source>Start downloads</source>
         <translation>İndirmeleri başlat</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1283"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1270"/>
         <source>Pause downloads</source>
         <translation>İndirmeleri duraklat</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1283"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1270"/>
         <source>Resume downloads</source>
         <translation>İndirmeleri devam ettir</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1285"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1272"/>
         <source>Rename videos</source>
         <translation>Videoları yeniden adlandır</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1286"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1273"/>
         <source>Reset states</source>
         <translation>Durumları sıfırla</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1330"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1317"/>
         <source>- Downloading: %1 (%2, %3)</source>
         <translation>- İndiriliyor: %1 (%2, %3)</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1338"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1325"/>
         <source>- Converting: %1 (%2)</source>
         <translation>- Dönüştürülüyor: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1449"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1435"/>
         <source>Already added</source>
         <translation>Zaten eklendi</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1450"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1435"/>
         <source>You already added this video. Check your downloads list.</source>
         <translation>Zaten bu video ekledi. Indirme listesini kontrol edin.</translation>
+    </message>
+</context>
+<context>
+    <name>MultiMediasDetectedImpl</name>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="20"/>
+        <source>Multiple download files are avaiable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="28"/>
+        <source>Title</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="33"/>
+        <source>URL</source>
+        <translation type="unfinished">URL</translation>
+    </message>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="60"/>
+        <location filename="../../ui/multimediasdetected.ui" line="66"/>
+        <source>Add urls and close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="63"/>
+        <source>Add urls and close button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/multimediasdetected.ui" line="69"/>
+        <source>Ok</source>
+        <translation type="unfinished">Tamam</translation>
     </message>
 </context>
 <context>
@@ -1978,97 +2095,97 @@ font-size:12px;
 <context>
     <name>NewLanguagesImpl</name>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="84"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="83"/>
         <source>Uninstall language</source>
         <translation>Dili kaldır</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="85"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="83"/>
         <source>Wish you uninstall the lanuage?</source>
         <translation>Dili kaldirmayi istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="86"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="97"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="83"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="89"/>
         <source>Yes</source>
         <translation>Evet</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="87"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="98"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="83"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="89"/>
         <source>No</source>
         <translation>Hayır</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="95"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="89"/>
         <source>Install language</source>
         <translation>Dili kur</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="126"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="131"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="116"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="121"/>
         <source>Language uninstall error</source>
         <translation>Dili kaldırma hatası</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="96"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="89"/>
         <source>Wish you install this new language?</source>
         <translation>Yeni dili kurmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="127"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="117"/>
         <source>Some errors has ocurred on try uninstall the selected &lt;b&gt;%1&lt;/b&gt; language.&lt;br&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; On Windows Vista you should execute the xVST as administrator before uninstall languages.</source>
         <translation>Seçtiğiniz dili kaldirmaya çalışırken bazı hatalar oldu&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Not:&lt;/b&gt;Windows vistada dili silmeden once xVST yi yönetici ile çalıştırın.</translation>
     </message>
     <message>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="118"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="123"/>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="128"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="133"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="138"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="166"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="171"/>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="176"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="181"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="186"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="132"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="180"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="122"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="170"/>
         <source>Some errors has ocurred on try uninstall the selected &lt;b&gt;%1&lt;/b&gt; language.</source>
         <translation>Seçtiğiniz dili kaldirmaya çalışırken bazı hatalar oldu&lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="136"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="126"/>
         <source>Language uninstall</source>
         <translation>Dili kaldır</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="137"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="127"/>
         <source>Language &lt;b&gt;%1&lt;/b&gt; uninstalled.</source>
         <translation>Dilin &lt;b&gt;%1&lt;/b&gt; silindi.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="159"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="149"/>
         <source>Installing new language...</source>
         <translation>Yeni dil kuruluyor...</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="174"/>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="179"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="164"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="169"/>
         <source>Language install error</source>
         <translation>Dil kurlum hatası</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="175"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="165"/>
         <source>Some errors has ocurred on try install the selected &lt;b&gt;%1&lt;/b&gt; language.&lt;br&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; On Windows Vista you should execute the xVST as administrator before install new languages.</source>
         <translation>Seçtiğiniz dili kurmaya çalışırken bazı hatalar oldu&lt;b&gt;%1&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Not:&lt;/b&gt;Windows vistada dili kurmadan once xVST yi yönetici ile çalıştırın.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="184"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="174"/>
         <source>Language install</source>
         <translation>Dil kurulumu</translation>
     </message>
     <message>
-        <location filename="../../src/forms/newlanguagesimpl.cpp" line="185"/>
+        <location filename="../../src/forms/newlanguagesimpl.cpp" line="175"/>
         <source>New language &lt;b&gt;%1&lt;/b&gt; installed.</source>
         <translation>Yeni dilin &lt;b&gt;%1&lt;/b&gt; kuruldu.</translation>
     </message>
@@ -2701,6 +2818,11 @@ font-size:12px;
         <translation>Hatalı indirilen indirme dosyasını sil</translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="2010"/>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="1615"/>
         <source>Time-out:</source>
         <translation>Zaman-aşımı:</translation>
@@ -2770,9 +2892,8 @@ font-size:12px;
         <translation>Vekil sunucu şifresi</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1796"/>
         <source>Adress:</source>
-        <translation>Adres:</translation>
+        <translation type="obsolete">Adres:</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1805"/>
@@ -2791,15 +2912,12 @@ font-size:12px;
         <translation>Vekil sunucu bağlantı noktası</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1854"/>
-        <location filename="../../ui/options.ui" line="1860"/>
         <source>Adress of your proxy configuration</source>
-        <translation>Vekil sunucu ayarlarındaki adres</translation>
+        <translation type="obsolete">Vekil sunucu ayarlarındaki adres</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1857"/>
         <source>Proxy adress</source>
-        <translation>Vekil sunucu adresi</translation>
+        <translation type="obsolete">Vekil sunucu adresi</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1873"/>
@@ -2823,6 +2941,22 @@ font-size:12px;
         <translation>Sistem ayarlarını kullanın</translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="1796"/>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1854"/>
+        <location filename="../../ui/options.ui" line="1860"/>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1857"/>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="1992"/>
         <location filename="../../ui/options.ui" line="1998"/>
         <source>Enable/disable the &quot;Bug report&quot; window on video Error</source>
@@ -2839,9 +2973,8 @@ font-size:12px;
         <translation>Video hatasındaki &quot;Hata Raporu&quot; penceresini görüntüle</translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="2010"/>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>Bir video hata verdiği zaman çözüme yardımcı olmak için &lt;b&gt;Hata Raporunu&lt;/b&gt; bizle paylaşın &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net izleyici sitemi&lt;/a&gt;.&lt;br&gt;&lt;br&gt;bu&quot;&lt;b&gt;Hata raporu&lt;/b&gt;&quot; yalnızca SF.net izlecilerii tarafından kayıt edilebilir &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt; ve herkes tarafından görülebilir.</translation>
+        <translation type="obsolete">Bir video hata verdiği zaman çözüme yardımcı olmak için &lt;b&gt;Hata Raporunu&lt;/b&gt; bizle paylaşın &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net izleyici sitemi&lt;/a&gt;.&lt;br&gt;&lt;br&gt;bu&quot;&lt;b&gt;Hata raporu&lt;/b&gt;&quot; yalnızca SF.net izlecilerii tarafından kayıt edilebilir &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt; ve herkes tarafından görülebilir.</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="2061"/>
@@ -2911,7 +3044,7 @@ font-size:12px;
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="189"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="700"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="689"/>
         <source>Updates</source>
         <translation>Güncellemeler</translation>
     </message>
@@ -2986,49 +3119,49 @@ font-size:12px;
         <translation>Socks5 Vekili</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="555"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="554"/>
         <source>Remove schedule item</source>
         <translation>Zamanlandırmış parçayı sil</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="556"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="554"/>
         <source>Wish you remove the selected schedule item?</source>
         <translation>Seçili zamanlandırılmış parçayi silmek istediğinizden emin misiniz!</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="586"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="581"/>
         <source>&lt;b&gt;Enter the security password to unlock adult sites.&lt;/b&gt;</source>
         <translation>&lt;b&gt;Yetişkin siteleri kilidini açmak için güvenlik şifrenizi girin.&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="587"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="582"/>
         <source>Unlocking password:</source>
         <translation>Açma şifresi:</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="596"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="590"/>
         <source>Invalid UPS! password</source>
         <translation>Ups! hatalı şifre</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="597"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="591"/>
         <source>You entered an invalid UPS! password and the adults contents will continue locked.</source>
         <translation>Ups! Geçersiz bir şifre girdiniz ve yetişkin içeriğini kilitlenmiş devam edecektir.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="683"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="675"/>
         <source>Language Setup</source>
         <translation>Dil Kurulumu</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="684"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="676"/>
         <source>In order to apply the new selected language, the program must be restarted.</source>
         <translation>Yeni seçilen dil uygulamak için, programın yeniden başlatılması gerekir.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="598"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="685"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="702"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="591"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="676"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="691"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
@@ -3038,34 +3171,34 @@ font-size:12px;
         <translation>İnternet Ayarları</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="701"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="690"/>
         <source>Another process is currently working, please stop it or wait until the end of process.</source>
         <translation>Şu anda başka bir işlem çalışıyor, Lütfen durdurun yada işlemin bitmesini beklein.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="759"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="748"/>
         <source>Select the download directory:</source>
         <translation>İndirme klasörü seç:</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="769"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="758"/>
         <source>Select the ffmpeg lib:</source>
         <translation>ffmpeg kütüphanesi seçin:</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="801"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="789"/>
         <source>Clear Log</source>
         <translation>logu temizle</translation>
     </message>
     <message>
-        <location filename="../../src/forms/optionsimpl.cpp" line="802"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="789"/>
         <source>Are you sure to clear the downloads/conversions historic file?</source>
         <translation>İndirilenler / dönüştürülenler geçmişini temizlemek için emin misin?</translation>
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="451"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="557"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="803"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="554"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="789"/>
         <source>Yes</source>
         <translation>Evet</translation>
     </message>
@@ -3091,8 +3224,8 @@ font-size:12px;
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="451"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="558"/>
-        <location filename="../../src/forms/optionsimpl.cpp" line="804"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="554"/>
+        <location filename="../../src/forms/optionsimpl.cpp" line="789"/>
         <source>No</source>
         <translation>Hayır</translation>
     </message>
@@ -3192,8 +3325,8 @@ font-size:12px;
     </message>
     <message>
         <location filename="../../ui/scheduleitemedit.ui" line="134"/>
-        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="46"/>
-        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="51"/>
+        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="48"/>
+        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="53"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
@@ -3203,18 +3336,18 @@ font-size:12px;
         <translation>İptal</translation>
     </message>
     <message>
-        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="44"/>
-        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="49"/>
+        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="46"/>
+        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="51"/>
         <source>Invalid schedule configuration</source>
         <translation>Geçersiz zamanlandırma ayarı</translation>
     </message>
     <message>
-        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="45"/>
+        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="47"/>
         <source>The start time cannot exceed the end time.</source>
         <translation>Başlangıç ​​zamanı, bitiş saatini geçemez.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="50"/>
+        <location filename="../../src/forms/scheduleitemeditimpl.cpp" line="52"/>
         <source>The start time and end time cannot be equals.</source>
         <translation>Başlangıç ​​zamanı ve bitiş saati aynı olamaz.</translation>
     </message>
@@ -3265,38 +3398,38 @@ font-size:12px;
 <context>
     <name>SearchVideosImpl</name>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="111"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="109"/>
         <source>Please, select one or more services.</source>
         <translation>Lütfen, bir veya daha fazla servis seçin.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="112"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="109"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="147"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="144"/>
         <source>Searching &quot;&lt;b&gt;%1&lt;/b&gt;&quot; (page %2)... please wait...</source>
         <translation>Arıyor &quot;&lt;b&gt;%1&lt;/b&gt;&quot; (sayfa %2)... lütfen bekleyin...</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="217"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="214"/>
         <source>All standard services</source>
         <translation>Bütün standart servisler</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="218"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="215"/>
         <source>All adult services</source>
         <translation>Bütün yetişkin servisler</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="220"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="217"/>
         <source>All services</source>
         <translation>Bütün servisler</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="110"/>
-        <location filename="../../src/forms/searchvideosimpl.cpp" line="222"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="109"/>
+        <location filename="../../src/forms/searchvideosimpl.cpp" line="219"/>
         <source>Custom search</source>
         <translation>Özel arama</translation>
     </message>
@@ -3436,33 +3569,37 @@ font-size:12px;
         <translation>&lt;b&gt;İzlenme oranı:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
         <source>Download not avaiable...</source>
-        <translation>İndirme kullanılamaz...</translation>
+        <translation type="obsolete">İndirme kullanılamaz...</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="129"/>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
+        <source>Download not available...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="128"/>
         <source>Missing plugin</source>
         <translation>Eklentisi eksik</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="130"/>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="129"/>
         <source>&lt;p&gt;Is not possible to download this video.&lt;/p&gt;&lt;p&gt;The xVST didn&apos;t find any plugin capable to get the video information.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Bu videoyu indirmek mümkün değil.&lt;/p&gt;&lt;p&gt;xVST video bilgisi için uygun bir eklenti bulamadi&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="131"/>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="137"/>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="130"/>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="134"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="135"/>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="133"/>
         <source>Already added</source>
         <translation>Zaten eklendi</translation>
     </message>
     <message>
-        <location filename="../../src/forms/searchvideositemimpl.cpp" line="136"/>
+        <location filename="../../src/forms/searchvideositemimpl.cpp" line="134"/>
         <source>You already added this video. Check your downloads list.</source>
         <translation>Zaten bu video ekledi. Indirme listesini kontrol edin.</translation>
     </message>
@@ -3695,22 +3832,22 @@ font-size:12px;
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../../src/forms/updatecenterimpl.cpp" line="188"/>
+        <location filename="../../src/forms/updatecenterimpl.cpp" line="187"/>
         <source>Updates center error</source>
         <translation>Güncelleme merkezi hatası</translation>
     </message>
     <message>
-        <location filename="../../src/forms/updatecenterimpl.cpp" line="189"/>
+        <location filename="../../src/forms/updatecenterimpl.cpp" line="188"/>
         <source>Some errors has ocurred on try download the new update(s).</source>
         <translation>Yeni güncelleme(ler) indirilirken bazı hatalara oluştu.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/updatecenterimpl.cpp" line="190"/>
+        <location filename="../../src/forms/updatecenterimpl.cpp" line="188"/>
         <source>Ok</source>
         <translation>Tamam</translation>
     </message>
     <message>
-        <location filename="../../src/forms/updatecenterimpl.cpp" line="194"/>
+        <location filename="../../src/forms/updatecenterimpl.cpp" line="192"/>
         <source>Close</source>
         <translation>Kapat</translation>
     </message>
@@ -3813,17 +3950,17 @@ font-size:12px;
 <context>
     <name>VideoInformation</name>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="415"/>
+        <location filename="../../src/videoinformation.cpp" line="435"/>
         <source>Unsupported video service</source>
         <translation>Desteklenmeyen video servisi</translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="418"/>
+        <location filename="../../src/videoinformation.cpp" line="438"/>
         <source>Adobe Flash streaming</source>
         <translation>Adobe flash akışı</translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="420"/>
+        <location filename="../../src/videoinformation.cpp" line="440"/>
         <source>Invalid URL</source>
         <translation>Geçersiz URL</translation>
     </message>

@@ -262,7 +262,7 @@
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="79"/>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -391,13 +391,13 @@
 <context>
     <name>BugReportImpl</name>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="168"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
         <source>Thank you for your report.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="168"/>
-        <location filename="../../src/forms/bugreportimpl.cpp" line="177"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="150"/>
+        <location filename="../../src/forms/bugreportimpl.cpp" line="154"/>
         <source>Ok</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2803,6 +2803,11 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="2010"/>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="1615"/>
         <source>Time-out:</source>
         <translation type="unfinished"></translation>
@@ -2872,11 +2877,6 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/options.ui" line="1796"/>
-        <source>Adress:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../ui/options.ui" line="1805"/>
         <source>Port:</source>
         <translation type="unfinished"></translation>
@@ -2890,17 +2890,6 @@ font-size:12px;
     <message>
         <location filename="../../ui/options.ui" line="1827"/>
         <source>Proxy port</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ui/options.ui" line="1854"/>
-        <location filename="../../ui/options.ui" line="1860"/>
-        <source>Adress of your proxy configuration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ui/options.ui" line="1857"/>
-        <source>Proxy adress</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2925,6 +2914,22 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../ui/options.ui" line="1796"/>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1854"/>
+        <location filename="../../ui/options.ui" line="1860"/>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/options.ui" line="1857"/>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../ui/options.ui" line="1992"/>
         <location filename="../../ui/options.ui" line="1998"/>
         <source>Enable/disable the &quot;Bug report&quot; window on video Error</source>
@@ -2938,11 +2943,6 @@ font-size:12px;
     <message>
         <location filename="../../ui/options.ui" line="2001"/>
         <source>Display &quot;Bug Report&quot; window on Video error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ui/options.ui" line="2010"/>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3539,7 +3539,7 @@ font-size:12px;
     </message>
     <message>
         <location filename="../../src/forms/searchvideositemimpl.cpp" line="95"/>
-        <source>Download not avaiable...</source>
+        <source>Download not available...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3915,17 +3915,17 @@ font-size:12px;
 <context>
     <name>VideoInformation</name>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="426"/>
+        <location filename="../../src/videoinformation.cpp" line="435"/>
         <source>Unsupported video service</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="429"/>
+        <location filename="../../src/videoinformation.cpp" line="438"/>
         <source>Adobe Flash streaming</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/videoinformation.cpp" line="431"/>
+        <location filename="../../src/videoinformation.cpp" line="440"/>
         <source>Invalid URL</source>
         <translation type="unfinished"></translation>
     </message>

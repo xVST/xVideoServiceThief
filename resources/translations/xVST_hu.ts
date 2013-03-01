@@ -202,7 +202,7 @@
     <message>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;A &quot;&lt;b&gt;Hibajelentés&lt;/b&gt;&quot; el lesz küldve ide: &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;A nevét és email címét, tartalmazni fogja a &quot;&lt;b&gt;Hiba leírás&lt;/b&gt;&quot;, ez teljesen szabadon választható és nem kötelező.&lt;/p&gt;</translation>
+        <translation type="obsolete">&lt;p&gt;A &quot;&lt;b&gt;Hibajelentés&lt;/b&gt;&quot; el lesz küldve ide: &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;A nevét és email címét, tartalmazni fogja a &quot;&lt;b&gt;Hiba leírás&lt;/b&gt;&quot;, ez teljesen szabadon választható és nem kötelező.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Error information</source>
@@ -295,6 +295,11 @@
     <message>
         <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
         <translation>Ne jelenítse meg a &quot;Hibajelentés&quot;-t legközelebb</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2086,7 +2091,7 @@ betűméret:12px;
     </message>
     <message>
         <source>Adress:</source>
-        <translation>Cím:</translation>
+        <translation type="obsolete">Cím:</translation>
     </message>
     <message>
         <source>Port:</source>
@@ -2102,11 +2107,11 @@ betűméret:12px;
     </message>
     <message>
         <source>Adress of your proxy configuration</source>
-        <translation>Proxy konfiguráció címe</translation>
+        <translation type="obsolete">Proxy konfiguráció címe</translation>
     </message>
     <message>
         <source>Proxy adress</source>
-        <translation>Proxy cím</translation>
+        <translation type="obsolete">Proxy cím</translation>
     </message>
     <message>
         <source>Proxy type:</source>
@@ -2134,7 +2139,7 @@ betűméret:12px;
     </message>
     <message>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>Videó hibánál, segíthet nekünk a hiba javításában, ha elküldi a &quot;&lt;b&gt;Hibajelentés&lt;/b&gt;&quot;-t a &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net hibajelentési rendszeren&lt;/a&gt; keresztül.&lt;br&gt;&lt;br&gt;A &quot;&lt;b&gt;Hibajelentés&lt;/b&gt;&quot;, csak a &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net hibajelentés&lt;/a&gt; csoportban lesz tárolva és mindenki számára láthatóvá válik, viszont extra adat nem lesz mentve, semmilyen külső adatbázisba.</translation>
+        <translation type="obsolete">Videó hibánál, segíthet nekünk a hiba javításában, ha elküldi a &quot;&lt;b&gt;Hibajelentés&lt;/b&gt;&quot;-t a &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net hibajelentési rendszeren&lt;/a&gt; keresztül.&lt;br&gt;&lt;br&gt;A &quot;&lt;b&gt;Hibajelentés&lt;/b&gt;&quot;, csak a &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net hibajelentés&lt;/a&gt; csoportban lesz tárolva és mindenki számára láthatóvá válik, viszont extra adat nem lesz mentve, semmilyen külső adatbázisba.</translation>
     </message>
     <message>
         <source>If this option is checked, on open again the &quot;Options&quot; dialog, the last page viewed (Basic, Language, etc...) is displayed again (only for this session)</source>
@@ -2283,6 +2288,22 @@ betűméret:12px;
     <message>
         <source>Proxy configuration</source>
         <translation type="unfinished">Proxy beállítás</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2705,7 +2726,7 @@ betűméret:12px;
     </message>
     <message>
         <source>Download not avaiable...</source>
-        <translation>A letöltés nem elérhető...</translation>
+        <translation type="obsolete">A letöltés nem elérhető...</translation>
     </message>
     <message>
         <source>Missing plugin</source>
@@ -2754,6 +2775,10 @@ betűméret:12px;
     <message>
         <source>Download video button</source>
         <translation>Videó letöltése gomb</translation>
+    </message>
+    <message>
+        <source>Download not available...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

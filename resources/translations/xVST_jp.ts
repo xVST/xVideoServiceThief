@@ -268,7 +268,7 @@
     <message>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;この &quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; は.  &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.に送信されます&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;この &quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; は.  &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.に送信されます&lt;/p&gt;
 &lt;p&gt;あなたの入力した名前とE-メールアドレスは &quot;&lt;b&gt;バグコメント&lt;/b&gt;&quot;,に含まれます, これらのフィールドは必ず必要なものではありません.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -298,6 +298,11 @@
     <message>
         <source>Cancel button</source>
         <translation>中止ボタン</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1838,7 +1843,7 @@ background: white;
     </message>
     <message>
         <source>Proxy adress</source>
-        <translation>プロキシ-アドレス</translation>
+        <translation type="obsolete">プロキシ-アドレス</translation>
     </message>
     <message>
         <source>Save a Log with all downloaded videos (Date + Title + URL)</source>
@@ -1990,7 +1995,7 @@ background: white;
     </message>
     <message>
         <source>Adress:</source>
-        <translation>アドレス:</translation>
+        <translation type="obsolete">アドレス:</translation>
     </message>
     <message>
         <source>Language Configuration </source>
@@ -2066,7 +2071,7 @@ background: white;
     </message>
     <message>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>ビデオストリームエラーが発生した時、&quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; を &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;に送って頂くことで、今後の修正の役にたちます。送られた &quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; は &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; に保存され、すべての閲覧者に公開されます。また、付加的なデータは外部データベースにも保存されます。</translation>
+        <translation type="obsolete">ビデオストリームエラーが発生した時、&quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; を &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;に送って頂くことで、今後の修正の役にたちます。送られた &quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; は &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; に保存され、すべての閲覧者に公開されます。また、付加的なデータは外部データベースにも保存されます。</translation>
     </message>
     <message>
         <source>General video output quality combobox</source>
@@ -2094,7 +2099,7 @@ background: white;
     </message>
     <message>
         <source>Adress of your proxy configuration</source>
-        <translation>プロキシアドレス</translation>
+        <translation type="obsolete">プロキシアドレス</translation>
     </message>
     <message>
         <source>Download videos automatically checkbox</source>
@@ -2283,6 +2288,22 @@ background: white;
     <message>
         <source>Display popup checkbox</source>
         <translation>ポップアップを表示</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2701,7 +2722,7 @@ background: white;
     </message>
     <message>
         <source>Download not avaiable...</source>
-        <translation>有効なダウンロードではありません...</translation>
+        <translation type="obsolete">有効なダウンロードではありません...</translation>
     </message>
     <message>
         <source>Download video</source>
@@ -2754,6 +2775,10 @@ background: white;
     <message>
         <source>Download video button</source>
         <translation>ビデオをダウンロード-ボタン</translation>
+    </message>
+    <message>
+        <source>Download not available...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

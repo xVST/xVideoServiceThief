@@ -238,7 +238,7 @@
     <message>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; zostanie wysłany do &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;&quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; zostanie wysłany do &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Twoje imię i adres email zostanie umieszczony w &quot;&lt;b&gt;Komentarzu o błędzie&lt;/b&gt;&quot;, jednakże jest to całkowicie opcjonalne i niekonieczne.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -295,6 +295,11 @@
     </message>
     <message>
         <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1809,7 +1814,7 @@ font-size:12px;
     </message>
     <message>
         <source>Adress:</source>
-        <translation>Adres:</translation>
+        <translation type="obsolete">Adres:</translation>
     </message>
     <message>
         <source>Port:</source>
@@ -1889,7 +1894,7 @@ font-size:12px;
     </message>
     <message>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>Kiedy wystąpi błąd ściągania pliku wideo, możesz pomóc go naprawić wysyłając do nas &quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; poprzez &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; jest przechowywany tylko na &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt;, jest widoczny dla wszystkich i żadne dodatkowe dane nie są zapisywane w jakiejkolwiek innej/zewnętrznej bazie.</translation>
+        <translation type="obsolete">Kiedy wystąpi błąd ściągania pliku wideo, możesz pomóc go naprawić wysyłając do nas &quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; poprzez &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; jest przechowywany tylko na &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt;, jest widoczny dla wszystkich i żadne dodatkowe dane nie są zapisywane w jakiejkolwiek innej/zewnętrznej bazie.</translation>
     </message>
     <message>
         <source>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</source>
@@ -2128,14 +2133,6 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Adress of your proxy configuration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Proxy adress</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Type of your proxy configuration</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2285,6 +2282,22 @@ font-size:12px;
     </message>
     <message>
         <source>Proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2708,7 +2721,7 @@ font-size:12px;
     </message>
     <message>
         <source>Download not avaiable...</source>
-        <translation>Niedostępny...</translation>
+        <translation type="obsolete">Niedostępny...</translation>
     </message>
     <message>
         <source>Missing plugin</source>
@@ -2756,6 +2769,10 @@ font-size:12px;
     </message>
     <message>
         <source>Download video button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download not available...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

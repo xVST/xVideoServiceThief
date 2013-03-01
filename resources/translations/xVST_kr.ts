@@ -238,7 +238,7 @@
     <message>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;는 &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;(xVST SourceForge tracker) 로 보내지게 됩니다.&lt;/a&gt;.&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;&quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;는 &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;(xVST SourceForge tracker) 로 보내지게 됩니다.&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;당신의 이름과 E-Mail은  &quot;&lt;b&gt;버그 코멘트&lt;/b&gt;&quot;에 추가 되게 되게 되지만, 완전한 옵션사항으로 기재하지 않으셔도 무방합니다.&lt;/p&gt;</translation>
     </message>
     <message>
@@ -295,6 +295,11 @@
     </message>
     <message>
         <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1704,7 +1709,7 @@ font-size:12px;
     </message>
     <message>
         <source>Adress:</source>
-        <translation>주소:</translation>
+        <translation type="obsolete">주소:</translation>
     </message>
     <message>
         <source>Allowed websites:</source>
@@ -1884,7 +1889,7 @@ font-size:12px;
     </message>
     <message>
         <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>영상 재생 중 에러 발생시 &quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot; 를  &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;로 보냄으로써 오류를 수정하도록 도울 수 있습니다.&lt;br&gt;&lt;br&gt;&quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;는 오직 &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt;에만 저장되며 모든이에게 공개됩니다. 또한 외부 데이터베이스에는 어떠한 다른 데이터도 저장되지 않습니다.</translation>
+        <translation type="obsolete">영상 재생 중 에러 발생시 &quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot; 를  &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;로 보냄으로써 오류를 수정하도록 도울 수 있습니다.&lt;br&gt;&lt;br&gt;&quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;는 오직 &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt;에만 저장되며 모든이에게 공개됩니다. 또한 외부 데이터베이스에는 어떠한 다른 데이터도 저장되지 않습니다.</translation>
     </message>
     <message>
         <source>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</source>
@@ -2124,11 +2129,11 @@ font-size:12px;
     </message>
     <message>
         <source>Adress of your proxy configuration</source>
-        <translation>당신의 프록시 설정 주소</translation>
+        <translation type="obsolete">당신의 프록시 설정 주소</translation>
     </message>
     <message>
         <source>Proxy adress</source>
-        <translation>프록시 주소</translation>
+        <translation type="obsolete">프록시 주소</translation>
     </message>
     <message>
         <source>Type of your proxy configuration</source>
@@ -2280,6 +2285,22 @@ font-size:12px;
     </message>
     <message>
         <source>Proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2702,10 +2723,6 @@ font-size:12px;
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Download not avaiable...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Missing plugin</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2751,6 +2768,10 @@ font-size:12px;
     </message>
     <message>
         <source>Download video button</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download not available...</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
