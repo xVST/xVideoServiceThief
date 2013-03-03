@@ -27,7 +27,7 @@
 
 #include "../tools.h"
 
-CompletedPopupImpl::CompletedPopupImpl(QSystemTrayIcon *trayIconRef, QWidget * parent, Qt::WFlags f)
+CompletedPopupImpl::CompletedPopupImpl(QSystemTrayIcon *trayIconRef, QWidget * parent, Qt::WindowFlags f)
 		: QWidget(parent, f)
 {
 	setupUi(this);
@@ -86,7 +86,7 @@ void CompletedPopupImpl::displayTimerOnTimer()
 
 void CompletedPopupImpl::displayPopup(const QIcon &serviceIcon, const QString videoTitle, const QString videoFile)
 {
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	// check if growl is installed
 	if (QSystemTrayIcon::supportsMessages())
 	{

@@ -31,12 +31,12 @@
 #include "../tools.h"
 #include "../updates.h"
 
-NewLanguagesImpl::NewLanguagesImpl(ProgramOptions *programOptions, QWidget *parent, Qt::WFlags f)
+NewLanguagesImpl::NewLanguagesImpl(ProgramOptions *programOptions, QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
 	// resize form if is needed
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	resize(566, 402);
 #endif
 	lsvInstalled->header()->hide();

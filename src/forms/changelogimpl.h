@@ -9,7 +9,7 @@ Q_OBJECT
 	private:
 		QString convertPlainTextToHtml(QString plainText);
 	public:
-		ChangelogImpl(QWidget *parent = 0, Qt::WFlags f = 0);
+		ChangelogImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);
 	private slots:
 		void cmbVersionsInActivated(int index);
 };

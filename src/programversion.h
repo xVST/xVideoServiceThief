@@ -38,7 +38,7 @@ static const QString CURRENT_OS = "MSWINDOWS";	//!< Microsoft windows version
 #ifdef Q_OS_LINUX 
 static const QString CURRENT_OS = "LINUX";		//!< Gnu/Linux version
 #endif
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 static const QString CURRENT_OS = "MACOSX";		//!< MacOS X version
 #endif
 

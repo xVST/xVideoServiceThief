@@ -33,6 +33,6 @@
 class CreditsImpl : public QDialog, public Ui::Credits
 {
 	public:
-		CreditsImpl( QWidget * parent = 0, Qt::WFlags f = 0 );
+		CreditsImpl( QWidget * parent = 0, Qt::WindowFlags f = 0 );
 };
 #endif

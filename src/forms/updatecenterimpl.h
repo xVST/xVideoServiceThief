@@ -43,7 +43,7 @@ Q_OBJECT
 	protected:
 		void closeEvent(QCloseEvent *event);
 	public:
-		UpdateCenterImpl(Updates *updates, bool autoDownloadAndInstall, QWidget *parent = 0, Qt::WFlags f = 0);
+		UpdateCenterImpl(Updates *updates, bool autoDownloadAndInstall, QWidget *parent = 0, Qt::WindowFlags f = 0);
 	private slots:
 		void itemChanged(QTreeWidgetItem * item, int column);
 		void btnCancelClicked();

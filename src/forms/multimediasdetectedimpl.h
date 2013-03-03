@@ -8,7 +8,7 @@ class MultiMediasDetectedImpl : public QDialog, private Ui::MultiMediasDetectedI
 	Q_OBJECT
 
 public:
-	explicit MultiMediasDetectedImpl(QWidget *parent = 0, Qt::WFlags f = 0);
+	explicit MultiMediasDetectedImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);
 };
 
 #endif // MULTIMEDIASDETECTEDIMPL_H

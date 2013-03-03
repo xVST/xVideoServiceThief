@@ -26,9 +26,8 @@
 #ifndef WEBKITCLASS_H
 #define WEBKITCLASS_H
 
-#include <QtGui>
-
-#import <qmaccocoaviewcontainer_mac.h>
+#include <QtWidgets>
+#include <QMacCocoaViewContainer>
 
 class WebViewNative : public QMacCocoaViewContainer
 {

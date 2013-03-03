@@ -26,7 +26,7 @@
 #ifndef SERVICESKEYCHAIN_H
 #define SERVICESKEYCHAIN_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 struct ServiceLoginInformation
 {

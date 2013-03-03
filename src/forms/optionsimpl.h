@@ -26,7 +26,7 @@
 #ifndef OPTIONSIMPL_H
 #define OPTIONSIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_options.h"
 
@@ -64,7 +64,7 @@ Q_OBJECT
 	public:
 		OptionsImpl(ProgramOptions *programOptions, SessionManager *sessionManager,
 			VideoListController *videoList, int lastOptionsPage,
-			QWidget * parent = 0, Qt::WFlags f = 0);
+			QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~OptionsImpl();
 		int getLastPageViewed();
 	private slots:

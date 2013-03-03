@@ -3,10 +3,13 @@ CONFIG += qt \
     debug_and_release \
     $$[build_mode]
 QT = core \
-    gui \
+	widgets \
     network \
-    script
-!macx: QT += webkit
+	script
+
+#!macx: QT += webkit
+QT += webkitwidgets
+
 CONFIG += plugins_debug_off
 TEMPLATE = app
 DESTDIR = bin
@@ -102,7 +105,7 @@ HEADERS = src/forms/addvideoimpl.h \
 	src/rtmp.h \
 	src/serviceskeychain.h \
     src/multimediascontainer.h \
-    src/multimediascontainerscriptclass.h
+	src/multimediascontainerscriptclass.h
 SOURCES = src/forms/addvideoimpl.cpp \
     src/forms/searchvideositemimpl.cpp \
     src/forms/bugreportimpl.cpp \
@@ -160,7 +163,7 @@ SOURCES = src/forms/addvideoimpl.cpp \
 	src/rtmp.cpp \
 	src/serviceskeychain.cpp \
     src/multimediascontainer.cpp \
-    src/multimediascontainerscriptclass.cpp
+	src/multimediascontainerscriptclass.cpp
 TRANSLATIONS = resources/translations/xVST_br.ts \
     resources/translations/xVST_ca.ts \
     resources/translations/xVST_cz.ts \
@@ -191,16 +194,16 @@ macx {
     OBJECTS_DIR = build/o/mac
     TARGET = xVideoServiceThief
     QMAKE_INFO_PLIST = Info.plist
-	LIBS += -framework Cocoa -framework WebKit
+#	LIBS += -framework Cocoa -framework WebKit
 	OBJECTIVE_SOURCES += \
-		src/webkit_mac/WebKitClass.mm \
+#		src/webkit_mac/WebKitClass.mm \
 		src/mac_only/mac_tools.mm
 	HEADERS += \
-		src/webkit_mac/WebKitClass.h \
+#		src/webkit_mac/WebKitClass.h \
 		src/mac_only/mac_tools.h
     CONFIG(release, debug|release) { 
         message(Release build! Archs: 32 and 64 bits)
-        CONFIG += x86 x86_64
+		CONFIG += x86 x86_64
     }
     CONFIG(debug, debug|release):message(Debug build! Archs: Current architecture only)
 }

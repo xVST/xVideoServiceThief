@@ -2,7 +2,7 @@
 
 #include "../videoinformation.h"
 
-SearchVideosCustomizeImpl::SearchVideosCustomizeImpl(QStringList customServices, QWidget *parent, Qt::WFlags f)
+SearchVideosCustomizeImpl::SearchVideosCustomizeImpl(QStringList customServices, QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

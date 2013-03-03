@@ -26,7 +26,7 @@
 #ifndef DRAGDROPIMPL_H
 #define DRAGDROPIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_dragdrop.h"
 
@@ -68,7 +68,7 @@ Q_OBJECT
 		void addVideo(QString URL);
 	public:
 		DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList, 
-					QWidget * parent = 0, Qt::WFlags f = 0);
+					QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~DragDropImpl();
 		void addVideoURL(QString URL);
 	private slots:

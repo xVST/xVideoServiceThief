@@ -74,7 +74,7 @@ void Cookies::addCookie(QString cookieInf)
 {
 	// add those new cookies (cookie) into our current cookies list
 	QList<QNetworkCookie> storedCookies = allCookies();
-	storedCookies.append(QNetworkCookie::parseCookies(cookieInf.toAscii()));
+	storedCookies.append(QNetworkCookie::parseCookies(cookieInf.toLocal8Bit()));
 	setAllCookies(storedCookies);
 }
 
@@ -440,9 +440,9 @@ void Http::jumpToURL(QUrl url)
 
 	// set user agent
 	if (!userAgent.isEmpty())
-		request.setRawHeader("User-Agent", userAgent.toAscii());
+		request.setRawHeader("User-Agent", userAgent.toLocal8Bit());
 	else if (!HTTP_GLOBAL_USER_AGENT.isEmpty()) // set the global user agent
-		request.setRawHeader("User-Agent", HTTP_GLOBAL_USER_AGENT.toAscii());
+		request.setRawHeader("User-Agent", HTTP_GLOBAL_USER_AGENT.toLocal8Bit());
 
 	// set connection: "keep alive"
 	request.setRawHeader("Connection", "Keep-Alive");
@@ -456,14 +456,14 @@ void Http::jumpToURL(QUrl url)
 		QString key = getToken(customHeaders->at(n), "|", 0);
 		QString value = getToken(customHeaders->at(n), "|", 1);
 		// add this new custom header
-		request.setRawHeader(key.toAscii(), value.toAscii());
+		request.setRawHeader(key.toLocal8Bit(), value.toLocal8Bit());
 	}
 
 	// if we are resuming a download...
 	if (resuming && outputFile)
 	{
 		QString range = QString("bytes=%1-").arg(outputFile->size());
-		request.setRawHeader("Range", range.toAscii());
+		request.setRawHeader("Range", range.toLocal8Bit());
 	}
 
 	// execute the http request
@@ -473,7 +473,7 @@ void Http::jumpToURL(QUrl url)
 			currentReply = http->get(request);
 			break;
 		case EnumHTTP::httpPost:
-			currentReply = http->post(request, parameters.toAscii());
+			currentReply = http->post(request, parameters.toLocal8Bit());
 			break;
 		case EnumHTTP::httpHead:
 			currentReply = http->head(request);
@@ -500,7 +500,7 @@ int Http::download(const QUrl URL, QString destination, QString fileName, bool a
 	// clean destination dir
 	destination = QDir::cleanPath(destination);
 
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	// fix Qt4.4.0 bug in windows
 	if (destination.indexOf(":/") == -1)
 		destination.replace(":", ":/");
@@ -633,7 +633,7 @@ QString Http::syncRequest(EnumHTTP::HttpMethod httpMethod, QUrl url, QString par
 		// wait while the webpage is being downloaded
 		while (syncFlag) qApp->processEvents();
 		// if is utf8 then convert the downloaded data to utf8 (else, return data as is)
-		result = isUtf8 ? QString::fromUtf8(data.toAscii()) : data;
+		result = isUtf8 ? QString::fromUtf8(data.toLocal8Bit()) : data;
 	}
 	// final result (output)
 	return result;

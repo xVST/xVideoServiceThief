@@ -26,7 +26,7 @@
 #ifndef TRACKERREPORT_H
 #define TRACKERREPORT_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 const QString SF_TRACKER_URL = "http://xviservicethief.sourceforge.net/tracker/bug.php";
 

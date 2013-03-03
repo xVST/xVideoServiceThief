@@ -1,6 +1,6 @@
 #include "changelogimpl.h"
 
-ChangelogImpl::ChangelogImpl(QWidget *parent, Qt::WFlags f)
+ChangelogImpl::ChangelogImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
     setupUi(this);

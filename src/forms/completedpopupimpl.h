@@ -26,7 +26,7 @@
 #ifndef COMPLETEDPOPUPIMPL_H
 #define COMPLETEDPOPUPIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_completedpopup.h"
 
@@ -42,7 +42,7 @@ Q_OBJECT
 		DisplayState displayState;
 		double alpha;
 	public:
-		CompletedPopupImpl(QSystemTrayIcon *trayIconRef, QWidget * parent = 0, Qt::WFlags f = 0);
+		CompletedPopupImpl(QSystemTrayIcon *trayIconRef, QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~CompletedPopupImpl();
 		void displayPopup(const QIcon &, const QString, const QString);
 	private slots:

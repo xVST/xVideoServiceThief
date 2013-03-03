@@ -42,7 +42,7 @@ Q_OBJECT
 		void buildVideoServicesList(VideoInformation *videoInformation);
 	public:
 		InformationImpl(ProgramOptions *programOptions, VideoInformation *videoInformation,
-						QWidget * parent = 0, Qt::WFlags f = 0);
+						QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~InformationImpl();
 	private slots:
 		void btnCreditsClicked();

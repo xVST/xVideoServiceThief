@@ -26,7 +26,7 @@
 #ifndef __LANGUAGES_H__
 #define __LANGUAGES_H__
 
-#include <QtGui>
+#include <QtWidgets>
 
 /*! Language file description */
 class Language : public QObject

@@ -26,7 +26,7 @@
 #include "mac_tools.h"
 
 #import <Cocoa/Cocoa.h>
-#import <QtGui>
+#include <QMessageBox>
 
 int getCurrentMacOSXVersion()
 {
@@ -54,7 +54,7 @@ CFStringRef qstringToCFStringRef(const QString &string)
 
 NSString *qstringToNSString(const QString &qstr)
 {
-	return [reinterpret_cast<const NSString *>(qstringToCFStringRef(qstr)) autorelease];
+    return [NSString stringWithUTF8String:qstr.toUtf8().data()];
 }
 
 int alert(int icon, QString messageText, QString informativeText, QString defaultButton, QString alternateButton, QString otherButton)
@@ -64,7 +64,7 @@ int alert(int icon, QString messageText, QString informativeText, QString defaul
 									  defaultButton:qstringToNSString(defaultButton)
 								   alternateButton:qstringToNSString(alternateButton)
 									   otherButton:qstringToNSString(otherButton)
-						 informativeTextWithFormat:qstringToNSString(informativeText)];
+                         informativeTextWithFormat:qstringToNSString(informativeText), nil];
 	// configure alert style
 	switch (icon)
 	{

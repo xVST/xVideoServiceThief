@@ -26,7 +26,7 @@
 #ifndef CHECKUPDATESWORKER_H
 #define CHECKUPDATESWORKER_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 static const QString URL_UPDATE_FILE = "http://xviservicethief.sourceforge.net/updates/xVST2.update";
 

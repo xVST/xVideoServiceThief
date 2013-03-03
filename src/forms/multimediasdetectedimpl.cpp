@@ -1,6 +1,6 @@
 #include "multimediasdetectedimpl.h"
 
-MultiMediasDetectedImpl::MultiMediasDetectedImpl(QWidget *parent, Qt::WFlags f)
+MultiMediasDetectedImpl::MultiMediasDetectedImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

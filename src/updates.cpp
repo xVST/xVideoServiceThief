@@ -38,7 +38,7 @@ Updates::Updates(QString appPath)
 {
 	updateState = usWaiting;
 	cancelled = false;
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	this->appPath = appPath + "/../Resources";
 #else
 	this->appPath = appPath;
@@ -189,7 +189,7 @@ void Updates::buildInstalScript()
 				QFileInfo appExe(QCoreApplication::applicationFilePath());
 				update->setInstallTo("/" + appExe.fileName());
 #endif
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 				// special MacOSX update (DMG)
 				if (update->isChecked() && update->isPacked())
 				{
@@ -420,7 +420,7 @@ void Updates::downloadUpdates()
 	this->start();
 }
 
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 // special function used to execute the updater with administrator rights
 BOOL RunElevated(HWND hwnd, LPCTSTR pszPath, LPCTSTR pszParameters = NULL, LPCTSTR pszDirectory = NULL)
 {
@@ -445,7 +445,7 @@ BOOL RunElevated(HWND hwnd, LPCTSTR pszPath, LPCTSTR pszParameters = NULL, LPCTS
 
 void Updates::installUpdates()
 {
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	// init wchar_t vars
 	QString sApp = QDir::toNativeSeparators(appPath + XUPDATER_PATH);
 	QString sParams = QDir::toNativeSeparators(QDir::tempPath() + XUPDATER_FILE);

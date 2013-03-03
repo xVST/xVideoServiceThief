@@ -26,7 +26,7 @@
 #ifndef LOADINGIMPL_H
 #define LOADINGIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_loading.h"
 

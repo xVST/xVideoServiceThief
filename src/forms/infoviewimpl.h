@@ -26,7 +26,7 @@
 #ifndef INFOVIEWIMPL_H
 #define INFOVIEWIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_infoview.h"
 
@@ -36,6 +36,6 @@ class InfoViewImpl : public QDialog, public Ui::InfoView
 {
 Q_OBJECT
 	public:
-		InfoViewImpl(QString info, QWidget *parent = 0, Qt::WFlags f = 0);
+		InfoViewImpl(QString info, QWidget *parent = 0, Qt::WindowFlags f = 0);
 };
 #endif

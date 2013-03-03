@@ -201,7 +201,7 @@ void SearchVideosSettings::save()
 	// generate the search settings file path (path + name)
 	QString searchSettingsFile = ProgramOptions::instance()->getOptionsPath() + SEARCH_SETTINGS_FILE;
 	// init settings file
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	QSettings settings(searchSettingsFile, QSettings::NativeFormat);
 #else
 	QSettings settings(searchSettingsFile, QSettings::IniFormat);
@@ -221,7 +221,7 @@ void SearchVideosSettings::load()
 	// generate the search settings file path (path + name)
 	QString searchSettingsFile = ProgramOptions::instance()->getOptionsPath() + SEARCH_SETTINGS_FILE;
 	// load settings
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	QSettings settings(searchSettingsFile, QSettings::NativeFormat);
 #else
 	QSettings settings(searchSettingsFile, QSettings::IniFormat);
@@ -423,7 +423,7 @@ SearchResultItem::SearchResultItem(QString videoUrl, QString imageUrl, QString t
 	this->duration = duration;
 	this->rating = rating;
 	// auto-generate the video id (MD5 hash of video URL)
-	this->videoId = QCryptographicHash::hash(videoUrl.toAscii(), QCryptographicHash::Md5).toHex();
+	this->videoId = QCryptographicHash::hash(videoUrl.toLocal8Bit(), QCryptographicHash::Md5).toHex();
 }
 
 QString SearchResultItem::getVideoId()

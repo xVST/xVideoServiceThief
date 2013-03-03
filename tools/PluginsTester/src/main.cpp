@@ -1,4 +1,4 @@
-#include <QtGui/QApplication>
+#include <QApplication>
 #include "forms/mainwindow.h"
 
 #include "../../../../src/http.h"

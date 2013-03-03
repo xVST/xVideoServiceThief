@@ -26,7 +26,7 @@
 #ifndef MULTIURLSIMPL_H
 #define MULTIURLSIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_multiurls.h"
 
@@ -41,7 +41,7 @@ Q_OBJECT
 		QStringList originalURLs;
 	public:
 		MultiURLsImpl(VideoInformation *videoInformation, QStringList selectedURLs, QStringList originalURLs,
-					  QWidget * parent = 0, Qt::WFlags f = 0);
+                      QWidget * parent = 0, Qt::WindowFlags f = 0);
 		QStringList getSelectedURLs();
 };
 

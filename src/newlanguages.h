@@ -26,7 +26,7 @@
 #ifndef NEWLANGUAGES_H
 #define NEWLANGUAGES_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 static const QString URL_LANGUAGES_FILE = "http://xviservicethief.sourceforge.net/updates/xVST2.languages";
 

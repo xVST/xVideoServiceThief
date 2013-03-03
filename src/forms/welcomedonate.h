@@ -26,7 +26,7 @@
 #ifndef WELCOMEDONATE_H
 #define WELCOMEDONATE_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_welcomedonate.h"
 

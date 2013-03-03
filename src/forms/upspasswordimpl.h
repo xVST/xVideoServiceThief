@@ -31,7 +31,7 @@
 class UPSPasswordImpl : public QDialog, public Ui::UPSPasswordImpl
 {
 	public:
-		UPSPasswordImpl(QWidget *parent = 0, Qt::WFlags f = 0 );
+		UPSPasswordImpl(QWidget *parent = 0, Qt::WindowFlags f = 0 );
 };
 
 #endif // UPSPASSWORDIMPL_H

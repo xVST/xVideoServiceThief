@@ -29,11 +29,11 @@
 #include "../videoinformation.h"
 #include "../tools.h"
 
-DownloadLogImpl::DownloadLogImpl(QWidget * parent, Qt::WFlags f) 
+DownloadLogImpl::DownloadLogImpl(QWidget * parent, Qt::WindowFlags f) 
 	: QDialog(parent, f)
 {
 	setupUi(this);
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	resize(900, 450);
 #endif
 	// add the headers

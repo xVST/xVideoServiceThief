@@ -26,6 +26,8 @@
 #ifndef ADDVIDEOIMPL_H
 #define ADDVIDEOIMPL_H
 
+#include <QtWidgets>
+
 #include "ui_addvideo.h"
 
 class ProgramOptions;
@@ -50,8 +52,7 @@ Q_OBJECT
 		void updateSelectedUrlsText();
 		void updateEdtUrlColor(bool ok);
 	public:
-		AddVideoImpl(ProgramOptions *programOptions, VideoInformation *videoInformation,
-					 QWidget * parent = 0, Qt::WFlags f = 0 );
+        AddVideoImpl(ProgramOptions *programOptions, VideoInformation *videoInformation, QWidget * parent = 0, Qt::WindowFlags f = 0 );
 		OverridedVideoConversionConfig getOverridedConversionConfig();
 		bool isCustomDownload();
 		QString getCustomDownloadTitle();

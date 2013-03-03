@@ -33,7 +33,7 @@ static const QString SEARCH_ID_STANDARD = "~";	//!< All standard services id
 static const QString SEARCH_ID_ADULTS = "!";	//!< All adults services id
 static const QString SEARCH_ID_CUSTOM = "?";	//!< Custom services id
 
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 static const QString SEARCH_SETTINGS_FILE = "/../Application Support/xVideoServiceThief/searchsettings.plist";
 #else
 static const QString SEARCH_SETTINGS_FILE = "/searchsettings.conf";

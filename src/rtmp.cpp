@@ -28,7 +28,7 @@
 #include "http.h"
 #include "tools.h"
 
-#ifndef Q_WS_WIN32
+#ifndef Q_OS_WIN32
 #include <signal.h>
 #endif
 
@@ -90,7 +90,7 @@ int RTMP::download(const QString URL, QString destination, QString fileName, QSt
 	// clean destination dir
 	destination = QDir::cleanPath(destination);
 
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	// fix Qt4.4.0 bug in windows
 	if (destination.indexOf(":/") == -1)
 		destination.replace(":", ":/");
@@ -170,7 +170,7 @@ void RTMP::pause()
 	if (isDownloading())
 	{
 		stopReason = EnumRTMP::USER_PAUSED;
-#ifndef Q_WS_WIN32
+#ifndef Q_OS_WIN32
 		// kill the flvstreaming
 		kill(flvstreamerProcess->pid(), SIGINT);
 #endif
@@ -305,7 +305,7 @@ void RTMP::parseOutput(QString output)
 		}
 	}
 	// small win32 hack due to problems with: GenerateConsoleCtrlEvent(CTRL_C_EVENT, flvstreamerProcess->pid()->hProcess);
-#ifdef Q_WS_WIN32
+#ifdef Q_OS_WIN32
 	// user canceled?
 	if (stopReason == EnumRTMP::USER_PAUSED)
 		flvstreamerProcess->write("1\n"); // cancel download

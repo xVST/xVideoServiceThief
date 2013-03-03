@@ -26,7 +26,7 @@
 #ifndef __VIDEODOWNLOAD_H__
 #define __VIDEODOWNLOAD_H__
 
-#include <QtGui>
+#include <QtWidgets>
 
 class Http;
 class RTMP;

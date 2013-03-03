@@ -25,7 +25,7 @@
 
 #include "customalphablendimpl.h"
 //
-CustomAlphaBlendImpl::CustomAlphaBlendImpl( QWidget * parent, Qt::WFlags f)
+CustomAlphaBlendImpl::CustomAlphaBlendImpl( QWidget * parent, Qt::WindowFlags f)
 		: QDialog(parent, f)
 {
 	setupUi(this);

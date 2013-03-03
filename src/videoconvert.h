@@ -26,7 +26,7 @@
 #ifndef __CONVERTVIDEO_H__
 #define __CONVERTVIDEO_H__
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "videoconverttypes.h"
 

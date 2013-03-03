@@ -26,7 +26,7 @@
 #ifndef MAINFORMIMPL_H
 #define MAINFORMIMPL_H
 //
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_mainform.h"
 
@@ -99,7 +99,7 @@ Q_OBJECT
 		void changeEvent(QEvent *event);
 		void closeEvent(QCloseEvent *event);
 	public:
-		MainFormImpl(QWidget * parent = 0, Qt::WFlags f = 0);
+		MainFormImpl(QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~MainFormImpl();
 	private slots:
 		void dragDropClicked();
