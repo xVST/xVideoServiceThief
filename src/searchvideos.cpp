@@ -147,11 +147,17 @@ void SearchVideos::run()
 	// start to search
 	while (!plugins.isEmpty())
 	{
-		// get results
 		VideoInformationPlugin *plugin = plugins.takeFirst();
+
 		if (plugin != NULL)
 		{
+			// move plugin to current thread
+			QThread *pluginThread = plugin->thread();
+			plugin->moveToThread(this->thread());
+			// execute search into current thread
 			SearchResults results = plugin->searchVideos(internalKeyWords, internalPage);
+			// restore the original plugin thread
+			plugin->moveToThread(pluginThread);
 			// check if we are destroying the searchResults (if yes, then abort the process)
 			if (destroying) return;
 			// add results
