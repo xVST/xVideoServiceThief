@@ -876,7 +876,7 @@ SearchResults VideoInformationPlugin::searchVideos(const QString keyWords, const
 	if (!isLoaded() || !isSearchEngineAvailable()) return result;
 
 	// plugin script engine
-	engine = new QScriptEngine(this);
+	engine = new QScriptEngine(QThread::currentThread()->parent());
 
 	// create and regist the script tools class
 	ToolsScriptClass *toolsClass = new ToolsScriptClass(engine);
