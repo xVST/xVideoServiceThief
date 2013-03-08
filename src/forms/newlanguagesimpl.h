@@ -26,7 +26,7 @@
 #ifndef NEWLANGUAGESIMPL_H
 #define NEWLANGUAGESIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_newlanguages.h"
 
@@ -41,7 +41,7 @@ Q_OBJECT
 	private:
 		NewLanguagesController *newLanguages;	//! Responsable of check, download and install new languages
 	public:
-		NewLanguagesImpl(ProgramOptions *programOptions, QWidget * parent = 0, Qt::WFlags f = 0 );
+		NewLanguagesImpl(ProgramOptions *programOptions, QWidget * parent = 0, Qt::WindowFlags f = 0 );
 		~NewLanguagesImpl();
 	private slots:
 		void lsvInstalledItemSelectionChanged();

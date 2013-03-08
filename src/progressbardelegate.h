@@ -26,7 +26,7 @@
 #ifndef __PROGRESSBARDELEGATE_H__
 #define __PROGRESSBARDELEGATE_H__
 
-#include <QtGui>
+#include <QtWidgets>
 
 class VideoListController;
 

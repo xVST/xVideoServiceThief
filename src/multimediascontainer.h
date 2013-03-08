@@ -1,7 +1,7 @@
 #ifndef MULTIMEDIASCONTAINER_H
 #define MULTIMEDIASCONTAINER_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 class  MultiMediasContainerItem : public QObject
 {

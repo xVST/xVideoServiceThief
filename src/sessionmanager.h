@@ -25,9 +25,9 @@
 #ifndef SESSIONMANAGER_H
 #define SESSIONMANAGER_H
 
-#include <QtGui>
+#include <QtWidgets>
 
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 static const QString SESSION_FILE = "/../Application Support/xVideoServiceThief/session.plist";
 static const QString LOG_FILE = "/../Application Support/xVideoServiceThief/historic.plist";
 #else

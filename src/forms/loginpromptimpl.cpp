@@ -29,7 +29,7 @@
 #include "../videoinformation.h"
 
 LoginPromptImpl::LoginPromptImpl(VideoInformationPlugin *videoInformationPlugin, ServiceLoginInformation serviceLoginInf,
-								 bool lastLoginFailed, QWidget *parent, Qt::WFlags f)
+								 bool lastLoginFailed, QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

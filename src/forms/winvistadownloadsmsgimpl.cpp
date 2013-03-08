@@ -27,7 +27,7 @@
 
 #include "../options.h"
 
-WinVistaDownloadsMsgImpl::WinVistaDownloadsMsgImpl(QWidget *parent, Qt::WFlags f)
+WinVistaDownloadsMsgImpl::WinVistaDownloadsMsgImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

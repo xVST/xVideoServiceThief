@@ -25,7 +25,7 @@
 
 #include "creditsimpl.h"
 //
-CreditsImpl::CreditsImpl(QWidget * parent, Qt::WFlags f) : QDialog(parent, f)
+CreditsImpl::CreditsImpl(QWidget * parent, Qt::WindowFlags f) : QDialog(parent, f)
 {
 	setupUi(this);
 	// resize form if is needed

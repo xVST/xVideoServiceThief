@@ -27,12 +27,12 @@
 
 #include "../tools.h"
 
-ScheduleItemEditImpl::ScheduleItemEditImpl(QWidget *parent, Qt::WFlags f)
+ScheduleItemEditImpl::ScheduleItemEditImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
     setupUi(this);
 	// resize window (macosx and linux)
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	resize(356, 200);
 #endif
 	// connect signals

@@ -26,7 +26,7 @@
 #ifndef __OPTIONS_H__
 #define __OPTIONS_H__
 
-#include <QtGui>
+#include <QtWidgets>
 #include <QNetworkProxy>
 
 #include "videoconverttypes.h"
@@ -133,7 +133,7 @@ Q_OBJECT
 		QString getToolsPath();
 		/*! Get the options format */
 		QSettings::Format getOptionsFormat();
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 		/*! Get if internal ffmpeg is installed */
 		bool getIfInternalFFmpegIsInstalled();
 		/*! Get the internal ffmpeg path */

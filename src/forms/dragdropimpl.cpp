@@ -33,7 +33,7 @@
 #include "../videoinformation.h"
 
 DragDropImpl::DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList,
-						   QWidget * parent, Qt::WFlags f) : QWidget(parent, f)
+						   QWidget * parent, Qt::WindowFlags f) : QWidget(parent, f)
 {
 	setupUi(this);
 	// create drag and drop image
@@ -55,7 +55,7 @@ DragDropImpl::DragDropImpl(ProgramOptions *programOptions, VideoListController *
 	if (programOptions->getDragDropAlphaBlend())
 		setAlphaBlend(static_cast<float>(programOptions->getDragDropAlphaBlendValue()) / 100);
 	// set window flags
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	QWidget::setWindowFlags(Qt::Window | Qt::WindowStaysOnTopHint);
 #else
 	QWidget::setWindowFlags(Qt::Tool | Qt::WindowStaysOnTopHint);
@@ -129,7 +129,7 @@ void DragDropImpl::createDragDropMenu()
 	alphaBlendMenu->addAction(actAlpha70);
 	alphaBlendMenu->addAction(actAlpha80);
 	alphaBlendMenu->addAction(actAlpha90);
-#ifndef Q_WS_MAC
+#ifndef Q_OS_MACX
 	alphaBlendMenu->addSeparator();
 	alphaBlendMenu->addAction(actAlphaCustom);
 #endif
@@ -241,8 +241,8 @@ void DragDropImpl::alphaBlendValueClicked()
 
 void DragDropImpl::removeServiceIcon()
 {
-	imgVideoService->setPixmap(NULL);
-	imgVideoService->setToolTip("");
+    imgVideoService->setPixmap(QPixmap());
+    imgVideoService->setToolTip("");
 }
 
 // QLabelClickeable

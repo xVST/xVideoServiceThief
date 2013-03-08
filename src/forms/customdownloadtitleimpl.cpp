@@ -1,6 +1,6 @@
 #include "customdownloadtitleimpl.h"
 
-CustomDownloadTitleImpl::CustomDownloadTitleImpl(QWidget *parent, Qt::WFlags f)
+CustomDownloadTitleImpl::CustomDownloadTitleImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

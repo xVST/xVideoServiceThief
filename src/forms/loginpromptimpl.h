@@ -26,7 +26,7 @@
 #ifndef LOGINPROMPTIMPL_H
 #define LOGINPROMPTIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_loginprompt.h"
 
@@ -39,7 +39,7 @@ class LoginPromptImpl : public QDialog, private Ui::LoginPrompt
 Q_OBJECT
 	public:
 		LoginPromptImpl(VideoInformationPlugin *videoInformationPlugin, ServiceLoginInformation serviceLoginInf,
-						bool lastLoginFailed = false, QWidget *parent = 0, Qt::WFlags f = 0);
+						bool lastLoginFailed = false, QWidget *parent = 0, Qt::WindowFlags f = 0);
 		ServiceLoginInformation getServiceLoginInfo();
 		bool getStayLoggedInSession();
 		bool getRememberPassword();

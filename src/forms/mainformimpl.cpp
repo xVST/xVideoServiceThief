@@ -52,7 +52,7 @@
 
 #include <QtSingleApplication>
 
-MainFormImpl::MainFormImpl(QWidget * parent, Qt::WFlags f)
+MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	: QMainWindow(parent, f)
 {
 	setupUi(this);
@@ -63,7 +63,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WFlags f)
 	pbrCheckingForUpdates->hide();
 	spbCancelCheckForUpdates->hide();
 	// resize add button to an optimum visualization on macosx
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	btnAddVideo->setMinimumWidth(158);
 	frameHeader->layout()->setContentsMargins(4, 4, 6, 4);
 	setMinimumSize(780, 540);
@@ -146,7 +146,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WFlags f)
 	// configure resize mode
 	header->setHighlightSections(false);
 	header->setStretchLastSection(false);
-	header->setResizeMode(0, QHeaderView::Stretch);
+    header->setSectionResizeMode(0, QHeaderView::Stretch);
 	// set sizes
 	header->resizeSection(1, qMax(fm.width(headers.at(1)), fm.width(" 1024 bytes  ")));
 	header->resizeSection(2, qMax(fm.width(headers.at(2)), 130));
@@ -266,7 +266,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WFlags f)
 	// updater timer
 	QTimer::singleShot(250, this, SLOT(checkForUpdates()));
 	// fix MacOSX bug with alternating color rows and size when the list is empty
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	// if list is empty, then add and delete a temporal item
 	if (lsvDownloadList->topLevelItemCount() == 0)
 	{
@@ -279,7 +279,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WFlags f)
 
 MainFormImpl::~MainFormImpl()
 {
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	// save the window state (MacOSX bug fix)
 	if (windowState() == Qt::WindowMaximized && width() == qApp->desktop()->availableGeometry(this).width())
 #else
@@ -734,7 +734,7 @@ void MainFormImpl::viewErrorMessageClicked()
 
 void MainFormImpl::searchVideosClicked()
 {
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	SearchVideosImpl *searchVideos = new SearchVideosImpl(this, Qt::Window);
 #else // linux and windows
 	SearchVideosImpl *searchVideos = new SearchVideosImpl(this);
@@ -1123,7 +1123,7 @@ void MainFormImpl::displayWelcomeMessage()
 
 void MainFormImpl::displayWinVistaDownloads()
 {
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	// only is needed on windows vista and we want check it
 	if (isWindowsVista() && programOptions->getDisplayDownloadsMigrator())
 	{

@@ -11,7 +11,7 @@ Q_OBJECT
 		void fillServices();
 		void createActionsMenu();
 	public:
-		SearchVideosCustomizeImpl(QStringList customServices, QWidget *parent = 0, Qt::WFlags f = 0);
+		SearchVideosCustomizeImpl(QStringList customServices, QWidget *parent = 0, Qt::WindowFlags f = 0);
 		QStringList getCustomServices();
 	private slots:
 		void actCheckAllClicked();

@@ -64,8 +64,7 @@ QString SearchResultsScriptPrototype::getUserLanguage()
 
 // SearchResultsScriptClass class
 
-SearchResultsScriptClass::SearchResultsScriptClass(QScriptEngine *engine)
-	: QObject(engine), QScriptClass(engine)
+SearchResultsScriptClass::SearchResultsScriptClass(QScriptEngine *engine) : QObject(engine), QScriptClass(engine)
 {
 	qScriptRegisterMetaType<SearchResults>(engine, toScriptValue, fromScriptValue);
 

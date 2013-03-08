@@ -43,7 +43,7 @@
 
 OptionsImpl::OptionsImpl(ProgramOptions *programOptions, SessionManager *sessionManager,
 			 VideoListController *videoList, int lastOptionsPage,
-			 QWidget * parent, Qt::WFlags f)
+			 QWidget * parent, Qt::WindowFlags f)
 		: QDialog(parent, f)
 {
 	setupUi(this);
@@ -61,7 +61,7 @@ OptionsImpl::OptionsImpl(ProgramOptions *programOptions, SessionManager *session
 	// resize menu
 	trvMenu->setMaximumWidth(180);
 #endif
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	// change lsvServices1 & lsvServices2 alternateBase color (better look&feel)
 	QPalette palette = lsvServices1->palette();
 	QColor color("#efefef");
@@ -126,7 +126,7 @@ OptionsImpl::OptionsImpl(ProgramOptions *programOptions, SessionManager *session
 	// can update?
 	btnCheckNow->setEnabled(Updates::canUpdate(programOptions->getToolsPath())); //getOptionsPath()));
 	// internal FFmpeg...
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	// check if internal ffmpeg is installed
 	if (!programOptions->getIfInternalFFmpegIsInstalled())
 	{
@@ -583,7 +583,7 @@ void OptionsImpl::chbDisableAdultSupportClicked(bool checked)
 		// display password dialog and wait for user selection
 		if (showModalDialog(&upsPasswordForm) == QDialog::Accepted)
 		{
-			QString password_MD5 = QCryptographicHash::hash(upsPasswordForm.edtPassword->text().toAscii(), QCryptographicHash::Md5).toHex();
+            QString password_MD5 = QCryptographicHash::hash(upsPasswordForm.edtPassword->text().toLocal8Bit(), QCryptographicHash::Md5).toHex();
 			// compare passwords
 			if (password_MD5 != programOptions->getBlockAdultContentPassword())
 			{
@@ -601,7 +601,7 @@ void OptionsImpl::chbDisableAdultSupportClicked(bool checked)
 		// display password dialog and wait for user selection
 		if (showModalDialog(&upsPasswordForm) == QDialog::Accepted)
 		{
-			QString password_MD5 = QCryptographicHash::hash(upsPasswordForm.edtPassword->text().toAscii(), QCryptographicHash::Md5).toHex();
+            QString password_MD5 = QCryptographicHash::hash(upsPasswordForm.edtPassword->text().toLocal8Bit(), QCryptographicHash::Md5).toHex();
 			programOptions->setBlockAdultContentPassword(password_MD5);
 		}
 		else
@@ -702,7 +702,7 @@ void OptionsImpl::btnCheckNowClicked()
 
 void OptionsImpl::btnAddNewLanguagesClicked()
 {
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	NewLanguagesImpl *newLanguagesForm = new NewLanguagesImpl(programOptions, this, Qt::Sheet);
 	newLanguagesForm->show();
 	// capture when sheet is closed

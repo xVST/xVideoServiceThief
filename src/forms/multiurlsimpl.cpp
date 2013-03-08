@@ -28,7 +28,7 @@
 #include "../videoinformation.h"
 
 MultiURLsImpl::MultiURLsImpl(VideoInformation *videoInformation, QStringList selectedURLs, QStringList originalURLs,
-							 QWidget *parent, Qt::WFlags f)
+							 QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

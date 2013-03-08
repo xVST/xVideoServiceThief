@@ -29,31 +29,33 @@
 
 #include <time.h>
 
-#ifdef Q_WS_MACX
-#include "../webkit_mac/WebKitClass.h"
-#endif
+//#ifdef Q_OS_MACX
+//#include "../webkit_mac/WebKitClass.h"
+//#endif
 
-WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WFlags f)
+WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
 	// create the native Cocoa WebView object (Mac OS X only)
-#ifdef Q_WS_MACX
-	webView = new WebViewWidget(this);
-	webView->setSizeHint(QSize(656,370));
-#else // uses the Qt WebKit wrap
+//#ifdef Q_OS_MACX
+//	webView = new WebViewWidget(this);
+//	webView->setSizeHint(QSize(656,370));
+//#else // uses the Qt WebKit wrap
 	webView = new QWebView(this);
-#endif
+//#endif
 	// add this new object into our frame
 	webViewLayout->addWidget(webView);
 	webView->adjustSize();
-	// creates the whats new url
-	QUrl url("http://xviservicethief.sourceforge.net/whatsnew/display.php");
 	// add the version id
-	url.addQueryItem("v", PROGRAM_VERSION_SHORT);
+	QUrlQuery urlQuery;
+	urlQuery.addQueryItem("v", PROGRAM_VERSION_SHORT);
 	// prevent cache
 	srand(time(NULL));
-	url.addQueryItem("nocache", QString("%1").arg(rand() % 999999));
+	urlQuery.addQueryItem("nocache", QString("%1").arg(rand() % 999999));
+	// creates the whats new url
+	QUrl url("http://xviservicethief.sourceforge.net/whatsnew/display.php");
+	url.setQuery(urlQuery);
 	// open whats new page
 	webView->load(url);
 }

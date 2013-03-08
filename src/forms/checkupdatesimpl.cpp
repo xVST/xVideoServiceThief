@@ -28,12 +28,12 @@
 #include "../options.h"
 #include "../checkupdatesworker.h"
 
-CheckUpdatesImpl::CheckUpdatesImpl(ProgramOptions *programOptions, QWidget * parent, Qt::WFlags f)
+CheckUpdatesImpl::CheckUpdatesImpl(ProgramOptions *programOptions, QWidget * parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
 	// resize form if is needed
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	resize(width(), 132);
 #endif
 	//

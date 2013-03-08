@@ -34,7 +34,7 @@
 #include "../searchvideos.h"
 #include "../tools.h"
 
-SearchVideosImpl::SearchVideosImpl(QWidget *parent, Qt::WFlags f)
+SearchVideosImpl::SearchVideosImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);

@@ -26,7 +26,7 @@
 #ifndef __TOOLS_H__
 #define __TOOLS_H__
 
-#include <QtGui>
+#include <QtWidgets>
 
 	/*! Copy a string */
 	QString copy(QString str, int start, int end);

@@ -28,7 +28,7 @@
 
 #include <QtCore>
 
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 static const QString SCHEDULE_FILE = "/../Application Support/xVideoServiceThief/schedules.plist";
 #else
 static const QString SCHEDULE_FILE = "/schedules.conf";

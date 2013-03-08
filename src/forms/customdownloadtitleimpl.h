@@ -7,7 +7,7 @@ class CustomDownloadTitleImpl : public QDialog, public Ui::CustomDownloadTitleIm
 {
 Q_OBJECT
 	public:
-		CustomDownloadTitleImpl(QWidget *parent = 0, Qt::WFlags f = 0);
+		CustomDownloadTitleImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);
 	private slots:
 		void edtTitleTextChanged(QString text);
 };

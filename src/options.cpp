@@ -29,7 +29,7 @@
 #include "languages.h"
 #include "tools.h"
 
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 #include "mac_only/mac_tools.h"
 #endif
 
@@ -37,11 +37,11 @@ static ProgramOptions *programOptionsInstance = NULL;
 
 ProgramOptions::ProgramOptions(QString optionsPath)
 {
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	appDir.setPath(QCoreApplication::applicationDirPath());
 	optionsFile = QString(optionsPath + "/com.xVideoServiceThief.config.plist");
 #endif
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	appDir.setPath(QCoreApplication::applicationDirPath());
 	optionsFile = QString(optionsPath + "/config.conf");
 #endif
@@ -67,7 +67,7 @@ ProgramOptions* ProgramOptions::instance()
 		_homeDirectory += "/.xVideoServiceThief";
 		programOptionsInstance = new ProgramOptions(_homeDirectory);
 #endif
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 		QString preferencesPath = QString(QDir::homePath() + "/Library/Preferences");
 		programOptionsInstance = new ProgramOptions(preferencesPath);
 #endif
@@ -113,7 +113,7 @@ void ProgramOptions::load()
 	if (!QFile::exists(optionsFile)) return;
 
 	// load config
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	QSettings settings(optionsFile, QSettings::NativeFormat);
 #else
 	QSettings settings(optionsFile, QSettings::IniFormat);
@@ -175,7 +175,7 @@ void ProgramOptions::load()
 	vistaUpdatesMessage = settings.value("configuration/vistaUpdatesMessage", vistaUpdatesMessage).toBool();
 
 	useInternalFFmpeg = settings.value("configuration/useInternalFFmpeg", useInternalFFmpeg).toBool();
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	if (useInternalFFmpeg) ffmpegLibLocation = getInternalFFmpegPath();
 #endif
 
@@ -199,7 +199,7 @@ void ProgramOptions::save()
 {
 	emit optionsSaveBefore();
 
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	QSettings settings(optionsFile, QSettings::NativeFormat);
 #else
 	QSettings settings(optionsFile, QSettings::IniFormat);
@@ -286,7 +286,7 @@ void ProgramOptions::save()
 void ProgramOptions::setDefault()
 {
 	downloadAutomatically = true;
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	downloadDir = QString(QDir::homePath() + DEFAULT_DOWNLOADS);
 #else
 #ifdef Q_OS_LINUX // modification made by "AzalSup"
@@ -304,7 +304,7 @@ void ProgramOptions::setDefault()
 #ifdef Q_OS_WIN32
 	ffmpegLibLocation = QString(appDir.absolutePath() + DEFAULT_FFMPEGLIB + "/ffmpeg.exe");
 #else
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	// check if our APP has a ffmpeg embeded
 	if (QFile::exists(getInternalFFmpegPath()))
 		ffmpegLibLocation = getInternalFFmpegPath();
@@ -397,7 +397,7 @@ QString ProgramOptions::getOptionsPath()
 
 QString ProgramOptions::getLanguagesPath()
 {
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	return getApplicationPath() + "/../Resources/languages";
 #else
 	return getApplicationPath() + "/languages";
@@ -406,7 +406,7 @@ QString ProgramOptions::getLanguagesPath()
 
 QString ProgramOptions::getPluginsPath()
 {
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	return getApplicationPath() + "/../Resources/plugins";
 #else
 	return getApplicationPath() + "/plugins";
@@ -415,10 +415,10 @@ QString ProgramOptions::getPluginsPath()
 
 QString ProgramOptions::getToolsPath()
 {
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	return getApplicationPath() + "/../Resources/tools";
 #endif
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	return getApplicationPath() + "/bin";
 #endif
 #ifdef Q_OS_LINUX
@@ -428,14 +428,14 @@ QString ProgramOptions::getToolsPath()
 
 QSettings::Format ProgramOptions::getOptionsFormat()
 {
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	return QSettings::NativeFormat;
 #else
 	return QSettings::IniFormat;
 #endif
 }
 
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 bool ProgramOptions::getIfInternalFFmpegIsInstalled()
 {
 	return QFile::exists(getInternalFFmpegPath());

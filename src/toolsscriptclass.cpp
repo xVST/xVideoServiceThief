@@ -127,7 +127,7 @@ QScriptValue ToolsScriptClass::func_getUrlParam(QScriptContext *context, QScript
 		QString url = context->argument(0).toString();
 		QString item = context->argument(1).toString();
 		// return the asked item from url
-		return engine->newVariant(QVariant(QUrl(url).queryItemValue(item)));
+		return engine->newVariant(QVariant(QUrlQuery(url).queryItemValue(item)));
 	}
 	else // invalid arguments count
 		return QScriptValue();
@@ -349,7 +349,7 @@ QScriptValue ToolsScriptClass::func_getMd4(QScriptContext *context, QScriptEngin
 	{
 		QString str = context->argument(0).toString();
 		// create crypto class
-		QString md4 = QCryptographicHash::hash(str.toAscii(), QCryptographicHash::Md4).toHex();
+		QString md4 = QCryptographicHash::hash(str.toLocal8Bit(), QCryptographicHash::Md4).toHex();
 		// return calculated hash
 		return engine->newVariant(QVariant(md4));
 	}
@@ -363,7 +363,7 @@ QScriptValue ToolsScriptClass::func_getMd5(QScriptContext *context, QScriptEngin
 	{
 		QString str = context->argument(0).toString();
 		// create crypto class
-		QString md5 = QCryptographicHash::hash(str.toAscii(), QCryptographicHash::Md5).toHex();
+		QString md5 = QCryptographicHash::hash(str.toLocal8Bit(), QCryptographicHash::Md5).toHex();
 		// return calculated hash
 		return engine->newVariant(QVariant(md5));
 	}
@@ -377,7 +377,7 @@ QScriptValue ToolsScriptClass::func_getSha1(QScriptContext *context, QScriptEngi
 	{
 		QString str = context->argument(0).toString();
 		// create crypto class
-		QString sha1 = QCryptographicHash::hash(str.toAscii(), QCryptographicHash::Sha1).toHex();
+		QString sha1 = QCryptographicHash::hash(str.toLocal8Bit(), QCryptographicHash::Sha1).toHex();
 		// return calculated hash
 		return engine->newVariant(QVariant(sha1));
 	}

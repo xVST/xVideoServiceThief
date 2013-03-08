@@ -34,7 +34,7 @@
 #include "../videoinformation.h"
 #include "../options.h"
 
-BugReportImpl::BugReportImpl(ProgramOptions *programOptions, QWidget * parent, Qt::WFlags f) 
+BugReportImpl::BugReportImpl(ProgramOptions *programOptions, QWidget * parent, Qt::WindowFlags f) 
 	: QDialog(parent, f)
 {
 	setupUi(this);

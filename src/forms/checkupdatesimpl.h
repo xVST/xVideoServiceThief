@@ -40,7 +40,7 @@ Q_OBJECT
 		CheckUpdatesWorker *checkUpdatesWorker;
 		bool closedByButton;
 	public:
-		CheckUpdatesImpl(ProgramOptions *programOptions, QWidget * parent = 0, Qt::WFlags f = 0);
+		CheckUpdatesImpl(ProgramOptions *programOptions, QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~CheckUpdatesImpl();
 	private slots:
 		void checkUpdatesWorkerFinished(bool hasUpdates, bool closedByButton);

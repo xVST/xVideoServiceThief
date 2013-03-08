@@ -68,8 +68,7 @@ QString HttpScriptPrototype::downloadWebpagePostEx(const QString URL, QString pa
 
 QString HttpScriptPrototype::downloadWebpageHeaders(const QString URL, QString separator)
 {
-	QHttpResponseHeader headers = thisHttp()->head(QUrl(URL));
-	return headers.toString().replace("\n", separator);
+	return thisHttp()->head(QUrl(URL)).replace("\n", separator);
 }
 
 void HttpScriptPrototype::addCookie(QString cookie)
@@ -144,8 +143,7 @@ int HttpScriptPrototype::getLastStopReason()
 
 /* Http script class */
 
-HttpScriptClass::HttpScriptClass(QScriptEngine *engine)
-	: QObject(engine), QScriptClass(engine)
+HttpScriptClass::HttpScriptClass(QScriptEngine *engine) : QObject(engine), QScriptClass(engine)
 {
 	qScriptRegisterMetaType<Http>(engine, toScriptValue, fromScriptValue);
 

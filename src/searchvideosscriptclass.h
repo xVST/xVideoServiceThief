@@ -47,6 +47,7 @@ Q_OBJECT
 
 class SearchResultsScriptClass : public QObject, public QScriptClass
 {
+Q_OBJECT
 	private:
 		QScriptValue proto;
 		QScriptValue ctor;

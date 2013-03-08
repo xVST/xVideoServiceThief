@@ -29,10 +29,10 @@
 #include "../videoitem.h"
 #include "../videoinformation.h"
 
-InfoViewImpl::InfoViewImpl(QString info, QWidget *parent, Qt::WFlags f) : QDialog(parent, f)
+InfoViewImpl::InfoViewImpl(QString info, QWidget *parent, Qt::WindowFlags f) : QDialog(parent, f)
 {
 	setupUi(this);
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACX
 	resize(500, 300);
 #endif
 	// fill text

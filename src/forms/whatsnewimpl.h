@@ -26,28 +26,30 @@
 #ifndef WHATSNEWIMPL_H
 #define WHATSNEWIMPL_H
 
-#include <QtGui>
-#ifndef Q_WS_MACX
-#include <QtWebKit>
-#endif
+#include <QtWidgets>
+//#ifndef Q_OS_MACX
+//#include <QtWebKit>
+//#endif
+
+#include <QWebView>
 
 #include "ui_whatsnew.h"
 
-#ifdef Q_WS_MACX
-class WebViewWidget;
-#endif
+//#ifdef Q_OS_MACX
+//class WebViewWidget;
+//#endif
 
 class WhatsNewImpl : public QDialog, public Ui::WhatsNew
 {
 Q_OBJECT
 	private:
-#ifdef Q_WS_MACX
-	WebViewWidget *webView;
-#else
+//#ifdef Q_OS_MACX
+//	WebViewWidget *webView;
+//#else
 	QWebView *webView;
-#endif
+//#endif
 	public:
-		WhatsNewImpl(QWidget *parent = 0, Qt::WFlags f = 0);
+		WhatsNewImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);
 		~WhatsNewImpl();
 };
 

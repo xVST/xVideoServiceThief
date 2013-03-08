@@ -25,11 +25,11 @@
 
 #include "tools.h"
 
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	#include <windows.h>
 #endif
 
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	#include "mac_only/mac_tools.h"
 #endif
 
@@ -245,7 +245,7 @@ QString floatToStr(const float value, const int precision)
 
 bool isWindowsVista()
 {
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	OSVERSIONINFO osvi;
 	ZeroMemory(&osvi, sizeof(OSVERSIONINFO));
 	osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
@@ -516,7 +516,7 @@ QChar htmlToChar(QString html)
 
 QString strToHtml(QString str, bool htmlCodes)
 {
-	str = str.fromUtf8(str.toAscii());
+	str = str.fromUtf8(str.toLocal8Bit());
 	QString result = "";
 
 	for (int n = 0; n < str.length(); n++)
@@ -527,7 +527,7 @@ QString strToHtml(QString str, bool htmlCodes)
 
 bool openFile(QString filePath)
 {
-#ifdef Q_WS_WIN
+#ifdef Q_OS_WIN32
 	return QDesktopServices::openUrl("file:///" + validPath(filePath)); //filePath);
 #else
 	return QDesktopServices::openUrl("file://" + validPath(filePath)); //filePath);
@@ -541,7 +541,7 @@ bool openDirectory(QString directoryPath)
 
 int showModalDialog(QDialog *form)
 {
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	// display this form as a Sheet
 	form->open();
 	// wait while addVideoForm is visible
@@ -590,7 +590,7 @@ int native_alert(QWidget *parent, QMessageBox::Icon icon, QString messageText, Q
 {
 /*
 // native cocoa dialogs has been disabled due some Qt troubles
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	return alert(icon, stripHtml(messageText), stripHtml(informativeText), defaultButton, alternateButton, otherButton);
 #else
 */

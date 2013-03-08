@@ -31,7 +31,7 @@
 #include "../tools.h"
 #include "../programversion.h"
 
-UpdateCenterImpl::UpdateCenterImpl(Updates *updates, bool autoDownloadAndInstall, QWidget * parent, Qt::WFlags f)
+UpdateCenterImpl::UpdateCenterImpl(Updates *updates, bool autoDownloadAndInstall, QWidget * parent, Qt::WindowFlags f)
 		: QDialog(parent, f)
 {
 	setupUi(this);
@@ -58,7 +58,7 @@ UpdateCenterImpl::UpdateCenterImpl(Updates *updates, bool autoDownloadAndInstall
 	// configure resize mode
 	header->setHighlightSections(false);
 	header->setStretchLastSection(false);
-	header->setResizeMode(0, QHeaderView::Stretch);
+    header->setSectionResizeMode(0, QHeaderView::Stretch);
 	// set header text aligment
 	QTreeWidgetItem * headerItem = lsvUpdates->headerItem();
 	headerItem->setTextAlignment(1, Qt::AlignHCenter | Qt::AlignVCenter);

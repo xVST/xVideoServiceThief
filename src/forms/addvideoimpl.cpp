@@ -36,7 +36,7 @@
 #include "../videoitem.h"
 
 AddVideoImpl::AddVideoImpl(ProgramOptions *programOptions, VideoInformation *videoInformation,
-						   QWidget * parent, Qt::WFlags f)
+                           QWidget * parent, Qt::WindowFlags f)
 		: QDialog(parent, f)
 {
 	setupUi(this);
@@ -45,14 +45,14 @@ AddVideoImpl::AddVideoImpl(ProgramOptions *programOptions, VideoInformation *vid
 	isCustomDownloadFlag = false;
 	// hide the conversion options
 	originalSize = size();
-#ifndef Q_WS_MACX
+#ifndef Q_OS_MACX
 	gpbVideoConversion->setVisible(false);
 #endif
 	chbOverrideConversion->setVisible(QFile::exists(programOptions->getFfmpegLibLocation()));
 	resize(width(), 50);
 	// set custom download text and font size
 	linkTemplate = lblCustomLink->text();
-#ifndef Q_WS_WIN32
+#ifndef Q_OS_WIN32
 	QFont customDownloadFont = lblCustomLink->font();
 	customDownloadFont.setPointSize(customDownloadFont.pointSize() - 2);
 	lblCustomLink->setFont(customDownloadFont);
@@ -259,7 +259,7 @@ void AddVideoImpl::spbPasteURLClicked()
 
 void AddVideoImpl::spbSelectFileClicked()
 {
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	QFileDialog fileDialog(this, Qt::Sheet);
 	// configure file dialog
 	fileDialog.setFileMode(QFileDialog::ExistingFile);
@@ -275,7 +275,7 @@ void AddVideoImpl::spbSelectFileClicked()
 
 void AddVideoImpl::chbOverrideConversionClicked()
 {
-#ifndef Q_WS_MACX
+#ifndef Q_OS_MACX
 	if (!gpbVideoConversion->isVisible())
 	{
 		gpbVideoConversion->setVisible(true);

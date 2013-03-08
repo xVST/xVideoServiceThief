@@ -64,6 +64,7 @@ Q_OBJECT
 
 class HttpScriptClass : public QObject, public QScriptClass
 {
+Q_OBJECT
 	private:
 		QScriptValue proto;
 		QScriptValue ctor;

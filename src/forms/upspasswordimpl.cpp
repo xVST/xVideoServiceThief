@@ -25,7 +25,7 @@
 
 #include "upspasswordimpl.h"
 
-UPSPasswordImpl::UPSPasswordImpl(QWidget *parent, Qt::WFlags f)
+UPSPasswordImpl::UPSPasswordImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
     setupUi(this);

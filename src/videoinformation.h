@@ -26,7 +26,7 @@
 #ifndef __VIDEOINFORMATION_H__
 #define __VIDEOINFORMATION_H__
 
-#include <QtGui>
+#include <QtWidgets>
 #include <QtScript>
 
 #ifdef xVST_DEBUG_PLUGINS_ON
@@ -40,7 +40,7 @@ enum BlockedState
 	bsBlocked
 };
 
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 static const QString PLUGINS_IMAGE_CACHE_DIR = "/../Caches/xVideoServiceThief/plugins-cache/";
 #else
 static const QString PLUGINS_IMAGE_CACHE_DIR = "/plugins-cache/";

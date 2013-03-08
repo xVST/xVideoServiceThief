@@ -26,7 +26,7 @@
 #ifndef DOWNLOADLOGIMPL_H
 #define DOWNLOADLOGIMPL_H
 
-#include <QtGui>
+#include <QtWidgets>
 
 #include "ui_downloadlog.h"
 
@@ -53,7 +53,7 @@ class DownloadLogImpl : public QDialog, public Ui::DownloadLog
 {
 Q_OBJECT
 	public:
-		DownloadLogImpl( QWidget * parent = 0, Qt::WFlags f = Qt::WindowMaximizeButtonHint );
+		DownloadLogImpl( QWidget * parent = 0, Qt::WindowFlags f = Qt::WindowMaximizeButtonHint );
 		/*! Display the downloads log */
 		void buildLog(QList<LogEntry> logEntries, VideoInformation *videoInformation);
 	private slots:

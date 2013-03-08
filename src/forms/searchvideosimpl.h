@@ -50,7 +50,7 @@ Q_OBJECT
 		void restoreLastSearchSettings();
 		void saveLastSearchSettings();
 	public:
-		SearchVideosImpl(QWidget *parent = 0, Qt::WFlags f = 0);
+		SearchVideosImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);
 		~SearchVideosImpl();
 	private slots:
 		void finished(int);

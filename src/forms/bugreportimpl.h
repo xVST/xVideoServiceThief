@@ -47,7 +47,7 @@ Q_OBJECT
 		QString getPluginInformation(QString URL);
 	public:
 		/*! Class constructor */
-		BugReportImpl(ProgramOptions *programOptions, QWidget * parent = 0, Qt::WFlags f = 0);
+		BugReportImpl(ProgramOptions *programOptions, QWidget * parent = 0, Qt::WindowFlags f = 0);
 		/*! Class destructor */
 		~BugReportImpl();
 		/*! Fill the error information */

@@ -34,12 +34,12 @@
 #include "../videoinformation.h"
 
 InformationImpl::InformationImpl(ProgramOptions *programOptions, VideoInformation *videoInformation,
-								 QWidget * parent, Qt::WFlags f)
+								 QWidget * parent, Qt::WindowFlags f)
 		: QDialog(parent, f)
 {
 	setupUi(this);
 	// resize window
-#ifndef Q_WS_WIN
+#ifndef Q_OS_WIN32
 	resize(518, 570);
 	setMinimumSize(518, 570);
 #endif

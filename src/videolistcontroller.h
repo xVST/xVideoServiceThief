@@ -26,7 +26,7 @@
 #ifndef __VIDEOLISTCONTROLLER_H__
 #define __VIDEOLISTCONTROLLER_H__
 
-#include <QtGui>
+#include <QtWidgets>
 //#include <QNetworkProxy>
 #include <QtNetwork>
 

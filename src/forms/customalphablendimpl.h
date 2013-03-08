@@ -32,7 +32,7 @@ class CustomAlphaBlendImpl : public QDialog, public Ui::CustomAlphaBlend
 {
 Q_OBJECT
 	public:
-		CustomAlphaBlendImpl( QWidget * parent = 0, Qt::WFlags f = 0 );
+		CustomAlphaBlendImpl( QWidget * parent = 0, Qt::WindowFlags f = 0 );
 		void setInitialAlphaBlend(float value);
 		double getAlphaBlend();
 	private slots:
