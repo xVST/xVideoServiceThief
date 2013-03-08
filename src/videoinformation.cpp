@@ -31,15 +31,12 @@
 #include "searchvideos.h"
 #include "searchvideosscriptclass.h"
 #include "serviceskeychain.h"
-#include "multimediascontainer.h"
-#include "multimediascontainerscriptclass.h"
 #include "httpscriptclass.h"
 #include "toolsscriptclass.h"
 #include "programversion.h"
 #include "options.h"
 
 Q_DECLARE_METATYPE(VideoDefinition)
-Q_DECLARE_METATYPE(ServiceLoginInformation)
 Q_DECLARE_METATYPE(SearchResults)
 Q_DECLARE_METATYPE(SearchResults*)
 
@@ -69,8 +66,6 @@ VideoInformation::VideoInformation(QString pluginsDir)
 	// create plugins catcher
 	faviconsCatcher = new VideoInformationPluginIconsCatcher(this);
 	faviconsCatcher->downloadFavicons();
-	// init logins session
-	servicesKeychain = new ServicesKeyChain();
 }
 
 VideoInformation::~VideoInformation()
@@ -83,8 +78,6 @@ VideoInformation::~VideoInformation()
 	delete faviconsCatcher;
 	// destroy plugins container
 	delete plugins;
-	// destroy logins session
-	delete servicesKeychain;
 }
 
 bool VideoInformation::validItemIndex(const int index)
@@ -348,20 +341,6 @@ void VideoInformation::abortExecution()
 void VideoInformation::cancel()
 {
 	videoItem = NULL;
-}
-
-ServiceLoginInformation VideoInformation::serviceLoginInfo(VideoInformationPlugin *videoInformationPlugin, bool lastLoginFailed)
-{
-	ServiceLoginInformation result;
-/*
-	QMetaObject::invokeMethod(servicesKeychain, SLOT(serviceLoginInfo(VideoInformationPlugin *, lastLoginFailed, ServiceLoginInformation &)),
-							  Q_ARG(VideoInformationPlugin, videoInformationPlugin),
-							  Q_ARG(bool, lastLoginFailed),
-							  Q_ARG(ServiceLoginInformation, result));
-*/
-	//servicesKeychain->serviceLoginInfo(videoInformationPlugin, lastLoginFailed, result);
-
-	return result;//servicesKeychain->serviceLoginInfo(videoInformationPlugin, lastLoginFailed);
 }
 
 bool VideoInformation::getBlockAdultContent()
@@ -687,25 +666,6 @@ void VideoInformationPlugin::fromScriptValue_VideoDefinition(const QScriptValue 
 	vd.rtmpParams = obj.property("rtmpParams").toVariant().toStringList();
 }
 
-QScriptValue VideoInformationPlugin::create_ServiceLoginInformation(QScriptContext *, QScriptEngine *engine)
-{
-	return engine->toScriptValue(ServiceLoginInformation());
-}
-
-QScriptValue VideoInformationPlugin::toScriptValue_ServiceLoginInformation(QScriptEngine *engine, const ServiceLoginInformation &sli)
-{
-	QScriptValue obj = engine->newObject();
-	obj.setProperty("userName", QScriptValue(engine, sli.userName));
-	obj.setProperty("password", QScriptValue(engine, sli.password));
-	return obj;
-}
-
-void VideoInformationPlugin::fromScriptValue_ServiceLoginInformation(const QScriptValue &obj, ServiceLoginInformation &sli)
-{
-	sli.userName = obj.property("userName").toString();
-	sli.password = obj.property("password").toString();
-}
-
 QScriptValue VideoInformationPlugin::func_isPluginInstalled(QScriptContext *context, QScriptEngine *engine)
 {
 	if (context->argumentCount() == 1)
@@ -760,17 +720,6 @@ QScriptValue VideoInformationPlugin::func_programVersionNumber(QScriptContext *,
 	return engine->newVariant(QVariant(PROGRAM_VERSION_NUMBER));
 }
 
-QScriptValue VideoInformationPlugin::func_loginPrompt(QScriptContext *context, QScriptEngine *engine)
-{
-	ScriptEngineExt *engineExt = static_cast<ScriptEngineExt *>(engine);
-	// init params
-	bool lastLoginFailed = false;
-	// get parameters
-	if (context->argumentCount() == 1) lastLoginFailed = context->argument(0).toBool();
-	// get login information
-	return engine->toScriptValue(VideoInformation::instance()->serviceLoginInfo(engineExt->getVideoInformationPlugin(), lastLoginFailed));
-}
-
 VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 {
 	VideoDefinition result;
@@ -785,11 +734,6 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 	qScriptRegisterMetaType(engine, toScriptValue_VideoDefinition, fromScriptValue_VideoDefinition);
 	QScriptValue ctor_VidDef = engine->newFunction(create_VideoDefinition);
 	engine->globalObject().setProperty("VideoDefinition", ctor_VidDef);
-
-	// create and regist ServiceLoginInformation
-	qScriptRegisterMetaType(engine, toScriptValue_ServiceLoginInformation, fromScriptValue_ServiceLoginInformation);
-	QScriptValue ctor_SerLogInf = engine->newFunction(create_ServiceLoginInformation);
-	engine->globalObject().setProperty("ServiceLoginInformation", ctor_SerLogInf);
 
 	// regist isPluginInstalled(id) function
 	QScriptValue _isPluginInstalled = engine->newFunction(func_isPluginInstalled);
@@ -811,18 +755,11 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 	QScriptValue _programVersionNumber = engine->newFunction(func_programVersionNumber);
 	engine->globalObject().setProperty("programVersionNumber", _programVersionNumber);
 
-	// regist loginPrompt() function
-	QScriptValue _loginPrompt = engine->newFunction(func_loginPrompt);
-	engine->globalObject().setProperty("loginPrompt", _loginPrompt);
-
 	// create and regist the script tools class
 	ToolsScriptClass *toolsClass = new ToolsScriptClass(engine);
 
 	// create and regist the Http class
 	HttpScriptClass *httpClass = new HttpScriptClass(engine);
-
-	// create and regist the Multi
-	MultiMediasContainerScriptClass *multiMediasClass = new MultiMediasContainerScriptClass(engine);
 
 	// configure debugger
 #ifdef xVST_DEBUG_PLUGINS_ON
@@ -860,7 +797,6 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 	// destroy auxiliar classes
 	delete toolsClass;
 	delete httpClass;
-	delete multiMediasClass;
 	// detach global engine
 	delete engine;
 	engine = NULL;

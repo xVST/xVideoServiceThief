@@ -46,13 +46,10 @@ static const QString PLUGINS_IMAGE_CACHE_DIR = "/../Caches/xVideoServiceThief/pl
 static const QString PLUGINS_IMAGE_CACHE_DIR = "/plugins-cache/";
 #endif
 
-struct ServiceLoginInformation;
-
 class Http;
 class VideoItem;
 class VideoInformation;
 class SearchResults;
-class ServicesKeyChain;
 
 struct VideoDefinition;
 
@@ -85,10 +82,6 @@ class VideoInformationPlugin : public QObject
 		static QScriptValue create_VideoDefinition(QScriptContext *context, QScriptEngine *engine);
 		static QScriptValue toScriptValue_VideoDefinition(QScriptEngine *engine, const VideoDefinition &vd);
 		static void fromScriptValue_VideoDefinition(const QScriptValue &obj, VideoDefinition &vd);
-		/* ServiceLoginInformation struct script definition */
-		static QScriptValue create_ServiceLoginInformation(QScriptContext *context, QScriptEngine *engine);
-		static QScriptValue toScriptValue_ServiceLoginInformation(QScriptEngine *engine, const ServiceLoginInformation &sli);
-		static void fromScriptValue_ServiceLoginInformation(const QScriptValue &obj, ServiceLoginInformation &sli);
 		/* Plugins executer */
 		static QScriptValue func_isPluginInstalled(QScriptContext *context, QScriptEngine *engine);
 		static QScriptValue func_executePlugin(QScriptContext *context, QScriptEngine *engine);
@@ -96,8 +89,6 @@ class VideoInformationPlugin : public QObject
 		static QScriptValue func_programVersion(QScriptContext *context, QScriptEngine *engine);
 		static QScriptValue func_programVersionShort(QScriptContext *context, QScriptEngine *engine);
 		static QScriptValue func_programVersionNumber(QScriptContext *context, QScriptEngine *engine);
-		/* Plugins keychain */
-		static QScriptValue func_loginPrompt(QScriptContext *context, QScriptEngine *engine);
 	public:
 		/*! Class constructor */
 		VideoInformationPlugin(VideoInformation *videoInformation, QString videoServicePath);
@@ -193,7 +184,6 @@ Q_OBJECT
 		bool blockAdultContent;	//!< Flag for know if adult content is accepted
 		QStringList blockAdultContentList; //!< List of blocked services
 		VideoInformationPluginIconsCatcher *faviconsCatcher;	//!< Plugins image downloader
-		ServicesKeyChain *servicesKeychain;	//!< Responsable of logins
 		/*! Determine if this index is a valid item index */
 		bool validItemIndex(const int index);
 		/*! Clear and destroy all the stored plugins */
@@ -247,8 +237,6 @@ Q_OBJECT
 		void abortExecution();
 		/*! Cancel the current work */
 		void cancel();
-		/*! Get login service information from videoInformationPlugin */
-		ServiceLoginInformation serviceLoginInfo(VideoInformationPlugin *videoInformationPlugin, bool lastLoginFailed);
 		/*! Get block adult content flag */
 		bool getBlockAdultContent();
 		/*! Set the block adult content flag */
