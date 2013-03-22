@@ -1,13 +1,15 @@
 2.5:
 ------
 
+- Compiled with Qt 5.0.1
+
 - Improved the RTMP support (new core based on RTMPDump 2.4 http://rtmpdump.mplayerhq.hu/).
 	- Improved download stability! Yes! You did read it right!
 	- Supported protocols: rtmp, rtmpe, rtmpt, rtmps, rtmpte, rtmpte, rtmfp
 	- SSL support using the PolarSSL library (http://polarssl.org/)
 	- Added live streaming support!
 
-- Fixed bug (Error: Sometimes crashes trying to cancel an update)
+- Fixed bug (Error: Sometimes crashes trying to cancel an update. Thanks ckorn)
 
 - Added finnish translation (thanks to Tuomas Lähteenmäki)
 - Added bulgarian translation (thanks to Vasil Stoev)
@@ -53,11 +55,6 @@ Windows:
 - Compiled with Qt4.8.1 (dropped static compilation due to Webkit's incompatibilities.)
 
 - Added HTTPS support
-
-Mac OS X:
----------
-
-- Compiled with Qt 4.8.1
 
 2.4.1.1:
 --------
