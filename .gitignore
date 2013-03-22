@@ -26,3 +26,4 @@ Makefile.Release
 *.pro.user
 Makefile
 TODO.*
+*.pro.user.*
