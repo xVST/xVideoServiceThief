@@ -25,7 +25,7 @@
 
 function RegistVideoService()
 {
-	this.version = "3.1.0";
+	this.version = "3.1.1";
 	this.minVersion = "2.0.0a";
 	this.author = "Xesc & Technology 2013";
 	this.website = "http://www.youtube.com/";
@@ -80,7 +80,7 @@ function getVideoInformation(url)
 
 function getVideoInformationJSON(html)
 {
-	var playerConfig = /yt.playerConfig\s*=\s*\{(.*?)\};/g;
+	var playerConfig = /ytplayer.config\s*=\s*\{(.*?)\};/g;
 	return eval('({' + playerConfig.exec(html)[1] + '})');
 }
 
