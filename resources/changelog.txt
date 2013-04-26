@@ -1,7 +1,7 @@
 2.5:
 ------
 
-- Compiled with Qt 5.0.1
+- Compiled with Qt 5.0.2
 
 - Improved the RTMP support (new core based on RTMPDump 2.4 http://rtmpdump.mplayerhq.hu/).
 	- Improved download stability! Yes! You did read it right!
@@ -10,6 +10,7 @@
 	- Added live streaming support!
 
 - Fixed bug (Error: Sometimes crashes trying to cancel an update. Thanks ckorn)
+- Fixed bug (Error: Sometimes crashes searching videos)
 
 - Added finnish translation (thanks to Tuomas Lähteenmäki)
 - Added bulgarian translation (thanks to Vasil Stoev)
