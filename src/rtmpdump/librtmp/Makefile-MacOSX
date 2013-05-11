@@ -15,12 +15,10 @@ CC=$(CROSS_COMPILE)gcc
 LD=$(CROSS_COMPILE)ld
 AR=$(CROSS_COMPILE)ar
 
-#SYS=posix
-SYS=mingw
-
-#CRYPTO=OPENSSL
-CRYPTO=POLARSSL
+SYS=posix
+CRYPTO=OPENSSL
 #CRYPTO=GNUTLS
+#CRYPTO=POLARSSL
 DEF_POLARSSL=-DUSE_POLARSSL
 DEF_OPENSSL=-DUSE_OPENSSL
 DEF_GNUTLS=-DUSE_GNUTLS
@@ -54,7 +52,7 @@ SODIR_darwin=$(LIBDIR)
 SODIR_mingw=$(BINDIR)
 SODIR=$(SODIR_$(SYS))
 
-SO_LDFLAGS_posix=-shared -Wl,-soname,$@
+SO_LDFLAGS_posix=-shared -Wl,-dylib_install_name,$@
 SO_LDFLAGS_darwin=-dynamiclib -twolevel_namespace -undefined dynamic_lookup \
 	-fno-common -headerpad_max_install_names -install_name $(libdir)/$@
 SO_LDFLAGS_mingw=-shared -Wl,--out-implib,librtmp.dll.a
