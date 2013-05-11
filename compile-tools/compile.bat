@@ -1,7 +1,8 @@
 @echo off
 
 :init
-cd %CD%/..
+set PROJ_DIR=%CD%/..
+cd %PROJ_DIR%
 
 :qt-config
 if "%1" == "vc++" (
@@ -24,6 +25,7 @@ goto :END
 if "%2" == "no-clean" goto :do-qmake
 
 :Clean
+cd %PROJ_DIR%
 RMDIR build /s /q
 %MAKE% clean 
 DEL Makefile
@@ -39,8 +41,8 @@ goto :do-qmake-%1%
 goto :compile
 
 :do-qmake-mingw
-"%QtDir%\bin\qmake" -set build_mode dynamic_build
-"%QtDir%\bin\qmake" CONFIG+=release
+"%QtDir%\qmake" -set build_mode dynamic_build
+"%QtDir%\qmake" CONFIG+=release
 goto :compile
 
 :compile
@@ -50,7 +52,7 @@ goto :compile
 "%UPXApp%" "bin\xVideoServiceThief.exe" -9
 
 :Install languages
-%QtDir%\bin\lrelease.exe xVideoServiceThief.pro
+%QtDir%\lrelease.exe xVideoServiceThief.pro
 call ".\Installer\windows-install-languages.bat" "%CD%\Installer\"                                                                               
 
 :Install plugins

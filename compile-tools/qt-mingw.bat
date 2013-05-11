@@ -2,8 +2,8 @@ echo xVideoServiceThief MinGW automated compiler script
 echo Note: Configure your envirotment variables before execute this Bat
 echo Copyright Xesc and Technolgy 2010
 
-set QtVersion=4.6.3
-set QtDir=C:\ProgramacioLibs\Qt\%QtVersion%\
+set QtVersion=5.0.2
+set QtDir=C:\ProgramacioLibs\Qt\Qt%QtVersion%-mingw\%QtVersion%\mingw47_32\bin
 set UPXApp=C:\Documents and Settings\Administrador\Escritorio\upx.exe
 set MAKE=mingw32-make.exe
 
@@ -24,4 +24,4 @@ if not exist "%UPXApp%" (
   pause
 )
 
-call "%QtDir%\bin\qtenv.bat"
+call "%QtDir%\qtenv2.bat"
