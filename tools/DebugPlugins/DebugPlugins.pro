@@ -2,9 +2,11 @@ CONFIG += qt \
     warn_on \
     debug_and_release \
     $$[build_mode]
-QT += network \
-    script \
-    scripttools
+QT = core \
+	widgets \
+	network \
+	script \
+	scripttools
 DEFINES += xVST_DEBUG_PLUGINS_ON
 TARGET = DebugPlugins
 TEMPLATE = app

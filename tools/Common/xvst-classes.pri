@@ -10,15 +10,9 @@ SOURCES += \
 	../../src/videoinformation.cpp \
 	../../src/options.cpp \
 	../../src/videoitem.cpp \
-	../../src/languages.cpp \
-	../../src/serviceskeychain.cpp \
-	../../src/multimediascontainer.cpp \
-	../../src/multimediascontainerscriptclass.cpp \
-	../../src/forms/loginpromptimpl.cpp \
-	../../src/forms/multimediasdetectedimpl.cpp
+	../../src/languages.cpp
 
 HEADERS += \
-	xvst-classes.h \
 	../../src/tools.h \
 	../../src/toolsscriptclass.h \
 	../../src/http.h \
@@ -28,16 +22,7 @@ HEADERS += \
 	../../src/videoinformation.h \
 	../../src/options.h \
 	../../src/videoitem.h \
-	../../src/languages.h \
-	../../src/serviceskeychain.h \
-	../../src/multimediascontainer.h \
-	../../src/multimediascontainerscriptclass.h \
-	../../src/forms/loginpromptimpl.h \
-	../../src/forms/multimediasdetectedimpl.h
-
-FORMS += \
-	../../ui/loginprompt.ui \
-	../../ui/multimediasdetected.ui
+	../../src/languages.h
 
 macx {
 	LIBS += -framework Cocoa -framework WebKit
