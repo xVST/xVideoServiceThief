@@ -27,5 +27,5 @@ A compiler directrive (STATIC_BUILD) must be defined if you want to get a "valid
 
 If you are using Windows, you can use the automated scripts for compile the xVST.
 
-	> compile-tools/compile-vc++.bat	(static + VC++2008)
+	> compile-tools/compile-vc++.bat	(static + VC++2010)
 	> compile-tools/compile-mingw.bat	(dynamic + mingw)
