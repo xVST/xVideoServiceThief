@@ -33,13 +33,6 @@
 #include "languages.h"
 #include "http.h"
 #include "programversion.h"
-//
-#ifdef STATIC_BUILD
-	#include <QtPlugin>
-	Q_IMPORT_PLUGIN(qico)
-	Q_IMPORT_PLUGIN(qgif)
-	Q_IMPORT_PLUGIN(qjpeg)
-#endif
 
 int main(int argc, char **argv)
 {
