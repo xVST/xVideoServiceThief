@@ -1,18 +1,9 @@
 2.5:
-------
+----
 
 - Compiled with Qt 5.0.2
 
-- Improved the RTMP support (new core based on RTMPDump 2.4 http://rtmpdump.mplayerhq.hu/).
-	- Improved download stability! Yes! You did read it right!
-	- Supported protocols: rtmp, rtmpe, rtmpt, rtmps, rtmpte, rtmpte, rtmfp
-	- SSL support using the PolarSSL library (http://polarssl.org/)
-	- Added live streaming support!
-
-- Fixed bug (Error: Sometimes crashes trying to cancel an update. Thanks ckorn)
-- Fixed bug (Error: Sometimes crashes searching videos)
-
-- Added finnish translation (thanks to Tuomas Lähteenmäki)
+- Added finnish translation (thanks to Tuomas L√§hteenm√§ki)
 - Added bulgarian translation (thanks to Vasil Stoev)
 - Added the HTTPS protocol as valid
 - Added 15 new plugins:
@@ -44,6 +35,16 @@
 	- Clipfish
 
 - Improved the program version comparation algorithm
+- Improved the RTMP support (new core based on RTMPDump 2.4 http://rtmpdump.mplayerhq.hu/).
+	- Improved download stability! Yes! You did read it right!
+	- Supported protocols: rtmp, rtmpe, rtmpt, rtmps, rtmpte, rtmpte, rtmfp
+	- SSL support using the PolarSSL library (http://polarssl.org/)
+	- Added live streaming support!
+
+- Fixed bug (Error: Sometimes crashes trying to cancel an update. Thanks ckorn)
+- Fixed bug (Error: Sometimes crashes searching videos)
+- Fixed bug (Error: The update module doesn't work as expected in some rare cases)
+
 
 Plug-ins SDK:
 -------------
@@ -53,9 +54,9 @@ Plug-ins SDK:
 Windows:
 --------
 
-- Compiled with Qt4.8.1 (dropped static compilation due to Webkit's incompatibilities.)
+- Due to an incompatibility with Webkit and static builds, the Webkit module has been removed in favor of IE web core (We hope that it will be temporary¬Ö sorry guys¬Ö)
 
-- Added HTTPS support
+- Added HTTPS support (YES! Finally!)
 
 2.4.1.1:
 --------
@@ -373,7 +374,7 @@ Plugins SDK:
 
 - Changed default searching scope from "All services" to "All standard services"
 
-- Revised the Català language file
+- Revised the Catal√† language file
 
 Plug-ins SDK:
 -------------
@@ -541,8 +542,8 @@ Windows (Static versions only):
 - Added Danish (DA) translation (thanks to Jens Chr. True)
 - Added Portugese - Brasil (BR) translation (thanks to Mateus Tuler)
 - Added Korean (KR) translation (thanks to Lee Evan)
-- Added Hungarian (HU) translation (thanks to Zoltán Magyar (ZityiSoft))
-- Added Galician (GL) translation (thanks to Marcos Díaz)
+- Added Hungarian (HU) translation (thanks to Zolt√°n Magyar (ZityiSoft))
+- Added Galician (GL) translation (thanks to Marcos D√≠az)
 - Added Romanian (RO) translation (thanks to Iulian Temelie)
 - Added German (DE) translation (thanks to Christian Kieschnick)
 - Added Swedish (SV) translation (thanks to Daniel Nylander)
@@ -699,7 +700,7 @@ Windows:
 - Changed Information window size
 - Changed Credits window size
 
-- Fixed bug (Error: Disabling the automatic updates, the downloads were not started) 
+- Fixed bug (Error: Disabling the automatic updates, the downloads were not started)
 - Fixed bug (Error: On restore session, the missing videos where not deleted from list)
 
 - Revised and sorted the "Tab orders" into the application for a better accessibility
@@ -744,7 +745,7 @@ Windows:
 - Fixed bug (Error: "Content-Length" was now correctly parsed in http class when a ";" was found)
 - Fixed bug (Error: multiple "Bug Reports" were displayed at same time and always the same video)
 
-- Improved download speed average 
+- Improved download speed average
 - Improved time remaining calculation
 - Improved TrayIcon (extended display information: current download/conversion video is displayed)
 - Improved internal HTTP class
