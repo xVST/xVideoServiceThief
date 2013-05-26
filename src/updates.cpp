@@ -447,9 +447,9 @@ void Updates::installUpdates()
 {
 #ifdef Q_OS_WIN32
 	// init wchar_t vars
-	QString sApp = QDir::toNativeSeparators(appPath + XUPDATER_PATH);
-	QString sParams = QDir::toNativeSeparators(QDir::tempPath() + XUPDATER_FILE);
-	QString sPath = QDir::toNativeSeparators(appPath);
+	QString sApp = "\"" + QDir::toNativeSeparators(appPath + XUPDATER_PATH) + "\"";
+	QString sParams = "\""+ QDir::toNativeSeparators(QDir::tempPath() + XUPDATER_FILE) + "\"";
+	QString sPath = "\"" + QDir::toNativeSeparators(appPath) + "\"";
 	// execute with admin rights
 	RunElevated(NULL, LPWSTR(sApp.utf16()), LPWSTR(sParams.utf16()), LPWSTR(sPath.utf16()));
 #else
