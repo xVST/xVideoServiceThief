@@ -140,7 +140,7 @@ Q_OBJECT
 		/*! Clear update items */
 		void clear();
 		/*! Install updates */
-		void buildInstalScript();
+		void buildInstallScript();
 		/*! Get the total size to download */
 		void getTotalSizeToDownload();
 		/*! Get the first update file to download */

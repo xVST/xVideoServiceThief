@@ -164,7 +164,7 @@ void Updates::clear()
 		updateList->removeFirst();
 }
 
-void Updates::buildInstalScript()
+void Updates::buildInstallScript()
 {
 	QFile updateScriptFile(QDir::tempPath() + XUPDATER_FILE);
 	if (updateScriptFile.open(QFile::WriteOnly | QFile::Truncate))
@@ -397,7 +397,7 @@ void Updates::run()
 			if (readyToInstall > 0)
 			{
 				// make the install file
-				buildInstalScript();
+				buildInstallScript();
 				// send the ok signal
 				emit readyToInstallUpdates();
 			}
