@@ -40,14 +40,14 @@ namespace EnumRTMP
 {
 	enum Error
 	{
-		NO_RTMP_ERROR = 0,			//0
-		FLVSTREAMER_MISSING = 100,	//100
-		FAILED_TO_OPEN_FILE,		//101
-		FAILED_TO_CONNECT,			//102
-		COULDNT_RESUME_FLV,			//103
-		DOWNLOAD_INCOMPLETE,		//104
-		PTHREAD_CREATE_FAILED,		//105
-		FILE_NOT_FOUND				//106
+		NO_RTMP_ERROR = 0,		//0
+		RTMP_APP_MISSING = 100,	//100
+		FAILED_TO_OPEN_FILE,	//101
+		FAILED_TO_CONNECT,		//102
+		COULDNT_RESUME_FLV,		//103
+		DOWNLOAD_INCOMPLETE,	//104
+		PTHREAD_CREATE_FAILED,	//105
+		FILE_NOT_FOUND			//106
 	};
 
 	enum StopReason
@@ -60,29 +60,29 @@ namespace EnumRTMP
 	};
 }
 
-/*! flvstreamer Qt4 wrapper */
+/*! rtmpdump Qt4 wrapper */
 class RTMP : public QObject
 {
 Q_OBJECT
 	private:
-		QProcess *flvstreamerProcess;	//!< Flvstreamer process
-		QString flvstreamerPath;		//!< Base dir where flvstreamer is located (ie: /users/xesk/.xvst/)
-		ArrayAvg *downloadSpeedAvg;		//!< Download speed avg calculator
-		ArrayAvg *timeRemainingAvg;		//!< Time remaining avg calculator
-		QFileInfo destinationFile;		//!< Destination file information
+		QProcess *rtmpProcess;				//!< Rtmpdump process
+		QString rtmpAppPath;				//!< Base dir where Rtmpdump is located (ie: /users/xesk/.xvst/)
+		ArrayAvg *downloadSpeedAvg;			//!< Download speed avg calculator
+		ArrayAvg *timeRemainingAvg;			//!< Time remaining avg calculator
+		QFileInfo destinationFile;			//!< Destination file information
 		EnumRTMP::StopReason stopReason;	//!< Flag for know if the user aborted
-		bool resuming;				//!< Flag for know if is being resumed
-		int fileSize;				//!< File size to download
-		int downloadSpeed;			//!< Current download speed (bytes second)
-		int internalTimer;			//!< Internal timer id
-		int currentDownloadedSize;	//!< Currend downloaded size
-		int lastDownloadedSize;		//!< Last downloaded size
-		int timeRemaining;			//!< Time remaining in seconds
-		bool pauseOnDestroyF;		//!< Should pause the download instead of cancel it?
-		int errorCode;				//!< Last error code detected
-		bool usingPercentage;		//!< Flag for know if we are fetching the % instead of size
-		float currentPercentage;	//!< Stores the current percentage
-		float lastPercentage;		//!< Stores the latest percentage
+		bool resuming;						//!< Flag for know if is being resumed
+		int fileSize;						//!< File size to download
+		int downloadSpeed;					//!< Current download speed (bytes second)
+		int internalTimer;					//!< Internal timer id
+		int currentDownloadedSize;			//!< Currend downloaded size
+		int lastDownloadedSize;				//!< Last downloaded size
+		int timeRemaining;					//!< Time remaining in seconds
+		bool pauseOnDestroyF;				//!< Should pause the download instead of cancel it?
+		int errorCode;						//!< Last error code detected
+		bool usingPercentage;				//!< Flag for know if we are fetching the % instead of size
+		float currentPercentage;			//!< Stores the current percentage
+		float lastPercentage;				//!< Stores the latest percentage
 		/*! Parse the current output text */
 		void parseOutput(QString output);
 		/*! Single timer shot */
@@ -91,11 +91,11 @@ Q_OBJECT
 		void init();
 	public:
 		/*! Class constructor */
-		RTMP(QString flvstreamerPath, QString workingDir);
+		RTMP(QString rtmpAppPath, QString workingDir);
 		/*! Class destructor */
 		~RTMP();
-		/*! Return if flvstreamer is installed (detected) */
-		bool isFlvstreamerInstalled();
+		/*! Return if Rtmpdump is installed (detected) */
+		bool isRtmpappInstalled();
 		/*! Start a new asynchronously download */
 		int download(const QString URL, QString destination, QString fileName = "", QStringList params = QStringList(), bool autoName = true);
 		/*! Resume a previous asynchronously download */
@@ -117,9 +117,9 @@ Q_OBJECT
 		/*! Get the destination file name */
 		QFileInfo getDestinationFile();
 	private slots:
-		/*! flvstreamer started */
+		/*! Rtmpdump started */
 		void started();
-		/*! flvstreamer finished */
+		/*! Rtmpdump finished */
 		void finished(int exitCode, QProcess::ExitStatus exitStatus);
 		/*! output recived */
 		void readyReadStandardOutput();
