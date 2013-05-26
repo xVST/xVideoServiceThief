@@ -52,7 +52,7 @@ function getVideoInformation(url)
 		youTubeURL = strFormat(URL_YOUTBE, embededID);
 	}
 	// cehck if is an embeded video (v2)
-	else if (youTubeURL.toString().indexOf("/embed/") != -1) 
+	else if (youTubeURL.toString().indexOf("/embed/") != -1)
 	{
 		var embededID = copyBetween(youTubeURL + "?", "/embed/", "?");
 		youTubeURL = strFormat(URL_YOUTBE, embededID);
@@ -98,8 +98,8 @@ function getVideoUrlAndExtension(videoInformationJSON)
 	// get the first video
 	var video = videos_arr[0];
 	// init result
-	return { 
-		url: video.url + "&signature=" + video.sig, 
+	return {
+		url: video.url + "&signature=" + video.sig,
 		extension: extensionFromVideoType(getToken(video.type, ";", 0))
 	};
 }
@@ -134,7 +134,7 @@ function extensionFromVideoType(vtype)
 	return ".flv";
 }
 
-/* 
+/*
 	This function "normalizeSpaces(str)" will be deprecated on next xVST version
 	and replaced with the new "simplifyString(str)" function (added in xVST 2.3.1)
 */
