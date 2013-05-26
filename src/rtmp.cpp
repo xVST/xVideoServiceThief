@@ -316,10 +316,10 @@ void RTMP::parseOutput(QString output)
 
 void RTMP::singleTimerShot()
 {
-	QTimer::singleShot(1000, this, SLOT(timerEvent()));
+	QTimer::singleShot(1000, this, SLOT(downloadTimerEvent()));
 }
 
-void RTMP::timerEvent()
+void RTMP::downloadTimerEvent()
 {
 	// calcule download speed
 	downloadSpeed = static_cast<int>(downloadSpeedAvg->add(currentDownloadedSize - lastDownloadedSize));

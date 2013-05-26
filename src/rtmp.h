@@ -126,7 +126,7 @@ Q_OBJECT
 		/*! output by error recived */
 		void readyReadStandardError();
 		/*! Internal timer event */
-		void timerEvent();
+		void downloadTimerEvent();
 	signals:
 		/*! when a download started */
 		void downloadStarted();
