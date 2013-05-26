@@ -38,7 +38,7 @@ RTMP::RTMP(QString flvstreamerPath, QString workingDir)
 	// init internal vars
 	init();
 	// set up the flvstream app path
-	this->flvstreamerPath = flvstreamerPath + "/" + FLVSTREAMER_PATH;
+	this->flvstreamerPath = flvstreamerPath + "/" + RTMP_APP_PATH;
 	// create speed avarage
 	downloadSpeedAvg = new ArrayAvg(100);
 	timeRemainingAvg = new ArrayAvg(100);

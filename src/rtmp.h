@@ -29,9 +29,9 @@
 #include <QtCore>
 
 #ifdef Q_OS_WIN32
-static const QString FLVSTREAMER_PATH = "rtmpdump.exe";	//!< RTMPDump app (Win32)
+static const QString RTMP_APP_PATH = "rtmpdump.exe";	//!< RTMPDump app (Win32)
 #else
-static const QString FLVSTREAMER_PATH = "rtmpdump";		//!< RTMPDump app (*unix)
+static const QString RTMP_APP_PATH = "rtmpdump";		//!< RTMPDump app (*unix)
 #endif
 
 class ArrayAvg;
