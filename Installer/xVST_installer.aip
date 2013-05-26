@@ -42,11 +42,11 @@
     <ROW Component="catala.language" ComponentId="{524A02C4-6989-4B0F-9CC8-95767D5E855F}" Directory_="languages_DIR" Attributes="0" KeyPath="catala.language" Type="0"/>
     <ROW Component="downloads" ComponentId="{6788E29F-0CCC-491B-964D-619EA1AE9F1D}" Directory_="downloads_DIR" Attributes="0"/>
     <ROW Component="ffmpeg.exe" ComponentId="{2188BED1-13CC-465B-A67D-CC059AB37641}" Directory_="bin_DIR" Attributes="0" KeyPath="ffmpeg.exe"/>
+    <ROW Component="freecaster.js" ComponentId="{52D5FABF-0B16-4A38-BE2C-2958CB0A9EDE}" Directory_="plugins_DIR" Attributes="0" KeyPath="freecaster.js" Type="0"/>
     <ROW Component="libeay32.dll" ComponentId="{E7195941-8B40-46E7-9FB5-3C3BC86FFDCF}" Directory_="APPDIR" Attributes="0" KeyPath="libeay32.dll"/>
     <ROW Component="librtmp0.dll" ComponentId="{7097057C-B588-44AF-A8C1-76E3EE1148F9}" Directory_="bin_DIR" Attributes="0" KeyPath="librtmp0.dll"/>
     <ROW Component="libssl32.dll" ComponentId="{F71B8AD5-604E-418C-B7B8-D226D175C5D9}" Directory_="APPDIR" Attributes="0" KeyPath="libssl32.dll"/>
     <ROW Component="libx264_baseline.ffpreset" ComponentId="{4312D5D7-3676-429E-A609-28A83DD03205}" Directory_="ffmpeg_presets_DIR" Attributes="0" KeyPath="libx264_baseline.ffpreset" Type="0"/>
-    <ROW Component="min.js" ComponentId="{966BD8AF-90E5-4E17-AA8A-4585F20969AC}" Directory_="plugins_DIR" Attributes="0" KeyPath="min.js" Type="0"/>
     <ROW Component="msvcp100.dll" ComponentId="{E82C6951-E7EE-4BDE-B740-8495EC42097B}" Directory_="Microsoft.VC100.CRT_Dir" Attributes="0" KeyPath="msvcp100.dll"/>
     <ROW Component="msvcr100.dll" ComponentId="{726B6EC6-00D7-4E4A-AEFB-C7B50E0BB61B}" Directory_="Microsoft.VC100.CRT_Dir" Attributes="0" KeyPath="msvcr100.dll"/>
     <ROW Component="pthreadGC2.dll" ComponentId="{D4F7AD33-CA20-444E-86B8-34CD1BB7CB81}" Directory_="bin_DIR" Attributes="0" KeyPath="pthreadGC2.dll"/>
@@ -57,65 +57,66 @@
     <ROW Component="zlib1.dll" ComponentId="{DB8E896D-1371-4CCD-8999-CEDAD80C2DD0}" Directory_="bin_DIR" Attributes="0" KeyPath="zlib1.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
-    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Attributes="0" Components="GPL.txt SHORTCUTDIR catala.language downloads ffmpeg.exe libeay32.dll librtmp0.dll libssl32.dll libx264_baseline.ffpreset min.js msvcp100.dll msvcr100.dll pthreadGC2.dll rtmpdump.exe ssleay32.dll xUpdater.exe xVideoServiceThief.exe zlib1.dll"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Attributes="0" Components="GPL.txt SHORTCUTDIR catala.language downloads ffmpeg.exe freecaster.js libeay32.dll librtmp0.dll libssl32.dll libx264_baseline.ffpreset msvcp100.dll msvcr100.dll pthreadGC2.dll rtmpdump.exe ssleay32.dll xUpdater.exe xVideoServiceThief.exe zlib1.dll"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
     <ROW File="GPL.txt" Component_="GPL.txt" FileName="GPL.txt" Attributes="0" SourcePath="..\bin\GPL.txt" SelfReg="false" NextFile="libx264_baseline.ffpreset"/>
-    <ROW File="aniboom.js" Component_="min.js" FileName="aniboom.js" Attributes="0" SourcePath="..\bin\plugins\aniboom.js" SelfReg="false" NextFile="ardmediathek.js"/>
-    <ROW File="ardmediathek.js" Component_="min.js" FileName="ardmed~1.js|ardmediathek.js" Attributes="0" SourcePath="..\bin\plugins\ardmediathek.js" SelfReg="false" NextFile="atom.js"/>
-    <ROW File="atom.js" Component_="min.js" FileName="atom.js" Attributes="0" SourcePath="..\bin\plugins\atom.js" SelfReg="false" NextFile="atv.js"/>
-    <ROW File="atv.js" Component_="min.js" FileName="atv.js" Attributes="0" SourcePath="..\bin\plugins\atv.js" SelfReg="false" NextFile="badjojo.js"/>
-    <ROW File="badjojo.js" Component_="min.js" FileName="badjojo.js" Attributes="0" SourcePath="..\bin\plugins\badjojo.js" SelfReg="false" NextFile="bebo.js"/>
-    <ROW File="bebo.js" Component_="min.js" FileName="bebo.js" Attributes="0" SourcePath="..\bin\plugins\bebo.js" SelfReg="false" NextFile="blip.js"/>
-    <ROW File="blip.js" Component_="min.js" FileName="blip.js" Attributes="0" SourcePath="..\bin\plugins\blip.js" SelfReg="false" NextFile="boingboing.js"/>
-    <ROW File="boingboing.js" Component_="min.js" FileName="boingb~1.js|boingboing.js" Attributes="0" SourcePath="..\bin\plugins\boingboing.js" SelfReg="false" NextFile="break.js"/>
-    <ROW File="break.js" Component_="min.js" FileName="break.js" Attributes="0" SourcePath="..\bin\plugins\break.js" SelfReg="false" NextFile="caughtonvideo.js"/>
+    <ROW File="aniboom.js" Component_="freecaster.js" FileName="aniboom.js" Attributes="0" SourcePath="..\bin\plugins\aniboom.js" SelfReg="false" NextFile="ardmediathek.js"/>
+    <ROW File="ardmediathek.js" Component_="freecaster.js" FileName="ardmed~1.js|ardmediathek.js" Attributes="0" SourcePath="..\bin\plugins\ardmediathek.js" SelfReg="false" NextFile="atom.js"/>
+    <ROW File="atom.js" Component_="freecaster.js" FileName="atom.js" Attributes="0" SourcePath="..\bin\plugins\atom.js" SelfReg="false" NextFile="atv.js"/>
+    <ROW File="atv.js" Component_="freecaster.js" FileName="atv.js" Attributes="0" SourcePath="..\bin\plugins\atv.js" SelfReg="false" NextFile="badjojo.js"/>
+    <ROW File="badjojo.js" Component_="freecaster.js" FileName="badjojo.js" Attributes="0" SourcePath="..\bin\plugins\badjojo.js" SelfReg="false" NextFile="bebo.js"/>
+    <ROW File="bebo.js" Component_="freecaster.js" FileName="bebo.js" Attributes="0" SourcePath="..\bin\plugins\bebo.js" SelfReg="false" NextFile="blip.js"/>
+    <ROW File="blip.js" Component_="freecaster.js" FileName="blip.js" Attributes="0" SourcePath="..\bin\plugins\blip.js" SelfReg="false" NextFile="boingboing.js"/>
+    <ROW File="boingboing.js" Component_="freecaster.js" FileName="boingb~1.js|boingboing.js" Attributes="0" SourcePath="..\bin\plugins\boingboing.js" SelfReg="false" NextFile="break.js"/>
+    <ROW File="break.js" Component_="freecaster.js" FileName="break.js" Attributes="0" SourcePath="..\bin\plugins\break.js" SelfReg="false" NextFile="caughtonvideo.js"/>
     <ROW File="bulgarian.language" Component_="catala.language" FileName="bulgar~1.lan|bulgarian.language" Attributes="0" SourcePath="..\bin\languages\bulgarian.language" SelfReg="false" NextFile="finnish.language"/>
     <ROW File="catala.language" Component_="catala.language" FileName="catala~1.lan|catala.language" Attributes="0" SourcePath="..\bin\languages\catala.language" SelfReg="false" NextFile="czech.language"/>
-    <ROW File="caughtonvideo.js" Component_="min.js" FileName="caught~1.js|caught-on-video.js" Attributes="0" SourcePath="..\bin\plugins\caught-on-video.js" SelfReg="false" NextFile="ceknito.js"/>
-    <ROW File="ceknito.js" Component_="min.js" FileName="ceknito.js" Attributes="0" SourcePath="..\bin\plugins\ceknito.js" SelfReg="false" NextFile="chilloutzone.js"/>
-    <ROW File="chilloutzone.js" Component_="min.js" FileName="chillo~1.js|chilloutzone.js" Attributes="0" SourcePath="..\bin\plugins\chilloutzone.js" SelfReg="false" NextFile="cinemavip.js"/>
-    <ROW File="cinemavip.js" Component_="min.js" FileName="cinema~1.js|cinemavip.js" Attributes="0" SourcePath="..\bin\plugins\cinemavip.js" SelfReg="false" NextFile="clip4e.js"/>
-    <ROW File="clip4e.js" Component_="min.js" FileName="clip4e.js" Attributes="0" SourcePath="..\bin\plugins\clip4e.js" SelfReg="false" NextFile="clipfish.js"/>
-    <ROW File="clipfish.js" Component_="min.js" FileName="clipfish.js" Attributes="0" SourcePath="..\bin\plugins\clipfish.js" SelfReg="false" NextFile="clipjunkie.js"/>
-    <ROW File="clipjunkie.js" Component_="min.js" FileName="clipju~1.js|clipjunkie.js" Attributes="0" SourcePath="..\bin\plugins\clipjunkie.js" SelfReg="false" NextFile="collagehumor.js"/>
-    <ROW File="collagehumor.js" Component_="min.js" FileName="collag~1.js|collagehumor.js" Attributes="0" SourcePath="..\bin\plugins\collagehumor.js" SelfReg="false" NextFile="dailymotion.js"/>
+    <ROW File="caughtonvideo.js" Component_="freecaster.js" FileName="caught~1.js|caught-on-video.js" Attributes="0" SourcePath="..\bin\plugins\caught-on-video.js" SelfReg="false" NextFile="ceknito.js"/>
+    <ROW File="ceknito.js" Component_="freecaster.js" FileName="ceknito.js" Attributes="0" SourcePath="..\bin\plugins\ceknito.js" SelfReg="false" NextFile="chilloutzone.js"/>
+    <ROW File="chilloutzone.js" Component_="freecaster.js" FileName="chillo~1.js|chilloutzone.js" Attributes="0" SourcePath="..\bin\plugins\chilloutzone.js" SelfReg="false" NextFile="cinemavip.js"/>
+    <ROW File="cinemavip.js" Component_="freecaster.js" FileName="cinema~1.js|cinemavip.js" Attributes="0" SourcePath="..\bin\plugins\cinemavip.js" SelfReg="false" NextFile="clip4e.js"/>
+    <ROW File="clip4e.js" Component_="freecaster.js" FileName="clip4e.js" Attributes="0" SourcePath="..\bin\plugins\clip4e.js" SelfReg="false" NextFile="clipfish.js"/>
+    <ROW File="clipfish.js" Component_="freecaster.js" FileName="clipfish.js" Attributes="0" SourcePath="..\bin\plugins\clipfish.js" SelfReg="false" NextFile="clipjunkie.js"/>
+    <ROW File="clipjunkie.js" Component_="freecaster.js" FileName="clipju~1.js|clipjunkie.js" Attributes="0" SourcePath="..\bin\plugins\clipjunkie.js" SelfReg="false" NextFile="collagehumor.js"/>
+    <ROW File="collagehumor.js" Component_="freecaster.js" FileName="collag~1.js|collagehumor.js" Attributes="0" SourcePath="..\bin\plugins\collagehumor.js" SelfReg="false" NextFile="dailymotion.js"/>
     <ROW File="czech.language" Component_="catala.language" FileName="czech~1.lan|czech.language" Attributes="0" SourcePath="..\bin\languages\czech.language" SelfReg="false" NextFile="danish.language"/>
-    <ROW File="dailymotion.js" Component_="min.js" FileName="dailym~1.js|dailymotion.js" Attributes="0" SourcePath="..\bin\plugins\dailymotion.js" SelfReg="false" NextFile="dalealplay.js"/>
-    <ROW File="dalealplay.js" Component_="min.js" FileName="daleal~1.js|dalealplay.js" Attributes="0" SourcePath="..\bin\plugins\dalealplay.js" SelfReg="false" NextFile="demoscene.js"/>
+    <ROW File="dailymotion.js" Component_="freecaster.js" FileName="dailym~1.js|dailymotion.js" Attributes="0" SourcePath="..\bin\plugins\dailymotion.js" SelfReg="false" NextFile="dalealplay.js"/>
+    <ROW File="dalealplay.js" Component_="freecaster.js" FileName="daleal~1.js|dalealplay.js" Attributes="0" SourcePath="..\bin\plugins\dalealplay.js" SelfReg="false" NextFile="demoscene.js"/>
     <ROW File="danish.language" Component_="catala.language" FileName="danish~1.lan|danish.language" Attributes="0" SourcePath="..\bin\languages\danish.language" SelfReg="false" NextFile="dutch.language"/>
-    <ROW File="demoscene.js" Component_="min.js" FileName="demosc~1.js|demoscene.js" Attributes="0" SourcePath="..\bin\plugins\demoscene.js" SelfReg="false" NextFile="desisextube.js"/>
-    <ROW File="desisextube.js" Component_="min.js" FileName="desise~1.js|desisextube.js" Attributes="0" SourcePath="..\bin\plugins\desisextube.js" SelfReg="false" NextFile="disclose.js"/>
-    <ROW File="disclose.js" Component_="min.js" FileName="disclose.js" Attributes="0" SourcePath="..\bin\plugins\disclose.js" SelfReg="false" NextFile="dumpalink.js"/>
-    <ROW File="dumpalink.js" Component_="min.js" FileName="dumpal~1.js|dumpalink.js" Attributes="0" SourcePath="..\bin\plugins\dumpalink.js" SelfReg="false" NextFile="ejb.js"/>
+    <ROW File="demoscene.js" Component_="freecaster.js" FileName="demosc~1.js|demoscene.js" Attributes="0" SourcePath="..\bin\plugins\demoscene.js" SelfReg="false" NextFile="desisextube.js"/>
+    <ROW File="desisextube.js" Component_="freecaster.js" FileName="desise~1.js|desisextube.js" Attributes="0" SourcePath="..\bin\plugins\desisextube.js" SelfReg="false" NextFile="disclose.js"/>
+    <ROW File="disclose.js" Component_="freecaster.js" FileName="disclose.js" Attributes="0" SourcePath="..\bin\plugins\disclose.js" SelfReg="false" NextFile="dumpalink.js"/>
+    <ROW File="dumpalink.js" Component_="freecaster.js" FileName="dumpal~1.js|dumpalink.js" Attributes="0" SourcePath="..\bin\plugins\dumpalink.js" SelfReg="false" NextFile="ejb.js"/>
     <ROW File="dutch.language" Component_="catala.language" FileName="dutch~1.lan|dutch.language" Attributes="0" SourcePath="..\bin\languages\dutch.language" SelfReg="false" NextFile="english_uk.language"/>
-    <ROW File="ejb.js" Component_="min.js" FileName="ejb.js" Attributes="0" SourcePath="..\bin\plugins\ejb.js" SelfReg="false" NextFile="elrellano.js"/>
-    <ROW File="elrellano.js" Component_="min.js" FileName="elrell~1.js|elrellano.js" Attributes="0" SourcePath="..\bin\plugins\elrellano.js" SelfReg="false" NextFile="extremetube.js"/>
+    <ROW File="ejb.js" Component_="freecaster.js" FileName="ejb.js" Attributes="0" SourcePath="..\bin\plugins\ejb.js" SelfReg="false" NextFile="elrellano.js"/>
+    <ROW File="elrellano.js" Component_="freecaster.js" FileName="elrell~1.js|elrellano.js" Attributes="0" SourcePath="..\bin\plugins\elrellano.js" SelfReg="false" NextFile="extremetube.js"/>
     <ROW File="english_uk.language" Component_="catala.language" FileName="englis~1.lan|english_uk.language" Attributes="0" SourcePath="..\bin\languages\english_uk.language" SelfReg="false" NextFile="espanol.language"/>
     <ROW File="espanol.language" Component_="catala.language" FileName="espano~1.lan|espanol.language" Attributes="0" SourcePath="..\bin\languages\espanol.language" SelfReg="false" NextFile="french.language"/>
-    <ROW File="extremetube.js" Component_="min.js" FileName="extrem~1.js|extremetube.js" Attributes="0" SourcePath="..\bin\plugins\extremetube.js" SelfReg="false" NextFile="gameanyone.js"/>
+    <ROW File="extremetube.js" Component_="freecaster.js" FileName="extrem~1.js|extremetube.js" Attributes="0" SourcePath="..\bin\plugins\extremetube.js" SelfReg="false"/>
     <ROW File="ffmpeg.exe" Component_="ffmpeg.exe" FileName="ffmpeg.exe" Attributes="0" SourcePath="..\bin\bin\ffmpeg.exe" SelfReg="false" NextFile="librtmp0.dll" DigSign="true"/>
     <ROW File="finnish.language" Component_="catala.language" FileName="finnis~1.lan|finnish.language" Attributes="0" SourcePath="..\bin\languages\finnish.language" SelfReg="false" NextFile="turkish.language"/>
-    <ROW File="freecaster.js" Component_="min.js" FileName="freeca~1.js|freecaster.js" Attributes="0" SourcePath="..\bin\plugins\freecaster.js" SelfReg="false" NextFile="video.js"/>
+    <ROW File="freecaster.js" Component_="freecaster.js" FileName="freeca~1.js|freecaster.js" Attributes="0" SourcePath="..\bin\plugins\freecaster.js" SelfReg="false" NextFile="gameanyone.js"/>
     <ROW File="french.language" Component_="catala.language" FileName="french~1.lan|french.language" Attributes="0" SourcePath="..\bin\languages\french.language" SelfReg="false" NextFile="galician.language"/>
     <ROW File="galician.language" Component_="catala.language" FileName="galici~1.lan|galician.language" Attributes="0" SourcePath="..\bin\languages\galician.language" SelfReg="false" NextFile="german.language"/>
-    <ROW File="gameanyone.js" Component_="min.js" FileName="gamean~1.js|gameanyone.js" Attributes="0" SourcePath="..\bin\plugins\gameanyone.js" SelfReg="false" NextFile="gamespot.js"/>
-    <ROW File="gamespot.js" Component_="min.js" FileName="gamespot.js" Attributes="0" SourcePath="..\bin\plugins\gamespot.js" SelfReg="false" NextFile="gametrailers.js"/>
-    <ROW File="gametrailers.js" Component_="min.js" FileName="gametr~1.js|gametrailers.js" Attributes="0" SourcePath="..\bin\plugins\gametrailers.js" SelfReg="false" NextFile="girlfriendvids.js"/>
+    <ROW File="gameanyone.js" Component_="freecaster.js" FileName="gamean~1.js|gameanyone.js" Attributes="0" SourcePath="..\bin\plugins\gameanyone.js" SelfReg="false" NextFile="gamespot.js"/>
+    <ROW File="gamespot.js" Component_="freecaster.js" FileName="gamespot.js" Attributes="0" SourcePath="..\bin\plugins\gamespot.js" SelfReg="false" NextFile="gametrailers.js"/>
+    <ROW File="gametrailers.js" Component_="freecaster.js" FileName="gametr~1.js|gametrailers.js" Attributes="0" SourcePath="..\bin\plugins\gametrailers.js" SelfReg="false" NextFile="girlfriendvids.js"/>
     <ROW File="german.language" Component_="catala.language" FileName="german~1.lan|german.language" Attributes="0" SourcePath="..\bin\languages\german.language" SelfReg="false" NextFile="hungarian.language"/>
-    <ROW File="girlfriendvids.js" Component_="min.js" FileName="girlfr~1.js|girlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\girlfriendvids.js" SelfReg="false" NextFile="glumbert.js"/>
-    <ROW File="glumbert.js" Component_="min.js" FileName="glumbert.js" Attributes="0" SourcePath="..\bin\plugins\glumbert.js" SelfReg="false" NextFile="godofhumor.js"/>
-    <ROW File="godofhumor.js" Component_="min.js" FileName="godofh~1.js|godofhumor.js" Attributes="0" SourcePath="..\bin\plugins\godofhumor.js" SelfReg="false" NextFile="goear.js"/>
-    <ROW File="goear.js" Component_="min.js" FileName="goear.js" Attributes="0" SourcePath="..\bin\plugins\goear.js" SelfReg="false" NextFile="googlevideo.js"/>
-    <ROW File="googlevideo.js" Component_="min.js" FileName="google~1.js|googlevideo.js" Attributes="0" SourcePath="..\bin\plugins\googlevideo.js" SelfReg="false" NextFile="hardsextube.js"/>
-    <ROW File="hardsextube.js" Component_="min.js" FileName="hardse~1.js|hardsextube.js" Attributes="0" SourcePath="..\bin\plugins\hardsextube.js" SelfReg="false" NextFile="homemadevoyeur.js"/>
-    <ROW File="homemadevoyeur.js" Component_="min.js" FileName="homema~1.js|homemadevoyeur.js" Attributes="0" SourcePath="..\bin\plugins\homemadevoyeur.js" SelfReg="false" NextFile="jizzhut.js"/>
+    <ROW File="girlfriendvids.js" Component_="freecaster.js" FileName="girlfr~1.js|girlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\girlfriendvids.js" SelfReg="false" NextFile="glumbert.js"/>
+    <ROW File="glumbert.js" Component_="freecaster.js" FileName="glumbert.js" Attributes="0" SourcePath="..\bin\plugins\glumbert.js" SelfReg="false" NextFile="godofhumor.js"/>
+    <ROW File="godofhumor.js" Component_="freecaster.js" FileName="godofh~1.js|godofhumor.js" Attributes="0" SourcePath="..\bin\plugins\godofhumor.js" SelfReg="false" NextFile="goear.js"/>
+    <ROW File="goear.js" Component_="freecaster.js" FileName="goear.js" Attributes="0" SourcePath="..\bin\plugins\goear.js" SelfReg="false" NextFile="googlevideo.js"/>
+    <ROW File="googlevideo.js" Component_="freecaster.js" FileName="google~1.js|googlevideo.js" Attributes="0" SourcePath="..\bin\plugins\googlevideo.js" SelfReg="false" NextFile="hardsextube.js"/>
+    <ROW File="hardsextube.js" Component_="freecaster.js" FileName="hardse~1.js|hardsextube.js" Attributes="0" SourcePath="..\bin\plugins\hardsextube.js" SelfReg="false" NextFile="homemadevoyeur.js"/>
+    <ROW File="homemadevoyeur.js" Component_="freecaster.js" FileName="homema~1.js|homemadevoyeur.js" Attributes="0" SourcePath="..\bin\plugins\homemadevoyeur.js" SelfReg="false" NextFile="jizzhut.js"/>
     <ROW File="hungarian.language" Component_="catala.language" FileName="hungar~1.lan|hungarian.language" Attributes="0" SourcePath="..\bin\languages\hungarian.language" SelfReg="false" NextFile="italiano.language"/>
     <ROW File="italiano.language" Component_="catala.language" FileName="italia~1.lan|italiano.language" Attributes="0" SourcePath="..\bin\languages\italiano.language" SelfReg="false" NextFile="japanese.language"/>
     <ROW File="japanese.language" Component_="catala.language" FileName="japane~1.lan|japanese.language" Attributes="0" SourcePath="..\bin\languages\japanese.language" SelfReg="false" NextFile="korean.language"/>
-    <ROW File="jizzhut.js" Component_="min.js" FileName="jizzhut.js" Attributes="0" SourcePath="..\bin\plugins\jizzhut.js" SelfReg="false" NextFile="keezmovies.js"/>
-    <ROW File="keezmovies.js" Component_="min.js" FileName="keezmo~1.js|keezmovies.js" Attributes="0" SourcePath="..\bin\plugins\keezmovies.js" SelfReg="false" NextFile="liveleak.js"/>
+    <ROW File="jizzhut.js" Component_="freecaster.js" FileName="jizzhut.js" Attributes="0" SourcePath="..\bin\plugins\jizzhut.js" SelfReg="false" NextFile="keezmovies.js"/>
+    <ROW File="keezmovies.js" Component_="freecaster.js" FileName="keezmo~1.js|keezmovies.js" Attributes="0" SourcePath="..\bin\plugins\keezmovies.js" SelfReg="false" NextFile="kontraband.js"/>
+    <ROW File="kontraband.js" Component_="freecaster.js" FileName="kontra~1.js|kontraband.js" Attributes="0" SourcePath="..\bin\plugins\kontraband.js" SelfReg="false" NextFile="liveleak.js"/>
     <ROW File="korean.language" Component_="catala.language" FileName="korean~1.lan|korean.language" Attributes="0" SourcePath="..\bin\languages\korean.language" SelfReg="false" NextFile="polish.language"/>
     <ROW File="libeay32.dll" Component_="libeay32.dll" FileName="libeay32.dll" Attributes="0" SourcePath="..\bin\libeay32.dll" SelfReg="false" NextFile="libssl32.dll"/>
     <ROW File="librtmp0.dll" Component_="librtmp0.dll" FileName="librtm~1.dll|librtmp-0.dll" Attributes="0" SourcePath="..\bin\bin\librtmp-0.dll" SelfReg="false" NextFile="pthreadGC2.dll"/>
@@ -156,65 +157,65 @@
     <ROW File="libx264_veryfast_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~34.ffp|libx264-veryfast_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryfast_firstpass.ffpreset" SelfReg="false" NextFile="libx264_veryslow.ffpreset"/>
     <ROW File="libx264_veryslow.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~35.ffp|libx264-veryslow.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryslow.ffpreset" SelfReg="false" NextFile="libx264_veryslow_firstpass.ffpreset"/>
     <ROW File="libx264_veryslow_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~36.ffp|libx264-veryslow_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryslow_firstpass.ffpreset" SelfReg="false" NextFile="catala.language"/>
-    <ROW File="liveleak.js" Component_="min.js" FileName="liveleak.js" Attributes="0" SourcePath="..\bin\plugins\liveleak.js" SelfReg="false" NextFile="livevideo.js"/>
-    <ROW File="livevideo.js" Component_="min.js" FileName="livevi~1.js|livevideo.js" Attributes="0" SourcePath="..\bin\plugins\livevideo.js" SelfReg="false" NextFile="m90.js"/>
-    <ROW File="m90.js" Component_="min.js" FileName="m90.js" Attributes="0" SourcePath="..\bin\plugins\m90.js" SelfReg="false" NextFile="machovideo.js"/>
-    <ROW File="machovideo.js" Component_="min.js" FileName="machov~1.js|machovideo.js" Attributes="0" SourcePath="..\bin\plugins\machovideo.js" SelfReg="false" NextFile="metacafe.js"/>
-    <ROW File="metacafe.js" Component_="min.js" FileName="metacafe.js" Attributes="0" SourcePath="..\bin\plugins\metacafe.js" SelfReg="false" NextFile="mp3tube.js"/>
-    <ROW File="min.js" Component_="min.js" FileName="5min.js" Attributes="0" SourcePath="..\bin\plugins\5min.js" SelfReg="false" NextFile="aniboom.js"/>
-    <ROW File="mp3tube.js" Component_="min.js" FileName="mp3tube.js" Attributes="0" SourcePath="..\bin\plugins\mp3tube.js" SelfReg="false" NextFile="mygirlfriendvids.js"/>
+    <ROW File="liveleak.js" Component_="freecaster.js" FileName="liveleak.js" Attributes="0" SourcePath="..\bin\plugins\liveleak.js" SelfReg="false" NextFile="livevideo.js"/>
+    <ROW File="livevideo.js" Component_="freecaster.js" FileName="livevi~1.js|livevideo.js" Attributes="0" SourcePath="..\bin\plugins\livevideo.js" SelfReg="false" NextFile="m90.js"/>
+    <ROW File="m90.js" Component_="freecaster.js" FileName="m90.js" Attributes="0" SourcePath="..\bin\plugins\m90.js" SelfReg="false" NextFile="machovideo.js"/>
+    <ROW File="machovideo.js" Component_="freecaster.js" FileName="machov~1.js|machovideo.js" Attributes="0" SourcePath="..\bin\plugins\machovideo.js" SelfReg="false" NextFile="metacafe.js"/>
+    <ROW File="metacafe.js" Component_="freecaster.js" FileName="metacafe.js" Attributes="0" SourcePath="..\bin\plugins\metacafe.js" SelfReg="false" NextFile="mp3tube.js"/>
+    <ROW File="min.js" Component_="freecaster.js" FileName="5min.js" Attributes="0" SourcePath="..\bin\plugins\5min.js" SelfReg="false" NextFile="video.js"/>
+    <ROW File="mp3tube.js" Component_="freecaster.js" FileName="mp3tube.js" Attributes="0" SourcePath="..\bin\plugins\mp3tube.js" SelfReg="false" NextFile="mygirlfriendvids.js"/>
     <ROW File="msvcp100.dll" Component_="msvcp100.dll" FileName="msvcp100.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC100.CRT\msvcp100.dll" SelfReg="false" NextFile="msvcr100.dll"/>
-    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC100.CRT\msvcr100.dll" SelfReg="false" NextFile="min.js"/>
-    <ROW File="mygirlfriendvids.js" Component_="min.js" FileName="mygirl~1.js|mygirlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\mygirlfriendvids.js" SelfReg="false" NextFile="myspace.js"/>
-    <ROW File="myspace.js" Component_="min.js" FileName="myspace.js" Attributes="0" SourcePath="..\bin\plugins\myspace.js" SelfReg="false" NextFile="myspacetv.js"/>
-    <ROW File="myspacetv.js" Component_="min.js" FileName="myspac~1.js|myspacetv.js" Attributes="0" SourcePath="..\bin\plugins\myspacetv.js" SelfReg="false" NextFile="myspass.js"/>
-    <ROW File="myspass.js" Component_="min.js" FileName="myspass.js" Attributes="0" SourcePath="..\bin\plugins\myspass.js" SelfReg="false" NextFile="myvideo.js"/>
-    <ROW File="myvideo.js" Component_="min.js" FileName="myvideo.js" Attributes="0" SourcePath="..\bin\plugins\myvideo.js" SelfReg="false" NextFile="newsfilter.js"/>
-    <ROW File="newsfilter.js" Component_="min.js" FileName="newsfi~1.js|newsfilter.js" Attributes="0" SourcePath="..\bin\plugins\newsfilter.js" SelfReg="false" NextFile="onehumor.js"/>
-    <ROW File="onehumor.js" Component_="min.js" FileName="onehumor.js" Attributes="0" SourcePath="..\bin\plugins\onehumor.js" SelfReg="false" NextFile="pornfuze.js"/>
+    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC100.CRT\msvcr100.dll" SelfReg="false" NextFile="freecaster.js"/>
+    <ROW File="mygirlfriendvids.js" Component_="freecaster.js" FileName="mygirl~1.js|mygirlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\mygirlfriendvids.js" SelfReg="false" NextFile="myspace.js"/>
+    <ROW File="myspace.js" Component_="freecaster.js" FileName="myspace.js" Attributes="0" SourcePath="..\bin\plugins\myspace.js" SelfReg="false" NextFile="myspacetv.js"/>
+    <ROW File="myspacetv.js" Component_="freecaster.js" FileName="myspac~1.js|myspacetv.js" Attributes="0" SourcePath="..\bin\plugins\myspacetv.js" SelfReg="false" NextFile="myspass.js"/>
+    <ROW File="myspass.js" Component_="freecaster.js" FileName="myspass.js" Attributes="0" SourcePath="..\bin\plugins\myspass.js" SelfReg="false" NextFile="myvideo.js"/>
+    <ROW File="myvideo.js" Component_="freecaster.js" FileName="myvideo.js" Attributes="0" SourcePath="..\bin\plugins\myvideo.js" SelfReg="false" NextFile="newsfilter.js"/>
+    <ROW File="newsfilter.js" Component_="freecaster.js" FileName="newsfi~1.js|newsfilter.js" Attributes="0" SourcePath="..\bin\plugins\newsfilter.js" SelfReg="false" NextFile="onehumor.js"/>
+    <ROW File="onehumor.js" Component_="freecaster.js" FileName="onehumor.js" Attributes="0" SourcePath="..\bin\plugins\onehumor.js" SelfReg="false" NextFile="pornfuze.js"/>
     <ROW File="polish.language" Component_="catala.language" FileName="polish~1.lan|polish.language" Attributes="0" SourcePath="..\bin\languages\polish.language" SelfReg="false" NextFile="portuguese_br.language"/>
-    <ROW File="pornfuze.js" Component_="min.js" FileName="pornfuze.js" Attributes="0" SourcePath="..\bin\plugins\pornfuze.js" SelfReg="false" NextFile="pornhub.js"/>
-    <ROW File="pornhub.js" Component_="min.js" FileName="pornhub.js" Attributes="0" SourcePath="..\bin\plugins\pornhub.js" SelfReg="false" NextFile="pornotube.js"/>
-    <ROW File="pornotube.js" Component_="min.js" FileName="pornot~1.js|pornotube.js" Attributes="0" SourcePath="..\bin\plugins\pornotube.js" SelfReg="false" NextFile="porntube.js"/>
-    <ROW File="porntube.js" Component_="min.js" FileName="porntube.js" Attributes="0" SourcePath="..\bin\plugins\porntube.js" SelfReg="false" NextFile="pp2g.js"/>
+    <ROW File="pornfuze.js" Component_="freecaster.js" FileName="pornfuze.js" Attributes="0" SourcePath="..\bin\plugins\pornfuze.js" SelfReg="false" NextFile="pornhub.js"/>
+    <ROW File="pornhub.js" Component_="freecaster.js" FileName="pornhub.js" Attributes="0" SourcePath="..\bin\plugins\pornhub.js" SelfReg="false" NextFile="pornotube.js"/>
+    <ROW File="pornotube.js" Component_="freecaster.js" FileName="pornot~1.js|pornotube.js" Attributes="0" SourcePath="..\bin\plugins\pornotube.js" SelfReg="false" NextFile="porntube.js"/>
+    <ROW File="porntube.js" Component_="freecaster.js" FileName="porntube.js" Attributes="0" SourcePath="..\bin\plugins\porntube.js" SelfReg="false" NextFile="pp2g.js"/>
     <ROW File="portuguese_br.language" Component_="catala.language" FileName="portug~1.lan|portuguese_br.language" Attributes="0" SourcePath="..\bin\languages\portuguese_br.language" SelfReg="false" NextFile="romanian.language"/>
-    <ROW File="pp2g.js" Component_="min.js" FileName="pp2g.js" Attributes="0" SourcePath="..\bin\plugins\pp2g.js" SelfReg="false" NextFile="pugorama.js"/>
+    <ROW File="pp2g.js" Component_="freecaster.js" FileName="pp2g.js" Attributes="0" SourcePath="..\bin\plugins\pp2g.js" SelfReg="false" NextFile="pugorama.js"/>
     <ROW File="pthreadGC2.dll" Component_="pthreadGC2.dll" FileName="pthrea~1.dll|pthreadGC2.dll" Attributes="0" SourcePath="..\bin\bin\pthreadGC2.dll" SelfReg="false" NextFile="rtmpdump.exe"/>
-    <ROW File="pugorama.js" Component_="min.js" FileName="pugorama.js" Attributes="0" SourcePath="..\bin\plugins\pugorama.js" SelfReg="false" NextFile="realgfporn.js"/>
-    <ROW File="realgfporn.js" Component_="min.js" FileName="realgf~1.js|realgfporn.js" Attributes="0" SourcePath="..\bin\plugins\realgfporn.js" SelfReg="false" NextFile="redtube.js"/>
-    <ROW File="redtube.js" Component_="min.js" FileName="redtube.js" Attributes="0" SourcePath="..\bin\plugins\redtube.js" SelfReg="false" NextFile="scientificblogging.js"/>
+    <ROW File="pugorama.js" Component_="freecaster.js" FileName="pugorama.js" Attributes="0" SourcePath="..\bin\plugins\pugorama.js" SelfReg="false" NextFile="realgfporn.js"/>
+    <ROW File="realgfporn.js" Component_="freecaster.js" FileName="realgf~1.js|realgfporn.js" Attributes="0" SourcePath="..\bin\plugins\realgfporn.js" SelfReg="false" NextFile="redtube.js"/>
+    <ROW File="redtube.js" Component_="freecaster.js" FileName="redtube.js" Attributes="0" SourcePath="..\bin\plugins\redtube.js" SelfReg="false" NextFile="scientificblogging.js"/>
     <ROW File="romanian.language" Component_="catala.language" FileName="romani~1.lan|romanian.language" Attributes="0" SourcePath="..\bin\languages\romanian.language" SelfReg="false" NextFile="russian.language"/>
     <ROW File="rtmpdump.exe" Component_="rtmpdump.exe" FileName="rtmpdump.exe" Attributes="0" SourcePath="..\bin\bin\rtmpdump.exe" SelfReg="false" NextFile="xUpdater.exe" DigSign="true"/>
     <ROW File="russian.language" Component_="catala.language" FileName="russia~1.lan|russian.language" Attributes="0" SourcePath="..\bin\languages\russian.language" SelfReg="false" NextFile="swedish.language"/>
-    <ROW File="scientificblogging.js" Component_="min.js" FileName="scient~1.js|scientificblogging.js" Attributes="0" SourcePath="..\bin\plugins\scientificblogging.js" SelfReg="false" NextFile="shredordie.js"/>
-    <ROW File="shredordie.js" Component_="min.js" FileName="shredo~1.js|shredordie.js" Attributes="0" SourcePath="..\bin\plugins\shredordie.js" SelfReg="false" NextFile="spankwire.js"/>
-    <ROW File="spankwire.js" Component_="min.js" FileName="spankw~1.js|spankwire.js" Attributes="0" SourcePath="..\bin\plugins\spankwire.js" SelfReg="false" NextFile="spike.js"/>
-    <ROW File="spike.js" Component_="min.js" FileName="spike.js" Attributes="0" SourcePath="..\bin\plugins\spike.js" SelfReg="false" NextFile="stolenvideos.js"/>
+    <ROW File="scientificblogging.js" Component_="freecaster.js" FileName="scient~1.js|scientificblogging.js" Attributes="0" SourcePath="..\bin\plugins\scientificblogging.js" SelfReg="false" NextFile="shredordie.js"/>
+    <ROW File="shredordie.js" Component_="freecaster.js" FileName="shredo~1.js|shredordie.js" Attributes="0" SourcePath="..\bin\plugins\shredordie.js" SelfReg="false" NextFile="spankwire.js"/>
+    <ROW File="spankwire.js" Component_="freecaster.js" FileName="spankw~1.js|spankwire.js" Attributes="0" SourcePath="..\bin\plugins\spankwire.js" SelfReg="false" NextFile="spike.js"/>
+    <ROW File="spike.js" Component_="freecaster.js" FileName="spike.js" Attributes="0" SourcePath="..\bin\plugins\spike.js" SelfReg="false" NextFile="stolenvideos.js"/>
     <ROW File="ssleay32.dll" Component_="ssleay32.dll" FileName="ssleay32.dll" Attributes="0" SourcePath="..\bin\ssleay32.dll" SelfReg="false" NextFile="ffmpeg.exe"/>
-    <ROW File="stolenvideos.js" Component_="min.js" FileName="stolen~1.js|stolenvideos.js" Attributes="0" SourcePath="..\bin\plugins\stolenvideos.js" SelfReg="false" NextFile="streetfire.js"/>
-    <ROW File="streetfire.js" Component_="min.js" FileName="street~1.js|streetfire.js" Attributes="0" SourcePath="..\bin\plugins\streetfire.js" SelfReg="false" NextFile="sunporno.js"/>
-    <ROW File="sunporno.js" Component_="min.js" FileName="sunporno.js" Attributes="0" SourcePath="..\bin\plugins\sunporno.js" SelfReg="false" NextFile="szinhaz.js"/>
+    <ROW File="stolenvideos.js" Component_="freecaster.js" FileName="stolen~1.js|stolenvideos.js" Attributes="0" SourcePath="..\bin\plugins\stolenvideos.js" SelfReg="false" NextFile="streetfire.js"/>
+    <ROW File="streetfire.js" Component_="freecaster.js" FileName="street~1.js|streetfire.js" Attributes="0" SourcePath="..\bin\plugins\streetfire.js" SelfReg="false" NextFile="sunporno.js"/>
+    <ROW File="sunporno.js" Component_="freecaster.js" FileName="sunporno.js" Attributes="0" SourcePath="..\bin\plugins\sunporno.js" SelfReg="false" NextFile="szinhaz.js"/>
     <ROW File="swedish.language" Component_="catala.language" FileName="swedis~1.lan|swedish.language" Attributes="0" SourcePath="..\bin\languages\swedish.language" SelfReg="false" NextFile="xVST_br.qm"/>
-    <ROW File="szinhaz.js" Component_="min.js" FileName="szinhaz.js" Attributes="0" SourcePath="..\bin\plugins\szinhaz.js" SelfReg="false" NextFile="tangle.js"/>
-    <ROW File="tangle.js" Component_="min.js" FileName="tangle.js" Attributes="0" SourcePath="..\bin\plugins\tangle.js" SelfReg="false" NextFile="tnaflix.js"/>
-    <ROW File="tnaflix.js" Component_="min.js" FileName="tnaflix.js" Attributes="0" SourcePath="..\bin\plugins\tnaflix.js" SelfReg="false" NextFile="totallycrap.js"/>
-    <ROW File="totallycrap.js" Component_="min.js" FileName="totall~1.js|totallycrap.js" Attributes="0" SourcePath="..\bin\plugins\totallycrap.js" SelfReg="false" NextFile="totallynsfw.js"/>
-    <ROW File="totallynsfw.js" Component_="min.js" FileName="totall~2.js|totallynsfw.js" Attributes="0" SourcePath="..\bin\plugins\totallynsfw.js" SelfReg="false" NextFile="totallyupyours.js"/>
-    <ROW File="totallyupyours.js" Component_="min.js" FileName="totall~3.js|totallyupyours.js" Attributes="0" SourcePath="..\bin\plugins\totallyupyours.js" SelfReg="false" NextFile="tsn.js"/>
-    <ROW File="tsn.js" Component_="min.js" FileName="tsn.js" Attributes="0" SourcePath="..\bin\plugins\tsn.js" SelfReg="false" NextFile="tube8.js"/>
-    <ROW File="tube8.js" Component_="min.js" FileName="tube8.js" Attributes="0" SourcePath="..\bin\plugins\tube8.js" SelfReg="false" NextFile="tv2.js"/>
+    <ROW File="szinhaz.js" Component_="freecaster.js" FileName="szinhaz.js" Attributes="0" SourcePath="..\bin\plugins\szinhaz.js" SelfReg="false" NextFile="tangle.js"/>
+    <ROW File="tangle.js" Component_="freecaster.js" FileName="tangle.js" Attributes="0" SourcePath="..\bin\plugins\tangle.js" SelfReg="false" NextFile="tnaflix.js"/>
+    <ROW File="tnaflix.js" Component_="freecaster.js" FileName="tnaflix.js" Attributes="0" SourcePath="..\bin\plugins\tnaflix.js" SelfReg="false" NextFile="totallycrap.js"/>
+    <ROW File="totallycrap.js" Component_="freecaster.js" FileName="totall~1.js|totallycrap.js" Attributes="0" SourcePath="..\bin\plugins\totallycrap.js" SelfReg="false" NextFile="totallynsfw.js"/>
+    <ROW File="totallynsfw.js" Component_="freecaster.js" FileName="totall~2.js|totallynsfw.js" Attributes="0" SourcePath="..\bin\plugins\totallynsfw.js" SelfReg="false" NextFile="totallyupyours.js"/>
+    <ROW File="totallyupyours.js" Component_="freecaster.js" FileName="totall~3.js|totallyupyours.js" Attributes="0" SourcePath="..\bin\plugins\totallyupyours.js" SelfReg="false" NextFile="tsn.js"/>
+    <ROW File="tsn.js" Component_="freecaster.js" FileName="tsn.js" Attributes="0" SourcePath="..\bin\plugins\tsn.js" SelfReg="false" NextFile="tube8.js"/>
+    <ROW File="tube8.js" Component_="freecaster.js" FileName="tube8.js" Attributes="0" SourcePath="..\bin\plugins\tube8.js" SelfReg="false" NextFile="tv2.js"/>
     <ROW File="turkish.language" Component_="catala.language" FileName="turkis~1.lan|turkish.language" Attributes="0" SourcePath="..\bin\languages\turkish.language" SelfReg="false" NextFile="msvcp100.dll"/>
-    <ROW File="tv2.js" Component_="min.js" FileName="tv2.js" Attributes="0" SourcePath="..\bin\plugins\tv2.js" SelfReg="false" NextFile="tv3.js"/>
-    <ROW File="tv3.js" Component_="min.js" FileName="tv3.js" Attributes="0" SourcePath="..\bin\plugins\tv3.js" SelfReg="false" NextFile="ustream.js"/>
-    <ROW File="ustream.js" Component_="min.js" FileName="ustream.js" Attributes="0" SourcePath="..\bin\plugins\ustream.js" SelfReg="false" NextFile="vbox7.js"/>
-    <ROW File="vbox7.js" Component_="min.js" FileName="vbox7.js" Attributes="0" SourcePath="..\bin\plugins\vbox7.js" SelfReg="false" NextFile="vid2c.js"/>
-    <ROW File="vid2c.js" Component_="min.js" FileName="vid2c.js" Attributes="0" SourcePath="..\bin\plugins\vid2c.js" SelfReg="false" NextFile="videoca.js"/>
-    <ROW File="video.js" Component_="min.js" FileName="123video.js" Attributes="0" SourcePath="..\bin\plugins\123video.js" SelfReg="false"/>
-    <ROW File="videoca.js" Component_="min.js" FileName="videoca.js" Attributes="0" SourcePath="..\bin\plugins\videoca.js" SelfReg="false" NextFile="videologuol.js"/>
-    <ROW File="videologuol.js" Component_="min.js" FileName="videol~1.js|videologuol.js" Attributes="0" SourcePath="..\bin\plugins\videologuol.js" SelfReg="false" NextFile="vimeo.js"/>
-    <ROW File="vimeo.js" Component_="min.js" FileName="vimeo.js" Attributes="0" SourcePath="..\bin\plugins\vimeo.js" SelfReg="false" NextFile="wat.js"/>
-    <ROW File="wat.js" Component_="min.js" FileName="wat.js" Attributes="0" SourcePath="..\bin\plugins\wat.js" SelfReg="false" NextFile="wtfpeople.js"/>
-    <ROW File="wtfpeople.js" Component_="min.js" FileName="wtfpeo~1.js|wtfpeople.js" Attributes="0" SourcePath="..\bin\plugins\wtfpeople.js" SelfReg="false" NextFile="xhamster.js"/>
+    <ROW File="tv2.js" Component_="freecaster.js" FileName="tv2.js" Attributes="0" SourcePath="..\bin\plugins\tv2.js" SelfReg="false" NextFile="tv3.js"/>
+    <ROW File="tv3.js" Component_="freecaster.js" FileName="tv3.js" Attributes="0" SourcePath="..\bin\plugins\tv3.js" SelfReg="false" NextFile="ustream.js"/>
+    <ROW File="ustream.js" Component_="freecaster.js" FileName="ustream.js" Attributes="0" SourcePath="..\bin\plugins\ustream.js" SelfReg="false" NextFile="vbox7.js"/>
+    <ROW File="vbox7.js" Component_="freecaster.js" FileName="vbox7.js" Attributes="0" SourcePath="..\bin\plugins\vbox7.js" SelfReg="false" NextFile="vid2c.js"/>
+    <ROW File="vid2c.js" Component_="freecaster.js" FileName="vid2c.js" Attributes="0" SourcePath="..\bin\plugins\vid2c.js" SelfReg="false" NextFile="videoca.js"/>
+    <ROW File="video.js" Component_="freecaster.js" FileName="123video.js" Attributes="0" SourcePath="..\bin\plugins\123video.js" SelfReg="false" NextFile="aniboom.js"/>
+    <ROW File="videoca.js" Component_="freecaster.js" FileName="videoca.js" Attributes="0" SourcePath="..\bin\plugins\videoca.js" SelfReg="false" NextFile="videologuol.js"/>
+    <ROW File="videologuol.js" Component_="freecaster.js" FileName="videol~1.js|videologuol.js" Attributes="0" SourcePath="..\bin\plugins\videologuol.js" SelfReg="false" NextFile="vimeo.js"/>
+    <ROW File="vimeo.js" Component_="freecaster.js" FileName="vimeo.js" Attributes="0" SourcePath="..\bin\plugins\vimeo.js" SelfReg="false" NextFile="wat.js"/>
+    <ROW File="wat.js" Component_="freecaster.js" FileName="wat.js" Attributes="0" SourcePath="..\bin\plugins\wat.js" SelfReg="false" NextFile="wtfpeople.js"/>
+    <ROW File="wtfpeople.js" Component_="freecaster.js" FileName="wtfpeo~1.js|wtfpeople.js" Attributes="0" SourcePath="..\bin\plugins\wtfpeople.js" SelfReg="false" NextFile="xhamster.js"/>
     <ROW File="xUpdater.exe" Component_="xUpdater.exe" FileName="xUpdater.exe" Attributes="0" SourcePath="..\bin\bin\xUpdater.exe" SelfReg="false" NextFile="zlib1.dll" DigSign="true"/>
     <ROW File="xVST_br.qm" Component_="catala.language" FileName="xVST_br.qm" Attributes="0" SourcePath="..\bin\languages\xVST_br.qm" SelfReg="false" NextFile="xVST_ca.qm"/>
     <ROW File="xVST_ca.qm" Component_="catala.language" FileName="xVST_ca.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ca.qm" SelfReg="false" NextFile="xVST_cz.qm"/>
@@ -236,21 +237,21 @@
     <ROW File="xVST_sv.qm" Component_="catala.language" FileName="xVST_sv.qm" Attributes="0" SourcePath="..\bin\languages\xVST_sv.qm" SelfReg="false" NextFile="libeay32.dll"/>
     <ROW File="xVST_tr.qm" Component_="catala.language" FileName="xVST_tr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_tr.qm" SelfReg="false" NextFile="bulgarian.language"/>
     <ROW File="xVideoServiceThief.exe" Component_="xVideoServiceThief.exe" FileName="xVideo~1.exe|xVideoServiceThief.exe" Attributes="0" SourcePath="..\bin\xVideoServiceThief.exe" SelfReg="false" NextFile="GPL.txt"/>
-    <ROW File="xhamster.js" Component_="min.js" FileName="xhamster.js" Attributes="0" SourcePath="..\bin\plugins\xhamster.js" SelfReg="false" NextFile="xtube.js"/>
-    <ROW File="xtube.js" Component_="min.js" FileName="xtube.js" Attributes="0" SourcePath="..\bin\plugins\xtube.js" SelfReg="false" NextFile="xvideos.js"/>
-    <ROW File="xvideos.js" Component_="min.js" FileName="xvideos.js" Attributes="0" SourcePath="..\bin\plugins\xvideos.js" SelfReg="false" NextFile="yahoovideo.js"/>
-    <ROW File="yahoovideo.js" Component_="min.js" FileName="yahoov~1.js|yahoovideo.js" Attributes="0" SourcePath="..\bin\plugins\yahoovideo.js" SelfReg="false" NextFile="yikers.js"/>
-    <ROW File="yikers.js" Component_="min.js" FileName="yikers.js" Attributes="0" SourcePath="..\bin\plugins\yikers.js" SelfReg="false" NextFile="youporn.js"/>
-    <ROW File="youporn.js" Component_="min.js" FileName="youporn.js" Attributes="0" SourcePath="..\bin\plugins\youporn.js" SelfReg="false" NextFile="youporngay.js"/>
-    <ROW File="youporngay.js" Component_="min.js" FileName="youpor~1.js|youporngay.js" Attributes="0" SourcePath="..\bin\plugins\youporngay.js" SelfReg="false" NextFile="yourfilehost.js"/>
-    <ROW File="yourfilehost.js" Component_="min.js" FileName="yourfi~1.js|yourfilehost.js" Attributes="0" SourcePath="..\bin\plugins\yourfilehost.js" SelfReg="false" NextFile="youtube.js"/>
-    <ROW File="youtube.js" Component_="min.js" FileName="youtube.js" Attributes="0" SourcePath="..\bin\plugins\youtube.js" SelfReg="false" NextFile="youtubeislam.js"/>
-    <ROW File="youtubeislam.js" Component_="min.js" FileName="youtub~1.js|youtubeislam.js" Attributes="0" SourcePath="..\bin\plugins\youtubeislam.js" SelfReg="false" NextFile="yuvutu.js"/>
-    <ROW File="yuvutu.js" Component_="min.js" FileName="yuvutu.js" Attributes="0" SourcePath="..\bin\plugins\yuvutu.js" SelfReg="false" NextFile="zappinternet.js"/>
-    <ROW File="zappinternet.js" Component_="min.js" FileName="zappin~1.js|zappinternet.js" Attributes="0" SourcePath="..\bin\plugins\zappinternet.js" SelfReg="false" NextFile="zedge.js"/>
-    <ROW File="zedge.js" Component_="min.js" FileName="zedge.js" Attributes="0" SourcePath="..\bin\plugins\zedge.js" SelfReg="false" NextFile="zuuble.js"/>
+    <ROW File="xhamster.js" Component_="freecaster.js" FileName="xhamster.js" Attributes="0" SourcePath="..\bin\plugins\xhamster.js" SelfReg="false" NextFile="xtube.js"/>
+    <ROW File="xtube.js" Component_="freecaster.js" FileName="xtube.js" Attributes="0" SourcePath="..\bin\plugins\xtube.js" SelfReg="false" NextFile="xvideos.js"/>
+    <ROW File="xvideos.js" Component_="freecaster.js" FileName="xvideos.js" Attributes="0" SourcePath="..\bin\plugins\xvideos.js" SelfReg="false" NextFile="yahoovideo.js"/>
+    <ROW File="yahoovideo.js" Component_="freecaster.js" FileName="yahoov~1.js|yahoovideo.js" Attributes="0" SourcePath="..\bin\plugins\yahoovideo.js" SelfReg="false" NextFile="yikers.js"/>
+    <ROW File="yikers.js" Component_="freecaster.js" FileName="yikers.js" Attributes="0" SourcePath="..\bin\plugins\yikers.js" SelfReg="false" NextFile="youporn.js"/>
+    <ROW File="youporn.js" Component_="freecaster.js" FileName="youporn.js" Attributes="0" SourcePath="..\bin\plugins\youporn.js" SelfReg="false" NextFile="youporngay.js"/>
+    <ROW File="youporngay.js" Component_="freecaster.js" FileName="youpor~1.js|youporngay.js" Attributes="0" SourcePath="..\bin\plugins\youporngay.js" SelfReg="false" NextFile="yourfilehost.js"/>
+    <ROW File="yourfilehost.js" Component_="freecaster.js" FileName="yourfi~1.js|yourfilehost.js" Attributes="0" SourcePath="..\bin\plugins\yourfilehost.js" SelfReg="false" NextFile="youtube.js"/>
+    <ROW File="youtube.js" Component_="freecaster.js" FileName="youtube.js" Attributes="0" SourcePath="..\bin\plugins\youtube.js" SelfReg="false" NextFile="youtubeislam.js"/>
+    <ROW File="youtubeislam.js" Component_="freecaster.js" FileName="youtub~1.js|youtubeislam.js" Attributes="0" SourcePath="..\bin\plugins\youtubeislam.js" SelfReg="false" NextFile="yuvutu.js"/>
+    <ROW File="yuvutu.js" Component_="freecaster.js" FileName="yuvutu.js" Attributes="0" SourcePath="..\bin\plugins\yuvutu.js" SelfReg="false" NextFile="zappinternet.js"/>
+    <ROW File="zappinternet.js" Component_="freecaster.js" FileName="zappin~1.js|zappinternet.js" Attributes="0" SourcePath="..\bin\plugins\zappinternet.js" SelfReg="false" NextFile="zedge.js"/>
+    <ROW File="zedge.js" Component_="freecaster.js" FileName="zedge.js" Attributes="0" SourcePath="..\bin\plugins\zedge.js" SelfReg="false" NextFile="zuuble.js"/>
     <ROW File="zlib1.dll" Component_="zlib1.dll" FileName="zlib1.dll" Attributes="0" SourcePath="..\bin\bin\zlib1.dll" SelfReg="false" NextFile="xVST_tr.qm"/>
-    <ROW File="zuuble.js" Component_="min.js" FileName="zuuble.js" Attributes="0" SourcePath="..\bin\plugins\zuuble.js" SelfReg="false" NextFile="freecaster.js"/>
+    <ROW File="zuuble.js" Component_="freecaster.js" FileName="zuuble.js" Attributes="0" SourcePath="..\bin\plugins\zuuble.js" SelfReg="false" NextFile="min.js"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." Languages="en" InstallationType="4"/>
