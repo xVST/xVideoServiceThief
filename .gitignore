@@ -27,3 +27,5 @@ Makefile.Release
 Makefile
 TODO.*
 *.pro.user.*
+*.qm
+*.update
