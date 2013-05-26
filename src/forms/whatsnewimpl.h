@@ -31,23 +31,23 @@
 //#include <QtWebKit>
 //#endif
 
-#include <QWebView>
-
 #include "ui_whatsnew.h"
 
-//#ifdef Q_OS_MACX
-//class WebViewWidget;
-//#endif
+#if defined STATIC_BUILD && defined Q_OS_WIN32
+	#include <QAxWidget>
+#else
+	#include <QWebView>
+#endif
 
 class WhatsNewImpl : public QDialog, public Ui::WhatsNew
 {
 Q_OBJECT
 	private:
-//#ifdef Q_OS_MACX
-//	WebViewWidget *webView;
-//#else
+#if defined STATIC_BUILD && defined Q_OS_WIN32
+    QAxWidget *webView;
+#else
 	QWebView *webView;
-//#endif
+#endif
 	public:
 		WhatsNewImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);
 		~WhatsNewImpl();

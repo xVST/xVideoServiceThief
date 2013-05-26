@@ -37,16 +37,23 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
-	// create the native Cocoa WebView object (Mac OS X only)
-//#ifdef Q_OS_MACX
-//	webView = new WebViewWidget(this);
-//	webView->setSizeHint(QSize(656,370));
-//#else // uses the Qt WebKit wrap
+    // create the native IExplorer instance (Windows only)
+#if defined STATIC_BUILD && defined Q_OS_WIN32
+	//webView = new WebViewWidget(this);
+    //webView->setSizeHint(QSize(656,370));
+    webView = new QAxWidget(this);
+    webView->setControl("{8856F961-340A-11D0-A96B-00C04FD705A2}");
+    webViewFrame->setFrameShadow(QFrame::Plain);
+    webViewFrame->setFrameShape(QFrame::NoFrame);
+#else // uses the Qt WebKit wrap
 	webView = new QWebView(this);
-//#endif
+#endif
 	// add this new object into our frame
 	webViewLayout->addWidget(webView);
 	webView->adjustSize();
+#if defined STATIC_BUILD && defined Q_OS_WIN32
+    webView->dynamicCall("Navigate(const QString&)", "http://xviservicethief.sourceforge.net/whatsnew/display.php");
+#else
 	// add the version id
 	QUrlQuery urlQuery;
 	urlQuery.addQueryItem("v", PROGRAM_VERSION_SHORT);
@@ -58,6 +65,7 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	url.setQuery(urlQuery);
 	// open whats new page
 	webView->load(url);
+#endif
 }
 
 WhatsNewImpl::~WhatsNewImpl()
