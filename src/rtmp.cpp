@@ -43,14 +43,14 @@ RTMP::RTMP(QString flvstreamerPath, QString workingDir)
 	downloadSpeedAvg = new ArrayAvg(100);
 	timeRemainingAvg = new ArrayAvg(100);
 	// create a new qprocess
-	flvstreamerProcess = new QProcess();
+	rtmpProcess = new QProcess();
 	// connect signals
-	connect(flvstreamerProcess, SIGNAL(started()), this, SLOT(started()));
-	connect(flvstreamerProcess, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(finished(int, QProcess::ExitStatus)));
-	connect(flvstreamerProcess, SIGNAL(readyReadStandardOutput()), this, SLOT(readyReadStandardOutput()));
-	connect(flvstreamerProcess, SIGNAL(readyReadStandardError()), this, SLOT(readyReadStandardError()));
+	connect(rtmpProcess, SIGNAL(started()), this, SLOT(started()));
+	connect(rtmpProcess, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(finished(int, QProcess::ExitStatus)));
+	connect(rtmpProcess, SIGNAL(readyReadStandardOutput()), this, SLOT(readyReadStandardOutput()));
+	connect(rtmpProcess, SIGNAL(readyReadStandardError()), this, SLOT(readyReadStandardError()));
 	// cofnigure process
-	flvstreamerProcess->setWorkingDirectory(workingDir);
+	rtmpProcess->setWorkingDirectory(workingDir);
 }
 
 RTMP::~RTMP()
@@ -59,7 +59,7 @@ RTMP::~RTMP()
 
 	delete timeRemainingAvg;
 	delete downloadSpeedAvg;
-	delete flvstreamerProcess;
+	delete rtmpProcess;
 }
 
 void RTMP::init()
@@ -134,7 +134,7 @@ int RTMP::download(const QString URL, QString destination, QString fileName, QSt
 	}
 
 	// start download
-	flvstreamerProcess->start(flvstreamerPath, commandLine);
+	rtmpProcess->start(flvstreamerPath, commandLine);
 
 	// ok
 	return EnumRTMP::NO_RTMP_ERROR;
@@ -159,7 +159,7 @@ int RTMP::resume(const QString URL, QString fileName)
 	resuming = true;
 
 	// resume download
-	flvstreamerProcess->start(flvstreamerPath, QStringList() << "-r" << URL << "-e" << "-o" << fileName);
+	rtmpProcess->start(flvstreamerPath, QStringList() << "-r" << URL << "-e" << "-o" << fileName);
 
 	// ok
 	return EnumRTMP::NO_RTMP_ERROR;
@@ -172,7 +172,7 @@ void RTMP::pause()
 		stopReason = EnumRTMP::USER_PAUSED;
 #ifndef Q_OS_WIN32
 		// kill the flvstreaming
-		kill(flvstreamerProcess->pid(), SIGINT);
+		kill(rtmpProcess->pid(), SIGINT);
 #endif
 	}
 }
@@ -183,7 +183,7 @@ void RTMP::cancel()
 	{
 		stopReason = EnumRTMP::USER_CANCELLED;
 		// kill the flvstreaming
-		flvstreamerProcess->kill();
+		rtmpProcess->kill();
 		// remove file from disc
 		QFile::remove(destinationFile.absoluteFilePath());
 	}
@@ -196,7 +196,7 @@ void RTMP::pauseOnDestroy(bool pauseOnDestroyF)
 
 bool RTMP::isDownloading()
 {
-	return flvstreamerProcess->state() != QProcess::NotRunning;
+	return rtmpProcess->state() != QProcess::NotRunning;
 }
 
 int RTMP::getFileSize()
@@ -249,12 +249,12 @@ void RTMP::finished(int /*exitCode*/, QProcess::ExitStatus /*exitStatus*/)
 
 void RTMP::readyReadStandardOutput()
 {
-	parseOutput(QString::fromLocal8Bit(flvstreamerProcess->readAllStandardOutput()));
+	parseOutput(QString::fromLocal8Bit(rtmpProcess->readAllStandardOutput()));
 }
 
 void RTMP::readyReadStandardError()
 {
-	parseOutput(QString::fromLocal8Bit(flvstreamerProcess->readAllStandardError()));
+	parseOutput(QString::fromLocal8Bit(rtmpProcess->readAllStandardError()));
 }
 
 void RTMP::parseOutput(QString output)
