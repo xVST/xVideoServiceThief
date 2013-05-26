@@ -42,7 +42,6 @@ class ScheduleItem : public QObject
 		QTime startTime;
 		QTime endTime;
 		bool enabled;
-		bool active;
 	public:
 		/*! Class constructor */
 		ScheduleItem(bool enabled, QTime startTime, QTime endTime, QString comment = QString());
