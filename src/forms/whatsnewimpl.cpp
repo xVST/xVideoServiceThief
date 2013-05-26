@@ -37,23 +37,20 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
-    // create the native IExplorer instance (Windows only)
+	// create the native IExplorer instance (Windows only)
 #if defined STATIC_BUILD && defined Q_OS_WIN32
 	//webView = new WebViewWidget(this);
-    //webView->setSizeHint(QSize(656,370));
-    webView = new QAxWidget(this);
-    webView->setControl("{8856F961-340A-11D0-A96B-00C04FD705A2}");
-    webViewFrame->setFrameShadow(QFrame::Plain);
-    webViewFrame->setFrameShape(QFrame::NoFrame);
+	//webView->setSizeHint(QSize(656,370));
+	webView = new QAxWidget(this);
+	webView->setControl("{8856F961-340A-11D0-A96B-00C04FD705A2}");
+	webViewFrame->setFrameShadow(QFrame::Plain);
+	webViewFrame->setFrameShape(QFrame::NoFrame);
 #else // uses the Qt WebKit wrap
 	webView = new QWebView(this);
 #endif
 	// add this new object into our frame
 	webViewLayout->addWidget(webView);
 	webView->adjustSize();
-#if defined STATIC_BUILD && defined Q_OS_WIN32
-    webView->dynamicCall("Navigate(const QString&)", "http://xviservicethief.sourceforge.net/whatsnew/display.php");
-#else
 	// add the version id
 	QUrlQuery urlQuery;
 	urlQuery.addQueryItem("v", PROGRAM_VERSION_SHORT);
@@ -64,6 +61,9 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	QUrl url("http://xviservicethief.sourceforge.net/whatsnew/display.php");
 	url.setQuery(urlQuery);
 	// open whats new page
+#if defined STATIC_BUILD && defined Q_OS_WIN32
+	webView->dynamicCall("Navigate(const QString&)", url.toEncoded());
+#else
 	webView->load(url);
 #endif
 }
