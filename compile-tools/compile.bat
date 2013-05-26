@@ -31,13 +31,14 @@ RMDIR build /s /q
 DEL Makefile
 DEL Makefile.*
 DEL object_script.xVideoServiceThief.*
+DEL xvideoservicethief_plugin_import.cpp
 
 :do-qmake
 goto :do-qmake-%1%
 
 :do-qmake-vc++
 "%QtDir%\bin\qmake" -set build_mode static_build
-"%QtDir%\bin\qmake" -spec win32-msvc2008 CONFIG+=release
+"%QtDir%\bin\qmake" -spec win32-msvc2010 CONFIG+=release
 goto :compile
 
 :do-qmake-mingw
@@ -52,7 +53,7 @@ goto :compile
 "%UPXApp%" "bin\xVideoServiceThief.exe" -9
 
 :Install languages
-%QtDir%\lrelease.exe xVideoServiceThief.pro
+%QtDir%\bin\lrelease.exe xVideoServiceThief.pro
 call ".\Installer\windows-install-languages.bat" "%CD%\Installer\"                                                                               
 
 :Install plugins
