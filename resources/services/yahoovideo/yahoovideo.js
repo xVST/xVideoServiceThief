@@ -25,11 +25,11 @@
 
 function RegistVideoService()
 {
-	this.version = "1.0.0";
+	this.version = "1.1.0";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2009";
-	this.website = "http://video.yahoo.com/";
-	this.ID = "video.yahoo.com";
+	this.author = "anon";
+	this.website = "http://screen.yahoo.com/";
+	this.ID = "screen.yahoo.com";
 	this.caption = "Yahoo Video";
 	this.adultContent = false;
 	this.musicSite = false;
@@ -37,28 +37,44 @@ function RegistVideoService()
 
 function getVideoInformation(url)
 {
-	const URL_GET_XML = "http://cosmos.bcst.yahoo.com/up/yep/process/getPlaylistFOP.php?node_id=%1&tech=flash&mode=playlist&bitrate=300&null&rd=video.yahoo.com&tk=null";
+	var url_get_json ="http://video.query.yahoo.com/v1/public/yql?q=SELECT streams FROM yahoo.media.video.streams WHERE id=\"%1\" AND plrs=\"\" AND protocol=\"http\" AND region=\"%2\";&env=prod&format=json";
 	// init result
 	var result = new VideoDefinition();
 	// download webpage
 	var http = new Http();
 	var html = http.downloadWebpage(url);
 	// get video title
-	result.title = copyBetween(html, "<meta name=\"title\" content=\"", "\"");
-	// if we didn't get a title, try to get the channel video title
-	if (result.title == "")
-		result.title = copyBetween(html, "<h2 id=\"nvi_title\">", "</h2>");
+	var title = copyBetween(html, "<title>", "</title>");
+	//if we have the ?format=embed parameter added, the | is missing
+	if (title.toString().indexOf(" |") != -1)
+		title = copyBetween(title, "", " |");
+	result.title = title;
 	// get the node_id
-	var node_id = copyBetween(html, "so.addVariable(\"id\", \"", "\"");
-	// download xml
-	var xml = http.downloadWebpage(strFormat(URL_GET_XML, node_id));
+	var node_id = copyBetween(html, "\"id\":\"", "\"");
+	// get the region
+	var region = copyBetween(html, "region: \'", "\'");
+	// download json
+	var jsonstr = http.downloadWebpage(strFormat(url_get_json, node_id, region));
+	var json = JSON.parse(jsonstr);
+	var streams = json.query.results.mediaObj[0].streams;
+	var streamindex = streams.length - 1; //the streams are sorted by quality. highest is last.
 	// get video host and path
-	var host = copyBetween(xml, "<STREAM APP=\"", "\"");
-	var path = copyBetween(xml, "FULLPATH=\"", "\"");
+	var host = streams[streamindex].host; //copyBetween(json, "\"host\":\"", "\"");
+	var path = streams[streamindex].path; //copyBetween(json, "\"path\":\"", "\"")
 	// set video URL
-	result.URL = strReplace(host + path, "&amp;", "&");
+	result.URL = host + path; //take the video with highest quality
+	result.extension = extensionFromVideoType(streams[streamindex].mime_type);
 	// return the video information
 	return result;
+}
+
+function extensionFromVideoType(vtype)
+{
+	if (vtype == "video/x-flv") return ".flv";
+	if (vtype == "video/mp4") return ".mp4";
+	if (vtype == "video/webm") return ".webm";
+	// default extension
+	return ".flv";
 }
 
 function getVideoServiceIcon()
