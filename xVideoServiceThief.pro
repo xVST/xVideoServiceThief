@@ -1,3 +1,5 @@
+cache()
+
 CONFIG += qt \
     warn_on \
     debug_and_release \
