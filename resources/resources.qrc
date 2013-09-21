@@ -38,6 +38,9 @@
         <file>images/errorVideo.png</file>
         <file>images/view.png</file>
     </qresource>
+    <qresource prefix="/adults">
+        <file>images/adults-only.png</file>
+    </qresource>
     <qresource prefix="/header">
         <file>images/DragDropWindow.png</file>
         <file>images/InformationLogo.png</file>
