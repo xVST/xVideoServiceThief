@@ -104,6 +104,9 @@
      <height>16</height>
     </rect>
    </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
    <property name="text">
     <string/>
    </property>
