@@ -1,3 +1,20 @@
+2.5.1:
+------
+
+- Added the possibility to uninstall the adult sites from your system and ignore them (no updates)
+- Added a new startup parameter "-resetmessages" for display again all the starting messages (welcome window, adults sites request and changelog)
+- Added a new startup parameter "-showchangelog" for display again the changelog of current version
+
+Windows:
+--------
+
+- Fixed bug with information window
+
+Mac OS X:
+---------
+
+- Compiled with Qt 5.1.1
+
 2.5:
 ----
 
