@@ -28,9 +28,9 @@
 
 #include <QString>
 
-static const QString PROGRAM_VERSION		= "2.5"; 	//!< Current program version
-static const QString PROGRAM_VERSION_SHORT	= "2.5";	//!< Current program version (short version)
-static const int	 PROGRAM_VERSION_NUMBER	= 250;		//!< Current program version (numeric version)
+static const QString PROGRAM_VERSION		= "2.5.1"; 	//!< Current program version
+static const QString PROGRAM_VERSION_SHORT	= "2.5.1";	//!< Current program version (short version)
+static const int	 PROGRAM_VERSION_NUMBER	= 251;		//!< Current program version (numeric version)
 
 #ifdef Q_OS_WIN32
 static const QString CURRENT_OS = "MSWINDOWS";	//!< Microsoft windows version
