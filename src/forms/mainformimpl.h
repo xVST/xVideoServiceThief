@@ -84,6 +84,8 @@ Q_OBJECT
 		void checkUpdates(bool forceCheckUpdates);
 		// welcome message
 		void displayWelcomeMessage();
+		// adults sites blocker
+		void displayAdultSitesPermission();
 		// windows vista downloads directory migration
 		void displayWinVistaDownloads();
 		// what's new message

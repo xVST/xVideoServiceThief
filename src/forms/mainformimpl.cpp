@@ -38,6 +38,7 @@
 #include "winvistadownloadsmsgimpl.h"
 #include "customdownloadtitleimpl.h"
 #include "whatsnewimpl.h"
+#include "adultspermissionimpl.h"
 
 #include "../tools.h"
 #include "../options.h"
@@ -259,6 +260,8 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	imgPaypal->setText("<a href=\"http://xviservicethief.sourceforge.net/index.php?action=make_donation\"><img src=\":/buttons/images/support_button_main.png\" /></a>");
 	// display welcome donate
 	displayWelcomeMessage();
+	// display adults permission
+	displayAdultSitesPermission();
 	// display whats new window
 	displayWhatsNewMessage();
 	// display windows downloads directory migrator
@@ -1118,6 +1121,24 @@ void MainFormImpl::displayWelcomeMessage()
 		welcome.exec();
 		// continue displaying this message?
 		programOptions->setDisplayWelcomeMessage(!welcome.getDisplayAgain());
+	}
+}
+
+void MainFormImpl::displayAdultSitesPermission()
+{
+	if ( ! programOptions->getAdultsSitePermissionAsked())
+	{
+		LoadingImpl::instance()->closeLoading();
+		// display welcome window
+		AdultsPermissionImpl adultsPermission(this);
+		programOptions->setAdultSitesAreAllowed(!adultsPermission.exec());
+		// uninstall the adult sites if needed
+		if ( ! programOptions->getAdultSitesAreAllowed())
+		{
+			videoList->getVideoInformation()->removeAdultPlugins(true);
+		}
+		// ok, don't ask it again
+		programOptions->setAdultsSitePermissionAsked(true);
 	}
 }
 
