@@ -109,7 +109,7 @@ void VideoInformation::registerPlugin(VideoInformationPlugin *videoInformationPl
 void VideoInformation::unregisterPlugin(VideoInformationPlugin *videoInformationPlugin, bool destroy)
 {
 	if (plugins->contains(videoInformationPlugin))
-		plugins->removeAt(plugins->indexOf(videoInformationPlugin));
+		plugins->removeOne(videoInformationPlugin);
 	// destroy this plugin?
 	if (destroy) delete videoInformationPlugin;
 }
@@ -448,6 +448,16 @@ bool VideoInformation::isBlockedHost(QString URL)
 	return isBlockedHost(URL, bs);
 }
 
+void VideoInformation::removeAdultPlugins(bool removeFromDisk)
+{
+	foreach(VideoInformationPlugin *plugin, getAllAdultPlugins())
+	{
+		if (removeFromDisk) QFile::remove(plugin->getScriptFile(false));
+		// unregister this plugin
+		unregisterPlugin(plugin);
+	}
+}
+
 VideoInformation* VideoInformation::instance()
 {
 	// create a new instance if not exists
@@ -617,6 +627,11 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 		// detach global engine
 		delete engine;
 		engine = NULL;
+	}
+	// check if adult sites are permited
+	if (loaded && !ProgramOptions::instance()->getAdultSitesAreAllowed() && hasAdultContent())
+	{
+		loaded = false;
 	}
 	// regist this plugin
 	if (videoInformation != NULL && loaded)

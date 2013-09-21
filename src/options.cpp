@@ -192,6 +192,9 @@ void ProgramOptions::load()
 	maxRetries = settings.value("configuration/maxRetries", maxRetries).toInt();
 	timeRemainingCalculation = settings.value("configuration/timeRemainingCalculation", timeRemainingCalculation).toInt();
 
+	adultSitesAreAllowed = settings.value("configuration/adultSitesAreAllowed", adultSitesAreAllowed).toBool();
+	adultsSitePermissionAsked = settings.value("configuration/adultsSitePermissionAsked", adultsSitePermissionAsked).toBool();
+
 	emit optionsLoadAfter();
 }
 
@@ -277,6 +280,9 @@ void ProgramOptions::save()
 	settings.setValue("timeOut", timeOut);
 	settings.setValue("maxRetries", maxRetries);
 	settings.setValue("timeRemainingCalculation", timeRemainingCalculation);
+
+	settings.setValue("adultSitesAreAllowed", adultSitesAreAllowed);
+	settings.setValue("adultsSitePermissionAsked", adultsSitePermissionAsked);
 
 	settings.endGroup();
 
@@ -446,6 +452,26 @@ QString ProgramOptions::getInternalFFmpegPath()
 	return QDir::cleanPath(appDir.absolutePath() + "/../Resources/tools/ffmpeg" + (isRunningSnowLeopard() ? "_universal" : "_x86"));
 }
 #endif
+
+bool ProgramOptions::getAdultsSitePermissionAsked() const
+{
+	return adultsSitePermissionAsked;
+}
+
+void ProgramOptions::setAdultsSitePermissionAsked(bool value)
+{
+	adultsSitePermissionAsked = value;
+}
+
+bool ProgramOptions::getAdultSitesAreAllowed() const
+{
+	return adultSitesAreAllowed;
+}
+
+void ProgramOptions::setAdultSitesAreAllowed(bool value)
+{
+	adultSitesAreAllowed = value;
+}
 
 void ProgramOptions::sendUpdateSignal()
 {

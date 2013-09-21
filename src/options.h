@@ -99,6 +99,8 @@ Q_OBJECT
 		QDir appDir;		//!< Initial program path
 		QString appExecutable;	//!< Executable program path
 		QString optionsFile;	//!< Options file name (path + name)
+		bool adultsSitePermissionAsked;	//!< Flag for know if we requested for permission of adult sites
+		bool adultSitesAreAllowed;		//!< Flag for know if adult sites are allowed (or deleted)
 
 		bool canSendUpdateSignal;	//!< flag for know if is the update signal can be sended
 		/*! Send the update signal (only if is possible) */
@@ -236,6 +238,10 @@ Q_OBJECT
 		int getMaxRetries();
 		void setTimeRemainingCalculation(int value);
 		int getTimeRemainingCalculation();
+		bool getAdultsSitePermissionAsked() const;
+		void setAdultsSitePermissionAsked(bool value);
+		bool getAdultSitesAreAllowed() const;
+		void setAdultSitesAreAllowed(bool value);
 	signals:
 		/*! Options will load the configuration */
 		void optionsLoadBefore();

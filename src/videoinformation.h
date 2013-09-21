@@ -259,6 +259,8 @@ Q_OBJECT
 		bool isBlockedHost(QString URL, BlockedState &result);
 		/*! Get if is a blocked host */
 		bool isBlockedHost(QString URL);
+		/*! Uninstall adult plugins */
+		void removeAdultPlugins(bool removeFromDisk);
 		/*! Get the last VideoInformation reference */
 		static VideoInformation* instance();
 	signals:

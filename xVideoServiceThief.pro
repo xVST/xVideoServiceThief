@@ -53,7 +53,8 @@ FORMS = ui/addvideo.ui \
     ui/searchvideosnoresults.ui \
     ui/winvistadownloadsmsg.ui \
     ui/whatsnew.ui \
-    ui/multiurls.ui
+    ui/multiurls.ui \
+    ui/adultspermission.ui
 HEADERS = src/forms/addvideoimpl.h \
     src/forms/searchvideositemimpl.h \
     src/forms/bugreportimpl.h \
@@ -83,6 +84,7 @@ HEADERS = src/forms/addvideoimpl.h \
     src/forms/winvistadownloadsmsgimpl.h \
     src/forms/whatsnewimpl.h \
     src/forms/multiurlsimpl.h \
+    src/forms/adultspermissionimpl.h \
     src/pakunpak/pakunpak.h \
     src/searchvideosscriptclass.h \
     src/checkupdatesworker.h \
@@ -137,6 +139,7 @@ SOURCES = src/forms/addvideoimpl.cpp \
     src/forms/winvistadownloadsmsgimpl.cpp \
     src/forms/whatsnewimpl.cpp \
     src/forms/multiurlsimpl.cpp \
+    src/forms/adultspermissionimpl.cpp \
     src/searchvideosscriptclass.cpp \
     src/checkupdatesworker.cpp \
     src/http.cpp \
