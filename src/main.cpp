@@ -39,6 +39,8 @@ int main(int argc, char **argv)
 	QtSingleApplication app("xVideoServiceThief " + PROGRAM_VERSION_SHORT, argc, argv);
 
 	// init defaults
+	bool resetMessages = false;
+	bool showChangeLog = false;
 	bool noSplash = false;
 	bool forceNewInstance = false;
 
@@ -49,7 +51,11 @@ int main(int argc, char **argv)
 	{
 		QString arg = argv[n];
 		// is a command?
-		if (arg == "-nosplash")
+		if (arg == "-resetmessages")
+			resetMessages = true;
+		if (arg == "-showchangelog")
+			showChangeLog = true;
+		else if (arg == "-nosplash")
 			noSplash = true;
 		else if (arg == "-forcenewinstance")
 			forceNewInstance = true;
@@ -72,6 +78,22 @@ int main(int argc, char **argv)
 	QTranslator translator;
 	translator.load(qm);
 	app.installTranslator(&translator);
+
+	// reset messages
+	if (resetMessages)
+	{
+		programOptions->setDisplayWelcomeMessage(true);
+		programOptions->setAdultsSitePermissionAsked(false);
+		programOptions->setLatestVersionExecuted("");
+	}
+
+	// force display changelog?
+	if (showChangeLog)
+		programOptions->setLatestVersionExecuted("");
+
+	// should serialize options?
+	if (resetMessages || showChangeLog)
+		programOptions->save();
 
 	// display loading plugins
 	LoadingImpl::instance()->setMessage(LoadingImpl::tr("Loading plugins... please wait..."));
