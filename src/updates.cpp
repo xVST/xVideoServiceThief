@@ -29,6 +29,7 @@
 #include "programversion.h"
 #include "languages.h"
 #include "videoinformation.h"
+#include "options.h"
 #include "http.h"
 #include "tools.h"
 
@@ -85,6 +86,7 @@ void Updates::parseBlock(QString block)
 				update->setUrl(copyBetween(fileBlock, "url=\"", "\""));
 				update->setPacked(copyBetween(fileBlock, "packed=\"", "\"").toLower() == "true");
 				update->setObligatory(copyBetween(fileBlock, "obligatory=\"", "\"").toLower() == "true");
+				update->setIsAdultSite(copyBetween(fileBlock, "adultSite=\"", "\"").toLower() == "true");
 				update->setMinVersion(copyBetween(fileBlock, "minVersion=\"", "\""));
 				update->setMinVersionUrl(copyBetween(fileBlock, "minVersionUrl=\"", "\""));
 				update->setChecked(true);
@@ -141,6 +143,9 @@ bool Updates::hasUpdates()
 					// have info?
 					if (plugin != NULL)
 						deleteUpdate = compareVersions(plugin->getVersion(), update->getVersion()) != 1;
+					// is adult site and user don't want them
+					if (plugin->hasAdultContent() && ! ProgramOptions::instance()->getAdultSitesAreAllowed())
+						deleteUpdate = true;
 				}
 				else // "unknonw file"
 					deleteUpdate = true;
@@ -664,6 +669,11 @@ void Update::setError(bool value)
 	error = value;
 }
 
+void Update::setIsAdultSite(bool value)
+{
+	adultSite = value;
+}
+
 QString Update::getCaption()
 {
 	return caption;
@@ -722,4 +732,9 @@ bool Update::hasErrors()
 bool Update::hasRelativePath()
 {
 	return isRelativePath;
+}
+
+bool Update::isAdultSite()
+{
+	return adultSite;
 }

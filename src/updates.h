@@ -67,6 +67,7 @@ class Update : public QObject
 		bool checked;			//!< Selected to update
 		bool error;				//!< An error ocurred during download process
 		bool isRelativePath;	//!< Flag for know if the "installTo" property is a full or relative path
+		bool adultSite;			//!< Flag for know if is an adult site plugin
 	public:
 		/*! Set the update caption */
 		void setCaption(QString value);
@@ -90,6 +91,8 @@ class Update : public QObject
 		void setChecked(bool value);
 		/*! Set it as error */
 		void setError(bool value);
+		/*! Set if is an adult site */
+		void setIsAdultSite(bool value);
 		/*! Get the update caption */
 		QString getCaption();
 		/*! Get the update version */
@@ -114,6 +117,8 @@ class Update : public QObject
 		bool hasErrors();
 		/*! Get if the "installTo" is a relative path */
 		bool hasRelativePath();
+		/*! Get if this update is an adult site */
+		bool isAdultSite();
 };
 
 /*! Check and download program updates */
