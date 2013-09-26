@@ -59,7 +59,6 @@ void Packer::buildPackage(const std::string packageFile)
 		// write package header
 		const char *header_id = "XPK";
 		package->write(header_id, sizeof(header_id)); // package header id
-		delete header_id;
 
 		// add files into the package
 		for (int n = 0; n < static_cast<int>(files->size()); n++)
@@ -116,7 +115,7 @@ Unpacker::~Unpacker()
 {
 	filesInDisc->clear();
 	filesOriginal->clear();
-	
+
 	delete filesInDisc;
 	delete filesOriginal;
 }
@@ -148,7 +147,7 @@ void Unpacker::extractPackage(std::string packageFile, std::string destination, 
 				char *fileName = new char[fileNameLength + 1];
 				package->read(fileName, fileNameLength);
 				fileName[fileNameLength] = '\0';
-				
+
 				// add the original file name
 				filesOriginal->push_back(std::string(fileName));
 

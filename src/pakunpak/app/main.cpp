@@ -1,6 +1,6 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
 * Copyright (C) 2007 - 2010 Xesc & Technology
@@ -43,37 +43,38 @@ void displayHelp()
 int main(int argc, char ** argv)
 {
 	std::cout << "--------------------------------------------" << std::endl
-		      << "Pakunpaker v1.0 by Xesc & Technology 2008-09" << std::endl 
-		      << "--------------------------------------------" << std::endl << std::endl;
-	
+		      << "Pakunpaker v1.1 by Xesc & Technology 2008-13" << std::endl
+		      << "--------------------------------------------" << std::endl
+		      << std::endl;
+
 	if (argc > 2)
 	{
 		// create a new package
 		if (strcmp(argv[1], "-i") == 0)
 		{
 			Packer *packer = new Packer;
-			
+
 			for (int param = 3; param < argc; param++)
 			{
 				packer->addFile(std::string(argv[param]));
 				std::cout << "added: " << argv[param] << std::endl;
 			}
-			
+
 			packer->buildPackage(argv[2]);
 			std::cout << "Package build: " << argv[2] << std::endl;
-			
+
 			delete packer;
 		}
 		// extract files from package
 		else if ((strcmp(argv[1], "-o") == 0 || strcmp(argv[1], "-oo") == 0) && argc == 4)
 		{
 			Unpacker *unpacker = new Unpacker;
-			
+
 			unpacker->extractPackage(std::string(argv[2]), std::string(argv[3]), strcmp(argv[1], "-o") == 0);
-			
+
 			for (int n = 0; n < unpacker->getExtractedFilesCount(); n++)
 				std::cout << "Unpacked file " << n + 1 << " to: " << unpacker->getExtractedFileName(n) << std::endl;
-			
+
 			delete unpacker;
 		}
 		else // unknonw parameters
