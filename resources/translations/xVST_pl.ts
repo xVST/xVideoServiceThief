@@ -184,6 +184,39 @@
     </message>
 </context>
 <context>
+    <name>AdultsPermission</name>
+    <message>
+        <source>Adults sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes, I&apos;m sure about my decision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>I don&apos;t want them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Nie</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation type="unfinished">QFrame{background: white;} </translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BugReport</name>
     <message>
         <source>QFrame{background: white;} </source>
@@ -234,12 +267,6 @@
 &lt;p&gt;You can help to fix this problem sending us an &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;. This Report will be used to analyze the error and if is necessary fix it and improve the next version of xVST.&lt;/p&gt;
 &lt;p&gt;Your help is allways welcomed!&lt;/p&gt;</source>
         <translation>&lt;b&gt;Ops! Wystąpił błąd podczas ściagania pliku wideo.&lt;/b&gt;&lt;p&gt;Możesz pomóc nam w naprawie błędu wysyłając &quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot;. Ten Raport zostanie użyty do zanalizowania błędu i jeśłi konieczne jego usunięcia w celu polepszenia jakości programu.&lt;/p&gt;&lt;p&gt;Twoja pomoc jest zawsze mile widziana!&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;p&gt;&quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; zostanie wysłany do &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Twoje imię i adres email zostanie umieszczony w &quot;&lt;b&gt;Komentarzu o błędzie&lt;/b&gt;&quot;, jednakże jest to całkowicie opcjonalne i niekonieczne.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Your name will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
@@ -899,64 +926,6 @@ font-size:12px;
     </message>
 </context>
 <context>
-    <name>LoginPrompt</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>User name:</source>
-        <translation type="unfinished">Nazwa użytkownika:</translation>
-    </message>
-    <message>
-        <source>Password:</source>
-        <translation type="unfinished">Hasło:</translation>
-    </message>
-    <message>
-        <source>Stay signed in (only during this session)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Remember my password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Confirm and close the window</source>
-        <translation type="unfinished">Zatwierdź i zamknij okno</translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Discard and close window</source>
-        <translation type="unfinished">Anuluj i zamknij okno</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation type="unfinished">Przycisk Anuluj</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="unfinished">Anuluj</translation>
-    </message>
-</context>
-<context>
-    <name>LoginPromptImpl</name>
-    <message>
-        <source>Login failed, please enter your valid %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please, enter your %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>MainForm</name>
     <message>
         <source>Check for updates</source>
@@ -1471,37 +1440,6 @@ font-size:12px;
     </message>
 </context>
 <context>
-    <name>MultiMediasDetectedImpl</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Multiple download files are avaiable:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>URL</source>
-        <translation type="unfinished">URL</translation>
-    </message>
-    <message>
-        <source>Add urls and close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add urls and close button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="unfinished">Ok</translation>
-    </message>
-</context>
-<context>
     <name>MultiURLs</name>
     <message>
         <source>Multiple URLs</source>
@@ -1813,10 +1751,6 @@ font-size:12px;
         <translation>Hasło:</translation>
     </message>
     <message>
-        <source>Adress:</source>
-        <translation type="obsolete">Adres:</translation>
-    </message>
-    <message>
         <source>Port:</source>
         <translation>Port:</translation>
     </message>
@@ -1891,10 +1825,6 @@ font-size:12px;
     <message>
         <source>Display &quot;Bug Report&quot; window on Video error</source>
         <translation>Pokaż &quot;Raport o błędzie&quot;, jeśli takowy się wydarzy</translation>
-    </message>
-    <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation type="obsolete">Kiedy wystąpi błąd ściągania pliku wideo, możesz pomóc go naprawić wysyłając do nas &quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; poprzez &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;&quot;&lt;b&gt;Raport o błędzie&lt;/b&gt;&quot; jest przechowywany tylko na &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt;, jest widoczny dla wszystkich i żadne dodatkowe dane nie są zapisywane w jakiejkolwiek innej/zewnętrznej bazie.</translation>
     </message>
     <message>
         <source>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</source>
@@ -2718,10 +2648,6 @@ font-size:12px;
     <message>
         <source>&lt;b&gt;Rating:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Ocena:&lt;/b&gt; %1</translation>
-    </message>
-    <message>
-        <source>Download not avaiable...</source>
-        <translation type="obsolete">Niedostępny...</translation>
     </message>
     <message>
         <source>Missing plugin</source>

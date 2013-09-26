@@ -184,6 +184,39 @@
     </message>
 </context>
 <context>
+    <name>AdultsPermission</name>
+    <message>
+        <source>Adults sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes, I&apos;m sure about my decision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>I don&apos;t want them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Nein</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BugReport</name>
     <message>
         <source>Send</source>
@@ -264,12 +297,6 @@
     <message>
         <source>Video URL: &lt;b&gt;%1&lt;/b&gt;</source>
         <translation>Video URL: &lt;b&gt;%1&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;p&gt;Dieser &quot;&lt;b&gt;Fehlerbericht&lt;/b&gt; wird an &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt; gesendet.&lt;/p&gt;
-&lt;p&gt;Dein Name und deine Email-Adresse werden in den &quot;&lt;b&gt;Fehlerkommentar&lt;/b&gt;&quot; eingefügt und sind vollkommen freiwillig.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Your name</source>
@@ -896,64 +923,6 @@ background: white;
     </message>
 </context>
 <context>
-    <name>LoginPrompt</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>User name:</source>
-        <translation type="unfinished">Benutzername:</translation>
-    </message>
-    <message>
-        <source>Password:</source>
-        <translation type="unfinished">Passwort:</translation>
-    </message>
-    <message>
-        <source>Stay signed in (only during this session)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Remember my password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Confirm and close the window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation type="unfinished">Ok-Button</translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Discard and close window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="unfinished">Abbrechen</translation>
-    </message>
-</context>
-<context>
-    <name>LoginPromptImpl</name>
-    <message>
-        <source>Login failed, please enter your valid %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please, enter your %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>MainForm</name>
     <message>
         <source>F1</source>
@@ -1468,37 +1437,6 @@ background: white;
     </message>
 </context>
 <context>
-    <name>MultiMediasDetectedImpl</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Multiple download files are avaiable:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>URL</source>
-        <translation type="unfinished">URL</translation>
-    </message>
-    <message>
-        <source>Add urls and close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add urls and close button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="unfinished">Ok</translation>
-    </message>
-</context>
-<context>
     <name>MultiURLs</name>
     <message>
         <source>Multiple URLs</source>
@@ -1826,10 +1764,6 @@ background: white;
         <translation>Auflösung</translation>
     </message>
     <message>
-        <source>Proxy adress</source>
-        <translation type="obsolete">Proxy-Adresse</translation>
-    </message>
-    <message>
         <source>Save a Log with all downloaded videos (Date + Title + URL)</source>
         <translation>Sichere heruntergeladene Videos in einer Logdatei (Datum + Titel + URL)</translation>
     </message>
@@ -1966,10 +1900,6 @@ background: white;
         <translation>Fehlerbereicht</translation>
     </message>
     <message>
-        <source>Adress:</source>
-        <translation type="obsolete">Adresse:</translation>
-    </message>
-    <message>
         <source>Language Configuration </source>
         <translation>Sprachekonfiguration</translation>
     </message>
@@ -2042,10 +1972,6 @@ background: white;
         <translation>Zeige den &quot;Fehlerbericht&quot; bei Videofehlern</translation>
     </message>
     <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation type="obsolete">Wenn ein Video einen Fehler verursacht, kannst du helfen diesen zu beheben. Schicke uns den &quot;&lt;b&gt;Fehlerbericht&lt;/b&gt;&quot; via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Der &quot;&lt;b&gt;Fehlerbericht&lt;/b&gt;&quot; wird lediglich im &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; gesichert und ist für jeden sichtbar. Es werden keinen zusätzlichen Daten gespeichert oder erhoben.</translation>
-    </message>
-    <message>
         <source>General video output quality combobox</source>
         <translation>Videoqualität-Combobox</translation>
     </message>
@@ -2068,10 +1994,6 @@ background: white;
     <message>
         <source>User name of your proxy configuration</source>
         <translation>Benutzername deiner Proxyeinstellung</translation>
-    </message>
-    <message>
-        <source>Adress of your proxy configuration</source>
-        <translation type="obsolete">Adresse der Proxyeinstellung</translation>
     </message>
     <message>
         <source>Download videos automatically checkbox</source>
@@ -2719,10 +2641,6 @@ background: white;
     <message>
         <source>Ok</source>
         <translation>Ok</translation>
-    </message>
-    <message>
-        <source>Download not avaiable...</source>
-        <translation type="obsolete">Download nicht verfügbar!</translation>
     </message>
     <message>
         <source>Download video</source>

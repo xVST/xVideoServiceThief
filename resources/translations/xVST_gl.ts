@@ -185,6 +185,39 @@
     </message>
 </context>
 <context>
+    <name>AdultsPermission</name>
+    <message>
+        <source>Adults sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes, I&apos;m sure about my decision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>I don&apos;t want them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">Non</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation type="unfinished">QFrame{background: white;}</translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BugReport</name>
     <message>
         <source>Bug Report</source>
@@ -201,12 +234,6 @@
         <translation>&lt;b&gt;Uy! Ocorreu un erro mentres tentabas descargar o viedo.&lt;/b&gt;(new line)
 &lt;p&gt;Podes arranxar este erro mandandonos un &quot;&lt;b&gt;reporte de erro&lt;/b&gt;&quot;. O reporte só é para analizar o erro e si é necesario reparalo e mellorar a nova versión de xVST.&lt;/p&gt;(new line)
 &lt;p&gt;A túa axuda e sempre benvida!&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;p&gt;O &quot;&lt;b&gt;reporte de erro&lt;/b&gt;&quot; será enviado a &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;(new line)
-&lt;p&gt;O teu nome e e-mail será incluido no &quot;&lt;b&gt;comentario de erro&lt;/b&gt;&quot;, nembargantes é opcional e non necesario.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Error information</source>
@@ -902,64 +929,6 @@ font-size:12px;(new line)
     </message>
 </context>
 <context>
-    <name>LoginPrompt</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>User name:</source>
-        <translation type="unfinished">Nome de ususario:</translation>
-    </message>
-    <message>
-        <source>Password:</source>
-        <translation type="unfinished">Contrasinal:</translation>
-    </message>
-    <message>
-        <source>Stay signed in (only during this session)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Remember my password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Confirm and close the window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Discard and close window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>LoginPromptImpl</name>
-    <message>
-        <source>Login failed, please enter your valid %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please, enter your %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>MainForm</name>
     <message>
         <source>Open the Drag &amp; Drop window</source>
@@ -1470,37 +1439,6 @@ font-size:12px;(new line)
     </message>
     <message>
         <source>Are you sure to clear the downloads list?</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>MultiMediasDetectedImpl</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Multiple download files are avaiable:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>URL</source>
-        <translation type="unfinished">URL</translation>
-    </message>
-    <message>
-        <source>Add urls and close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add urls and close button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2098,10 +2036,6 @@ Procurar actualizacións sempre:</translation>
         <translation>Contrasinal proxy</translation>
     </message>
     <message>
-        <source>Adress:</source>
-        <translation type="obsolete">Enderezo:</translation>
-    </message>
-    <message>
         <source>Port:</source>
         <translation>Porto:</translation>
     </message>
@@ -2112,14 +2046,6 @@ Procurar actualizacións sempre:</translation>
     <message>
         <source>Proxy port</source>
         <translation>Porto proxy</translation>
-    </message>
-    <message>
-        <source>Adress of your proxy configuration</source>
-        <translation type="obsolete">Enderezo da tua configuración proxy</translation>
-    </message>
-    <message>
-        <source>Proxy adress</source>
-        <translation type="obsolete">Enderezo proxy</translation>
     </message>
     <message>
         <source>Proxy type:</source>
@@ -2144,10 +2070,6 @@ Procurar actualizacións sempre:</translation>
     <message>
         <source>Display &quot;Bug Report&quot; window on Video error</source>
         <translation>Amosar a ventá &quot;Reporte de erro&quot; cun erro de video</translation>
-    </message>
-    <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation type="obsolete">Si un video da un erro, podes axudar a arranxalo enviandonos un &quot;&lt;b&gt;Reporte de erro&lt;/b&gt;&quot; via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;O &quot;&lt;b&gt;Reporte de erro&lt;/b&gt;&quot; será gardado só na &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; e visible para todo o mundo, non se gardan mais datos nuna base de datos externa.</translation>
     </message>
     <message>
         <source>If this option is checked, on open again the &quot;Options&quot; dialog, the last page viewed (Basic, Language, etc...) is displayed again (only for this session)</source>

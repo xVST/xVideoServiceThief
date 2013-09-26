@@ -184,6 +184,39 @@
     </message>
 </context>
 <context>
+    <name>AdultsPermission</name>
+    <message>
+        <source>Adults sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes, I&apos;m sure about my decision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>I don&apos;t want them</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation type="unfinished">아니오</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation type="unfinished">QFrame{background: white;} </translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BugReport</name>
     <message>
         <source>QFrame{background: white;} </source>
@@ -234,12 +267,6 @@
 &lt;p&gt;You can help to fix this problem sending us an &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;. This Report will be used to analyze the error and if is necessary fix it and improve the next version of xVST.&lt;/p&gt;
 &lt;p&gt;Your help is allways welcomed!&lt;/p&gt;</source>
         <translation>&lt;b&gt;이런! 영상을 다운로드 하는 중에 에러가 발생했습니다.&lt;/b&gt;&lt;p&gt;당신은 우리에게  &quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;를 보냄으로써 문제를 수정하는데 도움을 줄 수 있습니다. 이 리포트는 문제를 분석하는데 이용되며 필요할 경우 다음 버젼의 xVST에서 수정되거나 향상 될 수 있습니다.&lt;/p&gt;&lt;p&gt;당신의 도움을 언제나 환영합니다! :D&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="obsolete">&lt;p&gt;&quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;는 &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;(xVST SourceForge tracker) 로 보내지게 됩니다.&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;당신의 이름과 E-Mail은  &quot;&lt;b&gt;버그 코멘트&lt;/b&gt;&quot;에 추가 되게 되게 되지만, 완전한 옵션사항으로 기재하지 않으셔도 무방합니다.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Your name will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
@@ -894,64 +921,6 @@ font-size:12px;
     </message>
 </context>
 <context>
-    <name>LoginPrompt</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>User name:</source>
-        <translation type="unfinished">사용자 이 름:</translation>
-    </message>
-    <message>
-        <source>Password:</source>
-        <translation type="unfinished">비밀번호:</translation>
-    </message>
-    <message>
-        <source>Stay signed in (only during this session)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Remember my password</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Confirm and close the window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation type="unfinished">확인 버튼</translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Discard and close window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation type="unfinished">취소 버튼</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="unfinished">취소</translation>
-    </message>
-</context>
-<context>
-    <name>LoginPromptImpl</name>
-    <message>
-        <source>Login failed, please enter your valid %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please, enter your %1 user account information:</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>MainForm</name>
     <message>
         <source>Check for updates</source>
@@ -1466,37 +1435,6 @@ font-size:12px;
     </message>
 </context>
 <context>
-    <name>MultiMediasDetectedImpl</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Multiple download files are avaiable:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Title</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>URL</source>
-        <translation type="unfinished">URL</translation>
-    </message>
-    <message>
-        <source>Add urls and close</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add urls and close button</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Ok</source>
-        <translation type="unfinished">확인</translation>
-    </message>
-</context>
-<context>
     <name>MultiURLs</name>
     <message>
         <source>Multiple URLs</source>
@@ -1708,10 +1646,6 @@ font-size:12px;
         <translation>1</translation>
     </message>
     <message>
-        <source>Adress:</source>
-        <translation type="obsolete">주소:</translation>
-    </message>
-    <message>
         <source>Allowed websites:</source>
         <translation>가능 웹사이트:</translation>
     </message>
@@ -1886,10 +1820,6 @@ font-size:12px;
     <message>
         <source>Display &quot;Bug Report&quot; window on Video error</source>
         <translation>영상 에러 발생 시 &quot;버그 리포트&quot; 창을 띄웁니다</translation>
-    </message>
-    <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation type="obsolete">영상 재생 중 에러 발생시 &quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot; 를  &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;로 보냄으로써 오류를 수정하도록 도울 수 있습니다.&lt;br&gt;&lt;br&gt;&quot;&lt;b&gt;버그 리포트&lt;/b&gt;&quot;는 오직 &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt;에만 저장되며 모든이에게 공개됩니다. 또한 외부 데이터베이스에는 어떠한 다른 데이터도 저장되지 않습니다.</translation>
     </message>
     <message>
         <source>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</source>
@@ -2126,14 +2056,6 @@ font-size:12px;
     <message>
         <source>Proxy port</source>
         <translation>프록시 포트</translation>
-    </message>
-    <message>
-        <source>Adress of your proxy configuration</source>
-        <translation type="obsolete">당신의 프록시 설정 주소</translation>
-    </message>
-    <message>
-        <source>Proxy adress</source>
-        <translation type="obsolete">프록시 주소</translation>
     </message>
     <message>
         <source>Type of your proxy configuration</source>
