@@ -142,10 +142,12 @@ bool Updates::hasUpdates()
 					VideoInformationPlugin *plugin = vidInf->getRegisteredPlugin(fileInf.fileName(), true);
 					// have info?
 					if (plugin != NULL)
+					{
 						deleteUpdate = compareVersions(plugin->getVersion(), update->getVersion()) != 1;
-					// is adult site and user don't want them
-					if (plugin->hasAdultContent() && ! ProgramOptions::instance()->getAdultSitesAreAllowed())
-						deleteUpdate = true;
+						// is adult site and user don't want them
+						if (plugin->hasAdultContent() && ! ProgramOptions::instance()->getAdultSitesAreAllowed())
+							deleteUpdate = true;
+					}
 				}
 				else // "unknonw file"
 					deleteUpdate = true;
@@ -179,7 +181,7 @@ void Updates::buildInstallScript()
 		// write the info vars
 		updateScript << "#MAIN_APP=" + QCoreApplication::applicationFilePath()
 					 << "#PARAMETERS=-forceCheckUpdates"
-					 << "#RESTART=true";	
+					 << "#RESTART=true";
 		// add updates
 		for (int n = 0; n < getUpdatesCount(); n++)
 		{
@@ -371,7 +373,7 @@ void Updates::run()
 				// process events
 				qApp->processEvents();
 				// wait 100 miliseconds (prevent 100% cpu)
-				msleep(100);				
+				msleep(100);
 			}
 			// destroy the http object
 			deinitHttp();
