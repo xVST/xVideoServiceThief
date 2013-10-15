@@ -265,9 +265,15 @@
     </message>
     <message>
         <location filename="../../ui/adultspermission.ui" line="117"/>
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;&lt;p&gt;Also, the automatic updates will ignore future updates of those plugins and they will not being update.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation>&lt;p&gt;&lt;b&gt;¿Qué significa esto?&lt;/b&gt; Desactivando los sitios para adultos hará que el xVST elimine todos los plugins relacionados con los sitios para adultos.&lt;/p&gt;&lt;p&gt;Además, las actualizaciones automáticas van a ignorar las actualizaciones futuras de estos plugins y los dejará de actualizar.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Nota:&lt;/b&gt; Por motivos de seguridad, esta decisión no es reversible&lt;/font&gt;&lt;/p&gt;</translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;¿Qué significa esto?&lt;/b&gt; Desactivando los sitios para adultos hará que el xVST desinstale todos los plugins relacionados con los sitios para adultos.&lt;/p&gt;
+        <translation type="obsolete">&lt;p&gt;&lt;b&gt;¿Qué significa esto?&lt;/b&gt; Desactivando los sitios para adultos hará que el xVST desinstale todos los plugins relacionados con los sitios para adultos.&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Nota:&lt;/b&gt; Por motivos de seguridad, esta decisión no es reversible&lt;/font&gt;&lt;/p&gt;</translation>
     </message>
     <message>
@@ -276,7 +282,7 @@
         <translation>QFrame{background: white;} </translation>
     </message>
     <message>
-        <location filename="../../ui/adultspermission.ui" line="203"/>
+        <location filename="../../ui/adultspermission.ui" line="209"/>
         <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
 &lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
         <translation>&lt;h3&gt;&lt;b&gt;Sitios para adultos, ¿Cómo proseguir?&lt;/b&gt;&lt;/h3&gt;
@@ -533,38 +539,38 @@
 <context>
     <name>CheckUpdatesWorker</name>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="122"/>
         <source>Updates</source>
         <translation>Actualizaciones</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="122"/>
         <source>You are using the most recent version of this program.</source>
         <translation>Usted está usando la versión más reciente del programa.</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
-        <location filename="../../src/checkupdatesworker.cpp" line="137"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="122"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
         <source>Ok</source>
         <translation>Aceptar</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="135"/>
         <source>Update Center</source>
         <translation>Centro de actualizaciones</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="137"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
         <source>Please, download the new version of &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; from &lt;a href=&apos;%2&apos;&gt;here.&lt;/a&gt;</source>
         <translation>Por favor, baje la nueva versión del &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; desde &lt;a href=&apos;%2&apos;&gt;aquí.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="152"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="151"/>
         <source>Cancelling... please wait...</source>
         <translation>Cancelando... por favor espere...</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="163"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="162"/>
         <source>Checking for updates...</source>
         <translation>Comprobando actualizaciones...</translation>
     </message>

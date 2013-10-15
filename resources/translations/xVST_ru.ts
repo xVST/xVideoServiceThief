@@ -265,7 +265,7 @@
     </message>
     <message>
         <location filename="../../ui/adultspermission.ui" line="117"/>
-        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;&lt;p&gt;Also, the automatic updates will ignore future updates of those plugins and they will not being update.&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -275,7 +275,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/adultspermission.ui" line="203"/>
+        <location filename="../../ui/adultspermission.ui" line="209"/>
         <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
 &lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
@@ -529,38 +529,38 @@
 <context>
     <name>CheckUpdatesWorker</name>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="122"/>
         <source>Updates</source>
         <translation>Обновления</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="122"/>
         <source>You are using the most recent version of this program.</source>
         <translation>Вы используете новейшую версию этой программы.</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="123"/>
-        <location filename="../../src/checkupdatesworker.cpp" line="137"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="122"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="135"/>
         <source>Update Center</source>
         <translation>Центр обновлений</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="137"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="136"/>
         <source>Please, download the new version of &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; from &lt;a href=&apos;%2&apos;&gt;here.&lt;/a&gt;</source>
         <translation>Пожалуйста, скачайте новую версию &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; из &lt;a href=&apos;%2&apos;&gt;here.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="152"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="151"/>
         <source>Cancelling... please wait...</source>
         <translation>Отменяю...подождите пожалуйста...</translation>
     </message>
     <message>
-        <location filename="../../src/checkupdatesworker.cpp" line="163"/>
+        <location filename="../../src/checkupdatesworker.cpp" line="162"/>
         <source>Checking for updates...</source>
         <translation>Проверяю обновления...</translation>
     </message>
