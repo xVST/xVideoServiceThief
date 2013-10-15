@@ -138,15 +138,16 @@ bool Updates::hasUpdates()
 				// plugin files
 				else if (fileInf.completeSuffix() == "js")
 				{
-					VideoInformation *vidInf = VideoInformation::instance();
-					VideoInformationPlugin *plugin = vidInf->getRegisteredPlugin(fileInf.fileName(), true);
-					// have info?
-					if (plugin != NULL)
+					if (update->isAdultSite() && ! ProgramOptions::instance()->getAdultSitesAreAllowed())
 					{
-						deleteUpdate = compareVersions(plugin->getVersion(), update->getVersion()) != 1;
-						// is adult site and user don't want them
-						if (plugin->hasAdultContent() && ! ProgramOptions::instance()->getAdultSitesAreAllowed())
-							deleteUpdate = true;
+						deleteUpdate = true;
+					}
+					else // all plugins are allowed or isn't a adult site...
+					{
+						VideoInformation *vidInf = VideoInformation::instance();
+						VideoInformationPlugin *plugin = vidInf->getRegisteredPlugin(fileInf.fileName(), true);
+						// have info?
+						if (plugin != NULL) deleteUpdate = compareVersions(plugin->getVersion(), update->getVersion()) != 1;
 					}
 				}
 				else // "unknonw file"
