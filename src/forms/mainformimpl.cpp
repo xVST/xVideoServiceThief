@@ -339,8 +339,8 @@ void MainFormImpl::centerWindow()
 	int x, y;
 	QSize windowSize;
 
-	screenWidth = desktop->width();
-	screenHeight = desktop->height();
+	screenWidth = desktop->screenGeometry(desktop->primaryScreen()).width();
+	screenHeight = desktop->screenGeometry(desktop->primaryScreen()).height();
 
 	windowSize = size();
 	width = windowSize.width();
