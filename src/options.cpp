@@ -384,6 +384,9 @@ void ProgramOptions::setDefault()
 	timeOut = 30;
 	maxRetries = 3;
 	timeRemainingCalculation = 0; // 0 = percentage; 1 = download speed
+
+	adultsSitePermissionAsked = false;
+	adultSitesAreAllowed = false;
 }
 
 void ProgramOptions::setCanSendUpdateSignal(bool canSendUpdateSignal)
