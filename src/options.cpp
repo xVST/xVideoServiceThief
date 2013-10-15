@@ -386,7 +386,7 @@ void ProgramOptions::setDefault()
 	timeRemainingCalculation = 0; // 0 = percentage; 1 = download speed
 
 	adultsSitePermissionAsked = false;
-	adultSitesAreAllowed = false;
+	adultSitesAreAllowed = true;
 }
 
 void ProgramOptions::setCanSendUpdateSignal(bool canSendUpdateSignal)
