@@ -70,7 +70,6 @@ void CheckUpdatesWorker::waitThread()
 {
 	while (updates->isRunning())
 	{
-		//qDebug() << "loooop";
 		//qApp->processEvents(); // this causes a terrorific crash xD
 	}
 }
