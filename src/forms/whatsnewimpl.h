@@ -27,16 +27,17 @@
 #define WHATSNEWIMPL_H
 
 #include <QtWidgets>
-//#ifndef Q_OS_MACX
-//#include <QtWebKit>
-//#endif
 
 #include "ui_whatsnew.h"
 
 #if defined STATIC_BUILD && defined Q_OS_WIN32
 	#include <QAxWidget>
 #else
-	#include <QWebView>
+	#ifndef Q_OS_MACX
+		#include <QtWebKit>
+	#else
+		class WebViewWidget;
+	#endif
 #endif
 
 class WhatsNewImpl : public QDialog, public Ui::WhatsNew
@@ -46,7 +47,11 @@ Q_OBJECT
 #if defined STATIC_BUILD && defined Q_OS_WIN32
     QAxWidget *webView;
 #else
-	QWebView *webView;
+	#ifndef Q_OS_MACX
+		QWebView *webView;
+	#else
+		WebViewWidget *webView;
+	#endif
 #endif
 	public:
 		WhatsNewImpl(QWidget *parent = 0, Qt::WindowFlags f = 0);

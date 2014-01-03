@@ -190,16 +190,17 @@ unix {
     TARGET = xvst
 }
 macx {
+    QT -= webkitwidgets
     ICON += resources/icons/MacOSX.icns
     OBJECTS_DIR = build/o/mac
     TARGET = xVideoServiceThief
     QMAKE_INFO_PLIST = Info.plist
-#   LIBS += -framework Cocoa -framework WebKit
+    LIBS += -framework Cocoa -framework WebKit
     OBJECTIVE_SOURCES += \
-#       src/webkit_mac/WebKitClass.mm \
+        src/webkit_mac/WebKitClass.mm \
         src/mac_only/mac_tools.mm
     HEADERS += \
-#       src/webkit_mac/WebKitClass.h \
+        src/webkit_mac/WebKitClass.h \
         src/mac_only/mac_tools.h
     CONFIG(release, debug|release) {
         message(Release build! Archs: 32 and 64 bits)
