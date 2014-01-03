@@ -2,8 +2,8 @@
 ------
 
 - Added the possibility to uninstall the adult sites from your system and ignore them (no updates)
-- Added a new startup parameter "-resetmessages" for display again all the starting messages (welcome window, adults sites request and changelog)
-- Added a new startup parameter "-showchangelog" for display again the changelog of current version
+- Added a new startup parameter "-resetmessages" for display again all the starting messages (welcome window, adults sites request and change-log)
+- Added a new startup parameter "-showchangelog" for display again the change-log of current version
 
 - Fixed bug (Error: Erratic main window centering on startup when more than one monitor was connected)
 
@@ -15,7 +15,11 @@ Windows:
 Mac OS X:
 ---------
 
-- Compiled with Qt 5.1.1
+- Compiled with Qt 5.2
+- Added Mac OS X Mavericks compatibility
+- Restored compatibility with Mac OS X Leopard (10.6.x)
+- Removed the QWebView module dependence (now the native WebView is used again and reduced the final binary size)
+
 
 2.5:
 ----
