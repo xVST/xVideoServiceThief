@@ -25,7 +25,7 @@
 
 function RegistVideoService()
 {
-	this.version = "3.1.1";
+	this.version = "3.1.2";
 	this.minVersion = "2.0.0a";
 	this.author = "Xesc & Technology 2013";
 	this.website = "http://www.youtube.com/";
@@ -67,13 +67,14 @@ function getVideoInformation(url)
 	// get the video title
 	result.title = videoInformationJSON.args.title;
 	// check if this video need a login
-	result.needLogin = strIndexOf(html, 'id="verify-details"') != -1;
+	result.needLogin = videoInformationJSON.needLogin || strIndexOf(html, 'id="verify-details"') != -1;
 	// if we can continue (no loggin needed)
 	if (result.needLogin) return result;
 	// get the video URL and extension
 	var videoInfo = getVideoUrlAndExtension(videoInformationJSON);
 	result.URL = videoInfo.url;
 	result.extension = videoInfo.extension;
+	result.needLogin = videoInfo.needLogin;
 	// return the video information
 	return result;
 }
@@ -86,6 +87,9 @@ function getVideoInformationJSON(html)
 
 function getVideoUrlAndExtension(videoInformationJSON)
 {
+	// if no url then we assume that this video requires login...
+	if (typeof videoInformationJSON.args.url_encoded_fmt_stream_map == 'undefined') return { needLogin: true };
+	// get the video url
 	var url_encoded_fmt_stream_map = videoInformationJSON.args.url_encoded_fmt_stream_map;
 	// split into small chunks
 	var url_encoded_fmt_stream_map_arr = url_encoded_fmt_stream_map.split(",");
