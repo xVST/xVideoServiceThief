@@ -3,7 +3,7 @@
 
 #include <QtCore>
 
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 static const QString SETTINGS_FILE = "/com.DebugPlugins.config.plist";
 #else
 static const QString SETTINGS_FILE = "/settings.conf";

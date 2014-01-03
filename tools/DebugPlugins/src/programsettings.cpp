@@ -5,7 +5,7 @@ ProgramSettings::ProgramSettings()
 #ifdef Q_OS_LINUX // modification made by "AzalSup"
 	settingsFile = QDir::homePath() + "/.DebugPlugins" + SETTINGS_FILE;
 #endif
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	settingsFile = QDir::homePath() + "/Library/Preferences" + SETTINGS_FILE;
 #endif
 #ifdef Q_OS_WIN32
@@ -22,7 +22,7 @@ ProgramSettings::ProgramSettings()
 void ProgramSettings::save()
 {
 	// init settings file
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	QSettings settings(settingsFile, QSettings::NativeFormat);
 #else
 	QSettings settings(settingsFile, QSettings::IniFormat);
@@ -43,7 +43,7 @@ void ProgramSettings::save()
 void ProgramSettings::load()
 {
 	// load settings
-#ifdef Q_WS_MACX
+#ifdef Q_OS_MACX
 	QSettings settings(settingsFile, QSettings::NativeFormat);
 #else
 	QSettings settings(settingsFile, QSettings::IniFormat);
