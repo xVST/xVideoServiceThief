@@ -554,8 +554,8 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 	onlineFaviconUrl = "";
 	pluginFilePath = videoServicePath;
 	// configure debug options
-#ifndef QT_NO_SCRIPTTOOLS
-	debug = false;
+#ifdef xVST_DEBUG_PLUGINS_ON
+	debug = true;
 #endif
 	// load js code
 	QFile scriptFile(videoServicePath);
@@ -629,7 +629,7 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 		engine = NULL;
 	}
 	// check if adult sites are permited
-	if (loaded && !ProgramOptions::instance()->getAdultSitesAreAllowed() && hasAdultContent())
+	if (!debug && loaded && !ProgramOptions::instance()->getAdultSitesAreAllowed() && hasAdultContent())
 	{
 		loaded = false;
 	}

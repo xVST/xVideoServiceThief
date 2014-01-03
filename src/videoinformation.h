@@ -74,9 +74,7 @@ class VideoInformationPlugin : public QObject
 		QString onlineFaviconUrl;	//!< Online favicon url
 		QScriptEngine *engine;		//!< Pointer to script engine
 		// debug options
-#ifndef QT_NO_SCRIPTTOOLS
 		bool debug;					//!< Flag for know if Debug is ON or OFF
-#endif
 	private:
 		/* VideoDefinition struct script definition */
 		static QScriptValue create_VideoDefinition(QScriptContext *context, QScriptEngine *engine);
