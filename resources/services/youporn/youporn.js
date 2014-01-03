@@ -25,7 +25,7 @@
 
 function RegistVideoService()
 {
-	this.version = "2.0.6";
+	this.version = "2.0.7";
 	this.minVersion = "2.0.0a";
 	this.author = "Xesc & Technology 2012 (thanks to Matze Ba)";
 	this.website = "http://www.youporn.com/";
@@ -39,21 +39,31 @@ function getVideoInformation(url)
 {
 	// video information
 	var result = new VideoDefinition();
+
 	// fix possible unneeded url information (i.e: /?from=categ_us)
 	if (strIndexOf(url, "/?") > 0) url = getToken(url, "/?", 0);
+
 	// download webpage
 	var http = new Http();
-	var html = http.downloadWebpage(url + "/?user_choice=Enter");
+	var html = http.downloadWebpage(url);
+
 	// get video title
-	result.title = copyBetween(html, "<title>", "- Free Porn Videos");
+	var video_title = /'video_title' : "(.*?)",/;
+	if (video_title.test(html)) {
+		result.title = video_title.exec(html)[1];
+	} else {
+		result.title = "title not found";
+	}
+
 	// get the flv url
-	//var video_url = /'video_url'\s*:\s*encodeURIComponent\('(.*?)'\)/
-	var video_url = /<video\s*src="(.*?)"/
-	result.URL = video_url.exec(html)[1];
-	result.URL = strReplace(result.URL, "%26", "&");
-	result.URL = strReplace(result.URL, "&amp;", "&");
+	var video_url = /video\.src\s*=\s*'(.*?)'/;
+	if (video_url.test(html)) {
+		result.URL = video_url.exec(html)[1];
+	}
+
 	// get cookies
 	result.cookies = http.getCookies("|");
+
 	// return the video information
 	return result;
 }
@@ -61,8 +71,8 @@ function getVideoInformation(url)
 function searchVideos(keyWord, pageIndex)
 {
 	const URL_SEARCH = "http://www.youporn.com/search/?query=%1&type=straight&page=%2";
-	const HTML_SEARCH_START = '<div class="videoList"';
-	const HTML_SEARCH_FINISH = 'id="related-searches"';
+	const HTML_SEARCH_START = '<div class="videoList';
+	const HTML_SEARCH_FINISH = 'id="relatedSearches"';
 	const HTML_SEARCH_SEPARATOR = '</li>';
 	// replace all spaces for "+"
 	keyWord = strReplace(keyWord, " ", "+");
@@ -100,12 +110,11 @@ function parseResultItem(searchResults, html)
 	// get video description
 	description = copyBetween(html, '<div class="views">', '</div>');
 	// get video duration
-	tmp = copyBetween(html, '<h2 class="duration">', '</h2>');
+	tmp = copyBetween(html, '<div class="duration">', '<span>');
 	duration = convertToSeconds(tmp); 
 	// get rating
-	tmp = copyBetween(html, '<div class="rating">', '</div>');
-	tmp = copyBetween(tmp, 'class="stars star-', '"');
-	rating = strReplace(tmp, "-", ".");
+	tmp = copyBetween(html, '<div class="rating up">', '<span>');
+	rating = strReplace(tmp, "%", "") / 100;
 	// add to results list
 	searchResults.addSearchResult(videoUrl, imageUrl, title, description, duration, rating);
 }

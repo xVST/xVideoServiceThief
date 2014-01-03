@@ -25,12 +25,12 @@
 
 function RegistVideoService()
 {
-	this.version = "1.0.0";
+	this.version = "1.0.1";
 	this.minVersion = "2.0.0a";
 	this.author = "crapmaster & Xesc & Technology 2011";
 	this.website = "http://www.wtfpeople.com";
 	this.ID = "wtfpeople.com";
-	this.caption = "WTF People";
+	this.caption = "wtfpeople";
 	this.adultContent = true;
 	this.musicSite = false;
 }
@@ -45,11 +45,10 @@ function getVideoInformation(url)
 	var html = http.downloadWebpage(url);
 
 	// get video title
-	result.title = copyBetween(html, 'class="title"><h1>', '</h1>');
+	result.title = copyBetween(html, '<title>', '</title>');
 
 	// get the video  url
-	var videoUrl = copyBetween(html, '<div id="mediaspace" name="mediaspace"><a href="', '">');
-
+	var videoUrl = copyBetween(html, '<a class="videolink" href="', '">');
 	result.URL=cleanUrl(videoUrl);
 
 	// return the video information
