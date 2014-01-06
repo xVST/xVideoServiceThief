@@ -34,7 +34,7 @@
 	#include <QAxWidget>
 #else
 	#ifndef Q_OS_MACX
-		#include <QtWebKit>
+		#include <QWebView>
 	#else
 		class WebViewWidget;
 	#endif
