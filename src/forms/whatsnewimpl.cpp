@@ -66,7 +66,11 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	QUrl url("http://xviservicethief.sourceforge.net/whatsnew/display.php");
 	url.setQuery(urlQuery);
 	// open whats new page
+#if defined STATIC_BUILD && defined Q_OS_WIN32
+	webView->dynamicCall("Navigate(const QString&)", url);
+#else
 	webView->load(url);
+#endif
 }
 
 WhatsNewImpl::~WhatsNewImpl()
