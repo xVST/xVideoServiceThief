@@ -63,7 +63,7 @@
         </size>
        </property>
        <property name="text">
-        <string>I don't want them</string>
+        <string>Disable adult sites</string>
        </property>
       </widget>
      </item>
@@ -79,7 +79,7 @@
         </size>
        </property>
        <property name="text">
-        <string>No</string>
+        <string>Continue</string>
        </property>
        <property name="default">
         <bool>true</bool>
