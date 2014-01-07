@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -268,7 +268,7 @@ void VideoConverter::parseOutput(QString output)
 	if (videoLength == 0)
 	{
 		outputAll += output;
-		
+
 		if (outputAll.indexOf("Duration: ") > -1)
 		{
 			setVideoDuration(copyBetween(outputAll, "Duration: ", ", start"));
@@ -284,7 +284,7 @@ void VideoConverter::parseOutput(QString output)
 void VideoConverter::initTimer()
 {
 	// start internal timer
-	if (internalTimer != 0) 
+	if (internalTimer != 0)
 		this->killTimer(internalTimer);
 
 	internalTimer = this->startTimer(1000);

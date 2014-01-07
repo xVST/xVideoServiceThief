@@ -1,6 +1,6 @@
 echo xVideoServiceThief MinGW automated compiler script
 echo Note: Configure your envirotment variables before execute this Bat
-echo Copyright Xesc and Technolgy 2010-2013
+echo Copyright Xesc and Technolgy 2010-2014
 
 set QtVersion=5.0.2
 set QtDir=C:\ProgramacioLibs\Qt\Qt%QtVersion%-mingw\%QtVersion%\mingw47_32\bin

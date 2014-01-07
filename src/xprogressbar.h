@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -56,7 +56,7 @@ Q_OBJECT
 		QColor gradColor1;				//!< Gradient color 1
 		QColor gradColor2;				//!< Gradient color 2
 		/*! Configure the color schema */
-		void setColor();	
+		void setColor();
 	public:
 		/*! Class constructor */
 		xProgressBar(QRect rect, QPainter *painter, int schemaIndex = 0);

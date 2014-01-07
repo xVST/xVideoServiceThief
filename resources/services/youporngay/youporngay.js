@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.0";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2012";
+	this.author = "Xesc & Technology 2014";
 	this.website = "http://www.youporngay.com/";
 	this.ID = "youporngay.com";
 	this.caption = "YouPorn Gay";
@@ -103,7 +103,7 @@ function parseResultItem(searchResults, html)
 	description = copyBetween(html, '<div class="views">', '</div>');
 	// get video duration
 	tmp = copyBetween(html, '<h2 class="duration">', '</h2>');
-	duration = convertToSeconds(tmp); 
+	duration = convertToSeconds(tmp);
 	// get rating
 	tmp = copyBetween(html, '<div class="rating">', '</div>');
 	tmp = copyBetween(tmp, 'class="stars star-', '"');

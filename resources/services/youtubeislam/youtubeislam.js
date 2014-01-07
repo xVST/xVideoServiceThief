@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.1";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2010";
+	this.author = "Xesc & Technology 2014";
 	this.website = "http://www.tubeislam.com/";
 	this.ID = "tubeislam.com";
 	this.caption = "TubeIslam";

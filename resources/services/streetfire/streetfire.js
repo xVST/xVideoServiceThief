@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2010 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.2";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2010";
+	this.author = "Xesc & Technology 2014";
 	this.website = "http://videos.streetfire.net/";
 	this.ID = "videos.streetfire.net";
 	this.caption = "StreetFire";

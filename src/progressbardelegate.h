@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -30,15 +30,15 @@
 
 class VideoListController;
 
-class ProgressBarDelegate : public QItemDelegate 
+class ProgressBarDelegate : public QItemDelegate
 {
 Q_OBJECT
 	private:
 		VideoListController *videoList;
 	public:
 		ProgressBarDelegate(QObject *parent = 0, VideoListController *videoList = NULL);
-		void paint(QPainter * painter, const QStyleOptionViewItem & option, 
+		void paint(QPainter * painter, const QStyleOptionViewItem & option,
 			const QModelIndex & index ) const;
-}; 
+};
 
 #endif // __PROGRESSBARDELEGATE_H__

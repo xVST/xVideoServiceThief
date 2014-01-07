@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -55,10 +55,10 @@ void LanguageManager::loadLangFile(QString langFile)
 	{
 		languagesList->append(new Language);
 		Language *language = languagesList->last();
-		
+
 		QFileInfo file(langFile);
 		QSettings langInfo(langFile, QSettings::IniFormat);
-		
+
 		language->setFile(file.fileName());
 		language->setLangFile(langInfo.value("language/file", "").toString());
 		language->setId(langInfo.value("language/id", "").toString());
@@ -88,10 +88,10 @@ void LanguageManager::loadLangFiles(QString langDir)
 
 	QStringList languageFiles;
 	QDir languagesDir(langDir);
-	
+
 	languageFiles = languagesDir.entryList(QDir::Files, QDir::Name);
 	languageFiles = languageFiles.filter(".language");
-	
+
 	foreach (QString langFile, languageFiles)
 		if (langFile.endsWith(".language"))
 			loadLangFile(QDir::toNativeSeparators(langDir + "/" + langFile));
@@ -131,7 +131,7 @@ QString LanguageManager::get_qm_languageFile(QString langFile)
 	QFileInfo langFileInfo(langFile);
 	QSettings langInfo(langFile, QSettings::IniFormat);
 	QString qmFile = langInfo.value("language/file", "null").toString();
-	
+
 	if (qmFile.toLower() != "null" && QFile::exists(langFileInfo.path() + "/" + qmFile))
 		return langFileInfo.path() + "/" + qmFile;
 	else
@@ -141,14 +141,14 @@ QString LanguageManager::get_qm_languageFile(QString langFile)
 Language* LanguageManager::getLanguageInfo(QString langFile)
 {
 	Language *result = NULL;
-	
+
 	if (QFile::exists(langFile))
 	{
 		result = new Language;
-		
+
 		QFileInfo file(langFile);
 		QSettings langInfo(langFile, QSettings::IniFormat);
-		
+
 		result->setFile(file.fileName());
 		result->setLangFile(langInfo.value("language/file", "").toString());
 		result->setId(langInfo.value("language/id", "").toString());
@@ -157,7 +157,7 @@ Language* LanguageManager::getLanguageInfo(QString langFile)
 		result->setContact(langInfo.value("language/contact", "").toString());
 		result->setDescription(langInfo.value("language/description", "").toString());
 	}
-	
+
 	return result;
 }
 

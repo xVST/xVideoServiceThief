@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -223,22 +223,22 @@ void AddVideoImpl::edtURLChanged(const QString &text)
 	{
 		BlockedState bs = bsNotBlocked;
 		ok = !videoInformation->isBlockedHost(text, bs);
-		
-		if (bs == bsBlocked) 
+
+		if (bs == bsBlocked)
 			blockMsg = tr(" - Blocked site");
-		else if (bs == bsAdultContent) 
+		else if (bs == bsAdultContent)
 			blockMsg = tr(" - Adult content is not allowed");
 	}
-	
+
 	btnOk->setEnabled(ok);
-	
+
 	// set custom download visibility
 	lblCustomLink->setText(QString(linkTemplate).arg("custom_url").arg(tr("mark as custom download")));
 	lblCustomLink->setVisible(!videoInformation->isValidHost(text) && validURL(text, true));
 
 	// update edit color
 	updateEdtUrlColor(ok);
-	
+
 	// set host info
 	lblVideoService->setText(videoInformation->getHostCaption(text) + blockMsg + isCustomVideo);
 	imgService->setPixmap(QPixmap(videoInformation->getHostImage(text, true)));

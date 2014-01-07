@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@
 #include "../videoinformation.h"
 #include "../options.h"
 
-BugReportImpl::BugReportImpl(ProgramOptions *programOptions, QWidget * parent, Qt::WindowFlags f) 
+BugReportImpl::BugReportImpl(ProgramOptions *programOptions, QWidget * parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
@@ -61,7 +61,7 @@ BugReportImpl::BugReportImpl(ProgramOptions *programOptions, QWidget * parent, Q
 BugReportImpl::~BugReportImpl()
 {
 	programOptions->setDisplayBugReport(!chbNoErrors->isChecked());
-	
+
 	delete trackerReport;
 }
 
@@ -144,7 +144,7 @@ void BugReportImpl::trackerReportSent(QString result)
 	line_2->hide();
 	lblSending->hide();
 	prbSending->hide();
-	
+
 	if (result == "OK")
 	{
 		native_alert(this, QMessageBox::Information, "xVideoServiceThief Tracker", tr("Thank you for your report."), tr("Ok"));

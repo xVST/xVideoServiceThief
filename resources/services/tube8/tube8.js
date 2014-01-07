@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2011 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@
 function RegistVideoService() {
 	this.version = "1.0.2";
 	this.minVersion = "2.0.0a";
-	this.author = "crapmaster & Xesc & Technology 2011";
+	this.author = "crapmaster & Xesc & Technology 2014";
 	this.website = "http://www.tube8.com/";
 	this.ID = "tube8.com";
 	this.caption = "Tube8";
@@ -76,7 +76,7 @@ function searchVideos(keyWord, pageIndex) {
 	if (noResIx == -1) {
 
 		// get the search summary
-		var summary = copyBetween(html, '<div class="title-bar"><h1><span style="float:left;">', '</span>'); 
+		var summary = copyBetween(html, '<div class="title-bar"><h1><span style="float:left;">', '</span>');
 		summary = cleanSummary(summary);
 		searchResults.setSummary(summary);
 
@@ -129,8 +129,8 @@ function parseResultItem(searchResults, html) {
 	description = "";
 
 	// get video duration
-	tmp = copyBetween(html, '<div class="video-right-text float-right"><strong>', '</strong></div>');	
-	duration = convertToSeconds(tmp); 
+	tmp = copyBetween(html, '<div class="video-right-text float-right"><strong>', '</strong></div>');
+	duration = convertToSeconds(tmp);
 
 	// get rating
 	tmp = copyBetween(html, '<div class="float-left"', '</div>');

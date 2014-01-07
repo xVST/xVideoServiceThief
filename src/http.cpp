@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -665,7 +665,7 @@ void Http::addCookies(QString cookies, const QString separator)
 }
 
 QString Http::getCookies(const QString separator)
-{	
+{
 	return static_cast<Cookies*>(http->cookieJar())->getCookies(separator);
 }
 

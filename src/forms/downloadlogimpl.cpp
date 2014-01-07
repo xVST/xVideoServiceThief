@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -29,7 +29,7 @@
 #include "../videoinformation.h"
 #include "../tools.h"
 
-DownloadLogImpl::DownloadLogImpl(QWidget * parent, Qt::WindowFlags f) 
+DownloadLogImpl::DownloadLogImpl(QWidget * parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
@@ -53,13 +53,13 @@ void DownloadLogImpl::buildLog(QList<LogEntry> logEntries, VideoInformation *vid
 	for (int n = 0; n < logEntries.count(); n++)
 	{
 		QTreeWidgetItem *item = new LogTreeWidgetItem(lsvLog);
-		
+
 		item->setText(0, logEntries.at(n).dateTime.toString());
 		item->setText(1, logEntries.at(n).title);
 		item->setText(2, logEntries.at(n).URL);
-		
+
 		item->setIcon(0, QIcon(videoInformation->getHostImage(logEntries.at(n).URL)));
-		
+
 		item->setSizeHint(0, QSize(18,18));
 
 		item->setData(0, Qt::UserRole, logEntries.at(n).dateTime);

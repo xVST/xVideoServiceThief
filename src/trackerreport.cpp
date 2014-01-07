@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -47,13 +47,13 @@ QString TrackerReport::getUniqueID()
 	qsrand(QDateTime::currentDateTime().toTime_t());
 	int offset = qrand()%dateKey.length() - 1;
 	int pos = offset + 1;
-	
+
 	while (offset != pos)
 	{
 		pos = pos < dateKey.length() - 1 ? pos + 1 : 0;
 		uniqueKey += dateKey.at(pos);
 	}
-	
+
 	return uniqueKey;
 }
 

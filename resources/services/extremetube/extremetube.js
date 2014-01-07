@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2011 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.4";
 	this.minVersion = "2.0.0a";
-	this.author = "crapmaster & Xesc & Technology 2011";
+	this.author = "crapmaster & Xesc & Technology 2014";
 	this.website = "http://www.extremetube.com/";
 	this.ID = "extremetube.com";
 	this.caption = "Extremetube";
@@ -80,7 +80,7 @@ function searchVideos(keyWord, pageIndex) {
 	if (noResIx == -1) {
 
 		// get the search summary
-		var summary = copyBetween(html, '<div class="result-container">', '<div class="myuploads-wrapper-content">'); 
+		var summary = copyBetween(html, '<div class="result-container">', '<div class="myuploads-wrapper-content">');
 		summary = copyBetween(summary, '<h2>', '</h2>');
 		summary = cleanSummary(summary);
 		searchResults.setSummary(summary);
@@ -133,8 +133,8 @@ function parseResultItem(searchResults, html) {
 	description = "";
 
 	// get video duration
-	tmp = copyBetween(html, '<div class="time-video absolute">', '</div>');	
-	duration = convertToSeconds(tmp); 
+	tmp = copyBetween(html, '<div class="time-video absolute">', '</div>');
+	duration = convertToSeconds(tmp);
 
 	// get rating
 	rating = copyBetween(html, '<div class="absolute rate-val thumb-up-col">', '%</div>')/10;

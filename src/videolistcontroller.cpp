@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -108,7 +108,7 @@ void VideoListController::swapVideoItems(VideoItem *from, VideoItem *to)
 	{
 		int i = getVideoItemIndexByVideoItem(from);
 		int j = getVideoItemIndexByVideoItem(to);
-		
+
 		if (validItemIndex(i) && validItemIndex(j))
 		{
 			videoList->swap(i, j);
@@ -485,11 +485,11 @@ int VideoListController::getVideoItemCount(bool ignoreDeleted)
 	if (ignoreDeleted)
 	{
 		int count = 0;
-		
+
 		foreach (VideoItem *videoItem, *videoList)
 			if (!videoItem->isDeleted())
 				count++;
-				
+
 		return count;
 	}
 
@@ -590,8 +590,8 @@ void VideoListController::startDownload(VideoItem *videoItem)
 void VideoListController::pauseDownload(VideoItem *videoItem)
 {
 	if (videoItem != NULL)
-	{	
-		if (videoItem->isResuming()) 
+	{
+		if (videoItem->isResuming())
 		{
 			videoItem->setAsPaused();
 			videoItem->setAsNothingPreState();
@@ -657,18 +657,18 @@ void VideoListController::updateOptions()
 	// video information
 	videoInformation->setBlockAdultContent(programOptions->getBlockAdultContent());
 	videoInformation->setBlockAdultContentList(programOptions->getBlockedWebsitesList());
-	
+
 	// video download
 	videoDownload->setDownloadDir(programOptions->getDownloadDir());
 	videoDownload->setMaxActiveDownloads(programOptions->getMaxActiveDownloads());
 	videoDownload->updateHttpConfiguration();
-	
+
 	// converter
 	videoConverter->setFFmpegApp(programOptions->getFfmpegLibLocation());
 	videoConverter->setWorkingDir(programOptions->getDownloadDir());
 	videoConverter->setConversionConfig(programOptions->getConversionConf());
 	videoConverter->setDeleteOriginalVideo(programOptions->getDeleteVideosOnConvert());
-	
+
 	// schedule
 	schedule->setEnabled(programOptions->getScheduleEnabled());
 	schedule->load();
@@ -725,7 +725,7 @@ VideoInformation* VideoListController::getVideoInformation()
 void VideoListController::moveUP(VideoItem *videoItem)
 {
 	int prevItem = videoList->indexOf(videoItem);
-	
+
 	if (prevItem > 0)
 		swapVideoItems(videoItem, videoList->at(prevItem - 1));
 }
@@ -733,7 +733,7 @@ void VideoListController::moveUP(VideoItem *videoItem)
 void VideoListController::moveDOWN(VideoItem *videoItem)
 {
 	int nextItem = videoList->indexOf(videoItem);
-	
+
 	if (nextItem < getVideoItemCount() - 1)
 		swapVideoItems(videoItem, videoList->at(nextItem + 1));
 }

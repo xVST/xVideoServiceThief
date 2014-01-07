@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.3";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2012";
+	this.author = "Xesc & Technology 2014";
 	this.website = "http://www.pornhub.com/";
 	this.ID = "pornhub.com";
 	this.caption = "PornHub";

@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -45,7 +45,7 @@ xProgressBar::xProgressBar(QRect rect, QPainter *painter, int schemaIndex)
 void xProgressBar::setColor()
 {
 	/* TEMPORAL SCHEMA DEFINITION */
-	
+
 	switch (schemaIndex)
 	{
 		/* blue schema */
@@ -71,7 +71,7 @@ void xProgressBar::setColor()
 			gradColor2.setRgb(78, 194, 81);
 			// ok
 			break;
-			
+
 		/* red schema */
 		case 2:
 			// background
@@ -83,7 +83,7 @@ void xProgressBar::setColor()
 			gradColor2.setRgb(246, 118, 118);
 			// ok
 			break;
-			
+
 		/* gray schema */
 		case 3:
 			// background
@@ -97,7 +97,7 @@ void xProgressBar::setColor()
 			textColor = QColor(58, 58, 58);
 			// ok
 			break;
-			
+
 		/* yellow schema */
 		case 4:
 			// background
@@ -111,7 +111,7 @@ void xProgressBar::setColor()
 			textColor = QColor(215, 71, 0);
 			// ok
 			break;
-			
+
 		/* black schema */
 		case 5:
 			// background
@@ -123,7 +123,7 @@ void xProgressBar::setColor()
 			gradColor2.setRgb(113, 113, 113);
 			// ok
 			break;
-			
+
 		/* purple schema */
 		case 6:
 			// background
@@ -135,7 +135,7 @@ void xProgressBar::setColor()
 			gradColor2.setRgb(255, 121, 241);
 			// ok
 			break;
-			
+
 		/* maroon schema */
 		case 7:
 			// background
@@ -259,6 +259,6 @@ QPixmap xProgressBar::getPixmap(QSize size, float progressValue, bool displayTex
 	progressBar.setValue(progressValue);
 	progressBar.setDisplayText(displayText);
 	progressBar.paint();
-	
+
 	return pixmap;
 }

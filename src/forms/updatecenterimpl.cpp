@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -111,9 +111,9 @@ void UpdateCenterImpl::fillUpdates()
 		item->setText(1, updates->getUpdateItem(n)->getVersion());
 		item->setText(2, fileSizeToString(updates->getUpdateItem(n)->getSize()));
 		item->setText(3, "-");
-		
+
 		item->setSizeHint(0, QSize(18,18));
-		
+
 		item->setCheckState(0, Qt::Checked);
 	}
 }
@@ -123,11 +123,11 @@ void UpdateCenterImpl::itemChanged(QTreeWidgetItem* /*item*/, int /*column*/)
 	if (lsvUpdates->isEnabled())
 	{
 		bool enabled = false;
-	
+
 		for (int n = 0; n < lsvUpdates->topLevelItemCount(); n++)
 			if (lsvUpdates->topLevelItem(n)->checkState(0) == Qt::Checked)
 				enabled = true;
-		
+
 		btnUpdate->setEnabled(enabled);
 	}
 }
@@ -144,7 +144,7 @@ void UpdateCenterImpl::btnUpdateClicked()
 	// select checked updates
 	for (int n = 0; n < lsvUpdates->topLevelItemCount(); n++)
 		updates->getUpdateItem(n)->setChecked(lsvUpdates->topLevelItem(n)->checkState(0) == Qt::Checked);
-	
+
 	lsvUpdates->setEnabled(false);
 	btnUpdate->setEnabled(false);
 	updates->downloadUpdates();

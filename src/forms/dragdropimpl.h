@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -67,7 +67,7 @@ Q_OBJECT
 		void contextMenuEvent(QContextMenuEvent * event);
 		void addVideo(QString URL);
 	public:
-		DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList, 
+		DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList,
 					QWidget * parent = 0, Qt::WindowFlags f = 0);
 		~DragDropImpl();
 		void addVideoURL(QString URL);

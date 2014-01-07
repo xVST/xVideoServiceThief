@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@
 	/*! Get the token count from the String */
 	int getTokenCount(QString str, QString separator);
 
-	/*! Get the text between two tokens */	
+	/*! Get the text between two tokens */
 	QString copyBetween(QString str, QString from, QString to);
 
 	/*!  Convert the File Size to String (Bytes, KBytes, MBytes... */
@@ -80,22 +80,22 @@
 
 	/*! Calcule the % value */
 	float calculePercent(const float value, const float total);
-	
+
 	/*! Float to String (using locale config) */
 	QString floatToStr(const float value, const int precision = 2);
-	
+
 	/*! Get if we are running a Windows Vista*/
 	bool isWindowsVista();
 
 	/*! Compare versions */
 	int compareVersions(QString version1, QString version2);
-	
+
 	/*! Clear the URL */
 	QString cleanURL(QString URL);
-	
+
 	/*! Validate url */
 	bool validURL(QString URL, bool acceptRTMP = false);
-	
+
 	/*! Return if is a HTTP url */
 	bool isHttpURL(QString URL);
 
@@ -104,10 +104,10 @@
 
 	/*! Get the URL path + query */
 	QString getPathAndQuery(QUrl URL);
-	
+
 	/*! Open the file with its associated program */
 	bool openFile(QString filePath);
-	
+
 	/*! Open the directory into the defined explorer */
 	bool openDirectory(QString directoryPath);
 
@@ -129,19 +129,19 @@
 
 	/*! Convert a Decimal HTML Char into the respective HTML Code */
 	QString htmlCharToHtmlCode(QString html);
-	
+
 	/*! Convert a HTML Code into the respective Decimal HTML Char */
 	QString htmlCodeToHtmlChar(QString html);
-	
+
 	/*! Convert a standard char into a HTML char */
 	QString charToHtml(QChar asciiChar, bool htmlCodes = true);
-	
+
 	/*! Convert a HTML string into a "standard" string */
 	QString htmlToStr(QString html);
-	
+
 	/*! Convert a HTML char into a "standard" char */
 	QChar htmlToChar(QString html);
-	
+
 	/*! Convert a standard string into a HTML string */
 	QString strToHtml(QString str, bool htmlCodes = true);
 

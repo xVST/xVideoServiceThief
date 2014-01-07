@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@ static const int	 PROGRAM_VERSION_NUMBER	= 251;		//!< Current program version (n
 #ifdef Q_OS_WIN32
 static const QString CURRENT_OS = "MSWINDOWS";	//!< Microsoft windows version
 #endif
-#ifdef Q_OS_LINUX 
+#ifdef Q_OS_LINUX
 static const QString CURRENT_OS = "LINUX";		//!< Gnu/Linux version
 #endif
 #ifdef Q_OS_MACX

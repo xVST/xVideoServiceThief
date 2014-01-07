@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@ void ProgressBarDelegate::paint(QPainter * painter, const QStyleOptionViewItem &
 		// check if this item exists
 		if (videoItem != NULL)
 		{
-			if (videoItem->isDownloading() || videoItem->isConverting() || 
+			if (videoItem->isDownloading() || videoItem->isConverting() ||
 				videoItem->isAnyKindOfPaused() || videoItem->isResuming())
 			{
 				// paint the progress bar

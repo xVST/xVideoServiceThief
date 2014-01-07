@@ -1,9 +1,9 @@
 /*
 *
-* This file is part of xVideoServiceThief, 
+* This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2012 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -525,7 +525,7 @@ void VideoItem::setVideoInformation(VideoDefinition videoInformation, QObject *w
 	// convert the html title to human title
 	this->videoInfo.title = htmlToStr(this->videoInfo.title);
 	// set the extension
-	this->videoInfo.extension = videoInfo.extension; 
+	this->videoInfo.extension = videoInfo.extension;
 	// set if this video need login
 	this->videoInfo.needLogin = videoInformation.needLogin;
 	// set if is an audio file

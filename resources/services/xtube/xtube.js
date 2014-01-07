@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2010 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.6";
 	this.minVersion = "2.3.1";
-	this.author = "Xesc & Technology 2013";
+	this.author = "Xesc & Technology 2014";
 	this.website = "http://www.xtube.com/";
 	this.ID = "xtube.com";
 	this.caption = "XTube";
@@ -37,7 +37,7 @@ function RegistVideoService()
 
 function getVideoInformation(url)
 {
-	const URL_POST_XML = "http://www.xtube.com/find_video.php";	
+	const URL_POST_XML = "http://www.xtube.com/find_video.php";
 	const URL_POST_XML_PARAMS = "clip_id=%2&user_id=%1&video_id=%3";
 	// video information
 	var result = new VideoDefinition();
@@ -59,7 +59,7 @@ function getVideoInformation(url)
 	var post_params = strFormat(URL_POST_XML_PARAMS, userd_id, clip_id, video_id);
 	post_params = strReplace(post_params, "_", "%5F");
 	post_params = strReplace(post_params, "-", "%2D");
-	// get xml	
+	// get xml
 	var xml = http.downloadWebpagePost(URL_POST_XML, post_params);
 	var hash = copyBetween(xml+"&", "hash%3D", "&");
 	// get video url

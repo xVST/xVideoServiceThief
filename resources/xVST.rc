@@ -28,7 +28,7 @@
                 VALUE "FileDescription", "Download videos from Internet Video Services\0"
                 VALUE "FileVersion", "2.5.1\0"
                 VALUE "InternalName", "xVST\0"
-                VALUE "LegalCopyright", "Copyright (C) 2013 Xesc & Technology\0"
+                VALUE "LegalCopyright", "Copyright (C) 2014 Xesc & Technology\0"
                 VALUE "LegalTrademarks", "\0"
                 VALUE "OriginalFilename", "xVideoServiceThief.exe\0"
                 VALUE "ProductName", "xVideoServiceThief\0"

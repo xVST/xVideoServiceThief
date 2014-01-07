@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2010 Xesc & Technology
+* Copyright (C) 2007 - 2014 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ function RegistVideoService()
 {
 	this.version = "1.0.0";
 	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2010";
+	this.author = "Xesc & Technology 2014";
 	this.website = "http://www.ustream.tv/";
 	this.ID = "ustream.tv";
 	this.caption = "UStream";
@@ -36,15 +36,15 @@ function RegistVideoService()
 }
 
 function getVideoInformation(url)
-{	
+{
 	const URL_GET_FLV = "http://ustream.vo.llnwd.net/pd5/%1.flv";
 	// video information
 	var result = new VideoDefinition();
 	// download webpage
 	var http = new Http();
-	
+
 	var post = http.downloadWebpagePost("http://216.52.240.138/gateway.php", getGatewayPostParams(url));
-	
+
 	var html = http.downloadWebpage(url);
 	// get video title
 	result.title = copyBetween(html, '<h2 id="VideoTitle">', '</h2>');
@@ -81,12 +81,12 @@ function getGatewayPostParams(url)
 	var CAN = String.fromCharCode(24);
 
 	var C2  = String.fromCharCode(194);
-	
+
 	// video id
 	var videoId = "9276623";
-	
+
 	// post data stream
-	var postData = NUL + NUL + NUL + NUL + NUL + SOH + NUL + SI + "Viewer.getVideo" + NUL + STX;	
+	var postData = NUL + NUL + NUL + NUL + NUL + SOH + NUL + SI + "Viewer.getVideo" + NUL + STX;
 	postData    += "/" + "1" + NUL + NUL + NUL + C2 + NUL + NUL + NUL + SOH + ETX + NUL + BS + "autoplay";
 	postData    += SOH + SOH + NUL + EOT + "rpin" + STX + NUL + CAN + "rpin.0.09268754328445232";
 	postData    += NUL + BEL + "pageUrl" + STX + NUL + "&" + url + NUL + BEL + "videoId" + STX + NUL + BEL + videoId;
