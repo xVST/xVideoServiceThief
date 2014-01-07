@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="es">
+<TS version="2.1" language="es">
 <context>
     <name>AddVideo</name>
     <message>
@@ -255,13 +255,21 @@
     </message>
     <message>
         <location filename="../../ui/adultspermission.ui" line="66"/>
-        <source>I don&apos;t want them</source>
-        <translation>No los quiero</translation>
+        <source>Disable adult sites</source>
+        <translation>Eliminar sitios para adultos</translation>
     </message>
     <message>
         <location filename="../../ui/adultspermission.ui" line="82"/>
+        <source>Continue</source>
+        <translation>Continuar</translation>
+    </message>
+    <message>
+        <source>I don&apos;t want them</source>
+        <translation type="vanished">No los quiero</translation>
+    </message>
+    <message>
         <source>No</source>
-        <translation>No</translation>
+        <translation type="vanished">No</translation>
     </message>
     <message>
         <location filename="../../ui/adultspermission.ui" line="117"/>
@@ -629,7 +637,7 @@
 <context>
     <name>Credits</name>
     <message>
-        <location filename="../../ui/credits.ui" line="29"/>
+        <location filename="../../ui/credits.ui" line="23"/>
         <source>Credits</source>
         <translation>Créditos</translation>
     </message>

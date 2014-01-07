@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="gl">
+<TS version="2.1" language="gl">
 <context>
     <name>AddVideo</name>
     <message>
@@ -195,12 +195,8 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>I don&apos;t want them</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>No</source>
-        <translation type="unfinished">Non</translation>
+        <translation type="obsolete">Non</translation>
     </message>
     <message>
         <source>QFrame{background: white;} </source>
@@ -214,6 +210,14 @@
     <message>
         <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;&lt;p&gt;Also, the automatic updates will ignore future updates of those plugins and they will not being update.&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable adult sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Continue</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
