@@ -3,7 +3,7 @@
 # configure DMG
 DMG_NAME='xVST_2_5_1-intel.dmg'
 DMG_TITLE='xVideoServiceThief'
-DMG_SIZE='100m'
+DMG_SIZE='50m'
 
 # DMG template
 DMG_TEMPLATE='xVST-template.dmg'
