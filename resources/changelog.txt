@@ -10,7 +10,7 @@
 Windows:
 --------
 
-- Fixed bug with information window
+- Fixed bug (Error: Information window was too small)
 
 Mac OS X:
 ---------
