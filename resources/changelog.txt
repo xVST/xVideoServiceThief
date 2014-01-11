@@ -1,3 +1,8 @@
+2.5.2:
+------
+
+- Fixed bug (Error: Language packages were not installed causing updates to get stuck)
+
 2.5.1:
 ------
 
