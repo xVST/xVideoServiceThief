@@ -57,15 +57,15 @@ void Packer::buildPackage(const std::string packageFile)
 	if (package->is_open())
 	{
 		// write package header
-		const char *header_id = "XPK";
-		package->write(header_id, sizeof(header_id)); // package header id
+		const char *header_id = "XPK\0";
+		package->write(header_id, 4); // package header id
 
 		// add files into the package
 		for (int n = 0; n < static_cast<int>(files->size()); n++)
 		{
 			// get the file name
 			std::string fileName = getFileName(files->at(n));
-			int fileNameLength = fileName.length();
+			unsigned int fileNameLength = fileName.length();
 
 			// open file
 			std::ifstream *file = new std::ifstream(files->at(n).c_str(), std::ios::binary);
@@ -122,7 +122,7 @@ Unpacker::~Unpacker()
 
 void Unpacker::extractPackage(std::string packageFile, std::string destination, bool originalNames)
 {
-	std::ifstream *package = new std::ifstream(packageFile.c_str(), std::ios::binary);
+	std::ifstream *package = new std::ifstream(packageFile.c_str(), std::ios_base::in | std::ios::binary);
 	if (package->is_open())
 	{
 		// get the file size
@@ -140,7 +140,7 @@ void Unpacker::extractPackage(std::string packageFile, std::string destination, 
 			while (package->tellg() < packageSize)
 			{
 				// get the file name lenght
-				int fileNameLength;
+				unsigned int fileNameLength = 0;
 				package->read(reinterpret_cast<char *>(&fileNameLength), sizeof(fileNameLength));
 
 				// get the file name
