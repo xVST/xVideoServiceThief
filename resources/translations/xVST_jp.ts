@@ -40,6 +40,14 @@
         <translation>クリップボードの内容を貼り付け(テキストのみ)</translation>
     </message>
     <message>
+        <source>Select file with URLs</source>
+        <translation>URLでファイルを選択</translation>
+    </message>
+    <message>
+        <source>Select url&apos;s file</source>
+        <translation>ファイルでURLを選択</translation>
+    </message>
+    <message>
         <source>Video frame rate (Hz)</source>
         <translation>ビデオフレームレート(Hz)</translation>
     </message>
@@ -123,14 +131,6 @@
         <source>Video audio sampling rate combobox</source>
         <translation>映像 / 音声のサンプリングレート(Hz)</translation>
     </message>
-    <message>
-        <source>Select url&apos;s file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select file with URLs</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>AddVideoImpl</name>
@@ -186,38 +186,44 @@
 <context>
     <name>AdultsPermission</name>
     <message>
-        <source>Adults sites</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Yes, I&apos;m sure about my decision</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>No</source>
-        <translation type="obsolete">いいえ</translation>
-    </message>
-    <message>
-        <source>QFrame{background: white;} </source>
-        <translation type="unfinished">QFrame{background: white;} </translation>
-    </message>
-    <message>
-        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
-&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">いいえ</translation>
     </message>
     <message>
         <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;&lt;p&gt;Also, the automatic updates will ignore future updates of those plugins and they will not being update.&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;この設定の意味&lt;/b&gt; xVST でアダルトサイトを無効にすると、アダルトサイトからビデオをダウンロードするためのプラグインすべてが削除されます。&lt;/p&gt;&lt;p&gt;自動更新を有効にしていてもこれらのプラグインの更新は無視されます&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;注意:&lt;/b&gt; セキュリティ上の理由により､ここでの決定は後で変更できません。&lt;/font&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <source>Disable adult sites</source>
-        <translation type="unfinished"></translation>
+        <source>Adults sites</source>
+        <translation>アダルトサイト</translation>
+    </message>
+    <message>
+        <source>I don&apos;t want them</source>
+        <translation type="vanished">決定したくありません</translation>
     </message>
     <message>
         <source>Continue</source>
-        <translation type="unfinished"></translation>
+        <translation>続行</translation>
+    </message>
+    <message>
+        <source>Yes, I&apos;m sure about my decision</source>
+        <translation>はい、この設定で確定します</translation>
+    </message>
+    <message>
+        <source>Disable adult sites</source>
+        <translation>アダルトサイトを無効化</translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation>QFrame{background: white;} </translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
+        <translation>&lt;h3&gt;&lt;b&gt;アダルトサイトの取り扱いに関して&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;アダルトサイト用のプラグインを有効にしますか?&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -229,6 +235,12 @@
     <message>
         <source>Send the &quot;Bug report&quot; and close this dialog</source>
         <translation>この&quot;バグ報告&quot; を送信してダイアログを閉じる</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;この &quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot; は &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt; に送信されます。&lt;/p&gt;
+&lt;p&gt;&quot;&lt;b&gt;バグコメント&lt;/b&gt;&quot;にあなたの名前とE-メールを含めるかどうかは完全に任意なものです。&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
@@ -329,11 +341,6 @@
     <message>
         <source>Cancel button</source>
         <translation>中止ボタン</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1657,7 +1664,7 @@ background: white;
     </message>
     <message>
         <source>sec.</source>
-        <translation>秒</translation>
+        <translation>秒.</translation>
     </message>
     <message>
         <source>Output quality:</source>
@@ -1666,6 +1673,10 @@ background: white;
     <message>
         <source>Options menu</source>
         <translation>オプションメニュー</translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation>プロキシ アドレス</translation>
     </message>
     <message>
         <source>Port:</source>
@@ -1790,6 +1801,10 @@ background: white;
     <message>
         <source>Save and restore the current session</source>
         <translation>現在のセッションを次回も保持</translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation>ビデオに関するエラーが発生したときに &quot;&lt;b&gt;バグ報告を&lt;/b&gt;&quot; &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt; に送信します。&lt;br&gt;&lt;br&gt;この &quot;&lt;b&gt;バグ報告&lt;/b&gt;&quot;の内容は &lt;b&gt;xVST tracker&lt;/b&gt; へ送信されるだけで、いかなるデータも第三者に開示されたり、外部データベースに保存されたりすることはありません。</translation>
     </message>
     <message>
         <source>Proxy configuration</source>
@@ -2032,6 +2047,10 @@ background: white;
         <translation>ビデオを自動的にダウンロード</translation>
     </message>
     <message>
+        <source>Address of your proxy configuration</source>
+        <translation>プロキシ構成のアドレス</translation>
+    </message>
+    <message>
         <source>If this option is checked, the completed videos will not be restored in next session</source>
         <translation>ここにチェックすると、完了したビデオは、次回のセッション時から除外されます</translation>
     </message>
@@ -2042,6 +2061,10 @@ background: white;
     <message>
         <source>Adds a new schedule configuration</source>
         <translation>新規スケジュールに追加</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation>アドレス:</translation>
     </message>
     <message>
         <source>Proxy user name</source>
@@ -2214,22 +2237,6 @@ background: white;
     <message>
         <source>Display popup checkbox</source>
         <translation>ポップアップを表示</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Address of your proxy configuration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Proxy address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2691,16 +2698,16 @@ background: white;
         <translation>ビデオを再生</translation>
     </message>
     <message>
+        <source>Download not available...</source>
+        <translation>ダウンロードは利用できません....</translation>
+    </message>
+    <message>
         <source>&lt;p&gt;Is not possible to download this video.&lt;/p&gt;&lt;p&gt;The xVST didn&apos;t find any plugin capable to get the video information.&lt;/p&gt;</source>
         <translation>&lt;p&gt;この動画はダウンロード出来ません.&lt;/p&gt;&lt;p&gt; xVST 及びプラグインでは、いかなるビデオ情報も取得できませんでした.&lt;/p&gt;</translation>
     </message>
     <message>
         <source>Download video button</source>
         <translation>ビデオをダウンロード-ボタン</translation>
-    </message>
-    <message>
-        <source>Download not available...</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3161,7 +3168,7 @@ background: white;
     </message>
     <message>
         <source>What&apos;s new....</source>
-        <translation>更新履歴</translation>
+        <translation>更新履歴...</translation>
     </message>
 </context>
 <context>
