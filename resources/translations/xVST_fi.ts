@@ -1,159 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="fi_FI">
+<TS version="2.1" language="fi_FI">
 <context>
-    <name>Options</name>
-    <message>
-        <source>-</source>
-        <translation>-</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>&lt;</source>
-        <translation>&lt;</translation>
-    </message>
-    <message>
-        <source>&gt;</source>
-        <translation>&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;&lt;</source>
-        <translation>&lt;&lt;</translation>
-    </message>
-    <message>
-        <source>&gt;&gt;</source>
-        <translation>&gt;&gt;</translation>
-    </message>
+    <name>AddVideo</name>
     <message>
         <source>Ok</source>
         <translation>OK</translation>
-    </message>
-    <message>
-        <source>...</source>
-        <translation>...</translation>
-    </message>
-    <message>
-        <source>sec.</source>
-        <translation>sek.</translation>
     </message>
     <message>
         <source>Output quality:</source>
         <translation>Ulostulon laatu:</translation>
     </message>
     <message>
-        <source>Options menu</source>
-        <translation>Asetus valikko</translation>
-    </message>
-    <message>
-        <source>Port:</source>
-        <translation>Portti:</translation>
-    </message>
-    <message>
-        <source>Don&apos;t restore downloaded videos</source>
-        <translation>Älä palauta ladattuja videoita</translation>
-    </message>
-    <message>
-        <source>If this option is checked, after convert a downloaded video, the original video (FLV) is deleted from your hard disk</source>
-        <translation>Jos tämä vaihtoehto on valittuna, kun ladattu video on muunnettu, alkuperäinen video (FLV) poistetaan kiintolevyltä</translation>
-    </message>
-    <message>
-        <source>Open the Select directory dialog for select the downloads directory</source>
-        <translation>Valitse hakemisto valintaikkunan valitsemalla lataukset hakemisto</translation>
-    </message>
-    <message>
-        <source>Time remaining calculation:</source>
-        <translation>Jäljellä oleva aika:</translation>
-    </message>
-    <message>
-        <source>Period of time which automatic updates will check for new versions</source>
-        <translation>Aika jolloin tarkistetaan automaattisesti ohjelman uudet versiot</translation>
-    </message>
-    <message>
-        <source>If this option is checked, on close the xVideoServiceThief, the downloads list will be saved (and restored on open again the xVST)</source>
-        <translation>Jos tämä vaihtoehto on valittuna, sulje xVideoServiceThief, lataus luettelo tallennetaan (ja palautuksen jälleen avataan xVST)</translation>
-    </message>
-    <message>
-        <source>Use proxy server</source>
-        <translation>Käytä proxy palvelinta</translation>
-    </message>
-    <message>
-        <source>Delete the downloaded file on download error</source>
-        <translation>Poista ladattu video latausvirheen sattuessa</translation>
-    </message>
-    <message>
-        <source>Schedules checkbox</source>
-        <translation>Aikataulu valintaruutu</translation>
-    </message>
-    <message>
-        <source>List of user schedules</source>
-        <translation>Listaa aikataulut</translation>
-    </message>
-    <message>
-        <source>Ups! Configuration</source>
-        <translation>Ups! Asetukset</translation>
-    </message>
-    <message>
-        <source>Convert videos to Mpeg/DivX/etc...</source>
-        <translation>Muunna videot (Mpeg/DivX/jne.) muotoon.</translation>
-    </message>
-    <message>
         <source>Convert videos</source>
-        <translation>Muunna videot</translation>
-    </message>
-    <message>
-        <source>If this option is checked, on finish a download/conversion video an information popup window will be displayed</source>
-        <translation>Jos tämä vaihtoehto on valittu, latauksen/muuntamisen valmistuttua näytä ponnahdusikkuna videon tiedoista</translation>
-    </message>
-    <message>
-        <source>Remove selected schedule</source>
-        <translation>Poista valitut aikataulut</translation>
-    </message>
-    <message>
-        <source>Proxy password</source>
-        <translation>Proxyn salasana</translation>
+        <translation>Muunna videoita</translation>
     </message>
     <message>
         <source>Output format:</source>
         <translation>Ulostulon formaatti:</translation>
     </message>
     <message>
-        <source>Delete original video after conversion checkbox</source>
-        <translation>Poista alkuperäinen video muunnoksen jälkeen.</translation>
-    </message>
-    <message>
-        <source>Select a language file from the list:</source>
-        <translation>Valitse kielitiedosto listalta:</translation>
-    </message>
-    <message>
-        <source>Edit selected shedule</source>
-        <translation>Muokkaa valittua aikataulua</translation>
-    </message>
-    <message>
-        <source>Http configuration</source>
-        <translation>HTTP asetukset</translation>
-    </message>
-    <message>
-        <source>Remember last viewed options page (only for this session)</source>
-        <translation>Muista edellinen asetussivu (ainoastaan tässä istunnossa)</translation>
-    </message>
-    <message>
         <source>Audio sampling rate (Hz):</source>
         <translation>Äänen näytteenottotaajuus (Hz):</translation>
-    </message>
-    <message>
-        <source>Allowed websites list</source>
-        <translation>Sallittujen verkkosivujen luettelo</translation>
-    </message>
-    <message>
-        <source>Shcedules list</source>
-        <translation>Aikataululuettelo</translation>
-    </message>
-    <message>
-        <source>Select the ffmpeg directory</source>
-        <translation>Valitse ffmpeg hakemisto</translation>
     </message>
     <message>
         <source>Video output format combobox</source>
@@ -164,72 +32,12 @@
         <translation>Videon resoluutio:</translation>
     </message>
     <message>
-        <source>Proxy adress</source>
-        <translation>Proxy osoite</translation>
+        <source>Override original conversion options for this video</source>
+        <translation>Ohita alkuperäinen muuntaminen</translation>
     </message>
     <message>
-        <source>Save a Log with all downloaded videos (Date + Title + URL)</source>
-        <translation>Tallenna loki kaikista ladatuista videoista (Päiväys  + Otsikko + URL)</translation>
-    </message>
-    <message>
-        <source>Save and restore the current session</source>
-        <translation>Tallenna ja palauta nykyinen istunto</translation>
-    </message>
-    <message>
-        <source>Proxy configuration</source>
-        <translation>Proxy asetukset</translation>
-    </message>
-    <message>
-        <source>Time-out:</source>
-        <translation>Aikalisä:</translation>
-    </message>
-    <message>
-        <source>Clear the current downloads log</source>
-        <translation>Tyhjennä nykyinen latausloki</translation>
-    </message>
-    <message>
-        <source>Port of your proxy configuration</source>
-        <translation>Portti proxy asetukselle</translation>
-    </message>
-    <message>
-        <source>Install automatically the new versions</source>
-        <translation>Asenna automaattisesti uusi versio</translation>
-    </message>
-    <message>
-        <source>Use the system configuration</source>
-        <translation>Käytä järjestelmän asetuksia</translation>
-    </message>
-    <message>
-        <source>Display a popup window on finish a download/conversion video</source>
-        <translation>Näytä ponnahdusikkuna videon latauksen / muuntamisen valmistuttua</translation>
-    </message>
-    <message>
-        <source>Open the Select directory dialog for select the ffmpeg directory</source>
-        <translation>Valitse  valintaikkunasta hakemisto ffmpegille</translation>
-    </message>
-    <message>
-        <source>Languages list</source>
-        <translation>Kielitiedosto lista</translation>
-    </message>
-    <message>
-        <source>Select ffmpeg directory</source>
-        <translation>Valitse ffmped hakemisto</translation>
-    </message>
-    <message>
-        <source>Blocked websites list</source>
-        <translation>Estetyjen verkkosivujen luettelo</translation>
-    </message>
-    <message>
-        <source>Downloads directory</source>
-        <translation>Latauksien hakemisto</translation>
-    </message>
-    <message>
-        <source>User name:</source>
-        <translation>Käyttäjä nimi:</translation>
-    </message>
-    <message>
-        <source>Allowed websites:</source>
-        <translation>Sallitut verkko-osoitteet</translation>
+        <source>Paste the current clipboard content (only text)</source>
+        <translation>Liitä nykyisen leikepöydän sisältö (vain tekstiä)</translation>
     </message>
     <message>
         <source>Video frame rate (Hz)</source>
@@ -240,649 +48,402 @@
         <translation>Peruuta</translation>
     </message>
     <message>
-        <source>Description:</source>
-        <translation>Kuvaus:</translation>
-    </message>
-    <message>
-        <source>Disable adult websites support checkbox</source>
-        <translation>Poista aikuisviihdesivustojen tuki valintaruutu</translation>
-    </message>
-    <message>
-        <source>Edit selected schedule</source>
-        <translation>Muokkaa valittua aikataulua</translation>
-    </message>
-    <message>
-        <source>Select the downloads directory</source>
-        <translation>Valitse lataukset hakemisto</translation>
-    </message>
-    <message>
-        <source>Enable or disable user shcedules</source>
-        <translation>Salli tai poista käyttäjän aikataulut</translation>
-    </message>
-    <message>
-        <source>List with all installed languages</source>
-        <translation>Listaa kaikki asennetut kielet</translation>
-    </message>
-    <message>
-        <source>Contact:</source>
-        <translation>Yhteystiedot:</translation>
-    </message>
-    <message>
-        <source>Options</source>
-        <translation>Asetukset</translation>
-    </message>
-    <message>
-        <source>Check now for new updates</source>
-        <translation>Tarkista uudet päivitykset</translation>
-    </message>
-    <message>
-        <source>Path which the downloaded video will be saved</source>
-        <translation>Polku johon ladattu video tallentuu</translation>
-    </message>
-    <message>
-        <source>Check for new versions every:</source>
-        <translation>Tarkista uuden version saatavuus joka:</translation>
-    </message>
-    <message>
-        <source>FFmpeg Lib</source>
-        <translation>FFmpeg kirjasto</translation>
+        <source>Ok button</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Video audio sampling rate (Hz)</source>
         <translation>Videon ääninäytetaajuus (Hz)</translation>
     </message>
     <message>
-        <source>Type of your proxy configuration</source>
-        <translation>Kirjoita oman välityspalvelinmääräys</translation>
-    </message>
-    <message>
         <source>General video output quality</source>
-        <translation>Yleinen videon ulostulolaatu</translation>
+        <translation>Yleinen videon ulostulon laatu</translation>
     </message>
     <message>
         <source>Enable/disable the video conversions</source>
         <translation>Salli/poista videon muunnos</translation>
     </message>
     <message>
-        <source>Disable adult websites support</source>
-        <translation>Poista aikuisviihdesivustojen tuki </translation>
+        <source>Close without adding the URL</source>
+        <translation>Sulje lisäämättä URLia</translation>
     </message>
     <message>
-        <source>Password of your proxy configuration</source>
-        <translation>Salasana proxyn asetuksiin</translation>
-    </message>
-    <message>
-        <source>Bug report</source>
-        <translation>Vikailmoitus</translation>
-    </message>
-    <message>
-        <source>Adress:</source>
-        <translation>Osoite:</translation>
-    </message>
-    <message>
-        <source>Language Configuration </source>
-        <translation>Kieliasetukset</translation>
-    </message>
-    <message>
-        <source>Maximum simultaneous downloads value (the recommended value is between 4 and 6)</source>
-        <translation>Suurin samanaikaisten lataukset arvo (suositeltu arvo on välillä 4 ja 6)</translation>
-    </message>
-    <message>
-        <source>Language information</source>
-        <translation>Kielitiedot</translation>
-    </message>
-    <message>
-        <source>Select downloads directory</source>
-        <translation>Valitse lataushakemisto</translation>
-    </message>
-    <message>
-        <source>Language</source>
-        <translation>Kieli</translation>
-    </message>
-    <message>
-        <source>Updates Configuration</source>
-        <translation>Päivityksien asetukset</translation>
-    </message>
-    <message>
-        <source>Languages manager</source>
-        <translation>Kielimanageri</translation>
-    </message>
-    <message>
-        <source>Check for new versions on program startup</source>
-        <translation>Tarkista uudet versiot ohjelmaa käynnistettäessä</translation>
-    </message>
-    <message>
-        <source>Blocked websites:</source>
-        <translation>Estetyt sivustot:</translation>
-    </message>
-    <message>
-        <source>Remember last viewed options page checkbox</source>
-        <translation>Muista viimeksi katsellut sivun asetukset</translation>
-    </message>
-    <message>
-        <source>Session Configuration </source>
-        <translation>Istunnon asetukset</translation>
-    </message>
-    <message>
-        <source>Author:</source>
-        <translation>Tekijä:</translation>
-    </message>
-    <message>
-        <source>Install automatically new versions checkbox</source>
-        <translation>Asenna automaattisesti uudet versiot</translation>
-    </message>
-    <message>
-        <source>Save log checkbox</source>
-        <translation>Tallenna loki</translation>
-    </message>
-    <message>
-        <source>Close without saving changes</source>
-        <translation>Sulje tallentamatta muutoksia</translation>
-    </message>
-    <message>
-        <source>Delete the original downloaded file after the conversion</source>
-        <translation>Poista alkuperäinen ladattu tiedosto muuntamisen jälkeen</translation>
-    </message>
-    <message>
-        <source>If this option is checked, the support of adult websites will be disabled</source>
-        <translation>Jos tämä vaihtoehto on valittuna, tuki aikuisviihde sivustoille on poistettu</translation>
-    </message>
-    <message>
-        <source>Display &quot;Bug Report&quot; window on Video error</source>
-        <translation>Näytä &quot;Vikailmoitus&quot;-ikkuna Videon virheestä</translation>
-    </message>
-    <message>
-        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
-        <translation>Kun video heittää virheen, voit auttaa korjaamaan virhettä lähettämällä &quot;&lt;b&gt;Vikailmoituksen &lt;/ b&gt;&quot; meidän kautta &lt;a href = &quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt; SourceForge.net Tracker-järjestelmään &lt;/a&gt;.&lt;br&gt;&quot;&lt;b&gt; Vikailmoitus&lt;/b&gt;&quot; on tallennettu vain &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt; SF.net trackeriin &lt;/ a&gt; ja on näkyvissä kaikille. eikä ylimääräistä tietoa ole tallennettu ulkoiseen tietokantaan.</translation>
+        <source>URL of the video to downloaded</source>
+        <translation>URL videon lataamiseen</translation>
     </message>
     <message>
         <source>General video output quality combobox</source>
-        <translation>Yleisen viden ulostulo laatu</translation>
+        <translation>Yleisen videon ulostulon laadun valintalaatikko</translation>
     </message>
     <message>
-        <source>If this option is checked, on program startup the xVST will check for new versions</source>
-        <translation>Jos tämä vaihtoehto on valittuna, ohjelmaa käynnistettäessä xVST tarkistaa uudet versiot</translation>
-    </message>
-    <message>
-        <source>Select which websites are allowed and which websites must be blocked:</source>
-        <translation>Valitse, mitkä sivustot ovat sallittuja ja mitkä sivustot on estettyjä:</translation>
+        <source>Paste URL from clipboard</source>
+        <translation>Lisää URL leikepöydältä</translation>
     </message>
     <message>
         <source>Video resolution</source>
         <translation>Videon resoluutio</translation>
     </message>
     <message>
-        <source>Log viewer button</source>
-        <translation>Lokin näyttöpainike</translation>
+        <source>Video URL</source>
+        <translation>Videon URL</translation>
     </message>
     <message>
-        <source>User name of your proxy configuration</source>
-        <translation>Käyttäjän nimi välityspalvelinmääritykseen</translation>
+        <source>Convert video to Mpeg/DivX/etc...</source>
+        <translation>Muunna videot (Mpeg/DivX/etc)...</translation>
     </message>
     <message>
-        <source>Adress of your proxy configuration</source>
-        <translation>Osoite välityspalvelinmääräykseen</translation>
+        <source>Enter the video URL to download:</source>
+        <translation>Lisää videon URL ladattavaksi:</translation>
     </message>
     <message>
-        <source>Download videos automatically checkbox</source>
-        <translation>Lataa videot automaattisesti</translation>
+        <source>Video resolution combobox</source>
+        <translation>Videon resoluution valintalaatikko</translation>
     </message>
     <message>
-        <source>If this option is checked, the completed videos will not be restored in next session</source>
-        <translation>Jos tämä vaihtoehto on valittuna, valmistuneita videoita ei palauteta seuraavassa istunnossa</translation>
+        <source>Video output format</source>
+        <translation>Videon ulostulon formaatti</translation>
     </message>
     <message>
-        <source>Password:</source>
-        <translation>Salasana:</translation>
+        <source>Add Video URL</source>
+        <translation>Lisää Videon URL</translation>
     </message>
     <message>
-        <source>Adds a new schedule configuration</source>
-        <translation>Lisää uusi aikataulu asetuksiin</translation>
+        <source>Video frame rate combobox</source>
+        <translation>Videon kuvataajuuden valintalaatikko</translation>
     </message>
     <message>
-        <source>Proxy user name</source>
-        <translation>Proxy käyttäjänimi</translation>
+        <source>Add the current URL and close this dialog</source>
+        <translation>Lisää nykyinen URL ja sulje tämä ikkuna</translation>
     </message>
     <message>
-        <source>Save and close the current configuration</source>
-        <translation>Tallenna ja sulje nykyisen kokoonpanon asetukset</translation>
+        <source>Cancel button</source>
+        <translation>Peruuta painike</translation>
     </message>
     <message>
-        <source>Path of the ffmpeg library (video conversions program)</source>
-        <translation>Polku ffmpeg kirjastoon (videon muunnos ohjelmaan)</translation>
+        <source>Video audio sampling rate combobox</source>
+        <translation>Videon ääninäytetaajuuden valintalaatikko</translation>
     </message>
     <message>
-        <source>Proxy type:</source>
-        <translation>Proxy tyyppi:</translation>
+        <source>Select url&apos;s file</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Clear Log</source>
-        <translation>Tyhjennä Loki</translation>
+        <source>Select file with URLs</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AddVideoImpl</name>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Cancel and close button</source>
-        <translation>Peruuta ja sulje painike</translation>
+        <source>No valid URLs detected in this file</source>
+        <translation>URL kelvoton</translation>
     </message>
     <message>
-        <source>Period of time combobox</source>
-        <translation>Ajanjakso valintaruutu</translation>
+        <source>Already added</source>
+        <translation>Jo lisätty</translation>
     </message>
     <message>
-        <source>Edit the selected schedule configuration</source>
-        <translation>Muokkaa valitun aikataulun kokoonpanon asetuksia</translation>
+        <source>You already added this video. Check your downloads list.</source>
+        <translation>Olet jo lisännyt tämän videon. Tarkista latauslista.</translation>
     </message>
     <message>
-        <source>Maximum simultaneous downloads value</source>
-        <translation>Suurin samanaikaisten latauksien arvo</translation>
+        <source>%1 valid URLs detected in this file</source>
+        <translation>%1 kelvollisia URL-osoitteita löydetty tälle tiedostolle</translation>
     </message>
     <message>
-        <source>Check for new versions</source>
-        <translation>Tarkista uudet versiot</translation>
+        <source>Select URL&apos;s file</source>
+        <translation>Valitse URL tiedosto</translation>
     </message>
     <message>
-        <source>If this option is checked, on open again the &quot;Options&quot; dialog, the last page viewed (Basic, Language, etc...) is displayed again (only for this session)</source>
-        <translation>Jos tämä vaihtoehto on valittu, &quot;Asetukset&quot; dialogi on auki, viimeinen sivu (Perus, kieli, jne. ..) näkyy jälleen (vain tässä istunnossa)</translation>
+        <source> (%1 selected)</source>
+        <translation> (%1 valittu)</translation>
     </message>
     <message>
-        <source>Save and close button</source>
-        <translation>Tallenna ja sulje painike</translation>
+        <source>select URLs to download</source>
+        <translation>Valitut URL ladataan</translation>
+    </message>
+    <message>
+        <source>User custom video download</source>
+        <translation>Käyttäjän mukautettu videolataaja</translation>
+    </message>
+    <message>
+        <source> - Adult content is not allowed</source>
+        <translation> - Aikuisviihde ei ole sallittu</translation>
+    </message>
+    <message>
+        <source>mark as custom download</source>
+        <translation>merkitse custom lataukseen</translation>
+    </message>
+    <message>
+        <source> - Blocked site</source>
+        <translation>- Estetty sivusto</translation>
+    </message>
+</context>
+<context>
+    <name>AdultsPermission</name>
+    <message>
+        <source>Adults sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Yes, I&apos;m sure about my decision</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable adult sites</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Continue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;&lt;p&gt;Also, the automatic updates will ignore future updates of those plugins and they will not being update.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation type="unfinished">QFrame{background: white;} </translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>BugReport</name>
+    <message>
+        <source>Send</source>
+        <translation>Lähetä</translation>
+    </message>
+    <message>
+        <source>Send the &quot;Bug report&quot; and close this dialog</source>
+        <translation>Lähetä vikailmoitus ja sulje tämä ikkuna</translation>
+    </message>
+    <message>
+        <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
+        <translation>Älä näytä bugiraporttia seuraavalla kerralla</translation>
+    </message>
+    <message>
+        <source>Your name will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
+        <translation>Nimesi lisätään osaksi &quot;vikailmoitusta&quot;. Tämä kenttä on täysin vapaahtoinen</translation>
+    </message>
+    <message>
+        <source>Your comments: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
+        <translation>Kommentit: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(englanniksi, vapaahtoinen)&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>Sending your &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;... please wait...</source>
+        <translation>Lähetetään&quot;&lt;b&gt;Virheilmoitus&lt;/b&gt;&quot;...Odota hetki...</translation>
+    </message>
+    <message>
+        <source>xVST version: &lt;b&gt;%1&lt;/b&gt;</source>
+        <translation>xVST versio: &lt;b&gt;%1&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Close this dialog without sending the &quot;Bug report&quot;</source>
+        <translation>Sulje tämä ikkuna kun &quot;virheilmoitus&quot; on lähetetty</translation>
+    </message>
+    <message>
+        <source>Your name: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
+        <translation>Nimesi: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(vapaahtoinen)&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>Your email</source>
+        <translation>Sähköpostiosoitteesi</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>Bug Report</source>
+        <translation>Vikailmoitus</translation>
+    </message>
+    <message>
+        <source>Your email will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
+        <translation>Sähköpostiosoitteesi lisätään osaksi &quot;vikailmoitusta&quot;. Tämä kenttä on täysin vapaahtoinen</translation>
+    </message>
+    <message>
+        <source>Your comments</source>
+        <translation>Kommentit</translation>
+    </message>
+    <message>
+        <source>You can add your own comment which will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
+        <translation>Voit lisätä oman kommenttisi, joka lisätään osaksi &quot;Vikailmoitusta&quot;. Tämä kenttä on täysin vapaaehtoinen</translation>
+    </message>
+    <message>
+        <source>Send button</source>
+        <translation>Lähetä painike</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Ops! An error occurred while trying to download the video.&lt;/b&gt;
+&lt;p&gt;You can help to fix this problem sending us an &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;. This Report will be used to analyze the error and if is necessary fix it and improve the next version of xVST.&lt;/p&gt;
+&lt;p&gt;Your help is allways welcomed!&lt;/p&gt;</source>
+        <translation>&lt;b&gt;Ops! Virhe videon latauksessa.&lt;/b&gt;
+&lt;p&gt;Voit auttaa korjaamaan tämän ongelman lähettämällä meille &quot;&lt;b&gt;Vikailmoituksen&lt;/b&gt;&quot;. Tällä vikailmoituksella voimme analysoida virheen ja jos on tarpeen korjata ja parantaa se seuraavassa xVST:n versiossa . &lt;/ p&gt;
+&lt;p&gt;Apusi on aina tervetullut&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <source>If this option is checked, this dialog will not be displayed again (and no &quot;Bug report&quot; will be sent)</source>
+        <translation>Jos tämä vaihtoehto on valittuna, tätä valintaikkunaa ei tule näkyviin uudelleen (eikä &quot;vikailmoitusta&quot; lähetetä)</translation>
+    </message>
+    <message>
+        <source>Video URL: &lt;b&gt;%1&lt;/b&gt;</source>
+        <translation>Videon URL: &lt;b&gt;%1&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation type="vanished">&lt;p&gt;&quot;&lt;b&gt;Vikailmoitus&lt;/b&gt;&quot; lähetetään &lt;a href = &quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt; SourceForge.net Tracker-järjestelmään &lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sinun nimesi ja sähköpostiosoitteesi lisätään&lt;b&gt;Virheilmoitukseen&lt;/b&gt;&quot;, tämä on kuitenkin täysin vapaaehtoista.&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <source>Your name</source>
+        <translation>Nimesi</translation>
+    </message>
+    <message>
+        <source>QFrame{background: white;} </source>
+        <translation>QFrame{background: white;} </translation>
+    </message>
+    <message>
+        <source>Error information</source>
+        <translation>Virheen tiedot</translation>
+    </message>
+    <message>
+        <source>Do not display &quot;Bug Report&quot;</source>
+        <translation>Älä näytä &quot;Vikailmoitusta&quot;</translation>
+    </message>
+    <message>
+        <source>View which information will be sent</source>
+        <translation>Näytä mitä tietoja lähetetään</translation>
+    </message>
+    <message>
+        <source>Email: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
+        <translation>Sähköpostiosoite: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(vapaahtoinen)&lt;/span&gt;</translation>
+    </message>
+    <message>
+        <source>Cancel button</source>
+        <translation>Peruuta painike</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>BugReportImpl</name>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Thank you for your report.</source>
+        <translation>Kiitos raportista.</translation>
+    </message>
+</context>
+<context>
+    <name>ChangelogImpl</name>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>List of program versions</source>
+        <translation>Listaa ohjelman versiot</translation>
+    </message>
+    <message>
+        <source>Versions combobox</source>
+        <translation>Versiot valintaruutu</translation>
+    </message>
+    <message>
+        <source>Ok button</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>Muutosloki</translation>
     </message>
     <message>
         <source>Version:</source>
         <translation>Versio:</translation>
     </message>
     <message>
-        <source>Video resolution combobox</source>
-        <translation>videon resoluution valintaruutu</translation>
+        <source>xVST Changelog</source>
+        <translation>xVST Muutosloki</translation>
     </message>
     <message>
-        <source>New schedule button</source>
-        <translation>Uuden aikataulun painike</translation>
+        <source>List of the complete xVST changelog</source>
+        <translation>Täydellinen luettelo xVST muutoslokista</translation>
     </message>
     <message>
-        <source>Video output format</source>
-        <translation>videon ulostulon formaatti</translation>
+        <source>Close the Changelot dialog</source>
+        <translation>Sulje muutoslokin ikkuna</translation>
     </message>
     <message>
-        <source>Enable/disable proxy support</source>
-        <translation>Salli/posta proxy tuki</translation>
-    </message>
-    <message>
-        <source>If this option is checked, the xVST will save a log with all downloaded videos (Date + Title + URL)</source>
-        <translation>Jos tämä vaihtoehto on valittuna, xVST tallentaa lokiin kaikki ladatut videot (Päiväys + Otsikko + URL)</translation>
-    </message>
-    <message>
-        <source>Video frame rate combobox</source>
-        <translation>Videon kuvataajuuden valintaruutu</translation>
-    </message>
-    <message>
-        <source>Ffmpeg directory</source>
-        <translation>Ffmpeg hakemisto</translation>
-    </message>
-    <message>
-        <source>Save and restore current session checkbox</source>
-        <translation>Tallenna ja palauta nykyinen istunto</translation>
-    </message>
-    <message>
-        <source>Enable/disable the &quot;Bug report&quot; window on video Error</source>
-        <translation>Päälle / pois &quot;Vikailmoitus&quot; ikkuna video virheestä</translation>
-    </message>
-    <message>
-        <source>Enable or disable automatic downloads</source>
-        <translation>Salli tai poista automaattiset lataukset</translation>
-    </message>
-    <message>
-        <source>Downloads</source>
-        <translation>Lataukset</translation>
-    </message>
-    <message>
-        <source>Customize my schedule download</source>
-        <translation>Muokkaa tallennettuja ajastuksia</translation>
-    </message>
-    <message>
-        <source>Internal FFmpeg</source>
-        <translation>Sissäinen FFmpeg</translation>
-    </message>
-    <message>
-        <source>Use this language</source>
-        <translation>Käytä tätä kieltä</translation>
-    </message>
-    <message>
-        <source>Download videos automatically</source>
-        <translation>Lataa videot automaattisesti</translation>
-    </message>
-    <message>
-        <source>Check updates button</source>
-        <translation>Tarkista päivitykset</translation>
-    </message>
-    <message>
-        <source>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</source>
-        <translation>Suurin samanaikaisten lataukset &lt;span style=&quot;color:#a9a9a9;&quot;&gt; (suositeltu arvo on 4 / 6 lataukset) &lt;/ span&gt;</translation>
-    </message>
-    <message>
-        <source>Add new schedule</source>
-        <translation>Lisää uusi aikataulu</translation>
-    </message>
-    <message>
-        <source>If this option is checked, the xVST will download and install automatically the new updates</source>
-        <translation>Jos tämä vaihtoehto on valittuna, xVST lataa ja asentaa automaattisesti uudet päivitykset</translation>
-    </message>
-    <message>
-        <source>Clear log button</source>
-        <translation>Tyhjennä loki-painike</translation>
-    </message>
-    <message>
-        <source>Check for updates checkbox</source>
-        <translation>Tarkista päivitykset</translation>
-    </message>
-    <message>
-        <source>Max. retries:</source>
-        <translation>Max. uudelleenyhdistämisyritykset:</translation>
-    </message>
-    <message>
-        <source>Remove the selected schedule configuration</source>
-        <translation>Poista valitut aikataulut kokoonpanon asetuksista</translation>
-    </message>
-    <message>
-        <source>Schedule Configuration</source>
-        <translation>Ajastuksen asetukset</translation>
-    </message>
-    <message>
-        <source>Video audio sampling rate combobox</source>
-        <translation>Videon ääninäytetaajuuden valintaruutu</translation>
-    </message>
-    <message>
-        <source>Proxy port</source>
-        <translation>Proxy portti</translation>
-    </message>
-    <message>
-        <source>Proxy type</source>
-        <translation>Proxy tyyppi</translation>
-    </message>
-    <message>
-        <source>View Log</source>
-        <translation>Näytä loki</translation>
-    </message>
-    <message>
-        <source>Open the Log viewer</source>
-        <translation>Avaa lokin katselin</translation>
-    </message>
-    <message>
-        <source>Display popup checkbox</source>
-        <translation>Näytä ponnahdusikkunan valintaruutu</translation>
+        <source>Close the Changelog dialog</source>
+        <translation>Sulje muutoslokin ikkuna</translation>
     </message>
 </context>
 <context>
-    <name>VideoItem</name>
+    <name>CheckUpdates</name>
     <message>
-        <source>-</source>
-        <translation>-</translation>
+        <source>Connecting...</source>
+        <translation>Yhdistää...</translation>
     </message>
     <message>
-        <source>/sec</source>
-        <translation>/sek</translation>
+        <source>Check updates...</source>
+        <translation>Tarkistaa päivityksiä....</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Virhe</translation>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
     </message>
     <message>
-        <source>Ready</source>
-        <translation>Valmis</translation>
+        <source>Cancel the checking for updates process and close this dialog</source>
+        <translation>Peruuta päivitys prosessi tarkistus ja sulje tämä ikkuna</translation>
     </message>
     <message>
-        <source>Converting...</source>
-        <translation>Muuntaa...</translation>
-    </message>
-    <message>
-        <source>Invalid file size</source>
-        <translation>Virheellinen tiedosto koko</translation>
-    </message>
-    <message>
-        <source>Unable to create the destination file</source>
-        <translation>Kohdetiedostoa ei voida luoda</translation>
-    </message>
-    <message>
-        <source>Need login...</source>
-        <translation>Tarvitsee kirjautumisen...</translation>
-    </message>
-    <message>
-        <source>The maximum allowed http redirections has been reached</source>
-        <translation>Suurin sallittu http:n uudelleenohjauksien määrä saavutettu</translation>
-    </message>
-    <message>
-        <source>Unable append data to file</source>
-        <translation>Datan liittäminen tiedostoon ei onnistu</translation>
-    </message>
-    <message>
-        <source>Invalid URL</source>
-        <translation>Virheellinen URL</translation>
-    </message>
-    <message>
-        <source>Failed to connect with RTMP server</source>
-        <translation>Yhteys RTMP palvelimeen epäonnistui</translation>
-    </message>
-    <message>
-        <source>File to resume not found</source>
-        <translation>Tiedostoa jatkamiseen ei löytynyt</translation>
-    </message>
-    <message>
-        <source>Resuming...</source>
-        <translation>Jatkaa...</translation>
-    </message>
-    <message>
-        <source>flvstreamer is missing (impossible download from RTMP server)</source>
-        <translation>flvstreamer puuttuu (mahdoton ladata RTMP palvelimelta)</translation>
-    </message>
-    <message>
-        <source>Completed</source>
-        <translation>Valmis</translation>
-    </message>
-    <message>
-        <source>Downloaded</source>
-        <translation>Ladattu</translation>
-    </message>
-    <message>
-        <source>Paused</source>
-        <translation>Tauko</translation>
-    </message>
-    <message>
-        <source>Converted</source>
-        <translation>Muuntaa</translation>
-    </message>
-    <message>
-        <source>Getting info...</source>
-        <translation>Hakee tietoja...</translation>
-    </message>
-    <message>
-        <source>Unable to create the destination dir</source>
-        <translation>Kohdetta ei voida luoda</translation>
-    </message>
-    <message>
-        <source>Download incomplete (due to download errors)</source>
-        <translation>Lataus puutteellinen (liian paljon virheitä)</translation>
-    </message>
-    <message>
-        <source>Unable to open the destination file</source>
-        <translation>Kohdetiedostoa ei voida avata</translation>
-    </message>
-    <message>
-        <source>The remote content was not found at the server </source>
-        <translation>Etäsisältöä ei löytynyt palvelimelta</translation>
-    </message>
-    <message>
-        <source>Failed on initialize the pthread_create</source>
-        <translation>Epäonnistunut alustus pthread_creat</translation>
-    </message>
-    <message>
-        <source>An another download is already active</source>
-        <translation>Toinen lataus on jo aktiivinen</translation>
-    </message>
-    <message>
-        <source>Canceled</source>
-        <translation>Peruutettu</translation>
-    </message>
-    <message>
-        <source>Updating info...</source>
-        <translation>Päivitetään tietoja ...</translation>
-    </message>
-    <message>
-        <source>The connection to the remote server timed out</source>
-        <translation>Yhteys palvelimeen aikakatkaistu</translation>
-    </message>
-    <message>
-        <source>Blocked</source>
-        <translation>Tukossa</translation>
-    </message>
-    <message>
-        <source>Deleted</source>
-        <translation>Poistettu</translation>
-    </message>
-    <message>
-        <source>The video to resume is missing</source>
-        <translation>Video jatkamiseen puuttuu</translation>
-    </message>
-    <message>
-        <source>Downloading...</source>
-        <translation>Ladataan....</translation>
-    </message>
-    <message>
-        <source>Queued...</source>
-        <translation>Jonossa...</translation>
-    </message>
-    <message>
-        <source>Unable to resume the FLV file</source>
-        <translation>FLV-tiedostoa ei pystytä palauttamaan</translation>
-    </message>
-    <message>
-        <source>Unable resume the download</source>
-        <translation>Latausta ei voida jatkaa</translation>
-    </message>
-    <message>
-        <source>Connection error: Unable to download the video</source>
-        <translation>Yhteysvirhe: &gt;Videota ei voida ladata</translation>
-    </message>
-    <message>
-        <source>The remote server refused the connection (the server is not accepting requests)</source>
-        <translation>Etäpalvelimelta estettiin yhteys (palvelin ei hyväksy pyyntöä)</translation>
-    </message>
-    <message>
-        <source>The access to the remote content was denied</source>
-        <translation>Pääsy etäsisältöön evättiin</translation>
-    </message>
-    <message>
-        <source>The remote host name was not found (invalid hostname)</source>
-        <translation>Kauko-palvelimen nimeä ei löydy (hostname ei kelpaa)</translation>
+        <source>Cancel button</source>
+        <translation>Peruuta painike</translation>
     </message>
 </context>
 <context>
-    <name>DownloadLog</name>
+    <name>CheckUpdatesWorker</name>
     <message>
-        <source>1</source>
-        <translation>1</translation>
+        <source>Ok</source>
+        <translation>OK</translation>
     </message>
     <message>
-        <source>Close</source>
-        <translation>Sulje</translation>
+        <source>Please, download the new version of &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; from &lt;a href=&apos;%2&apos;&gt;here.&lt;/a&gt;</source>
+        <translation>Ole hyvä ja lataa uusi versio &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; ohjelmasta &lt;a href=&apos;%2&apos;&gt;täältä.&lt;/a&gt;</translation>
     </message>
     <message>
-        <source>Close this window</source>
-        <translation>Sulje tämä ikkuna</translation>
+        <source>Update Center</source>
+        <translation>Päivityskeskus</translation>
     </message>
     <message>
-        <source>Download Log</source>
-        <translation>Latausloki</translation>
+        <source>You are using the most recent version of this program.</source>
+        <translation>Käytät uusinta versiota tästä ohjelmasta.</translation>
     </message>
     <message>
-        <source>Close button</source>
-        <translation>Sulje painike</translation>
+        <source>Updates</source>
+        <translation>Päivitykset</translation>
     </message>
     <message>
-        <source>Downloads log list</source>
-        <translation>Lataukset lokilista</translation>
+        <source>Cancelling... please wait...</source>
+        <translation>Peruuttaa... Odota hetki...</translation>
     </message>
     <message>
-        <source>Downloaded videos log:</source>
-        <translation>Ladatut videot loki</translation>
-    </message>
-    <message>
-        <source>Display the downloaded log list</source>
-        <translation>Näytä ladatut lokilista</translation>
-    </message>
-</context>
-<context>
-    <name>NewLanguages</name>
-    <message>
-        <source>1</source>
-        <translation>1</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation>Sulje</translation>
-    </message>
-    <message>
-        <source>Close button</source>
-        <translation>Sulje painike</translation>
-    </message>
-    <message>
-        <source>Install selected</source>
-        <translation>Asenna valitut</translation>
-    </message>
-    <message>
-        <source>Install the selected language</source>
-        <translation>Asenna valitut kielet</translation>
-    </message>
-    <message>
-        <source>Languages list</source>
-        <translation>Kielilista</translation>
-    </message>
-    <message>
-        <source>Uninstall selected</source>
-        <translation>Poista valitut</translation>
-    </message>
-    <message>
-        <source>List with all installed languages</source>
-        <translation>Listaa kaikki asennetut kielet</translation>
-    </message>
-    <message>
-        <source>Available languages to install</source>
-        <translation>Saatavilla olevat asennettavat kielet</translation>
-    </message>
-    <message>
-        <source>Updating languages list...</source>
-        <translation>Päivittää kielilistaa...</translation>
-    </message>
-    <message>
-        <source>Uninstall the selected language</source>
-        <translation>Poista valittu kieli</translation>
-    </message>
-    <message>
-        <source>Languages manager</source>
-        <translation>Kielimanageri</translation>
-    </message>
-    <message>
-        <source>List with all languages which you can install</source>
-        <translation>Luettelo sisältää kaikki kielet, jotka voidaan asentaa</translation>
-    </message>
-    <message>
-        <source>Close the Languages manager</source>
-        <translation>Sulje kielimanageri</translation>
-    </message>
-    <message>
-        <source>Install language button</source>
-        <translation>Asenna kieli painike</translation>
-    </message>
-    <message>
-        <source>Languages to install list</source>
-        <translation>Asennettavien kielien luettelo</translation>
-    </message>
-    <message>
-        <source>Your installed languages</source>
-        <translation>Asennetut kielet</translation>
-    </message>
-    <message>
-        <source>Uninstall language button</source>
-        <translation>Poista kieli painike</translation>
+        <source>Checking for updates...</source>
+        <translation>Tarkistetaan päivityksiä...</translation>
     </message>
 </context>
 <context>
@@ -918,6 +479,32 @@
     <message>
         <source>Play video</source>
         <translation>Soita video</translation>
+    </message>
+</context>
+<context>
+    <name>CompletedPopupImpl</name>
+    <message>
+        <source>Download completed</source>
+        <translation>Lataus valmis</translation>
+    </message>
+</context>
+<context>
+    <name>Credits</name>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Ok button</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Tekijät</translation>
+    </message>
+    <message>
+        <source>Close the Credits dialog</source>
+        <translation>Sulje Tekijät ikkuna</translation>
     </message>
 </context>
 <context>
@@ -976,126 +563,369 @@
     </message>
 </context>
 <context>
-    <name>SearchVideosImpl</name>
+    <name>CustomAlphaBlendImpl</name>
     <message>
-        <source>&lt;&lt;</source>
-        <translation>&lt;&lt;</translation>
+        <source>Current: &lt;b&gt;%1%&lt;/b&gt;</source>
+        <translation>Nykyinen: &lt;b&gt;%1%&lt;/b&gt;</translation>
     </message>
-    <message>
-        <source>&gt;&gt;</source>
-        <translation>&gt;&gt;</translation>
-    </message>
+</context>
+<context>
+    <name>CustomDownloadTitleImpl</name>
     <message>
         <source>Ok</source>
         <translation>OK</translation>
     </message>
     <message>
-        <source>Key word to search:</source>
-        <translation>Haku hakusanalla:</translation>
+        <source>Title edit</source>
+        <translation>Muokkaa otsikkoa</translation>
+    </message>
+    <message>
+        <source>Video title:</source>
+        <translation>Videon otsikko:</translation>
+    </message>
+    <message>
+        <source>Field where you enter the video title</source>
+        <translation>Kenttä mihin lisätään videon otsikko</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>Ok button</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Confirm and close the window</source>
+        <translation>Hyväksy ja sulje ikkuna</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Enter the text which will be used as title of this download.&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Kirjoita teksti, joka käytetään tämän latauksen otsikkona.&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Custom download title</source>
+        <translation>Latauksen nimi</translation>
+    </message>
+    <message>
+        <source>Discard and close window</source>
+        <translation>Hävitä ja sulje ikkuna</translation>
+    </message>
+    <message>
+        <source>Cancel button</source>
+        <translation>Peruuta painike</translation>
+    </message>
+</context>
+<context>
+    <name>DownloadLog</name>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
         <source>Close</source>
         <translation>Sulje</translation>
     </message>
     <message>
-        <source>Video Search</source>
-        <translation>Etsi videoita</translation>
-    </message>
-    <message>
-        <source>Page </source>
-        <translation>Sivu </translation>
-    </message>
-    <message>
-        <source>Next page button</source>
-        <translation>Seuraava sivu painike</translation>
-    </message>
-    <message>
         <source>Close this window</source>
         <translation>Sulje tämä ikkuna</translation>
     </message>
     <message>
-        <source>Please, select one or more services.</source>
-        <translation>Ole hyvä ja valitse yksi tai useampi palveluista.</translation>
+        <source>Download Log</source>
+        <translation>Latausloki</translation>
     </message>
     <message>
         <source>Close button</source>
         <translation>Sulje painike</translation>
     </message>
     <message>
-        <source>Search on previus page</source>
-        <translation>Haku edellseltä sivulta</translation>
+        <source>Downloads log list</source>
+        <translation>Lataukset lokilista</translation>
     </message>
     <message>
-        <source>All adult services</source>
-        <translation>Kaikki aikuisviihdesivuilta</translation>
+        <source>Downloaded videos log:</source>
+        <translation>Ladatut videot loki</translation>
     </message>
     <message>
-        <source>Searching &quot;&lt;b&gt;%1&lt;/b&gt;&quot; (page %2)... please wait...</source>
-        <translation>Hakee&quot;&lt;b&gt;%1&lt;/b&gt;&quot; ( sivu %2 )... Odota hetki...</translation>
+        <source>Display the downloaded log list</source>
+        <translation>Näytä ladatut lokilista</translation>
+    </message>
+</context>
+<context>
+    <name>DownloadLogImpl</name>
+    <message>
+        <source>URL</source>
+        <translation>URL</translation>
     </message>
     <message>
-        <source>Field where your enter the key words to search</source>
-        <translation>Kenttä mihin tulee antaa avainsana haettavaksi</translation>
+        <source>Video Title</source>
+        <translation>Videon Otsikko</translation>
     </message>
     <message>
-        <source>Current search page edit</source>
-        <translation>Muokkaa nykyistä hakusivua</translation>
+        <source>Date/Time</source>
+        <translation>Päiväys/Aika</translation>
+    </message>
+</context>
+<context>
+    <name>DragDrop</name>
+    <message>
+        <source>10%</source>
+        <translation>10%</translation>
     </message>
     <message>
-        <source>Previus page button</source>
-        <translation>Edellinen sivu painike</translation>
+        <source>20%</source>
+        <translation>20%</translation>
     </message>
     <message>
-        <source>Current search page</source>
-        <translation>Nykyinen hakusivu</translation>
+        <source>30%</source>
+        <translation>30%</translation>
     </message>
     <message>
-        <source>Search</source>
-        <translation>Haku</translation>
+        <source>40%</source>
+        <translation>40%</translation>
     </message>
     <message>
-        <source>Key words edit</source>
-        <translation>Muokkaa hakusanaa</translation>
+        <source>50%</source>
+        <translation>50%</translation>
     </message>
     <message>
-        <source>All services</source>
-        <translation>Kaikki palvelut</translation>
+        <source>60%</source>
+        <translation>60%</translation>
     </message>
     <message>
-        <source>All standard services</source>
-        <translation>kaikki peruspalvelut</translation>
+        <source>70%</source>
+        <translation>70%</translation>
     </message>
     <message>
-        <source>Search in:</source>
-        <translation>Etsi:</translation>
+        <source>80%</source>
+        <translation>80%</translation>
     </message>
     <message>
-        <source>List of services with search capabilities</source>
-        <translation>Luettelo palveluiden hakuominaisuuksista</translation>
+        <source>90%</source>
+        <translation>90%</translation>
     </message>
     <message>
-        <source>Results:</source>
-        <translation>Tulokset:</translation>
+        <source>OFF</source>
+        <translation>OFF</translation>
     </message>
     <message>
-        <source>Custom search</source>
-        <translation>Mukautettu haku</translation>
+        <source>Ctrl+V</source>
+        <translation>Ctrl+V</translation>
     </message>
     <message>
-        <source>Search services list</source>
-        <translation>Hae palvelut listalta</translation>
+        <source>Custom</source>
+        <translation>Custom</translation>
     </message>
     <message>
-        <source>Start new search</source>
-        <translation>Aloita uusi haku</translation>
+        <source>Alpha blend value</source>
+        <translation>Alpha sekoitusarvo</translation>
     </message>
     <message>
-        <source>Search button</source>
-        <translation>Haku painike</translation>
+        <source>Drag&amp;Drop</source>
+        <translation>Vedä&amp;Pudota</translation>
     </message>
     <message>
-        <source>Search on next page</source>
-        <translation>Hae seuraavalta sivulta</translation>
+        <source>Display main window</source>
+        <translation>Näytä pääikkunassa</translation>
+    </message>
+    <message>
+        <source>Paste URL from clipboard</source>
+        <translation>Lisää URL leikepöydältä</translation>
+    </message>
+</context>
+<context>
+    <name>DragDropImpl</name>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Already added</source>
+        <translation>Jo lisätty</translation>
+    </message>
+    <message>
+        <source>You already added this video. Check your downloads list.</source>
+        <translation>Olet jo lisännyt tämän videon. Tarkista latauslistasta.</translation>
+    </message>
+    <message>
+        <source>Alpha blend value</source>
+        <translation>Alphan sekoitusarvo</translation>
+    </message>
+    <message>
+        <source> - Adult content is not allowed</source>
+        <translation> - Aikuisviihdettä ei sallittu</translation>
+    </message>
+    <message>
+        <source> - Blocked site</source>
+        <translation> -Estetty sivusto</translation>
+    </message>
+</context>
+<context>
+    <name>InfoView</name>
+    <message>
+        <source>Close</source>
+        <translation>Sulje</translation>
+    </message>
+    <message>
+        <source>Close button</source>
+        <translation>Sulje painike</translation>
+    </message>
+    <message>
+        <source>Information which will be send to SourceForge.net tracker</source>
+        <translation>Tiedot, jotka on toimitetaan SourceForge.net trackeriin</translation>
+    </message>
+    <message>
+        <source>Information View</source>
+        <translation>Katso tietoja</translation>
+    </message>
+    <message>
+        <source>Information which will be sent</source>
+        <translation>Tiedot jotka lähetetään</translation>
+    </message>
+    <message>
+        <source>This is the information which will be send:</source>
+        <translation>Tämä informaatio lähetetään:</translation>
+    </message>
+    <message>
+        <source>Close the Information view</source>
+        <translation>Sulje informaatio näkymä</translation>
+    </message>
+</context>
+<context>
+    <name>Information</name>
+    <message>
+        <source>Close</source>
+        <translation>Sulje</translation>
+    </message>
+    <message>
+        <source>Program version:</source>
+        <translation>Ohjelman versio:</translation>
+    </message>
+    <message>
+        <source>List of supported services</source>
+        <translation>Luettelo tukipalveluista</translation>
+    </message>
+    <message>
+        <source>Close button</source>
+        <translation>Sulje painike</translation>
+    </message>
+    <message>
+        <source>Homepage:</source>
+        <translation>Kotisivu:</translation>
+    </message>
+    <message>
+        <source>Language:</source>
+        <translation>Kieli:</translation>
+    </message>
+    <message>
+        <source>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt; via Paypal! It&apos;s easy and fast! :)</source>
+        <translation>Tee lahjoitus &lt;b&gt; xVideoServiceThief &lt;/b&gt;Paypalin kautta! Se on helppoa ja nopeaa! :)</translation>
+    </message>
+    <message>
+        <source>xVideoServiceThief is a tool for downloading your favourite video clips from a lot of video websites.
+
+xVideoServiceThief also provide you the ability to convert each video in most popular formats: AVI, MPEG1, MPEG2, WMV, MP4, 3GP, MP3 file formats.</source>
+        <translation>xVideoServiceThief on työkalu suosikki videoleikkeiden lataukseen verkkosivustoilta.
+
+xVideoServiceThief antaa sinulle mahdollisuuden muuntaa kunkin videon suosituimpiin formaatteihin mm. AVI, MPEG1, MPEG2, WMV, MP4, 3GP ja MP3-tiedostomuotoon.</translation>
+    </message>
+    <message>
+        <source>Changelog</source>
+        <translation>Muutosloki</translation>
+    </message>
+    <message>
+        <source>Close the Information dialog</source>
+        <translation>Sulje informaatio dialogi</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;English (UK)&lt;/b&gt;</source>
+        <translation>&lt;b&gt;English (UK)&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <source>Display the credits dialog</source>
+        <translation>Näytä tekijät dialogi</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Informaatio</translation>
+    </message>
+    <message>
+        <source>QTextBrowser{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+}</source>
+        <translation>QTextBrowser{font-family:Meiryo, Helvetica, sans-serif;font-size:12px;}</translation>
+    </message>
+    <message>
+        <source>Support button</source>
+        <translation>Tue painike</translation>
+    </message>
+    <message>
+        <source>List of services</source>
+        <translation>Luettelo palveluista</translation>
+    </message>
+    <message>
+        <source>Credits...</source>
+        <translation>Tekijät...</translation>
+    </message>
+    <message>
+        <source>&lt;a href=&quot;http://xviservicethief.sourceforge.net/&quot;&gt;http://xviservicethief.sourceforge.net/&lt;/a&gt;</source>
+        <translation>&lt;a href=&quot;http://xviservicethief.sourceforge.net/&quot;&gt;http://xviservicethief.sourceforge.net/&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;xVideoServiceThief currently supports download from:&lt;/b&gt;</source>
+        <translation>&lt;b&gt; xVideoServiceThief tukee tällä hetkellä ladattavia osoitteita:&lt;/ b&gt;</translation>
+    </message>
+    <message>
+        <source>Credits button</source>
+        <translation>Tekijät painike</translation>
+    </message>
+    <message>
+        <source>QFrame{
+background: white;
+} </source>
+        <translation>QFrame{background: white;} </translation>
+    </message>
+    <message>
+        <source>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt;!</source>
+        <translation>Tee lahjoitus &lt;b&gt;xVideoServiceThief&lt;/b&gt; ohjelmalle!</translation>
+    </message>
+</context>
+<context>
+    <name>InformationImpl</name>
+    <message>
+        <source>&lt;p&gt;Total websites supported (plugins installed): &lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Sivustoja tukevia liitännäisiä asennettu yhteensä: &lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;</translation>
+    </message>
+    <message>
+        <source>Adult web sites:</source>
+        <translation>Aikuisviihdesivut:</translation>
+    </message>
+    <message>
+        <source>Music web sites:</source>
+        <translation>Musiikkisivivut:</translation>
+    </message>
+    <message>
+        <source>Adult sites are blocked...</source>
+        <translation>Aikuisviihdesivustot ovat estetyt...</translation>
+    </message>
+</context>
+<context>
+    <name>Loading</name>
+    <message>
+        <source>Loading</source>
+        <translation>Lataa</translation>
+    </message>
+</context>
+<context>
+    <name>LoadingImpl</name>
+    <message>
+        <source>Plugins loaded</source>
+        <translation>Lisäosat ladattu</translation>
+    </message>
+    <message>
+        <source>Loading plugins... please wait...</source>
+        <translation>Lisäosia ladataan...odota hetki...</translation>
     </message>
 </context>
 <context>
@@ -1613,6 +1443,116 @@
     </message>
 </context>
 <context>
+    <name>MultiURLs</name>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Select which URLs you want add:</source>
+        <translation>Valise mitkä URL:it haluat lisätä:</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>Ok button</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Multiple URLs</source>
+        <translation>Useita URL-osoitteita</translation>
+    </message>
+    <message>
+        <source>Close without adding the URL</source>
+        <translation>Sulje lisäämättä URL:ia</translation>
+    </message>
+    <message>
+        <source>Add the current URL and close this dialog</source>
+        <translation>Lisää nykyinen URL-osoite ja sulje tämä ikkuna</translation>
+    </message>
+    <message>
+        <source>Cancel button</source>
+        <translation>Peruuta painike</translation>
+    </message>
+</context>
+<context>
+    <name>NewLanguages</name>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Sulje</translation>
+    </message>
+    <message>
+        <source>Close button</source>
+        <translation>Sulje painike</translation>
+    </message>
+    <message>
+        <source>Install selected</source>
+        <translation>Asenna valitut</translation>
+    </message>
+    <message>
+        <source>Install the selected language</source>
+        <translation>Asenna valitut kielet</translation>
+    </message>
+    <message>
+        <source>Languages list</source>
+        <translation>Kielilista</translation>
+    </message>
+    <message>
+        <source>Uninstall selected</source>
+        <translation>Poista valitut</translation>
+    </message>
+    <message>
+        <source>List with all installed languages</source>
+        <translation>Listaa kaikki asennetut kielet</translation>
+    </message>
+    <message>
+        <source>Available languages to install</source>
+        <translation>Saatavilla olevat asennettavat kielet</translation>
+    </message>
+    <message>
+        <source>Updating languages list...</source>
+        <translation>Päivittää kielilistaa...</translation>
+    </message>
+    <message>
+        <source>Uninstall the selected language</source>
+        <translation>Poista valittu kieli</translation>
+    </message>
+    <message>
+        <source>Languages manager</source>
+        <translation>Kielimanageri</translation>
+    </message>
+    <message>
+        <source>List with all languages which you can install</source>
+        <translation>Luettelo sisältää kaikki kielet, jotka voidaan asentaa</translation>
+    </message>
+    <message>
+        <source>Close the Languages manager</source>
+        <translation>Sulje kielimanageri</translation>
+    </message>
+    <message>
+        <source>Install language button</source>
+        <translation>Asenna kieli painike</translation>
+    </message>
+    <message>
+        <source>Languages to install list</source>
+        <translation>Asennettavien kielien luettelo</translation>
+    </message>
+    <message>
+        <source>Your installed languages</source>
+        <translation>Asennetut kielet</translation>
+    </message>
+    <message>
+        <source>Uninstall language button</source>
+        <translation>Poista kieli painike</translation>
+    </message>
+</context>
+<context>
     <name>NewLanguagesImpl</name>
     <message>
         <source>No</source>
@@ -1681,6 +1621,633 @@
     <message>
         <source>Install language</source>
         <translation>Asenna kieli</translation>
+    </message>
+</context>
+<context>
+    <name>Options</name>
+    <message>
+        <source>-</source>
+        <translation>-</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>&lt;</source>
+        <translation>&lt;</translation>
+    </message>
+    <message>
+        <source>&gt;</source>
+        <translation>&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;&lt;</source>
+        <translation>&lt;&lt;</translation>
+    </message>
+    <message>
+        <source>&gt;&gt;</source>
+        <translation>&gt;&gt;</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <source>sec.</source>
+        <translation>sek.</translation>
+    </message>
+    <message>
+        <source>Output quality:</source>
+        <translation>Ulostulon laatu:</translation>
+    </message>
+    <message>
+        <source>Options menu</source>
+        <translation>Asetus valikko</translation>
+    </message>
+    <message>
+        <source>Port:</source>
+        <translation>Portti:</translation>
+    </message>
+    <message>
+        <source>Don&apos;t restore downloaded videos</source>
+        <translation>Älä palauta ladattuja videoita</translation>
+    </message>
+    <message>
+        <source>If this option is checked, after convert a downloaded video, the original video (FLV) is deleted from your hard disk</source>
+        <translation>Jos tämä vaihtoehto on valittuna, kun ladattu video on muunnettu, alkuperäinen video (FLV) poistetaan kiintolevyltä</translation>
+    </message>
+    <message>
+        <source>Open the Select directory dialog for select the downloads directory</source>
+        <translation>Valitse hakemisto valintaikkunan valitsemalla lataukset hakemisto</translation>
+    </message>
+    <message>
+        <source>Time remaining calculation:</source>
+        <translation>Jäljellä oleva aika:</translation>
+    </message>
+    <message>
+        <source>Period of time which automatic updates will check for new versions</source>
+        <translation>Aika jolloin tarkistetaan automaattisesti ohjelman uudet versiot</translation>
+    </message>
+    <message>
+        <source>If this option is checked, on close the xVideoServiceThief, the downloads list will be saved (and restored on open again the xVST)</source>
+        <translation>Jos tämä vaihtoehto on valittuna, sulje xVideoServiceThief, lataus luettelo tallennetaan (ja palautuksen jälleen avataan xVST)</translation>
+    </message>
+    <message>
+        <source>Use proxy server</source>
+        <translation>Käytä proxy palvelinta</translation>
+    </message>
+    <message>
+        <source>Delete the downloaded file on download error</source>
+        <translation>Poista ladattu video latausvirheen sattuessa</translation>
+    </message>
+    <message>
+        <source>Schedules checkbox</source>
+        <translation>Aikataulu valintaruutu</translation>
+    </message>
+    <message>
+        <source>List of user schedules</source>
+        <translation>Listaa aikataulut</translation>
+    </message>
+    <message>
+        <source>Ups! Configuration</source>
+        <translation>Ups! Asetukset</translation>
+    </message>
+    <message>
+        <source>Convert videos to Mpeg/DivX/etc...</source>
+        <translation>Muunna videot (Mpeg/DivX/jne.) muotoon.</translation>
+    </message>
+    <message>
+        <source>Convert videos</source>
+        <translation>Muunna videot</translation>
+    </message>
+    <message>
+        <source>If this option is checked, on finish a download/conversion video an information popup window will be displayed</source>
+        <translation>Jos tämä vaihtoehto on valittu, latauksen/muuntamisen valmistuttua näytä ponnahdusikkuna videon tiedoista</translation>
+    </message>
+    <message>
+        <source>Remove selected schedule</source>
+        <translation>Poista valitut aikataulut</translation>
+    </message>
+    <message>
+        <source>Proxy password</source>
+        <translation>Proxyn salasana</translation>
+    </message>
+    <message>
+        <source>Output format:</source>
+        <translation>Ulostulon formaatti:</translation>
+    </message>
+    <message>
+        <source>Delete original video after conversion checkbox</source>
+        <translation>Poista alkuperäinen video muunnoksen jälkeen.</translation>
+    </message>
+    <message>
+        <source>Select a language file from the list:</source>
+        <translation>Valitse kielitiedosto listalta:</translation>
+    </message>
+    <message>
+        <source>Edit selected shedule</source>
+        <translation>Muokkaa valittua aikataulua</translation>
+    </message>
+    <message>
+        <source>Http configuration</source>
+        <translation>HTTP asetukset</translation>
+    </message>
+    <message>
+        <source>Remember last viewed options page (only for this session)</source>
+        <translation>Muista edellinen asetussivu (ainoastaan tässä istunnossa)</translation>
+    </message>
+    <message>
+        <source>Audio sampling rate (Hz):</source>
+        <translation>Äänen näytteenottotaajuus (Hz):</translation>
+    </message>
+    <message>
+        <source>Allowed websites list</source>
+        <translation>Sallittujen verkkosivujen luettelo</translation>
+    </message>
+    <message>
+        <source>Shcedules list</source>
+        <translation>Aikataululuettelo</translation>
+    </message>
+    <message>
+        <source>Select the ffmpeg directory</source>
+        <translation>Valitse ffmpeg hakemisto</translation>
+    </message>
+    <message>
+        <source>Video output format combobox</source>
+        <translation>Videon ulostulon formaatti</translation>
+    </message>
+    <message>
+        <source>Video resolution:</source>
+        <translation>Videon resoluutio:</translation>
+    </message>
+    <message>
+        <source>Proxy adress</source>
+        <translation type="vanished">Proxy osoite</translation>
+    </message>
+    <message>
+        <source>Save a Log with all downloaded videos (Date + Title + URL)</source>
+        <translation>Tallenna loki kaikista ladatuista videoista (Päiväys  + Otsikko + URL)</translation>
+    </message>
+    <message>
+        <source>Save and restore the current session</source>
+        <translation>Tallenna ja palauta nykyinen istunto</translation>
+    </message>
+    <message>
+        <source>Proxy configuration</source>
+        <translation>Proxy asetukset</translation>
+    </message>
+    <message>
+        <source>Time-out:</source>
+        <translation>Aikalisä:</translation>
+    </message>
+    <message>
+        <source>Clear the current downloads log</source>
+        <translation>Tyhjennä nykyinen latausloki</translation>
+    </message>
+    <message>
+        <source>Port of your proxy configuration</source>
+        <translation>Portti proxy asetukselle</translation>
+    </message>
+    <message>
+        <source>Install automatically the new versions</source>
+        <translation>Asenna automaattisesti uusi versio</translation>
+    </message>
+    <message>
+        <source>Use the system configuration</source>
+        <translation>Käytä järjestelmän asetuksia</translation>
+    </message>
+    <message>
+        <source>Display a popup window on finish a download/conversion video</source>
+        <translation>Näytä ponnahdusikkuna videon latauksen / muuntamisen valmistuttua</translation>
+    </message>
+    <message>
+        <source>Open the Select directory dialog for select the ffmpeg directory</source>
+        <translation>Valitse  valintaikkunasta hakemisto ffmpegille</translation>
+    </message>
+    <message>
+        <source>Languages list</source>
+        <translation>Kielitiedosto lista</translation>
+    </message>
+    <message>
+        <source>Select ffmpeg directory</source>
+        <translation>Valitse ffmped hakemisto</translation>
+    </message>
+    <message>
+        <source>Blocked websites list</source>
+        <translation>Estetyjen verkkosivujen luettelo</translation>
+    </message>
+    <message>
+        <source>Downloads directory</source>
+        <translation>Latauksien hakemisto</translation>
+    </message>
+    <message>
+        <source>User name:</source>
+        <translation>Käyttäjä nimi:</translation>
+    </message>
+    <message>
+        <source>Allowed websites:</source>
+        <translation>Sallitut verkko-osoitteet</translation>
+    </message>
+    <message>
+        <source>Video frame rate (Hz)</source>
+        <translation>Videokuvan näytteenottotaajuus (Hz)</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>Description:</source>
+        <translation>Kuvaus:</translation>
+    </message>
+    <message>
+        <source>Disable adult websites support checkbox</source>
+        <translation>Poista aikuisviihdesivustojen tuki valintaruutu</translation>
+    </message>
+    <message>
+        <source>Edit selected schedule</source>
+        <translation>Muokkaa valittua aikataulua</translation>
+    </message>
+    <message>
+        <source>Select the downloads directory</source>
+        <translation>Valitse lataukset hakemisto</translation>
+    </message>
+    <message>
+        <source>Enable or disable user shcedules</source>
+        <translation>Salli tai poista käyttäjän aikataulut</translation>
+    </message>
+    <message>
+        <source>List with all installed languages</source>
+        <translation>Listaa kaikki asennetut kielet</translation>
+    </message>
+    <message>
+        <source>Contact:</source>
+        <translation>Yhteystiedot:</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Asetukset</translation>
+    </message>
+    <message>
+        <source>Check now for new updates</source>
+        <translation>Tarkista uudet päivitykset</translation>
+    </message>
+    <message>
+        <source>Path which the downloaded video will be saved</source>
+        <translation>Polku johon ladattu video tallentuu</translation>
+    </message>
+    <message>
+        <source>Check for new versions every:</source>
+        <translation>Tarkista uuden version saatavuus joka:</translation>
+    </message>
+    <message>
+        <source>FFmpeg Lib</source>
+        <translation>FFmpeg kirjasto</translation>
+    </message>
+    <message>
+        <source>Video audio sampling rate (Hz)</source>
+        <translation>Videon ääninäytetaajuus (Hz)</translation>
+    </message>
+    <message>
+        <source>Type of your proxy configuration</source>
+        <translation>Kirjoita oman välityspalvelinmääräys</translation>
+    </message>
+    <message>
+        <source>General video output quality</source>
+        <translation>Yleinen videon ulostulolaatu</translation>
+    </message>
+    <message>
+        <source>Enable/disable the video conversions</source>
+        <translation>Salli/poista videon muunnos</translation>
+    </message>
+    <message>
+        <source>Disable adult websites support</source>
+        <translation>Poista aikuisviihdesivustojen tuki </translation>
+    </message>
+    <message>
+        <source>Password of your proxy configuration</source>
+        <translation>Salasana proxyn asetuksiin</translation>
+    </message>
+    <message>
+        <source>Bug report</source>
+        <translation>Vikailmoitus</translation>
+    </message>
+    <message>
+        <source>Adress:</source>
+        <translation type="vanished">Osoite:</translation>
+    </message>
+    <message>
+        <source>Language Configuration </source>
+        <translation>Kieliasetukset</translation>
+    </message>
+    <message>
+        <source>Maximum simultaneous downloads value (the recommended value is between 4 and 6)</source>
+        <translation>Suurin samanaikaisten lataukset arvo (suositeltu arvo on välillä 4 ja 6)</translation>
+    </message>
+    <message>
+        <source>Language information</source>
+        <translation>Kielitiedot</translation>
+    </message>
+    <message>
+        <source>Select downloads directory</source>
+        <translation>Valitse lataushakemisto</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Kieli</translation>
+    </message>
+    <message>
+        <source>Updates Configuration</source>
+        <translation>Päivityksien asetukset</translation>
+    </message>
+    <message>
+        <source>Languages manager</source>
+        <translation>Kielimanageri</translation>
+    </message>
+    <message>
+        <source>Check for new versions on program startup</source>
+        <translation>Tarkista uudet versiot ohjelmaa käynnistettäessä</translation>
+    </message>
+    <message>
+        <source>Blocked websites:</source>
+        <translation>Estetyt sivustot:</translation>
+    </message>
+    <message>
+        <source>Remember last viewed options page checkbox</source>
+        <translation>Muista viimeksi katsellut sivun asetukset</translation>
+    </message>
+    <message>
+        <source>Session Configuration </source>
+        <translation>Istunnon asetukset</translation>
+    </message>
+    <message>
+        <source>Author:</source>
+        <translation>Tekijä:</translation>
+    </message>
+    <message>
+        <source>Install automatically new versions checkbox</source>
+        <translation>Asenna automaattisesti uudet versiot</translation>
+    </message>
+    <message>
+        <source>Save log checkbox</source>
+        <translation>Tallenna loki</translation>
+    </message>
+    <message>
+        <source>Close without saving changes</source>
+        <translation>Sulje tallentamatta muutoksia</translation>
+    </message>
+    <message>
+        <source>Delete the original downloaded file after the conversion</source>
+        <translation>Poista alkuperäinen ladattu tiedosto muuntamisen jälkeen</translation>
+    </message>
+    <message>
+        <source>If this option is checked, the support of adult websites will be disabled</source>
+        <translation>Jos tämä vaihtoehto on valittuna, tuki aikuisviihde sivustoille on poistettu</translation>
+    </message>
+    <message>
+        <source>Display &quot;Bug Report&quot; window on Video error</source>
+        <translation>Näytä &quot;Vikailmoitus&quot;-ikkuna Videon virheestä</translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;SourceForge.net tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt;SF.net tracker&lt;/a&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="vanished">Kun video heittää virheen, voit auttaa korjaamaan virhettä lähettämällä &quot;&lt;b&gt;Vikailmoituksen &lt;/ b&gt;&quot; meidän kautta &lt;a href = &quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt; SourceForge.net Tracker-järjestelmään &lt;/a&gt;.&lt;br&gt;&quot;&lt;b&gt; Vikailmoitus&lt;/b&gt;&quot; on tallennettu vain &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&quot;&gt; SF.net trackeriin &lt;/ a&gt; ja on näkyvissä kaikille. eikä ylimääräistä tietoa ole tallennettu ulkoiseen tietokantaan.</translation>
+    </message>
+    <message>
+        <source>General video output quality combobox</source>
+        <translation>Yleisen viden ulostulo laatu</translation>
+    </message>
+    <message>
+        <source>If this option is checked, on program startup the xVST will check for new versions</source>
+        <translation>Jos tämä vaihtoehto on valittuna, ohjelmaa käynnistettäessä xVST tarkistaa uudet versiot</translation>
+    </message>
+    <message>
+        <source>Select which websites are allowed and which websites must be blocked:</source>
+        <translation>Valitse, mitkä sivustot ovat sallittuja ja mitkä sivustot on estettyjä:</translation>
+    </message>
+    <message>
+        <source>Video resolution</source>
+        <translation>Videon resoluutio</translation>
+    </message>
+    <message>
+        <source>Log viewer button</source>
+        <translation>Lokin näyttöpainike</translation>
+    </message>
+    <message>
+        <source>User name of your proxy configuration</source>
+        <translation>Käyttäjän nimi välityspalvelinmääritykseen</translation>
+    </message>
+    <message>
+        <source>Adress of your proxy configuration</source>
+        <translation type="vanished">Osoite välityspalvelinmääräykseen</translation>
+    </message>
+    <message>
+        <source>Download videos automatically checkbox</source>
+        <translation>Lataa videot automaattisesti</translation>
+    </message>
+    <message>
+        <source>If this option is checked, the completed videos will not be restored in next session</source>
+        <translation>Jos tämä vaihtoehto on valittuna, valmistuneita videoita ei palauteta seuraavassa istunnossa</translation>
+    </message>
+    <message>
+        <source>Password:</source>
+        <translation>Salasana:</translation>
+    </message>
+    <message>
+        <source>Adds a new schedule configuration</source>
+        <translation>Lisää uusi aikataulu asetuksiin</translation>
+    </message>
+    <message>
+        <source>Proxy user name</source>
+        <translation>Proxy käyttäjänimi</translation>
+    </message>
+    <message>
+        <source>Save and close the current configuration</source>
+        <translation>Tallenna ja sulje nykyisen kokoonpanon asetukset</translation>
+    </message>
+    <message>
+        <source>Path of the ffmpeg library (video conversions program)</source>
+        <translation>Polku ffmpeg kirjastoon (videon muunnos ohjelmaan)</translation>
+    </message>
+    <message>
+        <source>Proxy type:</source>
+        <translation>Proxy tyyppi:</translation>
+    </message>
+    <message>
+        <source>Clear Log</source>
+        <translation>Tyhjennä Loki</translation>
+    </message>
+    <message>
+        <source>Cancel and close button</source>
+        <translation>Peruuta ja sulje painike</translation>
+    </message>
+    <message>
+        <source>Period of time combobox</source>
+        <translation>Ajanjakso valintaruutu</translation>
+    </message>
+    <message>
+        <source>Edit the selected schedule configuration</source>
+        <translation>Muokkaa valitun aikataulun kokoonpanon asetuksia</translation>
+    </message>
+    <message>
+        <source>Maximum simultaneous downloads value</source>
+        <translation>Suurin samanaikaisten latauksien arvo</translation>
+    </message>
+    <message>
+        <source>Check for new versions</source>
+        <translation>Tarkista uudet versiot</translation>
+    </message>
+    <message>
+        <source>If this option is checked, on open again the &quot;Options&quot; dialog, the last page viewed (Basic, Language, etc...) is displayed again (only for this session)</source>
+        <translation>Jos tämä vaihtoehto on valittu, &quot;Asetukset&quot; dialogi on auki, viimeinen sivu (Perus, kieli, jne. ..) näkyy jälleen (vain tässä istunnossa)</translation>
+    </message>
+    <message>
+        <source>Save and close button</source>
+        <translation>Tallenna ja sulje painike</translation>
+    </message>
+    <message>
+        <source>Version:</source>
+        <translation>Versio:</translation>
+    </message>
+    <message>
+        <source>Video resolution combobox</source>
+        <translation>videon resoluution valintaruutu</translation>
+    </message>
+    <message>
+        <source>New schedule button</source>
+        <translation>Uuden aikataulun painike</translation>
+    </message>
+    <message>
+        <source>Video output format</source>
+        <translation>videon ulostulon formaatti</translation>
+    </message>
+    <message>
+        <source>Enable/disable proxy support</source>
+        <translation>Salli/posta proxy tuki</translation>
+    </message>
+    <message>
+        <source>If this option is checked, the xVST will save a log with all downloaded videos (Date + Title + URL)</source>
+        <translation>Jos tämä vaihtoehto on valittuna, xVST tallentaa lokiin kaikki ladatut videot (Päiväys + Otsikko + URL)</translation>
+    </message>
+    <message>
+        <source>Video frame rate combobox</source>
+        <translation>Videon kuvataajuuden valintaruutu</translation>
+    </message>
+    <message>
+        <source>Ffmpeg directory</source>
+        <translation>Ffmpeg hakemisto</translation>
+    </message>
+    <message>
+        <source>Save and restore current session checkbox</source>
+        <translation>Tallenna ja palauta nykyinen istunto</translation>
+    </message>
+    <message>
+        <source>Enable/disable the &quot;Bug report&quot; window on video Error</source>
+        <translation>Päälle / pois &quot;Vikailmoitus&quot; ikkuna video virheestä</translation>
+    </message>
+    <message>
+        <source>Enable or disable automatic downloads</source>
+        <translation>Salli tai poista automaattiset lataukset</translation>
+    </message>
+    <message>
+        <source>Downloads</source>
+        <translation>Lataukset</translation>
+    </message>
+    <message>
+        <source>Customize my schedule download</source>
+        <translation>Muokkaa tallennettuja ajastuksia</translation>
+    </message>
+    <message>
+        <source>Internal FFmpeg</source>
+        <translation>Sissäinen FFmpeg</translation>
+    </message>
+    <message>
+        <source>Use this language</source>
+        <translation>Käytä tätä kieltä</translation>
+    </message>
+    <message>
+        <source>Download videos automatically</source>
+        <translation>Lataa videot automaattisesti</translation>
+    </message>
+    <message>
+        <source>Check updates button</source>
+        <translation>Tarkista päivitykset</translation>
+    </message>
+    <message>
+        <source>Maximum simultaneous downloads &lt;span style=&quot;color:#a9a9a9;&quot;&gt;(the recomended value is 4/6 downloads)&lt;/span&gt;</source>
+        <translation>Suurin samanaikaisten lataukset &lt;span style=&quot;color:#a9a9a9;&quot;&gt; (suositeltu arvo on 4 / 6 lataukset) &lt;/ span&gt;</translation>
+    </message>
+    <message>
+        <source>Add new schedule</source>
+        <translation>Lisää uusi aikataulu</translation>
+    </message>
+    <message>
+        <source>If this option is checked, the xVST will download and install automatically the new updates</source>
+        <translation>Jos tämä vaihtoehto on valittuna, xVST lataa ja asentaa automaattisesti uudet päivitykset</translation>
+    </message>
+    <message>
+        <source>Clear log button</source>
+        <translation>Tyhjennä loki-painike</translation>
+    </message>
+    <message>
+        <source>Check for updates checkbox</source>
+        <translation>Tarkista päivitykset</translation>
+    </message>
+    <message>
+        <source>Max. retries:</source>
+        <translation>Max. uudelleenyhdistämisyritykset:</translation>
+    </message>
+    <message>
+        <source>Remove the selected schedule configuration</source>
+        <translation>Poista valitut aikataulut kokoonpanon asetuksista</translation>
+    </message>
+    <message>
+        <source>Schedule Configuration</source>
+        <translation>Ajastuksen asetukset</translation>
+    </message>
+    <message>
+        <source>Video audio sampling rate combobox</source>
+        <translation>Videon ääninäytetaajuuden valintaruutu</translation>
+    </message>
+    <message>
+        <source>Proxy port</source>
+        <translation>Proxy portti</translation>
+    </message>
+    <message>
+        <source>Proxy type</source>
+        <translation>Proxy tyyppi</translation>
+    </message>
+    <message>
+        <source>View Log</source>
+        <translation>Näytä loki</translation>
+    </message>
+    <message>
+        <source>Open the Log viewer</source>
+        <translation>Avaa lokin katselin</translation>
+    </message>
+    <message>
+        <source>Display popup checkbox</source>
+        <translation>Näytä ponnahdusikkunan valintaruutu</translation>
+    </message>
+    <message>
+        <source>Address:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Address of your proxy configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Proxy address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1843,393 +2410,6 @@
     </message>
 </context>
 <context>
-    <name>AddVideo</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Output quality:</source>
-        <translation>Ulostulon laatu:</translation>
-    </message>
-    <message>
-        <source>Convert videos</source>
-        <translation>Muunna videoita</translation>
-    </message>
-    <message>
-        <source>Output format:</source>
-        <translation>Ulostulon formaatti:</translation>
-    </message>
-    <message>
-        <source>Audio sampling rate (Hz):</source>
-        <translation>Äänen näytteenottotaajuus (Hz):</translation>
-    </message>
-    <message>
-        <source>Video output format combobox</source>
-        <translation>Videon ulostulon formaatti</translation>
-    </message>
-    <message>
-        <source>Video resolution:</source>
-        <translation>Videon resoluutio:</translation>
-    </message>
-    <message>
-        <source>Override original conversion options for this video</source>
-        <translation>Ohita alkuperäinen muuntaminen</translation>
-    </message>
-    <message>
-        <source>Paste the current clipboard content (only text)</source>
-        <translation>Liitä nykyisen leikepöydän sisältö (vain tekstiä)</translation>
-    </message>
-    <message>
-        <source>Video frame rate (Hz)</source>
-        <translation>Videokuvan näytteenottotaajuus (Hz)</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Video audio sampling rate (Hz)</source>
-        <translation>Videon ääninäytetaajuus (Hz)</translation>
-    </message>
-    <message>
-        <source>General video output quality</source>
-        <translation>Yleinen videon ulostulon laatu</translation>
-    </message>
-    <message>
-        <source>Enable/disable the video conversions</source>
-        <translation>Salli/poista videon muunnos</translation>
-    </message>
-    <message>
-        <source>Close without adding the URL</source>
-        <translation>Sulje lisäämättä URLia</translation>
-    </message>
-    <message>
-        <source>URL of the video to downloaded</source>
-        <translation>URL videon lataamiseen</translation>
-    </message>
-    <message>
-        <source>General video output quality combobox</source>
-        <translation>Yleisen videon ulostulon laadun valintalaatikko</translation>
-    </message>
-    <message>
-        <source>Paste URL from clipboard</source>
-        <translation>Lisää URL leikepöydältä</translation>
-    </message>
-    <message>
-        <source>Video resolution</source>
-        <translation>Videon resoluutio</translation>
-    </message>
-    <message>
-        <source>Video URL</source>
-        <translation>Videon URL</translation>
-    </message>
-    <message>
-        <source>Convert video to Mpeg/DivX/etc...</source>
-        <translation>Muunna videot (Mpeg/DivX/etc)...</translation>
-    </message>
-    <message>
-        <source>Enter the video URL to download:</source>
-        <translation>Lisää videon URL ladattavaksi:</translation>
-    </message>
-    <message>
-        <source>Video resolution combobox</source>
-        <translation>Videon resoluution valintalaatikko</translation>
-    </message>
-    <message>
-        <source>Video output format</source>
-        <translation>Videon ulostulon formaatti</translation>
-    </message>
-    <message>
-        <source>Add Video URL</source>
-        <translation>Lisää Videon URL</translation>
-    </message>
-    <message>
-        <source>Video frame rate combobox</source>
-        <translation>Videon kuvataajuuden valintalaatikko</translation>
-    </message>
-    <message>
-        <source>Add the current URL and close this dialog</source>
-        <translation>Lisää nykyinen URL ja sulje tämä ikkuna</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation>Peruuta painike</translation>
-    </message>
-    <message>
-        <source>Video audio sampling rate combobox</source>
-        <translation>Videon ääninäytetaajuuden valintalaatikko</translation>
-    </message>
-</context>
-<context>
-    <name>AddVideoImpl</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>No valid URLs detected in this file</source>
-        <translation>URL kelvoton</translation>
-    </message>
-    <message>
-        <source>Already added</source>
-        <translation>Jo lisätty</translation>
-    </message>
-    <message>
-        <source>You already added this video. Check your downloads list.</source>
-        <translation>Olet jo lisännyt tämän videon. Tarkista latauslista.</translation>
-    </message>
-    <message>
-        <source>%1 valid URLs detected in this file</source>
-        <translation>%1 kelvollisia URL-osoitteita löydetty tälle tiedostolle</translation>
-    </message>
-    <message>
-        <source>Select URL&apos;s file</source>
-        <translation>Valitse URL tiedosto</translation>
-    </message>
-    <message>
-        <source> (%1 selected)</source>
-        <translation> (%1 valittu)</translation>
-    </message>
-    <message>
-        <source>select URLs to download</source>
-        <translation>Valitut URL ladataan</translation>
-    </message>
-    <message>
-        <source>User custom video download</source>
-        <translation>Käyttäjän mukautettu videolataaja</translation>
-    </message>
-    <message>
-        <source> - Adult content is not allowed</source>
-        <translation> - Aikuisviihde ei ole sallittu</translation>
-    </message>
-    <message>
-        <source>mark as custom download</source>
-        <translation>merkitse custom lataukseen</translation>
-    </message>
-    <message>
-        <source> - Blocked site</source>
-        <translation>- Estetty sivusto</translation>
-    </message>
-</context>
-<context>
-    <name>BugReportImpl</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Thank you for your report.</source>
-        <translation>Kiitos raportista.</translation>
-    </message>
-</context>
-<context>
-    <name>ChangelogImpl</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>List of program versions</source>
-        <translation>Listaa ohjelman versiot</translation>
-    </message>
-    <message>
-        <source>Versions combobox</source>
-        <translation>Versiot valintaruutu</translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation>Muutosloki</translation>
-    </message>
-    <message>
-        <source>Version:</source>
-        <translation>Versio:</translation>
-    </message>
-    <message>
-        <source>xVST Changelog</source>
-        <translation>xVST Muutosloki</translation>
-    </message>
-    <message>
-        <source>List of the complete xVST changelog</source>
-        <translation>Täydellinen luettelo xVST muutoslokista</translation>
-    </message>
-    <message>
-        <source>Close the Changelot dialog</source>
-        <translation>Sulje muutoslokin ikkuna</translation>
-    </message>
-    <message>
-        <source>Close the Changelog dialog</source>
-        <translation>Sulje muutoslokin ikkuna</translation>
-    </message>
-</context>
-<context>
-    <name>CheckUpdatesWorker</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Please, download the new version of &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; from &lt;a href=&apos;%2&apos;&gt;here.&lt;/a&gt;</source>
-        <translation>Ole hyvä ja lataa uusi versio &lt;b&gt;xVideoServiceThief (%1)&lt;/b&gt; ohjelmasta &lt;a href=&apos;%2&apos;&gt;täältä.&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>Update Center</source>
-        <translation>Päivityskeskus</translation>
-    </message>
-    <message>
-        <source>You are using the most recent version of this program.</source>
-        <translation>Käytät uusinta versiota tästä ohjelmasta.</translation>
-    </message>
-    <message>
-        <source>Updates</source>
-        <translation>Päivitykset</translation>
-    </message>
-    <message>
-        <source>Cancelling... please wait...</source>
-        <translation>Peruuttaa... Odota hetki...</translation>
-    </message>
-    <message>
-        <source>Checking for updates...</source>
-        <translation>Tarkistetaan päivityksiä...</translation>
-    </message>
-</context>
-<context>
-    <name>Credits</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Credits</source>
-        <translation>Tekijät</translation>
-    </message>
-    <message>
-        <source>Close the Credits dialog</source>
-        <translation>Sulje Tekijät ikkuna</translation>
-    </message>
-</context>
-<context>
-    <name>CustomDownloadTitleImpl</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Title edit</source>
-        <translation>Muokkaa otsikkoa</translation>
-    </message>
-    <message>
-        <source>Video title:</source>
-        <translation>Videon otsikko:</translation>
-    </message>
-    <message>
-        <source>Field where you enter the video title</source>
-        <translation>Kenttä mihin lisätään videon otsikko</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Confirm and close the window</source>
-        <translation>Hyväksy ja sulje ikkuna</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Enter the text which will be used as title of this download.&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Kirjoita teksti, joka käytetään tämän latauksen otsikkona.&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Custom download title</source>
-        <translation>Latauksen nimi</translation>
-    </message>
-    <message>
-        <source>Discard and close window</source>
-        <translation>Hävitä ja sulje ikkuna</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation>Peruuta painike</translation>
-    </message>
-</context>
-<context>
-    <name>DragDropImpl</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Already added</source>
-        <translation>Jo lisätty</translation>
-    </message>
-    <message>
-        <source>You already added this video. Check your downloads list.</source>
-        <translation>Olet jo lisännyt tämän videon. Tarkista latauslistasta.</translation>
-    </message>
-    <message>
-        <source>Alpha blend value</source>
-        <translation>Alphan sekoitusarvo</translation>
-    </message>
-    <message>
-        <source> - Adult content is not allowed</source>
-        <translation> - Aikuisviihdettä ei sallittu</translation>
-    </message>
-    <message>
-        <source> - Blocked site</source>
-        <translation> -Estetty sivusto</translation>
-    </message>
-</context>
-<context>
-    <name>MultiURLs</name>
-    <message>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Select which URLs you want add:</source>
-        <translation>Valise mitkä URL:it haluat lisätä:</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Ok button</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <source>Multiple URLs</source>
-        <translation>Useita URL-osoitteita</translation>
-    </message>
-    <message>
-        <source>Close without adding the URL</source>
-        <translation>Sulje lisäämättä URL:ia</translation>
-    </message>
-    <message>
-        <source>Add the current URL and close this dialog</source>
-        <translation>Lisää nykyinen URL-osoite ja sulje tämä ikkuna</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation>Peruuta painike</translation>
-    </message>
-</context>
-<context>
     <name>ScheduleItemEditImpl</name>
     <message>
         <source>Ok</source>
@@ -2356,6 +2536,129 @@
     </message>
 </context>
 <context>
+    <name>SearchVideosImpl</name>
+    <message>
+        <source>&lt;&lt;</source>
+        <translation>&lt;&lt;</translation>
+    </message>
+    <message>
+        <source>&gt;&gt;</source>
+        <translation>&gt;&gt;</translation>
+    </message>
+    <message>
+        <source>Ok</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Key word to search:</source>
+        <translation>Haku hakusanalla:</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>Sulje</translation>
+    </message>
+    <message>
+        <source>Video Search</source>
+        <translation>Etsi videoita</translation>
+    </message>
+    <message>
+        <source>Page </source>
+        <translation>Sivu </translation>
+    </message>
+    <message>
+        <source>Next page button</source>
+        <translation>Seuraava sivu painike</translation>
+    </message>
+    <message>
+        <source>Close this window</source>
+        <translation>Sulje tämä ikkuna</translation>
+    </message>
+    <message>
+        <source>Please, select one or more services.</source>
+        <translation>Ole hyvä ja valitse yksi tai useampi palveluista.</translation>
+    </message>
+    <message>
+        <source>Close button</source>
+        <translation>Sulje painike</translation>
+    </message>
+    <message>
+        <source>Search on previus page</source>
+        <translation>Haku edellseltä sivulta</translation>
+    </message>
+    <message>
+        <source>All adult services</source>
+        <translation>Kaikki aikuisviihdesivuilta</translation>
+    </message>
+    <message>
+        <source>Searching &quot;&lt;b&gt;%1&lt;/b&gt;&quot; (page %2)... please wait...</source>
+        <translation>Hakee&quot;&lt;b&gt;%1&lt;/b&gt;&quot; ( sivu %2 )... Odota hetki...</translation>
+    </message>
+    <message>
+        <source>Field where your enter the key words to search</source>
+        <translation>Kenttä mihin tulee antaa avainsana haettavaksi</translation>
+    </message>
+    <message>
+        <source>Current search page edit</source>
+        <translation>Muokkaa nykyistä hakusivua</translation>
+    </message>
+    <message>
+        <source>Previus page button</source>
+        <translation>Edellinen sivu painike</translation>
+    </message>
+    <message>
+        <source>Current search page</source>
+        <translation>Nykyinen hakusivu</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Haku</translation>
+    </message>
+    <message>
+        <source>Key words edit</source>
+        <translation>Muokkaa hakusanaa</translation>
+    </message>
+    <message>
+        <source>All services</source>
+        <translation>Kaikki palvelut</translation>
+    </message>
+    <message>
+        <source>All standard services</source>
+        <translation>kaikki peruspalvelut</translation>
+    </message>
+    <message>
+        <source>Search in:</source>
+        <translation>Etsi:</translation>
+    </message>
+    <message>
+        <source>List of services with search capabilities</source>
+        <translation>Luettelo palveluiden hakuominaisuuksista</translation>
+    </message>
+    <message>
+        <source>Results:</source>
+        <translation>Tulokset:</translation>
+    </message>
+    <message>
+        <source>Custom search</source>
+        <translation>Mukautettu haku</translation>
+    </message>
+    <message>
+        <source>Search services list</source>
+        <translation>Hae palvelut listalta</translation>
+    </message>
+    <message>
+        <source>Start new search</source>
+        <translation>Aloita uusi haku</translation>
+    </message>
+    <message>
+        <source>Search button</source>
+        <translation>Haku painike</translation>
+    </message>
+    <message>
+        <source>Search on next page</source>
+        <translation>Hae seuraavalta sivulta</translation>
+    </message>
+</context>
+<context>
     <name>SearchVideosItemImpl</name>
     <message>
         <source>Ok</source>
@@ -2363,7 +2666,7 @@
     </message>
     <message>
         <source>Download not avaiable...</source>
-        <translation>Lataus ei ole saatavissa...</translation>
+        <translation type="vanished">Lataus ei ole saatavissa...</translation>
     </message>
     <message>
         <source>Download video</source>
@@ -2417,6 +2720,21 @@
         <source>Download video button</source>
         <translation>Painike videon lataamista varten</translation>
     </message>
+    <message>
+        <source>Download not available...</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SearchVideosNoResults</name>
+    <message>
+        <source>Form</source>
+        <translation>Form</translation>
+    </message>
+    <message>
+        <source>No results found with &quot;&lt;b&gt;%1&lt;/b&gt;&quot;</source>
+        <translation>Tuloksia ei löytynyt &quot;&lt;b&gt;%1&lt;/b&gt;&quot;</translation>
+    </message>
 </context>
 <context>
     <name>UPSPasswordImpl</name>
@@ -2463,6 +2781,61 @@
     <message>
         <source>Cancel button</source>
         <translation>Peruuta painike</translation>
+    </message>
+</context>
+<context>
+    <name>UpdateCenter</name>
+    <message>
+        <source>List with all available updates</source>
+        <translation>Listaa kaikki käytettävissä olevat päivitykset</translation>
+    </message>
+    <message>
+        <source>Close without installing updates</source>
+        <translation>Sulje asentamatta päivityksiä</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>Available updates:</source>
+        <translation>Päivityksiä saatavilla:</translation>
+    </message>
+    <message>
+        <source>Install updates</source>
+        <translation>Asenna päivitykset</translation>
+    </message>
+    <message>
+        <source>Update center</source>
+        <translation>Päivityskeskus</translation>
+    </message>
+    <message>
+        <source>Download and install button</source>
+        <translation>Lataa ja asenna painike</translation>
+    </message>
+    <message>
+        <source>Available updates list</source>
+        <translation>Saatavilla oleva päivityslista</translation>
+    </message>
+    <message>
+        <source>0 bytes (0 bytes)</source>
+        <translation>0 tavua (0 tavua)</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Update state:&lt;/b&gt; Stopped</source>
+        <translation>&lt;b&gt; Päivityksen tila: &lt;/ b&gt; Pysäytetty</translation>
+    </message>
+    <message>
+        <source>Download and install the selected updates from the list</source>
+        <translation>Lataa ja asenna valitut päivitykset listasta</translation>
+    </message>
+    <message>
+        <source>Cancel button</source>
+        <translation>Peruuta painike</translation>
+    </message>
+    <message>
+        <source>Current xVST version: &lt;b&gt;%1&lt;/b&gt;</source>
+        <translation>Nykyinen xVST versio: &lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -2514,418 +2887,6 @@
     <message>
         <source>&lt;b&gt;Update state:&lt;/b&gt; Downloading %1</source>
         <translation>&lt;b&gt;Päivityksen tila:&lt;/b&gt; Ladataan %1</translation>
-    </message>
-</context>
-<context>
-    <name>DragDrop</name>
-    <message>
-        <source>10%</source>
-        <translation>10%</translation>
-    </message>
-    <message>
-        <source>20%</source>
-        <translation>20%</translation>
-    </message>
-    <message>
-        <source>30%</source>
-        <translation>30%</translation>
-    </message>
-    <message>
-        <source>40%</source>
-        <translation>40%</translation>
-    </message>
-    <message>
-        <source>50%</source>
-        <translation>50%</translation>
-    </message>
-    <message>
-        <source>60%</source>
-        <translation>60%</translation>
-    </message>
-    <message>
-        <source>70%</source>
-        <translation>70%</translation>
-    </message>
-    <message>
-        <source>80%</source>
-        <translation>80%</translation>
-    </message>
-    <message>
-        <source>90%</source>
-        <translation>90%</translation>
-    </message>
-    <message>
-        <source>OFF</source>
-        <translation>OFF</translation>
-    </message>
-    <message>
-        <source>Ctrl+V</source>
-        <translation>Ctrl+V</translation>
-    </message>
-    <message>
-        <source>Custom</source>
-        <translation>Custom</translation>
-    </message>
-    <message>
-        <source>Alpha blend value</source>
-        <translation>Alpha sekoitusarvo</translation>
-    </message>
-    <message>
-        <source>Drag&amp;Drop</source>
-        <translation>Vedä&amp;Pudota</translation>
-    </message>
-    <message>
-        <source>Display main window</source>
-        <translation>Näytä pääikkunassa</translation>
-    </message>
-    <message>
-        <source>Paste URL from clipboard</source>
-        <translation>Lisää URL leikepöydältä</translation>
-    </message>
-</context>
-<context>
-    <name>DownloadLogImpl</name>
-    <message>
-        <source>URL</source>
-        <translation>URL</translation>
-    </message>
-    <message>
-        <source>Video Title</source>
-        <translation>Videon Otsikko</translation>
-    </message>
-    <message>
-        <source>Date/Time</source>
-        <translation>Päiväys/Aika</translation>
-    </message>
-</context>
-<context>
-    <name>SearchVideosNoResults</name>
-    <message>
-        <source>Form</source>
-        <translation>Form</translation>
-    </message>
-    <message>
-        <source>No results found with &quot;&lt;b&gt;%1&lt;/b&gt;&quot;</source>
-        <translation>Tuloksia ei löytynyt &quot;&lt;b&gt;%1&lt;/b&gt;&quot;</translation>
-    </message>
-</context>
-<context>
-    <name>BugReport</name>
-    <message>
-        <source>Send</source>
-        <translation>Lähetä</translation>
-    </message>
-    <message>
-        <source>Send the &quot;Bug report&quot; and close this dialog</source>
-        <translation>Lähetä vikailmoitus ja sulje tämä ikkuna</translation>
-    </message>
-    <message>
-        <source>Don&apos;t display &quot;Bug Report&quot; the next time</source>
-        <translation>Älä näytä bugiraporttia seuraavalla kerralla</translation>
-    </message>
-    <message>
-        <source>Your name will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
-        <translation>Nimesi lisätään osaksi &quot;vikailmoitusta&quot;. Tämä kenttä on täysin vapaahtoinen</translation>
-    </message>
-    <message>
-        <source>Your comments: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
-        <translation>Kommentit: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(englanniksi, vapaahtoinen)&lt;/span&gt;</translation>
-    </message>
-    <message>
-        <source>Sending your &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;... please wait...</source>
-        <translation>Lähetetään&quot;&lt;b&gt;Virheilmoitus&lt;/b&gt;&quot;...Odota hetki...</translation>
-    </message>
-    <message>
-        <source>xVST version: &lt;b&gt;%1&lt;/b&gt;</source>
-        <translation>xVST versio: &lt;b&gt;%1&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Close this dialog without sending the &quot;Bug report&quot;</source>
-        <translation>Sulje tämä ikkuna kun &quot;virheilmoitus&quot; on lähetetty</translation>
-    </message>
-    <message>
-        <source>Your name: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
-        <translation>Nimesi: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(vapaahtoinen)&lt;/span&gt;</translation>
-    </message>
-    <message>
-        <source>Your email</source>
-        <translation>Sähköpostiosoitteesi</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Bug Report</source>
-        <translation>Vikailmoitus</translation>
-    </message>
-    <message>
-        <source>Your email will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
-        <translation>Sähköpostiosoitteesi lisätään osaksi &quot;vikailmoitusta&quot;. Tämä kenttä on täysin vapaahtoinen</translation>
-    </message>
-    <message>
-        <source>Your comments</source>
-        <translation>Kommentit</translation>
-    </message>
-    <message>
-        <source>You can add your own comment which will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
-        <translation>Voit lisätä oman kommenttisi, joka lisätään osaksi &quot;Vikailmoitusta&quot;. Tämä kenttä on täysin vapaaehtoinen</translation>
-    </message>
-    <message>
-        <source>Send button</source>
-        <translation>Lähetä painike</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Ops! An error occurred while trying to download the video.&lt;/b&gt;
-&lt;p&gt;You can help to fix this problem sending us an &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;. This Report will be used to analyze the error and if is necessary fix it and improve the next version of xVST.&lt;/p&gt;
-&lt;p&gt;Your help is allways welcomed!&lt;/p&gt;</source>
-        <translation>&lt;b&gt;Ops! Virhe videon latauksessa.&lt;/b&gt;
-&lt;p&gt;Voit auttaa korjaamaan tämän ongelman lähettämällä meille &quot;&lt;b&gt;Vikailmoituksen&lt;/b&gt;&quot;. Tällä vikailmoituksella voimme analysoida virheen ja jos on tarpeen korjata ja parantaa se seuraavassa xVST:n versiossa . &lt;/ p&gt;
-&lt;p&gt;Apusi on aina tervetullut&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>If this option is checked, this dialog will not be displayed again (and no &quot;Bug report&quot; will be sent)</source>
-        <translation>Jos tämä vaihtoehto on valittuna, tätä valintaikkunaa ei tule näkyviin uudelleen (eikä &quot;vikailmoitusta&quot; lähetetä)</translation>
-    </message>
-    <message>
-        <source>Video URL: &lt;b&gt;%1&lt;/b&gt;</source>
-        <translation>Videon URL: &lt;b&gt;%1&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt;xVST SourceForge tracker&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&quot;&lt;b&gt;Vikailmoitus&lt;/b&gt;&quot; lähetetään &lt;a href = &quot;http://sourceforge.net/tracker/?group_id=205061&amp;atid=1037803&quot;&gt; SourceForge.net Tracker-järjestelmään &lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Sinun nimesi ja sähköpostiosoitteesi lisätään&lt;b&gt;Virheilmoitukseen&lt;/b&gt;&quot;, tämä on kuitenkin täysin vapaaehtoista.&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Your name</source>
-        <translation>Nimesi</translation>
-    </message>
-    <message>
-        <source>QFrame{background: white;} </source>
-        <translation>QFrame{background: white;} </translation>
-    </message>
-    <message>
-        <source>Error information</source>
-        <translation>Virheen tiedot</translation>
-    </message>
-    <message>
-        <source>Do not display &quot;Bug Report&quot;</source>
-        <translation>Älä näytä &quot;Vikailmoitusta&quot;</translation>
-    </message>
-    <message>
-        <source>View which information will be sent</source>
-        <translation>Näytä mitä tietoja lähetetään</translation>
-    </message>
-    <message>
-        <source>Email: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
-        <translation>Sähköpostiosoite: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(vapaahtoinen)&lt;/span&gt;</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation>Peruuta painike</translation>
-    </message>
-</context>
-<context>
-    <name>WindowsVistaDetected</name>
-    <message>
-        <source>Continue...</source>
-        <translation>Jatka...</translation>
-    </message>
-    <message>
-        <source>To solve this problem, we recommend you to run the xVST as administrator (right click over xVST icon -&gt; Run as Administrator) only when you want install new versions using the Update center.</source>
-        <translation>Voit ratkaista tämän ongelman, suosittelemme että ajat xVST järjestelmänvalvojana (oikea klikkaa yli xVST kuvaketta -&gt; Suorita järjestelmänvalvojana) vain, jos haluat asentaa uusia versioita käyttämällä Päivityskeskusta.</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Update center - Windows Vista detected</source>
-        <translation>Päivityskeskus / Windows Vista havaittu</translation>
-    </message>
-    <message>
-        <source>Don&apos;t display this message again</source>
-        <translation>Älä näytä tätä viestiä enää</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;b&gt;Attention, xVST detected you are running Windows Vista/7 and automatic updates may not work properly.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If you have the &lt;b&gt;UAC&lt;/b&gt; (User Account Control) enabled, the automatic updates won&apos;t install the downloaded updates due to user permissions.&lt;/p&gt;</source>
-        <translation>&lt;p&gt; &lt;b&gt; Huomio, xVST havainnut että käytössäsi on Windows Vista/7 automaattiset päivitykset ei toimi oikein. &lt;/b&gt;&lt;/p&gt; Jos sinulla on &lt;b&gt;UAC &lt;/b&gt; (User Account Control) avulla, automaattiset päivitykset eivät asennu  käyttöoikeuksien takia.&lt;/p&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>InfoView</name>
-    <message>
-        <source>Close</source>
-        <translation>Sulje</translation>
-    </message>
-    <message>
-        <source>Close button</source>
-        <translation>Sulje painike</translation>
-    </message>
-    <message>
-        <source>Information which will be send to SourceForge.net tracker</source>
-        <translation>Tiedot, jotka on toimitetaan SourceForge.net trackeriin</translation>
-    </message>
-    <message>
-        <source>Information View</source>
-        <translation>Katso tietoja</translation>
-    </message>
-    <message>
-        <source>Information which will be sent</source>
-        <translation>Tiedot jotka lähetetään</translation>
-    </message>
-    <message>
-        <source>This is the information which will be send:</source>
-        <translation>Tämä informaatio lähetetään:</translation>
-    </message>
-    <message>
-        <source>Close the Information view</source>
-        <translation>Sulje informaatio näkymä</translation>
-    </message>
-</context>
-<context>
-    <name>Information</name>
-    <message>
-        <source>Close</source>
-        <translation>Sulje</translation>
-    </message>
-    <message>
-        <source>Program version:</source>
-        <translation>Ohjelman versio:</translation>
-    </message>
-    <message>
-        <source>List of supported services</source>
-        <translation>Luettelo tukipalveluista</translation>
-    </message>
-    <message>
-        <source>Close button</source>
-        <translation>Sulje painike</translation>
-    </message>
-    <message>
-        <source>Homepage:</source>
-        <translation>Kotisivu:</translation>
-    </message>
-    <message>
-        <source>Language:</source>
-        <translation>Kieli:</translation>
-    </message>
-    <message>
-        <source>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt; via Paypal! It&apos;s easy and fast! :)</source>
-        <translation>Tee lahjoitus &lt;b&gt; xVideoServiceThief &lt;/b&gt;Paypalin kautta! Se on helppoa ja nopeaa! :)</translation>
-    </message>
-    <message>
-        <source>xVideoServiceThief is a tool for downloading your favourite video clips from a lot of video websites.
-
-xVideoServiceThief also provide you the ability to convert each video in most popular formats: AVI, MPEG1, MPEG2, WMV, MP4, 3GP, MP3 file formats.</source>
-        <translation>xVideoServiceThief on työkalu suosikki videoleikkeiden lataukseen verkkosivustoilta.
-
-xVideoServiceThief antaa sinulle mahdollisuuden muuntaa kunkin videon suosituimpiin formaatteihin mm. AVI, MPEG1, MPEG2, WMV, MP4, 3GP ja MP3-tiedostomuotoon.</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation>Muutosloki</translation>
-    </message>
-    <message>
-        <source>Close the Information dialog</source>
-        <translation>Sulje informaatio dialogi</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;English (UK)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;English (UK)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Display the credits dialog</source>
-        <translation>Näytä tekijät dialogi</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Informaatio</translation>
-    </message>
-    <message>
-        <source>QTextBrowser{
-font-family:Arial, Helvetica, sans-serif;
-font-size:12px;
-}</source>
-        <translation>QTextBrowser{font-family:Meiryo, Helvetica, sans-serif;font-size:12px;}</translation>
-    </message>
-    <message>
-        <source>Support button</source>
-        <translation>Tue painike</translation>
-    </message>
-    <message>
-        <source>List of services</source>
-        <translation>Luettelo palveluista</translation>
-    </message>
-    <message>
-        <source>Credits...</source>
-        <translation>Tekijät...</translation>
-    </message>
-    <message>
-        <source>&lt;a href=&quot;http://xviservicethief.sourceforge.net/&quot;&gt;http://xviservicethief.sourceforge.net/&lt;/a&gt;</source>
-        <translation>&lt;a href=&quot;http://xviservicethief.sourceforge.net/&quot;&gt;http://xviservicethief.sourceforge.net/&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;xVideoServiceThief currently supports download from:&lt;/b&gt;</source>
-        <translation>&lt;b&gt; xVideoServiceThief tukee tällä hetkellä ladattavia osoitteita:&lt;/ b&gt;</translation>
-    </message>
-    <message>
-        <source>Credits button</source>
-        <translation>Tekijät painike</translation>
-    </message>
-    <message>
-        <source>QFrame{
-background: white;
-} </source>
-        <translation>QFrame{background: white;} </translation>
-    </message>
-    <message>
-        <source>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt;!</source>
-        <translation>Tee lahjoitus &lt;b&gt;xVideoServiceThief&lt;/b&gt; ohjelmalle!</translation>
-    </message>
-</context>
-<context>
-    <name>WelcomeDonate</name>
-    <message>
-        <source>Close</source>
-        <translation>Sulje</translation>
-    </message>
-    <message>
-        <source>Don&apos;t display this message again</source>
-        <translation>Älä näytä tätä viestiä enää</translation>
-    </message>
-    <message>
-        <source>&lt;h3&gt;&lt;b&gt;Please donate!&lt;/b&gt;&lt;/h3&gt;</source>
-        <translation>&lt;h3&gt;&lt;b&gt;Lahjoita!&lt;/b&gt;&lt;/h3&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;This software is totally free of charge, but you can consider to donate if you like this tool or if you use it in a commercial environment.&lt;/p&gt;
-&lt;p&gt;Thanks! We will appreciate it very much!&lt;/p&gt;
-&lt;p&gt;Why I should donate? Your donations will help to improve xVideoServiceThief and to pay our IT bills.&lt;/p&gt;
-&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; If you paid for download this application , then you has been scamed!&lt;/font&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Tämä ohjelma on täysin ilmainen, mutta voit lahjoittaa jos pidät tästä työkalusta tai jos käytät sitä kaupallisessa ympäristössä. &lt;/p&gt;
-&lt;p&gt;Kiitos! Me arvostamme sitä suuresti!&lt;/p&gt;
-&lt;p&gt;Miksi minun pitäisi lahjoittaa? Lahjoituksesi auttaa parantamaan xVideoServiceThief ohjelmaa ja maksaa IT:n laskuja.&lt;/p&gt;
-&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Huom: &lt;/b&gt; Jos olet maksanut sovelluksen latauksesta, sinua on huijattu!&lt;/font&gt; &lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Donate!</source>
-        <translation>Lahjoita!</translation>
-    </message>
-    <message>
-        <source>Welcome to xVideoServiceThief</source>
-        <translation>Tervetuloa xVideoServiceThiefiin</translation>
-    </message>
-</context>
-<context>
-    <name>WhatsNew</name>
-    <message>
-        <source>Close</source>
-        <translation>Sulje</translation>
-    </message>
-    <message>
-        <source>What&apos;s new....</source>
-        <translation>Mitä uutta...</translation>
     </message>
 </context>
 <context>
@@ -3001,6 +2962,228 @@ background: white;
     <message>
         <source>Lower quality (Video bitrate: 384kbps; Audio bitrate: 64kbps)</source>
         <translation>Matala laatu (Videon bittinopeus: 384kbps; Äänen Bittinopeus: 64kbps)</translation>
+    </message>
+</context>
+<context>
+    <name>VideoInformation</name>
+    <message>
+        <source>Invalid URL</source>
+        <translation>Virheellinen URL</translation>
+    </message>
+    <message>
+        <source>Adobe Flash streaming</source>
+        <translation>Adobe Flash streaming</translation>
+    </message>
+    <message>
+        <source>Unsupported video service</source>
+        <translation>Videopalvelua ei tueta</translation>
+    </message>
+</context>
+<context>
+    <name>VideoItem</name>
+    <message>
+        <source>-</source>
+        <translation>-</translation>
+    </message>
+    <message>
+        <source>/sec</source>
+        <translation>/sek</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation>Virhe</translation>
+    </message>
+    <message>
+        <source>Ready</source>
+        <translation>Valmis</translation>
+    </message>
+    <message>
+        <source>Converting...</source>
+        <translation>Muuntaa...</translation>
+    </message>
+    <message>
+        <source>Invalid file size</source>
+        <translation>Virheellinen tiedosto koko</translation>
+    </message>
+    <message>
+        <source>Unable to create the destination file</source>
+        <translation>Kohdetiedostoa ei voida luoda</translation>
+    </message>
+    <message>
+        <source>Need login...</source>
+        <translation>Tarvitsee kirjautumisen...</translation>
+    </message>
+    <message>
+        <source>The maximum allowed http redirections has been reached</source>
+        <translation>Suurin sallittu http:n uudelleenohjauksien määrä saavutettu</translation>
+    </message>
+    <message>
+        <source>Unable append data to file</source>
+        <translation>Datan liittäminen tiedostoon ei onnistu</translation>
+    </message>
+    <message>
+        <source>Invalid URL</source>
+        <translation>Virheellinen URL</translation>
+    </message>
+    <message>
+        <source>Failed to connect with RTMP server</source>
+        <translation>Yhteys RTMP palvelimeen epäonnistui</translation>
+    </message>
+    <message>
+        <source>File to resume not found</source>
+        <translation>Tiedostoa jatkamiseen ei löytynyt</translation>
+    </message>
+    <message>
+        <source>Resuming...</source>
+        <translation>Jatkaa...</translation>
+    </message>
+    <message>
+        <source>flvstreamer is missing (impossible download from RTMP server)</source>
+        <translation>flvstreamer puuttuu (mahdoton ladata RTMP palvelimelta)</translation>
+    </message>
+    <message>
+        <source>Completed</source>
+        <translation>Valmis</translation>
+    </message>
+    <message>
+        <source>Downloaded</source>
+        <translation>Ladattu</translation>
+    </message>
+    <message>
+        <source>Paused</source>
+        <translation>Tauko</translation>
+    </message>
+    <message>
+        <source>Converted</source>
+        <translation>Muuntaa</translation>
+    </message>
+    <message>
+        <source>Getting info...</source>
+        <translation>Hakee tietoja...</translation>
+    </message>
+    <message>
+        <source>Unable to create the destination dir</source>
+        <translation>Kohdetta ei voida luoda</translation>
+    </message>
+    <message>
+        <source>Download incomplete (due to download errors)</source>
+        <translation>Lataus puutteellinen (liian paljon virheitä)</translation>
+    </message>
+    <message>
+        <source>Unable to open the destination file</source>
+        <translation>Kohdetiedostoa ei voida avata</translation>
+    </message>
+    <message>
+        <source>The remote content was not found at the server </source>
+        <translation>Etäsisältöä ei löytynyt palvelimelta</translation>
+    </message>
+    <message>
+        <source>Failed on initialize the pthread_create</source>
+        <translation>Epäonnistunut alustus pthread_creat</translation>
+    </message>
+    <message>
+        <source>An another download is already active</source>
+        <translation>Toinen lataus on jo aktiivinen</translation>
+    </message>
+    <message>
+        <source>Canceled</source>
+        <translation>Peruutettu</translation>
+    </message>
+    <message>
+        <source>Updating info...</source>
+        <translation>Päivitetään tietoja ...</translation>
+    </message>
+    <message>
+        <source>The connection to the remote server timed out</source>
+        <translation>Yhteys palvelimeen aikakatkaistu</translation>
+    </message>
+    <message>
+        <source>Blocked</source>
+        <translation>Tukossa</translation>
+    </message>
+    <message>
+        <source>Deleted</source>
+        <translation>Poistettu</translation>
+    </message>
+    <message>
+        <source>The video to resume is missing</source>
+        <translation>Video jatkamiseen puuttuu</translation>
+    </message>
+    <message>
+        <source>Downloading...</source>
+        <translation>Ladataan....</translation>
+    </message>
+    <message>
+        <source>Queued...</source>
+        <translation>Jonossa...</translation>
+    </message>
+    <message>
+        <source>Unable to resume the FLV file</source>
+        <translation>FLV-tiedostoa ei pystytä palauttamaan</translation>
+    </message>
+    <message>
+        <source>Unable resume the download</source>
+        <translation>Latausta ei voida jatkaa</translation>
+    </message>
+    <message>
+        <source>Connection error: Unable to download the video</source>
+        <translation>Yhteysvirhe: &gt;Videota ei voida ladata</translation>
+    </message>
+    <message>
+        <source>The remote server refused the connection (the server is not accepting requests)</source>
+        <translation>Etäpalvelimelta estettiin yhteys (palvelin ei hyväksy pyyntöä)</translation>
+    </message>
+    <message>
+        <source>The access to the remote content was denied</source>
+        <translation>Pääsy etäsisältöön evättiin</translation>
+    </message>
+    <message>
+        <source>The remote host name was not found (invalid hostname)</source>
+        <translation>Kauko-palvelimen nimeä ei löydy (hostname ei kelpaa)</translation>
+    </message>
+</context>
+<context>
+    <name>WelcomeDonate</name>
+    <message>
+        <source>Close</source>
+        <translation>Sulje</translation>
+    </message>
+    <message>
+        <source>Don&apos;t display this message again</source>
+        <translation>Älä näytä tätä viestiä enää</translation>
+    </message>
+    <message>
+        <source>&lt;h3&gt;&lt;b&gt;Please donate!&lt;/b&gt;&lt;/h3&gt;</source>
+        <translation>&lt;h3&gt;&lt;b&gt;Lahjoita!&lt;/b&gt;&lt;/h3&gt;</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;This software is totally free of charge, but you can consider to donate if you like this tool or if you use it in a commercial environment.&lt;/p&gt;
+&lt;p&gt;Thanks! We will appreciate it very much!&lt;/p&gt;
+&lt;p&gt;Why I should donate? Your donations will help to improve xVideoServiceThief and to pay our IT bills.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; If you paid for download this application , then you has been scamed!&lt;/font&gt;&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Tämä ohjelma on täysin ilmainen, mutta voit lahjoittaa jos pidät tästä työkalusta tai jos käytät sitä kaupallisessa ympäristössä. &lt;/p&gt;
+&lt;p&gt;Kiitos! Me arvostamme sitä suuresti!&lt;/p&gt;
+&lt;p&gt;Miksi minun pitäisi lahjoittaa? Lahjoituksesi auttaa parantamaan xVideoServiceThief ohjelmaa ja maksaa IT:n laskuja.&lt;/p&gt;
+&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Huom: &lt;/b&gt; Jos olet maksanut sovelluksen latauksesta, sinua on huijattu!&lt;/font&gt; &lt;/p&gt;</translation>
+    </message>
+    <message>
+        <source>Donate!</source>
+        <translation>Lahjoita!</translation>
+    </message>
+    <message>
+        <source>Welcome to xVideoServiceThief</source>
+        <translation>Tervetuloa xVideoServiceThiefiin</translation>
+    </message>
+</context>
+<context>
+    <name>WhatsNew</name>
+    <message>
+        <source>Close</source>
+        <translation>Sulje</translation>
+    </message>
+    <message>
+        <source>What&apos;s new....</source>
+        <translation>Mitä uutta...</translation>
     </message>
 </context>
 <context>
@@ -3091,139 +3274,6 @@ background: white;
     </message>
 </context>
 <context>
-    <name>CheckUpdates</name>
-    <message>
-        <source>Connecting...</source>
-        <translation>Yhdistää...</translation>
-    </message>
-    <message>
-        <source>Check updates...</source>
-        <translation>Tarkistaa päivityksiä....</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Cancel the checking for updates process and close this dialog</source>
-        <translation>Peruuta päivitys prosessi tarkistus ja sulje tämä ikkuna</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation>Peruuta painike</translation>
-    </message>
-</context>
-<context>
-    <name>InformationImpl</name>
-    <message>
-        <source>&lt;p&gt;Total websites supported (plugins installed): &lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Sivustoja tukevia liitännäisiä asennettu yhteensä: &lt;strong&gt;%1&lt;/strong&gt;&lt;/p&gt;</translation>
-    </message>
-    <message>
-        <source>Adult web sites:</source>
-        <translation>Aikuisviihdesivut:</translation>
-    </message>
-    <message>
-        <source>Music web sites:</source>
-        <translation>Musiikkisivivut:</translation>
-    </message>
-    <message>
-        <source>Adult sites are blocked...</source>
-        <translation>Aikuisviihdesivustot ovat estetyt...</translation>
-    </message>
-</context>
-<context>
-    <name>VideoInformation</name>
-    <message>
-        <source>Invalid URL</source>
-        <translation>Virheellinen URL</translation>
-    </message>
-    <message>
-        <source>Adobe Flash streaming</source>
-        <translation>Adobe Flash streaming</translation>
-    </message>
-    <message>
-        <source>Unsupported video service</source>
-        <translation>Videopalvelua ei tueta</translation>
-    </message>
-</context>
-<context>
-    <name>Loading</name>
-    <message>
-        <source>Loading</source>
-        <translation>Lataa</translation>
-    </message>
-</context>
-<context>
-    <name>UpdateCenter</name>
-    <message>
-        <source>List with all available updates</source>
-        <translation>Listaa kaikki käytettävissä olevat päivitykset</translation>
-    </message>
-    <message>
-        <source>Close without installing updates</source>
-        <translation>Sulje asentamatta päivityksiä</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation>Peruuta</translation>
-    </message>
-    <message>
-        <source>Available updates:</source>
-        <translation>Päivityksiä saatavilla:</translation>
-    </message>
-    <message>
-        <source>Install updates</source>
-        <translation>Asenna päivitykset</translation>
-    </message>
-    <message>
-        <source>Update center</source>
-        <translation>Päivityskeskus</translation>
-    </message>
-    <message>
-        <source>Download and install button</source>
-        <translation>Lataa ja asenna painike</translation>
-    </message>
-    <message>
-        <source>Available updates list</source>
-        <translation>Saatavilla oleva päivityslista</translation>
-    </message>
-    <message>
-        <source>0 bytes (0 bytes)</source>
-        <translation>0 tavua (0 tavua)</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Update state:&lt;/b&gt; Stopped</source>
-        <translation>&lt;b&gt; Päivityksen tila: &lt;/ b&gt; Pysäytetty</translation>
-    </message>
-    <message>
-        <source>Download and install the selected updates from the list</source>
-        <translation>Lataa ja asenna valitut päivitykset listasta</translation>
-    </message>
-    <message>
-        <source>Cancel button</source>
-        <translation>Peruuta painike</translation>
-    </message>
-    <message>
-        <source>Current xVST version: &lt;b&gt;%1&lt;/b&gt;</source>
-        <translation>Nykyinen xVST versio: &lt;b&gt;%1&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>CustomAlphaBlendImpl</name>
-    <message>
-        <source>Current: &lt;b&gt;%1%&lt;/b&gt;</source>
-        <translation>Nykyinen: &lt;b&gt;%1%&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>CompletedPopupImpl</name>
-    <message>
-        <source>Download completed</source>
-        <translation>Lataus valmis</translation>
-    </message>
-</context>
-<context>
     <name>WinVistaDownloadsMsgImpl</name>
     <message>
         <source>Select the download directory:</source>
@@ -3231,14 +3281,30 @@ background: white;
     </message>
 </context>
 <context>
-    <name>LoadingImpl</name>
+    <name>WindowsVistaDetected</name>
     <message>
-        <source>Plugins loaded</source>
-        <translation>Lisäosat ladattu</translation>
+        <source>Continue...</source>
+        <translation>Jatka...</translation>
     </message>
     <message>
-        <source>Loading plugins... please wait...</source>
-        <translation>Lisäosia ladataan...odota hetki...</translation>
+        <source>To solve this problem, we recommend you to run the xVST as administrator (right click over xVST icon -&gt; Run as Administrator) only when you want install new versions using the Update center.</source>
+        <translation>Voit ratkaista tämän ongelman, suosittelemme että ajat xVST järjestelmänvalvojana (oikea klikkaa yli xVST kuvaketta -&gt; Suorita järjestelmänvalvojana) vain, jos haluat asentaa uusia versioita käyttämällä Päivityskeskusta.</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Peruuta</translation>
+    </message>
+    <message>
+        <source>Update center - Windows Vista detected</source>
+        <translation>Päivityskeskus / Windows Vista havaittu</translation>
+    </message>
+    <message>
+        <source>Don&apos;t display this message again</source>
+        <translation>Älä näytä tätä viestiä enää</translation>
+    </message>
+    <message>
+        <source>&lt;p&gt;&lt;b&gt;Attention, xVST detected you are running Windows Vista/7 and automatic updates may not work properly.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If you have the &lt;b&gt;UAC&lt;/b&gt; (User Account Control) enabled, the automatic updates won&apos;t install the downloaded updates due to user permissions.&lt;/p&gt;</source>
+        <translation>&lt;p&gt; &lt;b&gt; Huomio, xVST havainnut että käytössäsi on Windows Vista/7 automaattiset päivitykset ei toimi oikein. &lt;/b&gt;&lt;/p&gt; Jos sinulla on &lt;b&gt;UAC &lt;/b&gt; (User Account Control) avulla, automaattiset päivitykset eivät asennu  käyttöoikeuksien takia.&lt;/p&gt;</translation>
     </message>
 </context>
 </TS>
