@@ -1,6 +1,10 @@
 2.5.2:
 ------
 
+- Added chinese (traditional) translation (thank you Hsiu-Ming Chang)
+
+- Updated japanese translation
+
 - Fixed bug (Error: Language packages were not installed causing updates to get stuck)
 
 2.5.1:
