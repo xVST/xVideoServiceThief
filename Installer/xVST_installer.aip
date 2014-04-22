@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="5.2.2" version="10.8" Modules="simple" RootPath="." Language="en" Id="{D089A15B-5770-4510-B831-66162F49CC3F}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="5.2.2" version="11.0" Modules="simple" RootPath="." Language="en" Id="{D089A15B-5770-4510-B831-66162F49CC3F}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiValidationComponent">
     <ROW Table="File" Column="Sequence" MinValue="1" MaxValue="2147483647" Description="Sequence with respect to the media images; order must track cabinet order." Options="0" ColumnType="3" ColumnIndex="7" ColumnSize="4" MsiKey="File#Sequence"/>
     <ROW Table="Media" Column="LastSequence" MinValue="0" MaxValue="2147483647" Description="File sequence number for the last file for this media." Options="0" ColumnType="3" ColumnIndex="1" ColumnSize="4" MsiKey="Media#LastSequence"/>
@@ -14,10 +14,10 @@
     <ROW Property="ARPURLINFOABOUT" Value="http://xviservicethief.sourceforge.net/"/>
     <ROW Property="ARPURLUPDATEINFO" Value="http://xviservicethief.sourceforge.net/"/>
     <ROW Property="Manufacturer" Value="Xesc &amp; Technology" ValueLocId="*"/>
-    <ROW Property="ProductCode" Value="1033:{64A2A800-1992-4933-87A0-EB05F95A67E0} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{E3869291-CC30-45D8-B980-084033C15DBF} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="xVideoServiceThief" ValueLocId="*"/>
-    <ROW Property="ProductVersion" Value="2.5.1" Type="32"/>
+    <ROW Property="ProductVersion" Value="2.5.2" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{FA98D6CA-0AA3-4897-9928-194EC4DEEA4D}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -42,9 +42,8 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="GPL.txt" ComponentId="{F18E021C-46DB-403D-ACC9-BF71EBF311AF}" Directory_="APPDIR" Attributes="0" KeyPath="GPL.txt" Type="0"/>
     <ROW Component="SHORTCUTDIR" ComponentId="{A2849C9F-F1BB-46BE-9E59-BC17B2E0528E}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="badjojo.js" ComponentId="{0C23F7CA-99BF-4D17-9D3D-20F75D74226A}" Directory_="plugins_DIR" Attributes="0" KeyPath="badjojo.js" Type="0"/>
+    <ROW Component="bulgarian.language" ComponentId="{D391000B-E06F-4340-B115-6241DF9740CD}" Directory_="languages_DIR" Attributes="0" KeyPath="bulgarian.language" Type="0"/>
     <ROW Component="downloads" ComponentId="{6788E29F-0CCC-491B-964D-619EA1AE9F1D}" Directory_="downloads_DIR" Attributes="0"/>
-    <ROW Component="english_uk.language" ComponentId="{78CB5C0B-CABF-43D5-824B-1C2776B2AD2F}" Directory_="languages_DIR" Attributes="0" KeyPath="english_uk.language" Type="0"/>
     <ROW Component="ffmpeg.exe" ComponentId="{2188BED1-13CC-465B-A67D-CC059AB37641}" Directory_="bin_DIR" Attributes="0" KeyPath="ffmpeg.exe"/>
     <ROW Component="libeay32.dll" ComponentId="{E7195941-8B40-46E7-9FB5-3C3BC86FFDCF}" Directory_="APPDIR" Attributes="0" KeyPath="libeay32.dll"/>
     <ROW Component="librtmp0.dll" ComponentId="{7097057C-B588-44AF-A8C1-76E3EE1148F9}" Directory_="bin_DIR" Attributes="0" KeyPath="librtmp0.dll"/>
@@ -55,72 +54,74 @@
     <ROW Component="pthreadGC2.dll" ComponentId="{D4F7AD33-CA20-444E-86B8-34CD1BB7CB81}" Directory_="bin_DIR" Attributes="0" KeyPath="pthreadGC2.dll"/>
     <ROW Component="rtmpdump.exe" ComponentId="{2577BC10-9D6A-4B99-9378-9F3E04928BD0}" Directory_="bin_DIR" Attributes="0" KeyPath="rtmpdump.exe"/>
     <ROW Component="ssleay32.dll" ComponentId="{AF8218A2-553E-47E4-8220-1FA898F71DBC}" Directory_="APPDIR" Attributes="0" KeyPath="ssleay32.dll"/>
+    <ROW Component="video.js" ComponentId="{47FFE1BA-B006-4FF5-B610-FB20C60136A9}" Directory_="plugins_DIR" Attributes="0" KeyPath="video.js" Type="0"/>
     <ROW Component="xUpdater.exe" ComponentId="{57A942D5-45DB-4741-BE80-7FABC0582AEC}" Directory_="bin_DIR" Attributes="0" KeyPath="xUpdater.exe"/>
     <ROW Component="xVideoServiceThief.exe" ComponentId="{C34A3B7C-1629-466D-BE28-C63FBFAD7C36}" Directory_="APPDIR" Attributes="0" KeyPath="xVideoServiceThief.exe" Type="0"/>
     <ROW Component="zlib1.dll" ComponentId="{DB8E896D-1371-4CCD-8999-CEDAD80C2DD0}" Directory_="bin_DIR" Attributes="0" KeyPath="zlib1.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
-    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Attributes="0" Components="GPL.txt SHORTCUTDIR badjojo.js downloads english_uk.language ffmpeg.exe libeay32.dll librtmp0.dll libssl32.dll libx264_baseline.ffpreset msvcp100.dll msvcr100.dll pthreadGC2.dll rtmpdump.exe ssleay32.dll xUpdater.exe xVideoServiceThief.exe zlib1.dll"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Attributes="0" Components="GPL.txt SHORTCUTDIR bulgarian.language downloads ffmpeg.exe libeay32.dll librtmp0.dll libssl32.dll libx264_baseline.ffpreset msvcp100.dll msvcr100.dll pthreadGC2.dll rtmpdump.exe ssleay32.dll video.js xUpdater.exe xVideoServiceThief.exe zlib1.dll"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
     <ROW File="GPL.txt" Component_="GPL.txt" FileName="GPL.txt" Attributes="0" SourcePath="..\bin\GPL.txt" SelfReg="false" NextFile="libx264_baseline.ffpreset"/>
-    <ROW File="aniboom.js" Component_="badjojo.js" FileName="aniboom.js" Attributes="0" SourcePath="..\bin\plugins\aniboom.js" SelfReg="false" NextFile="ardmediathek.js"/>
-    <ROW File="ardmediathek.js" Component_="badjojo.js" FileName="ARDMED~1.JS|ardmediathek.js" Attributes="0" SourcePath="..\bin\plugins\ardmediathek.js" SelfReg="false" NextFile="atom.js"/>
-    <ROW File="atom.js" Component_="badjojo.js" FileName="atom.js" Attributes="0" SourcePath="..\bin\plugins\atom.js" SelfReg="false" NextFile="atv.js"/>
-    <ROW File="atv.js" Component_="badjojo.js" FileName="atv.js" Attributes="0" SourcePath="..\bin\plugins\atv.js" SelfReg="false" NextFile="english_uk.language"/>
-    <ROW File="badjojo.js" Component_="badjojo.js" FileName="badjojo.js" Attributes="0" SourcePath="..\bin\plugins\badjojo.js" SelfReg="false" NextFile="bebo.js"/>
-    <ROW File="bebo.js" Component_="badjojo.js" FileName="bebo.js" Attributes="0" SourcePath="..\bin\plugins\bebo.js" SelfReg="false" NextFile="blip.js"/>
-    <ROW File="blip.js" Component_="badjojo.js" FileName="blip.js" Attributes="0" SourcePath="..\bin\plugins\blip.js" SelfReg="false" NextFile="boingboing.js"/>
-    <ROW File="boingboing.js" Component_="badjojo.js" FileName="BOINGB~1.JS|boingboing.js" Attributes="0" SourcePath="..\bin\plugins\boingboing.js" SelfReg="false" NextFile="break.js"/>
-    <ROW File="break.js" Component_="badjojo.js" FileName="break.js" Attributes="0" SourcePath="..\bin\plugins\break.js" SelfReg="false" NextFile="caughtonvideo.js"/>
-    <ROW File="bulgarian.language" Component_="english_uk.language" FileName="BULGAR~1.LAN|bulgarian.language" Attributes="0" SourcePath="..\bin\languages\bulgarian.language" SelfReg="false" NextFile="catala.language"/>
-    <ROW File="catala.language" Component_="english_uk.language" FileName="CATALA~1.LAN|catala.language" Attributes="0" SourcePath="..\bin\languages\catala.language" SelfReg="false" NextFile="czech.language"/>
-    <ROW File="caughtonvideo.js" Component_="badjojo.js" FileName="CAUGHT~1.JS|caught-on-video.js" Attributes="0" SourcePath="..\bin\plugins\caught-on-video.js" SelfReg="false" NextFile="ceknito.js"/>
-    <ROW File="ceknito.js" Component_="badjojo.js" FileName="ceknito.js" Attributes="0" SourcePath="..\bin\plugins\ceknito.js" SelfReg="false" NextFile="chilloutzone.js"/>
-    <ROW File="chilloutzone.js" Component_="badjojo.js" FileName="CHILLO~1.JS|chilloutzone.js" Attributes="0" SourcePath="..\bin\plugins\chilloutzone.js" SelfReg="false" NextFile="cinemavip.js"/>
-    <ROW File="cinemavip.js" Component_="badjojo.js" FileName="CINEMA~1.JS|cinemavip.js" Attributes="0" SourcePath="..\bin\plugins\cinemavip.js" SelfReg="false" NextFile="clip4e.js"/>
-    <ROW File="clip4e.js" Component_="badjojo.js" FileName="clip4e.js" Attributes="0" SourcePath="..\bin\plugins\clip4e.js" SelfReg="false" NextFile="clipfish.js"/>
-    <ROW File="clipfish.js" Component_="badjojo.js" FileName="clipfish.js" Attributes="0" SourcePath="..\bin\plugins\clipfish.js" SelfReg="false" NextFile="clipjunkie.js"/>
-    <ROW File="clipjunkie.js" Component_="badjojo.js" FileName="CLIPJU~1.JS|clipjunkie.js" Attributes="0" SourcePath="..\bin\plugins\clipjunkie.js" SelfReg="false" NextFile="collagehumor.js"/>
-    <ROW File="collagehumor.js" Component_="badjojo.js" FileName="COLLAG~1.JS|collagehumor.js" Attributes="0" SourcePath="..\bin\plugins\collagehumor.js" SelfReg="false" NextFile="dailymotion.js"/>
-    <ROW File="czech.language" Component_="english_uk.language" FileName="CZECH~1.LAN|czech.language" Attributes="0" SourcePath="..\bin\languages\czech.language" SelfReg="false" NextFile="danish.language"/>
-    <ROW File="dailymotion.js" Component_="badjojo.js" FileName="DAILYM~1.JS|dailymotion.js" Attributes="0" SourcePath="..\bin\plugins\dailymotion.js" SelfReg="false" NextFile="dalealplay.js"/>
-    <ROW File="dalealplay.js" Component_="badjojo.js" FileName="DALEAL~1.JS|dalealplay.js" Attributes="0" SourcePath="..\bin\plugins\dalealplay.js" SelfReg="false" NextFile="demoscene.js"/>
-    <ROW File="danish.language" Component_="english_uk.language" FileName="DANISH~1.LAN|danish.language" Attributes="0" SourcePath="..\bin\languages\danish.language" SelfReg="false" NextFile="dutch.language"/>
-    <ROW File="demoscene.js" Component_="badjojo.js" FileName="DEMOSC~1.JS|demoscene.js" Attributes="0" SourcePath="..\bin\plugins\demoscene.js" SelfReg="false" NextFile="desisextube.js"/>
-    <ROW File="desisextube.js" Component_="badjojo.js" FileName="DESISE~1.JS|desisextube.js" Attributes="0" SourcePath="..\bin\plugins\desisextube.js" SelfReg="false" NextFile="disclose.js"/>
-    <ROW File="disclose.js" Component_="badjojo.js" FileName="disclose.js" Attributes="0" SourcePath="..\bin\plugins\disclose.js" SelfReg="false" NextFile="dumpalink.js"/>
-    <ROW File="dumpalink.js" Component_="badjojo.js" FileName="DUMPAL~1.JS|dumpalink.js" Attributes="0" SourcePath="..\bin\plugins\dumpalink.js" SelfReg="false" NextFile="ejb.js"/>
-    <ROW File="dutch.language" Component_="english_uk.language" FileName="DUTCH~1.LAN|dutch.language" Attributes="0" SourcePath="..\bin\languages\dutch.language" SelfReg="false"/>
-    <ROW File="ejb.js" Component_="badjojo.js" FileName="ejb.js" Attributes="0" SourcePath="..\bin\plugins\ejb.js" SelfReg="false" NextFile="elrellano.js"/>
-    <ROW File="elrellano.js" Component_="badjojo.js" FileName="ELRELL~1.JS|elrellano.js" Attributes="0" SourcePath="..\bin\plugins\elrellano.js" SelfReg="false" NextFile="extremetube.js"/>
-    <ROW File="english_uk.language" Component_="english_uk.language" FileName="ENGLIS~1.LAN|english_uk.language" Attributes="0" SourcePath="..\bin\languages\english_uk.language" SelfReg="false" NextFile="espanol.language"/>
-    <ROW File="espanol.language" Component_="english_uk.language" FileName="ESPANO~1.LAN|espanol.language" Attributes="0" SourcePath="..\bin\languages\espanol.language" SelfReg="false" NextFile="finnish.language"/>
-    <ROW File="extremetube.js" Component_="badjojo.js" FileName="EXTREM~1.JS|extremetube.js" Attributes="0" SourcePath="..\bin\plugins\extremetube.js" SelfReg="false" NextFile="freecaster.js"/>
+    <ROW File="aniboom.js" Component_="video.js" FileName="aniboom.js" Attributes="0" SourcePath="..\bin\plugins\aniboom.js" SelfReg="false" NextFile="ardmediathek.js"/>
+    <ROW File="ardmediathek.js" Component_="video.js" FileName="ARDMED~1.JS|ardmediathek.js" Attributes="0" SourcePath="..\bin\plugins\ardmediathek.js" SelfReg="false" NextFile="atom.js"/>
+    <ROW File="atom.js" Component_="video.js" FileName="atom.js" Attributes="0" SourcePath="..\bin\plugins\atom.js" SelfReg="false" NextFile="atv.js"/>
+    <ROW File="atv.js" Component_="video.js" FileName="atv.js" Attributes="0" SourcePath="..\bin\plugins\atv.js" SelfReg="false" NextFile="badjojo.js"/>
+    <ROW File="badjojo.js" Component_="video.js" FileName="badjojo.js" Attributes="0" SourcePath="..\bin\plugins\badjojo.js" SelfReg="false" NextFile="bebo.js"/>
+    <ROW File="bebo.js" Component_="video.js" FileName="bebo.js" Attributes="0" SourcePath="..\bin\plugins\bebo.js" SelfReg="false" NextFile="blip.js"/>
+    <ROW File="blip.js" Component_="video.js" FileName="blip.js" Attributes="0" SourcePath="..\bin\plugins\blip.js" SelfReg="false" NextFile="boingboing.js"/>
+    <ROW File="boingboing.js" Component_="video.js" FileName="BOINGB~1.JS|boingboing.js" Attributes="0" SourcePath="..\bin\plugins\boingboing.js" SelfReg="false" NextFile="break.js"/>
+    <ROW File="break.js" Component_="video.js" FileName="break.js" Attributes="0" SourcePath="..\bin\plugins\break.js" SelfReg="false" NextFile="caughtonvideo.js"/>
+    <ROW File="bulgarian.language" Component_="bulgarian.language" FileName="BULGAR~1.LAN|bulgarian.language" Attributes="0" SourcePath="..\bin\languages\bulgarian.language" SelfReg="false" NextFile="catala.language"/>
+    <ROW File="catala.language" Component_="bulgarian.language" FileName="CATALA~1.LAN|catala.language" Attributes="0" SourcePath="..\bin\languages\catala.language" SelfReg="false" NextFile="czech.language"/>
+    <ROW File="caughtonvideo.js" Component_="video.js" FileName="CAUGHT~1.JS|caught-on-video.js" Attributes="0" SourcePath="..\bin\plugins\caught-on-video.js" SelfReg="false" NextFile="ceknito.js"/>
+    <ROW File="ceknito.js" Component_="video.js" FileName="ceknito.js" Attributes="0" SourcePath="..\bin\plugins\ceknito.js" SelfReg="false" NextFile="cinemavip.js"/>
+    <ROW File="chilloutzone.js" Component_="video.js" FileName="CHILLO~1.JS|chilloutzone.js" Attributes="0" SourcePath="..\bin\plugins\chilloutzone.js" SelfReg="false" NextFile="sunporno.js"/>
+    <ROW File="chinese.language" Component_="bulgarian.language" FileName="CHINES~1.LAN|chinese.language" Attributes="0" SourcePath="..\bin\languages\chinese.language" SelfReg="false" NextFile="xVST_fi.qm"/>
+    <ROW File="cinemavip.js" Component_="video.js" FileName="CINEMA~1.JS|cinemavip.js" Attributes="0" SourcePath="..\bin\plugins\cinemavip.js" SelfReg="false" NextFile="clip4e.js"/>
+    <ROW File="clip4e.js" Component_="video.js" FileName="clip4e.js" Attributes="0" SourcePath="..\bin\plugins\clip4e.js" SelfReg="false" NextFile="clipfish.js"/>
+    <ROW File="clipfish.js" Component_="video.js" FileName="clipfish.js" Attributes="0" SourcePath="..\bin\plugins\clipfish.js" SelfReg="false" NextFile="clipjunkie.js"/>
+    <ROW File="clipjunkie.js" Component_="video.js" FileName="CLIPJU~1.JS|clipjunkie.js" Attributes="0" SourcePath="..\bin\plugins\clipjunkie.js" SelfReg="false" NextFile="collagehumor.js"/>
+    <ROW File="collagehumor.js" Component_="video.js" FileName="COLLAG~1.JS|collagehumor.js" Attributes="0" SourcePath="..\bin\plugins\collagehumor.js" SelfReg="false" NextFile="dailymotion.js"/>
+    <ROW File="czech.language" Component_="bulgarian.language" FileName="CZECH~1.LAN|czech.language" Attributes="0" SourcePath="..\bin\languages\czech.language" SelfReg="false" NextFile="danish.language"/>
+    <ROW File="dailymotion.js" Component_="video.js" FileName="DAILYM~1.JS|dailymotion.js" Attributes="0" SourcePath="..\bin\plugins\dailymotion.js" SelfReg="false" NextFile="dalealplay.js"/>
+    <ROW File="dalealplay.js" Component_="video.js" FileName="DALEAL~1.JS|dalealplay.js" Attributes="0" SourcePath="..\bin\plugins\dalealplay.js" SelfReg="false" NextFile="demoscene.js"/>
+    <ROW File="danish.language" Component_="bulgarian.language" FileName="DANISH~1.LAN|danish.language" Attributes="0" SourcePath="..\bin\languages\danish.language" SelfReg="false" NextFile="dutch.language"/>
+    <ROW File="demoscene.js" Component_="video.js" FileName="DEMOSC~1.JS|demoscene.js" Attributes="0" SourcePath="..\bin\plugins\demoscene.js" SelfReg="false" NextFile="desisextube.js"/>
+    <ROW File="desisextube.js" Component_="video.js" FileName="DESISE~1.JS|desisextube.js" Attributes="0" SourcePath="..\bin\plugins\desisextube.js" SelfReg="false" NextFile="disclose.js"/>
+    <ROW File="disclose.js" Component_="video.js" FileName="disclose.js" Attributes="0" SourcePath="..\bin\plugins\disclose.js" SelfReg="false" NextFile="dumpalink.js"/>
+    <ROW File="dumpalink.js" Component_="video.js" FileName="DUMPAL~1.JS|dumpalink.js" Attributes="0" SourcePath="..\bin\plugins\dumpalink.js" SelfReg="false" NextFile="ejb.js"/>
+    <ROW File="dutch.language" Component_="bulgarian.language" FileName="DUTCH~1.LAN|dutch.language" Attributes="0" SourcePath="..\bin\languages\dutch.language" SelfReg="false" NextFile="english_uk.language"/>
+    <ROW File="ejb.js" Component_="video.js" FileName="ejb.js" Attributes="0" SourcePath="..\bin\plugins\ejb.js" SelfReg="false" NextFile="elrellano.js"/>
+    <ROW File="elrellano.js" Component_="video.js" FileName="ELRELL~1.JS|elrellano.js" Attributes="0" SourcePath="..\bin\plugins\elrellano.js" SelfReg="false" NextFile="extremetube.js"/>
+    <ROW File="english_uk.language" Component_="bulgarian.language" FileName="ENGLIS~1.LAN|english_uk.language" Attributes="0" SourcePath="..\bin\languages\english_uk.language" SelfReg="false" NextFile="espanol.language"/>
+    <ROW File="espanol.language" Component_="bulgarian.language" FileName="ESPANO~1.LAN|espanol.language" Attributes="0" SourcePath="..\bin\languages\espanol.language" SelfReg="false" NextFile="finnish.language"/>
+    <ROW File="extremetube.js" Component_="video.js" FileName="EXTREM~1.JS|extremetube.js" Attributes="0" SourcePath="..\bin\plugins\extremetube.js" SelfReg="false" NextFile="freecaster.js"/>
     <ROW File="ffmpeg.exe" Component_="ffmpeg.exe" FileName="ffmpeg.exe" Attributes="0" SourcePath="..\bin\bin\ffmpeg.exe" SelfReg="false" NextFile="librtmp0.dll" DigSign="true"/>
-    <ROW File="finnish.language" Component_="english_uk.language" FileName="FINNIS~1.LAN|finnish.language" Attributes="0" SourcePath="..\bin\languages\finnish.language" SelfReg="false" NextFile="french.language"/>
-    <ROW File="freecaster.js" Component_="badjojo.js" FileName="FREECA~1.JS|freecaster.js" Attributes="0" SourcePath="..\bin\plugins\freecaster.js" SelfReg="false" NextFile="gameanyone.js"/>
-    <ROW File="french.language" Component_="english_uk.language" FileName="FRENCH~1.LAN|french.language" Attributes="0" SourcePath="..\bin\languages\french.language" SelfReg="false" NextFile="galician.language"/>
-    <ROW File="galician.language" Component_="english_uk.language" FileName="GALICI~1.LAN|galician.language" Attributes="0" SourcePath="..\bin\languages\galician.language" SelfReg="false" NextFile="german.language"/>
-    <ROW File="gameanyone.js" Component_="badjojo.js" FileName="GAMEAN~1.JS|gameanyone.js" Attributes="0" SourcePath="..\bin\plugins\gameanyone.js" SelfReg="false" NextFile="gamespot.js"/>
-    <ROW File="gamespot.js" Component_="badjojo.js" FileName="gamespot.js" Attributes="0" SourcePath="..\bin\plugins\gamespot.js" SelfReg="false" NextFile="gametrailers.js"/>
-    <ROW File="gametrailers.js" Component_="badjojo.js" FileName="GAMETR~1.JS|gametrailers.js" Attributes="0" SourcePath="..\bin\plugins\gametrailers.js" SelfReg="false" NextFile="girlfriendvids.js"/>
-    <ROW File="german.language" Component_="english_uk.language" FileName="GERMAN~1.LAN|german.language" Attributes="0" SourcePath="..\bin\languages\german.language" SelfReg="false" NextFile="hungarian.language"/>
-    <ROW File="girlfriendvids.js" Component_="badjojo.js" FileName="GIRLFR~1.JS|girlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\girlfriendvids.js" SelfReg="false" NextFile="glumbert.js"/>
-    <ROW File="glumbert.js" Component_="badjojo.js" FileName="glumbert.js" Attributes="0" SourcePath="..\bin\plugins\glumbert.js" SelfReg="false" NextFile="godofhumor.js"/>
-    <ROW File="godofhumor.js" Component_="badjojo.js" FileName="GODOFH~1.JS|godofhumor.js" Attributes="0" SourcePath="..\bin\plugins\godofhumor.js" SelfReg="false" NextFile="goear.js"/>
-    <ROW File="goear.js" Component_="badjojo.js" FileName="goear.js" Attributes="0" SourcePath="..\bin\plugins\goear.js" SelfReg="false" NextFile="googlevideo.js"/>
-    <ROW File="googlevideo.js" Component_="badjojo.js" FileName="GOOGLE~1.JS|googlevideo.js" Attributes="0" SourcePath="..\bin\plugins\googlevideo.js" SelfReg="false" NextFile="hardsextube.js"/>
-    <ROW File="hardsextube.js" Component_="badjojo.js" FileName="HARDSE~1.JS|hardsextube.js" Attributes="0" SourcePath="..\bin\plugins\hardsextube.js" SelfReg="false" NextFile="homemadevoyeur.js"/>
-    <ROW File="homemadevoyeur.js" Component_="badjojo.js" FileName="HOMEMA~1.JS|homemadevoyeur.js" Attributes="0" SourcePath="..\bin\plugins\homemadevoyeur.js" SelfReg="false" NextFile="jizzhut.js"/>
-    <ROW File="hungarian.language" Component_="english_uk.language" FileName="HUNGAR~1.LAN|hungarian.language" Attributes="0" SourcePath="..\bin\languages\hungarian.language" SelfReg="false" NextFile="italiano.language"/>
-    <ROW File="italiano.language" Component_="english_uk.language" FileName="ITALIA~1.LAN|italiano.language" Attributes="0" SourcePath="..\bin\languages\italiano.language" SelfReg="false" NextFile="japanese.language"/>
-    <ROW File="japanese.language" Component_="english_uk.language" FileName="JAPANE~1.LAN|japanese.language" Attributes="0" SourcePath="..\bin\languages\japanese.language" SelfReg="false" NextFile="korean.language"/>
-    <ROW File="jizzhut.js" Component_="badjojo.js" FileName="jizzhut.js" Attributes="0" SourcePath="..\bin\plugins\jizzhut.js" SelfReg="false" NextFile="keezmovies.js"/>
-    <ROW File="keezmovies.js" Component_="badjojo.js" FileName="KEEZMO~1.JS|keezmovies.js" Attributes="0" SourcePath="..\bin\plugins\keezmovies.js" SelfReg="false" NextFile="kontraband.js"/>
-    <ROW File="kontraband.js" Component_="badjojo.js" FileName="KONTRA~1.JS|kontraband.js" Attributes="0" SourcePath="..\bin\plugins\kontraband.js" SelfReg="false" NextFile="liveleak.js"/>
-    <ROW File="korean.language" Component_="english_uk.language" FileName="KOREAN~1.LAN|korean.language" Attributes="0" SourcePath="..\bin\languages\korean.language" SelfReg="false" NextFile="polish.language"/>
+    <ROW File="finnish.language" Component_="bulgarian.language" FileName="FINNIS~1.LAN|finnish.language" Attributes="0" SourcePath="..\bin\languages\finnish.language" SelfReg="false" NextFile="french.language"/>
+    <ROW File="freecaster.js" Component_="video.js" FileName="FREECA~1.JS|freecaster.js" Attributes="0" SourcePath="..\bin\plugins\freecaster.js" SelfReg="false" NextFile="gameanyone.js"/>
+    <ROW File="french.language" Component_="bulgarian.language" FileName="FRENCH~1.LAN|french.language" Attributes="0" SourcePath="..\bin\languages\french.language" SelfReg="false" NextFile="galician.language"/>
+    <ROW File="galician.language" Component_="bulgarian.language" FileName="GALICI~1.LAN|galician.language" Attributes="0" SourcePath="..\bin\languages\galician.language" SelfReg="false" NextFile="german.language"/>
+    <ROW File="gameanyone.js" Component_="video.js" FileName="GAMEAN~1.JS|gameanyone.js" Attributes="0" SourcePath="..\bin\plugins\gameanyone.js" SelfReg="false" NextFile="gamespot.js"/>
+    <ROW File="gamespot.js" Component_="video.js" FileName="gamespot.js" Attributes="0" SourcePath="..\bin\plugins\gamespot.js" SelfReg="false" NextFile="gametrailers.js"/>
+    <ROW File="gametrailers.js" Component_="video.js" FileName="GAMETR~1.JS|gametrailers.js" Attributes="0" SourcePath="..\bin\plugins\gametrailers.js" SelfReg="false" NextFile="girlfriendvids.js"/>
+    <ROW File="german.language" Component_="bulgarian.language" FileName="GERMAN~1.LAN|german.language" Attributes="0" SourcePath="..\bin\languages\german.language" SelfReg="false" NextFile="hungarian.language"/>
+    <ROW File="girlfriendvids.js" Component_="video.js" FileName="GIRLFR~1.JS|girlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\girlfriendvids.js" SelfReg="false" NextFile="glumbert.js"/>
+    <ROW File="glumbert.js" Component_="video.js" FileName="glumbert.js" Attributes="0" SourcePath="..\bin\plugins\glumbert.js" SelfReg="false" NextFile="godofhumor.js"/>
+    <ROW File="godofhumor.js" Component_="video.js" FileName="GODOFH~1.JS|godofhumor.js" Attributes="0" SourcePath="..\bin\plugins\godofhumor.js" SelfReg="false" NextFile="goear.js"/>
+    <ROW File="goear.js" Component_="video.js" FileName="goear.js" Attributes="0" SourcePath="..\bin\plugins\goear.js" SelfReg="false" NextFile="googlevideo.js"/>
+    <ROW File="googlevideo.js" Component_="video.js" FileName="GOOGLE~1.JS|googlevideo.js" Attributes="0" SourcePath="..\bin\plugins\googlevideo.js" SelfReg="false" NextFile="hardsextube.js"/>
+    <ROW File="hardsextube.js" Component_="video.js" FileName="HARDSE~1.JS|hardsextube.js" Attributes="0" SourcePath="..\bin\plugins\hardsextube.js" SelfReg="false" NextFile="homemadevoyeur.js"/>
+    <ROW File="homemadevoyeur.js" Component_="video.js" FileName="HOMEMA~1.JS|homemadevoyeur.js" Attributes="0" SourcePath="..\bin\plugins\homemadevoyeur.js" SelfReg="false" NextFile="jizzhut.js"/>
+    <ROW File="hungarian.language" Component_="bulgarian.language" FileName="HUNGAR~1.LAN|hungarian.language" Attributes="0" SourcePath="..\bin\languages\hungarian.language" SelfReg="false" NextFile="italiano.language"/>
+    <ROW File="italiano.language" Component_="bulgarian.language" FileName="ITALIA~1.LAN|italiano.language" Attributes="0" SourcePath="..\bin\languages\italiano.language" SelfReg="false" NextFile="japanese.language"/>
+    <ROW File="japanese.language" Component_="bulgarian.language" FileName="JAPANE~1.LAN|japanese.language" Attributes="0" SourcePath="..\bin\languages\japanese.language" SelfReg="false" NextFile="korean.language"/>
+    <ROW File="jizzhut.js" Component_="video.js" FileName="jizzhut.js" Attributes="0" SourcePath="..\bin\plugins\jizzhut.js" SelfReg="false" NextFile="keezmovies.js"/>
+    <ROW File="keezmovies.js" Component_="video.js" FileName="KEEZMO~1.JS|keezmovies.js" Attributes="0" SourcePath="..\bin\plugins\keezmovies.js" SelfReg="false" NextFile="kontraband.js"/>
+    <ROW File="kontraband.js" Component_="video.js" FileName="KONTRA~1.JS|kontraband.js" Attributes="0" SourcePath="..\bin\plugins\kontraband.js" SelfReg="false" NextFile="liveleak.js"/>
+    <ROW File="korean.language" Component_="bulgarian.language" FileName="KOREAN~1.LAN|korean.language" Attributes="0" SourcePath="..\bin\languages\korean.language" SelfReg="false" NextFile="polish.language"/>
     <ROW File="libeay32.dll" Component_="libeay32.dll" FileName="libeay32.dll" Attributes="0" SourcePath="..\bin\libeay32.dll" SelfReg="false" NextFile="libssl32.dll"/>
     <ROW File="librtmp0.dll" Component_="librtmp0.dll" FileName="librtm~1.dll|librtmp-0.dll" Attributes="0" SourcePath="..\bin\bin\librtmp-0.dll" SelfReg="false" NextFile="pthreadGC2.dll"/>
     <ROW File="libssl32.dll" Component_="libssl32.dll" FileName="libssl32.dll" Attributes="0" SourcePath="..\bin\libssl32.dll" SelfReg="false" NextFile="ssleay32.dll"/>
@@ -160,101 +161,103 @@
     <ROW File="libx264_veryfast_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~34.ffp|libx264-veryfast_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryfast_firstpass.ffpreset" SelfReg="false" NextFile="libx264_veryslow.ffpreset"/>
     <ROW File="libx264_veryslow.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~35.ffp|libx264-veryslow.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryslow.ffpreset" SelfReg="false" NextFile="libx264_veryslow_firstpass.ffpreset"/>
     <ROW File="libx264_veryslow_firstpass.ffpreset" Component_="libx264_baseline.ffpreset" FileName="libx2~36.ffp|libx264-veryslow_firstpass.ffpreset" Attributes="0" SourcePath="..\bin\bin\ffmpeg-presets\libx264-veryslow_firstpass.ffpreset" SelfReg="false" NextFile="libeay32.dll"/>
-    <ROW File="liveleak.js" Component_="badjojo.js" FileName="liveleak.js" Attributes="0" SourcePath="..\bin\plugins\liveleak.js" SelfReg="false" NextFile="livevideo.js"/>
-    <ROW File="livevideo.js" Component_="badjojo.js" FileName="LIVEVI~1.JS|livevideo.js" Attributes="0" SourcePath="..\bin\plugins\livevideo.js" SelfReg="false" NextFile="m90.js"/>
-    <ROW File="m90.js" Component_="badjojo.js" FileName="m90.js" Attributes="0" SourcePath="..\bin\plugins\m90.js" SelfReg="false" NextFile="machovideo.js"/>
-    <ROW File="machovideo.js" Component_="badjojo.js" FileName="MACHOV~1.JS|machovideo.js" Attributes="0" SourcePath="..\bin\plugins\machovideo.js" SelfReg="false" NextFile="metacafe.js"/>
-    <ROW File="metacafe.js" Component_="badjojo.js" FileName="metacafe.js" Attributes="0" SourcePath="..\bin\plugins\metacafe.js" SelfReg="false" NextFile="mp3tube.js"/>
-    <ROW File="min.js" Component_="badjojo.js" FileName="5min.js" Attributes="0" SourcePath="..\bin\plugins\5min.js" SelfReg="false" NextFile="video.js"/>
-    <ROW File="mp3tube.js" Component_="badjojo.js" FileName="mp3tube.js" Attributes="0" SourcePath="..\bin\plugins\mp3tube.js" SelfReg="false" NextFile="mygirlfriendvids.js"/>
+    <ROW File="liveleak.js" Component_="video.js" FileName="liveleak.js" Attributes="0" SourcePath="..\bin\plugins\liveleak.js" SelfReg="false" NextFile="livevideo.js"/>
+    <ROW File="livevideo.js" Component_="video.js" FileName="LIVEVI~1.JS|livevideo.js" Attributes="0" SourcePath="..\bin\plugins\livevideo.js" SelfReg="false" NextFile="m90.js"/>
+    <ROW File="m90.js" Component_="video.js" FileName="m90.js" Attributes="0" SourcePath="..\bin\plugins\m90.js" SelfReg="false" NextFile="machovideo.js"/>
+    <ROW File="machovideo.js" Component_="video.js" FileName="MACHOV~1.JS|machovideo.js" Attributes="0" SourcePath="..\bin\plugins\machovideo.js" SelfReg="false" NextFile="metacafe.js"/>
+    <ROW File="metacafe.js" Component_="video.js" FileName="metacafe.js" Attributes="0" SourcePath="..\bin\plugins\metacafe.js" SelfReg="false" NextFile="mp3tube.js"/>
+    <ROW File="min.js" Component_="video.js" FileName="5min.js" Attributes="0" SourcePath="..\bin\plugins\5min.js" SelfReg="false"/>
+    <ROW File="mp3tube.js" Component_="video.js" FileName="mp3tube.js" Attributes="0" SourcePath="..\bin\plugins\mp3tube.js" SelfReg="false" NextFile="mygirlfriendvids.js"/>
     <ROW File="msvcp100.dll" Component_="msvcp100.dll" FileName="msvcp100.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC100.CRT\msvcp100.dll" SelfReg="false" NextFile="msvcr100.dll"/>
-    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC100.CRT\msvcr100.dll" SelfReg="false" NextFile="badjojo.js"/>
-    <ROW File="mygirlfriendvids.js" Component_="badjojo.js" FileName="MYGIRL~1.JS|mygirlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\mygirlfriendvids.js" SelfReg="false" NextFile="myspace.js"/>
-    <ROW File="myspace.js" Component_="badjojo.js" FileName="myspace.js" Attributes="0" SourcePath="..\bin\plugins\myspace.js" SelfReg="false" NextFile="myspacetv.js"/>
-    <ROW File="myspacetv.js" Component_="badjojo.js" FileName="MYSPAC~1.JS|myspacetv.js" Attributes="0" SourcePath="..\bin\plugins\myspacetv.js" SelfReg="false" NextFile="myspass.js"/>
-    <ROW File="myspass.js" Component_="badjojo.js" FileName="myspass.js" Attributes="0" SourcePath="..\bin\plugins\myspass.js" SelfReg="false" NextFile="myvideo.js"/>
-    <ROW File="myvideo.js" Component_="badjojo.js" FileName="myvideo.js" Attributes="0" SourcePath="..\bin\plugins\myvideo.js" SelfReg="false" NextFile="newsfilter.js"/>
-    <ROW File="newsfilter.js" Component_="badjojo.js" FileName="NEWSFI~1.JS|newsfilter.js" Attributes="0" SourcePath="..\bin\plugins\newsfilter.js" SelfReg="false" NextFile="onehumor.js"/>
-    <ROW File="onehumor.js" Component_="badjojo.js" FileName="onehumor.js" Attributes="0" SourcePath="..\bin\plugins\onehumor.js" SelfReg="false" NextFile="pornfuze.js"/>
-    <ROW File="polish.language" Component_="english_uk.language" FileName="POLISH~1.LAN|polish.language" Attributes="0" SourcePath="..\bin\languages\polish.language" SelfReg="false" NextFile="portuguese_br.language"/>
-    <ROW File="pornfuze.js" Component_="badjojo.js" FileName="pornfuze.js" Attributes="0" SourcePath="..\bin\plugins\pornfuze.js" SelfReg="false" NextFile="pornhub.js"/>
-    <ROW File="pornhub.js" Component_="badjojo.js" FileName="pornhub.js" Attributes="0" SourcePath="..\bin\plugins\pornhub.js" SelfReg="false" NextFile="pornotube.js"/>
-    <ROW File="pornotube.js" Component_="badjojo.js" FileName="PORNOT~1.JS|pornotube.js" Attributes="0" SourcePath="..\bin\plugins\pornotube.js" SelfReg="false" NextFile="porntube.js"/>
-    <ROW File="porntube.js" Component_="badjojo.js" FileName="porntube.js" Attributes="0" SourcePath="..\bin\plugins\porntube.js" SelfReg="false" NextFile="pp2g.js"/>
-    <ROW File="portuguese_br.language" Component_="english_uk.language" FileName="PORTUG~1.LAN|portuguese_br.language" Attributes="0" SourcePath="..\bin\languages\portuguese_br.language" SelfReg="false" NextFile="romanian.language"/>
-    <ROW File="pp2g.js" Component_="badjojo.js" FileName="pp2g.js" Attributes="0" SourcePath="..\bin\plugins\pp2g.js" SelfReg="false" NextFile="pugorama.js"/>
+    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Attributes="0" SourcePath="..\bin\Microsoft.VC100.CRT\msvcr100.dll" SelfReg="false" NextFile="bulgarian.language"/>
+    <ROW File="mygirlfriendvids.js" Component_="video.js" FileName="MYGIRL~1.JS|mygirlfriendvids.js" Attributes="0" SourcePath="..\bin\plugins\mygirlfriendvids.js" SelfReg="false" NextFile="myspace.js"/>
+    <ROW File="myspace.js" Component_="video.js" FileName="myspace.js" Attributes="0" SourcePath="..\bin\plugins\myspace.js" SelfReg="false" NextFile="myspacetv.js"/>
+    <ROW File="myspacetv.js" Component_="video.js" FileName="MYSPAC~1.JS|myspacetv.js" Attributes="0" SourcePath="..\bin\plugins\myspacetv.js" SelfReg="false" NextFile="myspass.js"/>
+    <ROW File="myspass.js" Component_="video.js" FileName="myspass.js" Attributes="0" SourcePath="..\bin\plugins\myspass.js" SelfReg="false" NextFile="myvideo.js"/>
+    <ROW File="myvideo.js" Component_="video.js" FileName="myvideo.js" Attributes="0" SourcePath="..\bin\plugins\myvideo.js" SelfReg="false" NextFile="newsfilter.js"/>
+    <ROW File="newsfilter.js" Component_="video.js" FileName="NEWSFI~1.JS|newsfilter.js" Attributes="0" SourcePath="..\bin\plugins\newsfilter.js" SelfReg="false" NextFile="onehumor.js"/>
+    <ROW File="onehumor.js" Component_="video.js" FileName="onehumor.js" Attributes="0" SourcePath="..\bin\plugins\onehumor.js" SelfReg="false" NextFile="pornfuze.js"/>
+    <ROW File="polish.language" Component_="bulgarian.language" FileName="POLISH~1.LAN|polish.language" Attributes="0" SourcePath="..\bin\languages\polish.language" SelfReg="false" NextFile="portuguese_br.language"/>
+    <ROW File="pornfuze.js" Component_="video.js" FileName="pornfuze.js" Attributes="0" SourcePath="..\bin\plugins\pornfuze.js" SelfReg="false" NextFile="pornhub.js"/>
+    <ROW File="pornhub.js" Component_="video.js" FileName="pornhub.js" Attributes="0" SourcePath="..\bin\plugins\pornhub.js" SelfReg="false" NextFile="pornotube.js"/>
+    <ROW File="pornotube.js" Component_="video.js" FileName="PORNOT~1.JS|pornotube.js" Attributes="0" SourcePath="..\bin\plugins\pornotube.js" SelfReg="false" NextFile="porntube.js"/>
+    <ROW File="porntube.js" Component_="video.js" FileName="porntube.js" Attributes="0" SourcePath="..\bin\plugins\porntube.js" SelfReg="false" NextFile="pp2g.js"/>
+    <ROW File="portuguese_br.language" Component_="bulgarian.language" FileName="PORTUG~1.LAN|portuguese_br.language" Attributes="0" SourcePath="..\bin\languages\portuguese_br.language" SelfReg="false" NextFile="romanian.language"/>
+    <ROW File="pp2g.js" Component_="video.js" FileName="pp2g.js" Attributes="0" SourcePath="..\bin\plugins\pp2g.js" SelfReg="false" NextFile="pugorama.js"/>
     <ROW File="pthreadGC2.dll" Component_="pthreadGC2.dll" FileName="pthrea~1.dll|pthreadGC2.dll" Attributes="0" SourcePath="..\bin\bin\pthreadGC2.dll" SelfReg="false" NextFile="rtmpdump.exe"/>
-    <ROW File="pugorama.js" Component_="badjojo.js" FileName="pugorama.js" Attributes="0" SourcePath="..\bin\plugins\pugorama.js" SelfReg="false" NextFile="realgfporn.js"/>
-    <ROW File="realgfporn.js" Component_="badjojo.js" FileName="REALGF~1.JS|realgfporn.js" Attributes="0" SourcePath="..\bin\plugins\realgfporn.js" SelfReg="false" NextFile="redtube.js"/>
-    <ROW File="redtube.js" Component_="badjojo.js" FileName="redtube.js" Attributes="0" SourcePath="..\bin\plugins\redtube.js" SelfReg="false" NextFile="scientificblogging.js"/>
-    <ROW File="romanian.language" Component_="english_uk.language" FileName="ROMANI~1.LAN|romanian.language" Attributes="0" SourcePath="..\bin\languages\romanian.language" SelfReg="false" NextFile="russian.language"/>
+    <ROW File="pugorama.js" Component_="video.js" FileName="pugorama.js" Attributes="0" SourcePath="..\bin\plugins\pugorama.js" SelfReg="false" NextFile="realgfporn.js"/>
+    <ROW File="realgfporn.js" Component_="video.js" FileName="REALGF~1.JS|realgfporn.js" Attributes="0" SourcePath="..\bin\plugins\realgfporn.js" SelfReg="false" NextFile="redtube.js"/>
+    <ROW File="redtube.js" Component_="video.js" FileName="redtube.js" Attributes="0" SourcePath="..\bin\plugins\redtube.js" SelfReg="false" NextFile="scientificblogging.js"/>
+    <ROW File="romanian.language" Component_="bulgarian.language" FileName="ROMANI~1.LAN|romanian.language" Attributes="0" SourcePath="..\bin\languages\romanian.language" SelfReg="false" NextFile="russian.language"/>
     <ROW File="rtmpdump.exe" Component_="rtmpdump.exe" FileName="rtmpdump.exe" Attributes="0" SourcePath="..\bin\bin\rtmpdump.exe" SelfReg="false" NextFile="xUpdater.exe" DigSign="true"/>
-    <ROW File="russian.language" Component_="english_uk.language" FileName="RUSSIA~1.LAN|russian.language" Attributes="0" SourcePath="..\bin\languages\russian.language" SelfReg="false" NextFile="swedish.language"/>
-    <ROW File="scientificblogging.js" Component_="badjojo.js" FileName="SCIENT~1.JS|scientificblogging.js" Attributes="0" SourcePath="..\bin\plugins\scientificblogging.js" SelfReg="false" NextFile="shredordie.js"/>
-    <ROW File="shredordie.js" Component_="badjojo.js" FileName="SHREDO~1.JS|shredordie.js" Attributes="0" SourcePath="..\bin\plugins\shredordie.js" SelfReg="false" NextFile="spankwire.js"/>
-    <ROW File="spankwire.js" Component_="badjojo.js" FileName="SPANKW~1.JS|spankwire.js" Attributes="0" SourcePath="..\bin\plugins\spankwire.js" SelfReg="false" NextFile="spike.js"/>
-    <ROW File="spike.js" Component_="badjojo.js" FileName="spike.js" Attributes="0" SourcePath="..\bin\plugins\spike.js" SelfReg="false" NextFile="stolenvideos.js"/>
+    <ROW File="russian.language" Component_="bulgarian.language" FileName="RUSSIA~1.LAN|russian.language" Attributes="0" SourcePath="..\bin\languages\russian.language" SelfReg="false" NextFile="swedish.language"/>
+    <ROW File="scientificblogging.js" Component_="video.js" FileName="SCIENT~1.JS|scientificblogging.js" Attributes="0" SourcePath="..\bin\plugins\scientificblogging.js" SelfReg="false" NextFile="shredordie.js"/>
+    <ROW File="shredordie.js" Component_="video.js" FileName="SHREDO~1.JS|shredordie.js" Attributes="0" SourcePath="..\bin\plugins\shredordie.js" SelfReg="false" NextFile="spankwire.js"/>
+    <ROW File="spankwire.js" Component_="video.js" FileName="SPANKW~1.JS|spankwire.js" Attributes="0" SourcePath="..\bin\plugins\spankwire.js" SelfReg="false" NextFile="spike.js"/>
+    <ROW File="spike.js" Component_="video.js" FileName="spike.js" Attributes="0" SourcePath="..\bin\plugins\spike.js" SelfReg="false" NextFile="stolenvideos.js"/>
     <ROW File="ssleay32.dll" Component_="ssleay32.dll" FileName="ssleay32.dll" Attributes="0" SourcePath="..\bin\ssleay32.dll" SelfReg="false" NextFile="ffmpeg.exe"/>
-    <ROW File="stolenvideos.js" Component_="badjojo.js" FileName="STOLEN~1.JS|stolenvideos.js" Attributes="0" SourcePath="..\bin\plugins\stolenvideos.js" SelfReg="false" NextFile="streetfire.js"/>
-    <ROW File="streetfire.js" Component_="badjojo.js" FileName="STREET~1.JS|streetfire.js" Attributes="0" SourcePath="..\bin\plugins\streetfire.js" SelfReg="false" NextFile="sunporno.js"/>
-    <ROW File="sunporno.js" Component_="badjojo.js" FileName="sunporno.js" Attributes="0" SourcePath="..\bin\plugins\sunporno.js" SelfReg="false" NextFile="szinhaz.js"/>
-    <ROW File="swedish.language" Component_="english_uk.language" FileName="SWEDIS~1.LAN|swedish.language" Attributes="0" SourcePath="..\bin\languages\swedish.language" SelfReg="false" NextFile="turkish.language"/>
-    <ROW File="szinhaz.js" Component_="badjojo.js" FileName="szinhaz.js" Attributes="0" SourcePath="..\bin\plugins\szinhaz.js" SelfReg="false" NextFile="tangle.js"/>
-    <ROW File="tangle.js" Component_="badjojo.js" FileName="tangle.js" Attributes="0" SourcePath="..\bin\plugins\tangle.js" SelfReg="false" NextFile="tnaflix.js"/>
-    <ROW File="tnaflix.js" Component_="badjojo.js" FileName="tnaflix.js" Attributes="0" SourcePath="..\bin\plugins\tnaflix.js" SelfReg="false" NextFile="totallycrap.js"/>
-    <ROW File="totallycrap.js" Component_="badjojo.js" FileName="TOTALL~1.JS|totallycrap.js" Attributes="0" SourcePath="..\bin\plugins\totallycrap.js" SelfReg="false" NextFile="totallynsfw.js"/>
-    <ROW File="totallynsfw.js" Component_="badjojo.js" FileName="TOTALL~2.JS|totallynsfw.js" Attributes="0" SourcePath="..\bin\plugins\totallynsfw.js" SelfReg="false" NextFile="totallyupyours.js"/>
-    <ROW File="totallyupyours.js" Component_="badjojo.js" FileName="TOTALL~3.JS|totallyupyours.js" Attributes="0" SourcePath="..\bin\plugins\totallyupyours.js" SelfReg="false" NextFile="tsn.js"/>
-    <ROW File="tsn.js" Component_="badjojo.js" FileName="tsn.js" Attributes="0" SourcePath="..\bin\plugins\tsn.js" SelfReg="false" NextFile="tube8.js"/>
-    <ROW File="tube8.js" Component_="badjojo.js" FileName="tube8.js" Attributes="0" SourcePath="..\bin\plugins\tube8.js" SelfReg="false" NextFile="tv2.js"/>
-    <ROW File="turkish.language" Component_="english_uk.language" FileName="TURKIS~1.LAN|turkish.language" Attributes="0" SourcePath="..\bin\languages\turkish.language" SelfReg="false" NextFile="xVST_br.qm"/>
-    <ROW File="tv2.js" Component_="badjojo.js" FileName="tv2.js" Attributes="0" SourcePath="..\bin\plugins\tv2.js" SelfReg="false" NextFile="tv3.js"/>
-    <ROW File="tv3.js" Component_="badjojo.js" FileName="tv3.js" Attributes="0" SourcePath="..\bin\plugins\tv3.js" SelfReg="false" NextFile="ustream.js"/>
-    <ROW File="ustream.js" Component_="badjojo.js" FileName="ustream.js" Attributes="0" SourcePath="..\bin\plugins\ustream.js" SelfReg="false" NextFile="vbox7.js"/>
-    <ROW File="vbox7.js" Component_="badjojo.js" FileName="vbox7.js" Attributes="0" SourcePath="..\bin\plugins\vbox7.js" SelfReg="false" NextFile="vid2c.js"/>
-    <ROW File="vid2c.js" Component_="badjojo.js" FileName="vid2c.js" Attributes="0" SourcePath="..\bin\plugins\vid2c.js" SelfReg="false" NextFile="videoca.js"/>
-    <ROW File="video.js" Component_="badjojo.js" FileName="123video.js" Attributes="0" SourcePath="..\bin\plugins\123video.js" SelfReg="false" NextFile="aniboom.js"/>
-    <ROW File="videoca.js" Component_="badjojo.js" FileName="videoca.js" Attributes="0" SourcePath="..\bin\plugins\videoca.js" SelfReg="false" NextFile="videologuol.js"/>
-    <ROW File="videologuol.js" Component_="badjojo.js" FileName="VIDEOL~1.JS|videologuol.js" Attributes="0" SourcePath="..\bin\plugins\videologuol.js" SelfReg="false" NextFile="vimeo.js"/>
-    <ROW File="vimeo.js" Component_="badjojo.js" FileName="vimeo.js" Attributes="0" SourcePath="..\bin\plugins\vimeo.js" SelfReg="false" NextFile="wat.js"/>
-    <ROW File="wat.js" Component_="badjojo.js" FileName="wat.js" Attributes="0" SourcePath="..\bin\plugins\wat.js" SelfReg="false" NextFile="wtfpeople.js"/>
-    <ROW File="wtfpeople.js" Component_="badjojo.js" FileName="WTFPEO~1.JS|wtfpeople.js" Attributes="0" SourcePath="..\bin\plugins\wtfpeople.js" SelfReg="false" NextFile="xhamster.js"/>
+    <ROW File="stolenvideos.js" Component_="video.js" FileName="STOLEN~1.JS|stolenvideos.js" Attributes="0" SourcePath="..\bin\plugins\stolenvideos.js" SelfReg="false" NextFile="streetfire.js"/>
+    <ROW File="streetfire.js" Component_="video.js" FileName="STREET~1.JS|streetfire.js" Attributes="0" SourcePath="..\bin\plugins\streetfire.js" SelfReg="false" NextFile="szinhaz.js"/>
+    <ROW File="sunporno.js" Component_="video.js" FileName="sunporno.js" Attributes="0" SourcePath="..\bin\plugins\sunporno.js" SelfReg="false" NextFile="min.js"/>
+    <ROW File="swedish.language" Component_="bulgarian.language" FileName="SWEDIS~1.LAN|swedish.language" Attributes="0" SourcePath="..\bin\languages\swedish.language" SelfReg="false" NextFile="turkish.language"/>
+    <ROW File="szinhaz.js" Component_="video.js" FileName="szinhaz.js" Attributes="0" SourcePath="..\bin\plugins\szinhaz.js" SelfReg="false" NextFile="tangle.js"/>
+    <ROW File="tangle.js" Component_="video.js" FileName="tangle.js" Attributes="0" SourcePath="..\bin\plugins\tangle.js" SelfReg="false" NextFile="tnaflix.js"/>
+    <ROW File="tnaflix.js" Component_="video.js" FileName="tnaflix.js" Attributes="0" SourcePath="..\bin\plugins\tnaflix.js" SelfReg="false" NextFile="totallycrap.js"/>
+    <ROW File="totallycrap.js" Component_="video.js" FileName="TOTALL~1.JS|totallycrap.js" Attributes="0" SourcePath="..\bin\plugins\totallycrap.js" SelfReg="false" NextFile="totallynsfw.js"/>
+    <ROW File="totallynsfw.js" Component_="video.js" FileName="TOTALL~2.JS|totallynsfw.js" Attributes="0" SourcePath="..\bin\plugins\totallynsfw.js" SelfReg="false" NextFile="totallyupyours.js"/>
+    <ROW File="totallyupyours.js" Component_="video.js" FileName="TOTALL~3.JS|totallyupyours.js" Attributes="0" SourcePath="..\bin\plugins\totallyupyours.js" SelfReg="false" NextFile="tsn.js"/>
+    <ROW File="tsn.js" Component_="video.js" FileName="tsn.js" Attributes="0" SourcePath="..\bin\plugins\tsn.js" SelfReg="false" NextFile="tube8.js"/>
+    <ROW File="tube8.js" Component_="video.js" FileName="tube8.js" Attributes="0" SourcePath="..\bin\plugins\tube8.js" SelfReg="false" NextFile="tv2.js"/>
+    <ROW File="turkish.language" Component_="bulgarian.language" FileName="TURKIS~1.LAN|turkish.language" Attributes="0" SourcePath="..\bin\languages\turkish.language" SelfReg="false" NextFile="xVST_cz.qm"/>
+    <ROW File="tv2.js" Component_="video.js" FileName="tv2.js" Attributes="0" SourcePath="..\bin\plugins\tv2.js" SelfReg="false" NextFile="tv3.js"/>
+    <ROW File="tv3.js" Component_="video.js" FileName="tv3.js" Attributes="0" SourcePath="..\bin\plugins\tv3.js" SelfReg="false" NextFile="ustream.js"/>
+    <ROW File="ustream.js" Component_="video.js" FileName="ustream.js" Attributes="0" SourcePath="..\bin\plugins\ustream.js" SelfReg="false" NextFile="vbox7.js"/>
+    <ROW File="vbox7.js" Component_="video.js" FileName="vbox7.js" Attributes="0" SourcePath="..\bin\plugins\vbox7.js" SelfReg="false" NextFile="vid2c.js"/>
+    <ROW File="vid2c.js" Component_="video.js" FileName="vid2c.js" Attributes="0" SourcePath="..\bin\plugins\vid2c.js" SelfReg="false" NextFile="videoca.js"/>
+    <ROW File="video.js" Component_="video.js" FileName="123video.js" Attributes="0" SourcePath="..\bin\plugins\123video.js" SelfReg="false" NextFile="aniboom.js"/>
+    <ROW File="videoca.js" Component_="video.js" FileName="videoca.js" Attributes="0" SourcePath="..\bin\plugins\videoca.js" SelfReg="false" NextFile="videologuol.js"/>
+    <ROW File="videologuol.js" Component_="video.js" FileName="VIDEOL~1.JS|videologuol.js" Attributes="0" SourcePath="..\bin\plugins\videologuol.js" SelfReg="false" NextFile="vimeo.js"/>
+    <ROW File="vimeo.js" Component_="video.js" FileName="vimeo.js" Attributes="0" SourcePath="..\bin\plugins\vimeo.js" SelfReg="false" NextFile="wat.js"/>
+    <ROW File="wat.js" Component_="video.js" FileName="wat.js" Attributes="0" SourcePath="..\bin\plugins\wat.js" SelfReg="false" NextFile="wtfpeople.js"/>
+    <ROW File="wtfpeople.js" Component_="video.js" FileName="WTFPEO~1.JS|wtfpeople.js" Attributes="0" SourcePath="..\bin\plugins\wtfpeople.js" SelfReg="false" NextFile="xhamster.js"/>
     <ROW File="xUpdater.exe" Component_="xUpdater.exe" FileName="xUpdater.exe" Attributes="0" SourcePath="..\bin\bin\xUpdater.exe" SelfReg="false" NextFile="zlib1.dll" DigSign="true"/>
-    <ROW File="xVST_br.qm" Component_="english_uk.language" FileName="xVST_br.qm" Attributes="0" SourcePath="..\bin\languages\xVST_br.qm" SelfReg="false" NextFile="xVST_ca.qm"/>
-    <ROW File="xVST_ca.qm" Component_="english_uk.language" FileName="xVST_ca.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ca.qm" SelfReg="false" NextFile="xVST_cz.qm"/>
-    <ROW File="xVST_cz.qm" Component_="english_uk.language" FileName="xVST_cz.qm" Attributes="0" SourcePath="..\bin\languages\xVST_cz.qm" SelfReg="false" NextFile="xVST_da.qm"/>
-    <ROW File="xVST_da.qm" Component_="english_uk.language" FileName="xVST_da.qm" Attributes="0" SourcePath="..\bin\languages\xVST_da.qm" SelfReg="false" NextFile="xVST_de.qm"/>
-    <ROW File="xVST_de.qm" Component_="english_uk.language" FileName="xVST_de.qm" Attributes="0" SourcePath="..\bin\languages\xVST_de.qm" SelfReg="false" NextFile="xVST_du.qm"/>
-    <ROW File="xVST_du.qm" Component_="english_uk.language" FileName="xVST_du.qm" Attributes="0" SourcePath="..\bin\languages\xVST_du.qm" SelfReg="false" NextFile="xVST_en.qm"/>
-    <ROW File="xVST_en.qm" Component_="english_uk.language" FileName="xVST_en.qm" Attributes="0" SourcePath="..\bin\languages\xVST_en.qm" SelfReg="false" NextFile="xVST_es.qm"/>
-    <ROW File="xVST_es.qm" Component_="english_uk.language" FileName="xVST_es.qm" Attributes="0" SourcePath="..\bin\languages\xVST_es.qm" SelfReg="false" NextFile="xVST_fr.qm"/>
-    <ROW File="xVST_fr.qm" Component_="english_uk.language" FileName="xVST_fr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_fr.qm" SelfReg="false" NextFile="xVST_gl.qm"/>
-    <ROW File="xVST_gl.qm" Component_="english_uk.language" FileName="xVST_gl.qm" Attributes="0" SourcePath="..\bin\languages\xVST_gl.qm" SelfReg="false" NextFile="xVST_hu.qm"/>
-    <ROW File="xVST_hu.qm" Component_="english_uk.language" FileName="xVST_hu.qm" Attributes="0" SourcePath="..\bin\languages\xVST_hu.qm" SelfReg="false" NextFile="xVST_it.qm"/>
-    <ROW File="xVST_it.qm" Component_="english_uk.language" FileName="xVST_it.qm" Attributes="0" SourcePath="..\bin\languages\xVST_it.qm" SelfReg="false" NextFile="xVST_jp.qm"/>
-    <ROW File="xVST_jp.qm" Component_="english_uk.language" FileName="xVST_jp.qm" Attributes="0" SourcePath="..\bin\languages\xVST_jp.qm" SelfReg="false" NextFile="xVST_kr.qm"/>
-    <ROW File="xVST_kr.qm" Component_="english_uk.language" FileName="xVST_kr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_kr.qm" SelfReg="false" NextFile="xVST_pl.qm"/>
-    <ROW File="xVST_pl.qm" Component_="english_uk.language" FileName="xVST_pl.qm" Attributes="0" SourcePath="..\bin\languages\xVST_pl.qm" SelfReg="false" NextFile="xVST_ro.qm"/>
-    <ROW File="xVST_ro.qm" Component_="english_uk.language" FileName="xVST_ro.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ro.qm" SelfReg="false" NextFile="xVST_ru.qm"/>
-    <ROW File="xVST_ru.qm" Component_="english_uk.language" FileName="xVST_ru.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ru.qm" SelfReg="false" NextFile="xVST_sv.qm"/>
-    <ROW File="xVST_sv.qm" Component_="english_uk.language" FileName="xVST_sv.qm" Attributes="0" SourcePath="..\bin\languages\xVST_sv.qm" SelfReg="false" NextFile="xVST_tr.qm"/>
-    <ROW File="xVST_tr.qm" Component_="english_uk.language" FileName="xVST_tr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_tr.qm" SelfReg="false" NextFile="bulgarian.language"/>
+    <ROW File="xVST_br.qm" Component_="bulgarian.language" FileName="xVST_br.qm" Attributes="0" SourcePath="..\bin\languages\xVST_br.qm" SelfReg="false" NextFile="xVST_ca.qm"/>
+    <ROW File="xVST_ca.qm" Component_="bulgarian.language" FileName="xVST_ca.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ca.qm" SelfReg="false" NextFile="xVST_de.qm"/>
+    <ROW File="xVST_cz.qm" Component_="bulgarian.language" FileName="xVST_cz.qm" Attributes="0" SourcePath="..\bin\languages\xVST_cz.qm" SelfReg="false" NextFile="xVST_da.qm"/>
+    <ROW File="xVST_da.qm" Component_="bulgarian.language" FileName="xVST_da.qm" Attributes="0" SourcePath="..\bin\languages\xVST_da.qm" SelfReg="false" NextFile="xVST_br.qm"/>
+    <ROW File="xVST_de.qm" Component_="bulgarian.language" FileName="xVST_de.qm" Attributes="0" SourcePath="..\bin\languages\xVST_de.qm" SelfReg="false" NextFile="xVST_du.qm"/>
+    <ROW File="xVST_du.qm" Component_="bulgarian.language" FileName="xVST_du.qm" Attributes="0" SourcePath="..\bin\languages\xVST_du.qm" SelfReg="false" NextFile="xVST_en.qm"/>
+    <ROW File="xVST_en.qm" Component_="bulgarian.language" FileName="xVST_en.qm" Attributes="0" SourcePath="..\bin\languages\xVST_en.qm" SelfReg="false" NextFile="xVST_es.qm"/>
+    <ROW File="xVST_es.qm" Component_="bulgarian.language" FileName="xVST_es.qm" Attributes="0" SourcePath="..\bin\languages\xVST_es.qm" SelfReg="false" NextFile="xVST_fr.qm"/>
+    <ROW File="xVST_fi.qm" Component_="bulgarian.language" FileName="xVST_fi.qm" Attributes="0" SourcePath="..\bin\languages\xVST_fi.qm" SelfReg="false" NextFile="xVST_zh_TW.qm"/>
+    <ROW File="xVST_fr.qm" Component_="bulgarian.language" FileName="xVST_fr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_fr.qm" SelfReg="false" NextFile="xVST_gl.qm"/>
+    <ROW File="xVST_gl.qm" Component_="bulgarian.language" FileName="xVST_gl.qm" Attributes="0" SourcePath="..\bin\languages\xVST_gl.qm" SelfReg="false" NextFile="xVST_hu.qm"/>
+    <ROW File="xVST_hu.qm" Component_="bulgarian.language" FileName="xVST_hu.qm" Attributes="0" SourcePath="..\bin\languages\xVST_hu.qm" SelfReg="false" NextFile="xVST_it.qm"/>
+    <ROW File="xVST_it.qm" Component_="bulgarian.language" FileName="xVST_it.qm" Attributes="0" SourcePath="..\bin\languages\xVST_it.qm" SelfReg="false" NextFile="xVST_jp.qm"/>
+    <ROW File="xVST_jp.qm" Component_="bulgarian.language" FileName="xVST_jp.qm" Attributes="0" SourcePath="..\bin\languages\xVST_jp.qm" SelfReg="false" NextFile="xVST_kr.qm"/>
+    <ROW File="xVST_kr.qm" Component_="bulgarian.language" FileName="xVST_kr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_kr.qm" SelfReg="false" NextFile="xVST_pl.qm"/>
+    <ROW File="xVST_pl.qm" Component_="bulgarian.language" FileName="xVST_pl.qm" Attributes="0" SourcePath="..\bin\languages\xVST_pl.qm" SelfReg="false" NextFile="xVST_ro.qm"/>
+    <ROW File="xVST_ro.qm" Component_="bulgarian.language" FileName="xVST_ro.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ro.qm" SelfReg="false" NextFile="xVST_ru.qm"/>
+    <ROW File="xVST_ru.qm" Component_="bulgarian.language" FileName="xVST_ru.qm" Attributes="0" SourcePath="..\bin\languages\xVST_ru.qm" SelfReg="false" NextFile="xVST_sv.qm"/>
+    <ROW File="xVST_sv.qm" Component_="bulgarian.language" FileName="xVST_sv.qm" Attributes="0" SourcePath="..\bin\languages\xVST_sv.qm" SelfReg="false" NextFile="xVST_tr.qm"/>
+    <ROW File="xVST_tr.qm" Component_="bulgarian.language" FileName="xVST_tr.qm" Attributes="0" SourcePath="..\bin\languages\xVST_tr.qm" SelfReg="false" NextFile="chinese.language"/>
+    <ROW File="xVST_zh_TW.qm" Component_="bulgarian.language" FileName="XVST_Z~1.QM|xVST_zh_TW.qm" Attributes="0" SourcePath="..\bin\languages\xVST_zh_TW.qm" SelfReg="false" NextFile="video.js"/>
     <ROW File="xVideoServiceThief.exe" Component_="xVideoServiceThief.exe" FileName="xVideo~1.exe|xVideoServiceThief.exe" Attributes="0" SourcePath="..\bin\xVideoServiceThief.exe" SelfReg="false" NextFile="GPL.txt"/>
-    <ROW File="xhamster.js" Component_="badjojo.js" FileName="xhamster.js" Attributes="0" SourcePath="..\bin\plugins\xhamster.js" SelfReg="false" NextFile="xtube.js"/>
-    <ROW File="xtube.js" Component_="badjojo.js" FileName="xtube.js" Attributes="0" SourcePath="..\bin\plugins\xtube.js" SelfReg="false" NextFile="xvideos.js"/>
-    <ROW File="xvideos.js" Component_="badjojo.js" FileName="xvideos.js" Attributes="0" SourcePath="..\bin\plugins\xvideos.js" SelfReg="false" NextFile="yahoovideo.js"/>
-    <ROW File="yahoovideo.js" Component_="badjojo.js" FileName="YAHOOV~1.JS|yahoovideo.js" Attributes="0" SourcePath="..\bin\plugins\yahoovideo.js" SelfReg="false" NextFile="yikers.js"/>
-    <ROW File="yikers.js" Component_="badjojo.js" FileName="yikers.js" Attributes="0" SourcePath="..\bin\plugins\yikers.js" SelfReg="false" NextFile="youporn.js"/>
-    <ROW File="youporn.js" Component_="badjojo.js" FileName="youporn.js" Attributes="0" SourcePath="..\bin\plugins\youporn.js" SelfReg="false" NextFile="youporngay.js"/>
-    <ROW File="youporngay.js" Component_="badjojo.js" FileName="YOUPOR~1.JS|youporngay.js" Attributes="0" SourcePath="..\bin\plugins\youporngay.js" SelfReg="false" NextFile="yourfilehost.js"/>
-    <ROW File="yourfilehost.js" Component_="badjojo.js" FileName="YOURFI~1.JS|yourfilehost.js" Attributes="0" SourcePath="..\bin\plugins\yourfilehost.js" SelfReg="false" NextFile="youtube.js"/>
-    <ROW File="youtube.js" Component_="badjojo.js" FileName="youtube.js" Attributes="0" SourcePath="..\bin\plugins\youtube.js" SelfReg="false" NextFile="youtubeislam.js"/>
-    <ROW File="youtubeislam.js" Component_="badjojo.js" FileName="YOUTUB~1.JS|youtubeislam.js" Attributes="0" SourcePath="..\bin\plugins\youtubeislam.js" SelfReg="false" NextFile="yuvutu.js"/>
-    <ROW File="yuvutu.js" Component_="badjojo.js" FileName="yuvutu.js" Attributes="0" SourcePath="..\bin\plugins\yuvutu.js" SelfReg="false" NextFile="zappinternet.js"/>
-    <ROW File="zappinternet.js" Component_="badjojo.js" FileName="ZAPPIN~1.JS|zappinternet.js" Attributes="0" SourcePath="..\bin\plugins\zappinternet.js" SelfReg="false" NextFile="zedge.js"/>
-    <ROW File="zedge.js" Component_="badjojo.js" FileName="zedge.js" Attributes="0" SourcePath="..\bin\plugins\zedge.js" SelfReg="false" NextFile="zuuble.js"/>
+    <ROW File="xhamster.js" Component_="video.js" FileName="xhamster.js" Attributes="0" SourcePath="..\bin\plugins\xhamster.js" SelfReg="false" NextFile="xtube.js"/>
+    <ROW File="xtube.js" Component_="video.js" FileName="xtube.js" Attributes="0" SourcePath="..\bin\plugins\xtube.js" SelfReg="false" NextFile="xvideos.js"/>
+    <ROW File="xvideos.js" Component_="video.js" FileName="xvideos.js" Attributes="0" SourcePath="..\bin\plugins\xvideos.js" SelfReg="false" NextFile="yahoovideo.js"/>
+    <ROW File="yahoovideo.js" Component_="video.js" FileName="YAHOOV~1.JS|yahoovideo.js" Attributes="0" SourcePath="..\bin\plugins\yahoovideo.js" SelfReg="false" NextFile="yikers.js"/>
+    <ROW File="yikers.js" Component_="video.js" FileName="yikers.js" Attributes="0" SourcePath="..\bin\plugins\yikers.js" SelfReg="false" NextFile="youporn.js"/>
+    <ROW File="youporn.js" Component_="video.js" FileName="youporn.js" Attributes="0" SourcePath="..\bin\plugins\youporn.js" SelfReg="false" NextFile="youporngay.js"/>
+    <ROW File="youporngay.js" Component_="video.js" FileName="YOUPOR~1.JS|youporngay.js" Attributes="0" SourcePath="..\bin\plugins\youporngay.js" SelfReg="false" NextFile="yourfilehost.js"/>
+    <ROW File="yourfilehost.js" Component_="video.js" FileName="YOURFI~1.JS|yourfilehost.js" Attributes="0" SourcePath="..\bin\plugins\yourfilehost.js" SelfReg="false" NextFile="youtube.js"/>
+    <ROW File="youtube.js" Component_="video.js" FileName="youtube.js" Attributes="0" SourcePath="..\bin\plugins\youtube.js" SelfReg="false" NextFile="youtubeislam.js"/>
+    <ROW File="youtubeislam.js" Component_="video.js" FileName="YOUTUB~1.JS|youtubeislam.js" Attributes="0" SourcePath="..\bin\plugins\youtubeislam.js" SelfReg="false" NextFile="yuvutu.js"/>
+    <ROW File="yuvutu.js" Component_="video.js" FileName="yuvutu.js" Attributes="0" SourcePath="..\bin\plugins\yuvutu.js" SelfReg="false" NextFile="zappinternet.js"/>
+    <ROW File="zappinternet.js" Component_="video.js" FileName="ZAPPIN~1.JS|zappinternet.js" Attributes="0" SourcePath="..\bin\plugins\zappinternet.js" SelfReg="false" NextFile="zedge.js"/>
+    <ROW File="zedge.js" Component_="video.js" FileName="zedge.js" Attributes="0" SourcePath="..\bin\plugins\zedge.js" SelfReg="false" NextFile="zuuble.js"/>
     <ROW File="zlib1.dll" Component_="zlib1.dll" FileName="zlib1.dll" Attributes="0" SourcePath="..\bin\bin\zlib1.dll" SelfReg="false" NextFile="msvcp100.dll"/>
-    <ROW File="zuuble.js" Component_="badjojo.js" FileName="zuuble.js" Attributes="0" SourcePath="..\bin\plugins\zuuble.js" SelfReg="false" NextFile="min.js"/>
+    <ROW File="zuuble.js" Component_="video.js" FileName="zuuble.js" Attributes="0" SourcePath="..\bin\plugins\zuuble.js" SelfReg="false" NextFile="chilloutzone.js"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." Languages="en" InstallationType="4"/>
@@ -316,7 +319,6 @@
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
-    <ROW Action="AI_ResolveLocalizedCredentials" Type="1" Source="aicustact.dll" Target="GetLocalizedCredentials"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
@@ -331,13 +333,11 @@
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
     <ROW Action="AI_STORE_LOCATION" Condition="Not Installed" Sequence="1545"/>
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1300"/>
-    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
-    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="740"/>
-    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
-    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="52"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_DpiContentScale" Sequence="51"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
