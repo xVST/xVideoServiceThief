@@ -72,3 +72,6 @@ $PAKUNPAK_BIN -i "$LANGUAGES_DIR/updates/finnish_fi_lang.update" "$LANGUAGES_DIR
 
 # turkish package
 $PAKUNPAK_BIN -i "$LANGUAGES_DIR/updates/turkish_tr_lang.update" "$LANGUAGES_DIR/xVST_tr.qm" "$LANGUAGES_DIR/definitions/turkish.language"
+
+# chinese (traditional) package
+$PAKUNPAK_BIN -i "$LANGUAGES_DIR/updates/chinese_zh_TW_lang.update" "$LANGUAGES_DIR/xVST_zh_TW.qm" "$LANGUAGES_DIR/definitions/chinese.language"
