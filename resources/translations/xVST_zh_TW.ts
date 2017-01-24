@@ -198,12 +198,12 @@
     <message>
         <location filename="../../src/forms/addvideoimpl.cpp" line="165"/>
         <source>No valid URLs detected in this file</source>
-        <translation type="unfinished"></translation>
+        <translation>在檔案中偵測不到有效的網址</translation>
     </message>
     <message>
         <location filename="../../src/forms/addvideoimpl.cpp" line="169"/>
         <source>%1 valid URLs detected in this file</source>
-        <translation type="unfinished"></translation>
+        <translation>在檔案中偵測到 %1 個有效的網址</translation>
     </message>
     <message>
         <location filename="../../src/forms/addvideoimpl.cpp" line="171"/>
@@ -267,7 +267,8 @@
         <location filename="../../ui/adultspermission.ui" line="117"/>
         <source>&lt;p&gt;&lt;b&gt;What does it mean?&lt;/b&gt; Disabling the adult sites the xVST will remove from your installation all the plugins which are used to download videos from adult sites.&lt;/p&gt;&lt;p&gt;Also, the automatic updates will ignore future updates of those plugins and they will not being update.&lt;/p&gt;
 &lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; Due to security reasons, this decision is not reversible!&lt;/font&gt;&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;這是什麼意思?&lt;/b&gt;如果禁用成人網站，xVST將刪除所有用於從成人網站下載影片的的外掛程式。&lt;/p&gt;&lt;p&gt;此外，自動更新會忽略這些附加元件未來的更新，他們將不會被更新。&lt;/p&gt;
+&lt;p&gt;&lt;font color=&quot;red&quot;&gt;&lt;b&gt;注意：&lt;/b&gt;由於安全考量，這個決定是不可逆的！&lt;/font&gt;&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/adultspermission.ui" line="170"/>
@@ -278,7 +279,8 @@
         <location filename="../../ui/adultspermission.ui" line="209"/>
         <source>&lt;h3&gt;&lt;b&gt;Adults sites, how to proceed?&lt;/b&gt;&lt;/h3&gt;
 &lt;p&gt;Would you like to disable adult plugins?&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;&lt;b&gt;成人網站，如何進行？&lt;/b&gt;&lt;/h3&gt;
+&lt;p&gt;你要禁用成人網站外掛程式嗎？&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -286,7 +288,7 @@
     <message>
         <location filename="../../ui/bugreport.ui" line="14"/>
         <source>Bug Report</source>
-        <translation type="unfinished"></translation>
+        <translation>錯誤回報</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="33"/>
@@ -298,13 +300,16 @@
         <source>&lt;b&gt;Ops! An error occurred while trying to download the video.&lt;/b&gt;
 &lt;p&gt;You can help to fix this problem sending us an &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot;. This Report will be used to analyze the error and if is necessary fix it and improve the next version of xVST.&lt;/p&gt;
 &lt;p&gt;Your help is allways welcomed!&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;糟糕！嘗試下載影片時發生錯誤。&lt;/b&gt;
+&lt;p&gt;你可以幫我們解決這個問題藉由向我們發送「&lt;b&gt;錯誤報告&lt;/b&gt;」。這個報告將被用於分析錯誤，如果有必要，將被用於修復和改善 xVST 的下一個版本。&lt;/p&gt;
+&lt;p&gt;我們總是歡迎你的幫忙!&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="79"/>
         <source>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;「&lt;b&gt;錯誤回報&lt;/b&gt;」將會被傳送到 &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;你的姓名和電子郵件將會被包含在「&lt;b&gt;錯誤評論&lt;/b&gt;」，但這是完全選則性且不必要的。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="93"/>
@@ -330,7 +335,7 @@
         <location filename="../../ui/bugreport.ui" line="145"/>
         <location filename="../../ui/bugreport.ui" line="151"/>
         <source>Your name will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
-        <translation type="unfinished"></translation>
+        <translation>你的名字將被加入到「錯誤報告」。此欄位是完全選擇性的</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="148"/>
@@ -340,13 +345,13 @@
     <message>
         <location filename="../../ui/bugreport.ui" line="162"/>
         <source>Email: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(optional)&lt;/span&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Email: &lt;span style=&quot; font-style:italic; color:#a9a9a9;&quot;&gt;(選擇性)&lt;/span&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="175"/>
         <location filename="../../ui/bugreport.ui" line="181"/>
         <source>Your email will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
-        <translation type="unfinished"></translation>
+        <translation>你的電子郵件將被加入到「錯誤報告」。此欄位是完全選擇性的</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="178"/>
@@ -356,7 +361,7 @@
     <message>
         <location filename="../../ui/bugreport.ui" line="217"/>
         <source>View which information will be sent</source>
-        <translation type="unfinished"></translation>
+        <translation>檢視哪些訊息將被傳送</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="238"/>
@@ -367,7 +372,7 @@
         <location filename="../../ui/bugreport.ui" line="251"/>
         <location filename="../../ui/bugreport.ui" line="257"/>
         <source>You can add your own comment which will be added into the &quot;Bug report&quot; body. This field is totally optional</source>
-        <translation type="unfinished"></translation>
+        <translation>你可以把你的意見加入到「錯誤報告」。此欄位是完全選擇性的</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="254"/>
@@ -383,7 +388,7 @@
         <location filename="../../ui/bugreport.ui" line="317"/>
         <location filename="../../ui/bugreport.ui" line="323"/>
         <source>If this option is checked, this dialog will not be displayed again (and no &quot;Bug report&quot; will be sent)</source>
-        <translation type="unfinished"></translation>
+        <translation>如果這個選項被勾選，對話方塊將不會再顯示（沒有「錯誤報告」將被傳送）</translation>
     </message>
     <message>
         <location filename="../../ui/bugreport.ui" line="320"/>
@@ -453,7 +458,7 @@
         <location filename="../../ui/changelog.ui" line="20"/>
         <location filename="../../ui/changelog.ui" line="26"/>
         <source>List of the complete xVST changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>完整的 xVST 變更記錄清單</translation>
     </message>
     <message>
         <location filename="../../ui/changelog.ui" line="23"/>
@@ -469,7 +474,7 @@
         <location filename="../../ui/changelog.ui" line="63"/>
         <location filename="../../ui/changelog.ui" line="69"/>
         <source>List of program versions</source>
-        <translation type="unfinished"></translation>
+        <translation>程式版本清單</translation>
     </message>
     <message>
         <location filename="../../ui/changelog.ui" line="66"/>
@@ -676,7 +681,7 @@
     <message>
         <location filename="../../ui/customalphablend.ui" line="83"/>
         <source>Current: &lt;b&gt;0.1%&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>現在：&lt;b&gt;0.1%&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/customalphablend.ui" line="109"/>
@@ -848,7 +853,7 @@
     <message>
         <location filename="../../ui/dragdrop.ui" line="96"/>
         <source>Drag&amp;Drop</source>
-        <translation>拖放</translation>
+        <translation>拖放(&amp;D)</translation>
     </message>
     <message>
         <location filename="../../ui/dragdrop.ui" line="119"/>
@@ -975,7 +980,7 @@
         <location filename="../../ui/infoview.ui" line="32"/>
         <location filename="../../ui/infoview.ui" line="38"/>
         <source>Information which will be send to SourceForge.net tracker</source>
-        <translation type="unfinished"></translation>
+        <translation>將被傳送到 SourceForge.net tracker 的訊息</translation>
     </message>
     <message>
         <location filename="../../ui/infoview.ui" line="35"/>
@@ -1045,12 +1050,14 @@ background: white;
         <source>xVideoServiceThief is a tool for downloading your favourite video clips from a lot of video websites.
 
 xVideoServiceThief also provide you the ability to convert each video in most popular formats: AVI, MPEG1, MPEG2, WMV, MP4, 3GP, MP3 file formats.</source>
-        <translation type="unfinished"></translation>
+        <translation>xVideoServiceThief 是一個從許多視訊網站下載你喜歡的影片的工具。
+
+xVideoServiceThief 還有轉換影片為大多數流行的格式的能力：支援 AVI, MPEG1, MPEG2, WMV, MP4, 3GP, MP3 檔案格式。</translation>
     </message>
     <message>
         <location filename="../../ui/information.ui" line="198"/>
         <source>&lt;b&gt;xVideoServiceThief currently supports download from:&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;xVideoServiceThief 現在支援下載的網站：&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/information.ui" line="205"/>
@@ -1514,7 +1521,7 @@ font-size:12px;
     <message>
         <location filename="../../ui/mainform.ui" line="1194"/>
         <source>Display a popup window on finish a download/conversion video</source>
-        <translation type="unfinished"></translation>
+        <translation>在完成下載/轉換影片時顯示彈出式視窗</translation>
     </message>
     <message>
         <location filename="../../ui/mainform.ui" line="1208"/>
@@ -1544,7 +1551,7 @@ font-size:12px;
     <message>
         <location filename="../../ui/mainform.ui" line="1241"/>
         <source>Reset state</source>
-        <translation type="unfinished"></translation>
+        <translation>重設狀態</translation>
     </message>
     <message>
         <location filename="../../ui/mainform.ui" line="1249"/>
@@ -1598,7 +1605,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="101"/>
         <source>Controllers</source>
-        <translation type="unfinished"></translation>
+        <translation>控制器</translation>
     </message>
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="109"/>
@@ -1643,7 +1650,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="372"/>
         <source>xVideoServiceThief is working, do you wish Pause the current work?</source>
-        <translation type="unfinished"></translation>
+        <translation>xVideoServiceThief 正在運作，你是否打算暫停目前的工作？</translation>
     </message>
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="373"/>
@@ -1679,7 +1686,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="441"/>
         <source>Another process is currently working, please stop it or wait until the end of process.</source>
-        <translation type="unfinished"></translation>
+        <translation>另一個程序正在運作，請關閉或等待程序結束。</translation>
     </message>
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="441"/>
@@ -1760,7 +1767,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="983"/>
         <source>xUpdater application is missing.&lt;br&gt;&lt;br&gt;Reinstall xVideoServiceThief if you want update automatically the program.</source>
-        <translation type="unfinished"></translation>
+        <translation>xUpdater 程式遺失。&lt;br&gt;&lt;br&gt;如果你想自動更新程式，請重新安裝 xVideoServiceThief。</translation>
     </message>
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="1202"/>
@@ -1813,7 +1820,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="1253"/>
         <source>Reset state</source>
-        <translation type="unfinished"></translation>
+        <translation>重設狀態</translation>
     </message>
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="1288"/>
@@ -1843,7 +1850,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="1294"/>
         <source>Reset states</source>
-        <translation type="unfinished"></translation>
+        <translation>重設狀態</translation>
     </message>
     <message>
         <location filename="../../src/forms/mainformimpl.cpp" line="1338"/>
@@ -2053,7 +2060,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="117"/>
         <source>Some errors has ocurred on try uninstall the selected &lt;b&gt;%1&lt;/b&gt; language.&lt;br&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; On Windows Vista you should execute the xVST as administrator before uninstall languages.</source>
-        <translation type="unfinished"></translation>
+        <translation>解除安裝選取的&lt;b&gt;%1&lt;/b&gt;語言時發生錯誤。&lt;br&gt;&lt;br&gt;&lt;b&gt;注意：&lt;/b&gt;在Windows Vista，你應該在解除安裝語言之前以管理員身分執行 xVST。</translation>
     </message>
     <message>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="118"/>
@@ -2069,7 +2076,7 @@ font-size:12px;
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="122"/>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="170"/>
         <source>Some errors has ocurred on try uninstall the selected &lt;b&gt;%1&lt;/b&gt; language.</source>
-        <translation type="unfinished"></translation>
+        <translation>解除安裝選取的&lt;b&gt;%1&lt;/b&gt;語言時發生錯誤。</translation>
     </message>
     <message>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="126"/>
@@ -2095,7 +2102,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="165"/>
         <source>Some errors has ocurred on try install the selected &lt;b&gt;%1&lt;/b&gt; language.&lt;br&gt;&lt;br&gt;&lt;b&gt;Note:&lt;/b&gt; On Windows Vista you should execute the xVST as administrator before install new languages.</source>
-        <translation type="unfinished"></translation>
+        <translation>解除安裝選取的&lt;b&gt;%1&lt;/b&gt;語言時發生錯誤。&lt;br&gt;&lt;br&gt;&lt;b&gt;注意：&lt;/b&gt;在Windows Vista，你應該在解除安裝語言之前以管理員身分執行 xVST。</translation>
     </message>
     <message>
         <location filename="../../src/forms/newlanguagesimpl.cpp" line="174"/>
@@ -2526,18 +2533,18 @@ font-size:12px;
         <location filename="../../ui/options.ui" line="902"/>
         <location filename="../../ui/options.ui" line="908"/>
         <source>Period of time which automatic updates will check for new versions</source>
-        <translation type="unfinished"></translation>
+        <translation>自動更新將檢查新版本的一段時間</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="905"/>
         <source>Period of time combobox</source>
-        <translation type="unfinished"></translation>
+        <translation>一段時間下拉式方塊</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="933"/>
         <location filename="../../ui/options.ui" line="939"/>
         <source>If this option is checked, the xVST will download and install automatically the new updates</source>
-        <translation type="unfinished"></translation>
+        <translation>如果這個選項被選取，xVST會下載並自動安裝新的更新</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="936"/>
@@ -2568,7 +2575,7 @@ font-size:12px;
     <message>
         <location filename="../../ui/options.ui" line="1017"/>
         <source>Ups! Configuration</source>
-        <translation type="unfinished"></translation>
+        <translation>Ups! 設定</translation>
     </message>
     <message>
         <location filename="../../ui/options.ui" line="1029"/>
@@ -2953,7 +2960,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="194"/>
         <source>Ups!</source>
-        <translation type="unfinished"></translation>
+        <translation>Ups!</translation>
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="199"/>
@@ -2963,7 +2970,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="209"/>
         <source>Tracker</source>
-        <translation type="unfinished"></translation>
+        <translation>Tracker</translation>
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="232"/>
@@ -3043,12 +3050,12 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="590"/>
         <source>Invalid UPS! password</source>
-        <translation type="unfinished"></translation>
+        <translation>無效的 UPS! 密碼</translation>
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="591"/>
         <source>You entered an invalid UPS! password and the adults contents will continue locked.</source>
-        <translation type="unfinished"></translation>
+        <translation>你輸入了無效的 UPS! 密碼。成人內容將繼續鎖定。</translation>
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="675"/>
@@ -3075,7 +3082,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="690"/>
         <source>Another process is currently working, please stop it or wait until the end of process.</source>
-        <translation type="unfinished"></translation>
+        <translation>另一個程序正在運作，請關閉或等待程序結束。</translation>
     </message>
     <message>
         <location filename="../../src/forms/optionsimpl.cpp" line="748"/>
@@ -3137,7 +3144,7 @@ font-size:12px;
     <message>
         <location filename="../../ui/scheduleitemedit.ui" line="14"/>
         <source>Schedule edition</source>
-        <translation type="unfinished"></translation>
+        <translation>排程編輯</translation>
     </message>
     <message>
         <location filename="../../ui/scheduleitemedit.ui" line="22"/>
@@ -3302,7 +3309,7 @@ font-size:12px;
     <message>
         <location filename="../../src/forms/searchvideosimpl.cpp" line="109"/>
         <source>Please, select one or more services.</source>
-        <translation>請選擇一個以上的服務</translation>
+        <translation>請選擇一個以上的服務。</translation>
     </message>
     <message>
         <location filename="../../src/forms/searchvideosimpl.cpp" line="109"/>
@@ -3560,7 +3567,7 @@ font-size:12px;
     <message>
         <location filename="../../ui/upspassword.ui" line="14"/>
         <source>UPS! Password</source>
-        <translation type="unfinished"></translation>
+        <translation>UPS! 密碼</translation>
     </message>
     <message>
         <location filename="../../ui/upspassword.ui" line="45"/>
@@ -3994,12 +4001,12 @@ font-size:12px;
     <message>
         <location filename="../../src/videoitem.cpp" line="483"/>
         <source>Unable append data to file</source>
-        <translation type="unfinished"></translation>
+        <translation>無法將資料附加到文件</translation>
     </message>
     <message>
         <location filename="../../src/videoitem.cpp" line="485"/>
         <source>The maximum allowed http redirections has been reached</source>
-        <translation type="unfinished"></translation>
+        <translation>已達到最大允許的 http 重定向數</translation>
     </message>
     <message>
         <location filename="../../src/videoitem.cpp" line="487"/>
@@ -4054,7 +4061,7 @@ font-size:12px;
     <message>
         <location filename="../../src/videoitem.cpp" line="507"/>
         <source>Failed on initialize the pthread_create</source>
-        <translation type="unfinished"></translation>
+        <translation>無法初始化 pthread_create</translation>
     </message>
     <message>
         <location filename="../../src/videoitem.cpp" line="509"/>
@@ -4241,12 +4248,12 @@ font-size:12px;
     <message>
         <location filename="../../ui/winvistaupdatesmsg.ui" line="26"/>
         <source>Update center - Windows Vista detected</source>
-        <translation>更新中心 - 偵測到 Windows Vista 系統</translation>
+        <translation type="unfinished">更新中心 - 偵測到 Windows Vista 系統</translation>
     </message>
     <message>
         <location filename="../../ui/winvistaupdatesmsg.ui" line="69"/>
         <source>&lt;p&gt;&lt;b&gt;Attention, xVST detected you are running Windows Vista/7 and automatic updates may not work properly.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If you have the &lt;b&gt;UAC&lt;/b&gt; (User Account Control) enabled, the automatic updates won&apos;t install the downloaded updates due to user permissions.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;注意，xVST 偵測到您正在運行Windows Vista/7，而自動更新可能無法正常運作。&lt;/b&gt;&lt;/p&gt;&lt;p&gt;如果&lt;b&gt;UAC&lt;/b&gt; (User Account Control)已啟用，由於使用者權限，自動更新將不會安裝下載的更新。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../../ui/winvistaupdatesmsg.ui" line="82"/>
