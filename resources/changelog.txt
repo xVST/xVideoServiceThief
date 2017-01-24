@@ -7,6 +7,12 @@
 
 - Fixed bug (Error: Language packages were not installed causing updates to get stuck)
 
+Mac OS X:
+---------
+
+- Compiled with Qt 5.8
+
+
 2.5.1:
 ------
 
