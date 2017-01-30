@@ -115,6 +115,7 @@ Q_OBJECT
 		void addVideoClicked();
 		void deleteVideoClicked();
 		void renameVideoClicked();
+		void startDownloadVideoAgainClicked();
 		void startDownloadVideoClicked();
 		void pauseResumeDownloadVideoClicked();
 		void cancelDownloadVideoClicked();

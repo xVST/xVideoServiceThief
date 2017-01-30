@@ -1,6 +1,7 @@
 2.5.2:
 ------
 
+- Added new option: “Download again”
 - Added chinese (traditional) translation (thank you Hsiu-Ming Chang)
 
 - Updated japanese translation

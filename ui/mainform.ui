@@ -1327,6 +1327,18 @@
     <string>Rename video</string>
    </property>
   </action>
+  <action name="actStartDownloadAgain">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/download_again.png</normaloff>:/buttons/images/download_again.png</iconset>
+   </property>
+   <property name="text">
+    <string>Download again</string>
+   </property>
+   <property name="toolTip">
+    <string>Start download again</string>
+   </property>
+  </action>
  </widget>
  <tabstops>
   <tabstop>btnAddVideo</tabstop>

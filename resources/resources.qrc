@@ -33,6 +33,7 @@
         <file>images/search.png</file>
         <file>images/select_file.png</file>
         <file>images/urls_file.png</file>
+        <file>images/download_again.png</file>
     </qresource>
     <qresource prefix="/error">
         <file>images/errorVideo.png</file>

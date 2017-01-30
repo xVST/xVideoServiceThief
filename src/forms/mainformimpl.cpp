@@ -186,6 +186,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	connect(actDeleteVideo, SIGNAL(triggered()), this, SLOT(deleteVideoClicked())); // actDeleteOptions (clicked)
 	connect(actRenameVideo, SIGNAL(triggered()), this, SLOT(renameVideoClicked())); // actRenameOptions (clicked)
 	connect(actStartDownload, SIGNAL(triggered()), this, SLOT(startDownloadVideoClicked())); // actStartDownload (clicked)
+	connect(actStartDownloadAgain, SIGNAL(triggered()), this, SLOT(startDownloadVideoAgainClicked())); // actStartDownloadAgain (clicked)
 	connect(actPauseResumeDownload, SIGNAL(triggered()), this, SLOT(pauseResumeDownloadVideoClicked())); // actPauseResumeDownload (clicked)
 	connect(actCancelDownload, SIGNAL(triggered()), this, SLOT(cancelDownloadVideoClicked())); // actCancelDownload (clicked)
 	connect(actClearList, SIGNAL(triggered()), this, SLOT(clearListClicked())); // actClearList (clicked)
@@ -578,6 +579,20 @@ void MainFormImpl::renameVideoClicked()
 		if (showModalDialog(&renameVideoForm) == QDialog::Accepted)
 			videoList->renameVideo(videoItem, renameVideoForm.edtTitle->text());
 	}
+}
+
+void MainFormImpl::startDownloadVideoAgainClicked()
+{
+	// download all selected items
+	foreach (VideoItem *videoItem, getSelectedVideoItems())
+	{
+		if (videoItem->isCompleted())
+		{
+			videoList->startDownload(videoItem);
+		}
+	}
+	// update visual controls
+	updateVisualControls();
 }
 
 void MainFormImpl::startDownloadVideoClicked()
@@ -1232,6 +1247,7 @@ void MainFormImpl::updateVisualControls()
 		actPlayVideo->setVisible(true);
 		actViewErrorMessage->setVisible(false);
 		actResetState->setEnabled(false);
+		actStartDownloadAgain->setEnabled(false);
 
 		actMoveUP->setEnabled(false);
 		actMoveDOWN->setEnabled(false);
@@ -1256,6 +1272,7 @@ void MainFormImpl::updateVisualControls()
 		actPlayVideo->setVisible(!videoItem->hasErrors());
 		actViewErrorMessage->setVisible(videoItem->hasErrors());
 		actResetState->setEnabled(videoItem->isResetable());
+		actStartDownloadAgain->setEnabled(videoItem->isCompleted());
 
 		// update move up/down actions
 		actMoveUP->setEnabled(videoList->getVideoItem(0) != videoItem);
@@ -1269,6 +1286,7 @@ void MainFormImpl::updateVisualControls()
 		bool canResume = false;
 		bool canCancel = false;
 		bool canReset = false;
+		bool canDownloadAgain = false;
 		// check each video item and update the control flags
 		foreach (VideoItem *videoItem, videoItems)
 		{
@@ -1278,6 +1296,7 @@ void MainFormImpl::updateVisualControls()
 			if (videoItem->isAnyKindOfPaused()) canResume = true;
 			if (videoItem->isDownloading()) canCancel = true;
 			if (videoItem->isResetable()) canReset = true;
+			if (videoItem->isCompleted()) canDownloadAgain = true;
 		}
 
 		btnDeleteVideo->setEnabled(canDelete);
@@ -1297,6 +1316,7 @@ void MainFormImpl::updateVisualControls()
 		actPlayVideo->setVisible(true);
 		actViewErrorMessage->setVisible(false);
 		actResetState->setEnabled(canReset);
+		actResetState->setEnabled(canDownloadAgain);
 
 		// update move up/down actions
 		actMoveUP->setEnabled(false);//(videoList->getVideoItem(0) != videoItem);
@@ -1398,6 +1418,7 @@ void MainFormImpl::videoListContextMenu(const QPoint & pos)
 		videoItemMenu->addAction(actMoveDOWN);
 		videoItemMenu->addSeparator();
 		videoItemMenu->addAction(actResetState);
+		videoItemMenu->addAction(actStartDownloadAgain);
 		videoItemMenu->addSeparator();
 		videoItemMenu->addAction(actClearList);
 		videoItemMenu->addAction(actClearCompleted);
