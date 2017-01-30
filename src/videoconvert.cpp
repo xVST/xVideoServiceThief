@@ -240,23 +240,34 @@ QStringList VideoConverter::getCommandLine()
 	return parameters;
 }
 
+float VideoConverter::hms2seconds(QString strHMS)
+{
+	float seconds = 0;
+	// extrat h-m-s
+	QStringList hms = strHMS.split(":");
+	// get hours
+	seconds = hms.at(0).toFloat() * 3600;
+	// get minutes
+	seconds = seconds + hms.at(1).toFloat() * 60;
+	// get seconds
+	seconds = seconds + hms.at(2).toFloat();
+	// return the conversion
+	return seconds;
+}
+
 void VideoConverter::setVideoDuration(QString strVideoDuration)
 {
 	if (strVideoDuration == "N/A" || strVideoDuration.isEmpty()) return;
-	// extrat h-m-s
-	QStringList hms = strVideoDuration.split(":");
-	// get hours
-	videoLength = hms.at(0).toFloat() * 3600;
-	// get minutes
-	videoLength = videoLength + hms.at(1).toFloat() * 60;
-	// get seconds
-	videoLength = videoLength + hms.at(2).toFloat();
+	// get the video length
+	videoLength = this->hms2seconds(strVideoDuration);
 }
 
 void VideoConverter::getCurrentTimeConversion(QString strFrame)
 {
+	if (strFrame.isEmpty()) return;
+
 	// get the current progress
-	float time = strFrame.toFloat();
+	float time = this->hms2seconds(strFrame);
 
 	videoItem->setProgress(calculePercent(time, videoLength), this);
 
@@ -272,20 +283,27 @@ void VideoConverter::parseOutput(QString output)
 		if (outputAll.indexOf("Duration: ") > -1)
 		{
 			setVideoDuration(copyBetween(outputAll, "Duration: ", ", start"));
+
 			// we have the durtion? if yes, then capture the first step
 			if (videoLength != 0)
+			{
 				getCurrentTimeConversion(copyBetween(outputAll, "time=", " bitrate"));
+			}
 		}
 	}
 	else // get the current frame
+	{
 		getCurrentTimeConversion(copyBetween(output, "time=", " bitrate"));
+	}
 }
 
 void VideoConverter::initTimer()
 {
 	// start internal timer
 	if (internalTimer != 0)
+	{
 		this->killTimer(internalTimer);
+	}
 
 	internalTimer = this->startTimer(1000);
 }

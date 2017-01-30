@@ -49,6 +49,8 @@ Q_OBJECT
 		float lastProgress;			//!< Last progress value
 		/*! Build the ffmpeg command line */
 		QStringList getCommandLine();
+		/*! Convert a h:m:s format to seconds */
+		float hms2seconds(QString strHMS);
 		/*! Convert & set the video duration to seconds */
 		void setVideoDuration(QString strVideoDuration);
 		/*! Get the current time conversion */
