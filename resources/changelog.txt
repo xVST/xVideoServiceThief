@@ -1,7 +1,8 @@
 2.5.2:
 ------
 
-- Added new option: “Download again”
+- Added new option: “Download again” (in downloads list)
+- Added new option: “Download again” (in downloads log list)
 - Added chinese (traditional) translation (thank you Hsiu-Ming Chang)
 
 - Updated japanese translation
