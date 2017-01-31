@@ -646,6 +646,22 @@
         <source>Close button</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Play original video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Plays the original video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download this video again</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DownloadLogImpl</name>
@@ -1228,6 +1244,14 @@ font-size:12px;
     </message>
     <message>
         <source>Alt+Down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start download again</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

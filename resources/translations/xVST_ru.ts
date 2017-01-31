@@ -797,36 +797,56 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/downloadlog.ui" line="71"/>
-        <location filename="../../ui/downloadlog.ui" line="77"/>
+        <location filename="../../ui/downloadlog.ui" line="74"/>
+        <location filename="../../ui/downloadlog.ui" line="80"/>
         <source>Display the downloaded log list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/downloadlog.ui" line="74"/>
+        <location filename="../../ui/downloadlog.ui" line="77"/>
         <source>Downloads log list</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/downloadlog.ui" line="96"/>
+        <location filename="../../ui/downloadlog.ui" line="99"/>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <location filename="../../ui/downloadlog.ui" line="125"/>
-        <location filename="../../ui/downloadlog.ui" line="131"/>
+        <location filename="../../ui/downloadlog.ui" line="128"/>
+        <location filename="../../ui/downloadlog.ui" line="134"/>
         <source>Close this window</source>
         <translation type="unfinished">Закрыть окно</translation>
     </message>
     <message>
-        <location filename="../../ui/downloadlog.ui" line="128"/>
+        <location filename="../../ui/downloadlog.ui" line="131"/>
         <source>Close button</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui/downloadlog.ui" line="134"/>
+        <location filename="../../ui/downloadlog.ui" line="137"/>
         <source>Close</source>
         <translation>Закрыть</translation>
+    </message>
+    <message>
+        <location filename="../../ui/downloadlog.ui" line="153"/>
+        <source>Play original video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/downloadlog.ui" line="156"/>
+        <source>Plays the original video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/downloadlog.ui" line="165"/>
+        <source>Download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/downloadlog.ui" line="168"/>
+        <source>Download this video again</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1178,411 +1198,421 @@ font-size:12px;
 <context>
     <name>MainForm</name>
     <message>
-        <location filename="../../ui/mainform.ui" line="179"/>
+        <location filename="../../ui/mainform.ui" line="188"/>
         <source>Connecting...</source>
         <translation>Подключаюсь...</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="347"/>
-        <location filename="../../ui/mainform.ui" line="1037"/>
+        <location filename="../../ui/mainform.ui" line="356"/>
+        <location filename="../../ui/mainform.ui" line="1046"/>
         <source>Open the Drag &amp; Drop window</source>
         <translation>Открыть окно для Drag &amp; Drop</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="353"/>
-        <location filename="../../ui/mainform.ui" line="356"/>
+        <location filename="../../ui/mainform.ui" line="362"/>
+        <location filename="../../ui/mainform.ui" line="365"/>
         <source>Open Drag &amp; Drop window</source>
         <translation>Открыть окно для Drag &amp; Drop</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="388"/>
-        <location filename="../../ui/mainform.ui" line="391"/>
-        <location filename="../../ui/mainform.ui" line="394"/>
-        <location filename="../../ui/mainform.ui" line="1049"/>
+        <location filename="../../ui/mainform.ui" line="397"/>
+        <location filename="../../ui/mainform.ui" line="400"/>
+        <location filename="../../ui/mainform.ui" line="403"/>
+        <location filename="../../ui/mainform.ui" line="1058"/>
         <source>Check for updates</source>
         <translation>Проверить обновления</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="426"/>
-        <location filename="../../ui/mainform.ui" line="429"/>
-        <location filename="../../ui/mainform.ui" line="432"/>
-        <location filename="../../ui/mainform.ui" line="1061"/>
+        <location filename="../../ui/mainform.ui" line="435"/>
+        <location filename="../../ui/mainform.ui" line="438"/>
+        <location filename="../../ui/mainform.ui" line="441"/>
+        <location filename="../../ui/mainform.ui" line="1070"/>
         <source>Online help</source>
         <translation>Справка в сети</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="464"/>
-        <location filename="../../ui/mainform.ui" line="467"/>
-        <location filename="../../ui/mainform.ui" line="470"/>
+        <location filename="../../ui/mainform.ui" line="473"/>
+        <location filename="../../ui/mainform.ui" line="476"/>
+        <location filename="../../ui/mainform.ui" line="479"/>
         <source>Program information</source>
         <translation>Информация о программе</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="492"/>
+        <location filename="../../ui/mainform.ui" line="501"/>
         <source>Download list:</source>
         <translation>Список загрузок:</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="584"/>
+        <location filename="../../ui/mainform.ui" line="593"/>
         <source>Add video button</source>
         <translation>кнопка добавления видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="587"/>
+        <location filename="../../ui/mainform.ui" line="596"/>
         <source>Add a new URL video</source>
         <translation>Добавить новый адрес видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="590"/>
-        <location filename="../../ui/mainform.ui" line="1085"/>
+        <location filename="../../ui/mainform.ui" line="599"/>
+        <location filename="../../ui/mainform.ui" line="1094"/>
         <source>Add video</source>
         <translation>Добавить видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="609"/>
+        <location filename="../../ui/mainform.ui" line="618"/>
         <source>Delete video button</source>
         <translation>кнопка удаления видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="612"/>
+        <location filename="../../ui/mainform.ui" line="621"/>
         <source>Delete the selected video</source>
         <translation>Удалить выделенное видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="615"/>
-        <location filename="../../ui/mainform.ui" line="1097"/>
+        <location filename="../../ui/mainform.ui" line="624"/>
+        <location filename="../../ui/mainform.ui" line="1106"/>
         <source>Delete video</source>
         <translation>Удалить видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="644"/>
+        <location filename="../../ui/mainform.ui" line="653"/>
         <source>Start download button</source>
         <translation>кнопка начала скачивания</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="647"/>
+        <location filename="../../ui/mainform.ui" line="656"/>
         <source>Start to download the current selected video</source>
         <translation>Начать скачивание выбранного видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="650"/>
-        <location filename="../../ui/mainform.ui" line="1106"/>
+        <location filename="../../ui/mainform.ui" line="659"/>
+        <location filename="../../ui/mainform.ui" line="1115"/>
         <source>Start download</source>
         <translation>Начать скачивание</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="666"/>
+        <location filename="../../ui/mainform.ui" line="675"/>
         <source>Pause Download</source>
         <translation>Приостановить скачивание</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="682"/>
+        <location filename="../../ui/mainform.ui" line="691"/>
         <source>Cancel download button</source>
         <translation>Отменить скачивание</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="685"/>
+        <location filename="../../ui/mainform.ui" line="694"/>
         <source>Cancel the current selected video</source>
         <translation>Отменить скачивание выбранного видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="688"/>
-        <location filename="../../ui/mainform.ui" line="1118"/>
+        <location filename="../../ui/mainform.ui" line="697"/>
+        <location filename="../../ui/mainform.ui" line="1127"/>
         <source>Cancel download</source>
         <translation>Отменить скачивание</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="717"/>
+        <location filename="../../ui/mainform.ui" line="726"/>
         <source>Clear list button</source>
         <translation>Кнопка очистки списка</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="720"/>
+        <location filename="../../ui/mainform.ui" line="729"/>
         <source>Clear downloads list</source>
         <translation>Очистить список скачиваний</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="723"/>
-        <location filename="../../ui/mainform.ui" line="1126"/>
+        <location filename="../../ui/mainform.ui" line="732"/>
+        <location filename="../../ui/mainform.ui" line="1135"/>
         <source>Clear list</source>
         <translation>Очистить список</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="739"/>
+        <location filename="../../ui/mainform.ui" line="748"/>
         <source>Clear completed button</source>
         <translation>Очистить от завершенных</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="742"/>
+        <location filename="../../ui/mainform.ui" line="751"/>
         <source>Clear completed videos from list</source>
         <translation>Очистить список от завершенных видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="745"/>
-        <location filename="../../ui/mainform.ui" line="1199"/>
+        <location filename="../../ui/mainform.ui" line="754"/>
+        <location filename="../../ui/mainform.ui" line="1208"/>
         <source>Clear completed</source>
         <translation>Очистить от завершенных</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="774"/>
+        <location filename="../../ui/mainform.ui" line="783"/>
         <source>More options button</source>
         <translation>Больше настроек</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="777"/>
+        <location filename="../../ui/mainform.ui" line="786"/>
         <source>Display the Options dialog</source>
         <translation>Показать диалог настроек</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="780"/>
-        <location filename="../../ui/mainform.ui" line="1135"/>
+        <location filename="../../ui/mainform.ui" line="789"/>
+        <location filename="../../ui/mainform.ui" line="1144"/>
         <source>More options...</source>
         <translation>Больше настроек...</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="842"/>
+        <location filename="../../ui/mainform.ui" line="851"/>
         <source>&lt;b&gt;Download speed:&lt;/b&gt; 0,00 bytes/sec</source>
         <translation>&lt;b&gt;Скорость скачивания:&lt;/b&gt; 0,00 байт в сек</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="825"/>
+        <location filename="../../ui/mainform.ui" line="834"/>
         <source>&lt;b&gt;Videos count:&lt;/b&gt; 0 &lt;span style=&quot;color:#666666;&quot;&gt;(0 completed)&lt;/span&gt;</source>
         <translation>&lt;b&gt;Количество загрузок видео:&lt;/b&gt; 0 &lt;span style=&quot;color:#666666;&quot;&gt;(0 завершенных)&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="117"/>
+        <location filename="../../ui/mainform.ui" line="126"/>
         <source>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt;!</source>
         <translation>Сделать пожертвование для &lt;b&gt;xVideoServiceThief&lt;/b&gt;!</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="120"/>
-        <location filename="../../ui/mainform.ui" line="126"/>
+        <location filename="../../ui/mainform.ui" line="129"/>
+        <location filename="../../ui/mainform.ui" line="135"/>
         <source>Make a donation to &lt;b&gt;xVideoServiceThief&lt;/b&gt; via Paypal! It&apos;s easy and fast! :)</source>
         <translation>Сделать пожертвование для &lt;b&gt;xVideoServiceThief&lt;/b&gt; с помощью Paypal! Это легко и быстро! :)</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="123"/>
+        <location filename="../../ui/mainform.ui" line="132"/>
         <source>Support button</source>
         <translation>Поддержка</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="306"/>
-        <location filename="../../ui/mainform.ui" line="312"/>
         <location filename="../../ui/mainform.ui" line="315"/>
-        <location filename="../../ui/mainform.ui" line="1300"/>
-        <location filename="../../ui/mainform.ui" line="1303"/>
+        <location filename="../../ui/mainform.ui" line="321"/>
+        <location filename="../../ui/mainform.ui" line="324"/>
+        <location filename="../../ui/mainform.ui" line="1309"/>
+        <location filename="../../ui/mainform.ui" line="1312"/>
         <source>Search videos</source>
         <translation>Поиск видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="832"/>
+        <location filename="../../ui/mainform.ui" line="841"/>
         <source>&lt;b&gt;Downloading:&lt;/b&gt; 0 of 0</source>
         <translation>&lt;b&gt;Скачивается:&lt;/b&gt; 0 из 0</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="857"/>
+        <location filename="../../ui/mainform.ui" line="866"/>
         <source>Download videos automatically checkbox</source>
         <translation>Скачивать видео автоматически</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="860"/>
-        <location filename="../../ui/mainform.ui" line="863"/>
-        <location filename="../../ui/mainform.ui" line="1143"/>
+        <location filename="../../ui/mainform.ui" line="869"/>
+        <location filename="../../ui/mainform.ui" line="872"/>
+        <location filename="../../ui/mainform.ui" line="1152"/>
         <source>Download videos automatically</source>
         <translation>Скачивать видео автоматически</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="870"/>
+        <location filename="../../ui/mainform.ui" line="879"/>
         <source>Schedule option is &lt;b&gt;enabled&lt;/b&gt;</source>
         <translation>Планировщик &lt;b&gt;включен&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="896"/>
+        <location filename="../../ui/mainform.ui" line="905"/>
         <source>Convert videos checkbox</source>
         <translation>Конвертировать видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="899"/>
+        <location filename="../../ui/mainform.ui" line="908"/>
         <source>Convert videos</source>
         <translation>Конвертировать видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="902"/>
+        <location filename="../../ui/mainform.ui" line="911"/>
         <source>Convert videos to Mpeg/DivX/etc...</source>
         <translation>Конвертировать видео в Mpeg/DivX/и т.д...</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="922"/>
+        <location filename="../../ui/mainform.ui" line="931"/>
         <source>Downloads directory:</source>
         <translation>Директория для скачивания:</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="960"/>
-        <location filename="../../ui/mainform.ui" line="963"/>
+        <location filename="../../ui/mainform.ui" line="969"/>
+        <location filename="../../ui/mainform.ui" line="972"/>
         <source>Downloads directory</source>
         <translation>Директория для скачанных видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="982"/>
+        <location filename="../../ui/mainform.ui" line="991"/>
         <source>Select the downloads directory</source>
         <translation>Выбрать директорию для скачанных видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="985"/>
-        <location filename="../../ui/mainform.ui" line="1168"/>
+        <location filename="../../ui/mainform.ui" line="994"/>
+        <location filename="../../ui/mainform.ui" line="1177"/>
         <source>Select downloads directory</source>
         <translation>Выбрать директорию для скачанных видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="988"/>
+        <location filename="../../ui/mainform.ui" line="997"/>
         <source>Open the Select directory dialog for select the downloads directory</source>
         <translation>Открыть диалог выбора директории для скачивания</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1010"/>
-        <location filename="../../ui/mainform.ui" line="1013"/>
-        <location filename="../../ui/mainform.ui" line="1160"/>
+        <location filename="../../ui/mainform.ui" line="1019"/>
+        <location filename="../../ui/mainform.ui" line="1022"/>
+        <location filename="../../ui/mainform.ui" line="1169"/>
         <source>Open downloads directory</source>
         <translation>Открыть директорию для скачанных видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1016"/>
+        <location filename="../../ui/mainform.ui" line="1025"/>
         <source>Open the downloads directory</source>
         <translation>Открыть директорию для скачанных видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1040"/>
+        <location filename="../../ui/mainform.ui" line="1049"/>
         <source>Ctrl+D</source>
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1052"/>
+        <location filename="../../ui/mainform.ui" line="1061"/>
         <source>Ctrl+U</source>
         <translation>Ctrl+U</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1064"/>
+        <location filename="../../ui/mainform.ui" line="1073"/>
         <source>F1</source>
         <translation>F1</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1073"/>
+        <location filename="../../ui/mainform.ui" line="1082"/>
         <source>Information</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1076"/>
+        <location filename="../../ui/mainform.ui" line="1085"/>
         <source>Ctrl+I</source>
         <translation>Ctrl+I</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1088"/>
+        <location filename="../../ui/mainform.ui" line="1097"/>
         <source>Ctrl+A</source>
         <translation>Ctrl+A</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1109"/>
+        <location filename="../../ui/mainform.ui" line="1118"/>
         <source>Ctrl+S</source>
         <translation>Ctrl+S</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1121"/>
+        <location filename="../../ui/mainform.ui" line="1130"/>
         <source>Alt+S</source>
         <translation>Alt+S</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1151"/>
+        <location filename="../../ui/mainform.ui" line="1160"/>
         <source>Convert videos to Mpeg\DivX\etc...</source>
         <translation>Конвертировать видео в Mpeg/DivX/и т.д...</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1163"/>
+        <location filename="../../ui/mainform.ui" line="1172"/>
         <source>Ctrl+T</source>
         <translation>Ctrl+T</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1177"/>
+        <location filename="../../ui/mainform.ui" line="1186"/>
         <source>Restore xVideoServiceThief</source>
         <translation>Восстановить xVideoServiceThief</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1186"/>
+        <location filename="../../ui/mainform.ui" line="1195"/>
         <source>Close</source>
         <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1194"/>
+        <location filename="../../ui/mainform.ui" line="1203"/>
         <source>Display a popup window on finish a download/conversion video</source>
         <translation>Отображать всплывающее окно по завершению скачивания/конвертирования видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1208"/>
+        <location filename="../../ui/mainform.ui" line="1217"/>
         <source>Move UP</source>
         <translation>Передвинуть выше</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1211"/>
+        <location filename="../../ui/mainform.ui" line="1220"/>
         <source>Alt+Up</source>
         <translation>Alt+Up</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1223"/>
+        <location filename="../../ui/mainform.ui" line="1232"/>
         <source>Alt+Down</source>
         <translation>Alt+Down</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1220"/>
+        <location filename="../../ui/mainform.ui" line="1336"/>
+        <source>Download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/mainform.ui" line="1339"/>
+        <source>Start download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui/mainform.ui" line="1229"/>
         <source>Move DOWN</source>
         <translation>Передвинуть ниже</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1232"/>
+        <location filename="../../ui/mainform.ui" line="1241"/>
         <source>Play video</source>
         <translation>Играть видео</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1241"/>
+        <location filename="../../ui/mainform.ui" line="1250"/>
         <source>Reset state</source>
         <translation>Обновить состояние</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1249"/>
+        <location filename="../../ui/mainform.ui" line="1258"/>
         <source>Stay always on top</source>
         <translation>Поверх всех окон</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1257"/>
+        <location filename="../../ui/mainform.ui" line="1266"/>
         <source>Minimize to system tray</source>
         <translation>Свернуть в трей</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1266"/>
+        <location filename="../../ui/mainform.ui" line="1275"/>
         <source>Pause download</source>
         <translation>Приостановить скачивание</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1269"/>
+        <location filename="../../ui/mainform.ui" line="1278"/>
         <source>Ctrl+P</source>
         <translation>Ctrl+P</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1278"/>
+        <location filename="../../ui/mainform.ui" line="1287"/>
         <source>View error message</source>
         <translation>Просмотреть сообщение об ошибке</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1286"/>
+        <location filename="../../ui/mainform.ui" line="1295"/>
         <source>Ctrl+O</source>
         <translation>Ctrl+O</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1306"/>
+        <location filename="../../ui/mainform.ui" line="1315"/>
         <source>Ctrl+F</source>
         <translation>Ctrl+F</translation>
     </message>
     <message>
-        <location filename="../../ui/mainform.ui" line="1315"/>
-        <location filename="../../ui/mainform.ui" line="1318"/>
+        <location filename="../../ui/mainform.ui" line="1324"/>
+        <location filename="../../ui/mainform.ui" line="1327"/>
         <source>Rename video</source>
         <translation>Переименовать видео</translation>
     </message>
@@ -1635,232 +1665,232 @@ font-size:12px;
         <translation>Скорость</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="372"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="373"/>
         <source>Closing...</source>
         <translation>Закрываю...</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="372"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="373"/>
         <source>xVideoServiceThief is working, do you wish Pause the current work?</source>
         <translation>xVideoServiceThief работает, хотите приостановить работу?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="373"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="551"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="556"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="626"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="631"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="667"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="374"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="552"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="557"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="641"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="646"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="682"/>
         <source>Yes</source>
         <translation>Да</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="373"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="551"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="556"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="626"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="631"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="667"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="374"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="552"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="557"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="641"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="646"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="682"/>
         <source>No</source>
         <translation>Нет</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="401"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="402"/>
         <source>Options</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="440"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="982"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="441"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="997"/>
         <source>Updates</source>
         <translation>Обновления</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="441"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="442"/>
         <source>Another process is currently working, please stop it or wait until the end of process.</source>
         <translation>Другой процесс сейчас работает, остановите его или подождите до окончания работы.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="441"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="735"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="984"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1456"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="442"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="750"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="999"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1477"/>
         <source>Ok</source>
         <translation>Ok</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="486"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="487"/>
         <source>Select the download directory:</source>
         <translation>Выберите директорию для скачивания:</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="550"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="551"/>
         <source>Delete download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="550"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="551"/>
         <source>Wish you delete the download of &lt;b&gt;%1&lt;/b&gt;?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="555"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="556"/>
         <source>Delete downloads</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="555"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="556"/>
         <source>Wish you delete the &lt;b&gt;%1&lt;/b&gt; selected downloads?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="625"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1229"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1251"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="640"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1244"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1267"/>
         <source>Cancel download</source>
         <translation>Отменить скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="625"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="640"/>
         <source>Wish you cancel the download of &lt;b&gt;%1&lt;/b&gt;?</source>
         <translation>Хотите ли Вы отменить скачивание &lt;b&gt;%1&lt;/b&gt;?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="630"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1292"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="645"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1311"/>
         <source>Cancel downloads</source>
         <translation>Отменить скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="630"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="645"/>
         <source>Wish you cancel the &lt;b&gt;%1&lt;/b&gt; selected downloads?</source>
         <translation>Хотите ли Вы отменить &lt;b&gt;%1&lt;/b&gt; выделенных скачиваний?</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="667"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="682"/>
         <source>Clear list</source>
         <translation type="unfinished">Очистить список</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="667"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="682"/>
         <source>Are you sure to clear the downloads list?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="733"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="748"/>
         <source>Error message</source>
         <translation>Сообщение об ошибке</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="734"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="749"/>
         <source>This video has the following error:&lt;br&gt;&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
         <translation>Это видео вызвало следующие ошибки:&lt;br&gt;&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="983"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="998"/>
         <source>xUpdater application is missing.&lt;br&gt;&lt;br&gt;Reinstall xVideoServiceThief if you want update automatically the program.</source>
         <translation>Приложение xUpdater отсутствует.&lt;br&gt;&lt;br&gt;Переустановите xVideoServiceThief, если Вы хотите автоматически обновлять программу.</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1202"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1217"/>
         <source>&lt;b&gt;Videos count:&lt;/b&gt; %1 &lt;span style=&quot;color:#666666;&quot;&gt;(%2 completed)&lt;/span&gt;</source>
         <translation>&lt;b&gt;Количество загрузок видео:&lt;/b&gt; %1 &lt;span style=&quot;color:#666666;&quot;&gt;(%2 завершенных)&lt;/span&gt;</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1206"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1221"/>
         <source>&lt;b&gt;Downloading:&lt;/b&gt; %1 of %2</source>
         <translation>&lt;b&gt;Скачивается:&lt;/b&gt; %1 из %2</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1210"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1225"/>
         <source>&lt;b&gt;Download speed:&lt;/b&gt; %1</source>
         <translation>&lt;b&gt;Скорость скачивания:&lt;/b&gt; %1</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1211"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1226"/>
         <source>/sec</source>
         <translation>/сек</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1226"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1248"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1241"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1264"/>
         <source>Delete video</source>
         <translation>Удалить видео</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1227"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1249"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1242"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1265"/>
         <source>Start download</source>
         <translation>Начать скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1228"/>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1250"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1243"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1266"/>
         <source>Pause download</source>
         <translation>Приостановить скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1250"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1266"/>
         <source>Resume download</source>
         <translation>Возобновить скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1252"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1268"/>
         <source>Rename video</source>
         <translation>Переименовать видео</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1253"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1269"/>
         <source>Reset state</source>
         <translation>Обновить состояние</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1288"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1307"/>
         <source>Delete videos</source>
         <translation>Удалить видео</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1289"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1308"/>
         <source>Start downloads</source>
         <translation>Начать скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1291"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1310"/>
         <source>Pause downloads</source>
         <translation>Приостановить скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1291"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1310"/>
         <source>Resume downloads</source>
         <translation>Возобновить скачивание</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1293"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1312"/>
         <source>Rename videos</source>
         <translation>Переименовать видео</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1294"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1313"/>
         <source>Reset states</source>
         <translation>Обновить состояние</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1338"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1358"/>
         <source>- Downloading: %1 (%2, %3)</source>
         <translation>- Скачивается: %1 (%2, %3)</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1346"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1366"/>
         <source>- Converting: %1 (%2)</source>
         <translation>- Конвертирую: %1 (%2)</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1456"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1477"/>
         <source>Already added</source>
         <translation>Уже добавлено</translation>
     </message>
     <message>
-        <location filename="../../src/forms/mainformimpl.cpp" line="1456"/>
+        <location filename="../../src/forms/mainformimpl.cpp" line="1477"/>
         <source>You already added this video. Check your downloads list.</source>
         <translation>Вы уже добавили это видео. Проверьте список загрузок.</translation>
     </message>
@@ -3752,94 +3782,94 @@ font-size:12px;
 <context>
     <name>VideoConverter</name>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="431"/>
+        <location filename="../../src/videoconvert.cpp" line="449"/>
         <source>AVI Format (*.avi)</source>
         <translation>AVI (*.avi)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="431"/>
+        <location filename="../../src/videoconvert.cpp" line="449"/>
         <source>WMV Format ( *.wmv)</source>
         <translation>WMV ( *.wmv)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="432"/>
+        <location filename="../../src/videoconvert.cpp" line="450"/>
         <source>MPEG1 Format ( *.mpg)</source>
         <translation>MPEG1 ( *.mpg)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="432"/>
+        <location filename="../../src/videoconvert.cpp" line="450"/>
         <source>MPEG2 Format ( *.mpg)</source>
         <translation>MPEG2 ( *.mpg)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="433"/>
+        <location filename="../../src/videoconvert.cpp" line="451"/>
         <source>MP4 Format (*.mp4)</source>
         <translation>MP4 (*.mp4)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="433"/>
+        <location filename="../../src/videoconvert.cpp" line="451"/>
         <source>Apple iPod (*.mp4)</source>
         <translation>Apple iPod (*.mp4)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="433"/>
+        <location filename="../../src/videoconvert.cpp" line="451"/>
         <source>Sony PSP (*.mp4)</source>
         <translation>Sony PSP (*.mp4)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="433"/>
+        <location filename="../../src/videoconvert.cpp" line="451"/>
         <source>MP4 HD Format (*.mp4)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="434"/>
+        <location filename="../../src/videoconvert.cpp" line="452"/>
         <source>3GP Format (*.3gp)</source>
         <translation>3GP (*.3gp)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="434"/>
+        <location filename="../../src/videoconvert.cpp" line="452"/>
         <source>MP3 Format (*.mp3)</source>
         <translation>MP3 (*.mp3)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="443"/>
-        <location filename="../../src/videoconvert.cpp" line="456"/>
-        <location filename="../../src/videoconvert.cpp" line="465"/>
+        <location filename="../../src/videoconvert.cpp" line="461"/>
+        <location filename="../../src/videoconvert.cpp" line="474"/>
+        <location filename="../../src/videoconvert.cpp" line="483"/>
         <source>Original</source>
         <translation>Оригинал</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="474"/>
+        <location filename="../../src/videoconvert.cpp" line="492"/>
         <source>Lower quality (Video bitrate: 384kbps; Audio bitrate: 64kbps)</source>
         <translation>Наихудшее качество (Битрейт видео: 384kbps; Битрейт аудио: 64kbps)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="475"/>
+        <location filename="../../src/videoconvert.cpp" line="493"/>
         <source>Low quality (Video bitrate: 512kbps; Audio bitrate: 80kbps)</source>
         <translation>Низкое качество (Битрейт видео: 512kbps; Битрейт аудио: 80kbps)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="476"/>
+        <location filename="../../src/videoconvert.cpp" line="494"/>
         <source>Normal quality (Video bitrate: 640kbps; Audio bitrate: 96kbps)</source>
         <translation>Нормальное качество (Битрейт видео: 640kbps; Битрейт аудио: 96kbps)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="477"/>
+        <location filename="../../src/videoconvert.cpp" line="495"/>
         <source>Medium quality (Video bitrate: 800kbps; Audio bitrate: 96kbps)</source>
         <translation>Среднее качество (Битрейт видео: 800kbps; Битрейт аудио: 96kbps)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="478"/>
+        <location filename="../../src/videoconvert.cpp" line="496"/>
         <source>Good quality (Video bitrate: 1000kbps; Audio bitrate: 128kbps)</source>
         <translation>Хорошее качество (Битрейт видео: 1000kbps; Битрейт аудио: 128kbps)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="479"/>
+        <location filename="../../src/videoconvert.cpp" line="497"/>
         <source>Superb quality (Video bitrate: 1200kbps; Audio bitrate: 128kbps)</source>
         <translation>Наилучшее качество (Битрейт видео: 1200kbps; Битрейт аудио: 128kbps)</translation>
     </message>
     <message>
-        <location filename="../../src/videoconvert.cpp" line="480"/>
+        <location filename="../../src/videoconvert.cpp" line="498"/>
         <source>The Same quality as the original Video</source>
         <translation>Такое же качество, как и у оригинального видео</translation>
     </message>

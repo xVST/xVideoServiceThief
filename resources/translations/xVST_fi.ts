@@ -650,6 +650,22 @@
         <source>Display the downloaded log list</source>
         <translation>Näytä ladatut lokilista</translation>
     </message>
+    <message>
+        <source>Play original video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Plays the original video</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download this video again</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DownloadLogImpl</name>
@@ -1233,6 +1249,14 @@ background: white;
     <message>
         <source>Clear completed</source>
         <translation>Tyhjennä valmiit</translation>
+    </message>
+    <message>
+        <source>Download again</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start download again</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
