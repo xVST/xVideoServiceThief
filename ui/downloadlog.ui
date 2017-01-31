@@ -67,6 +67,9 @@
        </disabled>
       </palette>
      </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
      <property name="whatsThis">
       <string>Display the downloaded log list</string>
      </property>
@@ -141,6 +144,30 @@
     </layout>
    </item>
   </layout>
+  <action name="actViewVideo">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/play_video.png</normaloff>:/buttons/images/play_video.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play original video</string>
+   </property>
+   <property name="toolTip">
+    <string>Plays the original video</string>
+   </property>
+  </action>
+  <action name="actDownloadAgain">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/download_again.png</normaloff>:/buttons/images/download_again.png</iconset>
+   </property>
+   <property name="text">
+    <string>Download again</string>
+   </property>
+   <property name="toolTip">
+    <string>Download this video again</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="../resources/resources.qrc"/>

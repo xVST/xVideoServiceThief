@@ -27,15 +27,17 @@
 
 #include "../sessionmanager.h"
 #include "../videoinformation.h"
+#include "../videolistcontroller.h"
 #include "../tools.h"
 
-DownloadLogImpl::DownloadLogImpl(QWidget * parent, Qt::WindowFlags f)
+DownloadLogImpl::DownloadLogImpl(VideoListController *videoList, QWidget *parent, Qt::WindowFlags f)
 	: QDialog(parent, f)
 {
 	setupUi(this);
 #ifdef Q_OS_MACX
 	resize(900, 450);
 #endif
+	this->videoList = videoList;
 	// add the headers
 	QStringList headers;
 	headers << tr("Date/Time") << tr("Video Title") << tr("URL");
@@ -44,8 +46,12 @@ DownloadLogImpl::DownloadLogImpl(QWidget * parent, Qt::WindowFlags f)
 	QHeaderView *header = lsvLog->header();
 	header->resizeSection(0, 150);
 	header->resizeSection(1, 250);
+	// connect actions
+	connect(actViewVideo, SIGNAL(triggered()), this, SLOT(viewVideoClicked())); // actViewVideo (clicked)
+	connect(actDownloadAgain, SIGNAL(triggered()), this, SLOT(downloadAgainClicked())); // actDownloadAgain (clicked)
 	// connect signals
 	connect(lsvLog, SIGNAL(itemDoubleClicked(QTreeWidgetItem*, int)), this, SLOT(itemDoubleClicked(QTreeWidgetItem*, int)));
+	connect(lsvLog, SIGNAL(customContextMenuRequested(const QPoint &)), this, SLOT(lsvLogContextMenu(const QPoint &)));
 }
 
 void DownloadLogImpl::buildLog(QList<LogEntry> logEntries, VideoInformation *videoInformation)
@@ -71,6 +77,37 @@ void DownloadLogImpl::buildLog(QList<LogEntry> logEntries, VideoInformation *vid
 void DownloadLogImpl::itemDoubleClicked(QTreeWidgetItem *item, int)
 {
 	QDesktopServices::openUrl(item->text(2));
+}
+
+void DownloadLogImpl::lsvLogContextMenu(const QPoint & pos)
+{
+	if (lsvLog->selectedItems().count() > 0)
+	{
+		QMenu *menu = new QMenu(this);
+		// Add actions
+		menu->addAction(actViewVideo);
+		menu->addAction(actDownloadAgain);
+		// display popup
+		menu->exec(QCursor::pos());
+		// destrueix el submenu
+		delete menu;
+	}
+}
+
+void DownloadLogImpl::viewVideoClicked()
+{
+	foreach (QTreeWidgetItem *treeItem, lsvLog->selectedItems())
+	{
+		QDesktopServices::openUrl(treeItem->text(2));
+	}
+}
+
+void DownloadLogImpl::downloadAgainClicked()
+{
+	foreach (QTreeWidgetItem *treeItem, lsvLog->selectedItems())
+	{
+		videoList->addVideo(treeItem->text(2));
+	}
 }
 //
 

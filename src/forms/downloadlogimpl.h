@@ -31,6 +31,7 @@
 #include "ui_downloadlog.h"
 
 class VideoInformation;
+class VideoListController;
 
 struct LogEntry;
 
@@ -52,12 +53,19 @@ class LogTreeWidgetItem : public QTreeWidgetItem
 class DownloadLogImpl : public QDialog, public Ui::DownloadLog
 {
 Q_OBJECT
+	private:
+		VideoListController *videoList;	//!< Video list controller reference
 	public:
-		DownloadLogImpl( QWidget * parent = 0, Qt::WindowFlags f = Qt::WindowMaximizeButtonHint );
+		DownloadLogImpl(VideoListController *videoList, QWidget *parent = 0, Qt::WindowFlags f = Qt::WindowMaximizeButtonHint );
 		/*! Display the downloads log */
 		void buildLog(QList<LogEntry> logEntries, VideoInformation *videoInformation);
 	private slots:
 		void itemDoubleClicked(QTreeWidgetItem *item, int column);
+		void lsvLogContextMenu(const QPoint &pos);
+		// actions
+		void viewVideoClicked();
+		void downloadAgainClicked();
+
 };
 #endif
 
