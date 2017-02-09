@@ -37,7 +37,8 @@ void displayHelp()
 		  << "NOTE: Pakunpaker DON'T create new directories!" << std::endl
 		  << std::endl
 		  << " Example: <app> -i demo_in/package.demo demo_in/file01.txt demo_in/file2.txt" << std::endl
-		  << " Example: <app> -o demo_in/package.demo demo_out/" << std::endl;
+		  << " Example: <app> -o demo_in/package.demo demo_out/" << std::endl
+		  << std::endl;
 }
 
 int main(int argc, char ** argv)
