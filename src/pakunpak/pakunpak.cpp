@@ -140,7 +140,7 @@ void Unpacker::extractPackage(std::string packageFile, std::string destination, 
 			while (package->tellg() < packageSize)
 			{
 				// get the file name lenght
-				size_t fileNameLength = 0;
+				unsigned int fileNameLength = 0;
 				package->read(reinterpret_cast<char *>(&fileNameLength), sizeof(fileNameLength));
 
 				// get the file name
@@ -198,20 +198,20 @@ void Unpacker::extractPackage(std::string packageFile, std::string destination, 
 		}
 		package->close();
 
-		delete header_id;
+		delete[] header_id;
 	}
 	delete package;
 }
 
-std::string Unpacker::getExtractedFileName(const int index, bool originalName)
+std::string Unpacker::getExtractedFileName(const unsigned int index, bool originalName)
 {
-	if (index >= 0 && index < getExtractedFilesCount())
+	if (index < getExtractedFilesCount())
 		return originalName ? filesOriginal->at(index) : filesInDisc->at(index);
 	else
 		return "";
 }
 
-size_t Unpacker::getExtractedFilesCount()
+unsigned int Unpacker::getExtractedFilesCount()
 {
-	return filesInDisc->size();
+	return static_cast<unsigned int>(filesInDisc->size());
 }

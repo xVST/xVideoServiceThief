@@ -28,7 +28,7 @@
 #ifndef __PAKUNPAK_H__
 #define __PAKUNPAK_H__
 
-#ifdef __GNUG__ //defined(__linux__) || defined(__GNUG__) && defined(_WIN32) // linux and mingw
+#ifdef __GNUG__ // linux and mingw
     #include <string.h>
 #else // macosx and vc++
     #include <string>
@@ -69,9 +69,9 @@ class Unpacker
 		/*! Extract the package */
 		void extractPackage(std::string packageFile, std::string destination, bool originalNames = true);
 		/*! Get extracted file name (path + name) */
-		std::string getExtractedFileName(const int index, bool originalName = false);
+		std::string getExtractedFileName(const unsigned int index, bool originalName = false);
 		/*! Get extracted files count */
-		size_t getExtractedFilesCount();
+		unsigned int getExtractedFilesCount();
 };
 
 #endif // __PAKUNPAK_H__
