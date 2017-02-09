@@ -1,6 +1,8 @@
-QT += network \
-    script \
-    scripttools
+QT = core \
+	widgets \
+	network \
+	script \
+	scripttools
 TARGET = PluginsTester
 TEMPLATE = app
 DESTDIR = bin
