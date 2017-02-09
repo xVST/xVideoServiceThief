@@ -50,7 +50,7 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 		webView->setSizeHint(QSize(656,370));
 	#else
 		// use the QWebView shipped with Qt
-		webView = new QWebView(this);
+		webView = new QWebEngineView(this);
 	#endif
 #endif
 	// add this new object into our frame
