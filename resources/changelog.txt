@@ -1,5 +1,5 @@
-2.5.2:
-------
+2.6:
+----
 
 - Added new option: “Download again” (in downloads list)
 - Added new option: “Download again” (in downloads log list)
@@ -7,12 +7,14 @@
 
 - Updated japanese translation
 
-- Fixed bug (Error: Language packages were not installed causing updates to get stuck)
+- Fixed bug (Error: Language packages were not installed causing updates to get stucked)
+
+- Upgraded the ffmpeg to version 3.2.2
 
 Mac OS X:
 ---------
 
-- Compiled with Qt 5.8
+- Compiled with Qt 5.8 (64-bits only).
 
 
 2.5.1:

@@ -15,7 +15,7 @@
 	<key>CFBundleExecutable</key>
 	<string>xVideoServiceThief</string>
 	<key>CFBundleVersion</key>
-	<string>2.5.2</string>
+        <string>2.6</string>
 	<key>CFBundleDisplayName</key>
 	<string>xVideoServiceThief</string>
 	<key>NSHumanReadableCopyright</key>
