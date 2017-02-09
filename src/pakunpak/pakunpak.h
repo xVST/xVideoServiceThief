@@ -71,7 +71,7 @@ class Unpacker
 		/*! Get extracted file name (path + name) */
 		std::string getExtractedFileName(const int index, bool originalName = false);
 		/*! Get extracted files count */
-		int getExtractedFilesCount();
+		size_t getExtractedFilesCount();
 };
 
 #endif // __PAKUNPAK_H__

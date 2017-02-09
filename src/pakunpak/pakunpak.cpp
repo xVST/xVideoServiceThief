@@ -65,7 +65,7 @@ void Packer::buildPackage(const std::string packageFile)
 		{
 			// get the file name
 			std::string fileName = getFileName(files->at(n));
-			unsigned int fileNameLength = fileName.length();
+			size_t fileNameLength = fileName.length();
 
 			// open file
 			std::ifstream *file = new std::ifstream(files->at(n).c_str(), std::ios::binary);
@@ -73,7 +73,7 @@ void Packer::buildPackage(const std::string packageFile)
 			{
 				// get the file size
 				file->seekg(0, std::ios::end);
-				int fileSize = file->tellg();
+				std::streamoff fileSize = file->tellg();
 				file->seekg(0, std::ios::beg);
 
 				// allocate file in memory
@@ -127,7 +127,7 @@ void Unpacker::extractPackage(std::string packageFile, std::string destination, 
 	{
 		// get the file size
 		package->seekg(0, std::ios::end);
-		int packageSize = package->tellg();
+		std::streamoff packageSize = package->tellg();
 		package->seekg(0, std::ios::beg);
 
 		// get the package header id
@@ -140,7 +140,7 @@ void Unpacker::extractPackage(std::string packageFile, std::string destination, 
 			while (package->tellg() < packageSize)
 			{
 				// get the file name lenght
-				unsigned int fileNameLength = 0;
+				size_t fileNameLength = 0;
 				package->read(reinterpret_cast<char *>(&fileNameLength), sizeof(fileNameLength));
 
 				// get the file name
@@ -211,7 +211,7 @@ std::string Unpacker::getExtractedFileName(const int index, bool originalName)
 		return "";
 }
 
-int Unpacker::getExtractedFilesCount()
+size_t Unpacker::getExtractedFilesCount()
 {
 	return filesInDisc->size();
 }
