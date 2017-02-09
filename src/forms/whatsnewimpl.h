@@ -34,7 +34,7 @@
 	#include <QAxWidget>
 #else
 	#ifndef Q_OS_MACX
-		#include <QWebView>
+        #include <QWebEngineView>
 	#else
 		class WebViewWidget;
 	#endif
@@ -45,11 +45,11 @@ class WhatsNewImpl : public QDialog, public Ui::WhatsNew
 Q_OBJECT
 	private:
 #if defined STATIC_BUILD && defined Q_OS_WIN32
-    QAxWidget *webView;
+	QAxWidget *webView;
 #else
 	#ifndef Q_OS_MACX
-		QWebView *webView;
-	#else
+		QWebEngineView *webView;
+#else
 		WebViewWidget *webView;
 	#endif
 #endif

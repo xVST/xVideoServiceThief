@@ -3,6 +3,7 @@ cache()
 CONFIG += qt \
     warn_on \
     debug_and_release \
+    c++11 \
     $$[build_mode]
 QT = core \
     widgets \
@@ -17,8 +18,9 @@ static_build {
     }
 }
 else {
-    QT += webkitwidgets
+    QT += webenginewidgets
 }
+
 CONFIG += plugins_debug_off
 TEMPLATE = app
 DESTDIR = bin
