@@ -79,7 +79,7 @@ void DownloadLogImpl::itemDoubleClicked(QTreeWidgetItem *item, int)
 	QDesktopServices::openUrl(item->text(2));
 }
 
-void DownloadLogImpl::lsvLogContextMenu(const QPoint & pos)
+void DownloadLogImpl::lsvLogContextMenu(const QPoint &)
 {
 	if (lsvLog->selectedItems().count() > 0)
 	{
