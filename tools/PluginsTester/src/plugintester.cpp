@@ -92,7 +92,7 @@ void PluginTester::stopTest()
 void PluginTester::run()
 {
 	stopFlag = false;
-	failed = 0;
+    failed = 0;
 
 	emit workingStarted();
 
@@ -100,11 +100,11 @@ void PluginTester::run()
 	{
 		PluginTest *test = tests->at(n);
 		//
-		if (onlyFailed && test->isTestOk() || (onlySelected != -1 && n != onlySelected)) continue;
+        if ((onlyFailed && test->isTestOk()) || (onlySelected != -1 && n != onlySelected)) continue;
 		//
 		emit pluginTestRunning(test);
 		// get video information
-		emit workingProgress(n * 2, tests->count() * 2, QString("Getting <b>%1</b> video information... [1/2]").arg(test->getPluginTitle()));
+        emit workingProgress(n * 2, tests->count() * 2, QString("Getting <b>%1</b> video information... [1/2]").arg(test->getPluginTitle()));
 		VideoInformationPlugin *plugin = new VideoInformationPlugin(NULL, pluginsDir + test->getPluginFile());
 		VideoDefinition  vd = plugin->getVideoInformation(test->getUrl());
 		// try to download video
