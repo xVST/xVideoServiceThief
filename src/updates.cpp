@@ -240,7 +240,7 @@ void Updates::buildInstallScript()
 											 QDir::tempPath().toStdString() + "/",
 											 false);
 					// add files into the script
-					int i;
+					unsigned int i;
 					for (i = 0; i < unpacker->getExtractedFilesCount(); i++)
 					{
 						// block id

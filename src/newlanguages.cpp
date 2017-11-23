@@ -217,7 +217,7 @@ void NewLanguagesController::downloadFinished(const QFileInfo destFile)
 	// check if we installed this language
 	bool error = false;
 	// check if all files has been extracted
-	for (int n = 0; n < unpacker->getExtractedFilesCount(); n++)
+	for (unsigned int n = 0; n < unpacker->getExtractedFilesCount(); n++)
 		if (!error)	// check if the extracted file exists
 			error = !QFile::exists(QString(programOptions->getLanguagesPath() + "/" +
 										   QString().fromStdString(unpacker->getExtractedFileName(n, true))));
