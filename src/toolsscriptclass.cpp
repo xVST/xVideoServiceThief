@@ -26,6 +26,8 @@
 #include "toolsscriptclass.h"
 
 #include "tools.h"
+#include"options.h"
+#include "youtubedl.h"
 
 ToolsScriptClass::ToolsScriptClass(QScriptEngine *engine)
 {
@@ -100,6 +102,10 @@ ToolsScriptClass::ToolsScriptClass(QScriptEngine *engine)
 	// regist getMd5(str) function
 	QScriptValue _getSha1 = engine->newFunction(func_getSha1);
 	engine->globalObject().setProperty("getSha1", _getSha1);
+
+	// regist runYoutubeDL(url) function
+	QScriptValue _runYoutubeDL = engine->newFunction(func_runYoutubeDL);
+	engine->globalObject().setProperty("runYoutubeDL", _runYoutubeDL);
 }
 
 ToolsScriptClass::~ToolsScriptClass()
@@ -383,4 +389,25 @@ QScriptValue ToolsScriptClass::func_getSha1(QScriptContext *context, QScriptEngi
 	}
 	else // invalid arguments count
 		return QScriptValue();
+}
+
+QScriptValue ToolsScriptClass::func_runYoutubeDL(QScriptContext *context, QScriptEngine *engine)
+{
+    if (context->argumentCount() == 1)
+	{
+		QString url = context->argument(0).toString();
+		// create process
+        YoutubeDL youtubeDL(ProgramOptions::instance()->getToolsPath(), ProgramOptions::instance()->getDownloadDir());
+        QJsonDocument jsonDocument = youtubeDL.getVideoInformation(url);
+        // generate back your json
+        QString json(jsonDocument.toJson(QJsonDocument::Compact));
+        // scape the json string
+        json.replace("\\", "\\\\").replace("\"", "\\\"");
+        // evaluate the js program
+        return engine->evaluate("JSON.parse('" + json + "')");
+	}
+	else // invalid arguments count
+    {
+        return QScriptValue();
+    }
 }

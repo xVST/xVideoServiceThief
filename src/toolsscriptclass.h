@@ -50,6 +50,7 @@ class ToolsScriptClass : public QObject
 		static QScriptValue func_getMd4(QScriptContext *context, QScriptEngine *engine);
 		static QScriptValue func_getMd5(QScriptContext *context, QScriptEngine *engine);
 		static QScriptValue func_getSha1(QScriptContext *context, QScriptEngine *engine);
+		static QScriptValue func_runYoutubeDL(QScriptContext *context, QScriptEngine *engine);
 	public:
 		ToolsScriptClass(QScriptEngine *engine);
 		~ToolsScriptClass();

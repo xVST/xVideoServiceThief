@@ -1,29 +1,45 @@
 #ifndef YOUTUBEDL_H
 #define YOUTUBEDL_H
 
-#include <QAbstractItemModel>
+#include <QtCore>
 
-class YoutubeDL : public QAbstractItemModel
+#ifdef Q_OS_WIN32
+static const QString YOUTUBE_DL_APP_PATH = "youtube-dl.exe"; //!< Youtube-dl app (win32)
+#else
+static const QString YOUTUBE_DL_APP_PATH = "youtube-dl"; //!< Youtube-dl app (*unix)
+#endif
+
+/*! YoutubeDL Qt5 wrapper */
+class YoutubeDL : public QObject
 {
-    Q_OBJECT
-
-public:
-    explicit YoutubeDL(QObject *parent = nullptr);
-
-    // Header:
-    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
-
-    // Basic functionality:
-    QModelIndex index(int row, int column,
-                      const QModelIndex &parent = QModelIndex()) const override;
-    QModelIndex parent(const QModelIndex &index) const override;
-
-    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
-    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
-
-    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-
-private:
+Q_OBJECT
+    private:
+        QProcess *process;				//!< YoutubeDL process
+        QString appPath;				//!< Base dir where Youtube-dl is located (ie: /users/xesk/.xvst/)
+        /*! Init internal variables */
+        void init();
+    public:
+        /*! Class constructor */
+        YoutubeDL(QString appPath, QString workingDir);
+        /*! Class destructor */
+        ~YoutubeDL();
+        /*! Get information  */
+        QJsonDocument getVideoInformation(const QString URL);
+    signals:
+        /*! when a download started */
+        void downloadStarted();
+        /*! when a download finished */
+        void downloadFinished(const QFileInfo destFile);
+        /*! when a download has been paused */
+        void downloadPaused(const QFileInfo destFile);
+        /*! when a download has been resumed */
+        void downloadResumed();
+        /*! when a download file has been canceled */
+        void downloadCanceled();
+        /*! an error ocurred during the download process */
+        void downloadError(int error);
+        /*! when the rtmp read data */
+        void downloadEvent(int pos, int max);
 };
 
 #endif // YOUTUBEDL_H
