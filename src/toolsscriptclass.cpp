@@ -99,7 +99,7 @@ ToolsScriptClass::ToolsScriptClass(QScriptEngine *engine)
 	QScriptValue _getMd5 = engine->newFunction(func_getMd5);
 	engine->globalObject().setProperty("getMd5", _getMd5);
 
-	// regist getMd5(str) function
+	// regist getSha1(str) function
 	QScriptValue _getSha1 = engine->newFunction(func_getSha1);
 	engine->globalObject().setProperty("getSha1", _getSha1);
 
