@@ -76,7 +76,7 @@
    <item row="1" column="0">
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
+      <string>&lt;p&gt;The &quot;&lt;b&gt;Bug report&lt;/b&gt;&quot; will be sent to &lt;a href=&quot;http://www.xvideothief.com/tracker/&quot;&gt;xVST  tracker&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Your name and email will be included into the &quot;&lt;b&gt;Bug comment&lt;/b&gt;&quot;, however is totally optional and unecessary.&lt;/p&gt;</string>
      </property>
      <property name="wordWrap">

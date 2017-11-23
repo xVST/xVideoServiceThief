@@ -19,7 +19,7 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://xviservicethief.sourceforge.net/
+* Program URL   : http://www.xvideothief.com/
 *
 */
 
@@ -43,5 +43,5 @@ bool WelcomeDonate::getDisplayAgain()
 
 void WelcomeDonate::donateClicked()
 {
-	QDesktopServices::openUrl(QUrl("http://xviservicethief.sourceforge.net/index.php?action=make_donation"));
+	QDesktopServices::openUrl(QUrl("http://www.xvideothief.com/index.php?action=make_donation"));
 }

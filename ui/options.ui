@@ -2007,7 +2007,7 @@
           <item row="0" column="0">
            <widget class="QLabel" name="lblErrorReportInfo">
             <property name="text">
-             <string>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://xviservicethief.sourceforge.net/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</string>
+             <string>When a video throws an error, you can help to fix the error sending a &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; to us via &lt;a href=&quot;http://www.xvideothief.com/tracker/&quot;&gt;xVST tracker system&lt;/a&gt;.&lt;br&gt;&lt;br&gt;The &quot;&lt;b&gt;Bug Report&lt;/b&gt;&quot; is stored only in the &lt;b&gt;xVST  tracker&lt;/b&gt; and is visible for everyone, and no extra data is saved to any external DataBase.</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>

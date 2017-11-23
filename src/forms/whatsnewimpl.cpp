@@ -19,7 +19,7 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://xviservicethief.sourceforge.net/
+* Program URL   : http://www.xvideothief.com/
 *
 */
 
@@ -63,7 +63,7 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	srand(time(NULL));
 	urlQuery.addQueryItem("nocache", QString("%1").arg(rand() % 999999));
 	// creates the whats new url
-	QUrl url("http://xviservicethief.sourceforge.net/whatsnew/display.php");
+	QUrl url("http://www.xvideothief.com/whatsnew/display.php");
 	url.setQuery(urlQuery);
 	// open whats new page
 #if defined STATIC_BUILD && defined Q_OS_WIN32

@@ -19,7 +19,7 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://xviservicethief.sourceforge.net/
+* Program URL   : http://www.xvideothief.com/
 *
 */
 
@@ -28,7 +28,7 @@
 
 #include <QtWidgets>
 
-static const QString URL_UPDATE_FILE = "http://xviservicethief.sourceforge.net/updates/xVST2.update";
+static const QString URL_UPDATE_FILE = "http://www.xvideothief.com/updates/xVST2.update";
 
 class Updates;
 class ProgramOptions;

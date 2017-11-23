@@ -19,7 +19,7 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://xviservicethief.sourceforge.net/
+* Program URL   : http://www.xvideothief.com/
 *
 */
 
@@ -61,7 +61,7 @@ InformationImpl::InformationImpl(ProgramOptions *programOptions, VideoInformatio
 	// load the service list
 	buildVideoServicesList(videoInformation);
 	// set the support project link
-	imgPaypal->setText("<a href=\"http://xviservicethief.sourceforge.net/index.php?action=make_donation\"><img src=\":/buttons/images/support_button.png\" /></a>");
+	imgPaypal->setText("<a href=\"http://www.xvideothief.com/index.php?action=make_donation\"><img src=\":/buttons/images/support_button.png\" /></a>");
 }
 
 InformationImpl::~InformationImpl()
