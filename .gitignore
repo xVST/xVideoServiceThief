@@ -30,3 +30,4 @@ TODO.*
 *.qm
 *.update
 release-files
+tools/build-*
