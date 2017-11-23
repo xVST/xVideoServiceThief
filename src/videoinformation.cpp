@@ -128,7 +128,7 @@ void VideoInformation::run()
 		{
 			videoItem->setAsGettingURL(this);
 
-			// if this item was market as "need update the url" then change the status to "updating url..."
+			// if this item was marked as "need update the url" then change the status to "updating url..."
 			bool urlWasUpdated = videoItem->needUpdateUrl();
 			if (urlWasUpdated) videoItem->setAsUpdatingURL();
 
