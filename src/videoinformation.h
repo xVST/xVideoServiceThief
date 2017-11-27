@@ -67,6 +67,7 @@ class VideoInformationPlugin : public QObject
 		QString ID;					//!< Plugin ID (used by the engine to determine if this plugin knows how to resolve an url)
 		QString caption;			//!< Plugin public caption
 		QPixmap *icon;				//!< Plugin public icon (acts as a proxy)
+		bool useYoutubeDL;			//!< Flag for know if this webservice is handled by youtube-dl
 		bool adultContent;			//!< Flag for know if this webservice has adult contents
 		bool musicSite;				//!< Flag for know if this webservice is a music site (i.e: mp3tube)
 		bool loaded;				//!< Flag for know if this plugin has been loaded
@@ -118,6 +119,8 @@ class VideoInformationPlugin : public QObject
 		bool hasAdultContent() const;
 		/*! Get if this service is a music site */
 		bool isMusicSite() const;
+		/*! Get if this service is handled by Youtube-DL */
+		bool usesYoutubeDL() const;
 		/*! Get the plugin icon */
 		QPixmap *getIcon() const;
 		/*! Get if this plugin use a online favicon */
