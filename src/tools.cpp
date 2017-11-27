@@ -173,11 +173,12 @@ QString cleanFileName(const QString fileName, QString replaceFor)
 	// get file info
 	QFileInfo fileInfo(result);
 	QString ext = fileInfo.suffix();
-	result = fileInfo.baseName();
+	// get the base name (we cannot use the shipped baseName() function due to fake positives)
+	result.replace(result.length() - 1 - ext.length(), ext.length() + 1, "");
 	// remove accents
 	result = result.normalized(QString::NormalizationForm_D);
 	// cleanup non ascii chars
-	result = result.replace(QRegExp("[^a-zA-Z\\s]"), replaceFor);
+	result.remove(QRegExp("[^a-zA-Z\\d\\s\\.]"));
 	// build back the file name
 	return result.trimmed() + "." + ext;
 }
