@@ -87,15 +87,49 @@ QString fileSizeToString(const int bytes)
 	QString result;
 
 	if (fbytes <= 1024)
-		result = floatToStr(fbytes) + " bytes"; //QString("").sprintf("%.2f bytes", fbytes);
+		result = floatToStr(fbytes) + " bytes";
 	else if (fbytes / 1024 <= 1024)
-		result = floatToStr(fbytes / 1024) + " KB"; //QString("").sprintf("%.2f KB", fbytes / 1024);
+		result = floatToStr(fbytes / 1024) + " KiB";
 	else if (fbytes / 1024 / 1024 <= 1024)
-		result = floatToStr(fbytes / 1024 / 1024) + " MB"; //QString("").sprintf("%.2f MB", fbytes / 1024 / 1024);
+		result = floatToStr(fbytes / powf(1024, 2)) + " MiB";
 	else if (fbytes / 1024 / 1024 / 1024 <= 1024)
-		result = floatToStr(fbytes / 1024 / 1024 / 1024) + " GB"; //QString("").sprintf("%.2f GB", fbytes / 1024 / 1024 / 1024);
-
+		result = floatToStr(fbytes / powf(1024, 3)) + " GiB";
+	else if (fbytes / 1024 / 1024 / 1024 / 1024 <= 1024)
+		result = floatToStr(fbytes / powf(1024, 4)) + " TiB";
+	else if (fbytes / 1024 / 1024 / 1024 / 1024 <= 1024)
+		result = floatToStr(fbytes / powf(1024, 5)) + " PiB";
+	else if (fbytes / 1024 / 1024 / 1024 / 1024 <= 1024)
+		result = floatToStr(fbytes / powf(1024, 6)) + " EiB";
+	else if (fbytes / 1024 / 1024 / 1024 / 1024 <= 1024)
+		result = floatToStr(fbytes / powf(1024, 7)) + " ZiB";
+	else if (fbytes / 1024 / 1024 / 1024 / 1024 <= 1024)
+		result = floatToStr(fbytes / powf(1024, 8)) + " YiB";
+	// the result
 	return result;
+}
+
+int fileSizeToBytes(const QString fileSize)
+{
+	// prepre the file size regExp parser
+	QRegExp fileSizeRegExp("([\\d\\.]+)(.*)");
+	// extract the file size (we don't know if is KB, Bytes...)
+	if (fileSizeRegExp.indexIn(fileSize) > -1)
+	{
+		float size = fileSizeRegExp.capturedTexts().at(1).trimmed().toFloat();
+		QString units = fileSizeRegExp.capturedTexts().at(2).trimmed();
+		// MiB to Bytes
+			 if (units == "KiB") size *= 1024;
+		else if (units == "MiB") size *= powf(1024, 2);
+		else if (units == "GiB") size *= powf(1024, 3);
+		else if (units == "TiB") size *= powf(1024, 4);
+		else if (units == "PiB") size *= powf(1024, 5);
+		else if (units == "EiB") size *= powf(1024, 6);
+		else if (units == "ZiB") size *= powf(1024, 7);
+		else if (units == "YiB") size *= powf(1024, 8);
+		// set file size
+		return (int)size;
+	}
+	return 0;
 }
 
 QString uniqueFileName(const QString fileName)
