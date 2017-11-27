@@ -34,6 +34,7 @@
 #include "httpscriptclass.h"
 #include "toolsscriptclass.h"
 #include "programversion.h"
+#include "youtubedl.h"
 #include "options.h"
 
 Q_DECLARE_METATYPE(VideoDefinition)
@@ -123,39 +124,73 @@ void VideoInformation::run()
 	if (service != NULL)
 	{
 		if (isBlockedHost(videoItem->getURL()))
+		{
 			videoItem->setAsBlocked(this);
-		else
+		}
+		else // get video infomration
 		{
 			videoItem->setAsGettingURL(this);
-
-			// if this item was marked as "need update the url" then change the status to "updating url..."
-			bool urlWasUpdated = videoItem->needUpdateUrl();
-			if (urlWasUpdated) videoItem->setAsUpdatingURL();
-
+			// send signal about getting info
 			emit informationStarted(videoItem);
-
-			VideoDefinition info = service->getVideoInformation(videoItem->getURL());
-
-			// canceled?
-			if (videoItem == NULL) return;
-
-			if (info.needLogin)
+			// use the Youtube-DL application
+			if (service->usesYoutubeDL())
 			{
-				videoItem->setAsNeedLogin(this);
-				videoItem->removeUpdatingURLStatus();
+				YoutubeDL youtubeDL(ProgramOptions::instance()->getToolsPath(), ProgramOptions::instance()->getDownloadDir());
+				// get video information
+				QJsonDocument json = youtubeDL.getVideoInformation(videoItem->getURL());
+				// is a valid json object?
+				if (json.isObject())
+				{
+					QJsonObject videoInfo = json.object();
+					// set the video information
+					VideoDefinition info;
+					info.URL = videoItem->getURL();
+					info.title = videoInfo["title"].toString();
+					info.extension = "." + videoInfo["ext"].toString();
+					info.downloader = "youtube-dl";
+					// assign the video information
+					videoItem->setVideoInformation(info, this);
+					videoItem->setVideoFile(cleanFileName(info.title + info.extension), this);
+					videoItem->setAsGettedURL(this);
+				}
+				else // ops...
+				{
+					videoItem->setAsError(this);
+				}
 			}
-			else // ok, assign information and prepare the item to be downloaded
+			else // use the plugin getVideoInformation()
 			{
-				videoItem->setVideoInformation(info, this);
-				if (!urlWasUpdated) videoItem->setVideoFile(cleanFileName(info.title + info.extension), this);
-				videoItem->setAsGettedURL(this);
+				// if this item was marked as "need update the url" then change the status to "updating url..."
+				bool urlWasUpdated = videoItem->needUpdateUrl();
+				if (urlWasUpdated) videoItem->setAsUpdatingURL();
+
+				// get video information using the plugin
+				VideoDefinition info = service->getVideoInformation(videoItem->getURL());
+
+				// canceled?
+				if (videoItem == NULL) return;
+
+				if (info.needLogin)
+				{
+					videoItem->setAsNeedLogin(this);
+					videoItem->removeUpdatingURLStatus();
+				}
+				else // ok, assign information and prepare the item to be downloaded
+				{
+					videoItem->setVideoInformation(info, this);
+					if ( ! urlWasUpdated) videoItem->setVideoFile(cleanFileName(info.title + info.extension), this);
+					videoItem->setAsGettedURL(this);
+				}
 			}
 		}
 	}
 	else
+	{
 		videoItem->setAsError(this);
-
+	}
+	// unlock this
 	videoItem->unlock(this);
+	// ok, send finished signal
 	emit informationFinished(videoItem);
 }
 
@@ -586,6 +621,7 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 				caption = engine->globalObject().property("caption").toString();
 				adultContent = engine->globalObject().property("adultContent").toBool();
 				musicSite = engine->globalObject().property("musicSite").toBool();
+				useYoutubeDL = engine->globalObject().property("useYoutubeDL").toBool();
 				// validate if all main information is assigned
 				loaded = !version.isEmpty() && !minVersion.isEmpty() && !ID.isEmpty() && !caption.isEmpty();
 				// if this plugin has been loaded, then try to load the service icon
@@ -786,7 +822,7 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 	engine->evaluate(scriptCode);
 
 	// execute regist code if no errors found
-	if (!engine->hasUncaughtException())
+	if ( ! engine->hasUncaughtException())
 	{
 		QScriptValue func_getVideoInfo = engine->evaluate("getVideoInformation");
 		// check if getVideoInformation function has been loaded
@@ -808,7 +844,9 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 		}
 	}
 	else // error found
+	{
 		qWarning() << "Plugin error : " << engine->uncaughtException().toString();
+	}
 	// destroy auxiliar classes
 	delete toolsClass;
 	delete httpClass;
@@ -933,6 +971,11 @@ bool VideoInformationPlugin::hasAdultContent() const
 bool VideoInformationPlugin::isMusicSite() const
 {
 	return musicSite;
+}
+
+bool VideoInformationPlugin::usesYoutubeDL() const
+{
+	return useYoutubeDL;
 }
 
 QPixmap *VideoInformationPlugin::getIcon() const
