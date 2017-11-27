@@ -56,7 +56,7 @@
 	QString changeFileExt(const QString file, const QString ext);
 
 	/*! Return a valid File Name */
-	QString cleanFileName(const QString fileName, QString replaceFor = " ");
+	QString cleanFileName(const QString fileName, QString replaceFor = "");
 
 	/*! Return the file path */
 	QString extractFilePath(const QString fileName);
