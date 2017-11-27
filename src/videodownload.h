@@ -30,6 +30,7 @@
 
 class Http;
 class RTMP;
+class YoutubeDL;
 class VideoItem;
 class VideoDownload;
 
@@ -141,6 +142,32 @@ class DownloadItem_RTMP : public DownloadItem
 		void cancelDownload();
 };
 
+/*! Single download via Youtube-dl */
+class DownloadItem_YoutubeDL : public DownloadItem
+{
+	private:
+		YoutubeDL *youtubeDL;	//!< download class
+		/*! Set download speed */
+		int getDownloadSpeed();
+		/*! Set time remaining */
+		int getTimeRemaining();
+		/*! Get the video size */
+		int getFileSize();
+	public:
+		/*! Class constructor */
+		DownloadItem_YoutubeDL(VideoDownload *parent, VideoItem *videoItem);
+		/*! Class destructor */
+		~DownloadItem_YoutubeDL();
+		/*! Start the download */
+		void startDownload();
+		/*! Pause the download */
+		void pauseDownload();
+		/*! Resume the download */
+		void resumeDownload();
+		/*! Cancel the download */
+		void cancelDownload();
+};
+
 /*! Downloads controller */
 class VideoDownload : public QObject
 {
@@ -154,6 +181,8 @@ Q_OBJECT
 		DownloadItem* findDownloadItemByVideoItem(VideoItem *videoItem);
 		/*! Stop all downloads */
 		void stopAllDownloads(bool doCancel = false);
+		/*! Creates a new download item */
+		DownloadItem* createDownloadItem(VideoItem *videoItem);
 	public:
 		/*! Class csontructor */
 		VideoDownload(QString downloadDir, int maxActiveDownloads);

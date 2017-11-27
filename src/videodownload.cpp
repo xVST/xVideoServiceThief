@@ -27,6 +27,7 @@
 
 #include "http.h"
 #include "rtmp.h"
+#include "youtubedl.h"
 #include "tools.h"
 #include "videoitem.h"
 #include "options.h"
@@ -136,17 +137,16 @@ void DownloadItem_HTTP::startDownload()
 	videoItem->setAsDownloading(this);
 	videoItem->setProgress(0, this);
 	// if this video has special cookies, then assing them
-	if (!videoItem->getVideoInformation().cookies.isEmpty())
+	if ( ! videoItem->getVideoInformation().cookies.isEmpty())
 		http->addCookies(videoItem->getVideoInformation().cookies);
 	// if this video has special headers, then add them
-	if (!videoItem->getVideoInformation().headers.isEmpty())
+	if ( ! videoItem->getVideoInformation().headers.isEmpty())
 		http->addHeaderParameters(videoItem->getVideoInformation().headers);
 	// if this video has a special "user agent", then override it
-	if (!videoItem->getVideoInformation().userAgent.isEmpty())
+	if ( ! videoItem->getVideoInformation().userAgent.isEmpty())
 		http->setUserAgent(videoItem->getVideoInformation().userAgent);
 	// start download
-	int er = http->download(QUrl(videoItem->getVideoInformation().URL),
-		parent->getDownloadDir(), videoItem->getVideoFile());
+	int er = http->download(QUrl(videoItem->getVideoInformation().URL),	parent->getDownloadDir(), videoItem->getVideoFile());
 	if (er != EnumHTTP::NO_HTTP_ERROR) downloadError(er);
 }
 
@@ -268,6 +268,81 @@ int DownloadItem_RTMP::getFileSize()
 	return rtmp->getFileSize();
 }
 
+/* DownloadItem_YoutubeDL */
+
+DownloadItem_YoutubeDL::DownloadItem_YoutubeDL(VideoDownload *parent, VideoItem *videoItem)
+{
+	setObjectName("DownloadItem_YoutubeDL");
+	// assign main info
+	this->parent = parent;
+	this->videoItem = videoItem;
+	this->videoItem->setAsNothingPreState();
+	// create the rtmp object
+	youtubeDL = new YoutubeDL(ProgramOptions::instance()->getToolsPath(), ProgramOptions::instance()->getDownloadDir());
+	// connect signals
+	connect(youtubeDL, SIGNAL(downloadStarted()), this, SLOT(downloadStarted()));
+	connect(youtubeDL, SIGNAL(downloadPaused(const QFileInfo)), this, SLOT(downloadPaused(const QFileInfo)));
+	connect(youtubeDL, SIGNAL(downloadResumed()), this, SLOT(downloadResumed()));
+	connect(youtubeDL, SIGNAL(downloadFinished(const QFileInfo)), this, SLOT(downloadFinished(const QFileInfo)));
+	connect(youtubeDL, SIGNAL(downloadCanceled()), this, SLOT(downloadCanceled()));
+	connect(youtubeDL, SIGNAL(downloadError(int)), this, SLOT(downloadError(int)));
+	connect(youtubeDL, SIGNAL(downloadEvent(int, int)), this, SLOT(downloadEvent(int, int)));
+}
+
+DownloadItem_YoutubeDL::~DownloadItem_YoutubeDL()
+{
+	cancelDownload();
+
+	delete youtubeDL;
+}
+
+void DownloadItem_YoutubeDL::startDownload()
+{
+	// assign data
+	videoItem->lock(this);
+	videoItem->setAsDownloading(this);
+	videoItem->setProgress(0, this);
+	// start download
+	int er = youtubeDL->download(videoItem->getVideoInformation().URL, parent->getDownloadDir(),
+								 videoItem->getVideoFile(), videoItem->getVideoInformation().rtmpParams);
+	if (er != EnumYoutubeDL::NO_YOUTUBE_DL_ERROR) downloadError(er);
+}
+
+void DownloadItem_YoutubeDL::pauseDownload()
+{
+	youtubeDL->pause();
+}
+
+void DownloadItem_YoutubeDL::resumeDownload()
+{
+	// assign data
+	videoItem->lock(this);
+	videoItem->setAsDownloading(this);
+	// resume download
+	int er = youtubeDL->resume(videoItem->getVideoInformation().URL, videoItem->getVideoFile());
+	if (er != EnumYoutubeDL::NO_YOUTUBE_DL_ERROR) downloadError(er);
+}
+
+void DownloadItem_YoutubeDL::cancelDownload()
+{
+	youtubeDL->cancel();
+}
+
+int DownloadItem_YoutubeDL::getDownloadSpeed()
+{
+	return youtubeDL->getDownloadSpeed();
+}
+
+int DownloadItem_YoutubeDL::getTimeRemaining()
+{
+	return youtubeDL->getTimeRemaining();
+}
+
+int DownloadItem_YoutubeDL::getFileSize()
+{
+	return youtubeDL->getFileSize();
+}
+
 /* VideoDownload Class */
 
 VideoDownload::VideoDownload(QString saveTo, int maxActiveDownloads)
@@ -315,28 +390,40 @@ void VideoDownload::stopAllDownloads(bool doCancel)
 	}
 }
 
-void VideoDownload::downloadVideo(VideoItem *videoItem)
+DownloadItem* VideoDownload::createDownloadItem(VideoItem *videoItem)
 {
-	if (videoItem == NULL) return; // || !canStartDownload()) return;
+	if (videoItem == NULL) return NULL;
 
 	// if cannot start then set this item as "preDownloading"
-	if (!canStartDownload())
+	if ( ! canStartDownload())
 	{
 		videoItem->setCustomPreState(vpsPreDownloading);
 		emit videoItemUpdated(videoItem);
-		return;
+		// ops
+		return NULL;
+	}
+	// the downloader is "youtube-dl"?
+	if (videoItem->getVideoInformation().downloader == "youtube-dl")
+	{
+		downloads->append(new DownloadItem_YoutubeDL(this, videoItem));
 	}
 	// check if is an HTTP or RTMP download and add it inot downloads queue
-	if (isHttpURL(videoItem->getVideoInformation().URL))
+	else if (isHttpURL(videoItem->getVideoInformation().URL))
+	{
 		downloads->append(new DownloadItem_HTTP(this, videoItem));
+	}
+	// is a RTMP url?
 	else if (isRtmpURL(videoItem->getVideoInformation().URL))
+	{
 		downloads->append(new DownloadItem_RTMP(this, videoItem));
+	}
 	else // invalid URL
 	{
 		videoItem->setErrorCode(EnumHTTP::INVALID_URL);
 		videoItem->setAsError();
 		emit videoItemUpdated(videoItem);
-		return;
+		// ops...
+		return NULL;
 	}
 	// get the new item added
 	DownloadItem *downloadItem = downloads->last();
@@ -345,8 +432,18 @@ void VideoDownload::downloadVideo(VideoItem *videoItem)
 	connect(downloadItem, SIGNAL(downloadStarted_child(VideoItem*)), this, SLOT(downloadStarted_child(VideoItem*)));
 	connect(downloadItem, SIGNAL(downloadFinished_child(VideoItem*)), this, SLOT(downloadFinished_child(VideoItem*)));
 	connect(downloadItem, SIGNAL(downloadDestroyable()), this, SLOT(downloadDestroyable()));
+	// return this new one
+	return downloadItem;
+}
+
+void VideoDownload::downloadVideo(VideoItem *videoItem)
+{
+	DownloadItem *downloadItem = createDownloadItem(videoItem);
 	// start to download the video
-	downloadItem->startDownload();
+	if (downloadItem)
+	{
+		downloadItem->startDownload();
+	}
 }
 
 void VideoDownload::pauseDownload(VideoItem *videoItem)
@@ -354,45 +451,29 @@ void VideoDownload::pauseDownload(VideoItem *videoItem)
 	DownloadItem *downloadItem = findDownloadItemByVideoItem(videoItem);
 
 	if (downloadItem != NULL)
+	{
 		downloadItem->pauseDownload();
+	}
 }
 
 void VideoDownload::resumeDownload(VideoItem *videoItem)
 {
-	if (videoItem == NULL) return;
-	// if is Ready and paused then it should start instead of resume
-	if (videoItem->isReadyAndPaused())
+	if (videoItem)
 	{
-		downloadVideo(videoItem);
-		return;
+		// if is Ready and paused then it should start instead of resume
+		if (videoItem->isReadyAndPaused())
+		{
+			downloadVideo(videoItem);
+			return;
+		}
+		// create a new download
+		DownloadItem *downloadItem = createDownloadItem(videoItem);
+		// start to download the video
+		if (downloadItem)
+		{
+			downloadItem->resumeDownload();
+		}
 	}
-	// can't resume the download now, so mark it as "next to start"
-	if (!canStartDownload())
-	{
-		videoItem->setAsResuming();
-		emit videoItemUpdated(videoItem);
-		return;
-	}
-	// check if is an HTTP or RTMP download and add it inot downloads queue
-	if (isHttpURL(videoItem->getVideoInformation().URL))
-		downloads->append(new DownloadItem_HTTP(this, videoItem));
-	else if (isRtmpURL(videoItem->getVideoInformation().URL))
-		downloads->append(new DownloadItem_RTMP(this, videoItem));
-	else // invalid URL
-	{
-		videoItem->setAsError();
-		emit videoItemUpdated(videoItem);
-		return;
-	}
-	// get the new item added
-	DownloadItem *downloadItem = downloads->last();
-	// connect signals of this new child
-	connect(downloadItem, SIGNAL(videoItemUpdated_child(VideoItem*)), this, SLOT(videoItemUpdated_child(VideoItem*)));
-	connect(downloadItem, SIGNAL(downloadStarted_child(VideoItem*)), this, SLOT(downloadStarted_child(VideoItem*)));
-	connect(downloadItem, SIGNAL(downloadFinished_child(VideoItem*)), this, SLOT(downloadFinished_child(VideoItem*)));
-	connect(downloadItem, SIGNAL(downloadDestroyable()), this, SLOT(downloadDestroyable()));
-	// start to download the video
-	downloadItem->resumeDownload();
 }
 
 void VideoDownload::cancelDownload(VideoItem *videoItem)
