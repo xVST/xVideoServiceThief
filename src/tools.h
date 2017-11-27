@@ -40,8 +40,11 @@
 	/*! Get the text between two tokens */
 	QString copyBetween(QString str, QString from, QString to);
 
-	/*!  Convert the File Size to String (Bytes, KBytes, MBytes... */
+	/*! Convert the File Size to String (Bytes, KBytes, MBytes...) */
 	QString fileSizeToString(const int bytes);
+
+	/*! Convert the File Size to Bytes */
+	int fileSizeToBytes(const QString fileSize);
 
 	/*! Generates a UniqueFilename, makes sure the file does not exist before returning a result */
 	QString uniqueFileName(const QString file);
