@@ -614,11 +614,17 @@ void VideoListController::pauseDownload(VideoItem *videoItem)
 void VideoListController::resumeDownload(VideoItem *videoItem)
 {
 	// check if his URL hasn't been expired
-	if (!videoItem->isUrlExpired())
+	if ( ! videoItem->isUrlExpired())
+	{
 		videoDownload->resumeDownload(videoItem);
+	}
 	else // url expired and not is updating this URL
-		if (!videoItem->isUpdatingUrl() && !videoItem->needUpdateUrl())
+	{
+		if ( ! videoItem->isUpdatingUrl() && ! videoItem->needUpdateUrl())
+		{
 			videoItem->setAsNeedUpdateURL(videoItem->isReadyAndPaused() ? vpsPreResumingReadyPaused : vpsPreResuming);
+		}
+	}
 }
 
 void VideoListController::cancelDownload(VideoItem *videoItem)
