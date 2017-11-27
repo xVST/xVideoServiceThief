@@ -128,16 +128,24 @@ QString changeFileExt(const QString file, const QString ext)
 
 QString cleanFileName(const QString fileName, QString replaceFor)
 {
-	QString invalids = "\\/:*?\"<>|\n\a\f\r\t\v";
+	QString invalids = "\\/:*?!\"<>|\n\a\f\r\t\v";
 	QString result = fileName;
-
+	// look-up for some invalid chars
 	for (int n = 0; n < fileName.length(); n++)
 	{
 		if (invalids.indexOf(fileName.at(n), 0) != -1)
 			result.replace(fileName.at(n), replaceFor);
 	}
-
-	return result;
+	// get file info
+	QFileInfo fileInfo(result);
+	QString ext = fileInfo.suffix();
+	result = fileInfo.baseName();
+	// remove accents
+	result = result.normalized(QString::NormalizationForm_D);
+	// cleanup non ascii chars
+	result = result.replace(QRegExp("[^a-zA-Z\\s]"), replaceFor);
+	// build back the file name
+	return result.trimmed() + "." + ext;
 }
 
 QString extractFilePath(const QString fileName)
