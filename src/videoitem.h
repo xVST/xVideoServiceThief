@@ -72,6 +72,7 @@ struct VideoDefinition
     QString headers;        //!< special headers for this video (only if is needed)
     QString userAgent;      //!< special userAgent for this video (only if is needed)
     QStringList rtmpParams; //!< RTMP parameters (only if is needed)
+    QString downloader;     //!< the downloader to use ("native", "youtube-dl", ...)
 	/*! Struct initializer */
 	VideoDefinition()
 	{
@@ -84,6 +85,7 @@ struct VideoDefinition
 		headers = "";
 		userAgent = "";
         rtmpParams = QStringList();
+        downloader = "native";
 	}
 };
 
