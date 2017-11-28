@@ -26,12 +26,14 @@ So, we analyzed the market, and xVST continue being a great tool, but sincerely,
 
 Now, we can say that xVST **is also** a graphical interface for youtube-dl, it is a new "feature" non a "replacement".
 
-###What is Youtube-dl and why this tool?
+What is Youtube-dl and why this tool?
+-------------------------------------
 [Youtube-dl](https://rg3.github.io/youtube-dl/) is a fantastic open source command-line tool to download videos from Youtube and a lot of other video services (its [long list](https://rg3.github.io/youtube-dl/supportedsites.html) of supported sites is quite impressive).
 
 The community is very active, and they maintain the tool very updated, great!! The decision to integrate youtube-dl into xVST was obvious and easy. We love youtube-dl and we love xVST plugins.
 
-###Is this the end of xVST plugins?
+Is this the end of xVST plugins?
+--------------------------------
 **Totally NO**. xVST still require the plugins to work, but they now can use youtube-dl to get information, or simply indicate that a certain video service is totally handled by youtube-dl (including the download). All is done and configured using our loved plugins.
 
 Is this the official version of xVST?
