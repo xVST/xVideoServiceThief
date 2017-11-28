@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2014 Xesc & Technology
+* Copyright (C) 2007 - 2017 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -19,138 +19,38 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://xviservicethief.sourceforge.net/
+* Program URL   : http://www.xvideothief.com/
 *
 */
 
 function RegistVideoService()
 {
-	this.version = "3.1.2";
-	this.minVersion = "2.0.0a";
-	this.author = "Xesc & Technology 2014";
+	this.version = "4.0.0";
+	this.minVersion = "3.0.0";
+	this.author = "Xesc & Technology 2017";
 	this.website = "http://www.youtube.com/";
 	this.ID = "youtube.com";
 	this.caption = "YouTube";
 	this.adultContent = false;
 	this.musicSite = false;
+	this.useYoutubeDL = true;
 }
 
-function getVideoInformation(url)
+function getPlaylistVideoUrls(data)
 {
-	const URL_YOUTBE = "http://www.youtube.com/watch?v=%1";
-	// init result
-	var result = new VideoDefinition();
-	// default URL
-	var youTubeURL = strReplace(url, "watch#!", "watch?");
-	// replace "popup" watch for standard watch
-	youTubeURL = strReplace(youTubeURL, "watch_popup?", "watch?");
-	// check if is an embeded video, and get the "real url" of youtube
-	if (youTubeURL.toString().indexOf(".youtube.com/v/") != -1)
+	const VIDEO_URL = "https://www.youtube.com/watch?v=%1";
+	// init the results
+	var playlist = [];
+	// get each playlist entry
+	data["entries"].forEach(function(entry)
 	{
-		var embededID = youTubeURL;
-		embededID = strRemove(embededID, 0, embededID.lastIndexOf("/v/") + 3);
-		youTubeURL = strFormat(URL_YOUTBE, embededID);
-	}
-	// cehck if is an embeded video (v2)
-	else if (youTubeURL.toString().indexOf("/embed/") != -1)
-	{
-		var embededID = copyBetween(youTubeURL + "?", "/embed/", "?");
-		youTubeURL = strFormat(URL_YOUTBE, embededID);
-	}
-	// download webpage
-	var http = new Http();
-	var html = http.downloadWebpage(youTubeURL);
-	// get cookies
-	result.cookies = http.getCookies("|");
-	// get video information
-	var videoInformationJSON = getVideoInformationJSON(html);
-	// get the video title
-	result.title = videoInformationJSON.args.title;
-	// check if this video need a login
-	result.needLogin = videoInformationJSON.needLogin || strIndexOf(html, 'id="verify-details"') != -1;
-	// if we can continue (no loggin needed)
-	if (result.needLogin) return result;
-	// get the video URL and extension
-	var videoInfo = getVideoUrlAndExtension(videoInformationJSON);
-	result.URL = videoInfo.url;
-	result.extension = videoInfo.extension;
-	result.needLogin = videoInfo.needLogin;
-	// return the video information
-	return result;
-}
-
-function getVideoInformationJSON(html)
-{
-	var playerConfig = /ytplayer.config\s*=\s*\{(.*?)\};/g;
-	return eval('({' + playerConfig.exec(html)[1] + '})');
-}
-
-function getVideoUrlAndExtension(videoInformationJSON)
-{
-	// if no url then we assume that this video requires login...
-	if (typeof videoInformationJSON.args.url_encoded_fmt_stream_map == 'undefined') return { needLogin: true };
-	// get the video url
-	var url_encoded_fmt_stream_map = videoInformationJSON.args.url_encoded_fmt_stream_map;
-	// split into small chunks
-	var url_encoded_fmt_stream_map_arr = url_encoded_fmt_stream_map.split(",");
-	var videos_arr = new Array();
-	// get video formats
-	for (var n in url_encoded_fmt_stream_map_arr)
-	{
-		videos_arr.push(getVideoObjectFromEncodedParam(url_encoded_fmt_stream_map_arr[n]));
-	}
-	// get the first video
-	var video = videos_arr[0];
-	// init result
-	return {
-		url: video.url + "&signature=" + video.sig,
-		extension: extensionFromVideoType(getToken(video.type, ";", 0))
-	};
-}
-
-function getVideoObjectFromEncodedParam(encodedParam)
-{
-	var json = "";
-	var params_arr = encodedParam.split("&");
-	// convert each "line" into json objects
-	for (var i in params_arr)
-	{
-		json += '"' + strReplace(params_arr[i], '=', '":"') + '"';
-		if (i < params_arr.length - 1) json += ",";
-	}
-	// parse json and convert it
-	var video = eval('({' + json + '})');
-	// clean up object variables
-	for (var member in video)
-	{
-		video[member] = cleanUrl(video[member]);
-	}
-	// add this new one
-	return video;
-}
-
-function extensionFromVideoType(vtype)
-{
-	if (vtype == "video/x-flv") return ".flv";
-	if (vtype == "video/mp4") return ".mp4";
-	if (vtype == "video/webm") return ".webm";
-	// default extension
-	return ".flv";
-}
-
-/*
-	This function "normalizeSpaces(str)" will be deprecated on next xVST version
-	and replaced with the new "simplifyString(str)" function (added in xVST 2.3.1)
-*/
-function normalizeSpaces(str)
-{
-	var result = "";
-	var parts = splitString(str, " ", false);
-	// join again each part
-	for (var n = 1; n < parts.length; n++)
-		result += parts[n] + " ";
-	// return the normalized string
-	return trimString(result);
+		if (data["webpage_url"].search(entry["id"]) === -1)
+		{
+			playlist.push(strFormat(VIDEO_URL, entry["id"]));
+		}
+	});
+	// the playlist
+	return playlist;
 }
 
 function searchVideos(keyWord, pageIndex)
