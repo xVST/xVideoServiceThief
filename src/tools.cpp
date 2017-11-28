@@ -624,6 +624,16 @@ QString multiLineToSingleLine(QString text)
 	return result;
 }
 
+QString escapeJson(QJsonDocument json, bool includeJSONParser)
+{
+	// generate back your json
+	QString str(json.toJson(QJsonDocument::Compact));
+	// scape the json string
+	str.replace("\\", "\\\\").replace("\"", "\\\"").replace("'", "\\'");
+	// return the escaped json
+	return includeJSONParser ? "JSON.parse('" + str + "');" : str;
+}
+
 int native_alert(QWidget *parent, QMessageBox::Icon icon, QString messageText, QString informativeText, QString defaultButton,
 				 QString alternateButton, QString otherButton)
 {

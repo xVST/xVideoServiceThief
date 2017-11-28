@@ -123,6 +123,9 @@
 	/*! Convert a multi line string into a single line string (trimmed)  */
 	QString multiLineToSingleLine(QString text);
 
+	/*! Return a escaped JSON ready to be included into a string */
+	QString escapeJson(QJsonDocument json, bool includeJSONParser = false);
+
 	/*! Display a native dialog */
 	int native_alert(QWidget *parent, QMessageBox::Icon icon, QString messageText, QString informativeText, QString defaultButton,
 					 QString alternateButton = QString(), QString otherButton = QString());
