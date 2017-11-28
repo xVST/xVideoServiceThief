@@ -52,6 +52,11 @@ YoutubeDL::YoutubeDL(QString appPath, QString workingDir)
 
 YoutubeDL::~YoutubeDL()
 {
+    if (process->isOpen())
+    {
+        process->kill();
+    }
+    // cleanup...
     delete process;
 }
 
