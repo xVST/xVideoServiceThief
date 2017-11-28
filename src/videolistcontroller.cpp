@@ -60,6 +60,7 @@ VideoListController::VideoListController(ProgramOptions *programOptions)
 	// video information
 	connect(videoInformation, SIGNAL(informationStarted(VideoItem *)), this, SLOT(actionStarted(VideoItem *)));
 	connect(videoInformation, SIGNAL(informationFinished(VideoItem *)), this, SLOT(actionFinished(VideoItem *)));
+	connect(videoInformation, SIGNAL(playlistURLsDetected(VideoItem *, QStringList)), this, SLOT(actionPlaylistURLsDetected(VideoItem *, QStringList)));
 	// video download
 	connect(videoDownload, SIGNAL(videoItemUpdated(VideoItem *)), this, SLOT(videoItemUpdated(VideoItem *)));
 	connect(videoDownload, SIGNAL(downloadStarted(VideoItem *)), this, SLOT(actionStarted(VideoItem *)));
@@ -241,6 +242,26 @@ VideoItem* VideoListController::addVideo(const QString URL, const QString title,
 	videoList->last()->setAsCustomDownload();
 	emit videoAdded(videoList->last());
 	return videoList->last();
+}
+
+VideoItem* VideoListController::insertVideo(const QString URL, VideoItem *videoItemReference)
+{
+	int index = videoList->indexOf(videoItemReference);
+
+	if (index != -1)
+	{
+		VideoItem *videoItem = new VideoItem(URL);
+		// insert it
+		videoList->insert(index, videoItem);
+		// advertise about this
+		emit videoAdded(videoItem);
+		// return the new one
+		return videoItem;
+	}
+	else // add it using regular method
+	{
+		return addVideo(URL);
+	}
 }
 
 void VideoListController::deleteVideo(const int index, bool removePausedFile)
@@ -752,31 +773,53 @@ VideoListController* VideoListController::instance()
 void VideoListController::videoItemUpdated(VideoItem *videoItem)
 {
 	if (videoItem != NULL)
+	{
 		emit videoUpdated(videoItem);
+	}
 }
 
 void VideoListController::actionStarted(VideoItem *videoItem)
 {
 	if (videoItem != NULL)
+	{
 		emit videoUpdated(videoItem);
+	}
 }
 
 void VideoListController::actionFinished(VideoItem *videoItem)
 {
 	if (videoItem != NULL)
 	{
-		if (!videoItem->isCanceled() && !videoItem->isPaused() && !videoItem->hasErrors())
+		if ( ! videoItem->isCanceled() && ! videoItem->isPaused() && ! videoItem->hasErrors())
 			if	(sender() == videoConverter ||
-			    (sender() == videoDownload && !programOptions->getConvertVideos()) ||
-			    (sender() == videoDownload && programOptions->getConvertVideos() && !videoConverter->ffmpegInstalled()) ||
+				(sender() == videoDownload && ! programOptions->getConvertVideos()) ||
+				(sender() == videoDownload && programOptions->getConvertVideos() && ! videoConverter->ffmpegInstalled()) ||
 				(sender() == videoDownload && videoItem->isAudioFile()))
 			{
 				// set the saved to
 				if (sender() == videoDownload)
+				{
 					videoItem->setVideoFileSavedTo(videoItem->getVideoFile());
+				}
 				// ok, set as completed
 				videoItem->setAsCompleted(videoItem);
 			}
 		emit videoUpdated(videoItem);
+	}
+}
+
+void VideoListController::actionPlaylistURLsDetected(VideoItem *videoItem, QStringList URLs)
+{
+	if (videoItem != NULL && URLs.count() > 0)
+	{
+		// add each video
+		foreach (QString URL, URLs)
+		{
+			// init vars
+			if (getVideoInformation()->isValidHost(URL))
+			{
+				addVideo(URL);
+			}
+		}
 	}
 }

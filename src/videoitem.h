@@ -43,7 +43,8 @@ enum VideoState
 	vsDeleted,
 	vsPaused, vsResuming,
 	vsNeedLogin,
-	vsReadyAndPaused
+	vsReadyAndPaused,
+	vsIsPlaylist
 };
 
 enum VideoUpdateState
@@ -68,6 +69,7 @@ struct VideoDefinition
     QString extension;      //!< video extension (default = flv)
     bool needLogin;         //!< flag for know if this video need a login
     bool isAudioFile;       //!< flag for know if is a audio file
+    bool isPlaylist;        //!< flag for know if is a playlist
     QString cookies;        //!< special cookies for this video (only if is needed)
     QString headers;        //!< special headers for this video (only if is needed)
     QString userAgent;      //!< special userAgent for this video (only if is needed)
@@ -81,6 +83,7 @@ struct VideoDefinition
 		extension = ".flv";
 		needLogin = false;
 		isAudioFile = false;
+		isPlaylist = false;
 		cookies = "";
 		headers = "";
 		userAgent = "";
@@ -211,6 +214,8 @@ Q_OBJECT
 		bool isUrlExpired();
 		/*! Get if is updating the URL */
 		bool isUpdatingUrl();
+		/*! Get if is a playlist */
+		bool isPlaylist();
 		/*! Get if need to update the URL (high priority) */
 		bool needUpdateUrl();
 		/*! Get if need login */
@@ -309,6 +314,8 @@ Q_OBJECT
 		void setAsAudioFile(QObject *who = NULL);
 		/*! Set as Need login */
 		void setAsNeedLogin(QObject *who = NULL);
+		/*! Set as Playlist */
+		void setAsPlaylist(QObject *who = NULL);
 		/*! Set as no pre-state */
 		void setAsNothingPreState();
 		/*! Set a custom pre-state */

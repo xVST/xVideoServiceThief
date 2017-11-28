@@ -179,6 +179,8 @@ QString VideoItem::getVideoStateAsString()
 			return tr("Need login...");
 		case vsReadyAndPaused:
 			return tr("Paused");
+		case vsIsPlaylist:
+			return tr("Playlist");
 	}
 	// default value
 	return "-";
@@ -347,6 +349,11 @@ bool VideoItem::isUrlExpired()
 bool VideoItem::isUpdatingUrl()
 {
 	return updateSate == vusUpdatingURL;
+}
+
+bool VideoItem::isPlaylist()
+{
+	return updateSate == vsIsPlaylist;
 }
 
 bool VideoItem::needUpdateUrl()
@@ -718,6 +725,12 @@ void VideoItem::setAsNeedLogin(QObject *who)
 {
 	if (isLocked() && who != locker) return;
 	videoState = vsNeedLogin;
+}
+
+void VideoItem::setAsPlaylist(QObject *who)
+{
+	if (isLocked() && who != locker) return;
+	videoState = vsIsPlaylist;
 }
 
 void VideoItem::setAsNothingPreState()

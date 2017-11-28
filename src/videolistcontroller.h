@@ -82,6 +82,8 @@ Q_OBJECT
 		VideoItem* addVideo(const QString URL, const QString title);
 		/*! Add a custom VideoItem with an overrided Conversion configuration */
 		VideoItem* addVideo(const QString URL, const QString title, const OverridedVideoConversionConfig overridedConversionConfig);
+		/*! Insert a new VideoItem */
+		VideoItem* insertVideo(const QString URL, VideoItem *videoItemReference);
 		/*! Delete by Index an existent VideoItem */
 		void deleteVideo(const int index, bool removePausedFile = false);
 		/*! Delete an existent VideoItem */
@@ -187,6 +189,8 @@ Q_OBJECT
 		void actionStarted(VideoItem *videoItem);
 		/*! Video has been finished the process */
 		void actionFinished(VideoItem *videoItem);
+		/*! Video detected a playlist */
+		void actionPlaylistURLsDetected(VideoItem *videoItem, QStringList URLs);
 	signals:
 		/*! When a video is added, this signal is emited */
 		void videoAdded(VideoItem *videoItem);

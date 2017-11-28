@@ -71,6 +71,7 @@ class VideoInformationPlugin : public QObject
 		bool adultContent;			//!< Flag for know if this webservice has adult contents
 		bool musicSite;				//!< Flag for know if this webservice is a music site (i.e: mp3tube)
 		bool loaded;				//!< Flag for know if this plugin has been loaded
+		bool hasPlaylistEngine;		//!< Flag for know if this plugin has a playlist engine
 		bool hasSearchEngine;		//!< Flag for know if this plugin has a search engine
 		QString onlineFaviconUrl;	//!< Online favicon url
 		QScriptEngine *engine;		//!< Pointer to script engine
@@ -97,6 +98,8 @@ class VideoInformationPlugin : public QObject
 		bool isLikeMyId(QString ID);
 		/*! Get the video information from URL (this function executes the JS plugin) */
 		VideoDefinition getVideoInformation(const QString URL);
+		/*! Get the urls from playlist */
+		QStringList getPlaylistVideoUrls(const QJsonDocument data);
 		/*! Search Videos and return the results */
 		SearchResults searchVideos(const QString keyWords, const int page);
 		/*! Abot current work (only if is running) */
@@ -131,6 +134,8 @@ class VideoInformationPlugin : public QObject
 		void reloadIcon();
 		/*! Get if has been loaded */
 		bool isLoaded() const;
+		/*! Get if has a playlist engine */
+		bool isPlaylistEngineAvailable() const;
 		/*! Get if has a search engine */
 		bool isSearchEngineAvailable() const;
 		// debug methods
@@ -269,6 +274,8 @@ Q_OBJECT
 		void informationStarted(VideoItem *videoItem);
 		/*! Finished to get the video information of videoItem */
 		void informationFinished(VideoItem *videoItem);
+		/*! Detected URLS from playlist */
+		void playlistURLsDetected(VideoItem *videoItem, QStringList URLs);
 };
 
 #endif // __VIDEOINFORMATION_H__

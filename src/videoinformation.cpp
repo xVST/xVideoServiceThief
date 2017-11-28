@@ -129,6 +129,8 @@ void VideoInformation::run()
 		}
 		else // get video infomration
 		{
+			QJsonDocument json;
+
 			videoItem->setAsGettingURL(this);
 			// send signal about getting info
 			emit informationStarted(videoItem);
@@ -137,7 +139,7 @@ void VideoInformation::run()
 			{
 				YoutubeDL youtubeDL(ProgramOptions::instance()->getToolsPath(), ProgramOptions::instance()->getDownloadDir());
 				// get video information
-				QJsonDocument json = youtubeDL.getVideoInformation(videoItem->getURL());
+				/*QJsonDocument*/ json = youtubeDL.getVideoInformation(videoItem->getURL());
 				// is a valid json object?
 				if (json.isObject())
 				{
@@ -148,6 +150,7 @@ void VideoInformation::run()
 					info.title = videoInfo["title"].toString();
 					info.extension = "." + videoInfo["ext"].toString();
 					info.downloader = "youtube-dl";
+					info.isPlaylist = videoInfo["_type"].isString() && videoInfo["_type"].toString() == "playlist";
 					// assign the video information
 					videoItem->setVideoInformation(info, this);
 					videoItem->setVideoFile(cleanFileName(info.title + info.extension), this);
@@ -182,9 +185,18 @@ void VideoInformation::run()
 					videoItem->setAsGettedURL(this);
 				}
 			}
+			// get current video information
+			VideoDefinition info = videoItem->getVideoInformation();
+			// is a play list?
+			if (info.isPlaylist)
+			{
+				videoItem->setAsPlaylist(this);
+				// add the playlist videos
+				emit playlistURLsDetected(videoItem, service->getPlaylistVideoUrls(json));
+			}
 		}
 	}
-	else
+	else // ops...
 	{
 		videoItem->setAsError(this);
 	}
@@ -456,7 +468,7 @@ QString VideoInformation::getHostCaption(QString URL)
 
 bool VideoInformation::isValidHost(QString URL)
 {
-	return getPluginByHost(QUrl(URL)) != NULL && QUrl(URL).isValid() && !isRtmpURL(URL)? true : false;
+	return getPluginByHost(QUrl(URL)) != NULL && QUrl(URL).isValid() && !isRtmpURL(URL) ? true : false;
 }
 
 bool VideoInformation::isBlockedHost(QString URL, BlockedState &result)
@@ -584,6 +596,7 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 	this->owner = videoInformation;
 	// inits
 	loaded = false;
+	hasPlaylistEngine = false;
 	hasSearchEngine = false;
 	icon = new QPixmap();
 	onlineFaviconUrl = "";
@@ -627,6 +640,8 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 				// if this plugin has been loaded, then try to load the service icon
 				if (loaded && compareVersions(minVersion, PROGRAM_VERSION_SHORT) >= 0)
 				{
+					// get if this plugin has a playlist engine
+					hasPlaylistEngine = engine->evaluate("getPlaylistVideoUrls").isFunction();
 					// get if this plugin has a search engine
 					hasSearchEngine = engine->evaluate("searchVideos").isFunction();
 					// get the plugin icon
@@ -857,6 +872,68 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 	return result;
 }
 
+QStringList VideoInformationPlugin::getPlaylistVideoUrls(const QJsonDocument data)
+{
+	QStringList result;
+
+	// If this plugin has not been loaded before, then return an empty "information"
+	if ( ! isLoaded() || ! isPlaylistEngineAvailable()) return result;
+
+	// plugin script engine
+	engine = new QScriptEngine(QThread::currentThread()->parent());
+
+	// create and regist the script tools class
+	ToolsScriptClass *toolsClass = new ToolsScriptClass(engine);
+
+	// create and regist the Http class
+	HttpScriptClass *httpClass = new HttpScriptClass(engine);
+	// configure debugger
+#ifdef xVST_DEBUG_PLUGINS_ON
+	QScriptEngineDebugger debugger;
+	debugger.attachTo(engine);
+#endif
+	// evaluate plugin code
+	engine->evaluate(scriptCode);
+	// execute regist code if no errors found
+	if ( ! engine->hasUncaughtException())
+	{
+		QScriptValue func_getPlaylistVideoUrls = engine->evaluate("getPlaylistVideoUrls");
+		// check if searchVideos function has been loaded
+		if (func_getPlaylistVideoUrls.isFunction())
+		{
+			// convert the QJsonDocument to QScriptValue [Object]
+			QScriptValue jsonData = engine->evaluate(escapeJson(data, true));
+			// set function params
+			QScriptValueList args;
+			args << jsonData;
+			// start debug from begining (only if this->debug == true)
+#ifdef xVST_DEBUG_PLUGINS_ON
+			if (debug) debugger.action(QScriptEngineDebugger::InterruptAction)->activate(QAction::Trigger);
+#endif
+			// execute plugin
+			QScriptValue playlistResults = func_getPlaylistVideoUrls.call(QScriptValue(), args);
+			// parse results
+			int length = playlistResults.property("length").toInteger();
+			for(int i = 0; i < length; i++)
+			{
+				result.append(playlistResults.property(i).toString());
+			}
+		}
+	}
+	else // error found
+	{
+		qWarning() << "Plugin error : " << engine->uncaughtException().toString();
+	}
+	// destroy auxiliar classes
+	delete toolsClass;
+	delete httpClass;
+	// detach global engine
+	delete engine;
+	engine = NULL;
+	// return the video definition returned
+	return result;
+}
+
 SearchResults VideoInformationPlugin::searchVideos(const QString keyWords, const int page)
 {
 	SearchResults result;
@@ -1007,6 +1084,11 @@ void VideoInformationPlugin::reloadIcon()
 bool VideoInformationPlugin::isLoaded() const
 {
 	return loaded;
+}
+
+bool VideoInformationPlugin::isPlaylistEngineAvailable() const
+{
+	return hasPlaylistEngine;
 }
 
 bool VideoInformationPlugin::isSearchEngineAvailable() const
