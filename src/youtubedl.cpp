@@ -207,7 +207,7 @@ QFileInfo YoutubeDL::getDestinationFile()
 
 QJsonDocument YoutubeDL::getVideoInformation(const QString URL)
 {
-    QStringList arguments = QStringList() << "-j" << URL;
+    QStringList arguments = QStringList() << "--flat-playlist" << "--dump-single-json" << URL;
     // execute command
     QProcess process;
     process.start(appPath, arguments);
