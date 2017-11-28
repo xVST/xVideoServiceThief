@@ -1,9 +1,17 @@
-2.6:
+3.0:
 ----
 
+- New domain! New site! The official site is now: http://www.xvideothief.com/
+
+- New look & feel!! Updated all the interface with a new fashon style icons! Much more modern!
+
+- Added full integration with Youtube-dl software. More information about this change in news section!
+- Added Playlists support (ie: Youtube Playlists)
 - Added new option: “Download again” (in downloads list)
 - Added new option: “Download again” (in downloads log list)
 - Added chinese (traditional) translation (thank you Hsiu-Ming Chang)
+
+- Improved downloads file names
 
 - Updated japanese translation
 
@@ -11,11 +19,14 @@
 
 - Upgraded the ffmpeg to version 3.2.2
 
-Mac OS X:
----------
+- Compiled with Qt 5.9 (64-bits only).
 
-- Compiled with Qt 5.8 (64-bits only).
+Plug-ins SDK:
+-------------
 
+- Added new function: runYoutubeDL(url) -> This will return an object with all the related video information.
+- Added new plugin property: useYoutubeDL -> When this flag is true, the responsable to handle the video infornation is Youtube-DL instead of this plugin.
+- Added new property in VideoDefinition: downloader -> This will indicate to xVST who is the responsable to download this video.
 
 2.5.1:
 ------
