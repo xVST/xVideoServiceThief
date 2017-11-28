@@ -398,13 +398,8 @@ QScriptValue ToolsScriptClass::func_runYoutubeDL(QScriptContext *context, QScrip
 		QString url = context->argument(0).toString();
 		// create process
         YoutubeDL youtubeDL(ProgramOptions::instance()->getToolsPath(), ProgramOptions::instance()->getDownloadDir());
-        QJsonDocument jsonDocument = youtubeDL.getVideoInformation(url);
-        // generate back your json
-        QString json(jsonDocument.toJson(QJsonDocument::Compact));
-        // scape the json string
-        json.replace("\\", "\\\\").replace("\"", "\\\"");
         // evaluate the js program
-        return engine->evaluate("JSON.parse('" + json + "')");
+        return engine->evaluate(escapeJson(youtubeDL.getVideoInformation(url), true));
 	}
 	else // invalid arguments count
     {
