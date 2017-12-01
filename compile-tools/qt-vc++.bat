@@ -1,6 +1,6 @@
 echo xVideoServiceThief VC++ automated compiler script
 echo Note: Configure with your envirotment variables before execute this Bat
-echo Copyright Xesc and Technolgy 2010-2014
+echo Copyright Xesc and Technolgy 2010-2017
 
 set QtVersion=5.0.2
 set QtDir=C:\ProgramacioLibs\Qt\Qt%QtVersion%-vc2010\qtbase
