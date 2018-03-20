@@ -94,6 +94,11 @@ void VideoInformation::clearPlugins()
 
 VideoInformationPlugin *VideoInformation::getPluginByHost(QUrl URL)
 {
+    // try to search the plugin which can handle this URL using the regex
+    for (int n = 0; n < pluginsCount(); n++)
+        if (plugins->at(n)->canHandleThisUrl(URL.toString()))
+            return plugins->at(n);
+    // second try using the old "isLikeMyId" method
 	QString host = URL.host().isEmpty() ? URL.toString() : URL.host();
 	for (int n = 0; n < pluginsCount(); n++)
 		if (plugins->at(n)->isLikeMyId(host))
@@ -637,9 +642,19 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 				useYoutubeDL = engine->globalObject().property("useYoutubeDL").toBool();
 				// validate if all main information is assigned
 				loaded = !version.isEmpty() && !minVersion.isEmpty() && !ID.isEmpty() && !caption.isEmpty();
-				// if this plugin has been loaded, then try to load the service icon
+                // if this plugin has been loaded, then try to load the service icon and others
 				if (loaded && compareVersions(minVersion, PROGRAM_VERSION_SHORT) >= 0)
 				{
+                    // get the plugin matchers
+                    QScriptValue func_getVideoServiceRegexMatchers = engine->evaluate("getVideoServiceRegexMatchers");
+                    if (func_getVideoServiceRegexMatchers.isFunction())
+                    {
+                        QScriptValue data = func_getVideoServiceRegexMatchers.call();
+                        if (data.isArray())
+                        {
+                            qScriptValueToSequence(data, matchers);
+                        }
+                    }
 					// get if this plugin has a playlist engine
 					hasPlaylistEngine = engine->evaluate("getPlaylistVideoUrls").isFunction();
 					// get if this plugin has a search engine
@@ -696,7 +711,19 @@ VideoInformationPlugin::~VideoInformationPlugin()
 
 bool VideoInformationPlugin::isLikeMyId(QString ID)
 {
-	return ID.indexOf(this->ID) > -1;
+    return ID.indexOf(this->ID) > -1;
+}
+
+bool VideoInformationPlugin::canHandleThisUrl(const QString URL)
+{
+    foreach (QString matcher, matchers)
+    {
+        if (QRegularExpression(matcher).match(URL).hasMatch())
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 QScriptValue VideoInformationPlugin::create_VideoDefinition(QScriptContext *, QScriptEngine *engine)
@@ -1053,6 +1080,11 @@ bool VideoInformationPlugin::isMusicSite() const
 bool VideoInformationPlugin::usesYoutubeDL() const
 {
 	return useYoutubeDL;
+}
+
+QStringList VideoInformationPlugin::getMatchers() const
+{
+    return matchers;
 }
 
 QPixmap *VideoInformationPlugin::getIcon() const
