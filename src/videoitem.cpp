@@ -353,7 +353,7 @@ bool VideoItem::isUpdatingUrl()
 
 bool VideoItem::isPlaylist()
 {
-	return updateSate == vsIsPlaylist;
+    return videoState == vsIsPlaylist;
 }
 
 bool VideoItem::needUpdateUrl()
