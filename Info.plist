@@ -7,7 +7,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Xesc &amp; Technology 2017</string>
+	<string>Xesc &amp; Technology 2018</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>xVideoServiceThief</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright 2007-2017 Xesc &amp; Technology</string>
+	<string>Copyright 2007-2018 Xesc &amp; Technology</string>
 	<key>LSEnvironment</key>
 	<dict>
 		<key>MinimumSystemVersion</key>

@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2017 Xesc & Technology
+* Copyright (C) 2007 - 2018 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -637,8 +637,8 @@ QString escapeJson(QJsonDocument json, bool includeJSONParser)
 int native_alert(QWidget *parent, QMessageBox::Icon icon, QString messageText, QString informativeText, QString defaultButton,
 				 QString alternateButton, QString otherButton)
 {
-/*
 // native cocoa dialogs has been disabled due some Qt troubles
+/*
 #ifdef Q_OS_MACX
 	return alert(icon, stripHtml(messageText), stripHtml(informativeText), defaultButton, alternateButton, otherButton);
 #else

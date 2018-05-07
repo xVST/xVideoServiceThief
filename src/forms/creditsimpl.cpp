@@ -3,7 +3,7 @@
 * This file is part of xVideoServiceThief,
 * an open-source cross-platform Video service download
 *
-* Copyright (C) 2007 - 2017 Xesc & Technology
+* Copyright (C) 2007 - 2018 Xesc & Technology
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -30,9 +30,8 @@ CreditsImpl::CreditsImpl(QWidget * parent, Qt::WindowFlags f) : QDialog(parent, 
 	setupUi(this);
 	// resize form if is needed
 #ifndef Q_OS_WIN32
-		resize(468, 614);
-		setMinimumSize(468, 614);
+		resize(468, 684);
+		setMinimumSize(468, 684);
 #endif
 }
 //
-
