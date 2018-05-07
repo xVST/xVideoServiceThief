@@ -197,10 +197,16 @@ unix {
 }
 macx {
     QT -= webkitwidgets
-    ICON += resources/icons/MacOSX.icns
+    ICON += $${PWD}/resources/icons/MacOSX.icns
     OBJECTS_DIR = build/o/mac
     TARGET = xVideoServiceThief
-    QMAKE_INFO_PLIST = Info.plist
+    QMAKE_INFO_PLIST = $${PWD}/Info.plist
+        plist.target = "$${OUT_PWD}/$${DESTDIR}/$${TARGET}.app/Contents/Info.plist"
+        plist.depends = $${PWD}/Info.plist
+        plist.commands = $(DEL_FILE) \"$${OUT_PWD}/$${DESTDIR}/$${TARGET}.app/Contents/Info.plist\" $$escape_expand(\n\t) \
+                         $(COPY_FILE) $${PWD}/Info.plist \"$${OUT_PWD}/$${DESTDIR}/$${TARGET}.app/Contents/Info.plist\"
+        QMAKE_EXTRA_TARGETS = plist
+        PRE_TARGETDEPS += $$plist.target
     LIBS += -framework Cocoa -framework WebKit
     OBJECTIVE_SOURCES += \
         src/webkit_mac/WebKitClass.mm \
