@@ -90,6 +90,7 @@ void BugReportImpl::viewInfoClicked()
 	info	<< "<pre>"
 			<< "{<br />"
 			<< "   <b>'code'</b>: '" + QString("%1").arg(videoItem->getErrorCode()) + "',<br />"
+            << "   <b>'message'</b>: '" + QString("%1").arg(videoItem->getErrorMessage()) + "',<br />"
 			<< "   <b>'url'</b>: '" + videoItem->getURL() + "',<br />"
 			<< "   <b>'app_version'</b>: '" + PROGRAM_VERSION + "',<br />"
 			<< "   <b>'os_version'</b>: '" + CURRENT_OS + "',<br />"
