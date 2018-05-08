@@ -76,6 +76,7 @@ void VideoItem::assign(VideoItem *videoItem)
 	videoInfo.isAudioFile = videoItem->getVideoInformation().isAudioFile;
 	reported = videoItem->isReported();
 	errorCode = videoItem->getErrorCode();
+    errorMessage = videoItem->errorMessage;
 	overrideConversionConfig = videoItem->overrideConversionConfig;
 	overridedConvConf = videoItem->overridedConvConf;
 	customItemDownload = videoItem->isCustomDownload();
@@ -95,6 +96,7 @@ void VideoItem::initData()
 	videoInfo.title = "";
 	reported = false;
 	errorCode = 0;
+    errorMessage = "";
 	audioFile = false;
 	overrideConversionConfig = false;
 	customItemDownload = false;
@@ -253,7 +255,7 @@ bool VideoItem::hasErrors()
 
 bool VideoItem::hasAnImportantError()
 {
-	return  (errorCode == 22) || (errorCode >= 28 && errorCode <= 33) || (errorCode == 102);
+    return  (errorCode < 0) || (errorCode == 22) || (errorCode >= 28 && errorCode <= 33) || (errorCode == 102);
 }
 
 bool VideoItem::isBussy()
@@ -470,6 +472,8 @@ QString VideoItem::getErrorMessage()
 {
 	switch (errorCode)
 	{
+        //-1 CUSTOM_ERROR
+        case -1: return errorMessage;
 		//0 NO_HTTP_ERROR
 		case 0: return "";
 		//20 UNABLE_CREATE_DIR
@@ -514,6 +518,10 @@ QString VideoItem::getErrorMessage()
 		case 105: return tr("Failed on initialize the pthread_create");
 		// 106 FILE_NOT_FOUND
 		case 106: return tr("File to resume not found");
+        // 300 YOUTUBE_DL_APP_MISSING
+        case 300: return tr("The Youtube-DL application is missing");
+        // 301 INVALID_JSON_RESPONSE
+        case 301: return tr("Impossible get video information or information is not well formed");
 		// other errors, are "download errors"
 		default: return tr("Connection error: Unable to download the video");
 	}
@@ -605,6 +613,13 @@ void VideoItem::setErrorCode(int errorCode, QObject *who)
 {
 	if (isLocked() && who != locker) return;
 	this->errorCode = errorCode;
+}
+
+void VideoItem::setErrorMessage(QString message, QObject *who)
+{
+    if (isLocked() && who != locker) return;
+    this->errorCode = -1;
+    this->errorMessage = message;
 }
 
 void VideoItem::setState(VideoState videoState, QObject *who)

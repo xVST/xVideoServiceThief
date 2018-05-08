@@ -111,6 +111,7 @@ Q_OBJECT
 		QString videoFile;				//!< downloaded file (*.flv)
 		QString videoFileSavedTo;		//!< where to find the final video
 		int errorCode;					//!< what error is (if exsit an error)
+        QString errorMessage;           //!< custom error message (errorCode = -1)
 		float progress;					//!< current action progress (downloading/converting)
 		int videoSize;					//!< video file size in bytes
 		int downloadSpeed;				//!< current downoad speed
@@ -274,6 +275,8 @@ Q_OBJECT
 		void setTimeRemaining(int timeRemaining, QObject *who = NULL);
 		/*! Set the error code */
 		void setErrorCode(int errorCode, QObject *who = NULL);
+        /*! Set the custom error message */
+        void setErrorMessage(QString message, QObject *who = NULL);
 		/*! Set state */
 		void setState(VideoState videoState, QObject *who = NULL);
 		/*! Set as NULL */

@@ -144,25 +144,35 @@ void VideoInformation::run()
 			{
 				YoutubeDL youtubeDL(ProgramOptions::instance()->getToolsPath(), ProgramOptions::instance()->getDownloadDir());
 				// get video information
-				/*QJsonDocument*/ json = youtubeDL.getVideoInformation(videoItem->getURL());
+                json = youtubeDL.getVideoInformation(videoItem->getURL());
 				// is a valid json object?
 				if (json.isObject())
 				{
 					QJsonObject videoInfo = json.object();
-					// set the video information
-					VideoDefinition info;
-					info.URL = videoItem->getURL();
-					info.title = videoInfo["title"].toString();
-					info.extension = "." + videoInfo["ext"].toString();
-					info.downloader = "youtube-dl";
-					info.isPlaylist = videoInfo["_type"].isString() && videoInfo["_type"].toString() == "playlist";
-					// assign the video information
-					videoItem->setVideoInformation(info, this);
-					videoItem->setVideoFile(cleanFileName(info.title + info.extension), this);
-					videoItem->setAsGettedURL(this);
-				}
+                    // there are an error?
+                    if (videoInfo.contains("error"))
+                    {
+                        videoItem->setErrorMessage(videoInfo["error"].toString(), this);
+                        videoItem->setAsError(this);
+                    }
+                    else // looks a "valid" video information
+                    {
+                        // set the video information
+                        VideoDefinition info;
+                        info.URL = videoItem->getURL();
+                        info.title = videoInfo["title"].toString();
+                        info.extension = "." + videoInfo["ext"].toString();
+                        info.downloader = "youtube-dl";
+                        info.isPlaylist = videoInfo["_type"].isString() && videoInfo["_type"].toString() == "playlist";
+                        // assign the video information
+                        videoItem->setVideoInformation(info, this);
+                        videoItem->setVideoFile(cleanFileName(info.title + info.extension), this);
+                        videoItem->setAsGettedURL(this);
+                    }
+                }
 				else // ops...
 				{
+                    videoItem->setErrorCode(EnumYoutubeDL::INVALID_JSON_RESPONSE);
 					videoItem->setAsError(this);
 				}
 			}

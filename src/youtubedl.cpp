@@ -217,9 +217,21 @@ QJsonDocument YoutubeDL::getVideoInformation(const QString URL)
     QProcess process;
     process.start(appPath, arguments);
     process.waitForFinished();
-    QString output(process.readAllStandardOutput());
+    // read the standard output
+    QString standardOutput(process.readAllStandardOutput());
+    // is the standard output empty? then read the error output
+    if (standardOutput.isEmpty())
+    {
+        QJsonObject error;
+        error.insert("error", QJsonValue::fromVariant(process.readAllStandardError()));
+        // create document
+        QJsonDocument json;
+        json.setObject(error);
+        // the error json
+        return json;
+    }
     // parse the json
-    return QJsonDocument::fromJson(output.toUtf8());
+    return QJsonDocument::fromJson(standardOutput.toUtf8());
 }
 
 void YoutubeDL::started()
@@ -268,8 +280,6 @@ void YoutubeDL::parseOutput(QString output)
 	// parse each line
 	foreach(QString line, lines)
 	{
-		qDebug() << line;
-
 		QRegExp downloadRegExp("\\[download\\]\\s+(.+)%\\s+of\\s+(.+)\\s+at\\s+(.+)\\s+ETA\\s+(.+)");
 		// parese information
 		if (downloadRegExp.indexIn(line) > -1)
@@ -304,10 +314,12 @@ void YoutubeDL::parseOutput(QString output)
 			emit downloadEvent(progress.toFloat()*100, 10000);
 		}
 
-		QRegExp errorRegExp("ERROR:");
+        QRegExp errorRegExp("ERROR:\\s*(.*)");
 		// parse error
 		if (errorRegExp.indexIn(line) > -1)
 		{
+            errorMessage = downloadRegExp.capturedTexts().at(1);
+            qDebug() << errorMessage;
 			stopReason = EnumYoutubeDL::DOWNLOAD_ERROR;
 		}
 	}

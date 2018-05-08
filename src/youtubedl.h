@@ -38,14 +38,9 @@ namespace EnumYoutubeDL
 {
 	enum Error
 	{
-		NO_YOUTUBE_DL_ERROR = 0,		//0
-		YOUTUBE_DL_APP_MISSING = 100,	//100
-		FAILED_TO_OPEN_FILE,			//101
-		FAILED_TO_CONNECT,				//102
-		COULDNT_RESUME_FLV,				//103
-		DOWNLOAD_INCOMPLETE,			//104
-		PTHREAD_CREATE_FAILED,			//105
-		FILE_NOT_FOUND					//106
+        NO_YOUTUBE_DL_ERROR    = 0,		//0
+        YOUTUBE_DL_APP_MISSING = 300,	//300
+        INVALID_JSON_RESPONSE,          //301
 	};
 
 	enum StopReason
@@ -73,6 +68,7 @@ Q_OBJECT
         bool pauseOnDestroyF;               	//!< Should pause the download instead of cancel it?
         int timeRemaining;                      //!< Time remaining in seconds
         int errorCode;                          //!< Last error code detected
+        QString errorMessage;                   //!< Last error message detected
         /*! Init internal variables */
         void init();
         /*! Parse the current output text */
