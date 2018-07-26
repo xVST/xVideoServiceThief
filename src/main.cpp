@@ -36,6 +36,11 @@
 
 int main(int argc, char **argv)
 {
+	// enable the high DPI options
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling, true);
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps, true);
+
+	// init the single application instance
 	QtSingleApplication app("xVideoServiceThief " + PROGRAM_VERSION_SHORT, argc, argv);
 
 	// init defaults
