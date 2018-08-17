@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(13.4737,0,0,5.05263,-26.9474,-20.2105)">
+        <rect x="2" y="4" width="19" height="19" style="fill:rgb(241,1,12);"/>
+    </g>
+    <g transform="matrix(7.57576,0,0,2.8125,-34.8788,-72.9375)">
+        <rect x="5" y="27" width="33" height="32"/>
+    </g>
+    <g transform="matrix(4.20582,0,0,4.20582,-131.701,-59.0978)">
+        <text x="32.75px" y="25.059px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:rgb(241,1,12);">W<tspan x="43.414px 52.08px " y="25.059px 25.059px ">AR</tspan>NING</text>
+        <rect x="32.75" y="26.33" width="57.996" height="1.26" style="fill:rgb(241,1,12);"/>
+    </g>
+    <g transform="matrix(2.94358,0,0,2.94358,-58.2195,-139.842)">
+        <text x="21.588px" y="76.622px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:rgb(241,1,12);">ADUL<tspan x="54.026px 61.356px " y="76.622px 76.622px ">TS</tspan> ONL<tspan x="96.922px " y="76.622px ">Y</tspan></text>
+    </g>
+</svg>

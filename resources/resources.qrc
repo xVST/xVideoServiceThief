@@ -1,74 +1,74 @@
 <RCC>
     <qresource prefix="/buttons">
-        <file>images/application_link.png</file>
-        <file>images/arrow_down.png</file>
-        <file>images/arrow_refresh.png</file>
-        <file>images/arrow_up.png</file>
-        <file>images/book_open.png</file>
-        <file>images/control_pause.png</file>
-        <file>images/control_play.png</file>
-        <file>images/control_stop.png</file>
-        <file>images/cross.png</file>
-        <file>images/exit.png</file>
-        <file>images/film_add.png</file>
-        <file>images/film_delete.png</file>
-        <file>images/film_edit.png</file>
+        <file>images/application_link.svg</file>
+        <file>images/arrow_down.svg</file>
+        <file>images/arrow_refresh.svg</file>
+        <file>images/arrow_up.svg</file>
+        <file>images/book_open.svg</file>
+        <file>images/control_pause.svg</file>
+        <file>images/control_play.svg</file>
+        <file>images/control_stop.svg</file>
+        <file>images/cross.svg</file>
+        <file>images/film_add.svg</file>
+        <file>images/film_delete.svg</file>
+        <file>images/film_edit.svg</file>
         <file>images/folder_go.png</file>
-        <file>images/information.png</file>
-        <file>images/lock.png</file>
+        <file>images/information.svg</file>
         <file>images/new.png</file>
-        <file>images/options.png</file>
-        <file>images/paste_plain.png</file>
-        <file>images/play_video.png</file>
-        <file>images/restore.png</file>
+        <file>images/paste_plain.svg</file>
+        <file>images/play_video.svg</file>
         <file>images/resultset_next.png</file>
-        <file>images/script.png</file>
-        <file>images/script_go.png</file>
+        <file>images/translation.svg</file>
+        <file>images/translation_selected.svg</file>
         <file>images/support_button.png</file>
-        <file>images/support_button_main.png</file>
-        <file>images/transmit_blue.png</file>
-        <file>images/add.png</file>
-        <file>images/pencil.png</file>
-        <file>images/clock.png</file>
-        <file>images/search.png</file>
-        <file>images/select_file.png</file>
-        <file>images/urls_file.png</file>
-        <file>images/download_again.png</file>
+        <file>images/add.svg</file>
+        <file>images/pencil.svg</file>
+        <file>images/search.svg</file>
+        <file>images/select_file.svg</file>
+        <file>images/urls_file.svg</file>
+        <file>images/download_again.svg</file>
+        <file>images/updates_small.svg</file>
+        <file>images/exit.svg</file>
+        <file>images/options.svg</file>
+        <file>images/restore.svg</file>
+        <file>images/clock.svg</file>
+        <file>images/support_button_main.svg</file>
     </qresource>
     <qresource prefix="/error">
-        <file>images/errorVideo.png</file>
+        <file>images/errorVideo.svg</file>
         <file>images/view.png</file>
     </qresource>
     <qresource prefix="/adults">
         <file>images/adults-only.png</file>
+        <file>images/adults-only.svg</file>
     </qresource>
     <qresource prefix="/header">
-        <file>images/DragDropWindow.png</file>
-        <file>images/InformationLogo.png</file>
-        <file>images/header.png</file>
-        <file>images/tick.png</file>
+        <file>images/header.svg</file>
+        <file>images/DragDropWindow.svg</file>
+        <file>images/InformationLogo.svg</file>
+        <file>images/tick.svg</file>
     </qresource>
     <qresource prefix="/icons">
-        <file>images/film_error.png</file>
-        <file>images/film_go.png</file>
-        <file>images/film_save.png</file>
+        <file>images/film_error.svg</file>
+        <file>images/tray_icon_off.svg</file>
+        <file>images/tray_icon_on.svg</file>
     </qresource>
     <qresource prefix="/options">
-        <file>images/errorReport.png</file>
-        <file>images/language.png</file>
-        <file>images/proxy.png</file>
-        <file>images/session.png</file>
-        <file>images/tools.png</file>
-        <file>images/updates.png</file>
-        <file>images/ups.png</file>
-        <file>images/schedule.png</file>
+        <file>images/errorReport.svg</file>
+        <file>images/language.svg</file>
+        <file>images/proxy.svg</file>
+        <file>images/schedule.svg</file>
+        <file>images/session.svg</file>
+        <file>images/tools.svg</file>
+        <file>images/updates.svg</file>
+        <file>images/ups.svg</file>
     </qresource>
     <qresource prefix="/services">
-        <file>images/services/no_icon.png</file>
-        <file>images/services/invalid.png</file>
-        <file>images/services/link_error.png</file>
-        <file>images/services/custom_video.png</file>
         <file>images/service_login.png</file>
+        <file>images/services/custom_video.svg</file>
+        <file>images/services/invalid.svg</file>
+        <file>images/services/link_error.svg</file>
+        <file>images/services/no_icon.svg</file>
     </qresource>
     <qresource prefix="/winvistamsg">
         <file>images/howto_vistaadmin.png</file>
@@ -80,7 +80,7 @@
         <file>images/loading.png</file>
     </qresource>
     <qresource prefix="/ups_lock_unlock">
-        <file>images/ups_lock_unlock.png</file>
+        <file>images/ups_lock_unlock.svg</file>
     </qresource>
     <qresource prefix="/search">
         <file>images/no-preview.png</file>
@@ -90,7 +90,7 @@
         <file>images/star_half.png</file>
     </qresource>
     <qresource prefix="/custom_download">
-        <file>images/custom_download_title.png</file>
+        <file>images/custom_download_title.svg</file>
     </qresource>
     <qresource prefix="/changelog">
         <file>changelog.txt</file>
