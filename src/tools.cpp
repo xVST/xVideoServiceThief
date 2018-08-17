@@ -656,3 +656,11 @@ int native_alert(QWidget *parent, QMessageBox::Icon icon, QString messageText, Q
 	}
 //#endif
 }
+
+QPixmap scaledQPixmap(QPixmap pixmap, QSize size)
+{
+    int devicePixelRatio = QApplication::desktop()->devicePixelRatio();
+    QPixmap px = pixmap.scaled(size.width()*devicePixelRatio, size.height()*devicePixelRatio, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    px.setDevicePixelRatio(devicePixelRatio);
+    return px;
+}

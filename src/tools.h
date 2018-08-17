@@ -130,6 +130,9 @@
 	int native_alert(QWidget *parent, QMessageBox::Icon icon, QString messageText, QString informativeText, QString defaultButton,
 					 QString alternateButton = QString(), QString otherButton = QString());
 
+    /*! Return a scaled pixmap (taking care about the device pixel rate) */
+    QPixmap scaledQPixmap(QPixmap pixmap, QSize size);
+
 	/*! Strip html tokens from QString */
 	QString stripHtml(QString html);
 
