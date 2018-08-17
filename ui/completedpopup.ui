@@ -156,7 +156,7 @@
    </property>
    <property name="icon">
     <iconset resource="../resources/resources.qrc">
-     <normaloff>:/buttons/images/play_video.png</normaloff>:/buttons/images/play_video.png</iconset>
+     <normaloff>:/buttons/images/play_video.svg</normaloff>:/buttons/images/play_video.svg</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -194,7 +194,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="../resources/resources.qrc">:/header/images/tick.png</pixmap>
+    <pixmap resource="../resources/resources.qrc">:/header/images/tick.svg</pixmap>
    </property>
   </widget>
   <widget class="QToolButton" name="spbClose">
@@ -223,7 +223,7 @@
    </property>
    <property name="icon">
     <iconset resource="../resources/resources.qrc">
-     <normaloff>:/buttons/images/cross.png</normaloff>:/buttons/images/cross.png</iconset>
+     <normaloff>:/buttons/images/cross.svg</normaloff>:/buttons/images/cross.svg</iconset>
    </property>
    <property name="autoRaise">
     <bool>true</bool>

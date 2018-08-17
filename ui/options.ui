@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>781</width>
-    <height>510</height>
+    <width>790</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../resources/resources.qrc">
-    <normaloff>:/buttons/images/options.png</normaloff>:/buttons/images/options.png</iconset>
+    <normaloff>:/buttons/images/options.svg</normaloff>:/buttons/images/options.svg</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -31,7 +31,7 @@
      </property>
      <property name="maximumSize">
       <size>
-       <width>160</width>
+       <width>180</width>
        <height>16777215</height>
       </size>
      </property>
@@ -201,7 +201,16 @@
           <string>FFmpeg Lib</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout">
-          <property name="margin">
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>12</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
            <number>12</number>
           </property>
           <item>
@@ -291,7 +300,16 @@
           <bool>true</bool>
          </property>
          <layout class="QGridLayout">
-          <property name="margin">
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>12</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
            <number>12</number>
           </property>
           <item row="0" column="0">
@@ -648,7 +666,16 @@
           <string>Session Configuration </string>
          </property>
          <layout class="QGridLayout">
-          <property name="margin">
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>12</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
            <number>12</number>
           </property>
           <item row="0" column="0">
@@ -868,7 +895,16 @@
           <string>Updates Configuration</string>
          </property>
          <layout class="QGridLayout">
-          <property name="margin">
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>12</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
            <number>12</number>
           </property>
           <item row="0" column="0" colspan="2">
@@ -1017,7 +1053,16 @@
           <string>Ups! Configuration</string>
          </property>
          <layout class="QGridLayout">
-          <property name="margin">
+          <property name="leftMargin">
+           <number>12</number>
+          </property>
+          <property name="topMargin">
+           <number>12</number>
+          </property>
+          <property name="rightMargin">
+           <number>12</number>
+          </property>
+          <property name="bottomMargin">
            <number>12</number>
           </property>
           <item row="0" column="0" colspan="3">
@@ -1501,7 +1546,7 @@
                 </property>
                 <property name="icon">
                  <iconset resource="../resources/resources.qrc">
-                  <normaloff>:/buttons/images/add.png</normaloff>:/buttons/images/add.png</iconset>
+                  <normaloff>:/buttons/images/add.svg</normaloff>:/buttons/images/add.svg</iconset>
                 </property>
                 <property name="autoRaise">
                  <bool>true</bool>
@@ -1536,7 +1581,7 @@
                 </property>
                 <property name="icon">
                  <iconset resource="../resources/resources.qrc">
-                  <normaloff>:/buttons/images/pencil.png</normaloff>:/buttons/images/pencil.png</iconset>
+                  <normaloff>:/buttons/images/pencil.svg</normaloff>:/buttons/images/pencil.svg</iconset>
                 </property>
                 <property name="autoRaise">
                  <bool>true</bool>
@@ -1568,7 +1613,7 @@
                 </property>
                 <property name="icon">
                  <iconset resource="../resources/resources.qrc">
-                  <normaloff>:/buttons/images/cross.png</normaloff>:/buttons/images/cross.png</iconset>
+                  <normaloff>:/buttons/images/cross.svg</normaloff>:/buttons/images/cross.svg</iconset>
                 </property>
                 <property name="autoRaise">
                  <bool>true</bool>

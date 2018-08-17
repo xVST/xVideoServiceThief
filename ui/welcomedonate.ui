@@ -87,7 +87,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resources/resources.qrc">:/header/images/InformationLogo.png</pixmap>
+      <pixmap resource="../resources/resources.qrc">:/header/images/InformationLogo.svg</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../resources/resources.qrc">
-    <normaloff>:/services/images/services/invalid.png</normaloff>:/services/images/services/invalid.png</iconset>
+    <normaloff>:/services/images/services/invalid.svg</normaloff>:/services/images/services/invalid.svg</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -43,7 +43,7 @@
        <widget class="QLabel" name="imgError">
         <property name="maximumSize">
          <size>
-          <width>110</width>
+          <width>100</width>
           <height>16777215</height>
          </size>
         </property>
@@ -51,14 +51,14 @@
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="../resources/resources.qrc">:/error/images/errorVideo.png</pixmap>
+         <pixmap resource="../resources/resources.qrc">:/error/images/errorVideo.svg</pixmap>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
+      <item row="0" column="2">
        <widget class="QLabel" name="lblErrorInfo">
         <property name="text">
          <string>&lt;b&gt;Ops! An error occurred while trying to download the video.&lt;/b&gt;
@@ -69,6 +69,22 @@
          <bool>true</bool>
         </property>
        </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>5</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
       </item>
      </layout>
     </widget>

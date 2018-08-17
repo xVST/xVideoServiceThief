@@ -27,7 +27,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../resources/resources.qrc">
-    <normaloff>:/buttons/images/film_add.png</normaloff>:/buttons/images/film_add.png</iconset>
+    <normaloff>:/buttons/images/film_add.svg</normaloff>:/buttons/images/film_add.svg</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -83,7 +83,7 @@
        </property>
        <property name="icon">
         <iconset resource="../resources/resources.qrc">
-         <normaloff>:/buttons/images/select_file.png</normaloff>:/buttons/images/select_file.png</iconset>
+         <normaloff>:/buttons/images/select_file.svg</normaloff>:/buttons/images/select_file.svg</iconset>
        </property>
        <property name="autoRaise">
         <bool>true</bool>
@@ -109,7 +109,7 @@
        </property>
        <property name="icon">
         <iconset resource="../resources/resources.qrc">
-         <normaloff>:/buttons/images/paste_plain.png</normaloff>:/buttons/images/paste_plain.png</iconset>
+         <normaloff>:/buttons/images/paste_plain.svg</normaloff>:/buttons/images/paste_plain.svg</iconset>
        </property>
        <property name="autoRaise">
         <bool>true</bool>

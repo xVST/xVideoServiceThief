@@ -27,7 +27,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../resources/resources.qrc">
-    <normaloff>:/buttons/images/information.png</normaloff>:/buttons/images/information.png</iconset>
+    <normaloff>:/buttons/images/information.svg</normaloff>:/buttons/images/information.svg</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" colspan="4">
@@ -56,7 +56,7 @@ background: white;
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="../resources/resources.qrc">:/header/images/InformationLogo.png</pixmap>
+         <pixmap resource="../resources/resources.qrc">:/header/images/InformationLogo.svg</pixmap>
         </property>
        </widget>
       </item>

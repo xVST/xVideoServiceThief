@@ -32,7 +32,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resources/resources.qrc">:/custom_download/images/custom_download_title.png</pixmap>
+      <pixmap resource="../resources/resources.qrc">:/custom_download/images/custom_download_title.svg</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

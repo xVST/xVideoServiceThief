@@ -110,7 +110,7 @@
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap resource="../resources/resources.qrc">:/buttons/images/control_play.png</pixmap>
+         <pixmap resource="../resources/resources.qrc">:/buttons/images/control_play.svg</pixmap>
         </property>
         <property name="openExternalLinks">
          <bool>true</bool>
@@ -168,7 +168,7 @@
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="../resources/resources.qrc">:/buttons/images/film_add.png</pixmap>
+         <pixmap resource="../resources/resources.qrc">:/buttons/images/film_add.svg</pixmap>
         </property>
        </widget>
       </item>

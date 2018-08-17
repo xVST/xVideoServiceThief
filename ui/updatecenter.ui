@@ -13,7 +13,7 @@
    <string>Update center</string>
   </property>
   <property name="windowIcon" >
-   <iconset resource="../resources/resources.qrc" >:/buttons/images/transmit_blue.png</iconset>
+   <iconset resource="../resources/resources.qrc" >:/buttons/images/updates_small.svg</iconset>
   </property>
   <property name="sizeGripEnabled" >
    <bool>true</bool>

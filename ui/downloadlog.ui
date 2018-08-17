@@ -147,7 +147,7 @@
   <action name="actViewVideo">
    <property name="icon">
     <iconset resource="../resources/resources.qrc">
-     <normaloff>:/buttons/images/play_video.png</normaloff>:/buttons/images/play_video.png</iconset>
+     <normaloff>:/buttons/images/play_video.svg</normaloff>:/buttons/images/play_video.svg</iconset>
    </property>
    <property name="text">
     <string>Play original video</string>
@@ -159,7 +159,7 @@
   <action name="actDownloadAgain">
    <property name="icon">
     <iconset resource="../resources/resources.qrc">
-     <normaloff>:/buttons/images/download_again.png</normaloff>:/buttons/images/download_again.png</iconset>
+     <normaloff>:/buttons/images/download_again.svg</normaloff>:/buttons/images/download_again.svg</iconset>
    </property>
    <property name="text">
     <string>Download again</string>
