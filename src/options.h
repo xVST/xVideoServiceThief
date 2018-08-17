@@ -99,8 +99,12 @@ Q_OBJECT
 		QDir appDir;		//!< Initial program path
 		QString appExecutable;	//!< Executable program path
 		QString optionsFile;	//!< Options file name (path + name)
-		bool adultsSitePermissionAsked;	//!< Flag for know if we requested for permission of adult sites
-		bool adultSitesAreAllowed;		//!< Flag for know if adult sites are allowed (or deleted)
+        bool adultsSitePermissionAsked;	 //!< Flag for know if we requested for permission of adult sites
+        bool adultSitesAreAllowed;		 //!< Flag for know if adult sites are allowed (or deleted)
+        bool classicUI;                  //!< Flag for know if is using the classic UI (macOS only)
+        bool hideDownloadInformationBox; //!< Flag for know if the download speed information is visible
+        bool hideConvertInformationBox;  //!< Flag for know if the convert videos options is visible
+        bool hideDownloadsBox;           //!< Flag for know if the download directory is visible
 
 		bool canSendUpdateSignal;	//!< flag for know if is the update signal can be sended
 		/*! Send the update signal (only if is possible) */
@@ -242,7 +246,15 @@ Q_OBJECT
 		void setAdultsSitePermissionAsked(bool value);
 		bool getAdultSitesAreAllowed() const;
 		void setAdultSitesAreAllowed(bool value);
-	signals:
+        bool getClassicUI() const;
+        void setClassicUI(bool value);
+        bool getHideDownloadInformationBox() const;
+        void setHideDownloadInformationBox(bool value);
+        bool getHideConvertInformationBox() const;
+        void setHideConvertInformationBox(bool value);
+        bool getHideDownloadsBox() const;
+        void setHideDownloadsBox(bool value);
+    signals:
 		/*! Options will load the configuration */
 		void optionsLoadBefore();
 		/*! Options loaded the configuration */

@@ -33,7 +33,7 @@
 #include "mac_only/mac_tools.h"
 #endif
 
-static ProgramOptions *programOptionsInstance = NULL;
+static ProgramOptions *programOptionsInstance = nullptr;
 
 ProgramOptions::ProgramOptions(QString optionsPath)
 {
@@ -60,7 +60,7 @@ ProgramOptions::~ProgramOptions()
 
 ProgramOptions* ProgramOptions::instance()
 {
-	if (programOptionsInstance == NULL)
+    if (programOptionsInstance == nullptr)
 	{
 #ifdef Q_OS_LINUX // modification made by "AzalSup"
 		QString _homeDirectory  = getenv("HOME");
@@ -95,10 +95,10 @@ ProgramOptions* ProgramOptions::instance()
 
 void ProgramOptions::destroyInstance()
 {
-	if (programOptionsInstance != NULL)
+    if (programOptionsInstance != nullptr)
 	{
 		delete programOptionsInstance;
-		programOptionsInstance = NULL;
+        programOptionsInstance = nullptr;
 	}
 }
 
@@ -195,6 +195,11 @@ void ProgramOptions::load()
 	adultSitesAreAllowed = settings.value("configuration/adultSitesAreAllowed", adultSitesAreAllowed).toBool();
 	adultsSitePermissionAsked = settings.value("configuration/adultsSitePermissionAsked", adultsSitePermissionAsked).toBool();
 
+    classicUI = settings.value("configuration/classicUI", classicUI).toBool();
+    hideDownloadInformationBox = settings.value("configuration/hideDownloadInformationBox", hideDownloadInformationBox).toBool();
+    hideConvertInformationBox = settings.value("configuration/hideConvertInformationBox", hideConvertInformationBox).toBool();
+    hideDownloadsBox = settings.value("configuration/hideDownloadsBox", hideDownloadsBox).toBool();
+
 	emit optionsLoadAfter();
 }
 
@@ -283,6 +288,11 @@ void ProgramOptions::save()
 
 	settings.setValue("adultSitesAreAllowed", adultSitesAreAllowed);
 	settings.setValue("adultsSitePermissionAsked", adultsSitePermissionAsked);
+
+    settings.setValue("classicUI", classicUI);
+    settings.setValue("hideDownloadInformationBox", hideDownloadInformationBox);
+    settings.setValue("hideConvertInformationBox", hideConvertInformationBox);
+    settings.setValue("hideDownloadsBox", hideDownloadsBox);
 
 	settings.endGroup();
 
@@ -387,6 +397,18 @@ void ProgramOptions::setDefault()
 
 	adultsSitePermissionAsked = false;
 	adultSitesAreAllowed = true;
+
+#ifdef Q_OS_MACX
+    classicUI = false;
+    hideConvertInformationBox = false;
+    hideDownloadInformationBox = true;
+    hideDownloadsBox = true;
+#else
+    classicUI = true;
+    hideConvertInformationBox = false;
+    hideDownloadInformationBox = false;
+    hideDownloadsBox = false;
+#endif
 }
 
 void ProgramOptions::setCanSendUpdateSignal(bool canSendUpdateSignal)
@@ -974,4 +996,44 @@ void ProgramOptions::setTimeRemainingCalculation(int value)
 int ProgramOptions::getTimeRemainingCalculation()
 {
 	return timeRemainingCalculation;
+}
+
+void ProgramOptions::setClassicUI(bool value)
+{
+    classicUI = value;
+}
+
+bool ProgramOptions::getClassicUI() const
+{
+    return classicUI;
+}
+
+void ProgramOptions::setHideConvertInformationBox(bool value)
+{
+    hideConvertInformationBox = value;
+}
+
+bool ProgramOptions::getHideConvertInformationBox() const
+{
+    return hideConvertInformationBox;
+}
+
+void ProgramOptions::setHideDownloadInformationBox(bool value)
+{
+    hideDownloadInformationBox = value;
+}
+
+bool ProgramOptions::getHideDownloadInformationBox() const
+{
+    return hideDownloadInformationBox;
+}
+
+void ProgramOptions::setHideDownloadsBox(bool value)
+{
+    hideDownloadsBox = value;
+}
+
+bool ProgramOptions::getHideDownloadsBox() const
+{
+    return hideDownloadsBox;
 }
