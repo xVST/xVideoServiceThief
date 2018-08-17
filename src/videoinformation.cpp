@@ -388,10 +388,10 @@ bool VideoInformation::hasPlugins()
 
 void VideoInformation::abortExecution()
 {
-	if (videoItem != NULL && isGettingInfo())
+    if (videoItem != nullptr && isGettingInfo())
 	{
 		VideoInformationPlugin *service = getPluginByHost(QUrl(videoItem->getURL()));
-		if (service != NULL)
+        if (service != nullptr)
 		{
 			service->abortExecution();
 			videoItem->setAsGettedURL(this);
@@ -441,7 +441,7 @@ bool VideoInformation::canGetInformation()
 
 QPixmap VideoInformation::getHostImage(QString URL, bool checkURL)
 {
-	const QString path = ":/services/images/services/%1.png";
+    const QString path = ":/services/images/services/%1.svg";
 
 	bool valid = !checkURL ? true : validURL(URL);
 	// if is a valid URL
@@ -451,16 +451,16 @@ QPixmap VideoInformation::getHostImage(QString URL, bool checkURL)
 		// find a plugin which can resolve this url
 		VideoInformationPlugin *plugin = getPluginByHost(QUrl(URL));
 		// check if we found a plugin which can give us the service icon
-		if (plugin != NULL)
+        if (plugin != nullptr)
 		{
 			QPixmap *p = plugin->getIcon();
 			result = *p;
 		}
 		else // is an invalid service
-			result = QPixmap(QString(path).arg("invalid"));
+            result = QPixmap(QString(path).arg("invalid"));
 		// if this plugin hasn't an image loaded, then set an standard icon
 		if (result.isNull())
-			result = QPixmap(QString(path).arg("no_icon"));
+            result = QPixmap(QString(path).arg("no_icon"));
 		// return the final image
 		return result;
 	}
@@ -473,7 +473,7 @@ QString VideoInformation::getHostCaption(QString URL)
 	if (validURL(URL))
 	{
 		VideoInformationPlugin *plugin = getPluginByHost(QUrl(URL));
-		return plugin != NULL ? plugin->getCaption() : tr("Unsupported video service");
+        return plugin != nullptr ? plugin->getCaption() : tr("Unsupported video service");
 	}
 	else if (isRtmpURL(URL))
 		return tr("Adobe Flash streaming");
@@ -483,7 +483,7 @@ QString VideoInformation::getHostCaption(QString URL)
 
 bool VideoInformation::isValidHost(QString URL)
 {
-	return getPluginByHost(QUrl(URL)) != NULL && QUrl(URL).isValid() && !isRtmpURL(URL) ? true : false;
+    return getPluginByHost(QUrl(URL)) != nullptr && QUrl(URL).isValid() && !isRtmpURL(URL) ? true : false;
 }
 
 bool VideoInformation::isBlockedHost(QString URL, BlockedState &result)
@@ -491,7 +491,7 @@ bool VideoInformation::isBlockedHost(QString URL, BlockedState &result)
 	VideoInformationPlugin *service = getPluginByHost(QUrl(URL));
 	result = bsNotBlocked;
 
-	if (service != NULL)
+    if (service != nullptr)
 	{
 		if (service->hasAdultContent() && blockAdultContent)
 			result = bsAdultContent;

@@ -91,7 +91,7 @@ void SearchVideosItemImpl::setSearchVideosItem(SearchResultItem *searchItem)
 		lblDownloadVideo->setText(QString("<a href=\"%1\"><img src=\":/buttons/images/film_add.png\" /></a>").arg(searchItem->getVideoUrl()));
 	else // download not available
 	{
-		lblDownloadVideo->setText("<a href=\"%1\"><img src=\":/services/images/services/invalid.png\" /></a>");
+        lblDownloadVideo->setText("<a href=\"%1\"><img src=\":/services/images/services/invalid.svg\" /></a>");
 		lblDownloadVideo->setToolTip(tr("Download not available..."));
 	}
 }

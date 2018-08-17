@@ -36,7 +36,7 @@
 #include "../videoitem.h"
 
 AddVideoImpl::AddVideoImpl(ProgramOptions *programOptions, VideoInformation *videoInformation,
-                           QWidget * parent, Qt::WindowFlags f)
+                           QWidget *parent, Qt::WindowFlags f)
 		: QDialog(parent, f)
 {
 	setupUi(this);
@@ -152,7 +152,7 @@ void AddVideoImpl::loadUrlsFromFile(QString file)
 		// update informative text
 		updateSelectedUrlsText();
 		// update icon
-		imgService->setPixmap(QPixmap(":/buttons/images/urls_file.png"));
+        imgService->setPixmap(scaledQPixmap(QPixmap(":/buttons/images/urls_file.svg"), QSize(16, 16)));
 		// any change cancels the "custom download" flag
 		isCustomDownloadFlag = false;
 	}
@@ -240,8 +240,8 @@ void AddVideoImpl::edtURLChanged(const QString &text)
 	updateEdtUrlColor(ok);
 
 	// set host info
-	lblVideoService->setText(videoInformation->getHostCaption(text) + blockMsg + isCustomVideo);
-	imgService->setPixmap(QPixmap(videoInformation->getHostImage(text, true)));
+    lblVideoService->setText(videoInformation->getHostCaption(text) + blockMsg + isCustomVideo);
+    imgService->setPixmap(scaledQPixmap(videoInformation->getHostImage(text, true), QSize(16, 16)));
 
 	// any change cancels the "custom download" flag
 	isCustomDownloadFlag = false;
@@ -302,7 +302,7 @@ void AddVideoImpl::linkActivated(const QString &href)
 			isCustomDownloadFlag = true;
 			// change service image
 			lblVideoService->setText(tr("User custom video download"));
-			imgService->setPixmap(QPixmap(":/services/images/services/custom_video.png"));
+            imgService->setPixmap(scaledQPixmap(QPixmap(":/services/images/services/custom_video.svg"), QSize(16, 16)));
 			// remove red colors
 			updateEdtUrlColor(true);
 			// enable ok button

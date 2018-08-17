@@ -105,7 +105,7 @@ void NewLanguagesImpl::installedLanaguageAdded(Language *language)
 	QTreeWidgetItem *newItem = new QTreeWidgetItem(lsvInstalled);
 	newItem->setText(0, language->getId());
 	newItem->setSizeHint(0, QSize(18,18));
-	newItem->setIcon(0, QIcon(":/buttons/images/script.png"));
+    newItem->setIcon(0, QIcon(":/buttons/images/translation.svg"));
 }
 
 void NewLanguagesImpl::installedLanguageRemoved(Language *language, bool removed)
@@ -141,7 +141,7 @@ void NewLanguagesImpl::toInstallLanguageAdded(Update *language)
 	QTreeWidgetItem *newItem = new QTreeWidgetItem(lsvToInstall);
 	newItem->setText(0, language->getCaption());
 	newItem->setSizeHint(0, QSize(18,18));
-	newItem->setIcon(0, QIcon(":/buttons/images/script.png"));
+    newItem->setIcon(0, QIcon(":/buttons/images/translation.svg"));
 }
 
 void NewLanguagesImpl::beforeInstallNewLanguage()

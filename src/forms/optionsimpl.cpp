@@ -57,7 +57,7 @@ OptionsImpl::OptionsImpl(ProgramOptions *programOptions, SessionManager *session
 	schedule->load();
 	// resize form if is needed
 #ifndef Q_OS_WIN32
-	resize(865, 500);
+    resize(880, 530);
 	// resize menu
 	trvMenu->setMaximumWidth(180);
 #endif
@@ -171,43 +171,43 @@ void OptionsImpl::createMenu()
 	// basic
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Basic"));
-	newItem->setIcon(0, QIcon(":/options/images/tools.png"));
+    newItem->setIcon(0, QIcon(":/options/images/tools.svg"));
 	newItem->setSelected(true);
 
 	// language
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Language"));
-	newItem->setIcon(0, QIcon(":/options/images/language.png"));
+    newItem->setIcon(0, QIcon(":/options/images/language.svg"));
 
 	// session
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Session"));
-	newItem->setIcon(0, QIcon(":/options/images/session.png"));
+    newItem->setIcon(0, QIcon(":/options/images/session.svg"));
 
 	// updates
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Updates"));
-	newItem->setIcon(0, QIcon(":/options/images/updates.png"));
+    newItem->setIcon(0, QIcon(":/options/images/updates.svg"));
 
 	// ups!
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Ups!"));
-	newItem->setIcon(0, QIcon(":/options/images/ups.png"));
+    newItem->setIcon(0, QIcon(":/options/images/ups.svg"));
 
 	// Schedule
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Schedule"));
-	newItem->setIcon(0, QIcon(":/options/images/schedule.png"));
+    newItem->setIcon(0, QIcon(":/options/images/schedule.svg"));
 
 	// proxy
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Internet configuration"));
-	newItem->setIcon(0, QIcon(":/options/images/proxy.png"));
+    newItem->setIcon(0, QIcon(":/options/images/proxy.svg"));
 
 	// Errors
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Tracker"));
-	newItem->setIcon(0, QIcon(":/options/images/errorReport.png"));
+    newItem->setIcon(0, QIcon(":/options/images/errorReport.svg"));
 
 	if (lastPageViewed != -1)
 	{
@@ -260,7 +260,7 @@ void OptionsImpl::fillLanguages()
 		QFileInfo langFile(languageManager->getLanguage(n)->getFile());
 		if (langFile.fileName() == tmpLangFile)
 		{
-			newItem->setIcon(0, QIcon(":/buttons/images/script_go.png"));
+            newItem->setIcon(0, QIcon(":/buttons/images/translation_selected.svg"));
 			// set as bold
 			QFont oriFont = newItem->font(0);
 			oriFont.setBold(true);
@@ -269,7 +269,7 @@ void OptionsImpl::fillLanguages()
 			lsvLanguages->setCurrentItem(newItem);
 		}
 		else
-			newItem->setIcon(0, QIcon(":/buttons/images/script.png"));
+            newItem->setIcon(0, QIcon(":/buttons/images/translation.svg"));
 	}
 }
 
@@ -663,9 +663,9 @@ void OptionsImpl::btnUseThisClicked()
 		QTreeWidgetItem *item = lsvLanguages->topLevelItem(n);
 
 		if (language->getFile() == tmpLangFile)
-			item->setIcon(0, QIcon(":/buttons/images/script_go.png"));
+            item->setIcon(0, QIcon(":/buttons/images/translation_selected.svg"));
 		else
-			item->setIcon(0, QIcon(":/buttons/images/script.png"));
+            item->setIcon(0, QIcon(":/buttons/images/translation.svg"));
 		// set as bold?
 		QFont oriFont = item->font(0);
 		oriFont.setBold(language->getFile() == tmpLangFile);

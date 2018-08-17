@@ -258,7 +258,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	// update information
 	updateListInformation();
 	// set the support project link
-	imgPaypal->setText("<a href=\"http://www.xvideothief.com/index.php?action=make_donation\"><img src=\":/buttons/images/support_button_main.png\" /></a>");
+    imgPaypal->setText("<a href=\"http://www.xvideothief.com/index.php?action=make_donation\"><img src=\":/buttons/images/support_button_main.png\" /></a>");
 	// display welcome donate
 	displayWelcomeMessage();
 	// display adults permission
@@ -419,7 +419,7 @@ void MainFormImpl::createTrayIcon()
 	trayIconMenu->setDefaultAction(actRestoreApp);
 
 	// create the Tray Icon object
-	lastTrayIconStr = ":/icons/images/film_go.png";
+    lastTrayIconStr = ":/icons/images/tray_icon_off.svg";
 	trayIcon = new QSystemTrayIcon(this);
 	trayIcon->setContextMenu(trayIconMenu);
 	trayIcon->setIcon(QIcon(lastTrayIconStr));
@@ -818,7 +818,7 @@ void MainFormImpl::videoAdded(VideoItem *videoItem)
 	item->setTextAlignment(4, Qt::AlignHCenter | Qt::AlignVCenter);
 
 	if (videoItem->isCustomDownload()) // get the "custom video" icon
-		item->setIcon(0, QPixmap(":/services/images/services/custom_video.png"));
+        item->setIcon(0, QPixmap(":/services/images/services/custom_video.svg"));
 	else // get service icon
 		item->setIcon(0, QIcon(videoList->getVideoInformation()->getHostImage(videoItem->getURL())));
 
@@ -868,7 +868,7 @@ void MainFormImpl::videoUpdated(VideoItem *videoItem)
 
 	// if this video need a login, then display a "lock image"
 	if (videoItem->needLogin())
-		item->setIcon(2, QIcon(":/buttons/images/lock.png"));
+        item->setIcon(2, QIcon(":/buttons/images/lock.svg"));
 
 	// display completed popup
 	if (videoItem->isCompleted())
@@ -904,7 +904,7 @@ void MainFormImpl::videoError(VideoItem *videoItem)
 			if (!isVisible()) restoreAppClicked();
 
 			// update tray icon
-			QString trayIconStr = ":/icons/images/film_error.png";
+            QString trayIconStr = ":/icons/images/film_error.svg";
 			trayIcon->setIcon(QIcon(trayIconStr));
 			lastTrayIconStr = trayIconStr;
 
@@ -1340,7 +1340,7 @@ void MainFormImpl::updateVisualControls()
 	actClearCompleted->setEnabled(btnClearCompleted->isEnabled());
 
 	// update tray icon
-	QString trayIconStr = videoList->isWorking() ? ":/icons/images/film_save.png" : ":/icons/images/film_go.png";
+    QString trayIconStr = videoList->isWorking() ? ":/icons/images/tray_icon_on.svg" : ":/icons/images/tray_icon_off.svg";
 	if (lastTrayIconStr != trayIconStr)
 		trayIcon->setIcon(QIcon(trayIconStr));
 	lastTrayIconStr = trayIconStr;

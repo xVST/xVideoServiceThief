@@ -39,9 +39,9 @@ DragDropImpl::DragDropImpl(ProgramOptions *programOptions, VideoListController *
 	// create drag and drop image
 	imgDragDrop = new QLabelClickeable(this);
 	imgDragDrop->setObjectName(QString::fromUtf8("imgDragDrop"));
-	imgDragDrop->setGeometry(QRect(0, 0, 90, 60));
+    imgDragDrop->setGeometry(QRect(0, 0, 120, 80));
 	imgDragDrop->setAcceptDrops(true);
-	imgDragDrop->setPixmap(QPixmap(QString::fromUtf8(":/header/images/DragDropWindow.png")));
+    imgDragDrop->setPixmap(scaledQPixmap(QPixmap(":/header/images/DragDropWindow.svg"), imgDragDrop->size()));
 	imgDragDrop->setAlignment(Qt::AlignCenter);
 	// connect doubleClick signal
 	connect(imgDragDrop, SIGNAL(doubleClicked()), this, SLOT(displayMainWindowClicked())); // on double click, display main window
