@@ -49,7 +49,7 @@ bool isRunningSnowLeopard()
 
 CFStringRef qstringToCFStringRef(const QString &string)
 {
-	return CFStringCreateWithCharacters(0, reinterpret_cast<const UniChar *>(string.unicode()), string.length());
+    return CFStringCreateWithCharacters(nullptr, reinterpret_cast<const UniChar *>(string.unicode()), string.length());
 }
 
 NSString *qstringToNSString(const QString &qstr)
@@ -75,8 +75,8 @@ int alert(int icon, QString messageText, QString informativeText, QString defaul
 	// display alert
 	NSInteger userSelection = [alert runModal];
 	// convert result to Qt style
-	if (otherButton != NULL && !otherButton.isEmpty()) userSelection = 2 - userSelection;
-	else if (alternateButton != NULL && !alternateButton.isEmpty()) userSelection = 1 - userSelection;
+    if (otherButton != nullptr && !otherButton.isEmpty()) userSelection = 2 - userSelection;
+    else if (alternateButton != nullptr && !alternateButton.isEmpty()) userSelection = 1 - userSelection;
 	else userSelection = 0;
 	// return user selection
 	return userSelection;
