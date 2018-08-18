@@ -1,7 +1,7 @@
 3.0:
 ----
 
-- New domain! New site! The official site is now: http://www.xvideothief.com/
+- New domain! New secure site! The official site is now: https://www.xvideothief.com/
 
 - New look & feel!! Updated all the interface with a new fashon style icons! Much more modern!
 
@@ -9,6 +9,9 @@
 - Added Playlists support (ie: Youtube Playlists)
 - Added new option: “Download again” (in downloads list)
 - Added new option: “Download again” (in downloads log list)
+- Added new visual option: Show/Hide the download information
+- Added new visual option: Show/Hide the video conversion information
+- Added new visual option: Show/Hide the downloads directory information
 - Added chinese (traditional) translation (thank you Hsiu-Ming Chang)
 
 - Improved downloads file names
@@ -24,7 +27,8 @@
 Mac OS X:
 ---------
 
-- Retina support.
+- Added new UI! The Classic UI is still available if you are a retro user!
+- Added retina support.
 
 Plug-ins SDK:
 -------------
