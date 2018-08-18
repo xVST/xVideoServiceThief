@@ -1078,7 +1078,7 @@
          </property>
          <property name="icon">
           <iconset resource="../resources/resources.qrc">
-           <normaloff>:/buttons/images/folder_go.png</normaloff>:/buttons/images/folder_go.png</iconset>
+           <normaloff>:/buttons/images/folder_go.svg</normaloff>:/buttons/images/folder_go.svg</iconset>
          </property>
         </widget>
        </item>
@@ -1168,6 +1168,7 @@
      </widget>
     </item>
    </layout>
+   <zorder>convertWidget</zorder>
    <zorder>buttonsMenuLayout</zorder>
    <zorder>frameHeader</zorder>
    <zorder>frmInformation</zorder>
@@ -1268,6 +1269,10 @@
    </property>
   </action>
   <action name="actClearList">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/removeAll.svg</normaloff>:/buttons/images/removeAll.svg</iconset>
+   </property>
    <property name="text">
     <string>Clear list</string>
    </property>
@@ -1300,7 +1305,7 @@
   <action name="actOpenDownloadDir">
    <property name="icon">
     <iconset resource="../resources/resources.qrc">
-     <normaloff>:/buttons/images/folder_go.png</normaloff>:/buttons/images/folder_go.png</iconset>
+     <normaloff>:/buttons/images/folder_go.svg</normaloff>:/buttons/images/folder_go.svg</iconset>
    </property>
    <property name="text">
     <string>Open downloads directory</string>
@@ -1341,6 +1346,10 @@
    </property>
   </action>
   <action name="actClearCompleted">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/buttons/images/removeCompleted.svg</normaloff>:/buttons/images/removeCompleted.svg</iconset>
+   </property>
    <property name="text">
     <string>Clear completed</string>
    </property>
