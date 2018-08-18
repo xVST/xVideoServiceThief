@@ -77,7 +77,7 @@ QString BugReportImpl::getPluginInformation(QString URL)
 {
 	VideoInformationPlugin *plugin = videoInformation->getPluginByHost(QUrl(URL));
 	// exists?
-	if (plugin != NULL)
+    if (plugin != nullptr)
 		return QString("%1 (%2)").arg(plugin->getScriptFile(true)).arg(plugin->getVersion());
 	else
 		return "-";

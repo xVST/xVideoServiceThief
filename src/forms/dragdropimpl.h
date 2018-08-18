@@ -41,7 +41,7 @@ Q_OBJECT
 		void mouseDoubleClickEvent(QMouseEvent * event);
 	public:
 		/*! Class constructor */
-		QLabelClickeable(QWidget* parent = 0, Qt::WindowFlags f = 0) : QLabel(parent, f) {}
+        QLabelClickeable(QWidget* parent = nullptr, Qt::WindowFlags f = nullptr) : QLabel(parent, f) {}
 	signals:
 		/*! On doublecick event */
 		void doubleClicked();
@@ -68,7 +68,7 @@ Q_OBJECT
 		void addVideo(QString URL);
 	public:
 		DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList,
-					QWidget * parent = 0, Qt::WindowFlags f = 0);
+                    QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
 		~DragDropImpl();
 		void addVideoURL(QString URL);
 	private slots:

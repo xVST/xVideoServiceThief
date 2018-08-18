@@ -30,7 +30,7 @@
 #include <time.h>
 
 #ifdef Q_OS_MACX
-	#include "../webkit_mac/WebKitClass.h"
+    #include "../mac_only/WebKitClass.h"
 #endif
 
 WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
@@ -60,7 +60,7 @@ WhatsNewImpl::WhatsNewImpl(QWidget *parent, Qt::WindowFlags f)
 	QUrlQuery urlQuery;
 	urlQuery.addQueryItem("v", PROGRAM_VERSION_SHORT);
 	// prevent cache
-	srand(time(NULL));
+    srand(time(nullptr));
 	urlQuery.addQueryItem("nocache", QString("%1").arg(rand() % 999999));
 	// creates the whats new url
 	QUrl url("http://www.xvideothief.com/whatsnew/display.php");
