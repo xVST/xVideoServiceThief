@@ -199,7 +199,12 @@ void OptionsImpl::createMenu()
 	newItem->setText(0, tr("Schedule"));
     newItem->setIcon(0, QIcon(":/options/images/schedule.svg"));
 
-	// proxy
+    // UX options
+    newItem = new QTreeWidgetItem(trvMenu);
+    newItem->setText(0, tr("User Interface"));
+    newItem->setIcon(0, QIcon(":/options/images/ux.svg"));
+
+    // proxy
 	newItem = new QTreeWidgetItem(trvMenu);
 	newItem->setText(0, tr("Internet configuration"));
     newItem->setIcon(0, QIcon(":/options/images/proxy.svg"));
@@ -371,6 +376,12 @@ void OptionsImpl::setInitialOptionsValues()
 	chbTimeOut->setChecked(programOptions->getEnableTimeOut());
 	spinBoxTimeOut->setValue(programOptions->getTimeOut());
 	spinBoxMaxRetries->setValue(programOptions->getMaxRetries());
+
+    chbHideDownloadInfo->setChecked( ! programOptions->getHideDownloadInformationBox());
+    chbHideVideoConversion->setChecked( ! programOptions->getHideConvertInformationBox());
+    chbHideDownloadsDirectory->setChecked( ! programOptions->getHideDownloadsBox());
+    rdbClassicUI->setChecked(programOptions->getClassicUI());
+    rdbModernStyle->setChecked( ! programOptions->getClassicUI());
 }
 
 void OptionsImpl::setOptionsValues()
@@ -434,6 +445,11 @@ void OptionsImpl::setOptionsValues()
 	programOptions->setEnableTimeOut(chbTimeOut->isChecked());
 	programOptions->setTimeOut(spinBoxTimeOut->value());
 	programOptions->setMaxRetries(spinBoxMaxRetries->value());
+
+    programOptions->setHideDownloadInformationBox( ! chbHideDownloadInfo->isChecked());
+    programOptions->setHideConvertInformationBox( ! chbHideVideoConversion->isChecked());
+    programOptions->setHideDownloadsBox( ! chbHideDownloadsDirectory->isChecked());
+    programOptions->setClassicUI(rdbClassicUI->isChecked());
 }
 
 void OptionsImpl::dragEnterEvent(QDragEnterEvent* /*event*/)
@@ -458,7 +474,7 @@ void OptionsImpl::hideAdultSitesFromList(QTreeWidget *list, bool visible)
 		QString pluginId = list->topLevelItem(n)->data(0, Qt::UserRole).toString();
 		VideoInformationPlugin *plugin = videoInformation->getRegisteredPlugin(pluginId);
 		// exists?
-		if (plugin != NULL)
+        if (plugin != nullptr)
 		{
 			if (plugin->hasAdultContent() && !visible)
 				list->topLevelItem(n)->setHidden(true);
@@ -560,7 +576,7 @@ void OptionsImpl::spbRemoveSchedulePressed()
 
 void OptionsImpl::lsvSchedulesItemSelectionChanged()
 {
-	bool enabled = lsvSchedules->currentItem() != NULL;
+    bool enabled = lsvSchedules->currentItem() != nullptr;
 	spbEditSchedule->setEnabled(enabled);
 	spbRemoveSchedule->setEnabled(enabled);
 }
@@ -620,14 +636,14 @@ void OptionsImpl::menuCurrentItemChanged(QTreeWidgetItem * current, QTreeWidgetI
 {
 	pgOptions->setCurrentIndex(trvMenu->indexOfTopLevelItem(current));
 	// we have a current ietm?
-	if (current != NULL)
+    if (current != nullptr)
 	{
 		QFont oriFont = current->font(0);
 		oriFont.setBold(true);
 		current->setFont(0, oriFont);
 	}
 	// we have a prevous item?
-	if (previous != NULL)
+    if (previous != nullptr)
 	{
 		QFont oriFont = previous->font(0);
 		oriFont.setBold(false);
@@ -637,7 +653,7 @@ void OptionsImpl::menuCurrentItemChanged(QTreeWidgetItem * current, QTreeWidgetI
 
 void OptionsImpl::langCurrentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* /*previous*/)
 {
-	if (current != NULL)
+    if (current != nullptr)
 	{
 		Language *language =languageManager->getLanguage(lsvLanguages->indexOfTopLevelItem(current));
 
@@ -672,8 +688,7 @@ void OptionsImpl::btnUseThisClicked()
 		item->setFont(0, oriFont);
 	}
 	// disply update message
-	native_alert(this, QMessageBox::Information, tr("Language Setup"),
-				 tr("In order to apply the new selected language, the program must be restarted."), tr("Ok"));
+    native_alert(this, QMessageBox::Information, tr("Language Setup"), tr("In order to apply the new selected language, the program must be restarted."), tr("Ok"));
 }
 
 void OptionsImpl::langItemDoubleClicked(QTreeWidgetItem* /*item*/, int /*column*/)

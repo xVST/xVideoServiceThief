@@ -81,7 +81,7 @@
    <item row="0" column="1">
     <widget class="QStackedWidget" name="pgOptions">
      <property name="currentIndex">
-      <number>7</number>
+      <number>6</number>
      </property>
      <widget class="QWidget" name="pgBasic">
       <layout class="QGridLayout">
@@ -1629,25 +1629,357 @@
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="pgUserInterface">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="2">
+        <spacer name="horizontalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="1">
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Visual theme</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="leftMargin">
+           <number>14</number>
+          </property>
+          <property name="topMargin">
+           <number>14</number>
+          </property>
+          <property name="rightMargin">
+           <number>14</number>
+          </property>
+          <property name="bottomMargin">
+           <number>14</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="rdbClassicUI">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_2">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Classic style</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <property name="spacing">
+             <number>2</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="rdbModernStyle">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Modern macOS style</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="minimumSize">
+          <size>
+           <width>450</width>
+           <height>140</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Main window</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="leftMargin">
+           <number>14</number>
+          </property>
+          <property name="topMargin">
+           <number>14</number>
+          </property>
+          <property name="rightMargin">
+           <number>14</number>
+          </property>
+          <property name="bottomMargin">
+           <number>14</number>
+          </property>
+          <item>
+           <widget class="QCheckBox" name="chbHideDownloadInfo">
+            <property name="text">
+             <string>Show the download information</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="chbHideVideoConversion">
+            <property name="text">
+             <string>Show the video conversion options</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="chbHideDownloadsDirectory">
+            <property name="text">
+             <string>Show the downloads directory options</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>In order to apply the visual changes, the program must be restarted.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>2</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
      <widget class="QWidget" name="pgProxy">
       <layout class="QGridLayout" name="gridLayout_7">
-       <item row="0" column="1" rowspan="2">
+       <item row="3" column="1">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="2" rowspan="2">
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>59</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1" rowspan="2">
         <layout class="QVBoxLayout" name="verticalLayout_2">
          <item>
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="minimumSize">
             <size>
-             <width>20</width>
-             <height>40</height>
+             <width>390</width>
+             <height>0</height>
             </size>
            </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QGroupBox" name="groupBox_3">
            <property name="title">
             <string>Http configuration</string>
            </property>
@@ -1956,20 +2288,7 @@
          </item>
         </layout>
        </item>
-       <item row="0" column="2" rowspan="2">
-        <spacer name="horizontalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>59</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="0" column="0" rowspan="2">
+       <item row="1" column="0" rowspan="2">
         <spacer name="horizontalSpacer_5">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -1982,8 +2301,8 @@
          </property>
         </spacer>
        </item>
-       <item row="2" column="1">
-        <spacer name="verticalSpacer_3">
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -1997,7 +2316,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="page">
+     <widget class="QWidget" name="pgTracker">
       <layout class="QGridLayout">
        <item row="0" column="1">
         <spacer name="spacer_20">
@@ -2095,7 +2414,7 @@
      </widget>
     </widget>
    </item>
-   <item row="1" column="0" colspan="2">
+   <item row="1" column="0" colspan="3">
     <layout class="QHBoxLayout" name="boxLayout_4">
      <item>
       <widget class="QCheckBox" name="chbRememberView">
