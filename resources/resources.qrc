@@ -12,7 +12,6 @@
         <file>images/film_add.svg</file>
         <file>images/film_delete.svg</file>
         <file>images/film_edit.svg</file>
-        <file>images/folder_go.png</file>
         <file>images/information.svg</file>
         <file>images/new.png</file>
         <file>images/paste_plain.svg</file>
@@ -33,6 +32,9 @@
         <file>images/restore.svg</file>
         <file>images/clock.svg</file>
         <file>images/support_button_main.svg</file>
+        <file>images/removeAll.svg</file>
+        <file>images/removeCompleted.svg</file>
+        <file>images/folder_go.svg</file>
     </qresource>
     <qresource prefix="/error">
         <file>images/errorVideo.svg</file>
@@ -62,6 +64,7 @@
         <file>images/tools.svg</file>
         <file>images/updates.svg</file>
         <file>images/ups.svg</file>
+        <file>images/ux.svg</file>
     </qresource>
     <qresource prefix="/services">
         <file>images/service_login.png</file>

@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" version="1.1">
-<g id="surface1">
-<path style=" " d="M 2.5 2 C 1.671875 2 1 2.671875 1 3.5 L 1 12.5 L 2 11.5 L 2 5 L 13 5 L 13 12 L 6.5 12 L 5.5 13 L 14 13 L 14 3.5 C 14 2.671875 13.328125 2 12.5 2 Z M 2.5 3 L 3 3 L 3 4 L 2 4 L 2 3.5 C 2 3.226563 2.222656 3 2.5 3 Z M 4 3 L 5 3 L 5 4 L 4 4 Z M 6 3 L 12.5 3 C 12.777344 3 13 3.226563 13 3.5 L 13 4 L 6 4 Z M 4.464844 8 L 5.878906 9.414063 L 1.023438 14.269531 L 1.726563 14.980469 L 6.585938 10.121094 L 8 11.535156 L 8 8 Z "/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path id="surface1" d="M2.5,2C1.672,2 1,2.672 1,3.5L1,12.5L2,11.5L2,5L13,5L13,12L6.5,12L5.5,13L14,13L14,3.5C14,2.672 13.328,2 12.5,2L2.5,2ZM2.5,3L3,3L3,4L2,4L2,3.5C2,3.227 2.223,3 2.5,3ZM4,3L5,3L5,4L4,4L4,3ZM6,3L12.5,3C12.777,3 13,3.227 13,3.5L13,4L6,4L6,3ZM4.465,8L5.879,9.414L1.023,14.27L1.727,14.98L6.586,10.121L8,11.535L8,8L4.465,8Z" style="fill:rgb(87,87,87);fill-rule:nonzero;"/>
 </svg>

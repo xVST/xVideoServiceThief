@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" version="1.1">
-<g id="surface1">
-<path style=" " d="M 7 1 L 7 12.203125 L 4.71875 10.015625 L 4.03125 10.734375 L 7.492188 14.066406 L 10.96875 10.734375 L 10.28125 10.015625 L 8 12.199219 L 8 1 Z "/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path id="surface1" d="M7,1L7,12.203L4.719,10.016L4.031,10.734L7.492,14.066L10.969,10.734L10.281,10.016L8,12.199L8,1L7,1Z" style="fill:rgb(87,87,87);fill-rule:nonzero;"/>
 </svg>
