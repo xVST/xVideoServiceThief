@@ -36,7 +36,7 @@ Q_OBJECT
 		QSize webViewSize;
 	public:
 		/*! WebView cocoa object constructor */
-		WebViewNative(QWidget *parent = 0);
+        WebViewNative(QWidget *parent = nullptr);
 		/*! Set the WebView size */
 		void setSizeHint(QSize size);
 		/*! Return the default WebView size */
@@ -52,7 +52,7 @@ Q_OBJECT
 		WebViewNative *webView;	//!< WebView cocoa object instance
 	public:
 		/*! WebView Qt widget constructor */
-		WebViewWidget(QWidget *parent = 0);
+        WebViewWidget(QWidget *parent = nullptr);
 		/*! WebView Qt widget destructor */
 		~WebViewWidget();
 		/*! Set the WebView size */

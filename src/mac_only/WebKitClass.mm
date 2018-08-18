@@ -30,7 +30,7 @@
 
 // Native Cocoa WebKit object
 
-WebViewNative::WebViewNative(QWidget *parent) : QMacCocoaViewContainer(0, parent)
+WebViewNative::WebViewNative(QWidget *parent) : QMacCocoaViewContainer(nullptr, parent)
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	// creates a WebView (WebKit native object)

@@ -38,6 +38,11 @@ class VideoItem;
 class SessionManager;
 class CheckUpdatesWorker;
 
+#ifdef Q_OS_MACX
+class QMacToolBarItem;
+class QMacToolBarExt;
+#endif
+
 class MainFormImpl : public QMainWindow, public Ui::MainForm
 {
 Q_OBJECT
@@ -73,8 +78,8 @@ Q_OBJECT
 		bool optionsForm_active;
 		bool infoForm_active;
 		// paste shortcut
-		QShortcut *shortCutPasteURL;	//!< Paste from clipboard Shortcut
-		QShortcut *shortCutDeleteVideo;	//!< Delete the selected video from list
+        QShortcut *shortCutPasteURL;
+        QShortcut *shortCutDeleteVideo;
 		// set stay on top flag
 		void setStayOnTopFlag();
 		// extra information
@@ -97,11 +102,28 @@ Q_OBJECT
 		bool canAddThisVideo(QString URL);
 		// try to add a new video
 		void addVideo(QString URL);
+#ifdef Q_OS_MACX
+        // Mac modern UI toolbar items
+        QMacToolBarExt *toolBar;
+        QMacToolBarItem *toolBarItemAdd;
+        QMacToolBarItem *toolBarItemRename;
+        QMacToolBarItem *toolBarItemDelete;
+        QMacToolBarItem *toolBarItemStart;
+        QMacToolBarItem *toolBarItemPause;
+        QMacToolBarItem *toolBarItemStop;
+        QMacToolBarItem *toolBarItemClearList;
+        QMacToolBarItem *toolBarItemClearCompleted;
+        QMacToolBarItem *toolBarItemSearch;
+        QMacToolBarItem *toolBarItemDragDrop;
+        QMacToolBarItem *toolBarItemUpdate;
+        QMacToolBarItem *toolBarItemHelp;
+        QMacToolBarItem *toolBarItemInfo;
+#endif
 	protected:
 		void changeEvent(QEvent *event);
 		void closeEvent(QCloseEvent *event);
 	public:
-		MainFormImpl(QWidget * parent = 0, Qt::WindowFlags f = 0);
+        MainFormImpl(QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
 		~MainFormImpl();
 	private slots:
 		void dragDropClicked();

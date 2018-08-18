@@ -197,6 +197,7 @@ unix {
 }
 macx {
     QT -= webkitwidgets
+    QT += macextras
     ICON += $${PWD}/resources/icons/MacOSX.icns
     OBJECTS_DIR = build/o/mac
     TARGET = xVideoServiceThief
@@ -209,11 +210,15 @@ macx {
         PRE_TARGETDEPS += $$plist.target
     LIBS += -framework Cocoa -framework WebKit
     OBJECTIVE_SOURCES += \
-        src/webkit_mac/WebKitClass.mm \
-        src/mac_only/mac_tools.mm
+        src/mac_only/mac_tools.mm \
+        src/mac_only/WebKitClass.mm \
+        src/mac_only/qmactoolbarext.mm \
+        src/mac_only/NSButtonToolbar.mm
     HEADERS += \
-        src/webkit_mac/WebKitClass.h \
-        src/mac_only/mac_tools.h
+        src/mac_only/mac_tools.h \
+        src/mac_only/WebKitClass.h \
+        src/mac_only/qmactoolbarext.h \
+        src/mac_only/NSButtonToolbar.h
     CONFIG(release, debug|release) {
         message(Release build! Archs: 32 and 64 bits)
         CONFIG += x86 x86_64

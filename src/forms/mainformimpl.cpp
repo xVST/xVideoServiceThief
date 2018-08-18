@@ -51,6 +51,10 @@
 #include "../programversion.h"
 #include "../checkupdatesworker.h"
 
+#ifdef Q_OS_MACX
+#include "../mac_only/qmactoolbarext.h"
+#endif
+
 #include <QtSingleApplication>
 
 MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
@@ -60,17 +64,24 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	// set caption
 	setWindowTitle(QString(windowTitle()).arg(PROGRAM_VERSION));
 	// hide embeded check updates
-	lblCheckForUpdatesLabel->hide();
-	pbrCheckingForUpdates->hide();
-	spbCancelCheckForUpdates->hide();
-	// resize add button to an optimum visualization on macosx
+    lblCheckForUpdatesLabel->hide();
+    pbrCheckingForUpdates->hide();
+    spbCancelCheckForUpdates->hide();
+    // load options
+    programOptions = ProgramOptions::instance();
+    programOptions->load();
+    // configure UI
+    if (programOptions->getHideDownloadInformationBox()) frmInformation->hide();
+    if (programOptions->getHideConvertInformationBox()) convertWidget->hide();
+    if (programOptions->getHideDownloadsBox()) downloadsWidget->hide();
+    // resize add button to an optimum visualization on macosx
 #ifdef Q_OS_MACX
-	btnAddVideo->setMinimumWidth(158);
-	frameHeader->layout()->setContentsMargins(4, 4, 6, 4);
-	setMinimumSize(780, 540);
-	QFont updatesFont = lblCheckForUpdatesLabel->font();
-	updatesFont.setPointSize(10);
-	lblCheckForUpdatesLabel->setFont(updatesFont);
+    btnAddVideo->setMinimumWidth(158);
+    frameHeader->layout()->setContentsMargins(4, 4, 6, 4);
+    setMinimumSize(780, 540);
+    QFont updatesFont = lblCheckForUpdatesLabel->font();
+    updatesFont.setPointSize(10);
+    lblCheckForUpdatesLabel->setFont(updatesFont);
 	// change lsvDownloadList alternateBase color (better look&feel)
 	QPalette palette = lsvDownloadList->palette();
 	QColor color("#efefef");
@@ -124,13 +135,79 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	connect(controlsMenu, SIGNAL(aboutToShow()), this, SLOT(menuBarAboutToShow()));
 	connect(toolsMenu, SIGNAL(aboutToShow()), this, SLOT(menuBarAboutToShow()));
 	connect(helpMenu, SIGNAL(aboutToShow()), this, SLOT(menuBarAboutToShow()));
+    // is the moder UI selected?
+    if ( ! programOptions->getClassicUI())
+    {
+        // hide top header and buttons menu
+        frameHeader->hide();
+        buttonsMenuLayout->hide();
+
+        // re-align and change margins to adapt the new layout
+        QGridLayout *grid = dynamic_cast<QGridLayout *>(centralWidget()->layout());
+        grid->setHorizontalSpacing(0);
+        grid->setVerticalSpacing(6);
+        grid->setContentsMargins(0, 0, 0, frmInformation->isHidden() && convertWidget->isHidden() && downloadsWidget->isHidden() ? 0 : 9);
+        lsvDownloadList->setFrameShape(QFrame::NoFrame);
+        frmInformation->setFrameShape(QFrame::NoFrame);
+        frmInformation->setStyleSheet("");
+        frmInformation->layout()->setContentsMargins(9, 0, 9, 0);
+        convertWidget->layout()->setContentsMargins(9, 0, 9, 0);
+        downloadsWidget->layout()->setContentsMargins(9, 0, 9, 0);
+
+        // configure the toolbar
+        toolBar = new QMacToolBarExt(this);
+        toolBar->setAsOnlyIcon();
+
+        // add video items
+        toolBarItemAdd = toolBar->addButtonItem(QIcon(":/buttons/images/film_add.svg"), tr("Add video"));
+        connect(toolBarItemAdd, SIGNAL(activated()), this, SLOT(addVideoClicked()));
+        toolBarItemRename = toolBar->addButtonItem(QIcon(":/buttons/images/film_edit.svg"), tr("Rename video"));
+        connect(toolBarItemRename, SIGNAL(activated()), this, SLOT(renameVideoClicked()));
+        toolBarItemDelete = toolBar->addButtonItem(QIcon(":/buttons/images/film_delete.svg"), tr("Delete video"));
+        connect(toolBarItemDelete, SIGNAL(activated()), this, SLOT(deleteVideoClicked()));
+
+        // add separation
+        toolBar->addStandardItem(QMacToolBarItem::FlexibleSpace);
+
+        // add download items
+        toolBarItemStart = toolBar->addButtonItem(QIcon(":/buttons/images/control_play.svg"), tr("Start"));
+        connect(toolBarItemStart, SIGNAL(activated()), this, SLOT(startDownloadVideoClicked()));
+        toolBarItemPause = toolBar->addButtonItem(QIcon(":/buttons/images/control_pause.svg"), tr("Pause"));
+        connect(toolBarItemPause, SIGNAL(activated()), this, SLOT(pauseResumeDownloadVideoClicked()));
+        toolBarItemStop = toolBar->addButtonItem(QIcon(":/buttons/images/control_stop.svg"), tr("Stop"));
+        connect(toolBarItemStop, SIGNAL(activated()), this, SLOT(cancelDownloadVideoClicked()));
+
+        // add separation
+        toolBar->addSeparator();
+
+        toolBarItemClearList = toolBar->addButtonItem(QIcon(":/buttons/images/removeAll.svg"), tr("Clear list"));
+        connect(toolBarItemClearList, SIGNAL(activated()), this, SLOT(clearListClicked()));
+        toolBarItemClearCompleted = toolBar->addButtonItem(QIcon(":/buttons/images/removeCompleted.svg"), tr("Clear completed"));
+        connect(toolBarItemClearCompleted, SIGNAL(activated()), this, SLOT(clearCompletedClicked()));
+
+        // add separation
+        toolBar->addStandardItem(QMacToolBarItem::FlexibleSpace);
+
+        // add items
+        toolBarItemSearch = toolBar->addButtonItem(QIcon(":/buttons/images/search.svg"), tr("Search videos"));
+        connect(toolBarItemSearch, SIGNAL(activated()), this, SLOT(searchVideosClicked()));
+        toolBarItemDragDrop = toolBar->addButtonItem(QIcon(":/buttons/images/application_link.svg"), tr("Drag&Drop"));
+        connect(toolBarItemDragDrop, SIGNAL(activated()), this, SLOT(dragDropClicked()));
+        toolBarItemUpdate = toolBar->addButtonItem(QIcon(":/buttons/images/updates_small.svg"), tr("Updates"));
+        connect(toolBarItemUpdate, SIGNAL(activated()), this, SLOT(updatesClicked()));
+        toolBarItemHelp = toolBar->addButtonItem(QIcon(":/buttons/images/book_open.svg"), tr("Help"));
+        connect(toolBarItemHelp, SIGNAL(activated()), this, SLOT(onlineHelpClicked()));
+        toolBarItemInfo = toolBar->addButtonItem(QIcon(":/buttons/images/information.svg"), tr("Info"));
+        connect(toolBarItemInfo, SIGNAL(activated()), this, SLOT(informationClicked()));
+
+        // attach the toolbar
+        this->window()->winId(); // create window->windowhandle()
+        toolBar->attachToWindow(this->window()->windowHandle());
+    }
 #endif
 	// init program options
 	lastOptionsPage = 0;
-	// load options
-	programOptions = ProgramOptions::instance();
-	programOptions->load();
-	// setu-up the main form
+    // setu-up the main form
 	centerWindow();
 	// init main objects (program core)
 	videoList = new VideoListController(programOptions);
@@ -164,13 +241,15 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	// init the completed popup
 	completedPopup = new CompletedPopupImpl(trayIcon, this);
 	// start the drag & drop window
-	dragDropForm = new DragDropImpl(programOptions, videoList, this);
-	// connect buttons (header)
-	connect(spbSearchVideos, SIGNAL(clicked()), this, SLOT(searchVideosClicked())); //spb Search Videos (clicked)
-	connect(spbDragDrop, SIGNAL(clicked()), this, SLOT(dragDropClicked())); //spb Drag&Drop (clicked)
-	connect(spbUpdates, SIGNAL(clicked()), this, SLOT(updatesClicked())); //spb Updates (clicked)
-	connect(spbHelp, SIGNAL(clicked()), this, SLOT(onlineHelpClicked())); //spb Online Help (clicked)
-	connect(spbInformation, SIGNAL(clicked()), this, SLOT(informationClicked())); //spb Information (clicked)
+    dragDropForm = new DragDropImpl(programOptions, videoList, this);
+    // assign the header image
+    imgHeader->setPixmap(scaledQPixmap(QPixmap(":/header/images/header.svg"), QSize(238, 100)));
+    // connect buttons (header)
+    connect(spbSearchVideos, SIGNAL(clicked()), this, SLOT(searchVideosClicked())); //spb Search Videos (clicked)
+    connect(spbDragDrop, SIGNAL(clicked()), this, SLOT(dragDropClicked())); //spb Drag&Drop (clicked)
+    connect(spbUpdates, SIGNAL(clicked()), this, SLOT(updatesClicked())); //spb Updates (clicked)
+    connect(spbHelp, SIGNAL(clicked()), this, SLOT(onlineHelpClicked())); //spb Online Help (clicked)
+    connect(spbInformation, SIGNAL(clicked()), this, SLOT(informationClicked())); //spb Information (clicked)
 	// connect buttons directories
 	connect(spbSelectDownloadDir, SIGNAL(clicked()), this, SLOT(selectDownloadDirClicked())); //spb Open Download directory (clicked)
 	connect(spbOpenDownloadDir, SIGNAL(clicked()), this, SLOT(openDownloadDirClicked())); //spb Open Download directory (clicked)
@@ -203,14 +282,14 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	// edtDownloadDir
 	connect(edtDownloadDir, SIGNAL(editingFinished()), this, SLOT(edtDownloadDirChanged()));
 	// connect buttons
-	connect(btnAddVideo, SIGNAL(clicked()), this, SLOT(addVideoClicked())); //btnAddVideo (clicked)
-	connect(btnDeleteVideo, SIGNAL(clicked()), this, SLOT(deleteVideoClicked())); //btnAddVideo (clicked)
-	connect(btnStartDownload, SIGNAL(clicked()), this, SLOT(startDownloadVideoClicked())); //btnAddVideo (clicked)
-	connect(btnPauseResumeDownload, SIGNAL(clicked()), this, SLOT(pauseResumeDownloadVideoClicked())); //btnPauseResumeDownload (clicked)
-	connect(btnCancelDownload, SIGNAL(clicked()), this, SLOT(cancelDownloadVideoClicked())); //btnAddVideo (clicked)
-	connect(btnMoreOptions, SIGNAL(clicked()), this, SLOT(moreOptionsClicked())); //btnMoreOptions (clicked)
-	connect(btnClearList, SIGNAL(clicked()), this, SLOT(clearListClicked())); //btnMoreOptions (clicked)
-	connect(btnClearCompleted, SIGNAL(clicked()), this, SLOT(clearCompletedClicked())); //btnMoreOptions (clicked)
+    connect(btnAddVideo, SIGNAL(clicked()), this, SLOT(addVideoClicked())); //btnAddVideo (clicked)
+    connect(btnDeleteVideo, SIGNAL(clicked()), this, SLOT(deleteVideoClicked())); //btnAddVideo (clicked)
+    connect(btnStartDownload, SIGNAL(clicked()), this, SLOT(startDownloadVideoClicked())); //btnAddVideo (clicked)
+    connect(btnPauseResumeDownload, SIGNAL(clicked()), this, SLOT(pauseResumeDownloadVideoClicked())); //btnPauseResumeDownload (clicked)
+    connect(btnCancelDownload, SIGNAL(clicked()), this, SLOT(cancelDownloadVideoClicked())); //btnAddVideo (clicked)
+    connect(btnMoreOptions, SIGNAL(clicked()), this, SLOT(moreOptionsClicked())); //btnMoreOptions (clicked)
+    connect(btnClearList, SIGNAL(clicked()), this, SLOT(clearListClicked())); //btnMoreOptions (clicked)
+    connect(btnClearCompleted, SIGNAL(clicked()), this, SLOT(clearCompletedClicked())); //btnMoreOptions (clicked)
 	// tray icon menu events
 	connect(trayIconMenu, SIGNAL(aboutToShow()), this, SLOT(trayIconAboutToShow()));
 	connect(actDownloadVideosAutomatically, SIGNAL(toggled(bool)), this, SLOT(optionSelected(bool)));
@@ -443,7 +522,7 @@ void MainFormImpl::updatesClicked()
 		return;
 	}
 
-	spbUpdates->setEnabled(false);
+    spbUpdates->setEnabled(false);
 	actUpdates->setEnabled(false);
 
 	if (!isVisible()) restoreAppClicked();
@@ -451,7 +530,7 @@ void MainFormImpl::updatesClicked()
 	CheckUpdatesImpl checkUpdatesForm(programOptions, this, Qt::Sheet);
 	checkUpdatesForm.exec();
 
-	spbUpdates->setEnabled(true);
+    spbUpdates->setEnabled(true);
 	actUpdates->setEnabled(true);
 }
 
@@ -465,13 +544,13 @@ void MainFormImpl::informationClicked()
 	if (infoForm_active) return;
 
 	infoForm_active = true;
-	spbInformation->setEnabled(false);
+    spbInformation->setEnabled(false);
 	actInformation->setEnabled(false);
 
 	InformationImpl informationForm(programOptions, videoList->getVideoInformation(), this);
 	informationForm.exec();
 
-	spbInformation->setEnabled(true);
+    spbInformation->setEnabled(true);
 	actInformation->setEnabled(true);
 	infoForm_active = false;
 }
@@ -507,7 +586,7 @@ void MainFormImpl::addVideoClicked()
 
 	addForm_active = true;
 	actAddVideo->setEnabled(false);
-	btnAddVideo->setEnabled(false);
+    btnAddVideo->setEnabled(false);
 
 	if (!isVisible()) restoreAppClicked();
 
@@ -531,7 +610,7 @@ void MainFormImpl::addVideoClicked()
 	}
 
 	actAddVideo->setEnabled(true);
-	btnAddVideo->setEnabled(true);
+    btnAddVideo->setEnabled(true);
 	addForm_active = false;
 }
 
@@ -660,7 +739,7 @@ void MainFormImpl::moreOptionsClicked()
 
 	optionsForm_active = true;
 	actMoreOptions->setEnabled(false);
-	btnMoreOptions->setEnabled(false);
+    btnMoreOptions->setEnabled(false);
 
 	if (!isVisible()) restoreAppClicked();
 
@@ -673,7 +752,7 @@ void MainFormImpl::moreOptionsClicked()
 	}
 
 	actMoreOptions->setEnabled(true);
-	btnMoreOptions->setEnabled(true);
+    btnMoreOptions->setEnabled(true);
 	optionsForm_active = false;
 }
 
@@ -833,7 +912,7 @@ void MainFormImpl::videoAdded(VideoItem *videoItem)
 void MainFormImpl::videoDeleted(VideoItem *videoItem)
 {
 	delete getQTreeWidgetItemByVideoItem(videoItem);
-	lsvDownloadList->setCurrentItem(NULL);
+    lsvDownloadList->setCurrentItem(nullptr);
 	updateVisualControls();
 }
 
@@ -888,7 +967,7 @@ void MainFormImpl::videoUpdated(VideoItem *videoItem)
 
 void MainFormImpl::videoError(VideoItem *videoItem)
 {
-	if (videoItem == NULL) return;
+    if (videoItem == nullptr) return;
 	if (videoItem->isReported() || !videoItem->hasErrors()) return;
 
 	// mark as reported
@@ -991,7 +1070,7 @@ void MainFormImpl::checkForUpdates()
 		if (!Updates::canUpdate(programOptions->getToolsPath())) //getOptionsPath()))
 		{
 			actUpdates->setEnabled(false);
-			spbUpdates->setEnabled(false);
+            spbUpdates->setEnabled(false);
 			// running the app for 1st time? then display this warning message
 			if (programOptions->getFirstTime())
 				native_alert(this, QMessageBox::Information, tr("Updates"),
@@ -1010,12 +1089,12 @@ void MainFormImpl::checkForUpdates()
 
 void MainFormImpl::checkUpdatesWorkerFinished(bool hasUpdates, bool /*closedByButton*/)
 {
-	spbUpdates->setEnabled(true);
+    spbUpdates->setEnabled(true);
 	actUpdates->setEnabled(true);
 
-	lblCheckForUpdatesLabel->hide();
-	pbrCheckingForUpdates->hide();
-	spbCancelCheckForUpdates->hide();
+    lblCheckForUpdatesLabel->hide();
+    pbrCheckingForUpdates->hide();
+    spbCancelCheckForUpdates->hide();
 
 	// if no updates are ready then, start the main loop of video List
 	if (!hasUpdates)
@@ -1055,7 +1134,7 @@ QTreeWidgetItem* MainFormImpl::getQTreeWidgetItemByVideoItem(VideoItem *videoIte
 		if (videoList->getVideoItemFromQVAriant(variant) == videoItem)
 			return lsvDownloadList->topLevelItem(i);
 	}
-	return NULL;
+    return nullptr;
 }
 
 QList<VideoItem *> MainFormImpl::getSelectedVideoItems()
@@ -1070,10 +1149,10 @@ QList<VideoItem *> MainFormImpl::getSelectedVideoItems()
 
 VideoItem* MainFormImpl::getVideoItemByQTreeWidgetItem(QTreeWidgetItem* treeItem)
 {
-	if (treeItem != NULL)
+    if (treeItem != nullptr)
 		return videoList->getVideoItemFromQVAriant(treeItem->data(0, Qt::UserRole));
 	else
-		return NULL;
+        return nullptr;
 }
 
 // options controls
@@ -1108,15 +1187,15 @@ void MainFormImpl::checkUpdates(bool forceCheckUpdates)
 
 	if (nextUpdate <= QDate::currentDate() || forceCheckUpdates)
 	{
-		spbUpdates->setEnabled(false);
+        spbUpdates->setEnabled(false);
 		actUpdates->setEnabled(false);
 
-		lblCheckForUpdatesLabel->show();
-		pbrCheckingForUpdates->show();
-		spbCancelCheckForUpdates->show();
+        lblCheckForUpdatesLabel->show();
+        pbrCheckingForUpdates->show();
+        spbCancelCheckForUpdates->show();
 
-		checkUpdatesWorker = new CheckUpdatesWorker(programOptions, this, lblCheckForUpdatesLabel, pbrCheckingForUpdates,
-													spbCancelCheckForUpdates, false);
+        checkUpdatesWorker = new CheckUpdatesWorker(programOptions, this, lblCheckForUpdatesLabel, pbrCheckingForUpdates,
+                                                    spbCancelCheckForUpdates, false);
 		connect(checkUpdatesWorker, SIGNAL(finished(bool, bool)), this, SLOT(checkUpdatesWorkerFinished(bool, bool)));
 		connect(checkUpdatesWorker, SIGNAL(beforeDisplayUpdateCenter()), this, SLOT(beforeDisplayUpdateCenter()));
 		checkUpdatesWorker->checkUpdates();
@@ -1233,15 +1312,15 @@ void MainFormImpl::updateVisualControls()
 
 	if (videoItems.isEmpty()) // no items selected
 	{
-		btnDeleteVideo->setEnabled(false);
-		btnStartDownload->setEnabled(false);
-		btnPauseResumeDownload->setEnabled(false);
-		btnCancelDownload->setEnabled(false);
+        btnDeleteVideo->setEnabled(false);
+        btnStartDownload->setEnabled(false);
+        btnPauseResumeDownload->setEnabled(false);
+        btnCancelDownload->setEnabled(false);
 
-		btnDeleteVideo->setText(tr("Delete video"));
-		btnStartDownload->setText(tr("Start download"));
-		btnPauseResumeDownload->setText(tr("Pause download"));
-		btnCancelDownload->setText(tr("Cancel download"));
+        btnDeleteVideo->setText(tr("Delete video"));
+        btnStartDownload->setText(tr("Start download"));
+        btnPauseResumeDownload->setText(tr("Pause download"));
+        btnCancelDownload->setText(tr("Cancel download"));
 
 		actPlayVideo->setEnabled(false);
 		actPlayVideo->setVisible(true);
@@ -1256,15 +1335,15 @@ void MainFormImpl::updateVisualControls()
 	{
 		VideoItem *videoItem = videoItems.first();
 
-		btnDeleteVideo->setEnabled(videoItem->isRemovable());
-		btnStartDownload->setEnabled(videoItem->isDownloadable());
-		btnPauseResumeDownload->setEnabled(videoItem->isPauseable() || videoItem->isAnyKindOfPaused());
-		btnCancelDownload->setEnabled(videoItem->isDownloading());
+        btnDeleteVideo->setEnabled(videoItem->isRemovable());
+        btnStartDownload->setEnabled(videoItem->isDownloadable());
+        btnPauseResumeDownload->setEnabled(videoItem->isPauseable() || videoItem->isAnyKindOfPaused());
+        btnCancelDownload->setEnabled(videoItem->isDownloading());
 
-		btnDeleteVideo->setText(tr("Delete video"));
-		btnStartDownload->setText(tr("Start download"));
-		btnPauseResumeDownload->setText(videoItem->isAnyKindOfPaused() ? tr("Resume download") : tr("Pause download"));
-		btnCancelDownload->setText(tr("Cancel download"));
+        btnDeleteVideo->setText(tr("Delete video"));
+        btnStartDownload->setText(tr("Start download"));
+        btnPauseResumeDownload->setText(videoItem->isAnyKindOfPaused() ? tr("Resume download") : tr("Pause download"));
+        btnCancelDownload->setText(tr("Cancel download"));
 		actRenameVideo->setText(tr("Rename video"));
 		actResetState->setText(tr("Reset state"));
 
@@ -1299,16 +1378,16 @@ void MainFormImpl::updateVisualControls()
 			if (videoItem->isCompleted()) canDownloadAgain = true;
 		}
 
-		btnDeleteVideo->setEnabled(canDelete);
-		btnStartDownload->setEnabled(canStart);
-		btnPauseResumeDownload->setEnabled((canPause && !canResume) || (!canPause && canResume));
-		btnCancelDownload->setEnabled(canCancel);
+        btnDeleteVideo->setEnabled(canDelete);
+        btnStartDownload->setEnabled(canStart);
+        btnPauseResumeDownload->setEnabled((canPause && !canResume) || (!canPause && canResume));
+        btnCancelDownload->setEnabled(canCancel);
 
-		btnDeleteVideo->setText(tr("Delete videos"));
-		btnStartDownload->setText(tr("Start downloads"));
+        btnDeleteVideo->setText(tr("Delete videos"));
+        btnStartDownload->setText(tr("Start downloads"));
 		bool pauseText = (canPause && !canResume) || (canPause == canResume);
-		btnPauseResumeDownload->setText(pauseText ? tr("Pause downloads") : tr("Resume downloads"));
-		btnCancelDownload->setText(tr("Cancel downloads"));
+        btnPauseResumeDownload->setText(pauseText ? tr("Pause downloads") : tr("Resume downloads"));
+        btnCancelDownload->setText(tr("Cancel downloads"));
 		actRenameVideo->setText(tr("Rename videos"));
 		actResetState->setText(tr("Reset states"));
 
@@ -1323,21 +1402,21 @@ void MainFormImpl::updateVisualControls()
 		actMoveDOWN->setEnabled(false);//(videoList->getVideoItem(videoList->getVideoItemCount() - 1) != videoItem);
 	}
 
-	btnClearList->setEnabled(!videoList->isWorking() && videoList->getVideoItemCount(true) > 0);
-	btnClearCompleted->setEnabled(videoList->getCompletedItemsCount() > 0);
+    btnClearList->setEnabled(!videoList->isWorking() && videoList->getVideoItemCount(true) > 0);
+    btnClearCompleted->setEnabled(videoList->getCompletedItemsCount() > 0);
 
 	// update actions
-	actDeleteVideo->setEnabled(btnDeleteVideo->isEnabled());
-	actDeleteVideo->setText(btnDeleteVideo->text());
-	actRenameVideo->setEnabled(btnDeleteVideo->isEnabled());
-	actStartDownload->setEnabled(btnStartDownload->isEnabled());
-	actStartDownload->setText(btnStartDownload->text());
-	actPauseResumeDownload->setEnabled(btnPauseResumeDownload->isEnabled());
-	actPauseResumeDownload->setText(btnPauseResumeDownload->text());
-	actCancelDownload->setEnabled(btnCancelDownload->isEnabled());
-	actCancelDownload->setText(btnCancelDownload->text());
-	actClearList->setEnabled(btnClearList->isEnabled());
-	actClearCompleted->setEnabled(btnClearCompleted->isEnabled());
+    actDeleteVideo->setEnabled(btnDeleteVideo->isEnabled());
+    actDeleteVideo->setText(btnDeleteVideo->text());
+    actRenameVideo->setEnabled(btnDeleteVideo->isEnabled());
+    actStartDownload->setEnabled(btnStartDownload->isEnabled());
+    actStartDownload->setText(btnStartDownload->text());
+    actPauseResumeDownload->setEnabled(btnPauseResumeDownload->isEnabled());
+    actPauseResumeDownload->setText(btnPauseResumeDownload->text());
+    actCancelDownload->setEnabled(btnCancelDownload->isEnabled());
+    actCancelDownload->setText(btnCancelDownload->text());
+    actClearList->setEnabled(btnClearList->isEnabled());
+    actClearCompleted->setEnabled(btnClearCompleted->isEnabled());
 
 	// update tray icon
     QString trayIconStr = videoList->isWorking() ? ":/icons/images/tray_icon_on.svg" : ":/icons/images/tray_icon_off.svg";
@@ -1362,13 +1441,29 @@ void MainFormImpl::updateVisualControls()
 	if (videoList->isConverting())
 	{
 		VideoItem *videoItem = videoList->getCurrentConvertingVideo();
-		if (videoItem != NULL)
+        if (videoItem != nullptr)
 			trayIconToolTip += "\n" + tr("- Converting: %1 (%2)").arg(videoItem->getDisplayLabel()).arg(videoItem->getDisplayProgress());
 	}
 	// set the tooltip
 	trayIcon->setToolTip(trayIconToolTip);
 	// update information
 	updateListInformation();
+    // update mac toolbar items
+#ifdef Q_OS_MACX
+    toolBar->setButtonItemSelectable(toolBarItemAdd, actAddVideo->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemRename, actRenameVideo->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemDelete, actDeleteVideo->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemStart, actStartDownload->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemPause, actPauseResumeDownload->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemStop, actStartDownload->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemClearList, actClearList->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemClearCompleted, actClearCompleted->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemSearch, actSearchVideos->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemDragDrop, actDragDrop->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemUpdate, actUpdates->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemHelp, actOnlineHelp->isEnabled());
+    toolBar->setButtonItemSelectable(toolBarItemInfo, actInformation->isEnabled());
+#endif
 }
 
 // lsvDownloadList signals
@@ -1387,7 +1482,7 @@ void MainFormImpl::videoListContextMenu(const QPoint & pos)
 	QTreeWidgetItem *item = lsvDownloadList->itemAt(pos);
 	VideoItem *videoItem = getVideoItemByQTreeWidgetItem(item);
 
-	if (item != NULL && videoItem != NULL)
+    if (item != nullptr && videoItem != nullptr)
 	{
 		QMenu *videoItemMenu = new QMenu(this);
 
@@ -1430,7 +1525,7 @@ void MainFormImpl::videoListContextMenu(const QPoint & pos)
 	}
 	else
 	{
-		lsvDownloadList->setCurrentItem(NULL);
+        lsvDownloadList->setCurrentItem(nullptr);
 		updateVisualControls();
 
 		QMenu *videoItemMenu = new QMenu(this);
