@@ -163,7 +163,7 @@ background: white;
           <item>
            <widget class="QLabel" name="lblURL">
             <property name="text">
-             <string>&lt;a href=&quot;http://www.xvideothief.com/&quot;&gt;http://www.xvideothief.com/&lt;/a&gt;</string>
+             <string>&lt;a href=&quot;https://www.xvideothief.com/&quot;&gt;https://www.xvideothief.com/&lt;/a&gt;</string>
             </property>
             <property name="openExternalLinks">
              <bool>true</bool>
