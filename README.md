@@ -3,9 +3,9 @@ xVideoServiceThief (aka xVST)
 
 xVideoServiceThief is a tool for downloading your favourite video clips from a lot of video websites. xVideoServiceThief also provide you the ability to convert each video in most popular formats: AVI, MPEG1, MPEG2, WMV, MP4, 3GP, MP3 file formats.
 
-Available for [Windows](http://www.xvideothief.com/index.php?action=downloads#Windows), [macOS](http://www.xvideothief.com/index.php?action=downloads#MacOSX) and [Linux](http://www.xvideothief.com/index.php?action=downloads#Linux).
+Available for [Windows](https://www.xvideothief.com/index.php?action=downloads#Windows), [macOS](https://www.xvideothief.com/index.php?action=downloads#MacOSX) and [Linux](https://www.xvideothief.com/index.php?action=downloads#Linux).
 
-**Official site:** http://www.xvideothief.com/
+**Official site:** https://www.xvideothief.com/
 
 **Project on GitHub:** https://github.com/xVST/xVideoServiceThief
 
@@ -13,7 +13,7 @@ Available for [Windows](http://www.xvideothief.com/index.php?action=downloads#Wi
 
 ---
 
-NOTE: **This project is free and will continue free forever!** But, if you desire to [donate](http://www.xvideothief.com/index.php?action=contact), don't doubt it, it will help us alot to pay our IT bills.
+NOTE: **This project is free and will continue free forever!** But, if you desire to [donate](https://www.xvideothief.com/index.php?action=contact), don't doubt it, it will help us alot to pay our IT bills.
 
 ---
 
