@@ -19,7 +19,7 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://www.xvideothief.com/
+* Program URL   : https://www.xvideothief.com/
 *
 */
 
@@ -67,8 +67,7 @@ Q_OBJECT
 		void contextMenuEvent(QContextMenuEvent * event);
 		void addVideo(QString URL);
 	public:
-		DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList,
-                    QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
+        DragDropImpl(ProgramOptions *programOptions, VideoListController *videoList, QWidget *parent = nullptr, Qt::WindowFlags f = nullptr);
 		~DragDropImpl();
 		void addVideoURL(QString URL);
 	private slots:

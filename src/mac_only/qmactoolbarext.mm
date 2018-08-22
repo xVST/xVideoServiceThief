@@ -62,7 +62,7 @@ QMacToolBarItem* QMacToolBarExt::addButtonItem(const QIcon &icon, const QString 
     [button setItemIdentifier:item->nativeToolBarItem().itemIdentifier];
     [button setBezelStyle:NSBezelStyleTexturedRounded];
     [button setImage:image];
-    [button setEnabled:true];//item->selectable()];
+    [button setEnabled:item->selectable()];
     [item->nativeToolBarItem() setView:button];
     [button release];
     // return the new item

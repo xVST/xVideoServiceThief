@@ -19,7 +19,7 @@
 * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
 *
 * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
-* Program URL   : http://www.xvideothief.com/
+* Program URL   : https://www.xvideothief.com/
 *
 */
 
@@ -337,7 +337,7 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	// update information
 	updateListInformation();
 	// set the support project link
-    imgPaypal->setText("<a href=\"http://www.xvideothief.com/index.php?action=make_donation\"><img src=\":/buttons/images/support_button_main.png\" /></a>");
+    imgPaypal->setText("<a href=\"https://www.xvideothief.com/index.php?action=make_donation\"><img src=\":/buttons/images/support_button_main.png\" /></a>");
 	// display welcome donate
 	displayWelcomeMessage();
 	// display adults permission
@@ -358,6 +358,8 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 		delete tmpItem;
 	}
 #endif
+    // update visual controls
+    updateVisualControls();
 }
 
 MainFormImpl::~MainFormImpl()
@@ -536,7 +538,7 @@ void MainFormImpl::updatesClicked()
 
 void MainFormImpl::onlineHelpClicked()
 {
-	QDesktopServices::openUrl(QUrl("http://www.xvideothief.com/index.php?action=onlinehelp"));
+    QDesktopServices::openUrl(QUrl("https://www.xvideothief.com/documentation"));
 }
 
 void MainFormImpl::informationClicked()

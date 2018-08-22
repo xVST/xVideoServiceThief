@@ -19,7 +19,7 @@
  * along with xVideoServiceThief. If not, see <http://www.gnu.org/licenses/>.
  *
  * Contact e-mail: Xesc <xeskuu.xvst@gmail.com>
- * Program URL : http://www.xvideothief.com/
+ * Program URL : https://www.xvideothief.com/
  *
  */
 
@@ -37,14 +37,14 @@ DragDropImpl::DragDropImpl(ProgramOptions *programOptions, VideoListController *
 {
 	setupUi(this);
 	// create drag and drop image
-	imgDragDrop = new QLabelClickeable(this);
-	imgDragDrop->setObjectName(QString::fromUtf8("imgDragDrop"));
-    imgDragDrop->setGeometry(QRect(0, 0, 120, 80));
-	imgDragDrop->setAcceptDrops(true);
-    imgDragDrop->setPixmap(scaledQPixmap(QPixmap(":/header/images/DragDropWindow.svg"), imgDragDrop->size()));
-	imgDragDrop->setAlignment(Qt::AlignCenter);
+    //imgDragDrop = new QLabelClickeable(this);
+    //imgDragDrop->setObjectName(QString::fromUtf8("imgDragDrop"));
+    //imgDragDrop->setGeometry(QRect(0, 0, 120, 80));
+    //imgDragDrop->setAcceptDrops(true);
+    //imgDragDrop->setPixmap(QPixmap(":/header/images/DragDropWindow.svg"));
+    //imgDragDrop->setAlignment(Qt::AlignCenter);
 	// connect doubleClick signal
-	connect(imgDragDrop, SIGNAL(doubleClicked()), this, SLOT(displayMainWindowClicked())); // on double click, display main window
+    connect(btnDragDrop, SIGNAL(triggered(QAction*)), this, SLOT(displayMainWindowClicked())); // on double click, display main window
 	// save the parent window
 	this->parent = parent;
 	this->programOptions = programOptions;
@@ -194,8 +194,8 @@ void DragDropImpl::addVideo(QString URL)
 		else if (bs == bsAdultContent)
 			blockMsg = tr(" - Adult content is not allowed");
 	}
-	imgVideoService->setPixmap(QPixmap(videoList->getVideoInformation()->getHostImage(URL)));
-	imgVideoService->setToolTip(videoList->getVideoInformation()->getHostCaption(URL) + blockMsg);
+//	imgVideoService->setPixmap(QPixmap(videoList->getVideoInformation()->getHostImage(URL)));
+//	imgVideoService->setToolTip(videoList->getVideoInformation()->getHostCaption(URL) + blockMsg);
 	if (ok)
 		videoList->addVideo(URL);
 	QTimer::singleShot(5000, this, SLOT(removeServiceIcon()));
@@ -241,8 +241,8 @@ void DragDropImpl::alphaBlendValueClicked()
 
 void DragDropImpl::removeServiceIcon()
 {
-    imgVideoService->setPixmap(QPixmap());
-    imgVideoService->setToolTip("");
+  //  imgVideoService->setPixmap(QPixmap());
+  //  imgVideoService->setToolTip("");
 }
 
 // QLabelClickeable

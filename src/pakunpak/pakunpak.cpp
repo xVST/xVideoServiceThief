@@ -21,7 +21,7 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 *
 * Contact e-mail: Xesc <xeskuu@gmail.com>
-* Program URL   : http://www.xvideothief.com/
+* Program URL   : https://www.xvideothief.com/
 *
 */
 
