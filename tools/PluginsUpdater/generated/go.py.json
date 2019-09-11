@@ -1,0 +1,15 @@
+{
+    "sha1": "c73e798f4c08423d1d2852bc34acabf978f5a372",
+    "extractor": "go.py",
+    "url": "http:\/\/abc.go.com\/",
+    "htmlError": false,
+    "title": "ABC Home Page - ABC.com",
+    "matchers": [
+        "https?:\/\/(?:(?:(?P<sub_domain>%s)\\.)?go|(?P<sub_domain_2>disneynow))\\.com\/(?:(?:[^\/]+\/)*(?P<id>vdka\\w+)|(?:[^\/]+\/)*(?P<display_id>[^\/?#]+))\\"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.296551724137931,
+    "faviconUrl": "http:\/\/abc.go.com\/\/\/cdn1.edgedatg.com\/aws\/abc\/brand\/fall2018\/favicon-abc.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

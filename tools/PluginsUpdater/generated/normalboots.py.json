@@ -1,0 +1,15 @@
+{
+    "sha1": "0423000bafad5aa5a5118dce23e476380616fda0",
+    "extractor": "normalboots.py",
+    "url": "http:\/\/normalboots.com\/",
+    "htmlError": false,
+    "title": "normalboots.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?normalboots\\.com\/video\/(?P<id>[0-9a-z-]*)\/?$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

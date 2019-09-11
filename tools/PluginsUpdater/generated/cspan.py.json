@@ -1,0 +1,15 @@
+{
+    "sha1": "f9440b7721a2b7748d8324a1a513da3447418857",
+    "extractor": "cspan.py",
+    "url": "http:\/\/www.c-span.org\/",
+    "htmlError": false,
+    "title": "C-SPAN.org | National Politics | History | Nonfiction Books",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?c-span\\.org\/video\/\\?(?P<id>[0-9a-f]+)"
+    ],
+    "+18": 0.03463203463203463,
+    "music": 0.2620689655172414,
+    "faviconUrl": "http:\/\/www.c-span.org\/\/\/static.c-span.org\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

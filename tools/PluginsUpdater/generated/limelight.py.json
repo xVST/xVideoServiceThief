@@ -1,0 +1,17 @@
+{
+    "sha1": "8808eb28ff487d9628b14dc5dab06a29d0736254",
+    "extractor": "limelight.py",
+    "url": "http:\/\/link.videoplatform.limelight.com\/",
+    "htmlError": false,
+    "title": "link.videoplatform.limelight.com",
+    "matchers": [
+        "(?x)\n(?:\nlimelight:media:|\nhttps?:\/\/\n(?:\nlink\\.videoplatform\\.limelight\\.com\/media\/|\nassets\\.delvenetworks\\.com\/player\/loader\\.swf\n)\n\\?.*?\\bmediaId=\n)\n(?P<id>[a-z0-9]{32})\n",
+        "(?x)\n(?:\nlimelight:channel:|\nhttps?:\/\/\n(?:\nlink\\.videoplatform\\.limelight\\.com\/media\/|\nassets\\.delvenetworks\\.com\/player\/loader\\.swf\n)\n\\?.*?\\bchannelId=\n)\n(?P<id>[a-z0-9]{32})\n",
+        "(?x)\n(?:\nlimelight:channel_list:|\nhttps?:\/\/\n(?:\nlink\\.videoplatform\\.limelight\\.com\/media\/|\nassets\\.delvenetworks\\.com\/player\/loader\\.swf\n)\n\\?.*?\\bchannelListId=\n)\n(?P<id>[a-z0-9]{32})\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

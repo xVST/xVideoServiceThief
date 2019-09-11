@@ -1,0 +1,17 @@
+{
+    "sha1": "e89876edd7753ccd770c58b5d1993598ce515c98",
+    "extractor": "telequebec.py",
+    "url": "http:\/\/zonevideo.telequebec.tv\/",
+    "htmlError": false,
+    "title": "Zone Vid\u00e9o T\u00e9l\u00e9-Qu\u00e9bec",
+    "matchers": [
+        "https?:\/\/zonevideo\\.telequebec\\.tv\/media\/(?P<id>\\d+)",
+        "(?x)\nhttps?:\/\/\n(?:\n[^\/]+\\.telequebec\\.tv\/emissions\/|\n(?:www\\.)?telequebec\\.tv\/\n)\n(?P<id>[^?#&]+)\n",
+        "https?:\/\/zonevideo\\.telequebec\\.tv\/(?P<id>endirect)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/zonevideo.telequebec.tv\/\/\/www.telequebec.tv\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

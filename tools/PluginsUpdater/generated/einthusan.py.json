@@ -1,0 +1,15 @@
+{
+    "sha1": "fb3c1d8faf3f4c7f4a59af63fb46a030978ecd4e",
+    "extractor": "einthusan.py",
+    "url": "https:\/\/einthusan.tv\/",
+    "htmlError": false,
+    "title": "einthusan.tv",
+    "matchers": [
+        "https?:\/\/(?P<host>einthusan\\.(?:tv|com|ca))\/movie\/watch\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

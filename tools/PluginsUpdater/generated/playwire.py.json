@@ -1,0 +1,15 @@
+{
+    "sha1": "9502a9d375f2b56c4ba3535bca8dab3d9eefdb10",
+    "extractor": "playwire.py",
+    "url": "http:\/\/config.playwire.com\/",
+    "htmlError": false,
+    "title": "config.playwire.com",
+    "matchers": [
+        "https?:\/\/(?:config|cdn)\\.playwire\\.com(?:\/v2)?\/(?P<publisher_id>\\d+)\/(?:videos\/v2|embed|config)\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

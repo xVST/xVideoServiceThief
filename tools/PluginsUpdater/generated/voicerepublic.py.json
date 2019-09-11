@@ -1,0 +1,15 @@
+{
+    "sha1": "a4c3c22c9f0fe1d748e1ef9616154f36e73d6d00",
+    "extractor": "voicerepublic.py",
+    "url": "http:\/\/voicerepublic.com\/",
+    "htmlError": false,
+    "title": "voicerepublic.com",
+    "matchers": [
+        "https?:\/\/voicerepublic\\.com\/(?:talks|embed)\/(?P<id>[0-9a-z-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

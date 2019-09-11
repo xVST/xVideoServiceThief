@@ -1,0 +1,15 @@
+{
+    "sha1": "c6b018189ebd6a92df3b468bc38b1daa90eecb06",
+    "extractor": "xboxclips.py",
+    "url": "http:\/\/xboxclips.com\/",
+    "htmlError": false,
+    "title": "XboxClips - View your Xbox videos",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?xboxclips\\.com\/(?:video\\.php\\?.*vid=|[^\/]+\/)(?P<id>[\\w-]{36})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/xboxclips.com\/\/\/xboxclips.com\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

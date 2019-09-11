@@ -1,0 +1,16 @@
+{
+    "sha1": "ec73b3975cff387cac1fb564584d1a5f2d7c41cf",
+    "extractor": "hrti.py",
+    "url": "https:\/\/hrti.hrt.hr\/",
+    "htmlError": false,
+    "title": "hrti.hrt.hr",
+    "matchers": [
+        "(?x)\n(?:\nhrti:(?P<short_id>[0-9]+)|\nhttps?:\/\/\nhrti\\.hrt\\.hr\/(?:\\#\/)?video\/show\/(?P<id>[0-9]+)\/(?P<display_id>[^\/]+)?\n)\n",
+        "https?:\/\/hrti\\.hrt\\.hr\/(?:#\/)?video\/list\/category\/(?P<id>[0-9]+)\/(?P<display_id>[^\/]+)?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

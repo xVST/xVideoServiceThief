@@ -1,0 +1,16 @@
+{
+    "sha1": "fb6e4c4d4003bbffe96619d3b9047167dfdcfe2b",
+    "extractor": "tv2.py",
+    "url": "http:\/\/www.tv2.no\/",
+    "htmlError": false,
+    "title": "TV2.no - nyheter d\u00f8gnet rundt",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tv2\\.no\/v\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tv2\\.no\/(?:a|\\d{4}\/\\d{2}\/\\d{2}(\/[^\/]+)+)\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.12413793103448276,
+    "faviconUrl": "http:\/\/www.tv2.no\/\/\/www.tv2.no\/s\/img\/favicon.ico?v=1.2.5.649",
+    "faviconData": null,
+    "version": "1.1"
+}

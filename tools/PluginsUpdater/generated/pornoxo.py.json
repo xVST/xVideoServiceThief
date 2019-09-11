@@ -1,0 +1,15 @@
+{
+    "sha1": "0cdd7f65baf5fce9c854c93de588c2bea92ab1b9",
+    "extractor": "pornoxo.py",
+    "url": "http:\/\/www.pornoxo.com\/",
+    "htmlError": false,
+    "title": "Free Porn Videos - Best Recent - Page 1",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?pornoxo\\.com\/videos\/(?P<id>\\d+)\/(?P<display_id>[^\/]+)\\.html"
+    ],
+    "+18": 0.8225108225108225,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

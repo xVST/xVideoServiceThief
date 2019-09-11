@@ -1,0 +1,15 @@
+{
+    "sha1": "3cac81a72ddd292e605cbe2caf33a792cc17283c",
+    "extractor": "vube.py",
+    "url": "http:\/\/vube.com\/",
+    "htmlError": false,
+    "title": "vube.com",
+    "matchers": [
+        "https?:\/\/vube\\.com\/(?:[^\/]+\/)+(?P<id>[\\da-zA-Z]{10})\\b"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

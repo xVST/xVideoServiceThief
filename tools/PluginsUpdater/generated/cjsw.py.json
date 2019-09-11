@@ -1,0 +1,15 @@
+{
+    "sha1": "b7920e685d16bfb9a87581771f66dac325dfb45d",
+    "extractor": "cjsw.py",
+    "url": "http:\/\/cjsw.com\/",
+    "htmlError": false,
+    "title": "CJSW \u2013 Calgary's Independent Radio 90.9FM",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?cjsw\\.com\/program\/(?P<program>[^\/]+)\/episode\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.6689655172413793,
+    "faviconUrl": "http:\/\/cjsw.com\/cjsw.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

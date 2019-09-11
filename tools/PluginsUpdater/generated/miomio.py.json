@@ -1,0 +1,15 @@
+{
+    "sha1": "7b001c5c80af9be558aae1474198b0e480215ea6",
+    "extractor": "miomio.py",
+    "url": "http:\/\/www.miomio.tv\/",
+    "htmlError": false,
+    "title": "MioMio\u5f39\u5e55\u7f51 - ( ^\u03c9^)\u4f60\u662f\u6211\u7684Master\u5417 - miomio.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?miomio\\.tv\/watch\/cc(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,13 @@
+{
+    "sha1": "c145b66e76e7bc45c55a7746fe488ccf39c2aba9",
+    "extractor": "extractors.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

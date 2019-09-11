@@ -1,0 +1,15 @@
+{
+    "sha1": "4aabec619a97a7c21b51f59f906dd0a2abee374b",
+    "extractor": "wakanim.py",
+    "url": "https:\/\/www.wakanim.tv\/",
+    "htmlError": false,
+    "title": "Wakanim is coming soon in your country !",
+    "matchers": [
+        "https:\/\/(?:www\\.)?wakanim\\.tv\/[^\/]+\/v2\/catalogue\/episode\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/www.wakanim.tv\/\/\/cdncontent.wakanim.tv\/images\/favicon.png",
+    "faviconData": null,
+    "version": "1.1"
+}

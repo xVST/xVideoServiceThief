@@ -1,0 +1,15 @@
+{
+    "sha1": "509ec0e8525f040849620c08dd99c7c1be81e2bc",
+    "extractor": "ina.py",
+    "url": "http:\/\/www.ina.fr\/",
+    "htmlError": false,
+    "title": "Ina.fr : vid\u00c3\u00a9o, radio, audio et publicit\u00c3\u00a9 - Actualit\u00c3\u00a9s, archives de la radio et de la t\u00c3\u00a9l\u00c3\u00a9vision en ligne - Archives vid\u00c3\u00a9o et radio Ina.fr",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ina\\.fr\/(?:video|audio)\/(?P<id>[A-Z0-9_]+)"
+    ],
+    "+18": 0,
+    "music": 0.23448275862068965,
+    "faviconUrl": "http:\/\/www.ina.fr\/\/extension\/inaextension\/design\/ogpv3\/images\/\/favicon.ico",
+    "faviconData": "424d380300000000000036000000280000001000000010000000010018000000000002030000120b0000120b000000000000000000009b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9b780f9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0d9e7b0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da07e0da3810ea3810da3800da3810da3800da3800da3810ea3810ea3800da3810da2800ba17f09a3810da3810ea3810da3810ea68511a88817a68411aa8a1ca78614a78613a78613a78715a68511a78613aa8a1bb39734a88715a27e05a88817a68512a6850cc4ae5eeae2c6bfa750ddd0a2dfd3a8a88812b39630e8dfc0dacc99ede6ccd3c386cebb78d4c48bd0be7ea88710a98810bba040f3eedda8870dded2a4ddd0a0a68306a98810ede6cce0d5a9f1ebd7a48101af901ff7f4e8c3ac59a7860cad8c14bca242efe9d2ac8c14ddd0a0dbcd99a9880cab8b12ece4c8c9b466d8c88fd6c588b69a32e8dfbdc5af5bab8a11af9019bfa546f0ead3af8f19ded1a0e1d6aaab890cae8e16f0ead4cbb669cdba71c9b464c4ad55eee7cdc7b15eae8d15b2931ac4ac50f4f0e0b2931be2d6a9f8f5eabfa543c6af57faf7efc8b15bfbfaf4c4ab50b19119efe9d1c6af57b29219b59718d0bc69dccd8ebb9f2ae0d39cd3c073d4c276e5daabd3c173b39413cab457daca8aded197d9c986b79a1eb7991db99b17c1a732d8c780bca021b89912b89a13b89a13b89a14b79911ba9d1bb79912b99c18ba9d1bb79810ba9d1aba9d1bbc9e13c6ac34e2d595bfa31fbd9f16bda018bda018bda018bda018bda118bda018bda018bda017bda018bda118bda118c1a417c0a314bd9f0bc0a316c0a417c0a417c0a417c0a417c0a417c0a417c0a417c0a417c0a417c0a417c0a417c0a417c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c4a718c6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1ac6ac1a0000",
+    "version": "1.2"
+}

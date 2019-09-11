@@ -1,0 +1,15 @@
+{
+    "sha1": "16c678d97e79fa05ff95599d4b8747999ecf5bb7",
+    "extractor": "nhk.py",
+    "url": "https:\/\/www3.nhk.or.jp\/",
+    "htmlError": false,
+    "title": "NHK\u30aa\u30f3\u30e9\u30a4\u30f3",
+    "matchers": [
+        "https?:\/\/www3\\.nhk\\.or\\.jp\/nhkworld\/(?P<lang>[a-z]{2})\/ondemand\/(?P<type>video|audio)\/(?P<id>\\d{7}|[a-z]+-\\d{8}-\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

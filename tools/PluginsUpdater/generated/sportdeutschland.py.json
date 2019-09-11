@@ -1,0 +1,15 @@
+{
+    "sha1": "9ffafd3ac12eaba3fac98e08b56a2eaf4dab7185",
+    "extractor": "sportdeutschland.py",
+    "url": "http:\/\/sportdeutschland.tv\/",
+    "htmlError": false,
+    "title": "Sportdeutschland.TV",
+    "matchers": [
+        "https?:\/\/sportdeutschland\\.tv\/(?P<sport>[^\/?#]+)\/(?P<id>[^?#\/]+)(?:$|[?#])"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/sportdeutschland.tv\/\/\/sportdeutschland.vidibuscloud.net\/themes\/sportdeutschland-952\/favicon.png",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "6ac8bb61dd3910fad6f85c7262e61005c558840a",
+    "extractor": "dhm.py",
+    "url": "http:\/\/www.dhm.de\/",
+    "htmlError": false,
+    "title": "Deutsches Historisches Museum: Deutsches Historisches Museum, Berlin",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?dhm\\.de\/filmarchiv\/(?:[^\/]+\/)+(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

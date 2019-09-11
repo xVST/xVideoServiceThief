@@ -1,0 +1,15 @@
+{
+    "sha1": "d78321c51412e8c85f139e5ea2d237ce25b93885",
+    "extractor": "embedly.py",
+    "url": "https:\/\/cdn.embedly.com\/",
+    "htmlError": false,
+    "title": "cdn.embedly.com",
+    "matchers": [
+        "https?:\/\/(?:www|cdn\\.)?embedly\\.com\/widgets\/media\\.html\\?(?:[^#]*?&)?url=(?P<id>[^#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

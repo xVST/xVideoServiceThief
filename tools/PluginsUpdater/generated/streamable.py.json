@@ -1,0 +1,15 @@
+{
+    "sha1": "2bae96bc243d24c160557266fb06da212bf514a1",
+    "extractor": "streamable.py",
+    "url": "https:\/\/streamable.com\/",
+    "htmlError": false,
+    "title": "Streamable - video for publishers",
+    "matchers": [
+        "https?:\/\/streamable\\.com\/(?:[es]\/)?(?P<id>\\w+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/streamable.com\/\/\/statics.streamable.com\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

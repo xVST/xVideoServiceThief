@@ -1,0 +1,15 @@
+{
+    "sha1": "575b267312641e703f06a5eac183941da942284d",
+    "extractor": "urort.py",
+    "url": "https:\/\/urort.p3.no\/",
+    "htmlError": false,
+    "title": "urort.p3.no",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?urort\\.p3\\.no\/#!\/Band\/(?P<id>[^\/]+)$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

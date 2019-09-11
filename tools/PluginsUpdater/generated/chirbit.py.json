@@ -1,0 +1,16 @@
+{
+    "sha1": "bcfddea73965250d1d270bf632010e6c59f7ed0e",
+    "extractor": "chirbit.py",
+    "url": "http:\/\/chirb.it\/",
+    "htmlError": false,
+    "title": "Chirbit - Share your audio easily - Welcome!",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?chirb\\.it\/(?:(?:wp|pl)\/|fb_chirbit_player\\.swf\\?key=)?(?P<id>[\\da-zA-Z]+)",
+        "https?:\/\/(?:www\\.)?chirbit\\.com\/(?:rss\/)?(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

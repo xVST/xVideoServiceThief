@@ -1,0 +1,15 @@
+{
+    "sha1": "fe576bde907cfb2751307bc6e69df101d1bac4b9",
+    "extractor": "noco.py",
+    "url": "http:\/\/noco.tv\/",
+    "htmlError": false,
+    "title": "noco.tv",
+    "matchers": [
+        "https?:\/\/(?:(?:www\\.)?noco\\.tv\/emission\/|player\\.noco\\.tv\/\\?idvideo=)(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

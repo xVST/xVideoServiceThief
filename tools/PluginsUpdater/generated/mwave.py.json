@@ -1,0 +1,16 @@
+{
+    "sha1": "aadc53a69aa7e67c1c9c066e937c1da1137c1600",
+    "extractor": "mwave.py",
+    "url": "http:\/\/mwave.interest.me\/",
+    "htmlError": false,
+    "title": "Mwave | K-pop makes one",
+    "matchers": [
+        "https?:\/\/mwave\\.interest\\.me\/(?:[^\/]+\/)?mnettv\/videodetail\\.m\\?searchVideoDetailVO\\.clip_id=(?P<id>[0-9]+)",
+        "https?:\/\/mwave\\.interest\\.me\/(?:[^\/]+\/)?meetgreet\/view\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.15862068965517243,
+    "faviconUrl": "http:\/\/mwave.interest.me\/\/static\/images\/cmm\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

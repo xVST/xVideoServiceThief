@@ -1,0 +1,15 @@
+{
+    "sha1": "3308f6cf51ee7376927925c821fc22498afddb25",
+    "extractor": "performgroup.py",
+    "url": "http:\/\/player.performgroup.com\/",
+    "htmlError": false,
+    "title": "player.performgroup.com",
+    "matchers": [
+        "https?:\/\/player\\.performgroup\\.com\/eplayer(?:\/eplayer\\.html|\\.js)#\/?(?P<id>[0-9a-f]{26})\\.(?P<auth_token>[0-9a-z]{26})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

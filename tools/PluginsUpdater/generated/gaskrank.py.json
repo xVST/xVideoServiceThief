@@ -1,0 +1,15 @@
+{
+    "sha1": "e60173c6d96e4019c0e53b33961fd2ea3254eed4",
+    "extractor": "gaskrank.py",
+    "url": "http:\/\/www.gaskrank.tv\/",
+    "htmlError": false,
+    "title": "Gaskrank Motorrad Videos",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?gaskrank\\.tv\/tv\/(?P<categories>[^\/]+)\/(?P<id>[^\/]+)\\.htm"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/static.gaskrank.tv\/favicon.ico",
+    "faviconData": "0000010001001010000000000000680300001600000028000000100000002000000001001800000000004003000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff6a6a6accccccffffffffffff9fa1a64d5a864e4f56cabf9ba2a4ab8a867dd6cdaeffffffffffffffffffffffff0000000000000000001e1c150c0a082b52ce689dff395ac02860ff2761ff1b5aff254bc33c331bffffffffffff7474741515154743380f0e0b080d1e0000000000001d222d4b62ab4058a33d58ab426ef71d5aff576eb9c1bcabffffff212121d8d5ce76767977aeff4158aa83afff4c62ad7ca2ff7ca5ff638dff5782ff436fff154cffb9dbff928c79ffffff0a0a0a0700003d6cff3958bb5d7de77ba5ff3648824c63ad3d4a797ca0ff79a0ff739eff98c2ff6d695f000000ffffffa2a19c0000005c96ff2c4284759fff44579384a6ff749cff5367aa4660b02f3957221f120000000000000c0c0cffffffffffff87847986abff415cb26895ff55659289acff3a4f9187a7ff6693ff1b3eaeb5ad934c4c4c121212000000ffffffffffffebe9e30000009aafef97b8ff5c637d83aaff35477e86a6ff5885ff294fc20000003b3b3b010101000000ffffffffffffffffffffffff040401dfe3ea7a829981a9ff2a3b6e7a9eff5b8aff1a2a64000000181818000000000000ffffffffffffffffffffffffffffff636159424244e8ffff323b59accbff5985ff1c3584172e7c0e0900000000000000ffffffffffffffffffffffffffffffffffffb3b2ad54534e2a2517abb0c98aafff7fb0ff5d6ea6000000000000363636ffffffffffffffffffffffffffffffffffffffffffffffffffffff8c8a818a8a89716d5cffffff8f8f8f404040ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "version": "1.1"
+}

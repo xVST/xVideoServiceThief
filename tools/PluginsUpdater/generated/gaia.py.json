@@ -1,0 +1,15 @@
+{
+    "sha1": "48f0474ce3d64633e58883a801a0195afe2d1f5b",
+    "extractor": "gaia.py",
+    "url": "https:\/\/www.gaia.com\/",
+    "htmlError": false,
+    "title": "Gaia - Conscious Media, Streaming Yoga Videos & More",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?gaia\\.com\/video\/(?P<id>[^\/?]+).*?\\bfullplayer=(?P<type>feature|preview)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/www.gaia.com\/\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "a4e93177850bc1ecbdef1daf6c43b36d87b87a7b",
+    "extractor": "rice.py",
+    "url": "https:\/\/mediahub.rice.edu\/",
+    "htmlError": false,
+    "title": "Ensemble Video Portal",
+    "matchers": [
+        "https?:\/\/mediahub\\.rice\\.edu\/app\/[Pp]ortal\/video\\.aspx\\?(?P<query>.+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

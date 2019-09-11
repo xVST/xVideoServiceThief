@@ -1,0 +1,17 @@
+{
+    "sha1": "e62b39aedb15d247edcc556b8cfbfaab36183516",
+    "extractor": "twitter.py",
+    "url": "https:\/\/twitter.com\/",
+    "htmlError": false,
+    "title": "Twitter. Es lo que est\u00e1 pasando.",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?twitter\\.com\/i\/(?P<path>cards\/tfw\/v1|videos(?:\/tweet)?)\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.|m\\.|mobile\\.)?twitter\\.com\/(?:i\/web|(?P<user_id>[^\/]+))\/status\/(?P<id>\\d+)",
+        "https?:\/\/amp\\.twimg\\.com\/v\/(?P<id>[0-9a-f\\-]{36})"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": "https:\/\/twitter.com\/\/\/abs.twimg.com\/favicons\/favicon.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

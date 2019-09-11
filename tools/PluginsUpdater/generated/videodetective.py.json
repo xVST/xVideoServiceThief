@@ -1,0 +1,15 @@
+{
+    "sha1": "cb7602951ac2d26d7c064e053ee1958c04e65365",
+    "extractor": "videodetective.py",
+    "url": "http:\/\/www.videodetective.com\/",
+    "htmlError": false,
+    "title": "Video Detective - Movie Trailers, Game Trailers, TV Previews, Music Videos",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?videodetective\\.com\/[^\/]+\/[^\/]+\/(?P<id>\\d+)"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "78591cbd945e670c73f4bbd8c894db5bfba6d76d",
+    "extractor": "mangomolo.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "https?:\/\/admin\\.mangomolo\\.com\/analytics\/index\\.php\/customers\/embed\/video\\?.*?\\bid=(?P<id>\\d+)",
+        "https?:\/\/admin\\.mangomolo\\.com\/analytics\/index\\.php\/customers\/embed\/index\\?.*?\\bchannelid=(?P<id>(?:[A-Za-z0-9+\/=]|%2B|%2F|%3D)+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

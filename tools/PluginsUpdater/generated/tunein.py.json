@@ -1,0 +1,19 @@
+{
+    "sha1": "95824e2b99575b6f2b3402e08c02a245e0e82e05",
+    "extractor": "tunein.py",
+    "url": "http:\/\/tunein.com\/",
+    "htmlError": false,
+    "title": "tunein.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tunein\\.com\/station\/.*?audioClipId\\=(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tunein\\.com\/(?:radio\/.*?-s|station\/.*?StationId=|embed\/player\/s)(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tunein\\.com\/(?:radio\/.*?-p|program\/.*?ProgramId=|embed\/player\/p)(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tunein\\.com\/(?:topic\/.*?TopicId=|embed\/player\/t)(?P<id>\\d+)",
+        "https?:\/\/tun\\.in\/(?P<id>[A-Za-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

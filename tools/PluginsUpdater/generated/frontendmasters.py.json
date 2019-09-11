@@ -1,0 +1,17 @@
+{
+    "sha1": "83c6578e2006badde83521502d4026cb8c1e2d43",
+    "extractor": "frontendmasters.py",
+    "url": "https:\/\/api.frontendmasters.com\/",
+    "htmlError": false,
+    "title": "api.frontendmasters.com",
+    "matchers": [
+        "(?:frontendmasters:|https?:\/\/api\\.frontendmasters\\.com\/v\\d+\/kabuki\/video\/)(?P<id>[^\/]+)",
+        "https?:\/\/(?:www\\.)?frontendmasters\\.com\/courses\/(?P<course_name>[^\/]+)\/(?P<lesson_name>[^\/]+)",
+        "https?:\/\/(?:www\\.)?frontendmasters\\.com\/courses\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

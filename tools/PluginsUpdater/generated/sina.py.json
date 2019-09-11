@@ -1,0 +1,15 @@
+{
+    "sha1": "958c74bfa1aa7f330b4dfedb61f19528fe41bb66",
+    "extractor": "sina.py",
+    "url": "http:\/\/video.sina.com.cn\/",
+    "htmlError": false,
+    "title": "\u65b0\u6d6a\u89c6\u9891_\u9ad8\u6e05\u89c6\u9891\u5728\u7ebf\u89c2\u770b_\u65b0\u6d6a\u7f51",
+    "matchers": [
+        "(?x)https?:\/\/(?:.*?\\.)?video\\.sina\\.com\\.cn\/\n(?:\n(?:view\/|.*\\#)(?P<video_id>\\d+)|\n.+?\/(?P<pseudo_id>[^\/?#]+)(?:\\.s?html)|\n#ThisisusedbyexternalsiteslikeWeibo\napi\/sinawebApi\/outplay.php\/(?P<token>.+?)\\.swf\n)\n"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

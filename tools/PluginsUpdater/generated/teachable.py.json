@@ -1,0 +1,16 @@
+{
+    "sha1": "9db4253cc68fb43ae34a4edaa968a06545c8569d",
+    "extractor": "teachable.py",
+    "url": "http:\/\/upskillcourses.com\/",
+    "htmlError": false,
+    "title": "Upskill",
+    "matchers": [
+        "(?x)\n(?:\n%shttps?:\/\/(?P<site_t>[^\/]+)|\nhttps?:\/\/(?:www\\.)?(?P<site>%s)\n)\n\/courses\/[^\/]+\/lectures\/(?P<id>\\d+)\n%TeachableBaseIE.|",
+        "(?x)\n(?:\n%shttps?:\/\/(?P<site_t>[^\/]+)|\nhttps?:\/\/(?:www\\.)?(?P<site>%s)\n)\n\/(?:courses|p)\/(?:enrolled\/)?(?P<id>[^\/?#&]+)\n%TeachableBaseIE.|"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

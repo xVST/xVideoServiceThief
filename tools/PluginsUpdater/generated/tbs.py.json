@@ -1,0 +1,15 @@
+{
+    "sha1": "e756948e5f6353be33dc5fb20607c7841b9f4a12",
+    "extractor": "tbs.py",
+    "url": "http:\/\/www.tntdrama.com\/",
+    "htmlError": false,
+    "title": "www.tntdrama.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?P<site>tbs|tntdrama)\\.com(?P<path>\/(?:movies|shows\/[^\/]+\/(?:clips|season-\\d+\/episode-\\d+))\/(?P<id>[^\/?#]+))"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

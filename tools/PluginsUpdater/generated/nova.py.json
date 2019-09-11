@@ -1,0 +1,16 @@
+{
+    "sha1": "55b03b737381ff779af0add22f8588478877cf0a",
+    "extractor": "nova.py",
+    "url": "https:\/\/media.cms.nova.cz\/",
+    "htmlError": false,
+    "title": "media.cms.nova.cz",
+    "matchers": [
+        "https?:\/\/media\\.cms\\.nova\\.cz\/embed\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:[^.]+\\.)?(?P<site>tv(?:noviny)?|tn|novaplus|vymena|fanda|krasna|doma|prask)\\.nova\\.cz\/(?:[^\/]+\/)+(?P<id>[^\/]+?)(?:\\.html|\/|$)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

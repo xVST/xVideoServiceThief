@@ -1,0 +1,18 @@
+{
+    "sha1": "090873e544fd26209cd1892cd7154910ae373801",
+    "extractor": "daum.py",
+    "url": "http:\/\/tvpot.daum.net\/",
+    "htmlError": false,
+    "title": "Daum tv\ud31f",
+    "matchers": [
+        "https?:\/\/(?:(?:m\\.)?tvpot\\.daum\\.net\/v\/|videofarm\\.daum\\.net\/controller\/player\/VodPlayer\\.swf\\?vid=)(?P<id>[^?#&]+)",
+        "https?:\/\/(?:m\\.)?tvpot\\.daum\\.net\/(?:clip\/ClipView.(?:do|tv)|mypot\/View.do)\\?.*?clipid=(?P<id>\\d+)",
+        "https?:\/\/(?:m\\.)?tvpot\\.daum\\.net\/mypot\/(?:View\\.do|Top\\.tv)\\?.*?playlistid=(?P<id>[0-9]+)",
+        "https?:\/\/(?:m\\.)?tvpot\\.daum\\.net\/mypot\/(?:View|Top)\\.(?:do|tv)\\?.*?ownerid=(?P<id>[0-9a-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "426b68614f316191973242624dadbad32f631ff9",
+    "extractor": "sexu.py",
+    "url": "http:\/\/sexu.com\/",
+    "htmlError": false,
+    "title": "HD Porn Videos & Free XXX Tube Movies at Sexu",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?sexu\\.com\/(?P<id>\\d+)"
+    ],
+    "+18": 0.6883116883116883,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

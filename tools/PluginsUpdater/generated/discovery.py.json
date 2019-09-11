@@ -1,0 +1,15 @@
+{
+    "sha1": "8177a573ffb18fe16a3539d20a050d56867890c9",
+    "extractor": "discovery.py",
+    "url": "https:\/\/go.discovery.com\/",
+    "htmlError": false,
+    "title": "Discovery Channel",
+    "matchers": [
+        "(?x)https?:\/\/\n(?P<site>\n(?:(?:www|go)\\.)?discovery|\n(?:www\\.)?\n(?:\ninvestigationdiscovery|\ndiscoverylife|\nanimalplanet|\nahctv|\ndestinationamerica|\nsciencechannel|\ntlc|\nvelocity\n)|\nwatch\\.\n(?:\nhgtv|\nfoodnetwork|\ntravelchannel|\ndiynetwork|\ncookingchanneltv|\nmotortrend\n)\n)\\.com\/tv-shows\/(?P<show_slug>[^\/]+)\/(?:video|full-episode)s\/(?P<id>[^.\/?#]+)"
+    ],
+    "+18": 0.05194805194805195,
+    "music": 0,
+    "faviconUrl": "https:\/\/go.discovery.com\/\/media\/images\/favicon.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

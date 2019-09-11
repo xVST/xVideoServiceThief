@@ -1,0 +1,15 @@
+{
+    "sha1": "01800362e2d486585c41eb8b5d5a98d65c313d11",
+    "extractor": "parliamentliveuk.py",
+    "url": "http:\/\/parliamentlive.tv\/",
+    "htmlError": false,
+    "title": "parliamentlive.tv",
+    "matchers": [
+        "(?i)https?:\/\/(?:www\\.)?parliamentlive\\.tv\/Event\/Index\/(?P<id>[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

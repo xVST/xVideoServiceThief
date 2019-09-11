@@ -1,0 +1,15 @@
+{
+    "sha1": "d85f72438b3170cb8df7c8e6db4faab9c7fe9900",
+    "extractor": "ndtv.py",
+    "url": "https:\/\/khabar.ndtv.com\/",
+    "htmlError": false,
+    "title": "Hindi News, Latest News in Hindi, Breaking News, \u0939\u093f\u0928\u094d\u0926\u0940 \u0938\u092e\u093e\u091a\u093e\u0930 - NDTV India",
+    "matchers": [
+        "https?:\/\/(?:[^\/]+\\.)?ndtv\\.com\/(?:[^\/]+\/)*videos?\/?(?:[^\/]+\/)*[^\/?^&]+-(?P<id>\\d+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

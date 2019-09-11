@@ -1,0 +1,15 @@
+{
+    "sha1": "112665f1f3fd64fd602c7a879f14bf791d644bdd",
+    "extractor": "arkena.py",
+    "url": "https:\/\/play.arkena.com\/",
+    "htmlError": false,
+    "title": "play.arkena.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\nvideo\\.arkena\\.com\/play2\/embed\/player\\?|\nplay\\.arkena\\.com\/(?:config|embed)\/avp\/v\\d\/player\/media\/(?P<id>[^\/]+)\/[^\/]+\/(?P<account_id>\\d+)\n)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

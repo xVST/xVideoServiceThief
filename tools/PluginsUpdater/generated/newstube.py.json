@@ -1,0 +1,15 @@
+{
+    "sha1": "cea4f9f691d9953f4c602c4863ec06d6b754b0b9",
+    "extractor": "newstube.py",
+    "url": "http:\/\/www.newstube.ru\/",
+    "htmlError": false,
+    "title": "\u00d0\u0092\u00d0\u00b8\u00d0\u00b4\u00d0\u00b5\u00d0\u00be \u00d0\u00bd\u00d0\u00be\u00d0\u00b2\u00d0\u00be\u00d1\u0081\u00d1\u0082\u00d0\u00b8 | \u00d1\u0081\u00d0\u00bc\u00d0\u00be\u00d1\u0082\u00d1\u0080\u00d0\u00b5\u00d1\u0082\u00d1\u008c \u00d0\u00bd\u00d0\u00b0 Newstube.ru",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?newstube\\.ru\/media\/(?P<id>.+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": "http:\/\/www.newstube.ru\/\/\/static.newstube.ru\/w\/3\/images\/favicon.png",
+    "faviconData": null,
+    "version": "1.2"
+}

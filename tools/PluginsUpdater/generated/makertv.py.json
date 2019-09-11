@@ -1,0 +1,15 @@
+{
+    "sha1": "cc7186c13fc994b0d5e99543722f4a4ed260969a",
+    "extractor": "makertv.py",
+    "url": "http:\/\/www.maker.tv\/",
+    "htmlError": false,
+    "title": "www.maker.tv",
+    "matchers": [
+        "https?:\/\/(?:(?:www\\.)?maker\\.tv\/(?:[^\/]+\/)*video|makerplayer\\.com\/embed\/maker)\/(?P<id>[a-zA-Z0-9]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

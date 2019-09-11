@@ -1,0 +1,15 @@
+{
+    "sha1": "69b3ba25629d27458de7a57379a19d2c04789e04",
+    "extractor": "xuite.py",
+    "url": "http:\/\/vlog.xuite.net\/",
+    "htmlError": false,
+    "title": "vlog.xuite.net",
+    "matchers": [
+        "https?:\/\/vlog\\.xuite\\.net\/(?:play|embed)\/(?P<id>%s)%_REGEX_BASE64"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

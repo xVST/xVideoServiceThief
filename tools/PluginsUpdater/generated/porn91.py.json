@@ -1,0 +1,15 @@
+{
+    "sha1": "49ab178019bed00c4aa086bee5d0728077629a6d",
+    "extractor": "porn91.py",
+    "url": "http:\/\/91porn.com\/",
+    "htmlError": false,
+    "title": "Chinese homemade video",
+    "matchers": [
+        "(?:https?:\/\/)(?:www\\.|)91porn\\.com\/.+?\\?viewkey=(?P<id>[\\w\\d]+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

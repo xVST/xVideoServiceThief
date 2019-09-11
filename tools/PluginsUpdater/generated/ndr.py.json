@@ -1,0 +1,19 @@
+{
+    "sha1": "033a7ea16075ac2f6122b228cb9fb07b011b17ec",
+    "extractor": "ndr.py",
+    "url": "http:\/\/www.ndr.de\/",
+    "htmlError": false,
+    "title": "NDR.de - Das Beste am Norden - Radio - Fernsehen - Nachrichten | NDR.de",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ndr\\.de\/(?:[^\/]+\/)*(?P<id>[^\/?#]+),[\\da-z]+\\.html",
+        "https?:\/\/(?:www\\.)?n-joy\\.de\/(?:[^\/]+\/)*(?:(?P<display_id>[^\/?#]+),)?(?P<id>[\\da-z]+)\\.html",
+        "(?:ndr:(?P<id_s>[\\da-z]+)|https?:\/\/www\\.ndr\\.de\/(?P<id>[\\da-z]+)-ppjson\\.json)",
+        "https?:\/\/(?:www\\.)?ndr\\.de\/(?:[^\/]+\/)*(?P<id>[\\da-z]+)-(?:player|externalPlayer)\\.html",
+        "https?:\/\/(?:www\\.)?n-joy\\.de\/(?:[^\/]+\/)*(?P<id>[\\da-z]+)-(?:player|externalPlayer)_[^\/]+\\.html"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": "http:\/\/www.ndr.de\/\/favicon.ico",
+    "faviconData": "00000100010010100000010018006803000016000000280000001000000020000000010018000000000000000000130b0000130b00000000000000000000663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300663300ffffff663300663300663300663300663300663300663300663300663300663300704111663300663300663300663300ffffff663300663300663300663300663300663300663300663300663300663300ad9277ffffff663300c2ad99ffffff663300ffffffffffffffffffccbbaa855c33ffffffd6c9bb7a4e22ffffffd6c9bbb09478ffffff6a3601ffffffffffff6a3601ffffffc3af99a68667ffffffcdbcaaffffffd7c9bbc3af99ffffff926c45b29678ffffffece5ddffffffffffff6f3b02ffffffb296786f3b02ffffffd9cbbcfffffff5f2eef5f2eeece5dd6f3b02b59979ffffffffffffede6deffffff754004ffffffb59979754004ffffffdaccbcfffffff6f2eedaccbcffffffbfa68aba9c7affffffffffffb1906affffff7d4606ffffffcbb59ba88459ffffffd4c1acffffffe5dacd7d4606ffffffdccebdbda07bffffffceb79c844c08ffffff844c08ffffffffffffffffffccbbaa9d7039ffffffffffffffffffffffffad885a945e1aab814b945e1a8c530aab814bffffffc2a37cab814bab814b945e1a8c530aa3753bab824bab814b945e1a8c530a945a0b945a0b945a0b945a0b945a0bffffff945a0b945a0b945a0b945a0b945a0b945a0b945a0b945a0b945a0b945a0b9b600d9b600d9b600d9b600d9b600dffffff9b600d9b600d9b600d9b600d9b600d9b600d9b600d9b600d9b600d9b600da3660fa3660fa3660fa3660fa3660fffffffa3660fa3660fa3660fa3660fa3660fa3660fa3660fa3660fa3660fa3660fa96b11a96b11a96b11a96b11a96b11ffffffa96b11a96b11a96b11a96b11a96b11a96b11a96b11a96b11a96b11a96b11ae7012ae7012ae7012ae7012ae7012faf5efae7012ae7012ae7012ae7012ae7012ae7012ae7012ae7012ae7012ae7012b27313b27313b27313b27313b27313b27313b27313b27313b27313b27313b27313b27313b27313b27313b27313b273130000313500006f6400002032000074650000696e0000392c0000656e00006e650000746500005052000045530000525f00005645000031350000524f00005353",
+    "version": "1.1"
+}

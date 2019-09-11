@@ -1,0 +1,15 @@
+{
+    "sha1": "ff40e22ecfdd579c970212fdae823b576a8c1f57",
+    "extractor": "cloudflarestream.py",
+    "url": "https:\/\/embed.cloudflarestream.com\/",
+    "htmlError": false,
+    "title": "embed.cloudflarestream.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:watch\\.)?(?:cloudflarestream\\.com|videodelivery\\.net)\/|\nembed\\.(?:cloudflarestream\\.com|videodelivery\\.net)\/embed\/[^\/]+\\.js\\?.*?\\bvideo=\n)\n(?P<id>[\\da-f]+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "499521bd23917e9b1a43ce8551ed8a7f8825ced1",
+    "extractor": "miaopai.py",
+    "url": "http:\/\/www.miaopai.com\/",
+    "htmlError": false,
+    "title": "\u79d2\u62cd-10\u79d2\u62cd\u5927\u7247\uff01\u6700\u6f6e\u6700\u7f8e\u62cd\u6444\u4f53\u9a8c\uff01",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?miaopai\\.com\/show\/(?P<id>[-A-Za-z0-9~_]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/imgaliyuncdn.miaopai.com\/static20131031\/favicon-48.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

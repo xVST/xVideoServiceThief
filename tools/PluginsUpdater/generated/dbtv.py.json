@@ -1,0 +1,15 @@
+{
+    "sha1": "e03630dedf2cbfb8988f237c81bf74ff089b79c1",
+    "extractor": "dbtv.py",
+    "url": "https:\/\/www.dagbladet.no\/",
+    "htmlError": false,
+    "title": "Dagbladet - Virkeligheten overg\u00e5r alt",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?dagbladet\\.no\/video\/(?:(?:embed|(?P<display_id>[^\/]+))\/)?(?P<id>[0-9A-Za-z_-]{11}|[a-zA-Z0-9]{8})"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.14482758620689656,
+    "faviconUrl": "https:\/\/www.dagbladet.no\/\/\/styleguide.dagbladet.no\/assets\/favicon\/dagbladet\/favicon-57.png",
+    "faviconData": null,
+    "version": "1.2"
+}

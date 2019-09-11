@@ -1,0 +1,19 @@
+{
+    "sha1": "feb6c11600fbd89ee759fa81a6ba2e091e6725cc",
+    "extractor": "soundcloud.py",
+    "url": "http:\/\/soundcloud.com\/",
+    "htmlError": false,
+    "title": "soundcloud.com",
+    "matchers": [
+        "(?x)^(?:https?:\/\/)?\n(?:(?:(?:www\\.|m\\.)?soundcloud\\.com\/\n(?!stations\/track)\n(?P<uploader>[\\w\\d-]+)\/\n(?!(?:tracks|albums|sets(?:\/.+?)?|reposts|likes|spotlight)\/?(?:$|[?#]))\n(?P<title>[\\w\\d-]+)\/?\n(?P<token>[^?]+?)?(?:[?].*)?$)\n|(?:api\\.soundcloud\\.com\/tracks\/(?P<track_id>\\d+)\n(?:\/?\\?secret_token=(?P<secret_token>[^&]+))?)\n|(?P<player>(?:w|player|p.)\\.soundcloud\\.com\/player\/?.*?url=.*)\n)\n",
+        "https?:\/\/(?:(?:www|m)\\.)?soundcloud\\.com\/(?P<uploader>[\\w\\d-]+)\/sets\/(?P<slug_title>[\\w\\d-]+)(?:\/(?P<token>[^?\/]+))?",
+        "(?x)\nhttps?:\/\/\n(?:(?:www|m)\\.)?soundcloud\\.com\/\n(?P<user>[^\/]+)\n(?:\/\n(?P<rsrc>tracks|albums|sets|reposts|likes|spotlight)\n)?\n\/?(?:[?#].*)?$\n",
+        "https?:\/\/(?:(?:www|m)\\.)?soundcloud\\.com\/stations\/track\/[^\/]+\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/api\\.soundcloud\\.com\/playlists\/(?P<id>[0-9]+)(?:\/?\\?secret_token=(?P<token>[^&]+?))?$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

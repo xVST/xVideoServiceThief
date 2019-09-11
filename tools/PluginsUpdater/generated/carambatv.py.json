@@ -1,0 +1,16 @@
+{
+    "sha1": "f84fe64d10edfea6713aa6787fb77ee8db7fa6fa",
+    "extractor": "carambatv.py",
+    "url": "http:\/\/video1.carambatv.ru\/",
+    "htmlError": false,
+    "title": "video1.carambatv.ru",
+    "matchers": [
+        "(?:carambatv:|https?:\/\/video1\\.carambatv\\.ru\/v\/)(?P<id>\\d+)",
+        "https?:\/\/carambatv\\.ru\/(?:[^\/]+\/)+(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

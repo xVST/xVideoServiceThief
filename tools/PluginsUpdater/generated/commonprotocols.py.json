@@ -1,0 +1,16 @@
+{
+    "sha1": "47a50dcf63e566c1fe0d65392c396c2ec9821074",
+    "extractor": "commonprotocols.py",
+    "url": "rtmp:\/\/cp44293.edgefcs.net\/",
+    "htmlError": false,
+    "title": "cp44293.edgefcs.net",
+    "matchers": [
+        "(?i)rtmp[est]?:\/\/.+",
+        "(?i)mms:\/\/.+"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

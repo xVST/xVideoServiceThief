@@ -1,0 +1,15 @@
+{
+    "sha1": "0bc069ed3bc2e30c5af8a34e88450fd6867ade43",
+    "extractor": "condenast.py",
+    "url": "http:\/\/video.wired.com\/",
+    "htmlError": false,
+    "title": "WIRED Videos",
+    "matchers": [
+        "(?x)https?:\/\/(?:video|www|player(?:-backend)?)\\.(?:%s)\\.com\/\n(?:\n(?:\nembed(?:js)?|\n(?:script|inline)\/video\n)\/(?P<id>[0-9a-f]{24})(?:\/(?P<player_id>[0-9a-f]{24}))?(?:.+?\\btarget=(?P<target>[^&]+))?|\n(?P<type>watch|series|video)\/(?P<display_id>[^\/?#]+)\n)%'|'.join({.keys())"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "http:\/\/video.wired.com\/\/\/d2auhg88b162pf.cloudfront.net\/assets\/favicon\/wired-765a1fd42e47ecaf61bee6a723d06965.png",
+    "faviconData": null,
+    "version": "1.1"
+}

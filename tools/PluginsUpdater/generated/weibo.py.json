@@ -1,0 +1,16 @@
+{
+    "sha1": "dc7625d7d14d8bacd26aa4f02b18a91d1a30d925",
+    "extractor": "weibo.py",
+    "url": "https:\/\/weibo.com\/",
+    "htmlError": false,
+    "title": "weibo.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?weibo\\.com\/[0-9]+\/(?P<id>[a-zA-Z0-9]+)",
+        "https?:\/\/m\\.weibo\\.cn\/status\/(?P<id>[0-9]+)(\\?.+)?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

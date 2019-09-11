@@ -1,0 +1,15 @@
+{
+    "sha1": "39cf5950770189e1aeb62a8fec9e59180eb4933a",
+    "extractor": "swrmediathek.py",
+    "url": "http:\/\/swrmediathek.de\/",
+    "htmlError": false,
+    "title": "swrmediathek.de",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?swrmediathek\\.de\/(?:content\/)?player\\.htm\\?show=(?P<id>[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "2eb315058d13e666af601530e4e11feffea1423e",
+    "extractor": "ustudio.py",
+    "url": "http:\/\/ustudio.com\/",
+    "htmlError": false,
+    "title": "uStudio - Enterprise Media Solutions",
+    "matchers": [
+        "https?:\/\/(?:(?:www|v1)\\.)?ustudio\\.com\/video\/(?P<id>[^\/]+)\/(?P<display_id>[^\/?#&]+)",
+        "https?:\/\/(?:(?:app|embed)\\.)?ustudio\\.com\/embed\/(?P<uid>[^\/]+)\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": "https:\/\/ustudio.com\/wp-content\/uploads\/2015\/10\/ustudio-favicon.png",
+    "faviconData": "89504e470d0a1a0a0000000d4948445200000010000000100802000000909168360000001974455874536f6674776172650041646f626520496d616765526561647971c9653c000000984944415478da62fc95a9c9400a6062201190ab8149cb8575da35102a5e89908309b20454d1df49835a03270f9cc928ab8953c3bf6b7b18be7f05b1a41499dd7319b9858161cae4160791fdfff619c21478d200aa63f2cfc4e28867f77fb778c3792c70d6df9d934136024de5e4860bfebf7ae2ef825264ed8c68890fe8184679432635b3ff8f6ffc7b74f9ffebdb68f631d23cb50204180071d82e64b2791cd70000000049454e44ae426082",
+    "version": "1.1"
+}

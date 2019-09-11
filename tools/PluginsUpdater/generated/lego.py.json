@@ -1,0 +1,15 @@
+{
+    "sha1": "402aadddb801e2b7e22b6602be6a0d7d63091161",
+    "extractor": "lego.py",
+    "url": "http:\/\/www.lego.com\/",
+    "htmlError": false,
+    "title": "LEGO.com ES  \u2013 Inspirar y desarrollar a los creadores del ma\u00f1ana",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?lego\\.com\/(?P<locale>[^\/]+)\/(?:[^\/]+\/)*videos\/(?:[^\/]+\/)*[^\/?#]+-(?P<id>[0-9a-f]+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

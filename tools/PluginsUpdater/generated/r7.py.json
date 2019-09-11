@@ -1,0 +1,16 @@
+{
+    "sha1": "d24d23515ba56f70b72fedf41abf8deb5673f761",
+    "extractor": "r7.py",
+    "url": "http:\/\/videos.r7.com\/",
+    "htmlError": false,
+    "title": "V\u00c3\u00addeos R7 - Acompanhe o melhor da programa\u00c3\u00a7\u00c3\u00a3o da Record",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:[a-zA-Z]+)\\.r7\\.com(?:\/[^\/]+)+\/idmedia\/|\nnoticias\\.r7\\.com(?:\/[^\/]+)+\/[^\/]+-|\nplayer\\.r7\\.com\/video\/i\/\n)\n(?P<id>[\\da-f]{24})\n",
+        "https?:\/\/(?:[a-zA-Z]+)\\.r7\\.com\/(?:[^\/]+\/)+[^\/?#&]+-(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/assets.r7.com\/assets\/schumi_core\/favicons\/videos.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

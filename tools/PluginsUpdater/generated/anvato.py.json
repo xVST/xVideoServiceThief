@@ -1,0 +1,15 @@
+{
+    "sha1": "49a2f7de51f372ffba6e99354a9eb7ffea43bbb8",
+    "extractor": "anvato.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "anvato:(?P<access_key_or_mcp>[^:]+):(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

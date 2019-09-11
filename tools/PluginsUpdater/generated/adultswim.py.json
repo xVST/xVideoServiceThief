@@ -1,0 +1,15 @@
+{
+    "sha1": "f01dc2542e356ae7b8e7d8f115d05e84e80e93a4",
+    "extractor": "adultswim.py",
+    "url": "http:\/\/adultswim.com\/",
+    "htmlError": false,
+    "title": "Adult Swim",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?adultswim\\.com\/videos\/(?P<show_path>[^\/?#]+)(?:\/(?P<episode_path>[^\/?#]+))?"
+    ],
+    "+18": 0,
+    "music": 0.22758620689655173,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

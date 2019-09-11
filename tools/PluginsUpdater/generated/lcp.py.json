@@ -1,0 +1,16 @@
+{
+    "sha1": "e44ce259e9db74afca0114a1268bd0742fb55b21",
+    "extractor": "lcp.py",
+    "url": "http:\/\/play.lcp.fr\/",
+    "htmlError": false,
+    "title": "play.lcp.fr",
+    "matchers": [
+        "https?:\/\/play\\.lcp\\.fr\/embed\/(?P<id>[^\/]+)\/(?P<account_id>[^\/]+)\/[^\/]+\/[^\/]+",
+        "https?:\/\/(?:www\\.)?lcp\\.fr\/(?:[^\/]+\/)*(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

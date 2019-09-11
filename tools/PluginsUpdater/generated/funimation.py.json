@@ -1,0 +1,15 @@
+{
+    "sha1": "0a82ba4153cdbd1ee3b6942acd42d113c72820dd",
+    "extractor": "funimation.py",
+    "url": "https:\/\/www.funimation.com\/",
+    "htmlError": false,
+    "title": "www.funimation.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?funimation(?:\\.com|now\\.uk)\/shows\/[^\/]+\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

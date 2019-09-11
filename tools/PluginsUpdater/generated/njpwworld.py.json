@@ -1,0 +1,15 @@
+{
+    "sha1": "ab1f7e8defab26b78eeb0bd81e2e2a0ba2769069",
+    "extractor": "njpwworld.py",
+    "url": "http:\/\/njpwworld.com\/",
+    "htmlError": false,
+    "title": "\u975e\u5bfe\u5fdc\u7aef\u672b\u30a8\u30e9\u30fc\uff1aULIZA",
+    "matchers": [
+        "https?:\/\/njpwworld\\.com\/p\/(?P<id>[a-z0-9_]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

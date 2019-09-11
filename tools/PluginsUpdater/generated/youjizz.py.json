@@ -1,0 +1,15 @@
+{
+    "sha1": "46304502ecd9919b874125edc2b2d3d29d68b1c1",
+    "extractor": "youjizz.py",
+    "url": "http:\/\/www.youjizz.com\/",
+    "htmlError": false,
+    "title": "porntube, porn tube, mobile porn, pornotube, you porn, youporn",
+    "matchers": [
+        "https?:\/\/(?:\\w+\\.)?youjizz\\.com\/videos\/(?:[^\/#?]*-(?P<id>\\d+)\\.html|embed\/(?P<embed_id>\\d+))"
+    ],
+    "+18": 0.696969696969697,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

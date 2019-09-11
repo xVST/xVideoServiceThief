@@ -1,0 +1,15 @@
+{
+    "sha1": "0bde89504d50c96d56f7c7045295543e53238644",
+    "extractor": "aliexpress.py",
+    "url": "https:\/\/live.aliexpress.com\/",
+    "htmlError": false,
+    "title": "AliExpress Live",
+    "matchers": [
+        "https?:\/\/live\\.aliexpress\\.com\/live\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/live.aliexpress.com\/\/\/ae01.alicdn.com\/images\/eng\/wholesale\/icon\/aliexpress.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

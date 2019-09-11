@@ -1,0 +1,15 @@
+{
+    "sha1": "4012f4ec82fc8ff36ba65b632013a1f6ea269407",
+    "extractor": "snotr.py",
+    "url": "http:\/\/www.snotr.com\/",
+    "htmlError": false,
+    "title": "Snotr : The ultimate place for great videos!",
+    "matchers": [
+        "http?:\/\/(?:www\\.)?snotr\\.com\/video\/(?P<id>\\d+)\/([\\w]+)"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.snotr.com\/\/\/videos.snotr.com\/images\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

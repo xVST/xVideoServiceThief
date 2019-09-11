@@ -1,0 +1,15 @@
+{
+    "sha1": "69a3ea7d4ed3598726267f2f085e9cdbecba1be7",
+    "extractor": "traileraddict.py",
+    "url": "http:\/\/www.traileraddict.com\/",
+    "htmlError": false,
+    "title": "Trailer Addict - Movie Trailers",
+    "matchers": [
+        "(?:https?:\/\/)?(?:www\\.)?traileraddict\\.com\/(?:trailer|clip)\/(?P<movie>.+?)\/(?P<trailer_name>.+)"
+    ],
+    "+18": 0.021645021645021644,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.traileraddict.com\/\/\/cdn.traileraddict.com\/icons\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

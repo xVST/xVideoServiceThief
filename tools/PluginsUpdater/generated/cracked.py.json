@@ -1,0 +1,15 @@
+{
+    "sha1": "2219d487fb0e8b474b854d485c3b3244450f8757",
+    "extractor": "cracked.py",
+    "url": "http:\/\/www.cracked.com\/",
+    "htmlError": false,
+    "title": "Cracked.com - America's Only Humor Site | Cracked.com | Cracked.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?cracked\\.com\/video_(?P<id>\\d+)_[\\da-z-]+\\.html"
+    ],
+    "+18": 0.1341991341991342,
+    "music": 0.2827586206896552,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

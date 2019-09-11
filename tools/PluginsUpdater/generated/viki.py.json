@@ -1,0 +1,16 @@
+{
+    "sha1": "d35203ea06c6e59916fd4c67d474d910fb565a87",
+    "extractor": "viki.py",
+    "url": "http:\/\/www.viki.com\/",
+    "htmlError": false,
+    "title": "www.viki.com",
+    "matchers": [
+        "%s(?:videos|player)\/(?P<id>[0-9]+v)%VikiBaseIE.https?:\/\/(?:www\\.)?viki\\.(?:com|net|mx|jp|fr)\/",
+        "%s(?:tv|news|movies|artists)\/(?P<id>[0-9]+c)%VikiBaseIE.https?:\/\/(?:www\\.)?viki\\.(?:com|net|mx|jp|fr)\/"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

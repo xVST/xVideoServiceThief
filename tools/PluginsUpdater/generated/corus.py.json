@@ -1,0 +1,15 @@
+{
+    "sha1": "1ca18a23af1d3eeab25ced9a8b548698bbc150a2",
+    "extractor": "corus.py",
+    "url": "http:\/\/www.hgtv.ca\/",
+    "htmlError": false,
+    "title": "HGTV Canada | Home",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:www\\.)?\n(?P<domain>\n(?:globaltv|etcanada)\\.com|\n(?:hgtv|foodnetwork|slice|history|showcase|bigbrothercanada)\\.ca\n)\n\/(?:video\/(?:[^\/]+\/)?|(?:[^\/]+\/)+(?:videos\/[a-z0-9-]+-|video\\.html\\?.*?\\bv=))\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0.004329004329004329,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

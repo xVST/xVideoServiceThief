@@ -1,0 +1,15 @@
+{
+    "sha1": "6df0f7a121e011bbc88ae484a16b25659b11def2",
+    "extractor": "jpopsukitv.py",
+    "url": "http:\/\/www.jpopsuki.tv\/",
+    "htmlError": false,
+    "title": "www.jpopsuki.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?jpopsuki\\.tv\/(?:category\/)?video\/[^\/]+\/(?P<id>\\S+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

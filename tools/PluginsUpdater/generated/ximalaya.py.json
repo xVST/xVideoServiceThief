@@ -1,0 +1,16 @@
+{
+    "sha1": "4d3e46f531019ec9bdcce46799e198694ae1ca22",
+    "extractor": "ximalaya.py",
+    "url": "http:\/\/www.ximalaya.com\/",
+    "htmlError": false,
+    "title": "\u00e6\u009c\u0089\u00e5\u00a3\u00b0\u00e5\u00b0\u008f\u00e8\u00af\u00b4,\u00e6\u009c\u0089\u00e5\u00a3\u00b0\u00e4\u00b9\u00a6,\u00e5\u0084\u00bf\u00e7\u00ab\u00a5\u00e6\u0095\u0085\u00e4\u00ba\u008b,\u00e7\u009b\u00b8\u00e5\u00a3\u00b0,\u00e9\u00ac\u00bc\u00e6\u0095\u0085\u00e4\u00ba\u008b\u00e7\u00ad\u0089MP3\u00e6\u009c\u0089\u00e5\u00a3\u00b0\u00e8\u00af\u00bb\u00e7\u0089\u00a9\u00e5\u00b0\u00bd\u00e5\u009c\u00a8\u00e5\u0096\u009c\u00e9\u00a9\u00ac\u00e6\u008b\u0089\u00e9\u009b\u0085FM\u00e5\u009c\u00a8\u00e7\u00ba\u00bf\u00e5\u0090\u00ac\u00e4\u00b9\u00a6\u00e7\u0094\u00b5\u00e5\u008f\u00b0",
+    "matchers": [
+        "https?:\/\/(?:www\\.|m\\.)?ximalaya\\.com\/(?P<uid>[0-9]+)\/sound\/(?P<id>[0-9]+)",
+        "https?:\/\/(?:www\\.|m\\.)?ximalaya\\.com\/(?P<uid>[0-9]+)\/album\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

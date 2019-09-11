@@ -1,0 +1,15 @@
+{
+    "sha1": "2ac8baa4e3bc8dbba3011fc7235ec140a0a2b920",
+    "extractor": "tva.py",
+    "url": "https:\/\/videos.tva.ca\/",
+    "htmlError": false,
+    "title": "videos.tva.ca",
+    "matchers": [
+        "https?:\/\/videos\\.tva\\.ca\/details\/_(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

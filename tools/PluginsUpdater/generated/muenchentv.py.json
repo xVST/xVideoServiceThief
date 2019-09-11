@@ -1,0 +1,15 @@
+{
+    "sha1": "1e0be257d85f92d77dd73ec31769ad6913b0af07",
+    "extractor": "muenchentv.py",
+    "url": "http:\/\/www.muenchen.tv\/",
+    "htmlError": false,
+    "title": "m\u00fcnchen.tv | Aktuelle Nachrichten aus M\u00fcnchen und Bayern",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?muenchen\\.tv\/livestream"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

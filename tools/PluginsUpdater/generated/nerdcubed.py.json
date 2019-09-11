@@ -1,0 +1,15 @@
+{
+    "sha1": "9f6f4b88f1b7cc5a06254277cdc9f6b23d296f0a",
+    "extractor": "nerdcubed.py",
+    "url": "http:\/\/www.nerdcubed.co.uk\/",
+    "htmlError": false,
+    "title": "www.nerdcubed.co.uk",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?nerdcubed\\.co\\.uk\/feed\\.json"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

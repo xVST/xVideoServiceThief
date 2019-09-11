@@ -1,0 +1,19 @@
+{
+    "sha1": "994a8f438698eb8e3dc980e9951372f72b389dab",
+    "extractor": "mtv.py",
+    "url": "http:\/\/media.mtvnservices.com\/",
+    "htmlError": false,
+    "title": "media.mtvnservices.com",
+    "matchers": [
+        "https?:\/\/media\\.mtvnservices\\.com\/embed\/(?P<mgid>.+?)(\\?|\/|$)",
+        "https?:\/\/(?:www\\.)?mtv\\.com\/(?:video-clips|(?:full-)?episodes)\/(?P<id>[^\/?#.]+)",
+        "https?:\/\/(?:www\\.)?mtv81\\.com\/videos\/(?P<id>[^\/?#.]+)",
+        "(?x)^https?:\/\/\n(?:(?:www\\.)?mtv\\.com\/videos\/.+?\/(?P<videoid>[0-9]+)\/[^\/]+$|\nm\\.mtv\\.com\/videos\/video\\.rbml\\?.*?id=(?P<mgid>[^&]+))",
+        "https?:\/\/(?:www\\.)?mtv\\.de\/(?:artists|shows|news)\/(?:[^\/]+\/)*(?P<id>\\d+)-[^\/#?]+\/*(?:[#?].*)?$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

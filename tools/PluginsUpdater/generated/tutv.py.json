@@ -1,0 +1,15 @@
+{
+    "sha1": "5420428706bfda20f72a36304a5abe964e9dae76",
+    "extractor": "tutv.py",
+    "url": "http:\/\/tu.tv\/",
+    "htmlError": false,
+    "title": "tu.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tu\\.tv\/videos\/(?P<id>[^\/?]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

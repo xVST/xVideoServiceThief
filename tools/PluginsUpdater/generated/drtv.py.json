@@ -1,0 +1,16 @@
+{
+    "sha1": "455537b699274665d09e64096423362451fd8f1f",
+    "extractor": "drtv.py",
+    "url": "https:\/\/www.dr.dk\/",
+    "htmlError": false,
+    "title": "DR | TV, radio, nyheder og meget mere",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?dr\\.dk\/(?:tv\/se|nyheder|radio(?:\/ondemand)?)\/(?:[^\/]+\/)*(?P<id>[\\da-z-]+)(?:[\/#?]|$)",
+        "https?:\/\/(?:www\\.)?dr\\.dk\/(?:tv|TV)\/live\/(?P<id>[\\da-z-]+)"
+    ],
+    "+18": 0.12987012987012986,
+    "music": 0.2827586206896552,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

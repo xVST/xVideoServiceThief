@@ -1,0 +1,15 @@
+{
+    "sha1": "e1b92cd013674fc3587d525a86dc5f0eab9c2187",
+    "extractor": "dropbox.py",
+    "url": "https:\/\/www.dropbox.com\/",
+    "htmlError": false,
+    "title": "Dropbox",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?dropbox[.]com\/sh?\/(?P<id>[a-zA-Z0-9]{15})\/.*"
+    ],
+    "+18": 0.021645021645021644,
+    "music": 0.2,
+    "faviconUrl": "https:\/\/cfl.dropboxstatic.com\/static\/images\/favicon-vflUeLeeY.ico",
+    "faviconData": "89504e470d0a1a0a0000000d4948445200000020000000200806000000737a7af40000014a4944415478daedd7314e025114856123133b6288b5c1841d6842c31eac28089d1bb03016ae413b2b2b750d14c6c22d4861e1062c08b606a8e4f9c79cee212f778e1626dce49f6266be2926cccc636b333fce49ead093eab83e022bbaa00525b5d0becaf525dca517a12c1debfa3e874dbaa625a5424b9ddbb4bdf031bd518a85c1da9ecd297d043161b0b6d75dd8a751008fbe0de3f9fcb7d0a7c91a38a17ee62c9f5f64976e5660f6714ce3fbf2857af4aa7a65f0cb1ed4a27bbaa3564d7f1bf6c2039a5252531af8be0cdbf42094a5636ddfe7b0416734a35468a6731bb6173ea4674ab13058dbb3b9a4cf1026992bcf6375178e681cc063991d55cbaffa8e9fd37c0d9ceb9c2a7bce837edd9370408f39661fc74a6fbaa20f3ccb437a57c3f0bb3ef7f101eea97a5f3b796761ba6d7fefcdf1574ceef86b3e7ffc55af3ffebaffefff396de6bfce172bc470d25f67e02b0000000049454e44ae426082",
+    "version": "1.1"
+}

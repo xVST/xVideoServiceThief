@@ -1,0 +1,15 @@
+{
+    "sha1": "c949139cec46da1f252025d3f2198864fd3edcab",
+    "extractor": "rudo.py",
+    "url": "http:\/\/rudo.video\/",
+    "htmlError": false,
+    "title": "rudo.video",
+    "matchers": [
+        "https?:\/\/rudo\\.video\/vod\/(?P<id>[0-9a-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

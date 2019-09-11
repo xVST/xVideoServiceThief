@@ -1,0 +1,15 @@
+{
+    "sha1": "c1b2f5104f315e4f221dfe37e7d1a5aa37f16474",
+    "extractor": "krasview.py",
+    "url": "http:\/\/krasview.ru\/",
+    "htmlError": false,
+    "title": "krasview.ru",
+    "matchers": [
+        "https?:\/\/krasview\\.ru\/(?:video|embed)\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

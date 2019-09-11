@@ -1,0 +1,15 @@
+{
+    "sha1": "da295ddba0c3e66abb9376618fc970582b2f3ef5",
+    "extractor": "nfl.py",
+    "url": "http:\/\/www.nfl.com\/",
+    "htmlError": false,
+    "title": "NFL.com - Official Site of the National Football League | NFL.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?P<host>\n(?:www\\.)?\n(?:\n(?:\nnfl|\nbuffalobills|\nmiamidolphins|\npatriots|\nnewyorkjets|\nbaltimoreravens|\nbengals|\nclevelandbrowns|\nsteelers|\nhoustontexans|\ncolts|\njaguars|\ntitansonline|\ndenverbroncos|\nkcchiefs|\nraiders|\nchargers|\ndallascowboys|\ngiants|\nphiladelphiaeagles|\nredskins|\nchicagobears|\ndetroitlions|\npackers|\nvikings|\natlantafalcons|\npanthers|\nneworleanssaints|\nbuccaneers|\nazcardinals|\nstlouisrams|\n49ers|\nseahawks\n)\\.com|\n.+?\\.clubs\\.nfl\\.com\n)\n)\/\n(?:.+?\/)*\n(?P<id>[^\/#?&]+)\n"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "c6adb4e34d4d529c65c930921fb6a806e67845c8",
+    "extractor": "worldstarhiphop.py",
+    "url": "http:\/\/www.worldstarhiphop.com\/",
+    "htmlError": false,
+    "title": "Worldstarhiphop: Breaking News | Music Videos | Entertainment News | Hip Hop News",
+    "matchers": [
+        "https?:\/\/(?:www|m)\\.worldstar(?:candy|hiphop)\\.com\/(?:videos|android)\/video\\.php\\?.*?\\bv=(?P<id>[^&]+)"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0.2482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

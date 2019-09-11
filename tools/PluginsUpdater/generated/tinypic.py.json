@@ -1,0 +1,15 @@
+{
+    "sha1": "74f5a7f0d9c30849fee4b82d019ed3351c2d9dc0",
+    "extractor": "tinypic.py",
+    "url": "http:\/\/tinypic.com\/",
+    "htmlError": false,
+    "title": "TinyPic - Free Image Hosting, Photo Sharing & Video Hosting",
+    "matchers": [
+        "https?:\/\/(?:.+?\\.)?tinypic\\.com\/player\\.php\\?v=(?P<id>[^&]+)&s=\\d+"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

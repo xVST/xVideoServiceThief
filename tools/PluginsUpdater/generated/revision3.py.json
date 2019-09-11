@@ -1,0 +1,16 @@
+{
+    "sha1": "0177e099260016b08c37c5e217dae5b73ef8c48e",
+    "extractor": "revision3.py",
+    "url": "http:\/\/api.seekernetwork.com\/",
+    "htmlError": false,
+    "title": "api.seekernetwork.com",
+    "matchers": [
+        "(?:revision3:(?:(?P<playlist_type>[^:]+):)?|https?:\/\/(?:(?:(?:www|embed)\\.)?(?:revision3|animalist)|(?:(?:api|embed)\\.)?seekernetwork)\\.com\/player\/embed\\?videoId=)(?P<playlist_id>\\d+)",
+        "https?:\/\/(?:www\\.)?(?P<domain>(?:revision3|animalist)\\.com)\/(?P<id>[^\/]+(?:\/[^\/?#]+)?)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

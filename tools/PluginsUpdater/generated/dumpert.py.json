@@ -1,0 +1,15 @@
+{
+    "sha1": "5286a98cf4dc0f297c81bebf6e0d1bf5893187e6",
+    "extractor": "dumpert.py",
+    "url": "http:\/\/www.dumpert.nl\/",
+    "htmlError": false,
+    "title": "dumpert.nl",
+    "matchers": [
+        "(?P<protocol>https?):\/\/(?:www\\.)?dumpert\\.nl\/(?:mediabase|embed)\/(?P<id>[0-9]+\/[0-9a-zA-Z]+)"
+    ],
+    "+18": 0.03463203463203463,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

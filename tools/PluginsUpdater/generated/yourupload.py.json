@@ -1,0 +1,15 @@
+{
+    "sha1": "b0c9c748404429f9d8e21476415a101daf75a877",
+    "extractor": "yourupload.py",
+    "url": "http:\/\/yourupload.com\/",
+    "htmlError": false,
+    "title": "Video Upload, MP4 Upload, Audio Upload, Image Upload at YourUpload",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?:yourupload\\.com\/(?:watch|embed)|embed\\.yourupload\\.com)\/(?P<id>[A-Za-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.1103448275862069,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

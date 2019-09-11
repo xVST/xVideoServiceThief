@@ -1,0 +1,16 @@
+{
+    "sha1": "eaa40f21de3bf9f443788967c0d33e4bf78933a7",
+    "extractor": "openload.py",
+    "url": "https:\/\/openload.co\/",
+    "htmlError": false,
+    "title": "openload | share free without limits",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?P<host>\n(?:www\\.)?\n%s\n)\/\n(?:f|embed)\/\n(?P<id>[a-zA-Z0-9-_]+)\n%(?:verystream\\.com|woof\\.tube)",
+        "(?x)\nhttps?:\/\/\n(?P<host>\n(?:www\\.)?\n%s\n)\/\n(?:stream|e)\/\n(?P<id>[a-zA-Z0-9-_]+)\n%(?:verystream\\.com|woof\\.tube)"
+    ],
+    "+18": 0,
+    "music": 0.1103448275862069,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

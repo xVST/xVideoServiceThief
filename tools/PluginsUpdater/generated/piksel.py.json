@@ -1,0 +1,15 @@
+{
+    "sha1": "5faad6fe5f0ee31bb4a5dca67b86ee1f3c804a1c",
+    "extractor": "piksel.py",
+    "url": "http:\/\/player.piksel.com\/",
+    "htmlError": false,
+    "title": "player.piksel.com",
+    "matchers": [
+        "https?:\/\/player\\.piksel\\.com\/v\/(?P<id>[a-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

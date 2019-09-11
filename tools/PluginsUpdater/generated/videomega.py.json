@@ -1,0 +1,15 @@
+{
+    "sha1": "55c6ee6284f6ce9009753552049388e4f72b28d1",
+    "extractor": "videomega.py",
+    "url": "http:\/\/videomega.tv\/",
+    "htmlError": false,
+    "title": "videomega.tv",
+    "matchers": [
+        "(?:videomega:|https?:\/\/(?:www\\.)?videomega\\.tv\/(?:(?:view|iframe|cdn)\\.php)?\\?ref=)(?P<id>[A-Za-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,18 @@
+{
+    "sha1": "fd12e284197fbd7b6a34aa31faf033265f86fd1e",
+    "extractor": "onet.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "onetmvp:(?P<id>\\d+\\.\\d+)",
+        "https?:\/\/(?:www\\.)?onet\\.tv\/[a-z]\/[a-z]+\/(?P<display_id>[0-9a-z-]+)\/(?P<id>[0-9a-z]+)",
+        "https?:\/\/(?:www\\.)?onet\\.tv\/[a-z]\/(?P<id>[a-z]+)(?:[?#]|$)",
+        "https?:\/\/(?:[^\/]+\\.)?(?:onet|businessinsider\\.com|plejada)\\.pl\/(?:[^\/]+\/)+(?P<id>[0-9a-z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

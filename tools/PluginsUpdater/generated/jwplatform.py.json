@@ -1,0 +1,15 @@
+{
+    "sha1": "33243f6de7579380520883051e15f2938afacad3",
+    "extractor": "jwplatform.py",
+    "url": "http:\/\/content.jwplatform.com\/",
+    "htmlError": false,
+    "title": "content.jwplatform.com",
+    "matchers": [
+        "(?:https?:\/\/(?:content\\.jwplatform|cdn\\.jwplayer)\\.com\/(?:(?:feed|player|thumb|preview|video)s|jw6|v2\/media)\/|jwplatform:)(?P<id>[a-zA-Z0-9]{8})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

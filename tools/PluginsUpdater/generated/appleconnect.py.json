@@ -1,0 +1,15 @@
+{
+    "sha1": "b055d1782360080fe09b90351507a3d8b7afc1ad",
+    "extractor": "appleconnect.py",
+    "url": "https:\/\/itunes.apple.com\/",
+    "htmlError": false,
+    "title": "iTunes - Apple",
+    "matchers": [
+        "https?:\/\/itunes\\.apple\\.com\/\\w{0,2}\/?post\/idsa\\.(?P<id>[\\w-]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

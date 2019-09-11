@@ -1,0 +1,15 @@
+{
+    "sha1": "9849436162a2d2bf2be1c1f65b150f0a18e088a5",
+    "extractor": "streetvoice.py",
+    "url": "http:\/\/streetvoice.com\/",
+    "htmlError": false,
+    "title": "StreetVoice",
+    "matchers": [
+        "https?:\/\/(?:.+?\\.)?streetvoice\\.com\/[^\/]+\/songs\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.12413793103448276,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

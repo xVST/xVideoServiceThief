@@ -1,0 +1,16 @@
+{
+    "sha1": "63369cdaf7efe5d005b62bd7ec3b7d4267e16bd0",
+    "extractor": "aenetworks.py",
+    "url": "http:\/\/www.history.com\/",
+    "htmlError": false,
+    "title": "Historia",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:www\\.)?\n(?P<domain>\n(?:history(?:vault)?|aetv|mylifetime|lifetimemovieclub)\\.com|\nfyi\\.tv\n)\/\n(?:\nshows\/(?P<show_path>[^\/]+(?:\/[^\/]+){0,2})|\nmovies\/(?P<movie_display_id>[^\/]+)(?:\/full-movie)?|\nspecials\/(?P<special_display_id>[^\/]+)\/(?:full-special|preview-)|\ncollections\/[^\/]+\/(?P<collection_display_id>[^\/]+)\n)\n",
+        "https?:\/\/(?:www\\.)?history\\.com\/topics\/[^\/]+\/(?P<id>[\\w+-]+?)-video"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/canalhistoria.es\/wp-content\/uploads\/2016\/03\/favicon.ico",
+    "faviconData": "0000010001001010100001000400280100001600000028000000100000002000000001000400000000008000000000000000000000001000000000000000000000002400d1000c7ccf00009de800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000222222002222330002223000022230000023300002230000002330000223000000233000022300000023300002230000002332222223000000232222222300000023333332230000002330000223000000233000022300000023300002230000023333002333300000000000000000000000000ffff000081810000c3c30000e3c70000e3c70000e3c70000e3c70000e0070000e0070000e0070000e3c70000e3c70000e3c70000c1830000ffff0000",
+    "version": "1.2"
+}

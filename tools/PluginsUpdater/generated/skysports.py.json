@@ -1,0 +1,15 @@
+{
+    "sha1": "3651181760ce74b19882111bf2f6313e3ccb8871",
+    "extractor": "skysports.py",
+    "url": "http:\/\/www.skysports.com\/",
+    "htmlError": false,
+    "title": "Sky Sports - Sports News, Transfers, Scores | Watch Live Sport",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?skysports\\.com\/watch\/video\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0.021645021645021644,
+    "music": 0.2620689655172414,
+    "faviconUrl": "http:\/\/www.skysports.com\/\/assets\/favicon.ico",
+    "faviconData": "89504e470d0a1a0a0000000d494844520000001000000010080200000090916836000000194944415478016360502bc28a5e31496145c358c3a886510d00a876cf0129eba2e10000000049454e44ae426082",
+    "version": "1.1"
+}

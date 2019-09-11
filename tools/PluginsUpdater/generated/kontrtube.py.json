@@ -1,0 +1,15 @@
+{
+    "sha1": "2a1e08360ca7d437fa1ca12a88c928140ff7daf1",
+    "extractor": "kontrtube.py",
+    "url": "http:\/\/www.kontrtube.ru\/",
+    "htmlError": false,
+    "title": "\u041d\u043e\u0432\u043e\u0441\u0442\u0438 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0438, \u0441\u043f\u043e\u0440\u0442\u0430 | \u041c\u0438\u0440\u043e\u0432\u044b\u0435 \u0442\u0440\u0435\u043d\u0434\u044b | Bucha News",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?kontrtube\\.ru\/videos\/(?P<id>\\d+)\/(?P<display_id>[^\/]+)\/"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/i0.wp.com\/www.bucha-online.org.ua\/wp-content\/uploads\/2015\/03\/\u043d\u043e\u0432\u043e\u0441\u0442\u044c-55055c7cv1_site_icon.png?fit=32%2C32",
+    "faviconData": null,
+    "version": "1.1"
+}

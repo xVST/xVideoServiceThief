@@ -1,0 +1,15 @@
+{
+    "sha1": "231d5a2c81cc18a06dca2c959b887819d4e7493c",
+    "extractor": "tfo.py",
+    "url": "http:\/\/www.tfo.org\/",
+    "htmlError": false,
+    "title": "TFO \u2013 vid\u00e9os pour enfants, chansons et jeux, films et s\u00e9ries",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tfo\\.org\/(?:en|fr)\/(?:[^\/]+\/){2}(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

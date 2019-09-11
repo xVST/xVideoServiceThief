@@ -1,0 +1,15 @@
+{
+    "sha1": "10a9f8fae0199f21549c69dca1f2ebe97516aea0",
+    "extractor": "kaltura.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "(?x)\n(?:\nkaltura:(?P<partner_id>\\d+):(?P<id>[0-9a-z_]+)|\nhttps?:\/\/\n(:?(?:www|cdnapi(?:sec)?)\\.)?kaltura\\.com(?::\\d+)?\/\n(?:\n(?:\n#flashplayer\nindex\\.php\/(?:kwidget|extwidget\/preview)|\n#html5player\nhtml5\/html5lib\/[^\/]+\/mwEmbedFrame\\.php\n)\n)(?:\/(?P<path>[^?]+))?(?:\\?(?P<query>.*))?\n)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

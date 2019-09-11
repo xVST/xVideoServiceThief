@@ -1,0 +1,15 @@
+{
+    "sha1": "dd8d87f1c32be8e21da505bdc1da139c24a1699f",
+    "extractor": "hitrecord.py",
+    "url": "https:\/\/hitrecord.org\/",
+    "htmlError": false,
+    "title": "HITRECORD",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?hitrecord\\.org\/records\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

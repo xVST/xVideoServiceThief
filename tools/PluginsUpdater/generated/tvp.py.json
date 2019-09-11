@@ -1,0 +1,17 @@
+{
+    "sha1": "8c6fe5c9816fa48d1846893207796ff422ebaf88",
+    "extractor": "tvp.py",
+    "url": "https:\/\/vod.tvp.pl\/",
+    "htmlError": false,
+    "title": "Vod.tvp.pl - Telewizja Polska S.A.",
+    "matchers": [
+        "https?:\/\/[^\/]+\\.tvp\\.(?:pl|info)\/(?:video\/(?:[^,\\s]*,)*|(?:(?!\\d+\/)[^\/]+\/)*)(?P<id>\\d+)",
+        "(?:tvp:|https?:\/\/[^\/]+\\.tvp\\.(?:pl|info)\/sess\/tvplayer\\.php\\?.*?object_id=)(?P<id>\\d+)",
+        "https?:\/\/vod\\.tvp\\.pl\/website\/(?P<display_id>[^,]+),(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.10344827586206896,
+    "faviconUrl": "https:\/\/vod.tvp.pl\/\/\/s.tvp.pl\/files\/vod.tvp.pl\/img\/favicon\/favicon-16x16.png",
+    "faviconData": null,
+    "version": "1.2"
+}

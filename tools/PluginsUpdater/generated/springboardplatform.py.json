@@ -1,0 +1,15 @@
+{
+    "sha1": "6eb0a04259db2625836eb2bb82437ca941959693",
+    "extractor": "springboardplatform.py",
+    "url": "http:\/\/cms.springboardplatform.com\/",
+    "htmlError": false,
+    "title": "cms.springboardplatform.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\ncms\\.springboardplatform\\.com\/\n(?:\n(?:previews|embed_iframe)\/(?P<index>\\d+)\/video\/(?P<id>\\d+)|\nxml_feeds_advanced\/index\/(?P<index_2>\\d+)\/rss3\/(?P<id_2>\\d+)\n)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

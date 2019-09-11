@@ -1,0 +1,16 @@
+{
+    "sha1": "e97fc8d74a3231953e5054a49233c6a60b03871a",
+    "extractor": "polskieradio.py",
+    "url": "http:\/\/www.polskieradio.pl\/",
+    "htmlError": false,
+    "title": "Polskie Radio - najlepsze radio online - Polskie Radio w internecie",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?polskieradio\\.pl\/\\d+\/\\d+\/Artykul\/(?P<id>[0-9]+)",
+        "https?:\/\/(?:www\\.)?polskieradio\\.pl\/\\d+(?:,[^\/]+)?\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

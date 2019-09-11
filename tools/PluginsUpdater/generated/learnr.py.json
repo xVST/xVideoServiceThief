@@ -1,0 +1,15 @@
+{
+    "sha1": "af412b2136edda2c3c5b04dd44446b8f470c906d",
+    "extractor": "learnr.py",
+    "url": "http:\/\/www.learnr.pro\/",
+    "htmlError": false,
+    "title": "",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?learnr\\.pro\/view\/video\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

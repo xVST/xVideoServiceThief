@@ -1,0 +1,15 @@
+{
+    "sha1": "c0b70f2cc3928aa3db2839c4d50e1c42b0c9e9a8",
+    "extractor": "vuclip.py",
+    "url": "http:\/\/m.vuclip.com\/",
+    "htmlError": false,
+    "title": "Vuclip Web Video Search",
+    "matchers": [
+        "https?:\/\/(?:m\\.)?vuclip\\.com\/w\\?.*?cid=(?P<id>[0-9]+)"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

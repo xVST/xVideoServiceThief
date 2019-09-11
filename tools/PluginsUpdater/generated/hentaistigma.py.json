@@ -1,0 +1,15 @@
+{
+    "sha1": "70687f6e5debb9cec96f4e4fa6b77ec7a6c1098f",
+    "extractor": "hentaistigma.py",
+    "url": "http:\/\/hentai.animestigma.com\/",
+    "htmlError": false,
+    "title": "Hentai Stigma | Stream | Watch Hentai Online",
+    "matchers": [
+        "^https?:\/\/hentai\\.animestigma\\.com\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0.12987012987012986,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

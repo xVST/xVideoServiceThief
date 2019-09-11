@@ -1,0 +1,15 @@
+{
+    "sha1": "974274ae26ec78977fbd2558e6f6cb313473624e",
+    "extractor": "playtvak.py",
+    "url": "http:\/\/www.playtvak.cz\/",
+    "htmlError": false,
+    "title": "iDNES KINO (Playtvak.cz)",
+    "matchers": [
+        "https?:\/\/(?:.+?\\.)?(?:playtvak|idnes|lidovky|metro)\\.cz\/.*\\?(?:c|idvideo)=(?P<id>[^&]+)"
+    ],
+    "+18": 0.12987012987012986,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.playtvak.cz\/\/\/1gr.cz\/u\/favicon\/idnes.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

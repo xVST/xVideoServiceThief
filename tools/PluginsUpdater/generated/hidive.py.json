@@ -1,0 +1,15 @@
+{
+    "sha1": "ce8b4911cb58e93dafebfdb68a0c791c773aef13",
+    "extractor": "hidive.py",
+    "url": "https:\/\/www.hidive.com\/",
+    "htmlError": false,
+    "title": "www.hidive.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?hidive\\.com\/stream\/(?P<title>[^\/]+)\/(?P<key>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

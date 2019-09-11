@@ -1,0 +1,15 @@
+{
+    "sha1": "5645997a85d496539c8a64a2b72281e75a3be560",
+    "extractor": "xminus.py",
+    "url": "http:\/\/x-minus.org\/",
+    "htmlError": false,
+    "title": "There is nothing here...",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?x-minus\\.org\/track\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

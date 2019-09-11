@@ -1,0 +1,15 @@
+{
+    "sha1": "a6e446576b49c85e9f777036ec640cd57a8ebc24",
+    "extractor": "cda.py",
+    "url": "http:\/\/www.cda.pl\/",
+    "htmlError": false,
+    "title": "CDA - Spo\u0142eczno\u015b\u0107 cda.pl",
+    "matchers": [
+        "https?:\/\/(?:(?:www\\.)?cda\\.pl\/video|ebd\\.cda\\.pl\/[0-9]+x[0-9]+)\/(?P<id>[0-9a-z]+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.cda.pl\/\/\/scdn.2cda.pl\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

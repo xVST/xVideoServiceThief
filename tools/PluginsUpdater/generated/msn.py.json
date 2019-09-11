@@ -1,0 +1,15 @@
+{
+    "sha1": "38af8205b92138f1e758746a4835a02438c82cde",
+    "extractor": "msn.py",
+    "url": "http:\/\/www.msn.com\/",
+    "htmlError": false,
+    "title": "Hotmail, Outlook, noticias y hor\u00f3scopo en MSN Espa\u00f1a y Microsoft News",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?msn\\.com\/(?:[^\/]+\/)+(?P<display_id>[^\/]+)\/[a-z]{2}-(?P<id>[\\da-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

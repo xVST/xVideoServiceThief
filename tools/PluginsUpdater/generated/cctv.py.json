@@ -1,0 +1,15 @@
+{
+    "sha1": "1b22ea0df848636bf3e2bd65fcbc244a15921af6",
+    "extractor": "cctv.py",
+    "url": "http:\/\/sports.cntv.cn\/",
+    "htmlError": false,
+    "title": "CNTV",
+    "matchers": [
+        "https?:\/\/(?:(?:[^\/]+)\\.(?:cntv|cctv)\\.(?:com|cn)|(?:www\\.)?ncpa-classic\\.com)\/(?:[^\/]+\/)*?(?P<id>[^\/?#&]+?)(?:\/index)?(?:\\.s?html|[?#&]|$)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,18 @@
+{
+    "sha1": "85e3edb2151f5f46024c5a91e15088b9c3fcf19b",
+    "extractor": "rtve.py",
+    "url": "http:\/\/www.rtve.es\/",
+    "htmlError": false,
+    "title": "Noticias de \u00faltima hora, programas y series de televisi\u00f3n - RTVE.es",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?rtve\\.es\/(m\/)?(alacarta\/videos|filmoteca)\/[^\/]+\/[^\/]+\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?rtve\\.es\/infantil\/serie\/(?P<show>[^\/]*)\/video\/(?P<short_title>[^\/]*)\/(?P<id>[0-9]+)\/",
+        "https?:\/\/(?:www\\.)?rtve\\.es\/directo\/(?P<id>[a-zA-Z0-9-]+)",
+        "https?:\/\/(?:www\\.)?rtve\\.es\/television\/[^\/]+\/[^\/]+\/(?P<id>\\d+).shtml"
+    ],
+    "+18": 0,
+    "music": 0.3724137931034483,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

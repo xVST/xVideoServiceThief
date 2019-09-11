@@ -1,0 +1,15 @@
+{
+    "sha1": "f88a7d41d21f5df9a92c000529c8a3ecdd5bb7f7",
+    "extractor": "musicplayon.py",
+    "url": "http:\/\/en.musicplayon.com\/",
+    "htmlError": false,
+    "title": "Music school academy",
+    "matchers": [
+        "https?:\/\/(?:.+?\\.)?musicplayon\\.com\/play(?:-touch)?\\?(?:v|pl=\\d+&play)=(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.1103448275862069,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

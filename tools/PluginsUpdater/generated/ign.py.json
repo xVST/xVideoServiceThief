@@ -1,0 +1,17 @@
+{
+    "sha1": "058451999708a9f2d798f870301c5bbd7eb30e45",
+    "extractor": "ign.py",
+    "url": "http:\/\/www.ign.com\/",
+    "htmlError": false,
+    "title": "www.ign.com",
+    "matchers": [
+        "https?:\/\/.+?\\.ign\\.com\/(?:[^\/]+\/)?(?P<type>videos|show_videos|articles|feature|(?:[^\/]+\/\\d+\/video))(\/.+)?\/(?P<name_or_id>.+)",
+        "https?:\/\/gamevideos\\.1up\\.com\/(?P<type>video)\/id\/(?P<name_or_id>.+)\\.html",
+        "https?:\/\/(?:www\\.)?pcmag\\.com\/(?P<type>videos|article2)(\/.+)?\/(?P<name_or_id>.+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

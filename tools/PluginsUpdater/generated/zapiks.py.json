@@ -1,0 +1,15 @@
+{
+    "sha1": "88d153c3b190b9f0a974320745218bda9da99e64",
+    "extractor": "zapiks.py",
+    "url": "http:\/\/www.zapiks.fr\/",
+    "htmlError": false,
+    "title": "98540 vid\u00e9os sans baballe",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?zapiks\\.(?:fr|com)\/(?:(?:[a-z]{2}\/)?(?P<display_id>.+?)\\.html|index\\.php\\?.*\\bmedia_id=(?P<id>\\d+))"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.1793103448275862,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,17 @@
+{
+    "sha1": "45b4d27d4315b2119bd56f08e849de809641f3db",
+    "extractor": "canvas.py",
+    "url": "https:\/\/mediazone.vrt.be\/",
+    "htmlError": false,
+    "title": "mediazone.vrt.be",
+    "matchers": [
+        "https?:\/\/mediazone\\.vrt\\.be\/api\/v1\/(?P<site_id>canvas|een|ketnet|vrt(?:video|nieuws)|sporza)\/assets\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:www\\.)?(?P<site_id>canvas|een)\\.be\/(?:[^\/]+\/)*(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:www\\.)?vrt\\.be\/(?P<site_id>vrtnu)\/(?:[^\/]+\/)*(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "7d650a50be00d44794fd3a2806f87ca6d3117c32",
+    "extractor": "nzz.py",
+    "url": "http:\/\/www.nzz.ch\/",
+    "htmlError": false,
+    "title": "Startseite - NZZ Nachrichten",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?nzz\\.ch\/(?:[^\/]+\/)*[^\/?#]+-ld\\.(?P<id>\\d+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/www.nzz.ch\/\/\/assets.static-nzz.ch\/nzz-niobe\/assets\/i\/favicons\/favicon-16x16.png",
+    "faviconData": null,
+    "version": "1.2"
+}

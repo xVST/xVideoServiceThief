@@ -1,0 +1,18 @@
+{
+    "sha1": "9690c94e4040fd316028c158dd778b7ecfa4acb9",
+    "extractor": "adobetv.py",
+    "url": "http:\/\/tv.adobe.com\/",
+    "htmlError": false,
+    "title": "Adobe TV",
+    "matchers": [
+        "https?:\/\/tv\\.adobe\\.com\/(?:(?P<language>fr|de|es|jp)\/)?watch\/(?P<show_urlname>[^\/]+)\/(?P<id>[^\/]+)",
+        "https?:\/\/tv\\.adobe\\.com\/(?:(?P<language>fr|de|es|jp)\/)?show\/(?P<id>[^\/]+)",
+        "https?:\/\/tv\\.adobe\\.com\/(?:(?P<language>fr|de|es|jp)\/)?channel\/(?P<id>[^\/]+)(?:\/(?P<category_urlname>[^\/]+))?",
+        "https?:\/\/video\\.tv\\.adobe\\.com\/v\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

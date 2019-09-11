@@ -1,0 +1,15 @@
+{
+    "sha1": "3c5506e70bf1fdfc27fe76b7d99bfbaa0d1b4117",
+    "extractor": "ehow.py",
+    "url": "http:\/\/www.ehow.com\/",
+    "htmlError": false,
+    "title": "eHow | eHow",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ehow\\.com\/[^\/_?]*_(?P<id>[0-9]+)"
+    ],
+    "+18": 0.047619047619047616,
+    "music": 0.22758620689655173,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

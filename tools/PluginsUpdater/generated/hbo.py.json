@@ -1,0 +1,15 @@
+{
+    "sha1": "96aa3cdb8b73cef6f6c11176c913529046842068",
+    "extractor": "hbo.py",
+    "url": "https:\/\/www.hbo.com\/",
+    "htmlError": false,
+    "title": "HBO",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?hbo\\.com\/(?:video|embed)(?:\/[^\/]+)*\/(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0,
+    "music": 0.1103448275862069,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

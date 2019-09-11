@@ -1,0 +1,15 @@
+{
+    "sha1": "5f15628a2e4a1e412d169d6eef797e0243b74bfe",
+    "extractor": "democracynow.py",
+    "url": "http:\/\/www.democracynow.org\/",
+    "htmlError": false,
+    "title": "Democracy Now! | Democracy Now!",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?democracynow\\.org\/(?P<id>[^\\?]*)"
+    ],
+    "+18": 0,
+    "music": 0.2,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

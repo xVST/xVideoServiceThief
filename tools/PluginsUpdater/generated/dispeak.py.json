@@ -1,0 +1,15 @@
+{
+    "sha1": "133fb68c70f12ddc2a10b8b48020ac1e657c45d4",
+    "extractor": "dispeak.py",
+    "url": "http:\/\/evt.dispeak.com\/",
+    "htmlError": false,
+    "title": "evt.dispeak.com",
+    "matchers": [
+        "https?:\/\/(?:s?evt\\.dispeak|events\\.digitallyspeaking)\\.com\/(?:[^\/]+\/)+xml\/(?P<id>[^.]+)\\.xml"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

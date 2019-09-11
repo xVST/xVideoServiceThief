@@ -1,0 +1,18 @@
+{
+    "sha1": "fb741b696993feb65a2956daf9bf7ce33277fb22",
+    "extractor": "smotri.py",
+    "url": "http:\/\/smotri.com\/",
+    "htmlError": false,
+    "title": "Adult Live Broadcast and Online Sex Videochat \u2014 Smotri.com!",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?:smotri\\.com\/video\/view\/\\?id=|pics\\.smotri\\.com\/(?:player|scrubber_custom8)\\.swf\\?file=)(?P<id>v(?P<realvideoid>[0-9]+)[a-z0-9]{4})",
+        "https?:\/\/(?:www\\.)?smotri\\.com\/community\/video\/(?P<id>[0-9A-Za-z_\\-])'",
+        "https?:\/\/(?:www\\.)?smotri\\.com\/user\/(?P<id>[0-9A-Za-z_\\-])'",
+        "https?:\/\/(?:www\\.)?(?P<url>smotri\\.com\/live\/(?P<id>[^\/]+))\/?.*"
+    ],
+    "+18": 0.4805194805194805,
+    "music": 0.2689655172413793,
+    "faviconUrl": "http:\/\/smotri.com\/\/\/i.bongacash.com\/wl\/ia7911669dcc93ee0163345534d61c35e.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "318b133793bc517938a77e01f2ca12c89bb74777",
+    "extractor": "m6.py",
+    "url": "http:\/\/www.m6.fr\/",
+    "htmlError": false,
+    "title": "6play : Replay M6 et direct des \u00e9missions et s\u00e9ries",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?m6\\.fr\/[^\/]+\/videos\/(?P<id>\\d+)-[^\\.]+\\.html"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

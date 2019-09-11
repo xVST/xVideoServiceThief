@@ -1,0 +1,15 @@
+{
+    "sha1": "7913a98ac4a652d12231765d379e43d29e5f1f21",
+    "extractor": "gazeta.py",
+    "url": "http:\/\/www.gazeta.ru\/",
+    "htmlError": false,
+    "title": "\u0413\u043b\u0430\u0432\u043d\u044b\u0435 \u043d\u043e\u0432\u043e\u0441\u0442\u0438 - \u0413\u0430\u0437\u0435\u0442\u0430.Ru",
+    "matchers": [
+        "(?P<url>https?:\/\/(?:www\\.)?gazeta\\.ru\/(?:[^\/]+\/)?video\/(?:main\/)*(?:\\d{4}\/\\d{2}\/\\d{2}\/)?(?P<id>[A-Za-z0-9-_.]+)\\.s?html)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/www.gazeta.ru\/\/\/static.gazeta.ru\/nm2012\/i\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

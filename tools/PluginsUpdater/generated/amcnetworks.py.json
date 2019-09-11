@@ -1,0 +1,15 @@
+{
+    "sha1": "74bb5c40a64e3b26f4d892f2d771acfb508b3f74",
+    "extractor": "amcnetworks.py",
+    "url": "http:\/\/www.ifc.com\/",
+    "htmlError": false,
+    "title": "IFC \u2013 Always On Slightly Off",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?:amc|bbcamerica|ifc|(?:we|sundance)tv)\\.com\/(?:movies|shows(?:\/[^\/]+)+)\/(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.31724137931034485,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "1bcfba37b781222c10fbe59e27f05805a2a14d74",
+    "extractor": "ninenow.py",
+    "url": "https:\/\/www.9now.com.au\/",
+    "htmlError": false,
+    "title": "www.9now.com.au",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?9now\\.com\\.au\/(?:[^\/]+\/){2}(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

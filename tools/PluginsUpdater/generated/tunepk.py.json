@@ -1,0 +1,15 @@
+{
+    "sha1": "200b5bf7998e49bd32b11b249904ca3a5de46f6a",
+    "extractor": "tunepk.py",
+    "url": "https:\/\/tune.pk\/",
+    "htmlError": false,
+    "title": "Tune.pk",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:www\\.)?tune\\.pk\/(?:video\/|player\/embed_player.php?.*?\\bvid=)|\nembed\\.tune\\.pk\/play\/\n)\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

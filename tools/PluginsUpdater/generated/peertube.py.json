@@ -1,0 +1,15 @@
+{
+    "sha1": "b6ca52041f55bacfed2c2db169cd52b311aa69af",
+    "extractor": "peertube.py",
+    "url": "https:\/\/peertube.moe\/",
+    "htmlError": false,
+    "title": "peertube.moe",
+    "matchers": [
+        "(?x)\n(?:\npeertube:(?P<host>[^:]+):|\nhttps?:\/\/(?P<host_2>%s)\/(?:videos\/(?:watch|embed)|api\/v\\d\/videos)\/\n)\n(?P<id>%s)\n%(',[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\da-fA-F]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

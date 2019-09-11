@@ -1,0 +1,16 @@
+{
+    "sha1": "e1b876bf195c1dd4d73e8efbd438950b56563a3c",
+    "extractor": "audiomack.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "https?:\/\/(?:www\\.)?audiomack\\.com\/song\/(?P<id>[\\w\/-]+)",
+        "https?:\/\/(?:www\\.)?audiomack\\.com\/album\/(?P<id>[\\w\/-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

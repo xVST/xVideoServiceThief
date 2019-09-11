@@ -1,0 +1,16 @@
+{
+    "sha1": "254a14e6a34976d5a9575bf2ef03e564c54262e4",
+    "extractor": "bambuser.py",
+    "url": "http:\/\/bambuser.com\/",
+    "htmlError": false,
+    "title": "Press Play On Your Online Sales",
+    "matchers": [
+        "https?:\/\/bambuser\\.com\/v\/(?P<id>\\d+)",
+        "https?:\/\/bambuser\\.com\/channel\/(?P<user>.*?)(?:\/|#|\\?|$)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "http:\/\/bambuser.com\/.\/assets\/images\/favicons\/favicon.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

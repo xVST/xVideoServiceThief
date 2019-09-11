@@ -1,0 +1,15 @@
+{
+    "sha1": "99af1618c0546545bfca6a1430d46bc65f244766",
+    "extractor": "naver.py",
+    "url": "http:\/\/tv.naver.com\/",
+    "htmlError": false,
+    "title": "\u00eb\u0084\u00a4\u00ec\u009d\u00b4\u00eb\u00b2\u0084TV",
+    "matchers": [
+        "https?:\/\/(?:m\\.)?tv(?:cast)?\\.naver\\.com\/v\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "dfe6d8be581e79970a24a65468938925ef16ccdf",
+    "extractor": "cwtv.py",
+    "url": "http:\/\/cwtv.com\/",
+    "htmlError": false,
+    "title": "cwtv.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?cw(?:tv(?:pr)?|seed)\\.com\/(?:shows\/)?(?:[^\/]+\/)+[^?]*\\?.*\\b(?:play|watch)=(?P<id>[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

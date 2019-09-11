@@ -1,0 +1,15 @@
+{
+    "sha1": "0ae9bda1ba3181d940de8b5684bc31ac2a3295de",
+    "extractor": "wistia.py",
+    "url": "http:\/\/fast.wistia.net\/",
+    "htmlError": false,
+    "title": "Wistia Sign In",
+    "matchers": [
+        "(?:wistia:|https?:\/\/(?:fast\\.)?wistia\\.(?:net|com)\/embed\/(?:iframe|medias)\/)(?P<id>[a-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/fast.wistia.net\/\/favicon-32x32.png",
+    "faviconData": null,
+    "version": "1.2"
+}

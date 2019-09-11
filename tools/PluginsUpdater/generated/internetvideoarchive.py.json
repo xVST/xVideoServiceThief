@@ -1,0 +1,15 @@
+{
+    "sha1": "19bbe8c1a542d4383aa1c9f9ecbaaeac8b6c66df",
+    "extractor": "internetvideoarchive.py",
+    "url": "http:\/\/video.internetvideoarchive.net\/",
+    "htmlError": false,
+    "title": "Internet Video Archive | Movie, TV Show, Game Data",
+    "matchers": [
+        "https?:\/\/video\\.internetvideoarchive\\.net\/(?:player|flash\/players)\/.*?\\?.*?publishedid.*?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/video.internetvideoarchive.net\/\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

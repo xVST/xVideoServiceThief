@@ -1,0 +1,16 @@
+{
+    "sha1": "9cbae4b32d926c89f1461ff1c3c4326bdd7bf0e9",
+    "extractor": "ciscolive.py",
+    "url": "https:\/\/ciscolive.cisco.com\/",
+    "htmlError": false,
+    "title": "Home - Cisco Live Global Events - Cisco",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ciscolive(?:\\.cisco)?\\.com\/[^#]*#\/session\/(?P<id>[^\/?&]+)",
+        "https?:\/\/(?:www\\.)?ciscolive(?:\\.cisco)?\\.com\/(?:global\/)?on-demand-library(?:\\.html|\/)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

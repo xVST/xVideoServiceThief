@@ -1,0 +1,16 @@
+{
+    "sha1": "6fc7fa0a38309e5975cf94b6125ef67ecb8d3184",
+    "extractor": "udemy.py",
+    "url": "https:\/\/www.udemy.com\/",
+    "htmlError": false,
+    "title": "www.udemy.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:[^\/]+\\.)?udemy\\.com\/\n(?:\n[^#]+\\#\/lecture\/|\nlecture\/view\/?\\?lectureId=|\n[^\/]+\/learn\/v4\/t\/lecture\/\n)\n(?P<id>\\d+)\n",
+        "https?:\/\/(?:[^\/]+\\.)?udemy\\.com\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "e857616d13ca78add299bd48f3699a4ef224a696",
+    "extractor": "theplatform.py",
+    "url": "http:\/\/link.theplatform.com\/",
+    "htmlError": false,
+    "title": "link.theplatform.com",
+    "matchers": [
+        "(?x)\n(?:https?:\/\/(?:link|player)\\.theplatform\\.com\/[sp]\/(?P<provider_id>[^\/]+)\/\n(?:(?:(?:[^\/]+\/)+select\/)?(?P<media>media\/(?:guid\/\\d+\/)?)?|(?P<config>(?:[^\/\\?]+\/(?:swf|config)|onsite)\/select\/))?\n|theplatform:)(?P<id>[^\/\\?&]+)",
+        "https?:\/\/feed\\.theplatform\\.com\/f\/(?P<provider_id>[^\/]+)\/(?P<feed_id>[^?\/]+)\\?(?:[^&]+&)*(?P<filter>by(?:Gui|I)d=(?P<id>[^&]+))"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "feecf293d3335878e765172d344fc430fa364c1a",
+    "extractor": "fc2.py",
+    "url": "http:\/\/video.fc2.com\/",
+    "htmlError": false,
+    "title": "\u7121\u6599\u52d5\u753b\u5171\u6709 \u30b9\u30de\u30db\u3067\u518d\u751f\u30fb\u6295\u7a3f\u5bfe\u5fdc - FC2\u52d5\u753b",
+    "matchers": [
+        "^(?:https?:\/\/video\\.fc2\\.com\/(?:[^\/]+\/)*content\/|fc2:)(?P<id>[^\/]+)",
+        "https?:\/\/video\\.fc2\\.com\/flv2\\.swf\\?(?P<query>.+)"
+    ],
+    "+18": 0,
+    "music": 0.12413793103448276,
+    "faviconUrl": "http:\/\/video.fc2.com\/\/\/static.fc2.com\/share\/image\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "74a0285fa6c4a42f3a686993900a0b8dd5a230a8",
+    "extractor": "anitube.py",
+    "url": "http:\/\/www.anitube.se\/",
+    "htmlError": false,
+    "title": "www.anitube.se",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?anitube\\.se\/video\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,17 @@
+{
+    "sha1": "38d616384f693595353129f5a73eeea79c90ab54",
+    "extractor": "safari.py",
+    "url": "https:\/\/www.safaribooksonline.com\/",
+    "htmlError": false,
+    "title": "O'Reilly Media - Technology and Business Training",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:www\\.)?(?:safaribooksonline|(?:learning\\.)?oreilly)\\.com\/\n(?:\nlibrary\/view\/[^\/]+\/(?P<course_id>[^\/]+)\/(?P<part>[^\/?\\#&]+)\\.html|\nvideos\/[^\/]+\/[^\/]+\/(?P<reference_id>[^-]+-[^\/?\\#&]+)\n)\n",
+        "https?:\/\/(?:www\\.)?(?:safaribooksonline|(?:learning\\.)?oreilly)\\.com\/api\/v1\/book\/(?P<course_id>[^\/]+)\/chapter(?:-content)?\/(?P<part>[^\/?#&]+)\\.html",
+        "(?x)\nhttps?:\/\/\n(?:\n(?:www\\.)?(?:safaribooksonline|(?:learning\\.)?oreilly)\\.com\/\n(?:\nlibrary\/view\/[^\/]+|\napi\/v1\/book|\nvideos\/[^\/]+\n)|\ntechbus\\.safaribooksonline\\.com\n)\n\/(?P<id>[^\/]+)\n"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/www.safaribooksonline.com\/\/\/www.oreilly.com\/favicon.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

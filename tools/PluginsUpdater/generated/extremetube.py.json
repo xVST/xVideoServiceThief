@@ -1,0 +1,15 @@
+{
+    "sha1": "37804cae9ebffe48c5f2f4377a5360664542ddd5",
+    "extractor": "extremetube.py",
+    "url": "http:\/\/www.extremetube.com\/",
+    "htmlError": false,
+    "title": "Free Porn Videos: Extreme XXX Porno Movies | Extremetube",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?extremetube\\.com\/(?:[^\/]+\/)?video\/(?P<id>[^\/#?&]+)"
+    ],
+    "+18": 0.8528138528138528,
+    "music": 0.10344827586206896,
+    "faviconUrl": "http:\/\/www.extremetube.com\/\/\/cdn1-static-extremetube.spankcdn.net\/images\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "1aa5c1a06b55eb5af4ffe474c33b2d27e91b0b82",
+    "extractor": "xvideos.py",
+    "url": "http:\/\/www.xvideos.com\/",
+    "htmlError": false,
+    "title": "Free Porn Videos - XVIDEOS.COM",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:www\\.)?xvideos\\.com\/video|\nflashservice\\.xvideos\\.com\/embedframe\/|\nstatic-hw\\.xvideos\\.com\/swf\/xv-player\\.swf\\?.*?\\bid_video=\n)\n(?P<id>[0-9]+)\n"
+    ],
+    "+18": 0.7316017316017316,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.xvideos.com\/\/favicon-32x32.png",
+    "faviconData": null,
+    "version": "1.2"
+}

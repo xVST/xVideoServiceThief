@@ -1,0 +1,15 @@
+{
+    "sha1": "692921a0f6f67c464a33f6e7b09eb28d6389a081",
+    "extractor": "libraryofcongress.py",
+    "url": "http:\/\/loc.gov\/",
+    "htmlError": false,
+    "title": "Home | Library of Congress",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?loc\\.gov\/(?:item\/|today\/cyberlc\/feature_wdesc\\.php\\?.*\\brec=)(?P<id>[0-9a-z_.]+)"
+    ],
+    "+18": 0,
+    "music": 0.2827586206896552,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

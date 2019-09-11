@@ -1,0 +1,15 @@
+{
+    "sha1": "8130ea8105a2c3dc1943a9be545816b44f7b908e",
+    "extractor": "watchindianporn.py",
+    "url": "http:\/\/www.watchindianporn.net\/",
+    "htmlError": false,
+    "title": "Watch Indian Porn - Free Sex Videos Of Hot Indian Girls And Desi Bhabhis Playing On Our Sex Tube",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?watchindianporn\\.net\/(?:[^\/]+\/)*video\/(?P<display_id>[^\/]+)-(?P<id>[a-zA-Z0-9]+)\\.html"
+    ],
+    "+18": 0.38961038961038963,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

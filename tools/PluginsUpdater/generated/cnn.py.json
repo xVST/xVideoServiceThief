@@ -1,0 +1,17 @@
+{
+    "sha1": "295d848c9f9915883728766015599c02a61e9997",
+    "extractor": "cnn.py",
+    "url": "http:\/\/edition.cnn.com\/",
+    "htmlError": false,
+    "title": "CNN International - Breaking News, US News, World News and Video",
+    "matchers": [
+        "(?x)https?:\/\/(?:(?P<sub_domain>edition|www|money)\\.)?cnn\\.com\/(?:video\/(?:data\/.+?|\\?)\/)?videos?\/\n(?P<path>.+?\/(?P<title>[^\/]+?)(?:\\.(?:[a-z\\-]+)|(?=&)))",
+        "https?:\/\/[^\\.]+\\.blogs\\.cnn\\.com\/.+",
+        "https?:\/\/(?:(?:edition|www)\\.)?cnn\\.com\/(?!videos?\/)"
+    ],
+    "+18": 0.05194805194805195,
+    "music": 0.30344827586206896,
+    "faviconUrl": "http:\/\/edition.cnn.com\/\/favicon.ie9.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

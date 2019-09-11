@@ -1,0 +1,18 @@
+{
+    "sha1": "dd1f62e111952c9b8826018ef54c157834861475",
+    "extractor": "tnaflix.py",
+    "url": "https:\/\/player.tnaflix.com\/",
+    "htmlError": false,
+    "title": "player.tnaflix.com",
+    "matchers": [
+        "https?:\/\/player\\.(?:tna|emp)flix\\.com\/video\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tnaflix\\.com\/[^\/]+\/(?P<display_id>[^\/]+)\/video(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?empflix\\.com\/(?:videos\/(?P<display_id>.+?)-|[^\/]+\/(?P<display_id_2>[^\/]+)\/video)(?P<id>[0-9]+)",
+        "https?:\/\/(?:www\\.)?moviefap\\.com\/videos\/(?P<id>[0-9a-f]+)\/(?P<display_id>[^\/]+)\\.html"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

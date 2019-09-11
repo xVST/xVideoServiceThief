@@ -1,0 +1,19 @@
+{
+    "sha1": "99006685047dbcb117a9b681ef81ade35e431c29",
+    "extractor": "bbc.py",
+    "url": "http:\/\/www.bbc.co.uk\/",
+    "htmlError": false,
+    "title": "BBC - Home",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:www\\.)?bbc\\.co\\.uk\/\n(?:\nprogrammes\/(?!articles\/)|\niplayer(?:\/[^\/]+)?\/(?:episode\/|playlist\/)|\nmusic\/(?:clips|audiovideo\/popular)[\/#]|\nradio\/player\/|\nsounds\/play\/|\nevents\/[^\/]+\/play\/[^\/]+\/\n)\n(?P<id>%s)(?!\/(?:episodes|broadcasts|clips))\n%(?:[pbm][\\da-z]{7}|w[\\da-z]{7,14})",
+        "https?:\/\/(?:www\\.)?bbc\\.(?:com|co\\.uk)\/(?:[^\/]+\/)+(?P<id>[^\/#?]+)",
+        "https?:\/\/(?:www\\.)?bbc\\.co\\.uk\/programmes\/articles\/(?P<id>[a-zA-Z0-9]+)",
+        "https?:\/\/(?:www\\.)?bbc\\.co\\.uk\/iplayer\/(?:episodes|group)\/(?P<id>%s)%BBCCoUkIE.(?:[pbm][\\da-z]{7}|w[\\da-z]{7,14})",
+        "https?:\/\/(?:www\\.)?bbc\\.co\\.uk\/programmes\/(?P<id>%s)\/(?:episodes|broadcasts|clips)%BBCCoUkIE.(?:[pbm][\\da-z]{7}|w[\\da-z]{7,14})"
+    ],
+    "+18": 0.1471861471861472,
+    "music": 0.33793103448275863,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "eadbd9675637e3c4a306c5a79b91699e7e5a3eba",
+    "extractor": "bokecc.py",
+    "url": "http:\/\/union.bokecc.com\/",
+    "htmlError": false,
+    "title": "union.bokecc.com",
+    "matchers": [
+        "https?:\/\/union\\.bokecc\\.com\/playvideo\\.bo\\?(?P<query>.*)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

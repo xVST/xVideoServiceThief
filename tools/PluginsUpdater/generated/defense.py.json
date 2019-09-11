@@ -1,0 +1,15 @@
+{
+    "sha1": "52396d330ec1c7a9febea7857075e9e7c130fde6",
+    "extractor": "defense.py",
+    "url": "http:\/\/www.defense.gouv.fr\/",
+    "htmlError": false,
+    "title": "www.defense.gouv.fr",
+    "matchers": [
+        "https?:\/\/.*?\\.defense\\.gouv\\.fr\/layout\/set\/ligthboxvideo\/base-de-medias\/webtv\/(?P<id>[^\/?#]*)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

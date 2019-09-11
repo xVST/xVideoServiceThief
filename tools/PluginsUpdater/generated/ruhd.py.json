@@ -1,0 +1,15 @@
+{
+    "sha1": "02cd3bd624df337d1b60f4f4b92b994030822cc7",
+    "extractor": "ruhd.py",
+    "url": "http:\/\/www.ruhd.ru\/",
+    "htmlError": false,
+    "title": "www.ruhd.ru",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ruhd\\.ru\/play\\.php\\?vid=(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

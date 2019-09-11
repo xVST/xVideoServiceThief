@@ -1,0 +1,16 @@
+{
+    "sha1": "f45beb71cf0f0c184b531b5227f95353f6e8c23a",
+    "extractor": "myspace.py",
+    "url": "https:\/\/myspace.com\/",
+    "htmlError": false,
+    "title": "myspace.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\nmyspace\\.com\/[^\/]+\/\n(?P<mediatype>\nvideo\/[^\/]+\/(?P<video_id>\\d+)|\nmusic\/song\/[^\/?#&]+-(?P<song_id>\\d+)-\\d+(?:[\/?#&]|$)\n)\n",
+        "https?:\/\/myspace\\.com\/([^\/]+)\/music\/album\/(?P<title>.*-)(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

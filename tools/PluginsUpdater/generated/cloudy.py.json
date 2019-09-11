@@ -1,0 +1,15 @@
+{
+    "sha1": "3a3f5bb699b6a327f850d88a1437d97267d90a97",
+    "extractor": "cloudy.py",
+    "url": "https:\/\/www.cloudy.ec\/",
+    "htmlError": false,
+    "title": "www.cloudy.ec",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?cloudy\\.ec\/(?:v\/|embed\\.php\\?.*?\\bid=)(?P<id>[A-Za-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

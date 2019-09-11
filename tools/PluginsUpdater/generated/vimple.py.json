@@ -1,0 +1,15 @@
+{
+    "sha1": "1a0767325c25ba35e82075fbcdd54920fdd2ce4b",
+    "extractor": "vimple.py",
+    "url": "http:\/\/vimple.ru\/",
+    "htmlError": false,
+    "title": "Vimple - one-click video hosting.",
+    "matchers": [
+        "https?:\/\/(?:player\\.vimple\\.(?:ru|co)\/iframe|vimple\\.(?:ru|co))\/(?P<id>[\\da-f-]{32,36})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

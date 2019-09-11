@@ -1,0 +1,19 @@
+{
+    "sha1": "bb9758f9754baa87483b9332a47e85bda8e4ea88",
+    "extractor": "qqmusic.py",
+    "url": "https:\/\/y.qq.com\/",
+    "htmlError": false,
+    "title": "QQ\u00e9\u009f\u00b3\u00e4\u00b9\u0090-\u00e5\u008d\u0083\u00e4\u00b8\u0087\u00e6\u00ad\u00a3\u00e7\u0089\u0088\u00e9\u009f\u00b3\u00e4\u00b9\u0090\u00e6\u00b5\u00b7\u00e9\u0087\u008f\u00e6\u0097\u00a0\u00e6\u008d\u009f\u00e6\u009b\u00b2\u00e5\u00ba\u0093\u00e6\u0096\u00b0\u00e6\u00ad\u008c\u00e7\u0083\u00ad\u00e6\u00ad\u008c\u00e5\u00a4\u00a9\u00e5\u00a4\u00a9\u00e7\u0095\u0085\u00e5\u0090\u00ac\u00e7\u009a\u0084\u00e9\u00ab\u0098\u00e5\u0093\u0081\u00e8\u00b4\u00a8\u00e9\u009f\u00b3\u00e4\u00b9\u0090\u00e5\u00b9\u00b3\u00e5\u008f\u00b0\u00ef\u00bc\u0081",
+    "matchers": [
+        "https?:\/\/y\\.qq\\.com\/n\/yqq\/song\/(?P<id>[0-9A-Za-z]+)\\.html",
+        "https?:\/\/y\\.qq\\.com\/n\/yqq\/singer\/(?P<id>[0-9A-Za-z]+)\\.html",
+        "https?:\/\/y\\.qq\\.com\/n\/yqq\/album\/(?P<id>[0-9A-Za-z]+)\\.html",
+        "https?:\/\/y\\.qq\\.com\/n\/yqq\/toplist\/(?P<id>[0-9]+)\\.html",
+        "https?:\/\/y\\.qq\\.com\/n\/yqq\/playlist\/(?P<id>[0-9]+)\\.html"
+    ],
+    "+18": 0,
+    "music": 0.2,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

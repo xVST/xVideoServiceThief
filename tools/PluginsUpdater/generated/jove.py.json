@@ -1,0 +1,15 @@
+{
+    "sha1": "685ff7ee52a33945dbc2f65b6d6d59f596f70215",
+    "extractor": "jove.py",
+    "url": "http:\/\/www.jove.com\/",
+    "htmlError": false,
+    "title": "JoVE | Peer Reviewed Scientific Video Journal - Methods and Protocols",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?jove\\.com\/video\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.jove.com\/\/img\/favicon.ico",
+    "faviconData": "89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000000944944415438cb63f8ffff3f03251842008155c92e03205e0fc4ef81f83f0efc1eaac600a407dd80f57834a2e3fdd80c804926c06c4006501726c0d4e134808100c06a0050c081540380588152031c2835c000d900058ac200dd6f78341be033e03e5a5c83f8fba1185dee3c36030208a442e4d4889912919cd9806c133480615800592d2103e6130a507c062410d28c62002518008cd592df66d8f7800000000049454e44ae426082",
+    "version": "1.1"
+}

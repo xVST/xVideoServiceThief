@@ -1,0 +1,15 @@
+{
+    "sha1": "905970baa90e2c1b22af1db773ece061393e71e1",
+    "extractor": "eitb.py",
+    "url": "http:\/\/www.eitb.tv\/",
+    "htmlError": false,
+    "title": "TV online gratis | EiTB Televisi\u00f3n a la carta",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?eitb\\.tv\/(?:eu\/bideoa|es\/video)\/[^\/]+\/\\d+\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.1103448275862069,
+    "faviconUrl": "http:\/\/www.eitb.tv\/www.eitb.tv\/resources\/img\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

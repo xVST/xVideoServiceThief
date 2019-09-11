@@ -1,0 +1,15 @@
+{
+    "sha1": "c76fe6652f1c59ea150fdc043b263a0d2976fcdc",
+    "extractor": "vodpl.py",
+    "url": "https:\/\/vod.pl\/",
+    "htmlError": false,
+    "title": "Vod - Filmy i seriale online",
+    "matchers": [
+        "https?:\/\/vod\\.pl\/(?:[^\/]+\/)+(?P<id>[0-9a-zA-Z]+)"
+    ],
+    "+18": 0.12987012987012986,
+    "music": 0.12413793103448276,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

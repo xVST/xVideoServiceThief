@@ -1,0 +1,17 @@
+{
+    "sha1": "77921a63e8ddb5ea4738a8232aa9e891178f01c7",
+    "extractor": "yandexmusic.py",
+    "url": "http:\/\/music.yandex.ru\/",
+    "htmlError": false,
+    "title": "music.yandex.ru",
+    "matchers": [
+        "https?:\/\/music\\.yandex\\.(?:ru|kz|ua|by)\/album\/(?P<album_id>\\d+)\/track\/(?P<id>\\d+)",
+        "https?:\/\/music\\.yandex\\.(?:ru|kz|ua|by)\/album\/(?P<id>\\d+)\/?(\\?|$)",
+        "https?:\/\/music\\.yandex\\.(?P<tld>ru|kz|ua|by)\/users\/(?P<user>[^\/]+)\/playlists\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

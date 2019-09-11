@@ -1,0 +1,15 @@
+{
+    "sha1": "07003e547a78ea7b8f2f4f6b07d92ba88b16c786",
+    "extractor": "bostonglobe.py",
+    "url": "http:\/\/www.bostonglobe.com\/",
+    "htmlError": false,
+    "title": "The Boston Globe",
+    "matchers": [
+        "(?i)https?:\/\/(?:www\\.)?bostonglobe\\.com\/.*\/(?P<id>[^\/]+)\/\\w+(?:\\.html)?"
+    ],
+    "+18": 0.06926406926406926,
+    "music": 0.3310344827586207,
+    "faviconUrl": "http:\/\/www.bostonglobe.com\/\/rw\/SysConfig\/WebPortal\/BostonGlobe\/Framework\/bg-images\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

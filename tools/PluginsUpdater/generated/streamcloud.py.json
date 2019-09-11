@@ -1,0 +1,15 @@
+{
+    "sha1": "086591adcddd978b7670c4921586c50b98bc1cd8",
+    "extractor": "streamcloud.py",
+    "url": "http:\/\/streamcloud.eu\/",
+    "htmlError": false,
+    "title": "streamcloud.eu",
+    "matchers": [
+        "https?:\/\/streamcloud\\.eu\/(?P<id>[a-zA-Z0-9_-]+)(?:\/(?P<fname>[^#?]*)\\.html)?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

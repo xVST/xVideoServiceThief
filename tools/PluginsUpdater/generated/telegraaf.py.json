@@ -1,0 +1,15 @@
+{
+    "sha1": "fe16d6b1e6ad40666b7776df31b1cd07c1578279",
+    "extractor": "telegraaf.py",
+    "url": "http:\/\/www.telegraaf.nl\/",
+    "htmlError": false,
+    "title": "www.telegraaf.nl",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?telegraaf\\.nl\/tv\/(?:[^\/]+\/)+(?P<id>\\d+)\/[^\/]+\\.html"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

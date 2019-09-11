@@ -1,0 +1,15 @@
+{
+    "sha1": "b3b1c44f62c841572cc96f85d33dddea582a08ee",
+    "extractor": "dfb.py",
+    "url": "http:\/\/tv.dfb.de\/",
+    "htmlError": false,
+    "title": "DFB-TV",
+    "matchers": [
+        "https?:\/\/tv\\.dfb\\.de\/video\/(?P<display_id>[^\/]+)\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.20689655172413793,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

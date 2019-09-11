@@ -1,0 +1,15 @@
+{
+    "sha1": "cc05537a4805053f531513d3066cf4a112774c42",
+    "extractor": "zaq1.py",
+    "url": "http:\/\/zaq1.pl\/",
+    "htmlError": false,
+    "title": "zaq1.pl",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?zaq1\\.pl\/video\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

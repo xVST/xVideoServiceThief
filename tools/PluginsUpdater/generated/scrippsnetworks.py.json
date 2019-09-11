@@ -1,0 +1,15 @@
+{
+    "sha1": "4b134aef879ab8006c809019dc6c23c30f79c919",
+    "extractor": "scrippsnetworks.py",
+    "url": "http:\/\/watch.geniuskitchen.com\/",
+    "htmlError": false,
+    "title": "Notification",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\nwatch\\.\n(?P<site>geniuskitchen)\\.com\/\n(?:\nplayer\\.[A-Z0-9]+\\.html\\#|\nshow\/(?:[^\/]+\/){2}|\nplayer\/\n)\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

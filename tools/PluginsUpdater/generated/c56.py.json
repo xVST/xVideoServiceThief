@@ -1,0 +1,15 @@
+{
+    "sha1": "93cb462e4f951c52bc65946540e80b5790eb7c68",
+    "extractor": "c56.py",
+    "url": "http:\/\/www.56.com\/",
+    "htmlError": false,
+    "title": "www.56.com",
+    "matchers": [
+        "https?:\/\/(?:(?:www|player)\\.)?56\\.com\/(?:.+?\/)?(?:v_|(?:play_album.+-))(?P<textid>.+?)\\.(?:html|swf)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

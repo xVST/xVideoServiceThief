@@ -1,0 +1,15 @@
+{
+    "sha1": "1e9f0e6a57e7b56a8b319814d96a98c8d9d97749",
+    "extractor": "ondemandkorea.py",
+    "url": "http:\/\/www.ondemandkorea.com\/",
+    "htmlError": false,
+    "title": "www.ondemandkorea.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ondemandkorea\\.com\/(?P<id>[^\/]+)\\.html"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

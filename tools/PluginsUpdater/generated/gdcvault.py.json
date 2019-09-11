@@ -1,0 +1,15 @@
+{
+    "sha1": "d078f5e61cc1c3efede43e061035c475ec217fa6",
+    "extractor": "gdcvault.py",
+    "url": "http:\/\/www.gdcvault.com\/",
+    "htmlError": false,
+    "title": "GDC Vault",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?gdcvault\\.com\/play\/(?P<id>\\d+)(?:\/(?P<name>[\\w-]+))?"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

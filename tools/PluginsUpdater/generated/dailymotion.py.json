@@ -1,0 +1,17 @@
+{
+    "sha1": "272a3aa22ee584bba499d394d9a50dabfe249c71",
+    "extractor": "dailymotion.py",
+    "url": "http:\/\/www.dailymotion.com\/",
+    "htmlError": false,
+    "title": "Dailymotion, donde los v\u00eddeos importan",
+    "matchers": [
+        "(?ix)\nhttps?:\/\/\n(?:\n(?:(?:www|touch)\\.)?dailymotion\\.[a-z]{2,3}\/(?:(?:(?:embed|swf|\\#)\/)?video|swf)|\n(?:www\\.)?lequipe\\.fr\/video\n)\n\/(?P<id>[^\/?_]+)\n",
+        "(?:https?:\/\/)?(?:www\\.)?dailymotion\\.[a-z]{2,3}\/playlist\/(?P<id>x[0-9a-z]+)",
+        "https?:\/\/(?:www\\.)?dailymotion\\.[a-z]{2,3}\/(?!(?:embed|swf|#|video|playlist)\/)(?:(?:old\/)?user\/)?(?P<user>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/static1.dmcdn.net\/images\/neon\/favicons\/android-icon-36x36.png.vef49e2d9e48d19cf2",
+    "faviconData": "89504e470d0a1a0a0000000d4948445200000024000000240806000000e10098980000000467414d410000b18f0bfc610500000266494441545809ed564dcb7951101f6f79b7b4b2a1b05096ca1790b5b2e00b882c292b6b5b59d82ae12bc827504a94852cbc171b12cabbe7ff9f5bf7e6ba57e7dccbe279ca299d9939e7ccfc9cf9cd9cabf8f93fe0170de52fc2c240f9022265e47b437fee86d424c472d6c7e331743a1de637180ca05aad52bbf938a042a100f97c9e0360341a399946f838a96fb71b4ddc977b3e0ee86524ca855f07481687cee733b4db6d98cd6670bfdfc1e57281dbed0683c140790fafb7490284fc28168b502e9761b55af1bc2298783c0eefbed50adad77ebbdd4222918066b3c903f2ac98cd66d8ed769c19abacdbed723a49a0e65026932182c1608f6048c1c5d6a95256afd7a1d16808ce639a903b4aa5127abd1e9c4e27c11ea9062a40b55a4de037140a41369b0593c9c4ac6d361b8643ad564bb0578a81c8a1cbe5021e8f87a926d6b1cfe7834aa5020a85823531f3e1708070380cfd7e9fb37f9c43fbfd9e0706234522110118b4ebf57a8846a328ca1e44521f8f4781739bcd26b0b106abd5ca8ab2662220fcd7cf6332993c9b387d341a71b21c81080849ab52a978bef17342ac012287c40a807798a01001a9d56af0fbfd3c37f86ca4d369407eb163b95c422c1683e974ca9a64cdc42a43afd88792c9a4208056ab05a7d309f8b60d8743b85eaf823d1faf328c100c0621100808826123c486885f8562600407280cc494b13e72b99c2075ecdae3ecf57a1f55c93235208bc502a5520952a9148895b646a3613ab5586aa5a0a2e2d0b343fc069acfe7b05eaf01fb148275381ca0d3e9002b6db1587047b09bdbed764e2709b200919cbeb34e9db277824839fb0544baadef0dfdb91bfa075a00ddc29941a1fe0000000049454e44ae426082",
+    "version": "1.2"
+}

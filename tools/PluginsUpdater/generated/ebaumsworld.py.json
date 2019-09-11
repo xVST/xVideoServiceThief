@@ -1,0 +1,15 @@
+{
+    "sha1": "dd3945b9d0ae60d5af8e77f98d8e82aa38c89995",
+    "extractor": "ebaumsworld.py",
+    "url": "http:\/\/www.ebaumsworld.com\/",
+    "htmlError": false,
+    "title": "www.ebaumsworld.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ebaumsworld\\.com\/videos\/[^\/]+\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

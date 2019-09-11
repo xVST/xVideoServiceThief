@@ -1,0 +1,15 @@
+{
+    "sha1": "530f9da92411be8a1c7cb90205b55a64c3ad1240",
+    "extractor": "porncom.py",
+    "url": "http:\/\/www.porn.com\/",
+    "htmlError": false,
+    "title": "Free Porn & Sex Videos. PORN.COM HD, VR, Porno Movies, XXX Tube.",
+    "matchers": [
+        "https?:\/\/(?:[a-zA-Z]+\\.)?porn\\.com\/videos\/(?:(?P<display_id>[^\/]+)-)?(?P<id>\\d+)"
+    ],
+    "+18": 0.8008658008658008,
+    "music": 0.1724137931034483,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

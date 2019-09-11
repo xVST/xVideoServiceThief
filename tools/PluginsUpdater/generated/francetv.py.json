@@ -1,0 +1,22 @@
+{
+    "sha1": "e5006ae05740e9e2e391d6b432063d860841e01d",
+    "extractor": "francetv.py",
+    "url": "https:\/\/sivideo.webservices.francetelevisions.fr\/",
+    "htmlError": false,
+    "title": "sivideo.webservices.francetelevisions.fr",
+    "matchers": [
+        "(?x)\n(?:\nhttps?:\/\/\nsivideo\\.webservices\\.francetelevisions\\.fr\/tools\/getInfosOeuvre\/v2\/\\?\n.*?\\bidDiffusion=[^&]+|\n(?:\nhttps?:\/\/videos\\.francetv\\.fr\/video\/|\nfrancetv:\n)\n(?P<id>[^@]+)(?:@(?P<catalog>.+))?\n)\n",
+        "https?:\/\/(?:(?:www\\.)?france\\.tv|mobile\\.france\\.tv)\/(?:[^\/]+\/)*(?P<id>[^\/]+)\\.html",
+        "https?:\/\/embed\\.francetv\\.fr\/*\\?.*?\\bue=(?P<id>[^&]+)",
+        "https?:\/\/(?:www|mobile|france3-regions)\\.francetvinfo\\.fr\/(?:[^\/]+\/)*(?P<id>[^\/?#&.]+)",
+        "https?:\/\/sport\\.francetvinfo\\.fr\/(?:[^\/]+\/)*(?P<id>[^\/?#&]+)",
+        "https?:\/\/generation-what\\.francetv\\.fr\/[^\/]+\/video\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:m\\.)?culturebox\\.francetvinfo\\.fr\/(?:[^\/]+\/)*(?P<id>[^\/?#&]+)",
+        "(?P<url>https?:\/\/(?:www\\.)?(?:zouzous|ludo)\\.fr\/heros\/(?P<id>[^\/?#&]+))"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "c4bcad008e8b50d3c448981b10023680b1329cdd",
+    "extractor": "onionstudios.py",
+    "url": "http:\/\/www.onionstudios.com\/",
+    "htmlError": false,
+    "title": "www.onionstudios.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?onionstudios\\.com\/(?:video(?:s\/[^\/]+-|\/)|embed\\?.*\\bid=)(?P<id>\\d+)(?!-)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

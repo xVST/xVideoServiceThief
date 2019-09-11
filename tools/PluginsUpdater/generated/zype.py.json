@@ -1,0 +1,15 @@
+{
+    "sha1": "6413948cc0c630e7454eebdfd87f232a85130005",
+    "extractor": "zype.py",
+    "url": "https:\/\/player.zype.com\/",
+    "htmlError": false,
+    "title": "player.zype.com",
+    "matchers": [
+        "https?:\/\/player\\.zype\\.com\/embed\/(?P<id>[\\da-fA-F]+)\\.js\\?.*?api_key=[^&]+"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

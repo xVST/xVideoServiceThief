@@ -1,0 +1,15 @@
+{
+    "sha1": "248318840aeb32164dfe98f48a0505e371e27bfd",
+    "extractor": "yinyuetai.py",
+    "url": "http:\/\/v.yinyuetai.com\/",
+    "htmlError": false,
+    "title": "v.yinyuetai.com",
+    "matchers": [
+        "https?:\/\/v\\.yinyuetai\\.com\/video(?:\/h5)?\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

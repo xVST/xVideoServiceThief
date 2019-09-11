@@ -1,0 +1,15 @@
+{
+    "sha1": "7141db3a1ec7b5dbd3ecc917a2ed735452baf629",
+    "extractor": "kakao.py",
+    "url": "http:\/\/tv.kakao.com\/",
+    "htmlError": false,
+    "title": "kakaoTV",
+    "matchers": [
+        "https?:\/\/tv\\.kakao\\.com\/channel\/(?P<channel>\\d+)\/cliplink\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/tv.kakao.com\/\/\/t1.daumcdn.net\/kakaotv\/2016\/favicon\/kakaotv_favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

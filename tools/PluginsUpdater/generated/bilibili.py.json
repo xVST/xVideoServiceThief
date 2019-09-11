@@ -1,0 +1,16 @@
+{
+    "sha1": "06f76e09a310dc8ca0b22a41198b556fee78804c",
+    "extractor": "bilibili.py",
+    "url": "http:\/\/www.bilibili.tv\/",
+    "htmlError": false,
+    "title": "www.bilibili.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.|bangumi\\.|)bilibili\\.(?:tv|com)\/(?:video\/av|anime\/(?P<anime_id>\\d+)\/play#)(?P<id>\\d+)",
+        "https?:\/\/bangumi\\.bilibili\\.com\/anime\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

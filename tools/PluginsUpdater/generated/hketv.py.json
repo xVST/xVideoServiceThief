@@ -1,0 +1,15 @@
+{
+    "sha1": "17092886f04ae8861d4f430b81255bdcdcf619cd",
+    "extractor": "hketv.py",
+    "url": "https:\/\/www.hkedcity.net\/",
+    "htmlError": false,
+    "title": "\u9999\u6e2f\u6559\u80b2\u57ce - \u4e3b\u9801",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?hkedcity\\.net\/etv\/resource\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.12413793103448276,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

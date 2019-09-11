@@ -1,0 +1,15 @@
+{
+    "sha1": "a977a3103d10c5e938beb9e678d1edacf9d96784",
+    "extractor": "redtube.py",
+    "url": "http:\/\/www.redtube.com\/",
+    "htmlError": false,
+    "title": "www.redtube.com",
+    "matchers": [
+        "https?:\/\/(?:(?:www\\.)?redtube\\.com\/|embed\\.redtube\\.com\/\\?.*?\\bid=)(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

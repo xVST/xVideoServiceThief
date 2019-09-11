@@ -1,0 +1,15 @@
+{
+    "sha1": "47a4b21c2da8f309c445fc8dcec3c24e17f87119",
+    "extractor": "tdslifeway.py",
+    "url": "http:\/\/tds.lifeway.com\/",
+    "htmlError": false,
+    "title": "tds.lifeway.com",
+    "matchers": [
+        "https?:\/\/tds\\.lifeway\\.com\/v1\/trainingdeliverysystem\/courses\/(?P<id>\\d+)\/index\\.html"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

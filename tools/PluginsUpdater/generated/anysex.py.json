@@ -1,0 +1,15 @@
+{
+    "sha1": "4eb120c160b6139905bc184b27acb5a9960b85e7",
+    "extractor": "anysex.py",
+    "url": "http:\/\/anysex.com\/",
+    "htmlError": false,
+    "title": "AnySex.com - Sex Videos, Free HD porn tube videos, XXX movies online",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?anysex\\.com\/(?P<id>\\d+)"
+    ],
+    "+18": 0.6147186147186147,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

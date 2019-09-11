@@ -1,0 +1,16 @@
+{
+    "sha1": "78ea9c115a6572c37383ef9e4539938030a5ab3b",
+    "extractor": "motherless.py",
+    "url": "http:\/\/motherless.com\/",
+    "htmlError": false,
+    "title": "Go Ahead She Isn't Looking! | MOTHERLESS.COM \u00e2\u0084\u00a2",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?motherless\\.com\/(?:g\/[a-z0-9_]+\/)?(?P<id>[A-Z0-9]+)",
+        "https?:\/\/(?:www\\.)?motherless\\.com\/gv?\/(?P<id>[a-z0-9_]+)"
+    ],
+    "+18": 0.696969696969697,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

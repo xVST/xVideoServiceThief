@@ -1,0 +1,15 @@
+{
+    "sha1": "723a7734b116955e1b088f68283138282f8409ab",
+    "extractor": "movingimage.py",
+    "url": "http:\/\/movingimage.nls.uk\/",
+    "htmlError": false,
+    "title": "Moving Image Archive catalogue",
+    "matchers": [
+        "https?:\/\/movingimage\\.nls\\.uk\/film\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

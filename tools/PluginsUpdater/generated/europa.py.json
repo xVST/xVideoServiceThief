@@ -1,0 +1,15 @@
+{
+    "sha1": "e8513e73901728dcf4f4a80a905d7ddb8c9f640f",
+    "extractor": "europa.py",
+    "url": "http:\/\/ec.europa.eu\/",
+    "htmlError": false,
+    "title": "European Commission | Choose your language | Choisir une langue | W\u00e4hlen Sie eine Sprache",
+    "matchers": [
+        "https?:\/\/ec\\.europa\\.eu\/avservices\/(?:video\/player|audio\/audioDetails)\\.cfm\\?.*?\\bref=(?P<id>[A-Za-z0-9-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

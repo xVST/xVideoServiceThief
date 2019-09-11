@@ -1,0 +1,16 @@
+{
+    "sha1": "cb78b632997e48dba20b447ced88bd6ba620fdc3",
+    "extractor": "liveleak.py",
+    "url": "http:\/\/www.liveleak.com\/",
+    "htmlError": false,
+    "title": "LiveLeak.com - Redefining the Media",
+    "matchers": [
+        "https?:\/\/(?:\\w+\\.)?liveleak\\.com\/view\\?.*?\\b[it]=(?P<id>[\\w_]+)",
+        "https?:\/\/(?:www\\.)?liveleak\\.com\/ll_embed\\?.*?\\b(?P<kind>[ift])=(?P<id>[\\w_]+)"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

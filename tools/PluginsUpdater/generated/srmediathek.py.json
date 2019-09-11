@@ -1,0 +1,15 @@
+{
+    "sha1": "cb13c76a5f9ff82355effc11321239f9d16e6516",
+    "extractor": "srmediathek.py",
+    "url": "http:\/\/sr-mediathek.sr-online.de\/",
+    "htmlError": false,
+    "title": "SR-Mediathek.de: Startseite",
+    "matchers": [
+        "https?:\/\/sr-mediathek(?:\\.sr-online)?\\.de\/index\\.php\\?.*?&id=(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.2482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "60082c851c7aeb1e31da34787448040fe236cbd2",
+    "extractor": "vidbit.py",
+    "url": "http:\/\/www.vidbit.co\/",
+    "htmlError": false,
+    "title": "Pre-Alpha Login",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?vidbit\\.co\/(?:watch|embed)\\?.*?\\bv=(?P<id>[\\da-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

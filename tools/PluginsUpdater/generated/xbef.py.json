@@ -1,0 +1,15 @@
+{
+    "sha1": "ffaa97ad0223df12d6393f64eaec972457ff75de",
+    "extractor": "xbef.py",
+    "url": "http:\/\/xbef.com\/",
+    "htmlError": false,
+    "title": "XBef Only Good Porn Videos",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?xbef\\.com\/video\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0.5800865800865801,
+    "music": 0.10344827586206896,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,18 @@
+{
+    "sha1": "51f5d5d1bda866eb133f31826688d5195dfc854c",
+    "extractor": "rai.py",
+    "url": "http:\/\/www.raiplay.it\/",
+    "htmlError": false,
+    "title": "RaiPlay, Molto pi\u00f9 di quanto immagini.",
+    "matchers": [
+        "(?P<url>https?:\/\/(?:www\\.)?raiplay\\.it\/.+?-(?P<id>%s)\\.html)%RaiBaseIE.[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12}",
+        "https?:\/\/(?:www\\.)?raiplay\\.it\/dirette\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:www\\.)?raiplay\\.it\/programmi\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/[^\/]+\\.(?:rai\\.(?:it|tv)|rainews\\.it)\/.+?-(?P<id>%s)(?:-.+?)?\\.html%RaiBaseIE.[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12}"
+    ],
+    "+18": 0,
+    "music": 0.1103448275862069,
+    "faviconUrl": "http:\/\/www.raiplay.it\/\/dl\/rai\/images\/favicon.gif",
+    "faviconData": "47494638396110001000f30000266ab0ffffff6092c5c5d7ead4e1ef8bb0d5e2ebf4437ebba8c3df5188c03474b56e9cca7da6d0f1f5fa9ab9da00000021f90400000000002c000000001000100000044a10c849abbd38ebac844f184100426006c8259201b11801781c563924f08198b0cd9e05464b4008f84ab086a210580098c7c08039101a0a0da3943500141dbb96b68b51d036e8b47a1201003b",
+    "version": "1.2"
+}

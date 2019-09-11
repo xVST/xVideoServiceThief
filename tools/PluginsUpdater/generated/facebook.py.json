@@ -1,0 +1,16 @@
+{
+    "sha1": "c5c7e88601375c72ff0c12a5f012a20c598d43aa",
+    "extractor": "facebook.py",
+    "url": "https:\/\/www.facebook.com\/",
+    "htmlError": false,
+    "title": "Actualiza tu navegador | Facebook",
+    "matchers": [
+        "(?x)\n(?:\nhttps?:\/\/\n(?:[\\w-]+\\.)?(?:facebook\\.com|facebookcorewwwi\\.onion)\/\n(?:[^#]*?\\#!\/)?\n(?:\n(?:\nvideo\/video\\.php|\nphoto\\.php|\nvideo\\.php|\nvideo\/embed|\nstory\\.php\n)\\?(?:.*?)(?:v|video_id|story_fbid)=|\n[^\/]+\/videos\/(?:[^\/]+\/)?|\n[^\/]+\/posts\/|\ngroups\/[^\/]+\/permalink\/\n)|\nfacebook:\n)\n(?P<id>[0-9]+)\n",
+        "https?:\/\/(?:[\\w-]+\\.)?facebook\\.com\/plugins\/video\\.php\\?.*?\\bhref=(?P<id>https.+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/static.xx.fbcdn.net\/rsrc.php\/yz\/r\/KFyVIAWzntM.ico?_nc_x=Ij3Wp8lg5Kz",
+    "faviconData": "0000010001001010000001002000680400001600000028000000100000002000000001002000000000000004000000000000000000000000000000000000b36842b5b26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb36842b5b26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffffffffffffffffffffffffffffffffffc58c70ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffffffffffffffffffffffffffffffffffd1a48dffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffffffffffffffffffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742fff9f2eeffffffffffcfa18affb36843ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffe2c5b7ffffffffffffffffffffffffffd9b3a1ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb7704effe2c6b8fff9f4f1fffffefeffd7af9bffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb36842b5b26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb26742ffb36842b500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "version": "1.2"
+}

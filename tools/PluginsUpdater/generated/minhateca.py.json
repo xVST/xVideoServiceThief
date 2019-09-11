@@ -1,0 +1,15 @@
+{
+    "sha1": "729286f7ef36d28247a458f9274ff0111956ecab",
+    "extractor": "minhateca.py",
+    "url": "http:\/\/minhateca.com.br\/",
+    "htmlError": false,
+    "title": "minhateca.com.br",
+    "matchers": [
+        "https?:\/\/minhateca\\.com\\.br\/[^?#]+,(?P<id>[0-9]+)\\."
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

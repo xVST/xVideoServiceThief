@@ -1,0 +1,16 @@
+{
+    "sha1": "2ccbb78a35a345978e719229dce3398432654f80",
+    "extractor": "picarto.py",
+    "url": "https:\/\/picarto.tv\/",
+    "htmlError": false,
+    "title": "Creative live streaming service - Picarto",
+    "matchers": [
+        "https?:\/\/(?:www.)?picarto\\.tv\/(?P<id>[a-zA-Z0-9]+)(?:\/(?P<token>[a-zA-Z0-9]+))?",
+        "https?:\/\/(?:www.)?picarto\\.tv\/videopopout\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

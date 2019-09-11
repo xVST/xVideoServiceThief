@@ -1,0 +1,15 @@
+{
+    "sha1": "421683720edd541ef2ffb2c08d86dd5e55f18233",
+    "extractor": "gputechconf.py",
+    "url": "http:\/\/on-demand.gputechconf.com\/",
+    "htmlError": false,
+    "title": "GTC On-Demand Featured Talks | GPU Technology Conference",
+    "matchers": [
+        "https?:\/\/on-demand\\.gputechconf\\.com\/gtc\/2015\/video\/S(?P<id>\\d+)\\.html"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/www.gputechconf.com\/content\/includes\/redesign2010\/images\/nvidia.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "ca6bded4c3631cccd60b0d90164c88b38cb39f52",
+    "extractor": "mofosex.py",
+    "url": "http:\/\/www.mofosex.com\/",
+    "htmlError": false,
+    "title": "Free Porn Videos, Porn Tube, Sex Videos, Sex & Free XXX Porno Clips",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?mofosex\\.com\/videos\/(?P<id>\\d+)\/(?P<display_id>[^\/?#&.]+)\\.html"
+    ],
+    "+18": 0.5151515151515151,
+    "music": 0.034482758620689655,
+    "faviconUrl": "http:\/\/www.mofosex.com\/\/\/cdn1-static-mofosex.spankcdn.net\/images\/favicon.ico?cache=184021538655489",
+    "faviconData": null,
+    "version": "1.1"
+}

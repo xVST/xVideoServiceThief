@@ -1,0 +1,16 @@
+{
+    "sha1": "6521f0d692f1daabf085b46fc240e2d8ca9bee50",
+    "extractor": "brightcove.py",
+    "url": "http:\/\/c.brightcove.com\/",
+    "htmlError": false,
+    "title": "c.brightcove.com",
+    "matchers": [
+        "(?:https?:\/\/.*brightcove\\.com\/(services|viewer).*?\\?|brightcove:)(?P<query>.*)",
+        "https?:\/\/players\\.brightcove\\.net\/(?P<account_id>\\d+)\/(?P<player_id>[^\/]+)_(?P<embed>[^\/]+)\/index\\.html\\?.*(?P<content_type>video|playlist)Id=(?P<video_id>\\d+|ref:[^&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

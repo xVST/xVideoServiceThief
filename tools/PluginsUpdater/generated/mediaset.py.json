@@ -1,0 +1,15 @@
+{
+    "sha1": "fb6e74b5ad4f75852e05a04479ddf7a94c77a9d8",
+    "extractor": "mediaset.py",
+    "url": "https:\/\/www.mediasetplay.mediaset.it\/",
+    "htmlError": false,
+    "title": "Mediaset Play: Programmi TV, Video, Dirette Live e Film | Mediaset Play",
+    "matchers": [
+        "(?x)\n(?:\nmediaset:|\nhttps?:\/\/\n(?:(?:www|static3)\\.)?mediasetplay\\.mediaset\\.it\/\n(?:\n(?:video|on-demand)\/(?:[^\/]+\/)+[^\/]+_|\nplayer\/index\\.html\\?.*?\\bprogramGuid=\n)\n)(?P<id>[0-9A-Z]{16})\n"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "02d35ac1f3c73d20967e42d3231e69df723bfca7",
+    "extractor": "primesharetv.py",
+    "url": "http:\/\/primeshare.tv\/",
+    "htmlError": false,
+    "title": "primeshare.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?primeshare\\.tv\/download\/(?P<id>[\\da-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

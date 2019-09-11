@@ -1,0 +1,15 @@
+{
+    "sha1": "fb6316cada83710372c278e9290788b1b328550b",
+    "extractor": "tastytrade.py",
+    "url": "https:\/\/www.tastytrade.com\/",
+    "htmlError": false,
+    "title": "tastytrade | a real financial network | financial news and entertainment",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tastytrade\\.com\/tt\/shows\/[^\/]+\/episodes\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": "https:\/\/www.tastytrade.com\/\/\/tastytradepublicmedia.s3.amazonaws.com\/assets\/favicon-c086722ab41e7d844b76e62f59a414fd.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

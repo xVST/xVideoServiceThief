@@ -1,0 +1,15 @@
+{
+    "sha1": "3e7cfdc1a2e42d3cd2a2d9c0cbe379da474ea364",
+    "extractor": "line.py",
+    "url": "https:\/\/tv.line.me\/",
+    "htmlError": false,
+    "title": "LINE TV",
+    "matchers": [
+        "https?:\/\/tv\\.line\\.me\/v\/(?P<id>\\d+)_[^\/]+-(?P<segment>ep\\d+-\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "34483afbbf920db8f7ae53b3b0079aa98a0ab9e8",
+    "extractor": "vevo.py",
+    "url": "http:\/\/www.vevo.com\/",
+    "htmlError": false,
+    "title": "www.vevo.com",
+    "matchers": [
+        "(?x)\n(?:https?:\/\/(?:www\\.)?vevo\\.com\/watch\/(?!playlist|genre)(?:[^\/]+\/(?:[^\/]+\/)?)?|\nhttps?:\/\/cache\\.vevo\\.com\/m\/html\/embed\\.html\\?video=|\nhttps?:\/\/videoplayer\\.vevo\\.com\/embed\/embedded\\?videoId=|\nhttps?:\/\/embed\\.vevo\\.com\/.*?[?&]isrc=|\nvevo:)\n(?P<id>[^&?#]+)",
+        "https?:\/\/(?:www\\.)?vevo\\.com\/watch\/(?P<kind>playlist|genre)\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

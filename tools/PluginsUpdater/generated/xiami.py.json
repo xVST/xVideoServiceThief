@@ -1,0 +1,18 @@
+{
+    "sha1": "f4cf0f7388f1b1ad1bbd69882c75c42d327932fa",
+    "extractor": "xiami.py",
+    "url": "http:\/\/www.xiami.com\/",
+    "htmlError": false,
+    "title": "\u867e\u7c73\u97f3\u4e50 - \u53d1\u73b0\u97f3\u4e50\u65b0\u4e16\u754c",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?xiami\\.com\/song\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:www\\.)?xiami\\.com\/album\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:www\\.)?xiami\\.com\/artist\/(?P<id>[^\/?#&]+)",
+        "https?:\/\/(?:www\\.)?xiami\\.com\/collect\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0.33793103448275863,
+    "faviconUrl": "http:\/\/www.xiami.com\/\/\/img.alicdn.com\/tfs\/TB1qP4zgY5YBuNjSspoXXbeNFXa-550-550.png",
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "163136a52f9ab9846f842a15c97e0bcf980bb3c2",
+    "extractor": "adobeconnect.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "https?:\/\/\\w+\\.adobeconnect\\.com\/(?P<id>[\\w-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

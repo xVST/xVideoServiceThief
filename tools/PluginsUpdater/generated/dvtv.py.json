@@ -1,0 +1,15 @@
+{
+    "sha1": "2283e8d4e5d6a61c010fb8e3582c3ee47ea7c1c5",
+    "extractor": "dvtv.py",
+    "url": "http:\/\/video.aktualne.cz\/",
+    "htmlError": false,
+    "title": "Video - Aktu\u00e1ln\u011b.cz",
+    "matchers": [
+        "https?:\/\/video\\.aktualne\\.cz\/(?:[^\/]+\/)+r~(?P<id>[0-9a-f]{32})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/video.aktualne.cz\/\/\/asset.stdout.cz\/fe\/common\/img\/aktualne_cz.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "5eaf6642c656f932c472e0ffbbfa4ccb52839773",
+    "extractor": "livejournal.py",
+    "url": "https:\/\/andrei-bt.livejournal.com\/",
+    "htmlError": false,
+    "title": "Andrei-bt \u2014 LiveJournal",
+    "matchers": [
+        "https?:\/\/(?:[^.]+\\.)?livejournal\\.com\/video\/album\/\\d+.+?\\bid=(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/l-stat.livejournal.net\/img\/userinfo_v8.png?v=349",
+    "faviconData": "89504e470d0a1a0a0000000d4948445200000010000000100803000000282d0f5300000036504c5445000000000000000000000000000000000000f5e6c84b41b925205c3c34944239a2aba18c908875e3d5b9cabda5716a5deb872d8b5d81080f6a0d0000000674524e530099b2330d807bf062450000005b4944415418d3a5c8490280200c0441906d4cd8fcff678d41c0bb7d49a6cce890f4993bd79a3f62b9c458d86e88da2f0803c202c7cf66b7c037116e7e039033b0c11101446e4ea494902428c9abd0fb254736bda0110c4e4d8e861b9af904151b5adaa40000000049454e44ae426082",
+    "version": "1.1"
+}

@@ -1,0 +1,17 @@
+{
+    "sha1": "16646b198568fdb51266606d6673fed92be1a941",
+    "extractor": "mediasite.py",
+    "url": "https:\/\/hitsmediaweb.h-its.org\/",
+    "htmlError": false,
+    "title": "IIS Windows Server",
+    "matchers": [
+        "(?xi)https?:\/\/[^\/]+\/Mediasite\/(?:Play|Showcase\/(?:default|livebroadcast)\/Presentation)\/(?P<id>%s)(?P<query>\\?[^#]+|)%(?:[0-9a-f]{32,34}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12,14})",
+        "(?xi)\n(?P<url>https?:\/\/[^\/]+\/Mediasite)\n\/Catalog\/Full\/\n(?P<catalog_id>{0})\n(?:\n\/(?P<current_folder_id>{0})\n\/(?P<root_dynamic_folder_id>{0})\n)?\n.format((?:[0-9a-f]{32,34}|[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12,14}))",
+        "(?xi)(?P<url>https?:\/\/[^\/]+\/Mediasite)\/Catalog\/catalogs\/(?P<catalog_name>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

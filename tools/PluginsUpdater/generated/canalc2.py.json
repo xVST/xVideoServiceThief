@@ -1,0 +1,15 @@
+{
+    "sha1": "cf8fd96d82b244babba27e52dd522c6d5c59676f",
+    "extractor": "canalc2.py",
+    "url": "http:\/\/www.canalc2.tv\/",
+    "htmlError": false,
+    "title": "CanalC2 : la web t\u00e9l\u00e9vision des \u00e9v\u00e9nements universitaires de l'Universit\u00e9 de Strasbourg",
+    "matchers": [
+        "https?:\/\/(?:(?:www\\.)?canalc2\\.tv\/video\/|archives-canalc2\\.u-strasbg\\.fr\/video\\.asp\\?.*\\bidVideo=)(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "http:\/\/www.canalc2.tv\/\/favicon.ico?de3cd93",
+    "faviconData": "00000100010010100000010018006803000016000000280000001000000020000000010018000000000000000000130b0000130b00000000000000000000fffffffffffffffffffcfcfccecece6d6d6d2e2e2e1b1b1bd3e3f3fbfbfffffff8f0eec6fbffe3f8fefffcf8fffffbfffffffffefefef6f6f6656565000000000000181818434343dcf9e9fffff7e9cbae75541cc4ad7ffffaedfbfffeedffebfefefef5f5f55050500303033b3b3bafafafe9e9e9fefefef7ffecfffff4ffe5c7a28c58decda6fffaf8fffbfffffff7fafafa7272720000005d5d5dedededfdfdfdfffffffcfcfcfffdfffff5fffffafafffff2fffffce2d1f3c4a9d4fff0ffc9c9c9030303383838f2f2f2fffffff6f6f6d5d5d5e4e4e4d3dce6cbd0e5edf0fefffffff7e7f9a785bb705087e1cbe8616161000000bcbcbcfefefefafafaa8a8a81313133c3c3c413f373f4247bec8c8fafff7fffdfff2d9fbd0bad7fffcfd191919202020f4f4f4fefefeffffffd8d8d82f2f2f6a6a6afffff4f3efeefafffcfafff2f7f9f3fbfaffecffffd6ffe9000000505050fefefefffffff9f9f9ffffffe6e6e633333364736bf8fefffff8fffffaf7fffbffe8f3ff91dbdb4bd1a7010101505050fffffffefefeffffffffffffffffffebebeb382b45857c72fffff4f3fffbf6fffcf9f2ff99d3e620d29d181818242424edededfffffffbfbfbfafafaf6f6f6ffffffdae6e6222008ccc8bdf8fffefcffe9fffff4fffcfdecffed5c5c5c010101c2c2c2fafafaffffffc3c3c3484848dbdbdbc8ddd4222123c5bed9f8f7fff1fffac9f4ffaad3fffcfcffc4c4c4000000393939f4f4f4fefefefafafa6a6a6a2727272e312f746b80f0eafffffffbf4fdfa58b1fb1889e9b5e4fffafafa606060000000686868fbfbfbfffffffcfcfce2e2e2e8e1defffefcfffbfffef6f7fffffba7d2f97fbdf9e7f2fffefefef3f3f3444444010101373737b0b0b0fcfcfcfafafaf3f9f8fffff1d3dbff5c6ee1b5b8fff7f8fcfffef4fffdfefffffffcfcfce9e9e96868680000000303031e1e1e575757eff1fcfffff7afbcff051db56d85e9fafdfffffff3f4fcfbfefefefffffffffffff4f4f4cbcbcb5858581f1f1f090909f6dcf4fffff7eff8ffc8ccfce0eefffafffff9f5ffeffcff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "version": "1.1"
+}

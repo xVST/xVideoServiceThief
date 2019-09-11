@@ -1,0 +1,15 @@
+{
+    "sha1": "e35db97d4c1a70c6ff746208d13189c9c81f5436",
+    "extractor": "criterion.py",
+    "url": "http:\/\/www.criterion.com\/",
+    "htmlError": false,
+    "title": "The Criterion Collection",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?criterion\\.com\/films\/(?P<id>[0-9]+)-.+"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/www.criterion.com\/assets\/img\/icons\/favicon-32x32.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

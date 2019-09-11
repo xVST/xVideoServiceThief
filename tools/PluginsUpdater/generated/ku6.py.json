@@ -1,0 +1,15 @@
+{
+    "sha1": "14374f07a3e752f1bec58f847cc3dc11737e1b3a",
+    "extractor": "ku6.py",
+    "url": "http:\/\/v.ku6.com\/",
+    "htmlError": false,
+    "title": "v.ku6.com",
+    "matchers": [
+        "https?:\/\/v\\.ku6\\.com\/show\/(?P<id>[a-zA-Z0-9\\-\\_]+)(?:\\.)*html"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

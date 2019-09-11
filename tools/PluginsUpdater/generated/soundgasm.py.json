@@ -1,0 +1,16 @@
+{
+    "sha1": "39728ed3b89632096a2dfdc2c2d977194209d4cd",
+    "extractor": "soundgasm.py",
+    "url": "http:\/\/soundgasm.net\/",
+    "htmlError": false,
+    "title": "soundgasm.net",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?soundgasm\\.net\/u\/(?P<user>[0-9a-zA-Z_-]+)\/(?P<display_id>[0-9a-zA-Z_-]+)",
+        "https?:\/\/(?:www\\.)?soundgasm\\.net\/u\/(?P<id>[^\/]+)\/?(?:\\#.*)?$"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

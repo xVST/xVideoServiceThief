@@ -1,0 +1,15 @@
+{
+    "sha1": "dd0914931ac1fbdecf6c31c92fa29eba9a1c7801",
+    "extractor": "stanfordoc.py",
+    "url": "http:\/\/openclassroom.stanford.edu\/",
+    "htmlError": false,
+    "title": "openclassroom.stanford.edu",
+    "matchers": [
+        "https?:\/\/openclassroom\\.stanford\\.edu(?P<path>\/?|(\/MainFolder\/(?:HomePage|CoursePage|VideoPage)\\.php([?]course=(?P<course>[^&]+)(&video=(?P<video>[^&]+))?(&.*)?)?))$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

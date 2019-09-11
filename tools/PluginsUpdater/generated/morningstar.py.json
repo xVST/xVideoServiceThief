@@ -1,0 +1,15 @@
+{
+    "sha1": "0b4bce963326f943854549ee4c741e19df81f6bf",
+    "extractor": "morningstar.py",
+    "url": "http:\/\/www.morningstar.com\/",
+    "htmlError": false,
+    "title": "Morningstar | Independent Investment Research",
+    "matchers": [
+        "https?:\/\/(?:(?:www|news)\\.)morningstar\\.com\/[cC]over\/video[cC]enter\\.aspx\\?id=(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

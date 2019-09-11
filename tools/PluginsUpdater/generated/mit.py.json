@@ -1,0 +1,17 @@
+{
+    "sha1": "b753f4dbc5cf9604848c7bc5de1ff428707f7b97",
+    "extractor": "mit.py",
+    "url": "http:\/\/techtv.mit.edu\/",
+    "htmlError": false,
+    "title": "Account Provider Selection",
+    "matchers": [
+        "https?:\/\/techtv\\.mit\\.edu\/(?:videos|embeds)\/(?P<id>\\d+)",
+        "https?:\/\/video\\.mit\\.edu\/watch\/(?P<title>[^\/]+)",
+        "^https?:\/\/ocw\\.mit\\.edu\/courses\/(?P<topic>[a-z0-9\\-]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

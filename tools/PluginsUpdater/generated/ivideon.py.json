@@ -1,0 +1,15 @@
+{
+    "sha1": "108a88c43b0ece44c3ae21d504c0d7026b857c4a",
+    "extractor": "ivideon.py",
+    "url": "https:\/\/www.ivideon.com\/",
+    "htmlError": false,
+    "title": "Cloud Video Surveillance | Ivideon",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?ivideon\\.com\/tv\/(?:[^\/]+\/)*camera\/(?P<id>\\d+-[\\da-f]+)\/(?P<camera_id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

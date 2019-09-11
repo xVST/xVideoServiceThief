@@ -1,0 +1,15 @@
+{
+    "sha1": "50949b049124566fa112cad255e40195228689fd",
+    "extractor": "biobiochiletv.py",
+    "url": "http:\/\/tv.biobiochile.cl\/",
+    "htmlError": false,
+    "title": "BBTV | BioBioChile",
+    "matchers": [
+        "https?:\/\/(?:tv|www)\\.biobiochile\\.cl\/(?:notas|noticias)\/(?:[^\/]+\/)+(?P<id>[^\/]+)\\.shtml"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

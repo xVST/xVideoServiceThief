@@ -1,0 +1,15 @@
+{
+    "sha1": "ca7a3751bf561359ad3c022e395d0dd621999a3d",
+    "extractor": "eroprofile.py",
+    "url": "http:\/\/www.eroprofile.com\/",
+    "htmlError": false,
+    "title": "EroProfile",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?eroprofile\\.com\/m\/videos\/view\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0.42857142857142855,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "3409fe4f2d32f1c6ded020093d775b7398bbeff3",
+    "extractor": "promptfile.py",
+    "url": "http:\/\/www.promptfile.com\/",
+    "htmlError": false,
+    "title": "www.promptfile.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?promptfile\\.com\/l\/(?P<id>[0-9A-Z\\-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

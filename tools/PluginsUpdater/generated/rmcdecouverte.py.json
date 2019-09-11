@@ -1,0 +1,15 @@
+{
+    "sha1": "ef4a6277e695a180de8e319d90960f8f648ac8dd",
+    "extractor": "rmcdecouverte.py",
+    "url": "https:\/\/rmcdecouverte.bfmtv.com\/",
+    "htmlError": false,
+    "title": "RMC D\u00e9couverte : Tous les programmes et \u00e9missions en direct et replay",
+    "matchers": [
+        "https?:\/\/rmcdecouverte\\.bfmtv\\.com\/(?:(?:[^\/]+\/)*program_(?P<id>\\d+)|(?P<live_id>mediaplayer-direct))"
+    ],
+    "+18": 0.03463203463203463,
+    "music": 0.10344827586206896,
+    "faviconUrl": "https:\/\/rmcdecouverte.bfmtv.com\/\/public\/favicon.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

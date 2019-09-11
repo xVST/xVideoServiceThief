@@ -1,0 +1,15 @@
+{
+    "sha1": "f52ecedfa313dfd78b5f5b2800905f64407251d5",
+    "extractor": "rockstargames.py",
+    "url": "https:\/\/www.rockstargames.com\/",
+    "htmlError": false,
+    "title": "Rockstar Games Support",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?rockstargames\\.com\/videos(?:\/video\/|#?\/?\\?.*\\bvideo=)(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.06896551724137931,
+    "faviconUrl": "https:\/\/www.rockstargames.com\/\/\/www.rockstargames.com\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

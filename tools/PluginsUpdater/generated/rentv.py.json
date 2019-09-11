@@ -1,0 +1,16 @@
+{
+    "sha1": "ee0f14d67cfee3204ab1bafab67562e028891504",
+    "extractor": "rentv.py",
+    "url": "http:\/\/ren.tv\/",
+    "htmlError": false,
+    "title": "ren.tv",
+    "matchers": [
+        "(?:rentv:|https?:\/\/(?:www\\.)?ren\\.tv\/(?:player|video\/epizod)\/)(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?ren\\.tv\/novosti\/\\d{4}-\\d{2}-\\d{2}\/(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

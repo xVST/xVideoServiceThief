@@ -1,0 +1,15 @@
+{
+    "sha1": "b347656892a4429618f779232b6ac7bfa8d99081",
+    "extractor": "go90.py",
+    "url": "https:\/\/www.go90.com\/",
+    "htmlError": false,
+    "title": "www.go90.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?go90\\.com\/(?:videos|embed)\/(?P<id>[0-9a-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

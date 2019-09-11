@@ -1,0 +1,13 @@
+{
+    "sha1": "65479af331dff8407c2a8a1baaaaa557f967f879",
+    "extractor": "xfileshare.py",
+    "url": "http:\/\/gorillavid.in\/",
+    "htmlError": false,
+    "title": "GorillaVid - Der einfache Weg Dateien zu teilen",
+    "matchers": [],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

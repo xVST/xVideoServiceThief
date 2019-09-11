@@ -1,0 +1,15 @@
+{
+    "sha1": "b747404b74538b24fe5e2035519b35ca791fa5da",
+    "extractor": "medialaan.py",
+    "url": "http:\/\/vtm.be\/",
+    "htmlError": false,
+    "title": "Privacy settings",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:www\\.|nieuws\\.)?\n(?:\n(?P<site_id>vtm|q2|vtmkzoom)\\.be\/\n(?:\nvideo(?:\/[^\/]+\/id\/|\/?\\?.*?\\baid=)|\n(?:[^\/]+\/)*\n)\n)\n(?P<id>[^\/?#&]+)\n"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": "http:\/\/vtm.be\/\/favicon.ico",
+    "faviconData": "00000100010010100000010020006804000016000000280000001000000020000000010020000000000040040000130b0000130b00000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe5e5bfffb3b340ffb9b950ffffffffffdfdfafffb3b340ffb3b340ffb3b340ffc6c670ffececcfffb3b340ffc6c670ffffffffffb3b340ffb3b340ffffffffffb3b340ff999900ff999900ffd2d28fff9f9f10ff999900ffa6a620ff999900ffb3b340ffe5e5bfff999900ffb3b340ffffffffff999900ff999900ffe5e5bfff999900ff9f9f10ff999900ff9f9f10ff999900ffa6a620ffd9d99fff999900ffa6a620ffd2d28fff999900ff9f9f10ffe5e5bfff999900ff999900ffb3b340ff999900ffd2d28fffb3b340ff999900ff999900ff999900ffb3b340ff999900ff999900ff999900ff999900ff999900ff999900ff999900ffb9b950ffcccc7fffcccc7ffff9f9efffececcfffcccc7fffc6c670ffa6a620ffd9d99fffcccc7fffd2d28fffcccc7fffd2d28ffff2f2dfffd2d28fffd2d28ffff9f9efffffffffffffffffffffffffffffffffffffffffffffffffffcccc7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "version": "1.1"
+}

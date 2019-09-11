@@ -1,0 +1,15 @@
+{
+    "sha1": "6b45320710263f4c15b32bb5cae01a3293cf0166",
+    "extractor": "aol.py",
+    "url": "https:\/\/www.aol.com\/",
+    "htmlError": false,
+    "title": "AOL - News, Weather, Entertainment, Finance & Lifestyle",
+    "matchers": [
+        "(?:aol-video:|https?:\/\/(?:www\\.)?aol\\.(?:com|ca|co\\.uk|de|jp)\/video\/(?:[^\/]+\/)*)(?P<id>[0-9a-f]+)"
+    ],
+    "+18": 0.06060606060606061,
+    "music": 0.12413793103448276,
+    "faviconUrl": "",
+    "faviconData": null,
+    "version": "1.2"
+}

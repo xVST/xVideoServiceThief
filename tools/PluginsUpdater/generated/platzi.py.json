@@ -1,0 +1,16 @@
+{
+    "sha1": "e400987416988f9bebf535a56f5412794e6addf0",
+    "extractor": "platzi.py",
+    "url": "https:\/\/platzi.com\/",
+    "htmlError": false,
+    "title": "Platzi: Cursos online profesionales de tecnolog\u00eda",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\nplatzi\\.com\/clases|#esversion\ncourses\\.platzi\\.com\/classes#enversion\n)\/[^\/]+\/(?P<id>\\d+)-[^\/?\\#&]+\n",
+        "(?x)\nhttps?:\/\/\n(?:\nplatzi\\.com\/clases|#esversion\ncourses\\.platzi\\.com\/classes#enversion\n)\/(?P<id>[^\/?\\#&]+)\n"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/platzi.com\/\/\/static.platzi.com\/media\/favicons\/platzi_favicon.png",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "32680057ae4ce7a74fa7dfed736147da3ec9c6ac",
+    "extractor": "viqeo.py",
+    "url": "https:\/\/cdn.viqeo.tv\/",
+    "htmlError": false,
+    "title": "cdn.viqeo.tv",
+    "matchers": [
+        "(?x)\n(?:\nviqeo:|\nhttps?:\/\/cdn\\.viqeo\\.tv\/embed\/*\\?.*?\\bvid=|\nhttps?:\/\/api\\.viqeo\\.tv\/v\\d+\/data\/startup?.*?\\bvideo(?:%5B%5D|\\[\\])=\n)\n(?P<id>[\\da-f]+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

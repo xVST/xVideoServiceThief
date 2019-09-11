@@ -1,0 +1,16 @@
+{
+    "sha1": "fcf38bd20f5f3897f917a47686e0d3c9dfb85253",
+    "extractor": "acast.py",
+    "url": "https:\/\/www.acast.com\/",
+    "htmlError": false,
+    "title": "Homepage - acast",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:(?:embed|www)\\.)?acast\\.com\/|\nplay\\.acast\\.com\/s\/\n)\n(?P<channel>[^\/]+)\/(?P<id>[^\/#?]+)\n",
+        "(?x)\nhttps?:\/\/\n(?:\n(?:www\\.)?acast\\.com\/|\nplay\\.acast\\.com\/s\/\n)\n(?P<id>[^\/#?]+)\n"
+    ],
+    "+18": 0,
+    "music": 0.20689655172413793,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

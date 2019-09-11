@@ -1,0 +1,15 @@
+{
+    "sha1": "93b2c33a611340dc63791bf5d7a64b187bbe781f",
+    "extractor": "plays.py",
+    "url": "https:\/\/plays.tv\/",
+    "htmlError": false,
+    "title": "Plays.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?plays\\.tv\/(?:video|embeds)\/(?P<id>[0-9a-f]{18})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/plays.tv\/\/\/s1.playscdn.tv\/s\/favicon451120675.png",
+    "faviconData": null,
+    "version": "1.1"
+}

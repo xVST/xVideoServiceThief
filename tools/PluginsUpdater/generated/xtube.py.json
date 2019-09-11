@@ -1,0 +1,16 @@
+{
+    "sha1": "8981cf065c3ad7f3620f259d89945a44a46fb479",
+    "extractor": "xtube.py",
+    "url": "http:\/\/www.xtube.com\/",
+    "htmlError": false,
+    "title": "Xtube :: Free Porn, Sex Movies & Porn Tube - XXX Gay Porno Videos",
+    "matchers": [
+        "(?x)\n(?:\nxtube:|\nhttps?:\/\/(?:www\\.)?xtube\\.com\/(?:watch\\.php\\?.*\\bv=|video-watch\/(?:embedded\/)?(?P<display_id>[^\/]+)-)\n)\n(?P<id>[^\/?&#]+)\n",
+        "https?:\/\/(?:www\\.)?xtube\\.com\/profile\/(?P<id>[^\/]+-\\d+)"
+    ],
+    "+18": 0.6493506493506493,
+    "music": 0.15862068965517243,
+    "faviconUrl": "https:\/\/cdn1-s-hw-e1.xtube.com\/v3_img\/favicons\/favicon.ico?cb=687",
+    "faviconData": "0000010001001010000000002000680400001600000028000000100000002000000001002000000000004004000000000000000000000000000000000000ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff012e2bc5052c25c395ffffff01ffffff01ffffff01ffffff01455cdf03ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff012e2bc5912c25c391ffffff01ffffff014b66e4674860e1cb455cdf994257dd55ffffff01ffffff01ffffff01ffffff01ffffff01ffffff013235ca113030c8772e2bc5ff2c25c31dffffff01ffffff014b66e47d4860e1ff455cdfff4257ddf54052da35ffffff01ffffff01ffffff01ffffff013339cc053235ca9b3030c8f92e2bc5a3ffffff01ffffff01ffffff01ffffff014860e1b1455cdfff4257ddff4052dacb3d4dd703ffffff01ffffff01363ecf073339cc773235caf53030c8e72e2bc50fffffff01ffffff01ffffff01ffffff014860e10f455cdfdd4257ddff4052daff3d4dd781ffffff01ffffff01363ecf893339cced3235caff3030c865ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01455cdf2f4257ddf94052daff3d4dd7fd3a49d5433844d245363ecfff3339ccff3235caa5ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff014257dd5f4052daff3d4dd7ff3a49d5e33844d2ef363ecfff3339ccdf3235ca0dffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff014052daaf3d4dd7ff3a49d5ff3844d2ff363ecff93339cc37ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff014052da313d4dd7ff3a49d5ff3844d2ff363ecf83ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff014257dd134052dadb3d4dd7ff3a49d5ff3844d2ff363ecfe13339cc09ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff014860e121455cdf314257ddd74052daff3d4dd7fd3a49d5b93844d2ff363ecfff3339cc79ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff014860e191455cdfff4257ddff4052daff3d4dd76d3a49d5093844d2c7363ecfff3339ccf53235ca3dffffff01ffffff01ffffff01ffffff01ffffff01ffffff014860e193455cdffd4257ddfb4052da83ffffff01ffffff013844d249363ecfff3339ccff3235caafffffff01ffffff01ffffff01ffffff01ffffff01ffffff014860e167455cdf474257dd25ffffff01ffffff01ffffff01ffffff01363ecfb33339ccfd3235caff3030c843ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01ffffff01363ecf213339cc3d3235ca693030c813ffffff01ffffff01ffffff010000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff",
+    "version": "1.1"
+}

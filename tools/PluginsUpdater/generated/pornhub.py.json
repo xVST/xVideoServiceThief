@@ -1,0 +1,18 @@
+{
+    "sha1": "4764a6b4358c068f3261fd0e9cbbb3de7e6c086f",
+    "extractor": "pornhub.py",
+    "url": "http:\/\/www.pornhub.com\/",
+    "htmlError": false,
+    "title": "www.pornhub.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:[^\/]+\\.)?(?P<host>pornhub\\.(?:com|net))\/(?:(?:view_video\\.php|video\/show)\\?viewkey=|embed\/)|\n(?:www\\.)?thumbzilla\\.com\/video\/\n)\n(?P<id>[\\da-z]+)\n",
+        "(?P<url>https?:\/\/(?:[^\/]+\\.)?pornhub\\.(?:com|net)\/(?:(?:user|channel)s|model|pornstar)\/(?P<id>[^\/?#&]+))(?:[?#&]|\/(?!videos)|$)",
+        "https?:\/\/(?:[^\/]+\\.)?(?P<host>pornhub\\.(?:com|net))\/(?P<id>(?:[^\/]+\/)*[^\/?#&]+)",
+        "(?P<url>https?:\/\/(?:[^\/]+\\.)?(?P<host>pornhub\\.(?:com|net))\/(?:(?:user|channel)s|model|pornstar)\/(?P<id>[^\/]+)\/videos\/upload)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

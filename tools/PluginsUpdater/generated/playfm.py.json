@@ -1,0 +1,15 @@
+{
+    "sha1": "c611f7ea9a19ec44d862ecabfeb9e591dafa3376",
+    "extractor": "playfm.py",
+    "url": "https:\/\/www.play.fm\/",
+    "htmlError": false,
+    "title": "Play.fm - Discover music scenes, together.",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?play\\.fm\/(?P<slug>(?:[^\/]+\/)+(?P<id>[^\/]+))\/?(?:$|[?#])"
+    ],
+    "+18": 0,
+    "music": 0.30344827586206896,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

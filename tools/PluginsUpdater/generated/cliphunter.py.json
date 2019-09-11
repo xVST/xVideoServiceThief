@@ -1,0 +1,15 @@
+{
+    "sha1": "0cda1ced6bc17796fb0a2764b6d605711a618cac",
+    "extractor": "cliphunter.py",
+    "url": "http:\/\/www.cliphunter.com\/",
+    "htmlError": false,
+    "title": "Free Porn, Sex Videos, XXX Tube | Cliphunter.com",
+    "matchers": [
+        "(?x)https?:\/\/(?:www\\.)?cliphunter\\.com\/w\/\n(?P<id>[0-9]+)\/\n(?P<seo>.+?)(?:$|[#\\?])\n"
+    ],
+    "+18": 0.7402597402597403,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "597f56ba41ad46df220442f3e6cf57ec20773c51",
+    "extractor": "nhl.py",
+    "url": "https:\/\/www.nhl.com\/",
+    "htmlError": false,
+    "title": "Official Site of the National Hockey League | NHL.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?P<site>nhl|wch2016)\\.com\/(?:[^\/]+\/)*c-(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.4413793103448276,
+    "faviconUrl": "https:\/\/www.nhl.com\/\/\/www-league.nhlstatic.com\/nhl.com\/builds\/site-core\/7857f6401166da0bf6ac1063d09f8bacc7d17617_1565290324\/images\/favicon.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

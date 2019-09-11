@@ -1,0 +1,16 @@
+{
+    "sha1": "afbd5a12a4e50aa7304ad8ed3a953aaf1b2c838e",
+    "extractor": "camdemy.py",
+    "url": "http:\/\/www.camdemy.com\/",
+    "htmlError": false,
+    "title": "Camdemy",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?camdemy\\.com\/media\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?camdemy\\.com\/folder\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "c2aeb577b940c2b57163c36c58280e76219d2e3e",
+    "extractor": "lifenews.py",
+    "url": "https:\/\/life.ru\/",
+    "htmlError": false,
+    "title": "\u00abLife.ru\u00bb \u2014 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0439 \u043f\u043e\u0440\u0442\u0430\u043b",
+    "matchers": [
+        "https?:\/\/life\\.ru\/t\/[^\/]+\/(?P<id>\\d+)",
+        "https?:\/\/embed\\.life\\.ru\/(?:embed|video)\/(?P<id>[\\da-f]{32})"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

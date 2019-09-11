@@ -1,0 +1,16 @@
+{
+    "sha1": "b6cc612cf89cce935d41c214dfdd49ef7c5326c3",
+    "extractor": "tvanouvelles.py",
+    "url": "http:\/\/www.tvanouvelles.ca\/",
+    "htmlError": false,
+    "title": "www.tvanouvelles.ca",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tvanouvelles\\.ca\/videos\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tvanouvelles\\.ca\/(?:[^\/]+\/)+(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

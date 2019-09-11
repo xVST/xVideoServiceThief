@@ -1,0 +1,15 @@
+{
+    "sha1": "05eef1f52bc2ea9bb5da855834ca4d1c300d6449",
+    "extractor": "tf1.py",
+    "url": "http:\/\/videos.tf1.fr\/",
+    "htmlError": false,
+    "title": "TF1 : programmes TV TF1 | MYTF1",
+    "matchers": [
+        "https?:\/\/(?:(?:videos|www|lci)\\.tf1|(?:www\\.)?(?:tfou|ushuaiatv|histoire|tvbreizh))\\.fr\/(?:[^\/]+\/)*(?P<id>[^\/?#.]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/videos.tf1.fr\/\/public\/favicon-16x16.png",
+    "faviconData": null,
+    "version": "1.2"
+}

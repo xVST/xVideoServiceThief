@@ -1,0 +1,15 @@
+{
+    "sha1": "a776968dac0577f12aa7fd0843ed64da964194af",
+    "extractor": "servingsys.py",
+    "url": "http:\/\/bs.serving-sys.com\/",
+    "htmlError": false,
+    "title": "Sizmek Advertising Server",
+    "matchers": [
+        "https?:\/\/(?:[^.]+\\.)?serving-sys\\.com\/BurstingPipe\/adServer\\.bs\\?.*?&pli=(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

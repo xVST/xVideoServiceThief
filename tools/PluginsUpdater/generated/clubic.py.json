@@ -1,0 +1,15 @@
+{
+    "sha1": "9011cacc549e7875040d92fca32699af441662cc",
+    "extractor": "clubic.py",
+    "url": "http:\/\/www.clubic.com\/",
+    "htmlError": false,
+    "title": "Actualit\u00e9 High-Tech et Num\u00e9rique, Comparatifs et Logiciels | Clubic",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?clubic\\.com\/video\/(?:[^\/]+\/)*video.*-(?P<id>[0-9]+)\\.html"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": "http:\/\/www.clubic.com\/\/favicon.ico",
+    "faviconData": "89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000000467414d410000b18f0bfc6105000000f349444154381163bcea66e8c9f0f7df2c060606192026053c6160664a63bceaacff18a88b54cd308b9e3051a01964880cc8008a004e038482a219d4d6ec0363101b17c069804854320323330bc39f776f1844a25370e967c069008b8010c3b7cbe718dead5fcec0cc2740ba01301d1fb6af67b8ee6a08e362d0385d80a11287004103f8ddfd19b4f65cc0a19d81810597cc9f0fef18b8748d1858c52519fe7c7c8f4b19ee407cb36c2ec3ffbf7f1858844519de2c9d83d3005052fe8f53960809826180d50c46c6478c8c4cae7c425c5ca0307802c42465264606c664ad3de7f7800c67026549a821203e51805790e3284c2100c12934e40ce2342b0000000049454e44ae426082",
+    "version": "1.1"
+}

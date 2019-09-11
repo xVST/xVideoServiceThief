@@ -1,0 +1,15 @@
+{
+    "sha1": "bd9d2c6a53ad0c70cf22068c974b6c1bd3b0a42d",
+    "extractor": "meta.py",
+    "url": "http:\/\/video.meta.ua\/",
+    "htmlError": false,
+    "title": "\u0412\u0438\u0434\u0435\u043e\u041c\u0415\u0422\u0410 - \u0411\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u043e\u0435 \u043e\u043d\u043b\u0430\u0439\u043d-\u0432\u0438\u0434\u0435\u043e, \u043f\u0440\u0438\u043a\u043e\u043b\u044b, \u0432\u0438\u0434\u0435\u043e\u0440\u043e\u043b\u0438\u043a\u0438, \u0432\u0438\u0434\u0435\u043e\u043a\u043b\u0438\u043f\u044b",
+    "matchers": [
+        "https?:\/\/video\\.meta\\.ua\/(?:iframe\/)?(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.2,
+    "faviconUrl": "http:\/\/video.meta.ua\/\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

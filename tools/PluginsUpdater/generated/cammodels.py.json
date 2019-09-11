@@ -1,0 +1,15 @@
+{
+    "sha1": "5b6b43ef3ed5e54646be6424d4ef2deab9492439",
+    "extractor": "cammodels.py",
+    "url": "https:\/\/www.cammodels.com\/",
+    "htmlError": false,
+    "title": "CamModels -  Live Sex Chat, Sex Shows and Webcam Sex - Amateur Cams and Pornstars",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?cammodels\\.com\/cam\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0.46320346320346323,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

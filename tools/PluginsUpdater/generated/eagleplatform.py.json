@@ -1,0 +1,15 @@
+{
+    "sha1": "6b46dd7369789699fabf6004abde127f2a8e9f0a",
+    "extractor": "eagleplatform.py",
+    "url": "http:\/\/lentaru.media.eagleplatform.com\/",
+    "htmlError": false,
+    "title": "",
+    "matchers": [
+        "(?x)\n(?:\neagleplatform:(?P<custom_host>[^\/]+):|\nhttps?:\/\/(?P<host>.+?\\.media\\.eagleplatform\\.com)\/index\/player\\?.*\\brecord_id=\n)\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/lentaru.media.eagleplatform.com\/\/favicon.ico?v3",
+    "faviconData": null,
+    "version": "1.1"
+}

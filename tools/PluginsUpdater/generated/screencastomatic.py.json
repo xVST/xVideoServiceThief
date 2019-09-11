@@ -1,0 +1,15 @@
+{
+    "sha1": "2eeb16ed55a043d5e6756c4b05be7dc2d0efe077",
+    "extractor": "screencastomatic.py",
+    "url": "http:\/\/screencast-o-matic.com\/",
+    "htmlError": false,
+    "title": "Screen Recorder & Video Editor | Screencast-O-Matic",
+    "matchers": [
+        "https?:\/\/screencast-o-matic\\.com\/watch\/(?P<id>[0-9a-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": "http:\/\/screencast-o-matic.com\/\/\/dfjnl57l0uncv.cloudfront.net\/www\/3.1.112\/images\/favicon.png",
+    "faviconData": null,
+    "version": "1.1"
+}

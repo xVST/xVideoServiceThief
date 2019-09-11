@@ -1,0 +1,15 @@
+{
+    "sha1": "b73116bb039ee35033c03293ac84b720f23528ff",
+    "extractor": "netzkino.py",
+    "url": "http:\/\/www.netzkino.de\/",
+    "htmlError": false,
+    "title": "Netzkino \u2013 Kostenlos Filme online sehen",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?netzkino\\.de\/\\#!\/(?P<category>[^\/]+)\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

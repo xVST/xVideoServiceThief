@@ -1,0 +1,15 @@
+{
+    "sha1": "09f75c71e8693c946c82ec69d05464868e997a78",
+    "extractor": "baidu.py",
+    "url": "http:\/\/v.baidu.com\/",
+    "htmlError": false,
+    "title": "\u767e\u5ea6--\u60a8\u7684\u8bbf\u95ee\u51fa\u9519\u4e86",
+    "matchers": [
+        "https?:\/\/v\\.baidu\\.com\/(?P<type>[a-z]+)\/(?P<id>\\d+)\\.htm"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

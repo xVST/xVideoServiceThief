@@ -1,0 +1,15 @@
+{
+    "sha1": "d167c58f03d9e008d187860abc6c7a20574d7268",
+    "extractor": "pandoratv.py",
+    "url": "http:\/\/jp.channel.pandora.tv\/",
+    "htmlError": false,
+    "title": "jp.channel.pandora.tv",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:www\\.)?pandora\\.tv\/view\/(?P<user_id>[^\/]+)\/(?P<id>\\d+)|#newformat\n(?:.+?\\.)?channel\\.pandora\\.tv\/channel\/video\\.ptv\\?|#oldformat\nm\\.pandora\\.tv\/?\\?#mobile\n)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

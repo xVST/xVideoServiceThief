@@ -1,0 +1,15 @@
+{
+    "sha1": "74baddeca3a59f390b3fddea567d8f209d395ce2",
+    "extractor": "roxwel.py",
+    "url": "http:\/\/www.roxwel.com\/",
+    "htmlError": false,
+    "title": "www.roxwel.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?roxwel\\.com\/player\/(?P<filename>.+?)(\\.|\\?|$)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

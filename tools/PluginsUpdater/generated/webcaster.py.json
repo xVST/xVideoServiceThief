@@ -1,0 +1,16 @@
+{
+    "sha1": "0cd89b8c335ba776f7491e52957e85f39447a63e",
+    "extractor": "webcaster.py",
+    "url": "http:\/\/bl.webcaster.pro\/",
+    "htmlError": false,
+    "title": "bl.webcaster.pro",
+    "matchers": [
+        "https?:\/\/bl\\.webcaster\\.pro\/(?:quote|media)\/start\/free_(?P<id>[^\/]+)",
+        "https?:\/\/bl\\.webcaster\\.pro\/feed\/start\/free_(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,17 @@
+{
+    "sha1": "ed97b178a581530f5d25f86d4d65fde493d17279",
+    "extractor": "videomore.py",
+    "url": "http:\/\/videomore.ru\/",
+    "htmlError": false,
+    "title": "\u00d0\u00a1\u00d0\u00bc\u00d0\u00be\u00d1\u0082\u00d1\u0080\u00d0\u00b5\u00d1\u0082\u00d1\u008c \u00d0\u00b2\u00d0\u00b8\u00d0\u00b4\u00d0\u00b5\u00d0\u00be \u00d0\u00b1\u00d0\u00b5\u00d1\u0081\u00d0\u00bf\u00d0\u00bb\u00d0\u00b0\u00d1\u0082\u00d0\u00bd\u00d0\u00be \u00d0\u00b2 \u00d0\u00be\u00d0\u00bd\u00d0\u00bb\u00d0\u00b0\u00d0\u00b9\u00d0\u00bd-\u00d0\u00ba\u00d0\u00b8\u00d0\u00bd\u00d0\u00be\u00d1\u0082\u00d0\u00b5\u00d0\u00b0\u00d1\u0082\u00d1\u0080\u00d0\u00b5 \u00c2\u00ab\u00d0\u0092\u00d0\u00b8\u00d0\u00b4\u00d0\u00b5\u00d0\u00be\u00d0\u00bc\u00d0\u00be\u00d1\u0080\u00d0\u00b5\u00c2\u00bb",
+    "matchers": [
+        "(?x)\nvideomore:(?P<sid>\\d+)$|\nhttps?:\/\/(?:player\\.)?videomore\\.ru\/\n(?:\n(?:\nembed|\n[^\/]+\/[^\/]+\n)\/|\n[^\/]*\\?.*?\\btrack_id=\n)\n(?P<id>\\d+)\n(?:[\/?#&]|\\.(?:xml|json)|$)\n",
+        "https?:\/\/videomore\\.ru\/(?:(?:[^\/]+\/){2})?(?P<id>[^\/?#&]+)(?:\/*|[?#&].*?)$",
+        "https?:\/\/videomore\\.ru\/(?!embed)(?P<id>[^\/]+\/[^\/?#&]+)(?:\/*|[?#&].*?)$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/videomore.ru\/\/\/videomore.ru\/images\/favicon.png?v=1",
+    "faviconData": null,
+    "version": "1.2"
+}

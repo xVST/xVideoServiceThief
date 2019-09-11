@@ -1,0 +1,15 @@
+{
+    "sha1": "3a5b2af99b5dad70bb91fbc26b7c6bf189673ef3",
+    "extractor": "twentymin.py",
+    "url": "http:\/\/www.20min.ch\/",
+    "htmlError": false,
+    "title": "20 Minuten - News von jetzt!",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:www\\.)?20min\\.ch\/\n(?:\nvideotv\/*\\?.*?\\bvid=|\nvideoplayer\/videoplayer\\.html\\?.*?\\bvideoId@\n)\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0.11688311688311688,
+    "music": 0.2482758620689655,
+    "faviconUrl": "http:\/\/www.20min.ch\/\/\/www.20min.ch\/ico\/favicon20.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

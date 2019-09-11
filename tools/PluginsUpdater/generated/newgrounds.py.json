@@ -1,0 +1,16 @@
+{
+    "sha1": "7dd8368bf8c4e7b699288f11f2218054bf276220",
+    "extractor": "newgrounds.py",
+    "url": "https:\/\/www.newgrounds.com\/",
+    "htmlError": false,
+    "title": "Newgrounds.com \u2014 Everything, By Everyone",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?newgrounds\\.com\/(?:audio\/listen|portal\/view)\/(?P<id>[0-9]+)",
+        "https?:\/\/(?:www\\.)?newgrounds\\.com\/(?:collection|[^\/]+\/search\/[^\/]+)\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0.21379310344827587,
+    "faviconUrl": "https:\/\/www.newgrounds.com\/favicon.ico",
+    "faviconData": "00000100010010100000000020006804000016000000280000001000000020000000010020000000000040040000000000000000000000000000000000000e284f970e284fff0e284fff0e284f970e284f970e284fff0e284fff0e284f970e284f0f0e284f970e284fff0e284fff0e284fff0e284fff0e284f970e284f0f0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284f970e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284f970e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff2275eaff206eddff0e284fff0e284fff2171e4ff2274eaff0e284fff0e284fff174c97ff2274e9ff2275ebff2275ebff2274e9ff174c96ff0e284fff0e284fff206dd8ff206edaff0e284fff0e284fff2276eaff2276ebff0e284fff0e284fff2276eaff2174e7ff2173e5ff2172e2ff206fddff2170e0ff0e284fff0e284fff1c6accff1c6accff0e284fff0e284fff207bebff207beaff0e284fff0e284fff1e73dcff1d6fd5ff0e284fff0e284fff1f77e3ff207ae8ff0e284fff0e284fff1c6fcdff1c6fcdff0e284fff0e284fff1e7ee6ff1d75d7ff0e284fff0e284fff1e7ae0ff1e7ce3ff0e284fff0e284fff1f81ecff1f80ebff0e284fff0e284fff1a76cdff1a76cdff0e284fff0e284fff1b7bd5ff1a76cdff0e284fff0e284fff1d88ebff1d89ebff0e284fff1d89ecff1d89ecff1c80deff0e284fff0e284fff187ecfff1984d9ff0e284fff0e284fff198be4ff187ccdff0e284fff0e284fff1a91ecff1a91ecff0e284fff1a91ecff1a91ecff1987ddff0e284fff0e284fff1790e1ff1899edff0e284fff0e284fff1899edff1895e8ff0e284fff0e284fff1899edff1899edff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff169de7ff16a2edff0e284fff0e284fff16a2edff16a2edff0e284fff0e284fff16a2edff16a2edff0e284fff0e284fff0e284fff0e284fff0e284fff0e284fff14a6ebff14a9eeff0e284fff0e284fff14a9eeff14a9eeff0e284fff0e284fff14a9eeff14a9eeff0e284fff0e284fff14a8edff14a6eaff0e284fff0e284fff12aeedff12afeeff0e284fff0e284fff1198d3ff12a4e1ff0e284fff0e284fff12afeeff12afeeff0e284fff0e284fff12afeeff12afeeff0e284fff0e284fff11b2eeff11b2eeff11aee9ff1096ceff1096ceff1096ceff0e284fff0e284fff11abe6ff11a6e0ff11b1edff11b2eeff11b2eeff11b2eeff0e284fff0e284f970f6899ff11b2eeff11b0ebff119bd4ff1096ceff0f6596ff0e284f970e284f970f6495ff1096ceff11a4deff11a2dbff1097cfff0f6495ff0e284f970e284f0d0e284f970e284fff0e284fff0e284fff0e284fff0e284f970e284f0d0e284f0d0e284f970e284fff0e284fff0e284fff0e284fff0e284f970e284f0d0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff0000ffff",
+    "version": "1.1"
+}

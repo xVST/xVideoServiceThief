@@ -1,0 +1,15 @@
+{
+    "sha1": "0e07d3aa1e71f84f1a2d85740195a776ebe29e07",
+    "extractor": "nrl.py",
+    "url": "https:\/\/www.nrl.com\/",
+    "htmlError": false,
+    "title": "The official website of the National Rugby League - NRL",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?nrl\\.com\/tv(\/[^\/]+)*\/(?P<id>[^\/?&#]+)"
+    ],
+    "+18": 0,
+    "music": 0.13793103448275862,
+    "faviconUrl": "https:\/\/www.nrl.com\/\/client\/dist\/favicons\/nrl-16x16.png",
+    "faviconData": "89504e470d0a1a0a0000000d4948445200000010000000100804000000b5fa37ea000000e64944415428cfadd02d4b83011007f09fb23811ad8aa2c197be20a6c57d817d03c1227e08418415c13c5812c160d1b4b6b6a70d0c222c0cc37093c94c8fcac619e6deccdeb5bb1fc79f1354249a7afae2b7fb7a9a129520684d167fbbf57fe0d1b1eedcead5919729686059c997103e5d58426b0aba0ec0b63bb7b6c0a18ff90cd7368c6bd3cd7c868e672175262beb5c2a3ccd5e68c838f52eb4b5859e1399d90c1d0b587565e0dba5152c7a1b8344b8b70776ed807d0f423202454361a06c0dac2b1b0843c51120a72a845449492a84aa1c630079b5c91f6bf2a3e12c8082babac274107e0032cab0733bb358a00000000049454e44ae426082",
+    "version": "1.1"
+}

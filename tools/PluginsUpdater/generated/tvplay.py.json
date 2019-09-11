@@ -1,0 +1,17 @@
+{
+    "sha1": "e43fbdf29089d3b75ce4dbd4af5b790d7ddf0fb6",
+    "extractor": "tvplay.py",
+    "url": "http:\/\/www.tvplay.lv\/",
+    "htmlError": false,
+    "title": "TVPlay.lv \u2013 Seri\u0101li, filmas un raid\u012bjumi jebkurai gaumei un bez maksas",
+    "matchers": [
+        "(?x)\n(?:\nmtg:|\nhttps?:\/\/\n(?:www\\.)?\n(?:\ntvplay(?:\\.skaties)?\\.lv(?:\/parraides)?|\n(?:tv3play|play\\.tv3)\\.lt(?:\/programos)?|\ntv3play(?:\\.tv3)?\\.ee\/sisu|\n(?:tv(?:3|6|8|10)play|viafree)\\.se\/program|\n(?:(?:tv3play|viasat4play|tv6play|viafree)\\.no|(?:tv3play|viafree)\\.dk)\/programmer|\nplay\\.nova(?:tv)?\\.bg\/programi\n)\n\/(?:[^\/]+\/)+\n)\n(?P<id>\\d+)\n",
+        "(?x)\nhttps?:\/\/\n(?:www\\.)?\nviafree\\.\n(?:\n(?:dk|no)\/programmer|\nse\/program\n)\n\/(?:[^\/]+\/)+(?P<id>[^\/?#&]+)\n",
+        "https?:\/\/tvplay\\.(?:tv3\\.lt|skaties\\.lv|tv3\\.ee)\/[^\/]+\/[^\/?#&]+-(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

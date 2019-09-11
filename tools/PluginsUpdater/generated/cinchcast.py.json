@@ -1,0 +1,15 @@
+{
+    "sha1": "09c02cb8f061ec8aa2a9cebe79eca778717d9e69",
+    "extractor": "cinchcast.py",
+    "url": "http:\/\/player.cinchcast.com\/",
+    "htmlError": false,
+    "title": "Cinchcast.Player",
+    "matchers": [
+        "https?:\/\/player\\.cinchcast\\.com\/.*?(?:assetId|show_id)=(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

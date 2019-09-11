@@ -1,0 +1,15 @@
+{
+    "sha1": "5cf28d4066b1344e75b2926ea3c33f4fc8284041",
+    "extractor": "radiobremen.py",
+    "url": "http:\/\/www.radiobremen.de\/",
+    "htmlError": false,
+    "title": "Radio Bremen Homepage - Radio Bremen",
+    "matchers": [
+        "http?:\/\/(?:www\\.)?radiobremen\\.de\/mediathek\/(?:index\\.html)?\\?id=(?P<id>[0-9]+)"
+    ],
+    "+18": 0.05194805194805195,
+    "music": 0.4413793103448276,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

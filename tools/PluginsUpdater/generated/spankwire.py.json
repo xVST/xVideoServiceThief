@@ -1,0 +1,15 @@
+{
+    "sha1": "5a72838aea91eac554635ab0fc0e174ab18c7346",
+    "extractor": "spankwire.py",
+    "url": "http:\/\/www.spankwire.com\/",
+    "htmlError": false,
+    "title": "Free Porn, Sex Videos 4 You, Porno Hub, Porn Tube, XXX Movies",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?P<url>spankwire\\.com\/[^\/]*\/video(?P<id>[0-9]+)\/?)"
+    ],
+    "+18": 0.658008658008658,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/www.spankwire.com\/\/\/cdn1-static-spankwire.spankcdn.net\/images\/favicon.ico?cache=184111539070551",
+    "faviconData": null,
+    "version": "1.1"
+}

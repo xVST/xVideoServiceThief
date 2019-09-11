@@ -1,0 +1,15 @@
+{
+    "sha1": "c86752090bc71cb96b8150ae13448cdee6520991",
+    "extractor": "indavideo.py",
+    "url": "http:\/\/indavideo.hu\/",
+    "htmlError": false,
+    "title": "indavide\u00f3 - online vide\u00f3t\u00e1rhely ingyen",
+    "matchers": [
+        "https?:\/\/(?:(?:embed\\.)?indavideo\\.hu\/player\/video\/|assets\\.indavideo\\.hu\/swf\/player\\.swf\\?.*\\b(?:v(?:ID|id))=)(?P<id>[\\da-f]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,17 @@
+{
+    "sha1": "3b3fa8aa4bb986774917628ae56e175e4ea19e4e",
+    "extractor": "vk.py",
+    "url": "http:\/\/vk.com\/",
+    "htmlError": false,
+    "title": "Versi\u00f3n m\u00f3vil de VK",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:\n(?:(?:m|new)\\.)?vk\\.com\/video_|\n(?:www\\.)?daxab.com\/\n)\next\\.php\\?(?P<embed_query>.*?\\boid=(?P<oid>-?\\d+).*?\\bid=(?P<id>\\d+).*)|\n(?:\n(?:(?:m|new)\\.)?vk\\.com\/(?:.+?\\?.*?z=)?video|\n(?:www\\.)?daxab.com\/embed\/\n)\n(?P<videoid>-?\\d+_\\d+)(?:.*\\blist=(?P<list_id>[\\da-f]+))?\n)\n",
+        "https?:\/\/(?:(?:m|new)\\.)?vk\\.com\/videos(?P<id>-?[0-9]+)(?!\\?.*\\bz=video)(?:[\/?#&]|$)",
+        "https?:\/\/(?:(?:(?:(?:m|new)\\.)?vk\\.com\/(?:[^?]+\\?.*\\bw=)?wall(?P<id>-?\\d+_\\d+)))"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": "http:\/\/vk.com\/\/images\/icons\/favicons\/fav_logo.ico?8",
+    "faviconData": "89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000000f549444154780162702ff061086adc5117d808289d1a70238aa268b75807658cbadd416ddb0ba86d37a8dda0b6399efbcffcfbc6c63bc9e3b5a61fd445ea429045cccb322c6b1746248b65a36c9611e17a600524a180580164969b82cf3f3dfe754624972fa0a063130c8dde2468e9558bd0aaf7e74f8d7f058bfbf760f4cf9d8b37290af446b31bad7de2c4bf82cce6359849c1afd680b4aa45a1c06426340e1f81717af389984021f01adebc04e3feed1f9e98debe0d9c035ef14533c2922b6a070ff0fd6f00a367fa2cb0025e89c5b3185cbf1449fdd518c45f76cb3a3e7ef5301321b962c15d81cc926f24e956961e26d971b600e351b2b5d651af710000000049454e44ae426082",
+    "version": "1.2"
+}

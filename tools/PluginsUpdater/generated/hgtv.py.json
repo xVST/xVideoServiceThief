@@ -1,0 +1,15 @@
+{
+    "sha1": "5011730a91b442c2efefb303cf3e4c23ea7670fc",
+    "extractor": "hgtv.py",
+    "url": "http:\/\/www.hgtv.com\/",
+    "htmlError": false,
+    "title": "Notification",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?hgtv\\.com\/shows\/[^\/]+\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

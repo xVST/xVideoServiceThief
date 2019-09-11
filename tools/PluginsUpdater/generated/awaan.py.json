@@ -1,0 +1,18 @@
+{
+    "sha1": "bbdd4246902247b396b1754987ab1eb9698454a9",
+    "extractor": "awaan.py",
+    "url": "http:\/\/www.dcndigital.ae\/",
+    "htmlError": false,
+    "title": "Video on Demand - AWAAN",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?:awaan|dcndigital)\\.ae\/(?:#\/)?show\/(?P<show_id>\\d+)\/[^\/]+(?:\/(?P<video_id>\\d+)\/(?P<season_id>\\d+))?",
+        "https?:\/\/(?:www\\.)?(?:awaan|dcndigital)\\.ae\/(?:#\/)?(?:video(?:\/[^\/]+)?|media|catchup\/[^\/]+\/[^\/]+)\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?(?:awaan|dcndigital)\\.ae\/(?:#\/)?live\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?(?:awaan|dcndigital)\\.ae\/(?:#\/)?program\/(?:(?P<show_id>\\d+)|season\/(?P<season_id>\\d+))"
+    ],
+    "+18": 0,
+    "music": 0.2827586206896552,
+    "faviconUrl": "https:\/\/www.awaan.ae\/images\/favicon.png",
+    "faviconData": "89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000001974455874536f6674776172650041646f626520496d616765526561647971c9653c0000008d4944415478da6266a01030536a00133e49c3de3306204c9601508dfb41189f214c04340b40314e4398086886019c863011a119af214c446ac669081301cd17a018a7218c04343b42d9207974ff7f00c933e1d37cbed8e40308430dc2ea12900185b834c304f01852c804945c006424e2d28cc79044a85e782c0400b100a1b40f520352cb402d40716e0408300058cd4c59e08f49660000000049454e44ae426082",
+    "version": "1.1"
+}

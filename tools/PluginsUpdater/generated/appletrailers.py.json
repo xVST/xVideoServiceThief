@@ -1,0 +1,16 @@
+{
+    "sha1": "1d6e37485bcb3d00c0f312ad56a46489627fb1d5",
+    "extractor": "appletrailers.py",
+    "url": "http:\/\/trailers.apple.com\/",
+    "htmlError": false,
+    "title": "iTunes Movie Trailers",
+    "matchers": [
+        "https?:\/\/(?:www\\.|movie)?trailers\\.apple\\.com\/(?:trailers|ca)\/(?P<company>[^\/]+)\/(?P<movie>[^\/]+)",
+        "https?:\/\/(?:www\\.)?trailers\\.apple\\.com\/#section=(?P<id>%s)%'|'.join({)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

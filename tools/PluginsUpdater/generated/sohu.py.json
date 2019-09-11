@@ -1,0 +1,15 @@
+{
+    "sha1": "bb1e4b47243ab8204401c7b2ef704c47b116f8df",
+    "extractor": "sohu.py",
+    "url": "http:\/\/tv.sohu.com\/",
+    "htmlError": false,
+    "title": "\u641c\u72d0\u89c6\u9891-\u4e2d\u56fd\u9886\u5148\u7684\u7efc\u5408\u89c6\u9891\u7f51\u7ad9,\u6b63\u7248\u9ad8\u6e05\u89c6\u9891\u5728\u7ebf\u89c2\u770b,\u539f\u521b\u89c6\u9891\u4e0a\u4f20,\u5168\u7f51\u89c6\u9891\u641c\u7d22",
+    "matchers": [
+        "https?:\/\/(?P<mytv>my\\.)?tv\\.sohu\\.com\/.+?\/(?(mytv)|n)(?P<id>\\d+)\\.shtml.*?"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "5861080a4be91f620a18aaf4267209f50518b70e",
+    "extractor": "pandatv.py",
+    "url": "http:\/\/www.panda.tv\/",
+    "htmlError": false,
+    "title": "www.panda.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?panda\\.tv\/(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

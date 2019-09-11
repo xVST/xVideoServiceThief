@@ -1,0 +1,15 @@
+{
+    "sha1": "410184e03307326e0c9611aa9882dd9b42374f21",
+    "extractor": "lovehomeporn.py",
+    "url": "http:\/\/lovehomeporn.com\/",
+    "htmlError": false,
+    "title": "LoveHomePorn - The Biggest Home Porn Collection!",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?lovehomeporn\\.com\/video\/(?P<id>\\d+)(?:\/(?P<display_id>[^\/?#&]+))?"
+    ],
+    "+18": 0.4805194805194805,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

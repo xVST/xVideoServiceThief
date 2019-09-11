@@ -1,0 +1,15 @@
+{
+    "sha1": "96cace1f4cd8a3ef6ca792d4c374d4fea9374d54",
+    "extractor": "bloomberg.py",
+    "url": "http:\/\/www.bloomberg.com\/",
+    "htmlError": false,
+    "title": "Bloomberg - Are you a robot?",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?bloomberg\\.com\/(?:[^\/]+\/)*(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "b310efe58e830c6564761aab7be2eaa69e022b89",
+    "extractor": "pornhd.py",
+    "url": "http:\/\/www.pornhd.com\/",
+    "htmlError": false,
+    "title": "www.pornhd.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?pornhd\\.com\/(?:[a-z]{2,4}\/)?videos\/(?P<id>\\d+)(?:\/(?P<display_id>.+))?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

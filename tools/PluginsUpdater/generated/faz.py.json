@@ -1,0 +1,15 @@
+{
+    "sha1": "ec8206acc683edd59caec72c4d09d2d21b41a062",
+    "extractor": "faz.py",
+    "url": "http:\/\/www.faz.net\/",
+    "htmlError": false,
+    "title": "Aktuelle Nachrichten online - FAZ.NET",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?faz\\.net\/(?:[^\/]+\/)*.*?-(?P<id>\\d+)\\.html"
+    ],
+    "+18": 0,
+    "music": 0.35172413793103446,
+    "faviconUrl": "http:\/\/www.faz.net\/\/\/www.faz.net\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

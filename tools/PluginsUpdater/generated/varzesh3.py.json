@@ -1,0 +1,15 @@
+{
+    "sha1": "f748d738ffd8d9c1a3fcae83a1c4ebac26ea76cb",
+    "extractor": "varzesh3.py",
+    "url": "http:\/\/video.varzesh3.com\/",
+    "htmlError": false,
+    "title": "video.varzesh3.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?video\\.varzesh3\\.com\/(?:[^\/]+\/)+(?P<id>[^\/]+)\/?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

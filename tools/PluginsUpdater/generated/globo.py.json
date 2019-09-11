@@ -1,0 +1,16 @@
+{
+    "sha1": "346dd5943c88407ee915073f36887f21000af844",
+    "extractor": "globo.py",
+    "url": "http:\/\/g1.globo.com\/",
+    "htmlError": false,
+    "title": "G1 - O portal de not\u00edcias da Globo",
+    "matchers": [
+        "(?:globo:|https?:\/\/.+?\\.globo\\.com\/(?:[^\/]+\/)*(?:v\/(?:[^\/]+\/)?|videos\/))(?P<id>\\d{7,})",
+        "https?:\/\/.+?\\.globo\\.com\/(?:[^\/]+\/)*(?P<id>[^\/.]+)(?:\\.html)?"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0.36551724137931035,
+    "faviconUrl": "https:\/\/s2.glbimg.com\/9NoMJXGHahWgM-RTtG5hXzMVptQ=\/16x16\/s.glbimg.com\/jo\/g1\/f\/original\/2018\/05\/23\/favicon-g1.jpeg",
+    "faviconData": "89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff610000012249444154789cd590bd4a03511085bfb9bb448595a020f9119b8082858595c134fa0216165ae81bf80082a060eb5b08297c07db1535a860934ab04a88a92c96687ef68e85661357238b959ee67266ee9df3cd857f2f01f0f3931b580e045d5265ecf305091cd155434a3adabd02f5064db9153f93de86f06c548211b626c6ddf3d64b5851743ede7791f0108d7ccf4136419a00c635af2bb5e7fbbbac37236276512928b60c3811c445c6b3fab18a40bdf414cc0254f2d3731dbacb5192d5876223a8fa19af0ee4a27aff715c3ddb5b47f5b4ef43911360ffcb8ac366d4b09fe422b419fc7ccecf7a4722e651ad96920d804b606d08e358d52626302eec89d04c0e1d23283682ea4d616aa1ddeaee282c8a4aeadb24d1ebf753caaaa47f1bf807f5063e745cae6bac01410000000049454e44ae426082",
+    "version": "1.2"
+}

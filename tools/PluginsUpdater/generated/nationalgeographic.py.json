@@ -1,0 +1,16 @@
+{
+    "sha1": "bf04294cace7561374d7ec8151f18169d1eb4898",
+    "extractor": "nationalgeographic.py",
+    "url": "http:\/\/video.nationalgeographic.com\/",
+    "htmlError": false,
+    "title": "Video -- Video Home -- National Geographic",
+    "matchers": [
+        "https?:\/\/video\\.nationalgeographic\\.com\/.*?",
+        "https?:\/\/(?:www\\.)?nationalgeographic\\.com\/tv\/watch\/(?P<id>[\\da-fA-F]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

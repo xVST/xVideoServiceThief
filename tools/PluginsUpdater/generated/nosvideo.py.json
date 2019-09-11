@@ -1,0 +1,15 @@
+{
+    "sha1": "67e61ee3711e25916f07e8740d194b957e9ae594",
+    "extractor": "nosvideo.py",
+    "url": "http:\/\/nosvideo.com\/",
+    "htmlError": false,
+    "title": "nosvideo.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?nosvideo\\.com\/\\"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

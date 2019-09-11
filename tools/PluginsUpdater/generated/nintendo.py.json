@@ -1,0 +1,15 @@
+{
+    "sha1": "743e97c655505c04d08f1b60585295be14cfa7c4",
+    "extractor": "nintendo.py",
+    "url": "http:\/\/www.nintendo.com\/",
+    "htmlError": false,
+    "title": "Nintendo - Official Site - Video Game Consoles, Games",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?nintendo\\.com\/games\/detail\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0.03463203463203463,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

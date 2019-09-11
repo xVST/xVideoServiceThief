@@ -1,0 +1,15 @@
+{
+    "sha1": "9eeaa5ee2418cb18e9468ba4fb2832be47904fe6",
+    "extractor": "apa.py",
+    "url": "http:\/\/uvp.apa.at\/",
+    "htmlError": false,
+    "title": "uvp.apa.at",
+    "matchers": [
+        "https?:\/\/[^\/]+\\.apa\\.at\/embed\/(?P<id>[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

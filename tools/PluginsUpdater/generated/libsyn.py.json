@@ -1,0 +1,15 @@
+{
+    "sha1": "95578d4beb7d8b35ce37b8704ec68c57d72f7e24",
+    "extractor": "libsyn.py",
+    "url": "http:\/\/html5-player.libsyn.com\/",
+    "htmlError": false,
+    "title": "iFrame Test",
+    "matchers": [
+        "(?P<mainurl>https?:\/\/html5-player\\.libsyn\\.com\/embed\/episode\/id\/(?P<id>[0-9]+))"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

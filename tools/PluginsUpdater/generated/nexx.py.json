@@ -1,0 +1,16 @@
+{
+    "sha1": "47e19fff838172ecba07afb6b321954ec389e2ce",
+    "extractor": "nexx.py",
+    "url": "https:\/\/api.nexx.cloud\/",
+    "htmlError": false,
+    "title": "api.nexx.cloud",
+    "matchers": [
+        "(?x)\n(?:\nhttps?:\/\/api\\.nexx(?:\\.cloud|cdn\\.com)\/v3\/(?P<domain_id>\\d+)\/videos\/byid\/|\nnexx:(?:(?P<domain_id_s>\\d+):)?|\nhttps?:\/\/arc\\.nexx\\.cloud\/api\/video\/\n)\n(?P<id>\\d+)\n",
+        "https?:\/\/embed\\.nexx(?:\\.cloud|cdn\\.com)\/\\d+\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

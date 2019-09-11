@@ -1,0 +1,16 @@
+{
+    "sha1": "be830caa6dcf895d9e45f2b03d154599a70582de",
+    "extractor": "dramafever.py",
+    "url": "https:\/\/www.dramafever.com\/",
+    "htmlError": false,
+    "title": "Watch Korean Drama Free | Korean Movies Online & Telenovela | DramaFever | KDrama",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?dramafever\\.com\/(?:[^\/]+\/)?drama\/(?P<id>[0-9]+\/[0-9]+)(?:\/|$)",
+        "https?:\/\/(?:www\\.)?dramafever\\.com\/(?:[^\/]+\/)?drama\/(?P<id>[0-9]+)(?:\/(?:(?!\\d+(?:\/|$)).+)?)?$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "",
+    "faviconData": null,
+    "version": "1.1"
+}

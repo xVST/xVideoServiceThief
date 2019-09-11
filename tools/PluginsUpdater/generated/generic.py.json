@@ -1,0 +1,15 @@
+{
+    "sha1": "d0fb3a68c213335bd0bcdbd6684f225a99ae2d49",
+    "extractor": "generic.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        ".*"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

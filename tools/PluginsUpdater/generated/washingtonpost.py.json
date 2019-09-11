@@ -1,0 +1,16 @@
+{
+    "sha1": "01c9cc9b3b7314aaa9db42980399def07cd4a0d4",
+    "extractor": "washingtonpost.py",
+    "url": "https:\/\/www.washingtonpost.com\/",
+    "htmlError": false,
+    "title": "- The Washington Post",
+    "matchers": [
+        "(?:washingtonpost:|https?:\/\/(?:www\\.)?washingtonpost\\.com\/video\/(?:[^\/]+\/)*)(?P<id>[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})",
+        "https?:\/\/(?:www\\.)?washingtonpost\\.com\/(?:[^\/]+\/)*(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

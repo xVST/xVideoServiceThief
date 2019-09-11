@@ -1,0 +1,15 @@
+{
+    "sha1": "08f3ed5b068840ab0e7fa99795b26c3057cb660b",
+    "extractor": "vessel.py",
+    "url": "https:\/\/www.vessel.com\/",
+    "htmlError": false,
+    "title": "www.vessel.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?vessel\\.com\/(?:videos|embed)\/(?P<id>[0-9a-zA-Z-_]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

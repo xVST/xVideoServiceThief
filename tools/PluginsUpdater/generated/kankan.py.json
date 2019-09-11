@@ -1,0 +1,15 @@
+{
+    "sha1": "147eafbcdb47571b8ec157075995bcb513a53efa",
+    "extractor": "kankan.py",
+    "url": "http:\/\/yinyue.kankan.com\/",
+    "htmlError": false,
+    "title": "\u97f3\u4e50\u9891\u9053 - \u5929\u5929\u770b\u770b",
+    "matchers": [
+        "https?:\/\/(?:.*?\\.)?kankan\\.com\/.+?\/(?P<id>\\d+)\\.shtml"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

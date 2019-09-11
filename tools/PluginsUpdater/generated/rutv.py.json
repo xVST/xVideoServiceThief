@@ -1,0 +1,15 @@
+{
+    "sha1": "90f971cc0ebb4158574096433cf7a9a6d2498ece",
+    "extractor": "rutv.py",
+    "url": "http:\/\/player.rutv.ru\/",
+    "htmlError": false,
+    "title": "player.vgtrk.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:test)?player\\.(?:rutv\\.ru|vgtrk\\.com)\/\n(?P<path>\nflash\\d+v\/container\\.swf\\?id=|\niframe\/(?P<type>swf|video|live)\/id\/|\nindex\/iframe\/cast_id\/\n)\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

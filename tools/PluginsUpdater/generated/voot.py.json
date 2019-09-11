@@ -1,0 +1,15 @@
+{
+    "sha1": "b561e2d348fb6c8717e13d3bb6b2678650d81f97",
+    "extractor": "voot.py",
+    "url": "https:\/\/www.voot.com\/",
+    "htmlError": false,
+    "title": "Garage page",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?voot\\.com\/(?:[^\/]+\/)+(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

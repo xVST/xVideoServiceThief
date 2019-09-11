@@ -1,0 +1,15 @@
+{
+    "sha1": "2a3639d68c37976d3419cdf8097b3688a509b86e",
+    "extractor": "npr.py",
+    "url": "https:\/\/www.npr.org\/",
+    "htmlError": false,
+    "title": "NPR Choice page",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?npr\\.org\/(?:sections\/[^\/]+\/)?\\d{4}\/\\d{2}\/\\d{2}\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

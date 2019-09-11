@@ -1,0 +1,16 @@
+{
+    "sha1": "4ebd435985c88435be771fcbe887cddb2ecc0f13",
+    "extractor": "daisuki.py",
+    "url": "http:\/\/motto.daisuki.net\/",
+    "htmlError": false,
+    "title": "motto.daisuki.net",
+    "matchers": [
+        "https?:\/\/motto\\.daisuki\\.net\/framewatch\/embed\/[^\/]+\/(?P<id>[0-9a-zA-Z]{3})",
+        "https?:\/\/motto\\.daisuki\\.net\/(?P<id>information)\/"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

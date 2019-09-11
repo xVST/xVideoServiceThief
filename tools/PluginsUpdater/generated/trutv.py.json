@@ -1,0 +1,15 @@
+{
+    "sha1": "2349ec3a5870ff923530f5c1e122f8f83e750d9d",
+    "extractor": "trutv.py",
+    "url": "https:\/\/www.trutv.com\/",
+    "htmlError": false,
+    "title": "www.trutv.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?trutv\\.com\/(?:shows|full-episodes)\/(?P<series_slug>[0-9A-Za-z-]+)\/(?:videos\/(?P<clip_slug>[0-9A-Za-z-]+)|(?P<id>\\d+))"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

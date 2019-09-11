@@ -1,0 +1,15 @@
+{
+    "sha1": "26494b34b3b390382c70c795c6b31f2cbfe127df",
+    "extractor": "keek.py",
+    "url": "https:\/\/www.keek.com\/",
+    "htmlError": false,
+    "title": "www.keek.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?keek\\.com\/keek\/(?P<id>\\w+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

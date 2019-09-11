@@ -1,0 +1,15 @@
+{
+    "sha1": "adc07dd72046466c2d2e4211c042dbe70731e87e",
+    "extractor": "crackle.py",
+    "url": "https:\/\/www.crackle.com\/",
+    "htmlError": false,
+    "title": "Out of region",
+    "matchers": [
+        "(?:crackle:|https?:\/\/(?:(?:www|m)\\.)?(?:sony)?crackle\\.com\/(?:playlist\/\\d+\/|(?:[^\/]+\/)+))(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

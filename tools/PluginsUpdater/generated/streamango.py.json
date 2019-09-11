@@ -1,0 +1,15 @@
+{
+    "sha1": "4c23dbc929d12d9947860e16e62168baf059e1b4",
+    "extractor": "streamango.py",
+    "url": "https:\/\/streamango.com\/",
+    "htmlError": false,
+    "title": "streamango | Streaming never been so delicious",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?:streamango\\.com|fruithosts\\.net|streamcherry\\.com)\/(?:f|embed)\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0.05517241379310345,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

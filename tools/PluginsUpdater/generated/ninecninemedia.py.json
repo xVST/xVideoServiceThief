@@ -1,0 +1,15 @@
+{
+    "sha1": "ff2d399bb807c40029ba0675d7563ee0eb83555c",
+    "extractor": "ninecninemedia.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "9c9media:(?P<destination_code>[^:]+):(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

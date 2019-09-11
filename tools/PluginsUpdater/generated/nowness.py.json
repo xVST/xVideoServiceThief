@@ -1,0 +1,17 @@
+{
+    "sha1": "9ff34edf26df66ea55cb45c89fe9541ac4f58c56",
+    "extractor": "nowness.py",
+    "url": "https:\/\/www.nowness.com\/",
+    "htmlError": false,
+    "title": "NOWNESS",
+    "matchers": [
+        "https?:\/\/(?:(?:www|cn)\\.)?nowness\\.com\/(?:story|(?:series|category)\/[^\/]+)\/(?P<id>[^\/]+?)(?:$|[?#])",
+        "https?:\/\/(?:(?:www|cn)\\.)?nowness\\.com\/playlist\/(?P<id>\\d+)",
+        "https?:\/\/(?:(?:www|cn)\\.)?nowness\\.com\/series\/(?P<id>[^\/]+?)(?:$|[?#])"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

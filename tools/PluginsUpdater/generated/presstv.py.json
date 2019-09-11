@@ -1,0 +1,15 @@
+{
+    "sha1": "9f4069496ca2906422bda07ce0f3f712d8578664",
+    "extractor": "presstv.py",
+    "url": "http:\/\/www.presstv.ir\/",
+    "htmlError": false,
+    "title": "PressTV",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?presstv\\.ir\/[^\/]+\/(?P<y>\\d+)\/(?P<m>\\d+)\/(?P<d>\\d+)\/(?P<id>\\d+)\/(?P<display_id>[^\/]+)?"
+    ],
+    "+18": 0.03463203463203463,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

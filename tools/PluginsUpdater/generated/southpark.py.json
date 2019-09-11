@@ -1,0 +1,19 @@
+{
+    "sha1": "a8564470ccaf67c7b4e60813a275b12526f56765",
+    "extractor": "southpark.py",
+    "url": "http:\/\/southpark.cc.com\/",
+    "htmlError": false,
+    "title": "South Park - Watch Full Episodes, Clips & More | South Park Studios",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?(?P<url>southpark\\.cc\\.com\/(?:clips|(?:full-)?episodes|collections)\/(?P<id>.+?)(\\?|#|$))",
+        "https?:\/\/(?:www\\.)?(?P<url>southpark\\.cc\\.com\/episodios-en-espanol\/(?P<id>.+?)(\\?|#|$))",
+        "https?:\/\/(?:www\\.)?(?P<url>southpark\\.de\/(?:clips|alle-episoden|collections)\/(?P<id>.+?)(\\?|#|$))",
+        "https?:\/\/(?:www\\.)?(?P<url>southpark\\.nl\/(?:clips|(?:full-)?episodes|collections)\/(?P<id>.+?)(\\?|#|$))",
+        "https?:\/\/(?:www\\.)?(?P<url>southparkstudios\\.(?:dk|nu)\/(?:clips|full-episodes|collections)\/(?P<id>.+?)(\\?|#|$))"
+    ],
+    "+18": 0.021645021645021644,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "40e6a323f5dc938bc925022abd259f83efc46d17",
+    "extractor": "keezmovies.py",
+    "url": "https:\/\/www.keezmovies.com\/",
+    "htmlError": false,
+    "title": "Free Porn Tube, Sex Videos, Porno Clips,XXX Pornstars- Keez movies",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?keezmovies\\.com\/video\/(?:(?P<display_id>[^\/]+)-)?(?P<id>\\d+)"
+    ],
+    "+18": 0.7705627705627706,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/www.keezmovies.com\/\/\/cdn1-static-keezmovies.spankcdn.net\/v2\/images\/favicon.jpg?cache=184031538661001",
+    "faviconData": null,
+    "version": "1.1"
+}

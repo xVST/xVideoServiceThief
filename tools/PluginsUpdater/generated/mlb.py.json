@@ -1,0 +1,15 @@
+{
+    "sha1": "551c7120a40b413daa43cd59c9fe8b2de9668d34",
+    "extractor": "mlb.py",
+    "url": "https:\/\/www.mlb.com\/",
+    "htmlError": false,
+    "title": "MLB.com | The Official Site of Major League Baseball",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:[\\da-z_-]+\\.)*(?P<site>mlb)\\.com\/\n(?:\n(?:\n(?:[^\/]+\/)*c-|\n(?:\nshared\/video\/embed\/(?:embed|m-internal-embed)\\.html|\n(?:[^\/]+\/)+(?:play|index)\\.jsp|\n)\\?.*?\\bcontent_id=\n)\n(?P<id>\\d+)\n)\n"
+    ],
+    "+18": 0,
+    "music": 0.35172413793103446,
+    "faviconUrl": "https:\/\/www.mlb.com\/\/\/www.mlbstatic.com\/mlb.com\/builds\/site-core\/689946400aa8a6d93651be49083bf829be45b913_1538513977\/images\/favicon.png",
+    "faviconData": null,
+    "version": "1.1"
+}

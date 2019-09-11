@@ -1,0 +1,15 @@
+{
+    "sha1": "71cf8536700e1138c2b182b9f2b65949245b5031",
+    "extractor": "firsttv.py",
+    "url": "http:\/\/www.1tv.ru\/",
+    "htmlError": false,
+    "title": "\u00d0\u009f\u00d0\u00b5\u00d1\u0080\u00d0\u00b2\u00d1\u008b\u00d0\u00b9 \u00d0\u00ba\u00d0\u00b0\u00d0\u00bd\u00d0\u00b0\u00d0\u00bb: \u00d0\u009d\u00d0\u00be\u00d0\u00b2\u00d0\u00be\u00d1\u0081\u00d1\u0082\u00d0\u00b8. \u00d0\u0092\u00d0\u00b8\u00d0\u00b4\u00d0\u00b5\u00d0\u00be. \u00d0\u00a2\u00d0\u00b5\u00d0\u00bb\u00d0\u00b5\u00d0\u00bf\u00d1\u0080\u00d0\u00be\u00d0\u00b3\u00d1\u0080\u00d0\u00b0\u00d0\u00bc\u00d0\u00bc\u00d0\u00b0. \u00d0\u009f\u00d1\u0080\u00d1\u008f\u00d0\u00bc\u00d0\u00be\u00d0\u00b9 \u00d1\u008d\u00d1\u0084\u00d0\u00b8\u00d1\u0080",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?1tv\\.ru\/(?:[^\/]+\/)+(?P<id>[^\/?#]+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "http:\/\/www.1tv.ru\/\/\/static3.1tv.ru\/assets\/web\/favicon\/favicon-d49efd904632b9323747457b49909f3a8812219be03be2ce5586b16c8fdef297.ico?v=BGGOXpbxak",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "e8b8211eac2599a13723b278c5674046a8b97d4f",
+    "extractor": "toypics.py",
+    "url": "http:\/\/videos.toypics.net\/",
+    "htmlError": false,
+    "title": "Toypics - Share Your Videos",
+    "matchers": [
+        "https?:\/\/videos\\.toypics\\.net\/view\/(?P<id>[0-9]+)",
+        "https?:\/\/videos\\.toypics\\.net\/(?!view)(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0.09956709956709957,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

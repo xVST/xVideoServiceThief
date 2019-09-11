@@ -1,0 +1,13 @@
+{
+    "sha1": "f3fcd3b82cdb8c5797bee0aca45d4e507bf88a8c",
+    "extractor": "novamov.py",
+    "url": "http:\/\/www.wholecloud.net\/",
+    "htmlError": false,
+    "title": "www.wholecloud.net",
+    "matchers": [],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "6ba829efe0268028c6dee8d9d7936cec03fe24ac",
+    "extractor": "webofstories.py",
+    "url": "http:\/\/www.webofstories.com\/",
+    "htmlError": false,
+    "title": "Web of Stories",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?webofstories\\.com\/play\/(?:[^\/]+\/)?(?P<id>[0-9]+)",
+        "https?:\/\/(?:www\\.)?webofstories\\.com\/playAll\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/d3qf61oza7ty3z.cloudfront.net\/siteAssets\/1_0_2\/images\/favicon.ico",
+    "faviconData": "0000010001001010000001001800680300001600000028000000100000002000000001001800000000000003000000000000000000000000000000000000fcfcfcfcfcfcfbfbfbfafafafafafafafafaf9f9f9f3f3f3ebebebebebebebebebecececf4f4f4f9f9f9fbfbfbfcfcfcf7f7f7fbfbfbfafafafafafafafafaf4f4f4f3f3f3f4f4f4e4e4e4e2e2e2e5e5e5f0f0f0f8f8f8fafafafbfbfbfcfcfcf7f7f7fafafafbfbfbfbfbfbf7f7f7dedededddddddfdfdfe2e2e2e0e0e0dedededededee6e6e6fbfbfbfcfcfcfbfbfbfcfcfcf3f3f3fcfcfcfafafaf8f8f8c4c4c4bdbdbdd1d1d1e8e8e8dbdbdbdededecdcdcde4e4e4fbfbfbfcfcfcfcfcfcfbfbfbf0f0f0f4f4f4f8f8f8d3d3d3252525232323929292cfcfcfb4b4b49292922b2b2b898989f7f7f7fafafafbfbfbfcfcfcfcfcfcefefefe8e8e8c5c5c52b2b2b202020404040525252616161292929242424585858fafafafbfbfbfbfbfbfbfbfbeaeaeac0c0c0c5c5c5c9c9c9c4c4c4c4c4c46d6d6d2626263434348a8a8aabababdededefcfcfcfdfdfdfcfcfcf0f0f0bebebefcfcfcfcfcfcfcfcfce6e6e6c4c4c4a9a9a96f6f6f797979999999e7e7e7fcfcfcfdfdfdfdfdfdfcfcfcbfbfbffbfbfbfcfcfcfcfcfcfcfcfcfcfcfcf9f9f9cecececcccccc8c8c8c8c8c8c0c0c0f2f2f2fcfcfcfdfdfdfdfdfdd3d3d3fefefefefefefefefefefefefefefeeaeaeaa0a0a07c7c7c9e9e9ebabababcbcbcd7d7d7fdfdfdfdfdfdfdfdfdfefefeffffffffffffffffffffffffffffffcecece363636262626555555c4c4c4c9c9c9d7d7d7fefefefefefefefefeffffffffffffffffffffffffffffffffffffe0e0e01616161f1f1f6b6b6be9e9e9dededef1f1f1fffffffefefefefefefffffffffffffffffffffffffffffffffffffefefeb4b4b46a6a6a747474b8b8b8e8e8e8fefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefdfdfdefefeffcfcfcfefefefefefefefefefefefefefefefefefefefefefefefefdfdfdfdfdfdfefefefdfdfdfdfdfdfefefefefefefefefefefefefefefefefefefdfdfdfefefefefefefefefefefefefefefefefefefefefefdfdfdfdfdfdfefefefefefefefefefefefefefefefefefefefefefefefe00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "version": "1.1"
+}

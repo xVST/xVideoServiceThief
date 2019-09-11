@@ -1,0 +1,15 @@
+{
+    "sha1": "bb1c088cbf8ff1f05313ab149963c32a2255e4bf",
+    "extractor": "pladform.py",
+    "url": "https:\/\/out.pladform.ru\/",
+    "htmlError": false,
+    "title": "out.pladform.ru",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:\nout\\.pladform\\.ru\/player|\nstatic\\.pladform\\.ru\/player\\.swf\n)\n\\?.*\\bvideoid=|\nvideo\\.pladform\\.ru\/catalog\/video\/videoid\/\n)\n(?P<id>\\d+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

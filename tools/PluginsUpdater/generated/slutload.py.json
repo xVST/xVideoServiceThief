@@ -1,0 +1,15 @@
+{
+    "sha1": "c689e730831932616f7603b28294ae92046211ae",
+    "extractor": "slutload.py",
+    "url": "http:\/\/www.slutload.com\/",
+    "htmlError": false,
+    "title": "Free Porn & Sex Tapes Updated Every 10 Minutes - Slutload.com",
+    "matchers": [
+        "https?:\/\/(?:\\w+\\.)?slutload\\.com\/(?:video\/[^\/]+|embed_player|watch)\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0.39826839826839827,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

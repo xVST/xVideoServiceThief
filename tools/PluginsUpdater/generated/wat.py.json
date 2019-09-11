@@ -1,0 +1,15 @@
+{
+    "sha1": "2b6c6704756831f2564d433828e02298f93f03bc",
+    "extractor": "wat.py",
+    "url": "http:\/\/www.wat.tv\/",
+    "htmlError": false,
+    "title": "www.wat.tv",
+    "matchers": [
+        "(?:wat:|https?:\/\/(?:www\\.)?wat\\.tv\/video\/.*-)(?P<id>[0-9a-z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

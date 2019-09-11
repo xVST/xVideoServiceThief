@@ -1,0 +1,15 @@
+{
+    "sha1": "d536555a516ab4bc96412d7c8606efb19f05c9cc",
+    "extractor": "crooksandliars.py",
+    "url": "https:\/\/embed.crooksandliars.com\/",
+    "htmlError": false,
+    "title": "embed.crooksandliars.com",
+    "matchers": [
+        "https?:\/\/embed\\.crooksandliars\\.com\/(?:embed|v)\/(?P<id>[A-Za-z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

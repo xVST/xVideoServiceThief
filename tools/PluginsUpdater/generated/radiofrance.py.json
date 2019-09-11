@@ -1,0 +1,15 @@
+{
+    "sha1": "9b47168c1977d418866ace03c0c80e07cf4450aa",
+    "extractor": "radiofrance.py",
+    "url": "http:\/\/maison.radiofrance.fr\/",
+    "htmlError": false,
+    "title": "Maison de la Radio | Passez quand vous voulez",
+    "matchers": [
+        "^https?:\/\/maison\\.radiofrance\\.fr\/radiovisions\/(?P<id>[^?#]+)"
+    ],
+    "+18": 0,
+    "music": 0.15862068965517243,
+    "faviconUrl": "http:\/\/maison.radiofrance.fr\/\/\/www.maisondelaradio.fr\/sites\/default\/files\/mdlrFavicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

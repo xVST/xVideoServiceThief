@@ -1,0 +1,16 @@
+{
+    "sha1": "cd070084bbca5d3ff69627e77e77277b8ca82f64",
+    "extractor": "seznamzpravy.py",
+    "url": "https:\/\/www.seznamzpravy.cz\/",
+    "htmlError": false,
+    "title": "Seznam Zpr\u00e1vy",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?seznamzpravy\\.cz\/iframe\/player\\?.*\\bsrc=",
+        "https?:\/\/(?:www\\.)?(?:seznam\\.cz\/zpravy|seznamzpravy\\.cz)\/clanek\/(?:[^\/?#&]+)-(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

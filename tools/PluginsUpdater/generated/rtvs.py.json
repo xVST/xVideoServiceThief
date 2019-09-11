@@ -1,0 +1,15 @@
+{
+    "sha1": "da8ce47f7aaef44218ee01c60040c2b90a27dc7c",
+    "extractor": "rtvs.py",
+    "url": "http:\/\/www.rtvs.sk\/",
+    "htmlError": false,
+    "title": "Rozhlas a telev\u00edzia Slovenska - RTVS.sk",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?rtvs\\.sk\/(?:radio|televizia)\/archiv\/\\d+\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

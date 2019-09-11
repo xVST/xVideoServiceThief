@@ -1,0 +1,17 @@
+{
+    "sha1": "91f0540e31bae7164b15690aaae74c0df435e857",
+    "extractor": "lecturio.py",
+    "url": "https:\/\/app.lecturio.com\/",
+    "htmlError": false,
+    "title": "app.lecturio.com",
+    "matchers": [
+        "(?x)\nhttps:\/\/\n(?:\napp\\.lecturio\\.com\/([^\/]+\/(?P<nt>[^\/?#&]+)\\.lecture|(?:\\#\/)?lecture\/c\/\\d+\/(?P<id>\\d+))|\n(?:www\\.)?lecturio\\.de\/[^\/]+\/(?P<nt_de>[^\/?#&]+)\\.vortrag\n)\n",
+        "https:\/\/app\\.lecturio\\.com\/(?:[^\/]+\/(?P<nt>[^\/?#&]+)\\.course|(?:#\/)?course\/c\/(?P<id>\\d+))",
+        "https:\/\/(?:www\\.)?lecturio\\.de\/[^\/]+\/(?P<id>[^\/?#&]+)\\.kurs"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

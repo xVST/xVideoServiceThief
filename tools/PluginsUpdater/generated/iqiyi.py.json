@@ -1,0 +1,15 @@
+{
+    "sha1": "e5665db75cfeb1cdafaaf6d82862e2c69202c3c2",
+    "extractor": "iqiyi.py",
+    "url": "http:\/\/www.iqiyi.com\/",
+    "htmlError": false,
+    "title": "\u7231\u5947\u827a-\u5728\u7ebf\u89c6\u9891\u7f51\u7ad9-\u6d77\u91cf\u6b63\u7248\u9ad8\u6e05\u89c6\u9891\u5728\u7ebf\u89c2\u770b",
+    "matchers": [
+        "https?:\/\/(?:(?:[^.]+\\.)?iqiyi\\.com|www\\.pps\\.tv)\/.+\\.html"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/www.iqiyi.com\/\/\/www.iqiyipic.com\/common\/images\/logo.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "51b4c656431a6345942703af657c274b9fd38787",
+    "extractor": "hark.py",
+    "url": "http:\/\/www.hark.com\/",
+    "htmlError": false,
+    "title": "www.hark.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?hark\\.com\/clips\/(?P<id>.+?)-.+"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

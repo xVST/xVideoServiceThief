@@ -1,0 +1,15 @@
+{
+    "sha1": "3fd175e6bdac55478b7680daabc55d49e472c77e",
+    "extractor": "pokemon.py",
+    "url": "https:\/\/www.pokemon.com\/",
+    "htmlError": false,
+    "title": "www.pokemon.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?pokemon\\.com\/[a-z]{2}(?:.*?play=(?P<id>[a-z0-9]{32})|\/(?:[^\/]+\/)+(?P<display_id>[^\/?#&]+))"
+    ],
+    "+18": 0,
+    "music": 0.06896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

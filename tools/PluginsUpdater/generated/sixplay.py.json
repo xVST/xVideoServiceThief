@@ -1,0 +1,15 @@
+{
+    "sha1": "25d944ed9692aab2e7d0f342438e87a6b5e348a8",
+    "extractor": "sixplay.py",
+    "url": "https:\/\/www.6play.fr\/",
+    "htmlError": false,
+    "title": "6play, regardez des programmes TV en Replay ou en Direct",
+    "matchers": [
+        "(?:6play:|https?:\/\/(?:www\\.)?(?P<domain>6play\\.fr|rtlplay\\.be|play\\.rtl\\.hr|rtlmost\\.hu)\/.+?-c_)(?P<id>[0-9]+)"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0.14482758620689656,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

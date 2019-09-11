@@ -1,0 +1,15 @@
+{
+    "sha1": "a7ae288a7dd72bcd7cb6682d056958dda9a42d23",
+    "extractor": "pearvideo.py",
+    "url": "http:\/\/www.pearvideo.com\/",
+    "htmlError": false,
+    "title": "\u68a8\u89c6\u9891\u5b98\u7f51-\u505a\u6700\u597d\u770b\u7684\u8d44\u8baf\u77ed\u89c6\u9891-Pear Video",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?pearvideo\\.com\/video_(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": "http:\/\/www.pearvideo.com\/\/\/page.pearvideo.com\/webres\/img\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

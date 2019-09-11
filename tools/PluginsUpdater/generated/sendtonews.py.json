@@ -1,0 +1,15 @@
+{
+    "sha1": "3bedabde962f53fead65427d0ad6618aa63f1f8c",
+    "extractor": "sendtonews.py",
+    "url": "http:\/\/embed.sendtonews.com\/",
+    "htmlError": false,
+    "title": "embed.sendtonews.com",
+    "matchers": [
+        "https?:\/\/embed\\.sendtonews\\.com\/player2\/embedplayer\\.php\\?.*\\bSC=(?P<id>[0-9A-Za-z-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "f8bd7ab02c2afdeab563ab61ddd705061ca3245f",
+    "extractor": "vrv.py",
+    "url": "https:\/\/vrv.co\/",
+    "htmlError": false,
+    "title": "VRV - Home of Your Favorite Channels",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?vrv\\.co\/watch\/(?P<id>[A-Z0-9]+)",
+        "https?:\/\/(?:www\\.)?vrv\\.co\/series\/(?P<id>[A-Z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/static.vrv.co\/vrvweb\/assets\/img\/favicons\/favicon-16x16.png",
+    "faviconData": "89504e470d0a1a0a0000000d49484452000000100000001008060000001ff3ff61000000017352474200aece1ce90000018d4944415438116364c0018c8c5c34d998fe4e0649fffac79c7beedc9eebd89432a20bdad8780bfef8f6ad998de55f6256f43d7690fcb4a54a3f7ffd619acfc1c5557be4c8d6f7c87ae00684868632dfbbf32e9b99f95f93afe373f6dce8bb1cfcbcbfc16a3f7e666598bc54f9c7e6fd923ffffe65aa5352119aba7af5eabf2049b00166668ede4cffff4fd652fe245a9d71934749f62bb22570f6bdc7dc0cad33d4bf5cbdc3ffea3f1343dea953fbb782250df49cfe1f5e25f2ffff5d06a230482d480f483313cc781be3373026411a592ddc0082ba7028c03020b6d4940118580cbf7e33c3b580d82031901c3a604117b8728797e1ca244d86bef9aa0cfececf181881c1bc618f14c387cf184ac15ab18b02a5401a166e9043371f838fe185f880470c02bc7f301482c44072e800ee822367451840a15b107f87212bea3ec3cec3620cabb6cb3080e22adcf30983bbed2b06365670da6100a985019484a4adf249b42a1d7f426a9b094a487cafff3132e6821212759232cc39201a2533c54033d312223213b2212036b1d919004683d6ddb4d44aab0000000049454e44ae426082",
+    "version": "1.2"
+}

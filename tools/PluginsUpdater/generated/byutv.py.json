@@ -1,0 +1,15 @@
+{
+    "sha1": "88bc0b43c861f9a9fa6fd40b018e1270a5cd7dad",
+    "extractor": "byutv.py",
+    "url": "http:\/\/www.byutv.org\/",
+    "htmlError": false,
+    "title": "Home - BYUtv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?byutv\\.org\/(?:watch|player)\/(?!event\/)(?P<id>[0-9a-f-]+)(?:\/(?P<display_id>[^\/?#&]+))?"
+    ],
+    "+18": 0.017316017316017316,
+    "music": 0.2482758620689655,
+    "faviconUrl": "http:\/\/www.byutv.org\/\/_nuxt\/icons\/icon_64.db2bdb.png",
+    "faviconData": null,
+    "version": "1.2"
+}

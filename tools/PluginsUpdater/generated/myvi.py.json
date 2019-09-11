@@ -1,0 +1,16 @@
+{
+    "sha1": "c729b8751fb6f68f40e51cd12b32b13f6abec3a0",
+    "extractor": "myvi.py",
+    "url": "http:\/\/myvi.ru\/",
+    "htmlError": false,
+    "title": "\u00d0\u009c\u00d1\u0083\u00d0\u00b2\u00d0\u00b8.\u00d1\u0080\u00d1\u0083 \u00e2\u0080\u0093 \u00d1\u0081\u00d0\u00bc\u00d0\u00be\u00d1\u0082\u00d1\u0080\u00d0\u00b8 \u00d0\u00b2\u00d0\u00b8\u00d0\u00b4\u00d0\u00b5\u00d0\u00be \u00d0\u00be\u00d0\u00bd\u00d0\u00bb\u00d0\u00b0\u00d0\u00b9\u00d0\u00bd! \u00d0\u00a2\u00d0\u00be\u00d0\u00bb\u00d1\u008c\u00d0\u00ba\u00d0\u00be \u00d0\u00bb\u00d1\u0083\u00d1\u0087\u00d1\u0088\u00d0\u00b8\u00d0\u00b5 \u00d1\u0080\u00d0\u00be\u00d0\u00bb\u00d0\u00b8\u00d0\u00ba\u00d0\u00b8 \u00d1\u0081\u00d0\u00b5\u00d1\u0082\u00d0\u00b8.",
+    "matchers": [
+        "(?x)\n(?:\nhttps?:\/\/\n(?:www\\.)?\nmyvi\\.\n(?:\n(?:ru\/player|tv)\/\n(?:\n(?:\nembed\/html|\nflash|\napi\/Video\/Get\n)\/|\ncontent\/preloader\\.swf\\?.*\\bid=\n)|\nru\/watch\/\n)|\nmyvi:\n)\n(?P<id>[\\da-zA-Z_-]+)\n",
+        "https?:\/\/(?:www\\.)?myvi\\.tv\/(?:[^?]+\\?.*?\\bv=|embed\/)(?P<id>[\\da-z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/myvi.ru\/\/content\/resources\/images\/favicon.ico?v=18495",
+    "faviconData": null,
+    "version": "1.1"
+}

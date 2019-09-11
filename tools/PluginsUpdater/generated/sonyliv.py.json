@@ -1,0 +1,15 @@
+{
+    "sha1": "aff85406934955d5cc8e0bfcc83d78389b3312fe",
+    "extractor": "sonyliv.py",
+    "url": null,
+    "htmlError": false,
+    "title": null,
+    "matchers": [
+        "https?:\/\/(?:www\\.)?sonyliv\\.com\/details\/[^\/]+\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

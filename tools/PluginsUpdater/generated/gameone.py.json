@@ -1,0 +1,16 @@
+{
+    "sha1": "6bb349dead648c844b7658f1fe4ee8937b249d91",
+    "extractor": "gameone.py",
+    "url": "http:\/\/www.gameone.de\/",
+    "htmlError": false,
+    "title": "301 Moved Permanently",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?gameone\\.de\/tv\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?gameone\\.de(?:\/tv)?\/?$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

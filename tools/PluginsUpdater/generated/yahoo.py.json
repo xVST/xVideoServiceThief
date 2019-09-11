@@ -1,0 +1,18 @@
+{
+    "sha1": "ed275c13a9bf21de82bcbd3b34c8b4390ce8cdb1",
+    "extractor": "yahoo.py",
+    "url": "http:\/\/screen.yahoo.com\/",
+    "htmlError": false,
+    "title": "screen.yahoo.com",
+    "matchers": [
+        "(?P<host>https?:\/\/(?:(?P<country>[a-zA-Z]{2})\\.)?[\\da-zA-Z_-]+\\.yahoo\\.com)\/(?:[^\/]+\/)*(?:(?P<display_id>.+)?-)?(?P<id>[0-9]+)(?:-[a-z]+)?(?:\\.html)?",
+        "https?:\/\/(?:gyao\\.yahoo\\.co\\.jp\/(?:player|episode\/[^\/]+)|streaming\\.yahoo\\.co\\.jp\/c\/y)\/(?P<id>\\d+\/v\\d+\/v\\d+|[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})",
+        "https?:\/\/(?:gyao\\.yahoo\\.co\\.jp\/(?:p|title\/[^\/]+)|streaming\\.yahoo\\.co\\.jp\/p\/y)\/(?P<id>\\d+\/v\\d+|[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})",
+        "https?:\/\/(?P<host>(?:news|headlines)\\.yahoo\\.co\\.jp)[^\\d]*(?P<id>\\d[\\d-]*\\d)?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

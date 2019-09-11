@@ -1,0 +1,15 @@
+{
+    "sha1": "90aff2ffea75602dbac12d1bcb1b712eeee0a1f7",
+    "extractor": "threeqsdn.py",
+    "url": "http:\/\/playout.3qsdn.com\/",
+    "htmlError": false,
+    "title": "playout.3qsdn.com",
+    "matchers": [
+        "https?:\/\/playout\\.3qsdn\\.com\/(?P<id>[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

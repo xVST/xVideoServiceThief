@@ -1,0 +1,15 @@
+{
+    "sha1": "388f97a11301a2b517bfad3e22b05f3431956128",
+    "extractor": "viidea.py",
+    "url": "http:\/\/videolectures.net\/",
+    "htmlError": false,
+    "title": "VideoLectures.NET - VideoLectures.NET",
+    "matchers": [
+        "(?x)https?:\/\/(?:www\\.)?(?:\nvideolectures\\.net|\nflexilearn\\.viidea\\.net|\npresentations\\.ocwconsortium\\.org|\nvideo\\.travel-zoom\\.si|\nvideo\\.pomp-forum\\.si|\ntv\\.nil\\.si|\nvideo\\.hekovnik.com|\nvideo\\.szko\\.si|\nkpk\\.viidea\\.com|\ninside\\.viidea\\.net|\nvideo\\.kiberpipa\\.org|\nbvvideo\\.si|\nkongres\\.viidea\\.net|\nedemokracija\\.viidea\\.com\n)(?:\/lecture)?\/(?P<id>[^\/]+)(?:\/video\/(?P<part>\\d+))?\/*(?:[#?].*)?$"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/static.videolectures.net\/r.1483388978\/\/custom\/favicon.ico",
+    "faviconData": "000001000100101000000100200068040000160000002800000010000000200000000100200000000000000000000000000000000000000000000000000000000000000000000000000000000000cfd0d384c2c2c8f1bbbcc2ffbfbfc4ffc0c0c5ffbcbcc2ffbebec3fbc9c9cda2c9cbce130000000000000000000000000000000000000000c7c9cb11bfbfc5f8bbbbc1ffd0d0d3fffdfdfdffffffffffffffffffffffffffe5e6e7ffc1c2c7ffbcbcc2ffc0c2c631000000000000000000000000c3c4c90ebcbcc2ffbbbbc1ffbcbcc2ffbcbcc2fff1f1f2ffffffffffffffffffffffffffffffffffffffffffdddde0ffbbbbc1ffc0c2c6310000000000000000c3c4c9eebbbbc1ffbcbcc2ffbcbcc2ffbbbbc1ffc3c3c4fffffffffff6f6fdffffffffffffffffffffffffffffffffffdddde0ffbcbcc2ffc9cbce13d8d8db6abbbbc1ffbcbcc2ffbcbcc2ffbcbcc1ff9998c6ff3b36cfff2a22d1ff2922d1ff362fd3ff9b98e9ffffffffffffffffffffffffffc1c2c7ffc9c9cda2ceced2d9bcbcc2ffbcbcc2ffbbbbc2ffa5a4c4ff251dd2ff2a23d1ff2a23d2ff2a23d2ff2a23d2ff2821d1ff9b98e9ffffffffffffffffffe5e6e7ffbebec3fbc3c3c8fbbcbcc2ffbcbcc2ffbdbdc1ff4b46ceff2a23d1ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff362fd3ffffffffffffffffffffffffffbcbcc2ffbdbdc2ffbcbcc2ffbcbcc2ffc0c1c1ff3832d0ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2922d1fff6f6fdffffffffffffffffffc0c0c5ffbdbdc3ffbcbcc2ffbcbcc2ffc0c0c1ff3b35d0ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ffffffffffffffffffffffffffbfbfc4ffc6c6cbf9bcbcc2ffbcbcc2ffbcbcc1ff5955ccff2922d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff2a23d2ff443dd7fffffffffffffffffffdfdfdffbcbcc2ffd4d4d8cebbbbc1ffbcbcc2ffbbbbc2ffb8b8c2ff3630d1ff2922d2ff2a23d2ff2a23d2ff2922d1ff2c25d2ffcccbf4ffffffffffffffffffd9d9dcffc2c3c7f2e2e3e556bcbcc2ffbcbcc2ffbcbcc2ffbbbbc2ffb8b8c2ff5a56ccff433cd7ff3f38d6ff5a54dbffdddcf8ffffffffffffffffffffffffffbebec4ffcfcfd38700000000d3d4d7d1bbbbc1ffbcbcc2ffbcbcc2ffbbbbc1ffc6c6cafffffffffffffffffffffffffffffffffffffffffffefefeffc6c7cbffbfc0c4f9000000000000000000000000c5c6caf6bbbbc1ffbcbcc2ffbebfc4fffffffffffffffffffffffffffffffffffffffffffdfdfdffc3c3c8ffbcbcc2ffc5c6ca1200000000000000000000000000000000d4d4d8d0bcbcc2ffc2c2c7ffdfe0e2fff2f2f3fff4f5f5ffe6e6e8ffcbcbd0ffbcbcc2ffc3c4c8f0c3c4c80e000000000000000000000000000000000000000000000000e2e3e555d4d4d8cec4c5caf9bdbec3ffbcbcc2ffc0c1c6fcceced1d9d7d8db6c00000000000000000000000000000000f00f0000e0070000c003000080010000800000000000000000000000000000000000000000000000000000008000000080010000c0030000e0070000f81f0000",
+    "version": "1.1"
+}

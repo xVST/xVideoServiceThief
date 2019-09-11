@@ -1,0 +1,16 @@
+{
+    "sha1": "c81a1d057f9bf0b8baa8fde2e5197649022535d3",
+    "extractor": "foxnews.py",
+    "url": "http:\/\/video.foxnews.com\/",
+    "htmlError": false,
+    "title": "Fox News Video",
+    "matchers": [
+        "https?:\/\/(?P<host>video\\.(?:insider\\.)?fox(?:news|business)\\.com)\/v\/(?:video-embed\\.html\\?video_id=)?(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?(?:insider\\.)?foxnews\\.com\/(?!v)([^\/]+\/)+(?P<id>[a-z-]+)"
+    ],
+    "+18": 0,
+    "music": 0.14482758620689656,
+    "faviconUrl": "http:\/\/video.foxnews.com\/\/\/global.fncstatic.com\/static\/p\/video\/img\/fn\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

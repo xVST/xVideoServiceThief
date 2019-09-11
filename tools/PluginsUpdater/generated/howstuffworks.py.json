@@ -1,0 +1,15 @@
+{
+    "sha1": "c29d734eaff84156bba70cf12d1c041a9ab6d012",
+    "extractor": "howstuffworks.py",
+    "url": "http:\/\/www.stufftoblowyourmind.com\/",
+    "htmlError": false,
+    "title": "Stuff to Blow Your Mind",
+    "matchers": [
+        "https?:\/\/[\\da-z-]+\\.(?:howstuffworks|stuff(?:(?:youshould|theydontwantyouto)know|toblowyourmind|momnevertoldyou)|(?:brain|car)stuffshow|fwthinking|geniusstuff)\\.com\/(?:[^\/]+\/)*(?:\\d+-)?(?P<id>.+?)-video\\.htm"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.296551724137931,
+    "faviconUrl": "http:\/\/www.stufftoblowyourmind.com\/\/\/s.hswstatic.com\/en-us\/hsw\/img\/stuff-media-favicon-32x32.png",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "c04ffe31199290c7603aeab73cd9a514f5b6d3af",
+    "extractor": "stv.py",
+    "url": "https:\/\/player.stv.tv\/",
+    "htmlError": false,
+    "title": "STV | The home of your favourite shows",
+    "matchers": [
+        "https?:\/\/player\\.stv\\.tv\/(?P<type>episode|video)\/(?P<id>[a-z0-9]{4})"
+    ],
+    "+18": 0,
+    "music": 0.10344827586206896,
+    "faviconUrl": "https:\/\/player.stv.tv\/\/player-web\/static\/favicons\/favicon-196.png",
+    "faviconData": null,
+    "version": "1.1"
+}

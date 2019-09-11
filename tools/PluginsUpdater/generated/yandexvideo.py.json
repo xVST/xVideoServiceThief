@@ -1,0 +1,15 @@
+{
+    "sha1": "48fa3789cb239f747a6ea7aa5441be7a4a2c8b42",
+    "extractor": "yandexvideo.py",
+    "url": "https:\/\/yandex.ru\/",
+    "htmlError": false,
+    "title": "\u042f\u043d\u0434\u0435\u043a\u0441",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\nyandex\\.ru(?:\/portal\/(?:video|efir))?\/?\\?.*?stream_id=|\nfrontend\\.vh\\.yandex\\.ru\/player\/\n)\n(?P<id>[\\da-f]+)\n"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": "https:\/\/yandex.ru\/\/\/yastatic.net\/iconostasis\/_\/8lFaTHLDzmsEZz-5XaQg9iTWZGE.png",
+    "faviconData": null,
+    "version": "1.1"
+}

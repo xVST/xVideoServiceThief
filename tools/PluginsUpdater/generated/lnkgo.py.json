@@ -1,0 +1,15 @@
+{
+    "sha1": "e73bb1ba4cf827171ebefaadf585493573d0df64",
+    "extractor": "lnkgo.py",
+    "url": "http:\/\/lnkgo.alfa.lt\/",
+    "htmlError": false,
+    "title": "lnkgo.alfa.lt",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?lnkgo\\.(?:alfa\\.)?lt\/visi-video\/(?P<show>[^\/]+)\/ziurek-(?P<id>[A-Za-z0-9-]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

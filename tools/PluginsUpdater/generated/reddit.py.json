@@ -1,0 +1,16 @@
+{
+    "sha1": "3da18bb760ba048ece6c959e9d3c81ac19205602",
+    "extractor": "reddit.py",
+    "url": "https:\/\/v.redd.it\/",
+    "htmlError": false,
+    "title": "v.redd.it",
+    "matchers": [
+        "https?:\/\/v\\.redd\\.it\/(?P<id>[^\/?#&]+)",
+        "(?P<url>https?:\/\/(?:[^\/]+\\.)?reddit\\.com\/r\/[^\/]+\/comments\/(?P<id>[^\/?#&]+))"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "104524d0ee0e1d22d75674bbe3f4f83e338af924",
+    "extractor": "breakcom.py",
+    "url": "http:\/\/www.break.com\/",
+    "htmlError": false,
+    "title": "www.break.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?break\\.com\/video\/(?P<display_id>[^\/]+?)(?:-(?P<id>\\d+))?(?:[\/?#&]|$)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

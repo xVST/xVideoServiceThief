@@ -1,0 +1,15 @@
+{
+    "sha1": "116076f49be8ea3985954bc313e847b845768693",
+    "extractor": "vidzi.py",
+    "url": "http:\/\/vidzi.tv\/",
+    "htmlError": false,
+    "title": "vidzi.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?vidzi\\.(?:tv|cc|si|nu)\/(?:embed-)?(?P<id>[0-9a-zA-Z]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

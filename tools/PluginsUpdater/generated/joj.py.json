@@ -1,0 +1,15 @@
+{
+    "sha1": "9d425b24346b79964ecd029cf1dcc27b83c1d6a2",
+    "extractor": "joj.py",
+    "url": "https:\/\/media.joj.sk\/",
+    "htmlError": false,
+    "title": "media.joj.sk",
+    "matchers": [
+        "(?x)\r\n(?:\r\njoj:|\r\nhttps?:\/\/media\\.joj\\.sk\/embed\/\r\n)\r\n(?P<id>[^\/?#^]+)\r\n\r"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

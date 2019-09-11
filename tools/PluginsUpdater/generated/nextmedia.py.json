@@ -1,0 +1,18 @@
+{
+    "sha1": "8d30cadd48ec80e51a129d81591c35a43a7c70fc",
+    "extractor": "nextmedia.py",
+    "url": "http:\/\/hk.apple.nextmedia.com\/",
+    "htmlError": false,
+    "title": "\u6700Hit | \u860b\u679c\u65e5\u5831",
+    "matchers": [
+        "https?:\/\/hk\\.apple\\.nextmedia\\.com\/[^\/]+\/[^\/]+\/(?P<date>\\d+)\/(?P<id>\\d+)",
+        "https?:\/\/hk\\.dv\\.nextmedia\\.com\/actionnews\/[^\/]+\/(?P<date>\\d+)\/(?P<id>\\d+)\/\\d+",
+        "https?:\/\/(www|ent)\\.appledaily\\.com\\.tw\/[^\/]+\/[^\/]+\/[^\/]+\/(?P<date>\\d+)\/(?P<id>\\d+)(\/.*)?",
+        "https?:\/\/(?:www\\.)?nexttv\\.com\\.tw\/(?:[^\/]+\/)+(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0.034482758620689655,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "6a2ab9843b90a7f71781f297df383f1918400dc2",
+    "extractor": "uol.py",
+    "url": "http:\/\/player.mais.uol.com.br\/",
+    "htmlError": false,
+    "title": "UOLPlayer",
+    "matchers": [
+        "https?:\/\/(?:.+?\\.)?uol\\.com\\.br\/.*?(?:(?:mediaId|v)=|view\/(?:[a-z0-9]+\/)?|video(?:=|\/(?:\\d{4}\/\\d{2}\/\\d{2}\/)?))(?P<id>\\d+|[\\w-]+-[A-Z0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.1793103448275862,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

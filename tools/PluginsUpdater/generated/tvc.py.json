@@ -1,0 +1,16 @@
+{
+    "sha1": "dc53856c0f3c1dc27c8d52d6acc5690923d963d7",
+    "extractor": "tvc.py",
+    "url": "http:\/\/www.tvc.ru\/",
+    "htmlError": false,
+    "title": "\u0422\u0412 \u0426\u0435\u043d\u0442\u0440 - \u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0430\u0439\u0442 \u0442\u0435\u043b\u0435\u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?tvc\\.ru\/video\/iframe\/id\/(?P<id>\\d+)",
+        "https?:\/\/(?:www\\.)?tvc\\.ru\/(?!video\/iframe\/id\/)(?P<id>[^?#]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/www.tvc.ru\/\/\/cdn.tvc.ru\/i\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "ac3b9e21ef4e326a73ea8b15ad91745b9d60b1cc",
+    "extractor": "cultureunplugged.py",
+    "url": "http:\/\/www.cultureunplugged.com\/",
+    "htmlError": false,
+    "title": "www.cultureunplugged.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?cultureunplugged\\.com\/documentary\/watch-online\/play\/(?P<id>\\d+)(?:\/(?P<display_id>[^\/]+))?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

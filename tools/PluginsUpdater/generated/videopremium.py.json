@@ -1,0 +1,15 @@
+{
+    "sha1": "d866995a2227df1e31e48be912de187091fdafe4",
+    "extractor": "videopremium.py",
+    "url": "http:\/\/videopremium.tv\/",
+    "htmlError": false,
+    "title": "videopremium.tv",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?videopremium\\.(?:tv|me)\/(?P<id>\\w+)(?:\/.*)?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

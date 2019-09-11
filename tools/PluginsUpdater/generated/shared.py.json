@@ -1,0 +1,16 @@
+{
+    "sha1": "fcc120f73e6ce9c12baa85f502c09b9d528a3db5",
+    "extractor": "shared.py",
+    "url": "http:\/\/shared.sx\/",
+    "htmlError": false,
+    "title": "shared.sx",
+    "matchers": [
+        "https?:\/\/shared\\.sx\/(?P<id>[\\da-z]{10})",
+        "https?:\/\/vivo\\.sx\/(?P<id>[\\da-z]{10})"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

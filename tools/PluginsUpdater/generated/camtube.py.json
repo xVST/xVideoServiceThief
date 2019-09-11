@@ -1,0 +1,15 @@
+{
+    "sha1": "114d3e94800f50318c6e8ce198317209c4659da4",
+    "extractor": "camtube.py",
+    "url": "https:\/\/camtube.co\/",
+    "htmlError": false,
+    "title": "camtube.co",
+    "matchers": [
+        "https?:\/\/(?:(?:www|api)\\.)?camtube\\.co\/recordings?\/(?P<id>[^\/?#&]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

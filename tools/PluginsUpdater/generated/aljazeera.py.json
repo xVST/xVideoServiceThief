@@ -1,0 +1,15 @@
+{
+    "sha1": "9d603548770afdba3a1cf1218ff0febcb47f50f5",
+    "extractor": "aljazeera.py",
+    "url": "http:\/\/www.aljazeera.com\/",
+    "htmlError": false,
+    "title": "Breaking News, World News & Video from Al Jazeera",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?aljazeera\\.com\/(?:programmes|video)\/.*?\/(?P<id>[^\/]+)\\.html"
+    ],
+    "+18": 0.15151515151515152,
+    "music": 0.1724137931034483,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,16 @@
+{
+    "sha1": "ec1b6944172f6ff147f2d31e277c7f0b5fe65276",
+    "extractor": "tiktok.py",
+    "url": "https:\/\/m.tiktok.com\/",
+    "htmlError": false,
+    "title": "m.tiktok.com",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:m\\.)?tiktok\\.com\/v|\n(?:www\\.)?tiktok\\.com\/share\/video\n)\n\/(?P<id>\\d+)\n",
+        "(?x)\nhttps?:\/\/\n(?:\n(?:m\\.)?tiktok\\.com\/h5\/share\/usr|\n(?:www\\.)?tiktok\\.com\/share\/user\n)\n\/(?P<id>\\d+)\n"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "b17f367a9d532bdb01bcdf8ad68a8c33a51bc500",
+    "extractor": "sztvhu.py",
+    "url": "http:\/\/sztv.hu\/",
+    "htmlError": false,
+    "title": "\u00dcdv\u00f6z\u00f6lj\u00fck a Szombathelyi Telev\u00edzi\u00f3 oldal\u00e1n! - Szombathelyi Telev\u00edzi\u00f3",
+    "matchers": [
+        "https?:\/\/(?:(?:www\\.)?sztv\\.hu|www\\.tvszombathely\\.hu)\/(?:[^\/]+)\/.+-(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "http:\/\/sztv.hu\/\/img\/992_159_favicon.ico",
+    "faviconData": "0000010001001010000001001800680300001600000028000000100000002000000001001800000000004003000000000000000000000000000000000000ffffffe2e2e2c4c4c4c7c7c7c6c6c6c6c6c6edededffffffffffffebebebc6c6c6cacacacacacac6c6c6e6e6e6ffffffe3e3e3c1c1c1f7f7f7c9c9c9dbdbdbf0f0f0bcbcbcf2f2f2eeeeeebebebeefefefb7b7b7b0b0b0edededc1c1c1e6e6e6c3c3c3fafafaffffffa1a1a1bdbdbdffffffecececccccccc7c7c7f4f4f4b4b4b49b9b9ba2a2a2a7a7a7fafafac4c4c4c2c2c2ffffffffffffa7a7a7c1c1c1ffffffffffffbebebec4c4c4f6f6f68a8a8aefefeffcfcfc8b8b8bf0f0f0c6c6c6c2c2c2fefefef3f3f3a1a1a1b9b9b9f4f4f4fefefebfbfbfc5c5c5ededed8c8c8cf7f7f7ffffff929292e6e6e6c7c7c7c9c9c9d5d5d59191918989898a8a8a9e9e9ed7d7d7d4d4d4cfcfcfd4d4d49d9d9df7f7f7fefefe9f9f9fd3d3d3cbcbcbedededb7b7b7dadadaf1f1f1efefefd3d3d3bababaf9f9f9f6f6f6b9b9b9d9d9d9fcfcfcfefefedededeb8b8b8f0f0f0fffffff0f0f0cdcdcdc4c4c4c4c4c4d1d1d1f8f8f8fffffffffffff6f6f6d0d0d0c3c3c3c1c1c1cececef3f3f3ffffffffffffdeefff64affe1e8cfd258ffd73b7feedf6fffffffffffffff0f8fe78bafe2891fd1c8bfc5fadfed6ebfeffffffd9ecfe2893fe6eb4fe9ecfff9ccdff61adfe369afeeff7fff3f9fe54a9fe80bdff98cbff9fcfff96c8ff53a9fecce5fe53a9fe46a2feeaf5fe92c6fe97cbfeffffff2c95ff7dbefe8ec6fe1c8effffffffb2d8ff96c8ffa0d0ff3397ff4ca5fe1689fe1f8dfe9bcdfd92c7fd98cbfdf8fcff3398ff3499fe409ffe047cffc8e4fecbe5fe52a6fe007aff0078ff1489ff1283fe5daefff0f8ff91c7fd90c7fe88c3fd0c81fe399cfe41a0fe0076ff017dfe6fb5fed5eafec7e3fe1688fe1285ff4ba5fe56aafff6fbff88c1ff8bc5ffeaf5fe2b94ff76bafe8bc5fe0c82ff8fc7ff89c2ffa6d2feffffff5daeff409efed2e8fe218ffe7cbbfeafd7ffacd6ff6cb3fe2e96feeaf5feeef6ff50a7fea0cdffaed6ffabd5ff98c9ff4da6fec4e2feffffffd4eafe55a8fe1989fe1d8cfe64affee4f2feffffffffffffeaf4fe6ab3fe208dfe1889fe51a5fecce6feffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "version": "1.1"
+}

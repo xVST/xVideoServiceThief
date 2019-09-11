@@ -1,0 +1,15 @@
+{
+    "sha1": "bc584d045f2b645dcd21bb0a4427dcc9687be07e",
+    "extractor": "mnet.py",
+    "url": "http:\/\/www.mnet.com\/",
+    "htmlError": false,
+    "title": "Mwave | K-pop makes one",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?mnet\\.(?:com|interest\\.me)\/tv\/vod\/(?:.*?\\bclip_id=)?(?P<id>[0-9]+)"
+    ],
+    "+18": 0,
+    "music": 0.15862068965517243,
+    "faviconUrl": "http:\/\/www.mnet.com\/\/static\/images\/cmm\/favicon.ico",
+    "faviconData": null,
+    "version": "1.1"
+}

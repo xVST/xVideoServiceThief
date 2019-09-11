@@ -1,0 +1,15 @@
+{
+    "sha1": "ef8eadf0323879944ec05e20f576211be935ee30",
+    "extractor": "tweakers.py",
+    "url": "https:\/\/tweakers.net\/",
+    "htmlError": false,
+    "title": "Tweakers",
+    "matchers": [
+        "https?:\/\/tweakers\\.net\/video\/(?P<id>\\d+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

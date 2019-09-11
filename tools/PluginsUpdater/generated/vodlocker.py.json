@@ -1,0 +1,15 @@
+{
+    "sha1": "e28f1405221200b1bbedd6aee92916c416a7b1e3",
+    "extractor": "vodlocker.py",
+    "url": "http:\/\/vodlocker.com\/",
+    "htmlError": false,
+    "title": "vodlocker.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?vodlocker\\.(?:com|city)\/(?:embed-)?(?P<id>[0-9a-zA-Z]+)(?:\\..*?)?"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

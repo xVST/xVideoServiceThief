@@ -1,0 +1,15 @@
+{
+    "sha1": "49adb51ebb684e7d2f8ef9301b883dd6a74ce31d",
+    "extractor": "discoverynetworks.py",
+    "url": "http:\/\/www.tlc.de\/",
+    "htmlError": false,
+    "title": "TLC",
+    "matchers": [
+        "(?x)https?:\/\/(?:www\\.)?(?P<site>discovery|tlc|animalplanet|dmax)\\.de\/\n(?:\n.*\\#(?P<id>\\d+)|\n(?:[^\/]+\/)*videos\/(?P<display_id>[^\/?#]+)|\nprogramme\/(?P<programme>[^\/]+)\/video\/(?P<alternate_id>[^\/]+)\n)"
+    ],
+    "+18": 0,
+    "music": 0.22758620689655173,
+    "faviconUrl": "http:\/\/www.tlc.de\/\/assets\/favicons\/tlc\/android-icon-192x192.png",
+    "faviconData": null,
+    "version": "1.1"
+}

@@ -1,0 +1,15 @@
+{
+    "sha1": "29deab0eeaca3a7a9d611598e65f545d61c555a1",
+    "extractor": "usatoday.py",
+    "url": "http:\/\/www.usatoday.com\/",
+    "htmlError": false,
+    "title": "www.usatoday.com",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?usatoday\\.com\/(?:[^\/]+\/)*(?P<id>[^?\/#]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

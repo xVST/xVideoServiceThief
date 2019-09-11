@@ -1,0 +1,15 @@
+{
+    "sha1": "09ec2b7d730d3fc8450c13e2a314edea4a1e5d82",
+    "extractor": "googledrive.py",
+    "url": "https:\/\/drive.google.com\/",
+    "htmlError": false,
+    "title": "Descubre Google Drive: un lugar para todos tus archivos",
+    "matchers": [
+        "(?x)\nhttps?:\/\/\n(?:\n(?:docs|drive)\\.google\\.com\/\n(?:\n(?:uc|open)\\?.*?id=|\nfile\/d\/\n)|\nvideo\\.google\\.com\/get_player\\?.*?docid=\n)\n(?P<id>[a-zA-Z0-9_-]{28,})\n"
+    ],
+    "+18": 0,
+    "music": 0.1793103448275862,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.2"
+}

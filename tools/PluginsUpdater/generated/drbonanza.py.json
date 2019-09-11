@@ -1,0 +1,15 @@
+{
+    "sha1": "80d539af8ad5b5111f8cf97e6a062faad2255475",
+    "extractor": "drbonanza.py",
+    "url": "http:\/\/www.dr.dk\/",
+    "htmlError": false,
+    "title": "DR | TV, radio, nyheder og meget mere",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?dr\\.dk\/bonanza\/[^\/]+\/\\d+\/[^\/]+\/(?P<id>\\d+)\/(?P<display_id>[^\/?#&]+)"
+    ],
+    "+18": 0.06493506493506493,
+    "music": 0.31724137931034485,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

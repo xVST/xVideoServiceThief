@@ -1,0 +1,17 @@
+{
+    "sha1": "f8e4a300c88149757333eedf16e4a9aefa5de43b",
+    "extractor": "instagram.py",
+    "url": "https:\/\/instagram.com\/",
+    "htmlError": false,
+    "title": "Instagram",
+    "matchers": [
+        "(?P<url>https?:\/\/(?:www\\.)?instagram\\.com\/p\/(?P<id>[^\/?#&]+))",
+        "https?:\/\/(?:www\\.)?instagram\\.com\/(?P<id>[^\/]{2,})\/?(?:$|[?#])",
+        "https?:\/\/(?:www\\.)?instagram\\.com\/explore\/tags\/(?P<id>[^\/]+)"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": "https:\/\/instagram.com\/\/static\/images\/ico\/favicon.ico\/36b3ee2d91ed.ico",
+    "faviconData": null,
+    "version": "1.2"
+}

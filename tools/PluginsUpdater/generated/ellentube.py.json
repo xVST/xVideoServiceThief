@@ -1,0 +1,17 @@
+{
+    "sha1": "2786b30b69691b5ab7affc8d152e5fa7409684fd",
+    "extractor": "ellentube.py",
+    "url": "https:\/\/api-prod.ellentube.com\/",
+    "htmlError": false,
+    "title": "api-prod.ellentube.com",
+    "matchers": [
+        "(?x)\n(?:\nellentube:|\nhttps:\/\/api-prod\\.ellentube\\.com\/ellenapi\/api\/item\/\n)\n(?P<id>[\\da-f]{8}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{4}-[\\da-f]{12})\n",
+        "https?:\/\/(?:www\\.)?ellentube\\.com\/video\/(?P<id>.+?)\\.html",
+        "https?:\/\/(?:www\\.)?ellentube\\.com\/(?:episode|studios)\/(?P<id>.+?)\\.html"
+    ],
+    "+18": 0,
+    "music": 0,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}

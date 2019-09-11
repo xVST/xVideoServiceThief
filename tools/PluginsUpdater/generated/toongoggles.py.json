@@ -1,0 +1,15 @@
+{
+    "sha1": "388c6a0859a5ae1c783b7b659bfe3e0b45755c30",
+    "extractor": "toongoggles.py",
+    "url": "http:\/\/www.toongoggles.com\/",
+    "htmlError": false,
+    "title": "",
+    "matchers": [
+        "https?:\/\/(?:www\\.)?toongoggles\\.com\/shows\/(?P<show_id>\\d+)(?:\/[^\/]+\/episodes\/(?P<episode_id>\\d+))?"
+    ],
+    "+18": 0,
+    "music": 0.0896551724137931,
+    "faviconUrl": null,
+    "faviconData": null,
+    "version": "1.1"
+}
