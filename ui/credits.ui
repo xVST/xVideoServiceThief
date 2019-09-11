@@ -29,19 +29,21 @@
    <item row="0" column="0" colspan="3">
     <layout class="QHBoxLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QSvgWidget" name="imgLogo">
        <property name="maximumSize">
         <size>
-         <width>116</width>
-         <height>116</height>
+         <width>120</width>
+         <height>120</height>
         </size>
        </property>
+<!--
        <property name="text">
         <string/>
        </property>
        <property name="pixmap">
         <pixmap resource="../resources/resources.qrc">:/header/images/InformationLogo.svg</pixmap>
        </property>
+-->
       </widget>
      </item>
      <item>

@@ -8,7 +8,8 @@ CONFIG += qt \
 QT = core \
     widgets \
     network \
-    script
+    script \
+    svg
 static_build {
     win32 {
         QT += axcontainer

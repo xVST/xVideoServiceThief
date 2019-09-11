@@ -34,6 +34,9 @@ WelcomeDonate::WelcomeDonate(QWidget *parent) : QDialog(parent)
 #endif
 	//
 	connect(btnDonate, SIGNAL(clicked()), this, SLOT(donateClicked()));
+    // load the SVG image
+    imgLogo->load(QString::fromUtf8(":/header/images/InformationLogo.svg"));
+    imgLogo->resize(imgLogo->sizeHint());
 }
 
 bool WelcomeDonate::getDisplayAgain()

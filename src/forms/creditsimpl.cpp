@@ -28,6 +28,9 @@
 CreditsImpl::CreditsImpl(QWidget * parent, Qt::WindowFlags f) : QDialog(parent, f)
 {
 	setupUi(this);
+    // load the SVG image
+    imgLogo->load(QString::fromUtf8(":/header/images/InformationLogo.svg"));
+    imgLogo->resize(imgLogo->sizeHint());
 	// resize form if is needed
 #ifndef Q_OS_WIN32
 		resize(468, 684);

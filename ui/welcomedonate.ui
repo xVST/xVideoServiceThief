@@ -70,10 +70,10 @@
     </layout>
    </item>
    <item row="1" column="0">
-    <widget class="QLabel" name="imgLogo">
+    <widget class="QSvgWidget" name="imgLogo">
      <property name="minimumSize">
       <size>
-       <width>124</width>
+       <width>120</width>
        <height>120</height>
       </size>
      </property>
@@ -83,6 +83,7 @@
        <height>16777215</height>
       </size>
      </property>
+     <!--
      <property name="text">
       <string/>
      </property>
@@ -92,6 +93,7 @@
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
+             -->
     </widget>
    </item>
    <item row="4" column="0">
@@ -185,7 +187,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="../resources/resources.qrc">:/buttons/images/support_button_main.png</pixmap>
+      <pixmap>:/buttons/images/support_button_main.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

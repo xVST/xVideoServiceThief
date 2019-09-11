@@ -45,19 +45,24 @@ background: white;
      </property>
      <layout class="QGridLayout">
       <item row="0" column="0">
-       <widget class="QLabel" name="imgIcon_2">
+       <widget class="QSvgWidget" name="imgLogo">
         <property name="maximumSize">
          <size>
-          <width>125</width>
-          <height>116</height>
+          <width>120</width>
+          <height>120</height>
          </size>
         </property>
+        <!--
         <property name="text">
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap resource="../resources/resources.qrc">:/header/images/InformationLogo.svg</pixmap>
+         <pixmap resource="../resources/resources.qrc">:/header/images/header.svg</pixmap>
         </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+      -->
        </widget>
       </item>
       <item row="0" column="1">

@@ -62,6 +62,9 @@ InformationImpl::InformationImpl(ProgramOptions *programOptions, VideoInformatio
 	buildVideoServicesList(videoInformation);
 	// set the support project link
 	imgPaypal->setText("<a href=\"https://www.xvideothief.com/index.php?action=make_donation\"><img src=\":/buttons/images/support_button.png\" /></a>");
+    // load the SVG image
+    imgLogo->load(QString::fromUtf8(":/header/images/InformationLogo.svg"));
+    imgLogo->resize(imgLogo->sizeHint());
 }
 
 InformationImpl::~InformationImpl()
