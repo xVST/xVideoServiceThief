@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __LANGUAGES_H__
-#define __LANGUAGES_H__
+#ifndef LANGUAGES_H
+#define LANGUAGES_H
 
 #include <QtWidgets>
 
@@ -94,4 +94,4 @@ Q_OBJECT
 		/*! Get the default user language */
 		static QString getDefaultUserLanguage(QString langDir);
 };
-#endif // __LANGUAGES_H__
+#endif // LANGUAGES_H

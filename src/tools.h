@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __TOOLS_H__
-#define __TOOLS_H__
+#ifndef TOOLS_H
+#define TOOLS_H
 
 #include <QtWidgets>
 

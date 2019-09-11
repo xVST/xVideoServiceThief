@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __CONVERTVIDEO_H__
-#define __CONVERTVIDEO_H__
+#ifndef CONVERTVIDEO_H
+#define CONVERTVIDEO_H
 
 #include <QtWidgets>
 
@@ -124,4 +124,4 @@ Q_OBJECT
 		void conversionFinished(VideoItem *videoItem);
 };
 
-#endif // __CONVERTVIDEO_H__
+#endif // CONVERTVIDEO_H

@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __UPDATES_H__
-#define __UPDATES_H__
+#ifndef UPDATES_H
+#define UPDATES_H
 
 #include <QtWidgets>
 
@@ -213,4 +213,4 @@ Q_OBJECT
 		void failedToInstallUpdates();
 };
 
-#endif // __UPDATES_H__
+#endif // UPDATES_H

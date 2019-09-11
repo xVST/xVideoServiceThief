@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __VIDEODOWNLOAD_H__
-#define __VIDEODOWNLOAD_H__
+#ifndef VIDEODOWNLOAD_H
+#define VIDEODOWNLOAD_H
 
 #include <QtWidgets>
 
@@ -234,4 +234,4 @@ Q_OBJECT
 		void downloadFinished(VideoItem *videoItem);
 };
 
-#endif // __VIDEODOWNLOAD_H__
+#endif // VIDEODOWNLOAD_H

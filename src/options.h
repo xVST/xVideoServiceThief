@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __OPTIONS_H__
-#define __OPTIONS_H__
+#ifndef OPTIONS_H
+#define OPTIONS_H
 
 #include <QtWidgets>
 #include <QNetworkProxy>
@@ -267,4 +267,4 @@ Q_OBJECT
 		void optionsUpdated();
 };
 
-#endif // __OPTIONS_H__
+#endif // OPTIONS_H

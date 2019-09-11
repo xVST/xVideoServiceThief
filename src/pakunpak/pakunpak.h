@@ -25,8 +25,8 @@
 *
 */
 
-#ifndef __PAKUNPAK_H__
-#define __PAKUNPAK_H__
+#ifndef PAKUNPAK_H
+#define PAKUNPAK_H
 
 #ifdef __GNUG__ // linux and mingw
     #include <string.h>
@@ -74,4 +74,4 @@ class Unpacker
 		unsigned int getExtractedFilesCount();
 };
 
-#endif // __PAKUNPAK_H__
+#endif // PAKUNPAK_H

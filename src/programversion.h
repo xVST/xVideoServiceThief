@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __PROGRAMVERSION_H__
-#define __PROGRAMVERSION_H__
+#ifndef PROGRAMVERSION_H
+#define PROGRAMVERSION_H
 
 #include <QString>
 
@@ -52,4 +52,4 @@ static const QString COMPILATION_MODE = "DYNAMIC";		//!< Dynamic compilation
 	#endif
 #endif
 
-#endif // __PROGRAMVERSION_H__
+#endif // PROGRAMVERSION_H

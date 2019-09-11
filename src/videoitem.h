@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __VIDEOITEM_H__
-#define __VIDEOITEM_H__
+#ifndef VIDEOITEM_H
+#define VIDEOITEM_H
 
 #include <QtWidgets>
 
@@ -337,4 +337,4 @@ Q_OBJECT
 		static void initVideoDefinition(VideoDefinition &videoDef);
 };
 
-#endif // __VIDEOITEM_H__
+#endif // VIDEOITEM_H

@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __PROGRESSBARDELEGATE_H__
-#define __PROGRESSBARDELEGATE_H__
+#ifndef PROGRESSBARDELEGATE_H
+#define PROGRESSBARDELEGATE_H
 
 #include <QtWidgets>
 
@@ -41,4 +41,4 @@ Q_OBJECT
 			const QModelIndex & index ) const;
 };
 
-#endif // __PROGRESSBARDELEGATE_H__
+#endif // PROGRESSBARDELEGATE_H

@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __VIDEOINFORMATION_H__
-#define __VIDEOINFORMATION_H__
+#ifndef VIDEOINFORMATION_H
+#define VIDEOINFORMATION_H
 
 #include <QtWidgets>
 #include <QtScript>
@@ -283,4 +283,4 @@ Q_OBJECT
 		void playlistURLsDetected(VideoItem *videoItem, QStringList URLs);
 };
 
-#endif // __VIDEOINFORMATION_H__
+#endif // VIDEOINFORMATION_H

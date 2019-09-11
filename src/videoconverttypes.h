@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __CONVERTVIDEOTYPES_H__
-#define __CONVERTVIDEOTYPES_H__
+#ifndef CONVERTVIDEOTYPES_H
+#define CONVERTVIDEOTYPES_H
 
 /*! Output format conversion (DivX, MPEG1... ) */
 enum OutputFormat
@@ -68,5 +68,4 @@ struct VideoConversionConfig
 	OutputQuality outputQuality;
 };
 
-#endif // __CONVERTVIDEOTYPES_H__
-
+#endif // CONVERTVIDEOTYPES_H

@@ -23,8 +23,8 @@
 *
 */
 
-#ifndef __VIDEOLISTCONTROLLER_H__
-#define __VIDEOLISTCONTROLLER_H__
+#ifndef VIDEOLISTCONTROLLER_H
+#define VIDEOLISTCONTROLLER_H
 
 #include <QtWidgets>
 //#include <QNetworkProxy>
@@ -206,4 +206,4 @@ Q_OBJECT
 		void videoMoved(int from, int to);
 };
 
-#endif // __VIDEOLISTCONTROLLER_H__
+#endif // VIDEOLISTCONTROLLER_H
