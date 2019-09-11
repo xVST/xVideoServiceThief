@@ -22,7 +22,7 @@
 
 - Upgraded the ffmpeg to version 3.2.2
 
-- Compiled with Qt 5.10 (64-bits only).
+- Compiled with Qt 5.13 (64-bits only).
 
 Mac OS X:
 ---------
