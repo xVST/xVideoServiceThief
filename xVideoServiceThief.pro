@@ -19,7 +19,9 @@ static_build {
     }
 }
 else {
-    QT += webenginewidgets
+    ! macx {
+        QT += webenginewidgets
+    }
 }
 
 CONFIG += plugins_debug_off
@@ -197,7 +199,6 @@ unix {
     TARGET = xvst
 }
 macx {
-    QT -= webkitwidgets
     QT += macextras
     ICON += $${PWD}/resources/icons/MacOSX.icns
     OBJECTS_DIR = build/o/mac
