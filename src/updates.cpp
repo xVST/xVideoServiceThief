@@ -50,7 +50,7 @@ Updates::Updates(QString appPath)
 	// init update classes
 	updateList = new QList<Update *>;
 	// init http object
-	http = NULL;
+	http = nullptr;
 }
 
 Updates::~Updates()
@@ -132,7 +132,7 @@ bool Updates::hasUpdates()
 				{
 					Language *language = LanguageManager::getLanguageInfo(appPath + update->getInstallTo());
 					// have info?
-					if (language != NULL)
+					if (language != nullptr)
 						deleteUpdate = compareVersions(language->getVersion(), update->getVersion()) != 1;
 				}
 				// plugin files
@@ -147,7 +147,7 @@ bool Updates::hasUpdates()
 						VideoInformation *vidInf = VideoInformation::instance();
 						VideoInformationPlugin *plugin = vidInf->getRegisteredPlugin(fileInf.fileName(), true);
 						// have info?
-						if (plugin != NULL) deleteUpdate = compareVersions(plugin->getVersion(), update->getVersion()) != 1;
+						if (plugin != nullptr) deleteUpdate = compareVersions(plugin->getVersion(), update->getVersion()) != 1;
 					}
 				}
 				else // "unknonw file"
@@ -430,7 +430,7 @@ void Updates::downloadUpdates()
 
 #ifdef Q_OS_WIN32
 // special function used to execute the updater with administrator rights
-BOOL RunElevated(HWND hwnd, LPCTSTR pszPath, LPCTSTR pszParameters = NULL, LPCTSTR pszDirectory = NULL)
+BOOL RunElevated(HWND hwnd, LPCTSTR pszPath, LPCTSTR pszParameters = nullptr, LPCTSTR pszDirectory = nullptr)
 {
 	QString sVerb = isWindowsVista() ? "runas" : "";
 
@@ -478,7 +478,7 @@ Update* Updates::getUpdateItem(const int index)
 	if (index >= 0 && index < getUpdatesCount())
 		return updateList->at(index);
 	else
-		return NULL;
+		return nullptr;
 }
 
 int Updates::getUpdatesCount()
@@ -564,7 +564,7 @@ void Updates::initializeHttp()
 void Updates::deinitHttp()
 {
 	if (http) delete http;
-	http = NULL;
+	http = nullptr;
 }
 
 bool Updates::canUpdate(QString searchPath)

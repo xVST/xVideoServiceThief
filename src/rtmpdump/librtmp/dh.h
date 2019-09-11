@@ -36,7 +36,7 @@ typedef mpi * MP_t;
 #define MP_set(u, v)	mpi_copy(u, v)
 #define MP_sub_w(mpi, w)	mpi_sub_int(mpi, mpi, w)
 #define MP_cmp_1(mpi)	mpi_cmp_int(mpi, 1)
-#define MP_modexp(r, y, q, p)	mpi_exp_mod(r, y, q, p, NULL)
+#define MP_modexp(r, y, q, p)	mpi_exp_mod(r, y, q, p, nullptr)
 #define MP_free(mpi)	mpi_free(mpi); free(mpi)
 #define MP_gethex(u, hex, res)	MP_new(u); res = mpi_read_string(u, 16, hex) == 0
 #define MP_bytes(u)	mpi_size(u)
@@ -243,7 +243,7 @@ DHGenerateKey(MDH *dh)
 
   while (!res)
     {
-      MP_t q1 = NULL;
+      MP_t q1 = nullptr;
 
       if (!MDH_generate_key(dh))
 	return 0;
@@ -308,7 +308,7 @@ static int
 DHComputeSharedSecretKey(MDH *dh, uint8_t *pubkey, size_t nPubkeyLen,
 			 uint8_t *secret)
 {
-  MP_t q1 = NULL, pubkeyBn = NULL;
+  MP_t q1 = nullptr, pubkeyBn = nullptr;
   size_t len;
   int res;
 

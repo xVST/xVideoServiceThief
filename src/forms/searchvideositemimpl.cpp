@@ -64,7 +64,7 @@ SearchVideosItemImpl::SearchVideosItemImpl(QWidget *parent, SearchResultItem *se
 
 void SearchVideosItemImpl::setSearchVideosItem(SearchResultItem *searchItem)
 {
-	if (searchItem == NULL) return;
+	if (searchItem == nullptr) return;
 
 	this->searchItem = searchItem;
 	this->setObjectName(searchItem->getVideoId());
@@ -98,7 +98,7 @@ void SearchVideosItemImpl::setSearchVideosItem(SearchResultItem *searchItem)
 
 void SearchVideosItemImpl::reloadPreview()
 {
-	if (searchItem == NULL) return;
+	if (searchItem == nullptr) return;
 	// remove loading image
 	imgVideo->clear();
 	// make it screachable

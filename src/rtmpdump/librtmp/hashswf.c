@@ -385,7 +385,7 @@ make_unix_time(char *s)
       time.tm_year = strtol(n + 1, &n, 0);
       time.tm_hour = strtol(n + 1, &n, 0);
       time.tm_min = strtol(n + 1, &n, 0);
-      time.tm_sec = strtol(n + 1, NULL, 0);
+      time.tm_sec = strtol(n + 1, nullptr, 0);
     }
   else
     {
@@ -399,7 +399,7 @@ make_unix_time(char *s)
       time.tm_hour = strtol(n + 1, &n, 0);
       time.tm_min = strtol(n + 1, &n, 0);
       time.tm_sec = strtol(n + 1, &n, 0);
-      time.tm_year = strtol(n + 1, NULL, 0);
+      time.tm_year = strtol(n + 1, nullptr, 0);
     }
   if (time.tm_year > 100)
     time.tm_year -= ysub;
@@ -452,7 +452,7 @@ int
 RTMP_HashSWF(const char *url, unsigned int *size, unsigned char *hash,
 	     int age)
 {
-  FILE *f = NULL;
+  FILE *f = nullptr;
   char *path, date[64], cctim[64];
   long pos = 0;
   time_t ctim = -1, cnow;
@@ -540,7 +540,7 @@ RTMP_HashSWF(const char *url, unsigned int *size, unsigned char *hash,
 	    {
 	      if (!strncmp(buf, "size: ", 6))
 		{
-		  *size = strtol(buf + 6, NULL, 16);
+		  *size = strtol(buf + 6, nullptr, 16);
 		  got++;
 		}
 	      else if (!strncmp(buf, "hash: ", 6))

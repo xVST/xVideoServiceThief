@@ -35,7 +35,7 @@
 
 // VideoListController class
 
-static VideoListController *lastInstance = NULL;
+static VideoListController *lastInstance = nullptr;
 
 VideoListController::VideoListController(ProgramOptions *programOptions)
 {
@@ -100,12 +100,12 @@ VideoItem* VideoListController::getFirstByState(VideoState videoState)
 		if (videoItem->getVideoState() == videoState)
 			return videoItem;
 	// no items are ready to be downloaded
-	return NULL;
+	return nullptr;
 }
 
 void VideoListController::swapVideoItems(VideoItem *from, VideoItem *to)
 {
-	if (from != NULL && to != NULL)
+	if (from != nullptr && to != nullptr)
 	{
 		int i = getVideoItemIndexByVideoItem(from);
 		int j = getVideoItemIndexByVideoItem(to);
@@ -126,7 +126,7 @@ void VideoListController::timerEvent(QTimerEvent* /*event*/)
 		// get first item which need to update the url
 		VideoItem *item = getFirstWhichNeedUpdateUrl();
 		// if no items where found, then get the first null item
-		if (item == NULL) item = getFirstNULL();
+		if (item == nullptr) item = getFirstNULL();
 		// get video information
 		startGetInformation(item);
 	}
@@ -138,7 +138,7 @@ void VideoListController::timerEvent(QTimerEvent* /*event*/)
 	VideoItem *videoItem = getFirstWithPreState();
 
 	// if we found an item with a pre-state, then it has a high priority (no one can start before it)
-	if (videoItem != NULL && !videoItem->hasErrors())
+	if (videoItem != nullptr && !videoItem->hasErrors())
 	{
 		// the item don't need to update the url
 		if (!videoItem->needUpdateUrl())
@@ -152,13 +152,13 @@ void VideoListController::timerEvent(QTimerEvent* /*event*/)
 		// get the first item with "resuming" state
 		videoItem = getFirstByState(vsResuming);
 		// if we found an item resuming... we start it (if shedule and download list let us)
-		if (videoItem != NULL && schedule->canStart() && videoDownload->canStartDownload())
+		if (videoItem != nullptr && schedule->canStart() && videoDownload->canStartDownload())
 			resumeDownload(videoItem);
 		// get the first ready item, to auto-start the download
 		else if (programOptions->getDownloadAutomatically() && schedule->canStart() && videoDownload->canStartDownload())
 		{
 			videoItem = getFirstReady();
-			if (videoItem != NULL && !videoItem->hasErrors())
+			if (videoItem != nullptr && !videoItem->hasErrors())
 			{
 				if (videoItem->isResuming()) resumeDownload(videoItem);
 				else startDownload(videoItem);
@@ -221,7 +221,7 @@ VideoItem* VideoListController::addVideo(const QString URL, const QString title)
 	videoDef.URL = URL;
 	videoDef.extension = extractFileExt(URL);
 	videoList->last()->setVideoInformation(videoDef);
-	videoList->last()->setVideoFile(cleanFileName(title + videoDef.extension), NULL);
+	videoList->last()->setVideoFile(cleanFileName(title + videoDef.extension), nullptr);
 	videoList->last()->setAsGettedURL();
 	videoList->last()->setAsCustomDownload();
 	emit videoAdded(videoList->last());
@@ -237,7 +237,7 @@ VideoItem* VideoListController::addVideo(const QString URL, const QString title,
 	videoDef.URL = URL;
 	videoDef.extension = extractFileExt(URL);
 	videoList->last()->setVideoInformation(videoDef);
-	videoList->last()->setVideoFile(cleanFileName(title + videoDef.extension), NULL);
+	videoList->last()->setVideoFile(cleanFileName(title + videoDef.extension), nullptr);
 	videoList->last()->setAsGettedURL();
 	videoList->last()->setAsCustomDownload();
 	emit videoAdded(videoList->last());
@@ -360,7 +360,7 @@ VideoItem* VideoListController::getFirstReady()
 {
 	VideoItem *result = getFirstByState(vsResuming);
 	// return the first item ready to "be downloaded" (first try to get the resuming items)
-	if (result == NULL)
+	if (result == nullptr)
 		return getFirstByState(vsGettedURL);
 	else
 		return result;
@@ -376,7 +376,7 @@ VideoItem* VideoListController::getFirstError(bool ignoreReported)
 			if (videoItem->getVideoState() == vsError && !videoItem->isReported())
 				return videoItem;
 		// no items are ready to be downloaded
-		return NULL;
+		return nullptr;
 	}
 }
 
@@ -391,7 +391,7 @@ VideoItem* VideoListController::getFirstDownloadedWithOverridedConversion()
 		if (videoItem->isCustomDownload() && videoItem->hasOverridedConversion())
 			return videoItem;
 	// no items are ready to be downloaded
-	return NULL;
+	return nullptr;
 }
 
 VideoItem* VideoListController::getFirstConverted()
@@ -405,7 +405,7 @@ VideoItem* VideoListController::getFirstWhichNeedUpdateUrl()
 		if (videoItem->needUpdateUrl())
 			return videoItem;
 	// no items found
-	return NULL;
+	return nullptr;
 }
 
 VideoItem* VideoListController::getFirstWithPreState()
@@ -414,7 +414,7 @@ VideoItem* VideoListController::getFirstWithPreState()
 		if (!videoItem->isPreStateNothing())
 			return videoItem;
 	// no items found
-	return NULL;
+	return nullptr;
 }
 
 VideoItem* VideoListController::getCurrentDownloadingVideo()
@@ -473,7 +473,7 @@ VideoItem* VideoListController::getVideoItem(const int index)
 	if (validItemIndex(index))
 		return videoList->at(index);
 	else
-		return NULL;
+		return nullptr;
 }
 
 VideoItem* VideoListController::getVideoItemByID(const int ID)
@@ -482,7 +482,7 @@ VideoItem* VideoListController::getVideoItemByID(const int ID)
 		if (videoItem->getID() == ID)
 			return videoItem;
 	// no items found with this ID
-	return NULL;
+	return nullptr;
 }
 
 VideoItem* VideoListController::getVideoItemFromQVAriant(const QVariant variant)
@@ -493,7 +493,7 @@ VideoItem* VideoListController::getVideoItemFromQVAriant(const QVariant variant)
 	if (ok)
 		return getVideoItemByID(ID);
 	else
-		return NULL;
+		return nullptr;
 }
 
 int VideoListController::getVideoItemIndexByVideoItem(VideoItem* videoItem)
@@ -590,7 +590,7 @@ void VideoListController::startGetInformation(VideoItem *videoItem)
 
 void VideoListController::startDownload(VideoItem *videoItem)
 {
-	if (videoItem == NULL) return;
+	if (videoItem == nullptr) return;
 	// check if is possible download this video
 	if (!videoInformation->isBlockedHost(videoItem->getURL()))
 	{
@@ -610,7 +610,7 @@ void VideoListController::startDownload(VideoItem *videoItem)
 
 void VideoListController::pauseDownload(VideoItem *videoItem)
 {
-	if (videoItem != NULL)
+	if (videoItem != nullptr)
 	{
 		if (videoItem->isResuming())
 		{
@@ -675,7 +675,7 @@ void VideoListController::cancelConversion()
 
 void VideoListController::displayError(VideoItem *videoItem)
 {
-	if (videoItem != NULL)
+	if (videoItem != nullptr)
 		emit videoError(videoItem);
 }
 
@@ -772,7 +772,7 @@ VideoListController* VideoListController::instance()
 
 void VideoListController::videoItemUpdated(VideoItem *videoItem)
 {
-	if (videoItem != NULL)
+	if (videoItem != nullptr)
 	{
 		emit videoUpdated(videoItem);
 	}
@@ -780,7 +780,7 @@ void VideoListController::videoItemUpdated(VideoItem *videoItem)
 
 void VideoListController::actionStarted(VideoItem *videoItem)
 {
-	if (videoItem != NULL)
+	if (videoItem != nullptr)
 	{
 		emit videoUpdated(videoItem);
 	}
@@ -788,7 +788,7 @@ void VideoListController::actionStarted(VideoItem *videoItem)
 
 void VideoListController::actionFinished(VideoItem *videoItem)
 {
-	if (videoItem != NULL)
+	if (videoItem != nullptr)
 	{
 		if ( ! videoItem->isCanceled() && ! videoItem->isPaused() && ! videoItem->hasErrors())
 			if	(sender() == videoConverter ||
@@ -810,7 +810,7 @@ void VideoListController::actionFinished(VideoItem *videoItem)
 
 void VideoListController::actionPlaylistURLsDetected(VideoItem *videoItem, QStringList URLs)
 {
-	if (videoItem != NULL && URLs.count() > 0)
+	if (videoItem != nullptr && URLs.count() > 0)
 	{
 		// add each video
 		foreach (QString URL, URLs)

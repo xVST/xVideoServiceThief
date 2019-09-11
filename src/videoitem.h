@@ -149,7 +149,7 @@ Q_OBJECT
 		VideoState getVideoState();
 		/*! Get the current state as String */
 		QString getVideoStateAsString();
-		/*! Get if is NULL yet */
+		/*! Get if is nullptr yet */
 		bool isNULL();
 		/*! Get if is Ready to be downloaded */
 		bool isReady();
@@ -260,65 +260,65 @@ Q_OBJECT
 		/*! Get last update date time */
 		QDateTime getLastUpdateDateTime();
 		/*! Set the video information */
-		void setVideoInformation(VideoDefinition videoInformation, QObject *who = NULL);
+		void setVideoInformation(VideoDefinition videoInformation, QObject *who = nullptr);
 		/*! Set video file */
-		void setVideoFile(QString videoFile, QObject *who = NULL);
+		void setVideoFile(QString videoFile, QObject *who = nullptr);
 		/*! Set video file saved to */
-		void setVideoFileSavedTo(QString videoFileSavedTo, QObject *who = NULL);
+		void setVideoFileSavedTo(QString videoFileSavedTo, QObject *who = nullptr);
 		/*! Set the current progress value */
-		void setProgress(float progress, QObject *who = NULL);
+		void setProgress(float progress, QObject *who = nullptr);
 		/*! Set the video file size */
-		void setVideoSize(int videoSize, QObject *who = NULL);
+		void setVideoSize(int videoSize, QObject *who = nullptr);
 		/*! Set the current download speed */
-		void setDownloadSpeed(int downloadSpeed, QObject *who = NULL);
+		void setDownloadSpeed(int downloadSpeed, QObject *who = nullptr);
 		/*! Set the time remaining */
-		void setTimeRemaining(int timeRemaining, QObject *who = NULL);
+		void setTimeRemaining(int timeRemaining, QObject *who = nullptr);
 		/*! Set the error code */
-		void setErrorCode(int errorCode, QObject *who = NULL);
+		void setErrorCode(int errorCode, QObject *who = nullptr);
         /*! Set the custom error message */
-        void setErrorMessage(QString message, QObject *who = NULL);
+        void setErrorMessage(QString message, QObject *who = nullptr);
 		/*! Set state */
-		void setState(VideoState videoState, QObject *who = NULL);
-		/*! Set as NULL */
-		void setAsNULL(QObject *who = NULL);
+		void setState(VideoState videoState, QObject *who = nullptr);
+		/*! Set as nullptr */
+		void setAsNULL(QObject *who = nullptr);
 		/*! Set as ready */
-		void setAsReady(QObject *who = NULL);
+		void setAsReady(QObject *who = nullptr);
 		/*! Set as ready and paused */
-		void setAsReadyAndPaused(QObject *who = NULL);
+		void setAsReadyAndPaused(QObject *who = nullptr);
 		/*! Set as getting url */
-		void setAsGettingURL(QObject *who = NULL);
+		void setAsGettingURL(QObject *who = nullptr);
 		/*! Set as getted url */
-		void setAsGettedURL(QObject *who = NULL);
+		void setAsGettedURL(QObject *who = nullptr);
 		/*! Set as downloading */
-		void setAsDownloading(QObject *who = NULL);
+		void setAsDownloading(QObject *who = nullptr);
 		/*! Set as downloaded */
-		void setAsDownloaded(QObject *who = NULL);
+		void setAsDownloaded(QObject *who = nullptr);
 		/*! Set as converting */
-		void setAsConverting(QObject *who = NULL);
+		void setAsConverting(QObject *who = nullptr);
 		/*! Set as converted */
-		void setAsConverted(QObject *who = NULL);
+		void setAsConverted(QObject *who = nullptr);
 		/*! Set as completed */
-		void setAsCompleted(QObject *who = NULL);
+		void setAsCompleted(QObject *who = nullptr);
 		/*! Set as canceled */
-		void setAsCanceled(QObject *who = NULL);
+		void setAsCanceled(QObject *who = nullptr);
 		/*! Set as blocked */
-		void setAsBlocked(QObject *who = NULL);
+		void setAsBlocked(QObject *who = nullptr);
 		/*! Set as error */
-		void setAsError(QObject *who = NULL);
+		void setAsError(QObject *who = nullptr);
 		/*! Set as deleted */
-		void setAsDeleted(QObject *who = NULL);
+		void setAsDeleted(QObject *who = nullptr);
 		/*! Set as paused */
-		void setAsPaused(QObject *who = NULL);
+		void setAsPaused(QObject *who = nullptr);
 		/*! Set as resuming */
-		void setAsResuming(QObject *who = NULL);
+		void setAsResuming(QObject *who = nullptr);
 		/*! Set as Reported */
-		void setAsReported(QObject *who = NULL);
+		void setAsReported(QObject *who = nullptr);
 		/*! Set as Audio file */
-		void setAsAudioFile(QObject *who = NULL);
+		void setAsAudioFile(QObject *who = nullptr);
 		/*! Set as Need login */
-		void setAsNeedLogin(QObject *who = NULL);
+		void setAsNeedLogin(QObject *who = nullptr);
 		/*! Set as Playlist */
-		void setAsPlaylist(QObject *who = NULL);
+		void setAsPlaylist(QObject *who = nullptr);
 		/*! Set as no pre-state */
 		void setAsNothingPreState();
 		/*! Set a custom pre-state */

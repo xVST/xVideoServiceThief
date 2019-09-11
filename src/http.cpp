@@ -146,8 +146,8 @@ void Http::initClass()
 	// http protocol
 	http = new QNetworkAccessManager();
 	http->setCookieJar(new Cookies());
-	currentReply = NULL;
-	outputFile = NULL;
+	currentReply = nullptr;
+	outputFile = nullptr;
 	// download speed avg calculator
 	downloadSpeedAvg = new ArrayAvg(100);
 	timeRemainingAvg = new ArrayAvg(100);
@@ -235,7 +235,7 @@ void Http::clearCurrentReply()
 		disconnect(currentReply, SLOT(metaDataChanged()));
 		// destroy the current reply
 		currentReply->deleteLater();
-		currentReply = NULL;
+		currentReply = nullptr;
 	}
 }
 
@@ -335,7 +335,7 @@ void Http::closeOutputFile()
 	{
 		if (outputFile->isOpen()) outputFile->close();
 		delete outputFile;
-		outputFile = NULL;
+		outputFile = nullptr;
 	}
 }
 

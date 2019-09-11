@@ -84,7 +84,7 @@ ServicesKeyChainItem* ServicesKeyChain::serviceKeyChainItemByServiceID(QString s
 		if (keychainItem->getServiceID() == serviceID)
 			return keychainItem;
 	// not found
-	return NULL;
+	return nullptr;
 }
 
 void ServicesKeyChain::serviceLoginInfo(VideoInformationPlugin *videoInformationPlugin, bool lastLoginFailed, ServiceLoginInformation &result)

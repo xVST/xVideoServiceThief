@@ -60,7 +60,7 @@ VideoInformation::VideoInformation(QString pluginsDir)
 	plugins = new QList<VideoInformationPlugin *>;
 	if (!pluginsDir.isEmpty()) loadPlugins(pluginsDir);
 	// init data
-	videoItem = NULL;
+	videoItem = nullptr;
 	blockAdultContent = false;
 	// update lastThis reference
 	lastVideoInformationInstance = this;
@@ -104,7 +104,7 @@ VideoInformationPlugin *VideoInformation::getPluginByHost(QUrl URL)
 		if (plugins->at(n)->isLikeMyId(host))
 			return plugins->at(n);
 	// not found
-	return NULL;
+	return nullptr;
 }
 
 void VideoInformation::registerPlugin(VideoInformationPlugin *videoInformationPlugin)
@@ -126,7 +126,7 @@ void VideoInformation::run()
 
 	VideoInformationPlugin *service = getPluginByHost(QUrl(videoItem->getURL()));
 
-	if (service != NULL)
+	if (service != nullptr)
 	{
 		if (isBlockedHost(videoItem->getURL()))
 		{
@@ -186,7 +186,7 @@ void VideoInformation::run()
 				VideoDefinition info = service->getVideoInformation(videoItem->getURL());
 
 				// canceled?
-				if (videoItem == NULL) return;
+				if (videoItem == nullptr) return;
 
 				if (info.needLogin)
 				{
@@ -247,7 +247,7 @@ VideoInformationPlugin *VideoInformation::getRegisteredPlugin(const int index)
 	if (validItemIndex(index))
 		return plugins->at(index);
 	else // not found
-		return NULL;
+		return nullptr;
 }
 
 VideoInformationPlugin* VideoInformation::getRegisteredPlugin(const QString fileName, const bool onlyFileName)
@@ -260,7 +260,7 @@ VideoInformationPlugin* VideoInformation::getRegisteredPlugin(const QString file
 			return plugin;
 	}
 	// not found
-	return NULL;
+	return nullptr;
 }
 
 VideoInformationPlugin* VideoInformation::getRegisteredPlugin(const QString pluginId)
@@ -273,7 +273,7 @@ VideoInformationPlugin* VideoInformation::getRegisteredPlugin(const QString plug
 			return plugin;
 	}
 	// not found
-	return NULL;
+	return nullptr;
 }
 
 QStringList VideoInformation::getPluginsList(bool asCaptions)
@@ -370,7 +370,7 @@ QList<VideoInformationPlugin*> VideoInformation::getAllSearchAdultPlugins() cons
 
 void VideoInformation::getVideoInformation(VideoItem *videoItem)
 {
-	if (videoItem == NULL || isGettingInfo()) return;
+	if (videoItem == nullptr || isGettingInfo()) return;
 	// assign the current video item
 	this->videoItem = videoItem;
 	this->start();
@@ -402,7 +402,7 @@ void VideoInformation::abortExecution()
 
 void VideoInformation::cancel()
 {
-	videoItem = NULL;
+	videoItem = nullptr;
 }
 
 bool VideoInformation::getBlockAdultContent()
@@ -702,7 +702,7 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 		}
 		// detach global engine
 		delete engine;
-		engine = NULL;
+		engine = nullptr;
 	}
 	// check if adult sites are permited
 	if (!debug && loaded && !ProgramOptions::instance()->getAdultSitesAreAllowed() && hasAdultContent())
@@ -710,7 +710,7 @@ VideoInformationPlugin::VideoInformationPlugin(VideoInformation *videoInformatio
 		loaded = false;
 	}
 	// regist this plugin
-	if (videoInformation != NULL && loaded)
+	if (videoInformation != nullptr && loaded)
 		videoInformation->registerPlugin(this);
 }
 
@@ -778,9 +778,9 @@ QScriptValue VideoInformationPlugin::func_isPluginInstalled(QScriptContext *cont
 		// get this plugin is installed
 		VideoInformation *vidInf = VideoInformation::instance();
 		// VideoInformation instance exists?
-		if (vidInf == NULL) return QScriptValue();
+		if (vidInf == nullptr) return QScriptValue();
 		// get if this plugin has been installed
-		bool installed = vidInf->getRegisteredPlugin(id + ".js", true) != NULL;
+		bool installed = vidInf->getRegisteredPlugin(id + ".js", true) != nullptr;
 		// return the asked item from url
 		return engine->newVariant(QVariant(installed));
 	}
@@ -799,7 +799,7 @@ QScriptValue VideoInformationPlugin::func_executePlugin(QScriptContext *context,
 		VideoInformation *vidInf = VideoInformation::instance();
 		VideoInformationPlugin *plugin = vidInf->getRegisteredPlugin(id + ".js", true);
 		// is it registered?
-		if (plugin != NULL)
+		if (plugin != nullptr)
 			return engine->toScriptValue(plugin->getVideoInformation(url));
 		else // plugin is not installed
 			return QScriptValue();
@@ -904,7 +904,7 @@ VideoDefinition VideoInformationPlugin::getVideoInformation(const QString URL)
 	delete httpClass;
 	// detach global engine
 	delete engine;
-	engine = NULL;
+	engine = nullptr;
 	// return the video definition returned
 	return result;
 }
@@ -966,7 +966,7 @@ QStringList VideoInformationPlugin::getPlaylistVideoUrls(const QJsonDocument dat
 	delete httpClass;
 	// detach global engine
 	delete engine;
-	engine = NULL;
+	engine = nullptr;
 	// return the video definition returned
 	return result;
 }
@@ -1025,14 +1025,14 @@ SearchResults VideoInformationPlugin::searchVideos(const QString keyWords, const
 	delete searchResultsClass;
 	// detach global engine
 	delete engine;
-	engine = NULL;
+	engine = nullptr;
 	// return the video definition returned
 	return result;
 }
 
 void VideoInformationPlugin::abortExecution()
 {
-	if (engine != NULL)
+	if (engine != nullptr)
 		engine->abortEvaluation();
 }
 

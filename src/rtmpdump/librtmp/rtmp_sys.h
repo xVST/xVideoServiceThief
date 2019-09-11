@@ -114,7 +114,7 @@ typedef struct tls_ctx {
 } tls_ctx;
 #define TLS_CTX	tls_ctx *
 #define TLS_client(ctx,s)	gnutls_init((gnutls_session_t *)(&s), GNUTLS_CLIENT); gnutls_priority_set(s, ctx->prios); gnutls_credentials_set(s, GNUTLS_CRD_CERTIFICATE, ctx->cred)
-#define TLS_server(ctx,s)	gnutls_init((gnutls_session_t *)(&s), GNUTLS_SERVER); gnutls_priority_set_direct(s, "NORMAL", NULL); gnutls_credentials_set(s, GNUTLS_CRD_CERTIFICATE, ctx)
+#define TLS_server(ctx,s)	gnutls_init((gnutls_session_t *)(&s), GNUTLS_SERVER); gnutls_priority_set_direct(s, "NORMAL", nullptr); gnutls_credentials_set(s, GNUTLS_CRD_CERTIFICATE, ctx)
 #define TLS_setfd(s,fd)	gnutls_transport_set_ptr(s, (gnutls_transport_ptr_t)(long)fd)
 #define TLS_connect(s)	gnutls_handshake(s)
 #define TLS_accept(s)	gnutls_handshake(s)

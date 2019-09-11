@@ -74,7 +74,7 @@ Language* LanguageManager::getLanguage(const int index)
 	if (isValidIndex(index))
 		return languagesList->at(index);
 	else
-		return NULL;
+		return nullptr;
 }
 
 int LanguageManager::getLanguagesCount()
@@ -116,14 +116,14 @@ Language* LanguageManager::getAutoLanguage()
 		if (languagesList->at(n)->getLangFile() == systemQM)
 			return languagesList->at(n);
 	// return the default language
-	return NULL;
+	return nullptr;
 }
 
 QString LanguageManager::getAutoLanguageFileName()
 {
 	Language *language = getAutoLanguage();
 	// return language definition file
-	return language != NULL ? language->getFile() : "english_uk.language";
+	return language != nullptr ? language->getFile() : "english_uk.language";
 }
 
 QString LanguageManager::get_qm_languageFile(QString langFile)
@@ -140,7 +140,7 @@ QString LanguageManager::get_qm_languageFile(QString langFile)
 
 Language* LanguageManager::getLanguageInfo(QString langFile)
 {
-	Language *result = NULL;
+	Language *result = nullptr;
 
 	if (QFile::exists(langFile))
 	{

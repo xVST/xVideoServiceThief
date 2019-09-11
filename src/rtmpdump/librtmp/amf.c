@@ -67,14 +67,14 @@ void
 AMF_DecodeString(const char *data, AVal *bv)
 {
   bv->av_len = AMF_DecodeInt16(data);
-  bv->av_val = (bv->av_len > 0) ? (char *)data + 2 : NULL;
+  bv->av_val = (bv->av_len > 0) ? (char *)data + 2 : nullptr;
 }
 
 void
 AMF_DecodeLongString(const char *data, AVal *bv)
 {
   bv->av_len = AMF_DecodeInt32(data);
-  bv->av_val = (bv->av_len > 0) ? (char *)data + 4 : NULL;
+  bv->av_val = (bv->av_len > 0) ? (char *)data + 4 : nullptr;
 }
 
 double
@@ -137,7 +137,7 @@ char *
 AMF_EncodeInt16(char *output, char *outend, short nVal)
 {
   if (output+2 > outend)
-    return NULL;
+    return nullptr;
 
   output[1] = nVal & 0xff;
   output[0] = nVal >> 8;
@@ -148,7 +148,7 @@ char *
 AMF_EncodeInt24(char *output, char *outend, int nVal)
 {
   if (output+3 > outend)
-    return NULL;
+    return nullptr;
 
   output[2] = nVal & 0xff;
   output[1] = nVal >> 8;
@@ -160,7 +160,7 @@ char *
 AMF_EncodeInt32(char *output, char *outend, int nVal)
 {
   if (output+4 > outend)
-    return NULL;
+    return nullptr;
 
   output[3] = nVal & 0xff;
   output[2] = nVal >> 8;
@@ -174,7 +174,7 @@ AMF_EncodeString(char *output, char *outend, const AVal *bv)
 {
   if ((bv->av_len < 65536 && output + 1 + 2 + bv->av_len > outend) ||
 	output + 1 + 4 + bv->av_len > outend)
-    return NULL;
+    return nullptr;
 
   if (bv->av_len < 65536)
     {
@@ -198,7 +198,7 @@ char *
 AMF_EncodeNumber(char *output, char *outend, double dVal)
 {
   if (output+1+8 > outend)
-    return NULL;
+    return nullptr;
 
   *output++ = AMF_NUMBER;	/* type: Number */
 
@@ -259,7 +259,7 @@ char *
 AMF_EncodeBoolean(char *output, char *outend, int bVal)
 {
   if (output+2 > outend)
-    return NULL;
+    return nullptr;
 
   *output++ = AMF_BOOLEAN;
 
@@ -272,7 +272,7 @@ char *
 AMF_EncodeNamedString(char *output, char *outend, const AVal *strName, const AVal *strValue)
 {
   if (output+2+strName->av_len > outend)
-    return NULL;
+    return nullptr;
   output = AMF_EncodeInt16(output, outend, strName->av_len);
 
   memcpy(output, strName->av_val, strName->av_len);
@@ -285,7 +285,7 @@ char *
 AMF_EncodeNamedNumber(char *output, char *outend, const AVal *strName, double dVal)
 {
   if (output+2+strName->av_len > outend)
-    return NULL;
+    return nullptr;
   output = AMF_EncodeInt16(output, outend, strName->av_len);
 
   memcpy(output, strName->av_val, strName->av_len);
@@ -298,7 +298,7 @@ char *
 AMF_EncodeNamedBoolean(char *output, char *outend, const AVal *strName, int bVal)
 {
   if (output+2+strName->av_len > outend)
-    return NULL;
+    return nullptr;
   output = AMF_EncodeInt16(output, outend, strName->av_len);
 
   memcpy(output, strName->av_val, strName->av_len);
@@ -359,10 +359,10 @@ char *
 AMFProp_Encode(AMFObjectProperty *prop, char *pBuffer, char *pBufEnd)
 {
   if (prop->p_type == AMF_INVALID)
-    return NULL;
+    return nullptr;
 
   if (prop->p_type != AMF_NULL && pBuffer + prop->p_name.av_len + 2 + 1 >= pBufEnd)
-    return NULL;
+    return nullptr;
 
   if (prop->p_type != AMF_NULL && prop->p_name.av_len)
     {
@@ -388,7 +388,7 @@ AMFProp_Encode(AMFObjectProperty *prop, char *pBuffer, char *pBufEnd)
 
     case AMF_NULL:
       if (pBuffer+1 >= pBufEnd)
-        return NULL;
+        return nullptr;
       *pBuffer++ = AMF_NULL;
       break;
 
@@ -406,7 +406,7 @@ AMFProp_Encode(AMFObjectProperty *prop, char *pBuffer, char *pBufEnd)
 
     default:
       RTMP_Log(RTMP_LOGERROR, "%s, invalid type. %d", __FUNCTION__, prop->p_type);
-      pBuffer = NULL;
+      pBuffer = nullptr;
     };
 
   return pBuffer;
@@ -493,7 +493,7 @@ AMF3Prop_Decode(AMFObjectProperty *prop, const char *pBuffer, int nSize,
   AMF3DataType type;
 
   prop->p_name.av_len = 0;
-  prop->p_name.av_val = NULL;
+  prop->p_name.av_val = nullptr;
 
   if (nSize == 0 || !pBuffer)
     {
@@ -610,7 +610,7 @@ AMFProp_Decode(AMFObjectProperty *prop, const char *pBuffer, int nSize,
   int nRes;
 
   prop->p_name.av_len = 0;
-  prop->p_name.av_val = NULL;
+  prop->p_name.av_val = nullptr;
 
   if (nSize == 0 || !pBuffer)
     {
@@ -797,7 +797,7 @@ AMFProp_Dump(AMFObjectProperty *prop)
 
   if (prop->p_type == AMF_NULL)
     {
-      RTMP_Log(RTMP_LOGDEBUG, "Property: NULL");
+      RTMP_Log(RTMP_LOGDEBUG, "Property: nullptr");
       return;
     }
 
@@ -866,7 +866,7 @@ AMFProp_Reset(AMFObjectProperty *prop)
   else
     {
       prop->p_vu.p_aval.av_len = 0;
-      prop->p_vu.p_aval.av_val = NULL;
+      prop->p_vu.p_aval.av_val = nullptr;
     }
   prop->p_type = AMF_INVALID;
 }
@@ -879,14 +879,14 @@ AMF_Encode(AMFObject *obj, char *pBuffer, char *pBufEnd)
   int i;
 
   if (pBuffer+4 >= pBufEnd)
-    return NULL;
+    return nullptr;
 
   *pBuffer++ = AMF_OBJECT;
 
   for (i = 0; i < obj->o_num; i++)
     {
       char *res = AMFProp_Encode(&obj->o_props[i], pBuffer, pBufEnd);
-      if (res == NULL)
+      if (res == nullptr)
 	{
 	  RTMP_Log(RTMP_LOGERROR, "AMF_Encode - failed to encode property in index %d",
 	      i);
@@ -899,7 +899,7 @@ AMF_Encode(AMFObject *obj, char *pBuffer, char *pBufEnd)
     }
 
   if (pBuffer + 3 >= pBufEnd)
-    return NULL;			/* no room for the end marker */
+    return nullptr;			/* no room for the end marker */
 
   pBuffer = AMF_EncodeInt24(pBuffer, pBufEnd, AMF_OBJECT_END);
 
@@ -912,7 +912,7 @@ AMF_EncodeEcmaArray(AMFObject *obj, char *pBuffer, char *pBufEnd)
   int i;
 
   if (pBuffer+4 >= pBufEnd)
-    return NULL;
+    return nullptr;
 
   *pBuffer++ = AMF_ECMA_ARRAY;
 
@@ -921,7 +921,7 @@ AMF_EncodeEcmaArray(AMFObject *obj, char *pBuffer, char *pBufEnd)
   for (i = 0; i < obj->o_num; i++)
     {
       char *res = AMFProp_Encode(&obj->o_props[i], pBuffer, pBufEnd);
-      if (res == NULL)
+      if (res == nullptr)
 	{
 	  RTMP_Log(RTMP_LOGERROR, "AMF_Encode - failed to encode property in index %d",
 	      i);
@@ -934,7 +934,7 @@ AMF_EncodeEcmaArray(AMFObject *obj, char *pBuffer, char *pBufEnd)
     }
 
   if (pBuffer + 3 >= pBufEnd)
-    return NULL;			/* no room for the end marker */
+    return nullptr;			/* no room for the end marker */
 
   pBuffer = AMF_EncodeInt24(pBuffer, pBufEnd, AMF_OBJECT_END);
 
@@ -947,7 +947,7 @@ AMF_EncodeArray(AMFObject *obj, char *pBuffer, char *pBufEnd)
   int i;
 
   if (pBuffer+4 >= pBufEnd)
-    return NULL;
+    return nullptr;
 
   *pBuffer++ = AMF_STRICT_ARRAY;
 
@@ -956,7 +956,7 @@ AMF_EncodeArray(AMFObject *obj, char *pBuffer, char *pBufEnd)
   for (i = 0; i < obj->o_num; i++)
     {
       char *res = AMFProp_Encode(&obj->o_props[i], pBuffer, pBufEnd);
-      if (res == NULL)
+      if (res == nullptr)
 	{
 	  RTMP_Log(RTMP_LOGERROR, "AMF_Encode - failed to encode property in index %d",
 	      i);
@@ -969,7 +969,7 @@ AMF_EncodeArray(AMFObject *obj, char *pBuffer, char *pBufEnd)
     }
 
   //if (pBuffer + 3 >= pBufEnd)
-  //  return NULL;			/* no room for the end marker */
+  //  return nullptr;			/* no room for the end marker */
 
   //pBuffer = AMF_EncodeInt24(pBuffer, pBufEnd, AMF_OBJECT_END);
 
@@ -984,7 +984,7 @@ AMF_DecodeArray(AMFObject *obj, const char *pBuffer, int nSize,
   int bError = FALSE;
 
   obj->o_num = 0;
-  obj->o_props = NULL;
+  obj->o_props = nullptr;
   while (nArrayLen > 0)
     {
       AMFObjectProperty prop;
@@ -1015,7 +1015,7 @@ AMF3_Decode(AMFObject *obj, const char *pBuffer, int nSize, int bAMFData)
   int len;
 
   obj->o_num = 0;
-  obj->o_props = NULL;
+  obj->o_props = nullptr;
   if (bAMFData)
     {
       if (*pBuffer != AMF3_OBJECT)
@@ -1150,7 +1150,7 @@ AMF_Decode(AMFObject *obj, const char *pBuffer, int nSize, int bDecodeName)
   int bError = FALSE;		/* if there is an error while decoding - try to at least find the end mark AMF_OBJECT_END */
 
   obj->o_num = 0;
-  obj->o_props = NULL;
+  obj->o_props = nullptr;
   while (nSize > 0)
     {
       AMFObjectProperty prop;
@@ -1246,7 +1246,7 @@ AMF_Reset(AMFObject *obj)
       AMFProp_Reset(&obj->o_props[n]);
     }
   free(obj->o_props);
-  obj->o_props = NULL;
+  obj->o_props = nullptr;
   obj->o_num = 0;
 }
 

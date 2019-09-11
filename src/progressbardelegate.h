@@ -36,7 +36,7 @@ Q_OBJECT
 	private:
 		VideoListController *videoList;
 	public:
-		ProgressBarDelegate(QObject *parent = 0, VideoListController *videoList = NULL);
+		ProgressBarDelegate(QObject *parent = 0, VideoListController *videoList = nullptr);
 		void paint(QPainter * painter, const QStyleOptionViewItem & option,
 			const QModelIndex & index ) const;
 };

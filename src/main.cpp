@@ -115,7 +115,7 @@ int main(int argc, char **argv)
 	app.setActivationWindow(&win, true);
 
 	// hide loading window
-	if (LoadingImpl::instance() != NULL)
+	if (LoadingImpl::instance() != nullptr)
 	{
 		LoadingImpl::instance()->setMessage(LoadingImpl::tr("Plugins loaded"));
 		LoadingImpl::instance()->finished();

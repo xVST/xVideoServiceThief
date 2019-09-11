@@ -53,7 +53,7 @@ InformationImpl::InformationImpl(ProgramOptions *programOptions, VideoInformatio
 	lblProgramVersion->setText(QString("<b>%1</b>").arg(PROGRAM_VERSION));
 	// set language info
 	Language *language = LanguageManager::getLanguageInfo(programOptions->getLanguageFile(true));
-	if (language != NULL)
+	if (language != nullptr)
 	{
 		lblLanguage->setText(QString("<b>%1</b>").arg(language->getId()));
 		lblURL->setText(QString("<a href=\"%1\">%2</href>").arg(language->getContact()).arg(language->getContact()));

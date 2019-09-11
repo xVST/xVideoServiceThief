@@ -37,8 +37,8 @@ NewLanguagesController::NewLanguagesController(ProgramOptions *programOptions)
 	this->programOptions = programOptions;
 	newLanguages = new QList<Update *>;
 	languageManager = new LanguageManager;
-	currentLanguage = NULL;
-	http = NULL;
+	currentLanguage = nullptr;
+	http = nullptr;
 }
 
 NewLanguagesController::~NewLanguagesController()
@@ -156,7 +156,7 @@ void NewLanguagesController::initializeHttp()
 void NewLanguagesController::deinitHttp()
 {
 	if (http) delete http;
-	http = NULL;
+	http = nullptr;
 }
 
 void NewLanguagesController::initialize()
@@ -171,7 +171,7 @@ void NewLanguagesController::uninstallLanguage(int index)
 {
 	Language *toRemove = languageManager->getLanguage(index);
 	// if we found this language
-	if (toRemove != NULL)
+	if (toRemove != nullptr)
 	{
 		// delete language files
 		bool fileRemoved = QFile::remove(programOptions->getLanguagesPath() + "/" + toRemove->getFile());
@@ -198,7 +198,7 @@ void NewLanguagesController::installLanguage(int index)
 
 bool NewLanguagesController::isInstalling() const
 {
-	return currentLanguage != NULL;
+	return currentLanguage != nullptr;
 }
 
 void NewLanguagesController::downloadFinished(const QFileInfo destFile)
@@ -228,7 +228,7 @@ void NewLanguagesController::downloadFinished(const QFileInfo destFile)
 	// finish event
 	emit afterInstallNewLanguage(currentLanguage, error);
 	// reset flags
-	currentLanguage = NULL;
+	currentLanguage = nullptr;
 	// reload all info
 	fillInstalledLanguages();
 	updateNewLanguages();
@@ -239,7 +239,7 @@ void NewLanguagesController::downloadError(int /*error*/)
 	// finish event
 	emit afterInstallNewLanguage(currentLanguage, true);
 	// reset flags
-	currentLanguage = NULL;
+	currentLanguage = nullptr;
 	// reload all info
 	fillInstalledLanguages();
 	updateNewLanguages();

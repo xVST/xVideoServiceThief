@@ -140,7 +140,7 @@ OpenResumeFile(const char *flvFile,	// file name [in]
 	       double *duration)	// duration of the stream in ms [out]
 {
   size_t bufferSize = 0;
-  char hbuf[16], *buffer = NULL;
+  char hbuf[16], *buffer = nullptr;
 
   *nMetaHeaderSize = 0;
   *size = 0;
@@ -233,7 +233,7 @@ OpenResumeFile(const char *flvFile,	// file name [in]
 		}
 
 	      AVal metastring;
-	      AMFProp_GetString(AMF_GetProp(&metaObj, NULL, 0), &metastring);
+	      AMFProp_GetString(AMF_GetProp(&metaObj, nullptr, 0), &metastring);
 
 	      if (AVMATCH(&metastring, &av_onMetaData))
 		{
@@ -828,51 +828,51 @@ main(int argc, char **argv)
 
   int opt;
   struct option longopts[] = {
-    {"help", 0, NULL, 'h'},
-    {"host", 1, NULL, 'n'},
-    {"port", 1, NULL, 'c'},
-    {"socks", 1, NULL, 'S'},
-    {"protocol", 1, NULL, 'l'},
-    {"playpath", 1, NULL, 'y'},
-    {"playlist", 0, NULL, 'Y'},
-    {"url", 1, NULL, 'i'},
-    {"rtmp", 1, NULL, 'r'},
-    {"swfUrl", 1, NULL, 's'},
-    {"tcUrl", 1, NULL, 't'},
-    {"pageUrl", 1, NULL, 'p'},
-    {"app", 1, NULL, 'a'},
-    {"auth", 1, NULL, 'u'},
-    {"conn", 1, NULL, 'C'},
+    {"help", 0, nullptr, 'h'},
+    {"host", 1, nullptr, 'n'},
+    {"port", 1, nullptr, 'c'},
+    {"socks", 1, nullptr, 'S'},
+    {"protocol", 1, nullptr, 'l'},
+    {"playpath", 1, nullptr, 'y'},
+    {"playlist", 0, nullptr, 'Y'},
+    {"url", 1, nullptr, 'i'},
+    {"rtmp", 1, nullptr, 'r'},
+    {"swfUrl", 1, nullptr, 's'},
+    {"tcUrl", 1, nullptr, 't'},
+    {"pageUrl", 1, nullptr, 'p'},
+    {"app", 1, nullptr, 'a'},
+    {"auth", 1, nullptr, 'u'},
+    {"conn", 1, nullptr, 'C'},
 #ifdef CRYPTO
-    {"swfhash", 1, NULL, 'w'},
-    {"swfsize", 1, NULL, 'x'},
-    {"swfVfy", 1, NULL, 'W'},
-    {"swfAge", 1, NULL, 'X'},
+    {"swfhash", 1, nullptr, 'w'},
+    {"swfsize", 1, nullptr, 'x'},
+    {"swfVfy", 1, nullptr, 'W'},
+    {"swfAge", 1, nullptr, 'X'},
 #endif
-    {"flashVer", 1, NULL, 'f'},
-    {"live", 0, NULL, 'v'},
-    {"realtime", 0, NULL, 'R'},
-    {"flv", 1, NULL, 'o'},
-    {"resume", 0, NULL, 'e'},
-    {"timeout", 1, NULL, 'm'},
-    {"buffer", 1, NULL, 'b'},
-    {"skip", 1, NULL, 'k'},
-    {"subscribe", 1, NULL, 'd'},
-    {"start", 1, NULL, 'A'},
-    {"stop", 1, NULL, 'B'},
-    {"token", 1, NULL, 'T'},
-    {"hashes", 0, NULL, '#'},
-    {"debug", 0, NULL, 'z'},
-    {"quiet", 0, NULL, 'q'},
-    {"verbose", 0, NULL, 'V'},
-    {"jtv", 1, NULL, 'j'},
+    {"flashVer", 1, nullptr, 'f'},
+    {"live", 0, nullptr, 'v'},
+    {"realtime", 0, nullptr, 'R'},
+    {"flv", 1, nullptr, 'o'},
+    {"resume", 0, nullptr, 'e'},
+    {"timeout", 1, nullptr, 'm'},
+    {"buffer", 1, nullptr, 'b'},
+    {"skip", 1, nullptr, 'k'},
+    {"subscribe", 1, nullptr, 'd'},
+    {"start", 1, nullptr, 'A'},
+    {"stop", 1, nullptr, 'B'},
+    {"token", 1, nullptr, 'T'},
+    {"hashes", 0, nullptr, '#'},
+    {"debug", 0, nullptr, 'z'},
+    {"quiet", 0, nullptr, 'q'},
+    {"verbose", 0, nullptr, 'V'},
+    {"jtv", 1, nullptr, 'j'},
     {0, 0, 0, 0}
   };
 
   while ((opt =
 	  getopt_long(argc, argv,
 		      "hVveqzRr:s:t:i:p:a:b:f:o:u:C:n:c:l:y:Ym:k:d:A:B:T:w:x:W:X:S:#j:",
-		      longopts, NULL)) != -1)
+		      longopts, nullptr)) != -1)
     {
       switch (opt)
 	{
@@ -885,7 +885,7 @@ main(int argc, char **argv)
 	    int res = hex2bin(optarg, &swfHash.av_val);
 	    if (res != RTMP_SWF_HASHLEN)
 	      {
-		swfHash.av_val = NULL;
+		swfHash.av_val = nullptr;
 		RTMP_Log(RTMP_LOGWARNING,
 		    "Couldn't parse swf hash hex string, not hexstring or not %d bytes, ignoring!", RTMP_SWF_HASHLEN);
 	      }
@@ -1172,7 +1172,7 @@ main(int argc, char **argv)
       RTMP_Log(RTMP_LOGWARNING,
 	  "Ignoring SWF hash, supply also the swf size  with --swfsize");
       swfHash.av_len = 0;
-      swfHash.av_val = NULL;
+      swfHash.av_val = nullptr;
     }
 #endif
 
@@ -1292,7 +1292,7 @@ main(int argc, char **argv)
 	  //RTMP_LogPrintf("Connecting ...\n");
 	  RTMP_LogPrintf("C: CONNECTING\n");
 
-	  if (!RTMP_Connect(&rtmp, NULL))
+	  if (!RTMP_Connect(&rtmp, nullptr))
 	    {
 	      RTMP_LogPrintf("E: 102 FAILED_TO_CONNECT\n");
 	      nStatus = RD_NO_CONNECT;
@@ -1394,7 +1394,7 @@ main(int argc, char **argv)
 			 bStdoutMode, bLiveStream, bRealtimeStream, bHashes,
 			 bOverrideBufferTime, bufferTime, &percent);
       free(initialFrame);
-      initialFrame = NULL;
+      initialFrame = nullptr;
 
       /* If we succeeded, we're done.
        */

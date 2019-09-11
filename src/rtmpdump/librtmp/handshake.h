@@ -709,7 +709,7 @@ HandShake(RTMP * r, int FP9HandShake)
   uint8_t clientbuf[RTMP_SIG_SIZE + 4], *clientsig=clientbuf+4;
   uint8_t serversig[RTMP_SIG_SIZE], client2[RTMP_SIG_SIZE], *reply;
   uint8_t type;
-  getoff *getdh = NULL, *getdig = NULL;
+  getoff *getdh = nullptr, *getdig = nullptr;
 
   if (encrypted || r->Link.SWFSize)
     FP9HandShake = TRUE;
@@ -845,7 +845,7 @@ HandShake(RTMP * r, int FP9HandShake)
   if (FP9HandShake)
     {
       uint8_t digestResp[SHA256_DIGEST_LENGTH];
-      uint8_t *signatureResp = NULL;
+      uint8_t *signatureResp = nullptr;
 
       /* we have to use this signature now to find the correct algorithms for getting the digest and DH positions */
       int digestPosServer = getdig(serversig, RTMP_SIG_SIZE);
@@ -1084,7 +1084,7 @@ SHandShake(RTMP * r)
   uint8_t serverbuf[RTMP_SIG_SIZE + 4], *serversig = serverbuf+4;
   uint8_t type;
   uint32_t uptime;
-  getoff *getdh = NULL, *getdig = NULL;
+  getoff *getdh = nullptr, *getdig = nullptr;
 
   if (ReadN(r, (char *)&type, 1) != 1)	/* 0x03 or 0x06 */
     return FALSE;
@@ -1212,7 +1212,7 @@ SHandShake(RTMP * r)
   if (FP9HandShake)
     {
       uint8_t digestResp[SHA256_DIGEST_LENGTH];
-      uint8_t *signatureResp = NULL;
+      uint8_t *signatureResp = nullptr;
 
       /* we have to use this signature now to find the correct algorithms for getting the digest and DH positions */
       int digestPosClient = getdig(clientsig, RTMP_SIG_SIZE);

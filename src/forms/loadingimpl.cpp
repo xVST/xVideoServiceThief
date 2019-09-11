@@ -25,7 +25,7 @@
 
 #include "loadingimpl.h"
 
-static LoadingImpl* loadingImplInstance = NULL;
+static LoadingImpl* loadingImplInstance = nullptr;
 
 LoadingImpl::LoadingImpl(QWidget *parent) :
 	QWidget(parent)
@@ -57,7 +57,7 @@ LoadingImpl::LoadingImpl(QWidget *parent) :
 
 LoadingImpl* LoadingImpl::instance()
 {
-	if (loadingImplInstance == NULL) loadingImplInstance = new LoadingImpl;
+	if (loadingImplInstance == nullptr) loadingImplInstance = new LoadingImpl;
 	return loadingImplInstance;
 }
 
@@ -76,5 +76,5 @@ void LoadingImpl::closeLoading()
 	close();
 	// destroy instance
 	delete loadingImplInstance;
-	loadingImplInstance = NULL;
+	loadingImplInstance = nullptr;
 }

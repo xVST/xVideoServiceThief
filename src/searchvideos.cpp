@@ -149,7 +149,7 @@ void SearchVideos::run()
 	{
 		VideoInformationPlugin *plugin = plugins.takeFirst();
 
-		if (plugin != NULL)
+		if (plugin != nullptr)
 		{
 			// execute search into current thread
 			SearchResults results = plugin->searchVideos(internalKeyWords, internalPage);
@@ -328,7 +328,7 @@ SearchResults::SearchResults()
 	// get current user language id
 	QString langFile = ProgramOptions::instance()->getLanguageFile(true);
 	Language *lang = LanguageManager::getLanguageInfo(langFile);
-	userLanguage = lang != NULL ? lang->getLangLocale() : "en";
+	userLanguage = lang != nullptr ? lang->getLangLocale() : "en";
 }
 
 SearchResults::SearchResults(const SearchResults &other) : QObject()
@@ -389,7 +389,7 @@ SearchResultItem* SearchResults::getSearchResult(int index)
 	if (index >= 0 && index < getSearchResultCount())
 		return results->at(index);
 	else
-		return NULL;
+		return nullptr;
 }
 
 int SearchResults::getSearchResultCount()

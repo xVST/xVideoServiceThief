@@ -226,10 +226,10 @@ MainFormImpl::MainFormImpl(QWidget * parent, Qt::WindowFlags f)
 	header->setStretchLastSection(false);
     header->setSectionResizeMode(0, QHeaderView::Stretch);
 	// set sizes
-	header->resizeSection(1, qMax(fm.width(headers.at(1)), fm.width(" 1024 bytes  ")));
-	header->resizeSection(2, qMax(fm.width(headers.at(2)), 130));
-	header->resizeSection(3, qMax(fm.width(headers.at(3)), fm.width(" 24h 59m 59s  ")));
-	header->resizeSection(4, qMax(fm.width(headers.at(4)), fm.width(" 999,99 KB/sec  ")));
+    header->resizeSection(1, qMax(fm.horizontalAdvance(headers.at(1)), fm.horizontalAdvance(" 1024 bytes  ")));
+    header->resizeSection(2, qMax(fm.horizontalAdvance(headers.at(2)), 130));
+    header->resizeSection(3, qMax(fm.horizontalAdvance(headers.at(3)), fm.horizontalAdvance(" 24h 59m 59s  ")));
+    header->resizeSection(4, qMax(fm.horizontalAdvance(headers.at(4)), fm.horizontalAdvance(" 999,99 KB/sec  ")));
 	// set header text aligment
 	QTreeWidgetItem * headerItem = lsvDownloadList->headerItem();
 	headerItem->setTextAlignment(1, Qt::AlignRight   | Qt::AlignVCenter);
@@ -406,8 +406,6 @@ MainFormImpl::~MainFormImpl()
 
 void MainFormImpl::centerWindow()
 {
-	QDesktopWidget *desktop = QApplication::desktop();
-
 	// set the window maximized
 	if (programOptions->getMainWinowMaximized())
 		setWindowState(Qt::WindowMaximized);
@@ -421,8 +419,8 @@ void MainFormImpl::centerWindow()
 	int x, y;
 	QSize windowSize;
 
-	screenWidth = desktop->screenGeometry(desktop->primaryScreen()).width();
-	screenHeight = desktop->screenGeometry(desktop->primaryScreen()).height();
+    screenWidth = QGuiApplication::primaryScreen()->size().width();
+    screenHeight = QGuiApplication::primaryScreen()->size().height();
 
 	windowSize = size();
 	width = windowSize.width();

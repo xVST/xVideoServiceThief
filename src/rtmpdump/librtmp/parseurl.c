@@ -40,9 +40,9 @@ int RTMP_ParseURL(const char *url, int *protocol, AVal *host, unsigned int *port
 	*protocol = RTMP_PROTOCOL_RTMP;
 	*port = 0;
 	playpath->av_len = 0;
-	playpath->av_val = NULL;
+	playpath->av_val = nullptr;
 	app->av_len = 0;
-	app->av_val = NULL;
+	app->av_val = nullptr;
 
 	/* Old School Parsing */
 
@@ -137,7 +137,7 @@ parsehost:
 	 * application = app[/appinstance]
 	 */
 
-	char *slash2, *slash3 = NULL, *slash4 = NULL;
+	char *slash2, *slash3 = nullptr, *slash4 = nullptr;
 	int applen, appnamelen;
 
 	slash2 = strchr(p, '/');
@@ -203,13 +203,13 @@ void RTMP_ParsePlaypath(AVal *in, AVal *out) {
 	int addMP3 = 0;
 	int subExt = 0;
 	const char *playpath = in->av_val;
-	const char *temp, *q, *ext = NULL;
+	const char *temp, *q, *ext = nullptr;
 	const char *ppstart = playpath;
 	char *streamname, *destptr, *p;
 
 	int pplen = in->av_len;
 
-	out->av_val = NULL;
+	out->av_val = nullptr;
 	out->av_len = 0;
 
 	if ((*ppstart == '?') &&

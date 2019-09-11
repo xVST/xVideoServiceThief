@@ -31,7 +31,7 @@ int VideoItem::internalID = 0;
 
 VideoItem::VideoItem()
 {
-	locker = NULL;
+	locker = nullptr;
 	assignID();
 	// init data
 	initData();
@@ -39,7 +39,7 @@ VideoItem::VideoItem()
 
 VideoItem::VideoItem(const QString URL)
 {
-	locker = NULL;
+	locker = nullptr;
 	assignID();
 	// init data
 	initData();
@@ -49,7 +49,7 @@ VideoItem::VideoItem(const QString URL)
 
 VideoItem::VideoItem(const QString URL, const OverridedVideoConversionConfig overridedConversionConfig)
 {
-	locker = NULL;
+	locker = nullptr;
 	assignID();
 	// init data
 	initData();
@@ -126,7 +126,7 @@ bool VideoItem::unlock(QObject *locker)
 	if (isLocked())
 		if (this->locker == locker)
 		{
-			this->locker = NULL;
+			this->locker = nullptr;
 			return true;
 		}
 		else
@@ -137,7 +137,7 @@ bool VideoItem::unlock(QObject *locker)
 
 bool VideoItem::isLocked()
 {
-	return locker != NULL;
+	return locker != nullptr;
 }
 
 VideoState VideoItem::getVideoState()

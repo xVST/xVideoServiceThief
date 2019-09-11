@@ -163,7 +163,7 @@ void SearchVideosImpl::searchFinished()
 
 void SearchVideosImpl::searchResultAdded(SearchResultItem *searchResultItem)
 {
-	if (searchResultItem != NULL) // add a new widget before the strech item (top alignment)
+	if (searchResultItem != nullptr) // add a new widget before the strech item (top alignment)
 		layoutSearchItems->addWidget(new SearchVideosItemImpl(this, searchResultItem, loadingMovie));
 	else // add a new widget displaying the message: "no results found..."
 		layoutSearchItems->addWidget(new SearchVideosNoResultsImpl(this, searchVideos->getKeyWords()));
@@ -183,7 +183,7 @@ void SearchVideosImpl::finishedDownloadPreview(SearchResultItem *searchItem, boo
 
 QList<SearchVideosItemImpl*> SearchVideosImpl::getSearchVideosItemImplBySearchItem(SearchResultItem *item)
 {
-	if (item != NULL)
+	if (item != nullptr)
 		return this->findChildren<SearchVideosItemImpl*>(item->getVideoId());
 	else
 		return QList<SearchVideosItemImpl*>();

@@ -330,7 +330,7 @@ void VideoConverter::timerEvent(QTimerEvent *event)
 
 void VideoConverter::startConversionVideo(VideoItem *videoItem)
 {
-	if (videoItem == NULL || !canStartConversion() || !ffmpegInstalled()) return;
+	if (videoItem == nullptr || !canStartConversion() || !ffmpegInstalled()) return;
 	// check if this videoItem has an overrided conversion config
 	if (videoItem->hasOverridedConversion())
 	{

@@ -52,7 +52,7 @@ static void rtmp_log_default(int level, const char *format, va_list vl)
 	vsnprintf(str, MAX_PRINT_LEN-1, format, vl);
 
 	/* Filter out 'no-name' */
-	if ( RTMP_debuglevel<RTMP_LOGALL && strstr(str, "no-name" ) != NULL )
+	if ( RTMP_debuglevel<RTMP_LOGALL && strstr(str, "no-name" ) != nullptr )
 		return;
 
 	if ( !fmsg ) fmsg = stderr;

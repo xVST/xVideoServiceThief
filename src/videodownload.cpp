@@ -370,13 +370,13 @@ VideoDownload::~VideoDownload()
 
 DownloadItem* VideoDownload::findDownloadItemByVideoItem(VideoItem *videoItem)
 {
-	if (videoItem == NULL) return NULL;
+	if (videoItem == nullptr) return nullptr;
 
 	for (int n = 0; n < downloads->size(); n++)
 		if (downloads->at(n)->getVideoItem() == videoItem)
 			return downloads->at(n);
 
-	return NULL;
+	return nullptr;
 }
 
 void VideoDownload::stopAllDownloads(bool doCancel)
@@ -392,7 +392,7 @@ void VideoDownload::stopAllDownloads(bool doCancel)
 
 DownloadItem* VideoDownload::createDownloadItem(VideoItem *videoItem)
 {
-	if (videoItem == NULL) return NULL;
+	if (videoItem == nullptr) return nullptr;
 
 	// if cannot start then set this item as "preDownloading"
 	if ( ! canStartDownload())
@@ -400,7 +400,7 @@ DownloadItem* VideoDownload::createDownloadItem(VideoItem *videoItem)
 		videoItem->setCustomPreState(vpsPreDownloading);
 		emit videoItemUpdated(videoItem);
 		// ops
-		return NULL;
+		return nullptr;
 	}
 	// the downloader is "youtube-dl"?
 	if (videoItem->getVideoInformation().downloader == "youtube-dl")
@@ -423,7 +423,7 @@ DownloadItem* VideoDownload::createDownloadItem(VideoItem *videoItem)
 		videoItem->setAsError();
 		emit videoItemUpdated(videoItem);
 		// ops...
-		return NULL;
+		return nullptr;
 	}
 	// get the new item added
 	DownloadItem *downloadItem = downloads->last();
@@ -450,7 +450,7 @@ void VideoDownload::pauseDownload(VideoItem *videoItem)
 {
 	DownloadItem *downloadItem = findDownloadItemByVideoItem(videoItem);
 
-	if (downloadItem != NULL)
+	if (downloadItem != nullptr)
 	{
 		downloadItem->pauseDownload();
 	}
@@ -480,7 +480,7 @@ void VideoDownload::cancelDownload(VideoItem *videoItem)
 {
 	DownloadItem *downloadItem = findDownloadItemByVideoItem(videoItem);
 
-	if (downloadItem != NULL)
+	if (downloadItem != nullptr)
 		downloadItem->cancelDownload();
 }
 

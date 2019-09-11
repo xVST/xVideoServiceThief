@@ -42,7 +42,7 @@ void ProgressBarDelegate::paint(QPainter * painter, const QStyleOptionViewItem &
 		bool converted;
 		VideoItem *videoItem = videoList->getVideoItemByID(index.data(Qt::UserRole).toInt(&converted));
 		// check if this item exists
-		if (videoItem != NULL)
+		if (videoItem != nullptr)
 		{
 			if (videoItem->isDownloading() || videoItem->isConverting() ||
 				videoItem->isAnyKindOfPaused() || videoItem->isResuming())
