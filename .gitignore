@@ -31,3 +31,5 @@ TODO.*
 *.update
 release-files
 tools/build-*
+tools/PluginsUpdater/youtube-dl
+tools/PluginsUpdater/generated/*.js
