@@ -39,7 +39,7 @@
    <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" columnstretch="0,0">
+   <layout class="QGridLayout" columnstretch="0,0" name="gridLayout2">
     <property name="leftMargin">
      <number>9</number>
     </property>
@@ -72,7 +72,7 @@
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
-      <layout class="QGridLayout">
+      <layout class="QGridLayout" name="gridLayout3">
        <property name="leftMargin">
         <number>4</number>
        </property>
@@ -184,7 +184,7 @@
          </property>
          <property name="text">
           <string notr="true">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;xVideoServiceThief&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;a {font-family: Arial, Helvetica, sans-serif;font-size: 13px; text-decoration:none; color:#999999}a: hover{text-decoration:underline; color:#0000FF}
-&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div align=&quot;center&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #666666;&quot;&gt;xVideoServiceThief&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif;font-size: 13px;&quot;&gt;Powered by Xesc &amp;amp; Technology &amp;copy; 2018&lt;br /&gt;&lt;a href=&quot;https://www.xvideothief.com/&quot;&gt;https://www.xvideothief.com/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div align=&quot;center&quot;&gt;&lt;p&gt;&lt;span style=&quot;font-size: 32px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #666666;&quot;&gt;xVideoServiceThief&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Arial, Helvetica, sans-serif;font-size: 13px;&quot;&gt;Powered by Xesc &amp;amp; Technology &amp;copy; 2019&lt;br /&gt;&lt;a href=&quot;https://www.xvideothief.com/&quot;&gt;https://www.xvideothief.com/&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>

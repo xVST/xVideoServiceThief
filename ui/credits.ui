@@ -64,7 +64,7 @@
        <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string notr="true">Powered by &lt;b&gt;Xesc &amp;amp; Technology &amp;copy; 2018&lt;/b&gt;&lt;br&gt;Contact: &lt;a href=&quot;mailto:xeskuu.xvst@gmail.com&quot;&gt;xeskuu.xvst@gmail.com&lt;/a&gt;</string>
+          <string notr="true">Powered by &lt;b&gt;Xesc &amp;amp; Technology &amp;copy; 2019&lt;/b&gt;&lt;br&gt;Contact: &lt;a href=&quot;mailto:xeskuu.xvst@gmail.com&quot;&gt;xeskuu.xvst@gmail.com&lt;/a&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
